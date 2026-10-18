@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lagaus"
+version = "0.1.0"
+description = "Motores propios de terreno, meteorología y dispersión atmosférica (penacho gaussiano y puffs lagrangianos)"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { file = "LICENSE" }
+authors = [{ name = "Miguel Cámara Sanz" }]
+dependencies = [
+    "numpy>=1.24",
+    "numba>=0.58",
+    "rasterio>=1.3",
+    "pyproj>=3.5",
+]
+
+[project.optional-dependencies]
+pruebas = ["pytest>=7"]
+
+[project.scripts]
+lagaus = "lagaus.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["lagaus*"]
+
+[tool.pytest.ini_options]
+testpaths = ["auditor/pruebas"]

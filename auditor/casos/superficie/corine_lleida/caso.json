@@ -1,0 +1,18 @@
+{
+  "motor": "superficie",
+  "descripcion": "CORINE de Lleida adaptado a clases NLCD: z0, Bowen y albedo por sector y mes.",
+  "carpeta": "",
+  "ordenes": [
+    [
+      "sitio.inp"
+    ]
+  ],
+  "entorno": {},
+  "salidas": [
+    "sitio.log",
+    "sitio_sfc.txt"
+  ],
+  "marcas": [],
+  "original": "idéntico al original salvo fecha y hora (sitio_sfc.txt)",
+  "segundos": 0.5
+}

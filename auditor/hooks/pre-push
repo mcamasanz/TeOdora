@@ -1,0 +1,15 @@
+#!/bin/sh
+# Hook pre-push de lagaus: si se sube a la rama principal, el auditor tiene que dar APTO.
+# Se instala con: python -m auditor --instalar-hook
+while read local_ref local_sha remote_ref remote_sha; do
+    if [ "$remote_ref" = "refs/heads/main" ]; then
+        echo "auditor: comprobando el cambio antes de subirlo a main…"
+        base="origin/main"
+        git rev-parse --verify --quiet "$base" >/dev/null || base="$(git rev-list --max-parents=0 HEAD | tail -1)"
+        python -m auditor --base "$base" || {
+            echo "auditor: NO APTO. El push a main se ha cancelado."
+            exit 1
+        }
+    fi
+done
+exit 0

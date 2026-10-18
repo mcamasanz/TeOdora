@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+.pytest_cache/
+
+# generado en tiempo de ejecución (núcleo numba del penacho y cachés de numba)
+lagaus/dispersion/penacho/_nucleo_gen.py
+*.nbi
+*.nbc
+
+# casos y salidas locales, en la raíz (los de auditor/casos/ sí se versionan, con sus .log de referencia)
+/casos/
+/salidas/
+/*.log
+
+# claves y datos (nunca al repositorio)
+**/keys/
+*api-key*
+*.exe

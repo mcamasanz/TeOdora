@@ -1,0 +1,42 @@
+# Auditor de lagaus: ningún cambio entra en main sin dar APTO (ver auditor/README.md).
+name: auditor
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+jobs:
+  auditor:
+    # Windows: las salidas de referencia son bit a bit las de Windows, la plataforma de los
+    # proyectos (en otra plataforma, la biblioteca matemática puede cambiar el último bit).
+    runs-on: windows-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0          # historial completo: el auditor compara con main
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Dependencias
+        run: pip install -e ".[pruebas]"
+
+      # Sin caché de numba: se invalida con la fecha de los ficheros, que cambia en cada checkout.
+      # El núcleo del penacho compila en unos minutos (prueba marcada `compilacion`).
+      - name: Auditor
+        shell: bash
+        env:
+          PYTHONIOENCODING: utf-8
+        run: |
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            python -m auditor --base "origin/${{ github.base_ref }}"
+          elif [ "${{ github.event.before }}" = "0000000000000000000000000000000000000000" ]; then
+            python -m auditor --solo-pruebas      # primer push de la rama: no hay con qué comparar
+          else
+            python -m auditor --base "${{ github.event.before }}"
+          fi
