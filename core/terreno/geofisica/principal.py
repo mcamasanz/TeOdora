@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Programa principal: ``python -m lagaus.terreno.geofisica [fichero_de_control]``.
+"""Programa principal: ``python -m odora.terreno.geofisica [fichero_de_control]``.
 
 Lee el mismo fichero de control que el preprocesador original (grupos 0 a 4: ficheros, control,
 proyección y malla, categorías de salida y tabla de propiedades por categoría de entrada) y

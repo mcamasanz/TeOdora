@@ -149,7 +149,7 @@ def exkey(e, inpfld):
     return True
 
 
-_KEYWD = set(k.rstrip(" ") for k in __import__("lagaus.dispersion.penacho.tablas", fromlist=["DATA"]).DATA["KEYWD"])
+_KEYWD = set(k.rstrip(" ") for k in __import__("odora.dispersion.penacho.tablas", fromlist=["DATA"]).DATA["KEYWD"])
 
 
 def setord(e):

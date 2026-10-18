@@ -72,7 +72,7 @@ MDISP 2 y 4 (65/65 casos).*
 
 ## 3. Proyectos
 
-- digicompost y la planta de La Galera (Tarragona): pasar a usar `lagaus` como dependencia (hoy
+- digicompost y la planta de La Galera (Tarragona): pasar a usar `odora` como dependencia (hoy
   digicompost usa la copia de trabajo del laboratorio).
 - Edificios en la cadena de puffs de los proyectos: pasar las dimensiones de `terreno.edificios`
   al fichero de control de `dispersion.puffs`. El motor ya lo soporta.

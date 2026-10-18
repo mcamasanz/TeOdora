@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""auditor — la puerta de entrada a la rama principal de lagaus.
+"""auditor — la puerta de entrada a la rama principal de odora.
 
 Ningún cambio entra en `main` si rompe una prueba existente, si no trae pruebas nuevas para el
 código que añade o modifica, si cambia una referencia sin justificarlo o si sus pruebas no son

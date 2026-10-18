@@ -1,4 +1,4 @@
-# `lagaus.meteo` — meteorología
+# `odora.meteo` — meteorología
 
 Convierte los datos meteorológicos (observaciones, sondeos, pronósticos) en lo que necesitan los
 modelos de dispersión: los **parámetros de capa límite** del punto para el penacho y el **campo de
@@ -19,12 +19,12 @@ pronóstico 3D + GEO.DAT (+ estaciones, boyas, pluviómetros) ─► viento3d �
 ## Ejemplo
 
 ```bash
-python -m lagaus capa_limite aermet.inp       # escribe el .sfc y el .pfl
-python -m lagaus viento3d CMET.INP            # escribe el CALMET.DAT
+python -m odora capa_limite aermet.inp       # escribe el .sfc y el .pfl
+python -m odora viento3d CMET.INP            # escribe el CALMET.DAT
 ```
 
 ```python
-from lagaus.meteo.viento3d import fichero_viento
+from odora.meteo.viento3d import fichero_viento
 cab, horas = fichero_viento.leer("CALMET.DAT")
 print(cab.nx, cab.ny, cab.nz, len(horas))     # tamaño de la malla y horas escritas
 ```

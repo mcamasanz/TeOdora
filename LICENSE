@@ -4,7 +4,7 @@ Este software y su documentación son propietarios y confidenciales. Queda prohi
 modificarlo, distribuirlo, sublicenciarlo o usarlo, total o parcialmente, sin la autorización
 previa y por escrito del titular.
 
-Las partes de `lagaus.terreno.relieve`, `lagaus.terreno.superficie`, `lagaus.terreno.edificios`,`lagaus.meteo.capa_limite` y `lagaus.dispersion.penacho` son traducciones a Python de programas de la Agencia de Protección Ambiental de EE. UU. (US EPA), que son de dominio público en EE. UU.
+Las partes de `odora.terreno.relieve`, `odora.terreno.superficie`, `odora.terreno.edificios`, `odora.meteo.capa_limite` y `odora.dispersion.penacho` son traducciones a Python de programas de la Agencia de Protección Ambiental de EE. UU. (US EPA), que son de dominio público en EE. UU.
 (17 U.S.C. 105). Su nombre y su logotipo no se usan para promocionar este producto.
 
-Las partes de `lagaus.terreno.geofisica`, `lagaus.meteo.viento3d` y `lagaus.dispersion.puffs` son implementaciones propias escritas desde documentación publicada. No contienen código de terceros.
+Las partes de `odora.terreno.geofisica`, `odora.meteo.viento3d` y `odora.dispersion.puffs` son implementaciones propias escritas desde documentación publicada. No contienen código de terceros.

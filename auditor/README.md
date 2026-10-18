@@ -1,6 +1,6 @@
 # auditor — la puerta de entrada a `main`
 
-Ningún cambio entra en la rama principal de lagaus sin pasar el auditor:
+Ningún cambio entra en la rama principal de odora sin pasar el auditor:
 
 ```bash
 python -m auditor                 # audita lo que cambia respecto a main (confirmado y sin confirmar)

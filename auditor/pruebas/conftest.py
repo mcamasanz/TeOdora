@@ -5,7 +5,7 @@
   sin caché). Se ejecutan siempre, pero quedan fuera del límite de tiempo por prueba.
 - Si la variable AUDITOR_TIEMPOS apunta a un fichero, se guarda en él la duración de cada prueba
   y sus marcas: el auditor lo usa para la regla de rapidez.
-- El paquete `lagaus` tiene que importarse desde la carpeta core/ de este repositorio (instalado
+- El paquete `odora` tiene que importarse desde la carpeta core/ de este repositorio (instalado
   con `pip install -e .`); si no, se probaría otra copia y las pruebas se paran.
 """
 import json
@@ -23,14 +23,14 @@ _TIEMPOS = {}
 
 
 def instalacion():
-    """Texto del problema si `lagaus` no se importa desde core/ de este repositorio; "" si sí."""
+    """Texto del problema si `odora` no se importa desde core/ de este repositorio; "" si sí."""
     try:
-        import lagaus
+        import odora
     except ImportError:
-        return "no se encuentra el paquete lagaus: instala este repositorio con «pip install -e .»"
-    origen = Path(lagaus.__file__).resolve().parent
+        return "no se encuentra el paquete odora: instala este repositorio con «pip install -e .»"
+    origen = Path(odora.__file__).resolve().parent
     if origen != RAIZ / "core":
-        return ("lagaus se importa desde %s y no desde %s: instala este repositorio con "
+        return ("odora se importa desde %s y no desde %s: instala este repositorio con "
                 "«pip install -e .»" % (origen, RAIZ / "core"))
     return ""
 

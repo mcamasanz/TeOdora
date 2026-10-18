@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """Traducción de AERSURFACE v26135 a Python. Uso (como el original, desde la carpeta del caso):
 
-    python -m lagaus.terreno.superficie control.inp
+    python -m odora.terreno.superficie control.inp
 """
 import sys
 import time

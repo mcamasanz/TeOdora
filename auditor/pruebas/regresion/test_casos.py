@@ -21,9 +21,9 @@ def _param(caso):
 
 
 def test_hay_casos_de_todos_los_motores():
-    import lagaus
+    import odora
     motores = {c.motor for c in CASOS}
-    faltan = set(lagaus.MOTORES) - motores
+    faltan = set(odora.MOTORES) - motores
     assert not faltan, "motores sin caso de regresión: %s" % ", ".join(sorted(faltan))
 
 

@@ -1,6 +1,6 @@
 # Equivalencias con los programas originales
 
-Cada motor de lagaus equivale a un programa de referencia. Los de la EPA se han **traducido** de su código (dominio público); los demás se han **reescrito en sala limpia** desde su documentación publicada, sin abrir su código. El detalle por función está en el README de cada motor.
+Cada motor de odora equivale a un programa de referencia. Los de la EPA se han **traducido** de su código (dominio público); los demás se han **reescrito en sala limpia** desde su documentación publicada, sin abrir su código. El detalle por función está en el README de cada motor.
 
 | Motor | Programa | Vía | Funciones | Con equivalencia |
 |---|---|---|---|---|

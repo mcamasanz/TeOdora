@@ -18,7 +18,7 @@ from . import reglas
 
 def _informe(res):
     ancho = max(len(r.regla) for r in res)
-    print("\nAuditor de lagaus")
+    print("\nAuditor de odora")
     print("=" * 60)
     for r in res:
         print("%s  %-*s  %s" % ("OK  " if r.ok else "FALLA", ancho, r.regla, r.detalle[0] if r.detalle else ""))

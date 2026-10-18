@@ -13,7 +13,7 @@ AERSURFACE solo entiende las clases NLCD de EE. UU. El adaptador:
 Después se ejecuta el motor validado con un fichero de control normal.
 
 Uso (CLI):
-    python -m lagaus.terreno.superficie.corine --npz elevacion_uso.npz --lat 41.61806 --lon 0.34259 \
+    python -m odora.terreno.superficie.corine --npz elevacion_uso.npz --lat 41.61806 --lon 0.34259 \
         --salida carpeta [--freq MONTHLY] [--sectores 12] [--ap NONAP] \
         [--clima "AVERAGE NOSNOW NONARID"] [--zorad 1.0]
 """

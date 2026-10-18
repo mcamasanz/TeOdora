@@ -3,9 +3,9 @@
 PROGRAM AERMAP).
 
 Uso (mismos argumentos que el original):
-    python -m lagaus.terreno.relieve                      -> lee aermap.inp, escribe aermap.out
-    python -m lagaus.terreno.relieve caso.inp             -> escribe caso.out
-    python -m lagaus.terreno.relieve caso.inp salida.out
+    python -m odora.terreno.relieve                      -> lee aermap.inp, escribe aermap.out
+    python -m odora.terreno.relieve caso.inp             -> escribe caso.out
+    python -m odora.terreno.relieve caso.inp salida.out
 """
 import datetime
 import sys

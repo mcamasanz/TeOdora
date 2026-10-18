@@ -3,7 +3,7 @@ requires = ["setuptools>=68", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "lagaus"
+name = "odora"
 version = "0.1.0"
 description = "Motores propios de terreno, meteorología y dispersión atmosférica (penacho gaussiano y puffs lagrangianos)"
 readme = "README.md"
@@ -21,24 +21,24 @@ dependencies = [
 pruebas = ["pytest>=7"]
 
 [project.scripts]
-lagaus = "lagaus.__main__:main"
+odora = "odora.__main__:main"
 
-# El código vive en la carpeta core/ y se importa como `lagaus` (import lagaus, python -m lagaus).
+# El código vive en la carpeta core/ y se importa como `odora` (import odora, python -m odora).
 [tool.setuptools]
-package-dir = { "lagaus" = "core" }
+package-dir = { "odora" = "core" }
 packages = [
-    "lagaus",
-    "lagaus.terreno",
-    "lagaus.terreno.relieve",
-    "lagaus.terreno.superficie",
-    "lagaus.terreno.edificios",
-    "lagaus.terreno.geofisica",
-    "lagaus.meteo",
-    "lagaus.meteo.capa_limite",
-    "lagaus.meteo.viento3d",
-    "lagaus.dispersion",
-    "lagaus.dispersion.penacho",
-    "lagaus.dispersion.puffs",
+    "odora",
+    "odora.terreno",
+    "odora.terreno.relieve",
+    "odora.terreno.superficie",
+    "odora.terreno.edificios",
+    "odora.terreno.geofisica",
+    "odora.meteo",
+    "odora.meteo.capa_limite",
+    "odora.meteo.viento3d",
+    "odora.dispersion",
+    "odora.dispersion.penacho",
+    "odora.dispersion.puffs",
 ]
 
 [tool.pytest.ini_options]

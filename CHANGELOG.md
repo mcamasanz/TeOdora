@@ -20,8 +20,8 @@ uso y con nombres propios.
 - `dispersion.puffs` (≡ CALPUFF), con áreas, volúmenes, chimeneas con sobreelevación, efecto
   edificio (ISC y PRIME), deposición seca y húmeda, malla de receptores, emisiones variables
   (PTEMARB, VOLEMARB) y dispersión MDISP 2, 3 y 4.
-- Línea de órdenes común `python -m lagaus <motor>`.
-- El código en la carpeta `core/`, instalado e importado como `lagaus`.
+- Línea de órdenes común `python -m odora <motor>`.
+- El código en la carpeta `core/`, instalado e importado como `odora`.
 - README por carpeta con la definición y la equivalencia de cada función.
 - **Auditor** (`python -m auditor`): reglas para entrar en `main` (pruebas que pasan, rápidas, con
   pruebas nuevas para el código nuevo, referencias justificadas, sin perder pruebas), 13 casos de

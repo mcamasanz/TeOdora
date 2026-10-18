@@ -1,9 +1,10 @@
-# lagaus
+# odora
 
 **Motores propios de terreno, meteorología y dispersión atmosférica, en Python.**
 
-`lagaus` (LAGrange + GAUSS) reúne en una sola herramienta las dos familias de modelos de calidad
-del aire de referencia y todo lo que necesitan para funcionar:
+`odora` (del latín *odor*, olor) reúne en una sola herramienta las dos familias de modelos de
+calidad del aire de referencia y todo lo que necesitan para funcionar. Nace para los estudios de
+impacto por olores (compostaje, biometano, industria), pero sirve para cualquier contaminante:
 
 - **dispersión gaussiana estacionaria** (penacho), para estudios regulatorios horarios;
 - **dispersión lagrangiana por puffs**, que sigue al viento variable y trata calmas y
@@ -87,7 +88,7 @@ flowchart LR
 ## Estructura del repositorio
 
 ```
-lagaus/
+odora/
 ├── README.md               este fichero
 ├── CHANGELOG.md            historial de versiones
 ├── PENDIENTES.md           lo que queda por traducir o mejorar
@@ -95,10 +96,10 @@ lagaus/
 ├── pyproject.toml          paquete instalable
 ├── docs/
 │   ├── arquitectura.md     convenciones del código, núcleo compilado, cómo añadir un motor
-│   ├── equivalencias.md    motor por motor: fichero de lagaus ↔ módulo de la traducción ↔ original
+│   ├── equivalencias.md    motor por motor: fichero de odora ↔ módulo de la traducción ↔ original
 │   └── validacion.md       cómo se ha validado y resultados por motor
-├── core/                   el código: se instala e importa como `lagaus`
-│   ├── __main__.py         línea de órdenes: python -m lagaus <motor> …
+├── core/                   el código: se instala e importa como `odora`
+│   ├── __main__.py         línea de órdenes: python -m odora <motor> …
 │   ├── terreno/            relieve · superficie · edificios · geofisica
 │   ├── meteo/              capa_limite · viento3d
 │   └── dispersion/         penacho · puffs
@@ -115,15 +116,15 @@ original.
 ## Instalación
 
 ```bash
-git clone <url-del-repositorio> lagaus
-cd lagaus
+git clone <url-del-repositorio> odora
+cd odora
 pip install -e .
 ```
 
 Con conda: `conda install numpy numba rasterio pyproj` y después `pip install -e . --no-deps`.
 Para las pruebas: `pip install -e ".[pruebas]"`.
 
-El código está en la carpeta `core/` y se importa como `lagaus`. Esa correspondencia la establece
+El código está en la carpeta `core/` y se importa como `odora`. Esa correspondencia la establece
 la instalación, así que también hace falta instalar el repositorio (`pip install -e .`) para
 trabajar sobre el código o pasar el auditor.
 
@@ -133,22 +134,22 @@ Cada motor se lanza como su programa de referencia, en la carpeta del caso y con
 de control:
 
 ```bash
-python -m lagaus relieve     caso.inp caso.out
-python -m lagaus capa_limite aermet.inp
-python -m lagaus edificios   entrada.inp salida.out resumen.sum
-python -m lagaus penacho     caso.inp caso.out
-python -m lagaus geofisica   geo.inp
-python -m lagaus viento3d    CMET.INP
-python -m lagaus puffs       CALPUFF.INP
-python -m lagaus --version
+python -m odora relieve     caso.inp caso.out
+python -m odora capa_limite aermet.inp
+python -m odora edificios   entrada.inp salida.out resumen.sum
+python -m odora penacho     caso.inp caso.out
+python -m odora geofisica   geo.inp
+python -m odora viento3d    CMET.INP
+python -m odora puffs       CALPUFF.INP
+python -m odora --version
 ```
 
 Desde Python:
 
 ```python
-from lagaus.dispersion.penacho.principal import ejecutar as penacho
-from lagaus.meteo.viento3d.principal import ejecutar as viento3d
-from lagaus.dispersion.puffs.principal import ejecutar as puffs
+from odora.dispersion.penacho.principal import ejecutar as penacho
+from odora.meteo.viento3d.principal import ejecutar as viento3d
+from odora.dispersion.puffs.principal import ejecutar as puffs
 
 penacho(["caso.inp", "caso.out"])                 # listado, POSTFILE, PLOTFILE…
 viento3d(["CMET.INP"], carpeta="caso_puffs")      # CALMET.DAT
@@ -180,7 +181,7 @@ con las del programa original (ver [auditor/casos/README.md](auditor/casos/READM
 
 ## Proyectos que lo usan
 
-`lagaus` es el **núcleo**. Las interfaces de cada proyecto se construyen encima: la herramienta de
+`odora` es el **núcleo**. Las interfaces de cada proyecto se construyen encima: la herramienta de
 compostaje digicompost y la de la planta de La Galera (Tarragona). Cada proyecto descarga una
 versión fija de este repositorio y le añade su interfaz, sus catálogos de fuentes y sus datos.
 

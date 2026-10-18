@@ -1,4 +1,4 @@
-# `lagaus.terreno.edificios` — edificios
+# `odora.terreno.edificios` — edificios
 
 Equivale a **BPIPPRM**: traducido del código de BPIPPRM (dominio público); cada función indica la rutina original.
 
@@ -16,10 +16,10 @@ práctica (GEP). Son las que usa el penacho para la estela y la cavidad de los e
 
 ## Uso
 ```bash
-python -m lagaus edificios entrada.inp salida.out resumen.sum
+python -m odora edificios entrada.inp salida.out resumen.sum
 ```
 ```python
-from lagaus.terreno.edificios.__main__ import main
+from odora.terreno.edificios.__main__ import main
 main(["entrada.inp", "salida.out", "resumen.sum"])
 ```
 
@@ -38,7 +38,7 @@ Los bucles de direcciones van compilados con numba (`gep_rapido.py`).
 | Fichero | Contenido | Viene de | Equivale a |
 |---|---|---|---|
 | `__init__.py` | paquete | `__init__.py` | — |
-| `__main__.py` | python -m lagaus.terreno.edificios entrada salida resumen (los mismos argumentos que el original) Códigos de salida: 0 terminado, 3 el original aborta en ese punto con un error de ejecución (se escribe su mismo mensaje). | `__main__.py` | — |
+| `__main__.py` | python -m odora.terreno.edificios entrada salida resumen (los mismos argumentos que el original) Códigos de salida: 0 terminado, 3 el original aborta en ese punto con un error de ejecución (se escribe su mismo mensaje). | `__main__.py` | — |
 | `formato.py` | Compatibilidad de E/S y numérica con el Fortran original (copia del módulo de la traducción de AERMET, core/meteo/capa_limite/formato.py, validado allí; BPIPPRM 04274 está compilado con Compaq Visual Fortran 6.6, anteces… | `fortran.py` | — |
 | `gep_rapido.py` | Bucles GEP de BPIPPRM 04274 (1.440 direcciones de cuarto de grado) compilados con numba. | `gep_rapido.py` | — |
 | `nucleo.py` | Building Profile Input Program for PRIME. | `nucleo.py` | `Bpipprm.for` |
@@ -49,7 +49,7 @@ Los bucles de direcciones van compilados con numba (`gep_rapido.py`).
 
 ### `__main__.py`
 
-python -m lagaus.terreno.edificios entrada salida resumen (los mismos argumentos que el original) Códigos de salida: 0 terminado, 3 el original aborta en ese punto con un error de ejecución (se escribe su mismo mensaje).
+python -m odora.terreno.edificios entrada salida resumen (los mismos argumentos que el original) Códigos de salida: 0 terminado, 3 el original aborta en ese punto con un error de ejecución (se escribe su mismo mensaje).
 
 | Función | Definición | Equivale a |
 |---|---|---|

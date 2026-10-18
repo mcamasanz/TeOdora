@@ -2,15 +2,15 @@
 
 ## Organización
 
-- El código está en la carpeta **`core/`** y se instala e importa como **`lagaus`**
-  (`pyproject.toml`: `package-dir = {"lagaus" = "core"}`). Así, `core/dispersion/penacho/` es el
-  módulo `lagaus.dispersion.penacho`.
+- El código está en la carpeta **`core/`** y se instala e importa como **`odora`**
+  (`pyproject.toml`: `package-dir = {"odora" = "core"}`). Así, `core/dispersion/penacho/` es el
+  módulo `odora.dispersion.penacho`.
 - Un **paquete por motor**, agrupado por uso: `terreno`, `meteo`, `dispersion`. Los motores no se
   importan entre sí: se comunican por ficheros (los mismos formatos que los programas de
   referencia), así que cada uno se puede usar, probar y sustituir por separado.
 - Cada motor tiene un **punto de entrada** con la misma firma que el programa original
   (`principal.ejecutar` o `__main__.main`) y se lanza desde la línea de órdenes común
-  `python -m lagaus <motor>`.
+  `python -m odora <motor>`.
 - La **sintaxis de los ficheros de control** y los **formatos de salida** son los del programa de
   referencia. Es lo que permite validar caso a caso y reutilizar las herramientas de posproceso.
 
@@ -67,6 +67,6 @@ se dedujo con experimentos dirigidos. Su procedencia está en el repositorio de 
    batería de casos.
 2. Regenerar el paquete con la herramienta del laboratorio (renombrado automático con el
    analizador de Python).
-3. Volver a pasar las baterías sobre `lagaus`.
+3. Volver a pasar las baterías sobre `odora`.
 4. Regenerar los README.
 5. Anotar el cambio en `CHANGELOG.md` y retirar lo hecho de `PENDIENTES.md`.

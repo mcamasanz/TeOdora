@@ -1,16 +1,16 @@
 # -*- coding: utf-8 -*-
-"""Línea de órdenes de lagaus: lanza cualquier motor con su fichero de control.
+"""Línea de órdenes de odora: lanza cualquier motor con su fichero de control.
 
-    python -m lagaus <motor> [argumentos]
+    python -m odora <motor> [argumentos]
 
-    python -m lagaus relieve     [control [salida]]          cotas y altura de colina
-    python -m lagaus superficie  [control]                   rugosidad, Bowen y albedo
-    python -m lagaus edificios   entrada salida resumen      dimensiones de edificio
-    python -m lagaus geofisica   [control]                   malla de usos y terreno
-    python -m lagaus capa_limite [control]                   meteorología de capa límite
-    python -m lagaus viento3d    [control]                   campo de viento 3D
-    python -m lagaus penacho     [control [salida]]          dispersión gaussiana
-    python -m lagaus puffs       [control]                   dispersión por puffs
+    python -m odora relieve     [control [salida]]          cotas y altura de colina
+    python -m odora superficie  [control]                   rugosidad, Bowen y albedo
+    python -m odora edificios   entrada salida resumen      dimensiones de edificio
+    python -m odora geofisica   [control]                   malla de usos y terreno
+    python -m odora capa_limite [control]                   meteorología de capa límite
+    python -m odora viento3d    [control]                   campo de viento 3D
+    python -m odora penacho     [control [salida]]          dispersión gaussiana
+    python -m odora puffs       [control]                   dispersión por puffs
 
 Se ejecuta en la carpeta del caso. Códigos de salida: 0 terminado (los errores del caso van a
 su fichero de salida), 1 orden desconocida, 2 opción fuera del alcance del motor.
@@ -21,7 +21,7 @@ from . import MOTORES, __version__
 
 
 def _fuera(motor, e):
-    print("lagaus %s: opción fuera de alcance: %s" % (motor, e), file=sys.stderr)
+    print("odora %s: opción fuera de alcance: %s" % (motor, e), file=sys.stderr)
     return 2
 
 
@@ -31,7 +31,7 @@ def main(argv=None):
         print(__doc__)
         return 0 if argv else 1
     if argv[0] in ("-V", "--version"):
-        print("lagaus", __version__)
+        print("odora", __version__)
         return 0
     motor, args = argv[0].lower(), argv[1:]
     sys.argv = [sys.argv[0]] + args
@@ -76,7 +76,7 @@ def main(argv=None):
             return 0
         except NoImplementado as e:
             return _fuera(motor, e)
-    print("lagaus: motor desconocido «%s». Motores: %s" % (motor, ", ".join(MOTORES)), file=sys.stderr)
+    print("odora: motor desconocido «%s». Motores: %s" % (motor, ", ".join(MOTORES)), file=sys.stderr)
     return 1
 
 

@@ -1,4 +1,4 @@
-# `lagaus.dispersion.puffs` — puffs
+# `odora.dispersion.puffs` — puffs
 
 Equivale a **CALPUFF**: reescrito en **sala limpia** desde la documentación publicada de CALPUFF; la equivalencia es funcional: nunca se ha abierto su código.
 
@@ -17,11 +17,11 @@ efecto de los edificios.
 
 ## Uso
 ```bash
-python -m lagaus puffs CALPUFF.INP
+python -m odora puffs CALPUFF.INP
 ```
 ```python
-from lagaus.dispersion.puffs.principal import ejecutar
-from lagaus.dispersion.puffs import fichero_conc
+from odora.dispersion.puffs.principal import ejecutar
+from odora.dispersion.puffs import fichero_conc
 cab, periodos = ejecutar("caso/CALPUFF.INP")                 # o leer el CONC.DAT escrito:
 cab, periodos = fichero_conc.leer("caso/CONC.DAT")
 ```

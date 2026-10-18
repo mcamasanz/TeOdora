@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
-"""lagaus — motores propios de terreno, meteorología y dispersión atmosférica.
+"""odora — motores propios de terreno, meteorología y dispersión atmosférica.
 
-LAGrange + GAUSS: las dos familias de modelos que reúne la herramienta, el penacho gaussiano
-estacionario (`dispersion.penacho`) y los puffs lagrangianos que viajan con el viento
-(`dispersion.puffs`), junto con todo lo que necesitan: terreno, superficie, edificios,
-meteorología de capa límite y campo de viento 3D.
+Del latín *odor* (olor): nace para los estudios de impacto por olores. Reúne las dos familias de
+modelos de dispersión, el penacho gaussiano estacionario (`dispersion.penacho`) y los puffs
+lagrangianos que viajan con el viento (`dispersion.puffs`), junto con todo lo que necesitan:
+terreno, superficie, edificios, meteorología de capa límite y campo de viento 3D.
 
 Paquetes:
     terreno.relieve        cotas de receptores y fuentes, altura de colina
@@ -16,7 +16,7 @@ Paquetes:
     dispersion.penacho     dispersión gaussiana estacionaria
     dispersion.puffs       dispersión lagrangiana por puffs
 
-Cada motor se puede lanzar por línea de órdenes: `python -m lagaus <motor> [argumentos]`.
+Cada motor se puede lanzar por línea de órdenes: `python -m odora <motor> [argumentos]`.
 """
 __version__ = "0.1.0"
 __fecha__ = "2026-10-18"

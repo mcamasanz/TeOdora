@@ -1,4 +1,4 @@
-# Auditor de lagaus: ningún cambio entra en main sin dar APTO (ver auditor/README.md).
+# Auditor de odora: ningún cambio entra en main sin dar APTO (ver auditor/README.md).
 name: auditor
 
 on:

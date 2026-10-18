@@ -1,6 +1,6 @@
 # Validación
 
-*v0.1.0 (2026-10-18).* Cada motor de `lagaus` se ha validado frente a su programa de referencia
+*v0.1.0 (2026-10-18).* Cada motor de `odora` se ha validado frente a su programa de referencia
 con una batería de casos. Las ocho baterías se han vuelto a correr sobre el código de este
 paquete, ya con los nombres nuevos, y dan los mismos resultados que en el laboratorio.
 
@@ -26,7 +26,7 @@ Hay dos criterios, según cómo se ha construido el motor.
 
 **Motores traducidos** (relieve, superficie, edificios, capa_limite y penacho). Su Fortran es de
 dominio público y se ha traducido rutina a rutina. Cada caso se corre con el original y con
-`lagaus` sobre las mismas entradas, y se comparan **todos** los ficheros que escriben:
+`odora` sobre las mismas entradas, y se comparan **todos** los ficheros que escriben:
 - los de texto, carácter a carácter, salvo la fecha y la hora de la corrida;
 - los binarios, byte a byte;
 - también la pantalla y los mensajes de error, incluidos los casos que deben abortar.
