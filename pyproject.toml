@@ -23,8 +23,23 @@ pruebas = ["pytest>=7"]
 [project.scripts]
 lagaus = "lagaus.__main__:main"
 
-[tool.setuptools.packages.find]
-include = ["lagaus*"]
+# El código vive en la carpeta core/ y se importa como `lagaus` (import lagaus, python -m lagaus).
+[tool.setuptools]
+package-dir = { "lagaus" = "core" }
+packages = [
+    "lagaus",
+    "lagaus.terreno",
+    "lagaus.terreno.relieve",
+    "lagaus.terreno.superficie",
+    "lagaus.terreno.edificios",
+    "lagaus.terreno.geofisica",
+    "lagaus.meteo",
+    "lagaus.meteo.capa_limite",
+    "lagaus.meteo.viento3d",
+    "lagaus.dispersion",
+    "lagaus.dispersion.penacho",
+    "lagaus.dispersion.puffs",
+]
 
 [tool.pytest.ini_options]
 testpaths = ["auditor/pruebas"]

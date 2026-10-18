@@ -4,14 +4,14 @@ Cada motor de lagaus equivale a un programa de referencia. Los de la EPA se han 
 
 | Motor | Programa | Vía | Funciones | Con equivalencia |
 |---|---|---|---|---|
-| [`terreno.superficie`](../lagaus/terreno/superficie/README.md) | AERSURFACE | traducción | 44 | 17 |
-| [`terreno.relieve`](../lagaus/terreno/relieve/README.md) | AERMAP | traducción | 151 | 126 |
-| [`terreno.edificios`](../lagaus/terreno/edificios/README.md) | BPIPPRM | traducción | 59 | 35 |
-| [`terreno.geofisica`](../lagaus/terreno/geofisica/README.md) | MAKEGEO | sala limpia | 27 | 0 |
-| [`meteo.capa_limite`](../lagaus/meteo/capa_limite/README.md) | AERMET | traducción | 219 | 168 |
-| [`meteo.viento3d`](../lagaus/meteo/viento3d/README.md) | CALMET | sala limpia | 98 | 0 |
-| [`dispersion.penacho`](../lagaus/dispersion/penacho/README.md) | AERMOD | traducción | 850 | 740 |
-| [`dispersion.puffs`](../lagaus/dispersion/puffs/README.md) | CALPUFF | sala limpia | 157 | 0 |
+| [`terreno.superficie`](../core/terreno/superficie/README.md) | AERSURFACE | traducción | 44 | 17 |
+| [`terreno.relieve`](../core/terreno/relieve/README.md) | AERMAP | traducción | 151 | 126 |
+| [`terreno.edificios`](../core/terreno/edificios/README.md) | BPIPPRM | traducción | 59 | 35 |
+| [`terreno.geofisica`](../core/terreno/geofisica/README.md) | MAKEGEO | sala limpia | 27 | 0 |
+| [`meteo.capa_limite`](../core/meteo/capa_limite/README.md) | AERMET | traducción | 219 | 168 |
+| [`meteo.viento3d`](../core/meteo/viento3d/README.md) | CALMET | sala limpia | 98 | 0 |
+| [`dispersion.penacho`](../core/dispersion/penacho/README.md) | AERMOD | traducción | 850 | 740 |
+| [`dispersion.puffs`](../core/dispersion/puffs/README.md) | CALPUFF | sala limpia | 157 | 0 |
 
 ## `terreno.superficie` ≡ AERSURFACE
 

@@ -39,7 +39,7 @@ Los bucles de direcciones van compilados con numba (`gep_rapido.py`).
 |---|---|---|---|
 | `__init__.py` | paquete | `__init__.py` | — |
 | `__main__.py` | python -m lagaus.terreno.edificios entrada salida resumen (los mismos argumentos que el original) Códigos de salida: 0 terminado, 3 el original aborta en ese punto con un error de ejecución (se escribe su mismo mensaje). | `__main__.py` | — |
-| `formato.py` | Compatibilidad de E/S y numérica con el Fortran original (copia del módulo de la traducción de AERMET, lagaus/meteo/capa_limite/formato.py, validado allí; BPIPPRM 04274 está compilado con Compaq Visual Fortran 6.6, antec… | `fortran.py` | — |
+| `formato.py` | Compatibilidad de E/S y numérica con el Fortran original (copia del módulo de la traducción de AERMET, core/meteo/capa_limite/formato.py, validado allí; BPIPPRM 04274 está compilado con Compaq Visual Fortran 6.6, anteces… | `fortran.py` | — |
 | `gep_rapido.py` | Bucles GEP de BPIPPRM 04274 (1.440 direcciones de cuarto de grado) compilados con numba. | `gep_rapido.py` | — |
 | `nucleo.py` | Building Profile Input Program for PRIME. | `nucleo.py` | `Bpipprm.for` |
 
@@ -57,7 +57,7 @@ python -m lagaus.terreno.edificios entrada salida resumen (los mismos argumentos
 
 ### `formato.py`
 
-Compatibilidad de E/S y numérica con el Fortran original (copia del módulo de la traducción de AERMET, lagaus/meteo/capa_limite/formato.py, validado allí; BPIPPRM 04274 está compilado con Compaq Visual Fortran 6.6, antec…
+Compatibilidad de E/S y numérica con el Fortran original (copia del módulo de la traducción de AERMET, core/meteo/capa_limite/formato.py, validado allí; BPIPPRM 04274 está compilado con Compaq Visual Fortran 6.6, anteces…
 
 | Función | Definición | Equivale a |
 |---|---|---|

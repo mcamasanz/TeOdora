@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """Compatibilidad de E/S y numérica con el Fortran original (copia del módulo de la traducción de
-AERMET, lagaus/meteo/capa_limite/formato.py, validado allí; BPIPPRM 04274 está compilado con
+AERMET, core/meteo/capa_limite/formato.py, validado allí; BPIPPRM 04274 está compilado con
 Compaq Visual Fortran 6.6, antecesor del Intel Fortran con el mismo comportamiento de E/S).
 
 Intérprete de FORMAT completo:

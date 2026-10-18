@@ -2,6 +2,9 @@
 
 ## Organización
 
+- El código está en la carpeta **`core/`** y se instala e importa como **`lagaus`**
+  (`pyproject.toml`: `package-dir = {"lagaus" = "core"}`). Así, `core/dispersion/penacho/` es el
+  módulo `lagaus.dispersion.penacho`.
 - Un **paquete por motor**, agrupado por uso: `terreno`, `meteo`, `dispersion`. Los motores no se
   importan entre sí: se comunican por ficheros (los mismos formatos que los programas de
   referencia), así que cada uno se puede usar, probar y sustituir por separado.

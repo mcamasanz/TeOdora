@@ -8,7 +8,7 @@ dist/
 .pytest_cache/
 
 # generado en tiempo de ejecución (núcleo numba del penacho y cachés de numba)
-lagaus/dispersion/penacho/_nucleo_gen.py
+core/dispersion/penacho/_nucleo_gen.py
 *.nbi
 *.nbc
 

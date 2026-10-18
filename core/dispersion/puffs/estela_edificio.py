@@ -6,7 +6,7 @@ Fuentes (ver FUENTES.md del laboratorio):
   - [PRIME-JAWMA] Schulman, Strimaitis y Scire (2000), JAWMA 50:378-390: formulación de PRIME
     (escalas de la estela, cavidad, crecimiento de σ en la estela, reparto de masa).
   - [AERMOD-PRIME dominio público] traducción del proyecto de prime.f de AERMOD (EPA, dominio
-    público), lagaus/dispersion/penacho/estela_edificio.py: NUMRISE (RATE, LUMP, MARCHING,
+    público), core/dispersion/penacho/estela_edificio.py: NUMRISE (RATE, LUMP, MARCHING,
     UNLUMP), WAKE_SCALES, POSITION, ZSTREAM, WAKE_U, WAKE_TURB, WAKE_XA, WAKE_DIM, WAKE_SIG,
     WAKE_CAV0, WAKE_DFSN, WAKE_FQC, CAV_SRC, CAVITY_HT, FRGAUSS, ERFDIF, NUMGRAD, WAKE_XSIG. Se
     adaptan a CALPUFF las partes que dependen del modelo anfitrión.

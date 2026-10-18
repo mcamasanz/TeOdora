@@ -14,7 +14,7 @@ El resultado es **APTO** (código 0) o **NO APTO** (código 1), con el detalle d
 
 | Regla | Qué exige | Por qué |
 |---|---|---|
-| **R1 sintaxis** | todo el código de `lagaus/` y `auditor/` compila | nada roto llega a `main` |
+| **R1 sintaxis** | todo el código de `core/` y `auditor/` compila | nada roto llega a `main` |
 | **R2 pruebas** | pasan **todas** las pruebas: unitarias y de regresión | un cambio no puede romper lo que ya estaba validado |
 | **R3 rapidez** | cada prueba dura **≤ 20 s** y el conjunto **≤ 300 s**, medidas en régimen: si una pasa del límite (numba compila la primera vez tras un cambio) se repite una vez con la caché caliente y cuenta la segunda medida. Las marcadas `compilacion` quedan fuera | se auditan todas las veces, así que tienen que ser rápidas |
 | **R4 pruebas nuevas** | cada motor (o parte del paquete) con código **añadido o modificado** trae pruebas nuevas o modificadas que lo nombran, o un caso nuevo de regresión | todo código nuevo llega con su prueba |

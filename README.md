@@ -27,14 +27,14 @@ necesita ningún ejecutable externo.
 
 | Motor | Qué hace | Equivale a | Vía | Validación frente al original |
 |---|---|---|---|---|
-| [`terreno.relieve`](lagaus/terreno/relieve/README.md) | cota y altura de colina de receptores y fuentes | AERMAP | traducción | 65/66 casos idénticos |
-| [`terreno.superficie`](lagaus/terreno/superficie/README.md) | rugosidad, Bowen y albedo desde el uso del suelo (con adaptador CORINE) | AERSURFACE | traducción | 48/48 idénticos |
-| [`terreno.edificios`](lagaus/terreno/edificios/README.md) | dimensiones de edificio por dirección para las estelas | BPIPPRM | traducción | 37/37 idénticos |
-| [`terreno.geofisica`](lagaus/terreno/geofisica/README.md) | malla de usos del suelo y terreno para el campo de viento | MAKEGEO | sala limpia | 24/24 (±1 en la última cifra en 20 de ~400 000 valores) |
-| [`meteo.capa_limite`](lagaus/meteo/capa_limite/README.md) | meteorología de capa límite (`.sfc`, `.pfl`) | AERMET | traducción | 73/73 pasos idénticos |
-| [`meteo.viento3d`](lagaus/meteo/viento3d/README.md) | campo de viento 3D y micrometeorología | CALMET | sala limpia | 51/51 (peor 0,30° y 0,22 %) |
-| [`dispersion.penacho`](lagaus/dispersion/penacho/README.md) | penacho gaussiano estacionario | AERMOD | traducción | 142 casos: 124 idénticos, 15 solo en los últimos bits, 2 solo en un volcado de depuración |
-| [`dispersion.puffs`](lagaus/dispersion/puffs/README.md) | puffs lagrangianos | CALPUFF | sala limpia | 65/65 (FAC2 ≥ 0,993) |
+| [`terreno.relieve`](core/terreno/relieve/README.md) | cota y altura de colina de receptores y fuentes | AERMAP | traducción | 65/66 casos idénticos |
+| [`terreno.superficie`](core/terreno/superficie/README.md) | rugosidad, Bowen y albedo desde el uso del suelo (con adaptador CORINE) | AERSURFACE | traducción | 48/48 idénticos |
+| [`terreno.edificios`](core/terreno/edificios/README.md) | dimensiones de edificio por dirección para las estelas | BPIPPRM | traducción | 37/37 idénticos |
+| [`terreno.geofisica`](core/terreno/geofisica/README.md) | malla de usos del suelo y terreno para el campo de viento | MAKEGEO | sala limpia | 24/24 (±1 en la última cifra en 20 de ~400 000 valores) |
+| [`meteo.capa_limite`](core/meteo/capa_limite/README.md) | meteorología de capa límite (`.sfc`, `.pfl`) | AERMET | traducción | 73/73 pasos idénticos |
+| [`meteo.viento3d`](core/meteo/viento3d/README.md) | campo de viento 3D y micrometeorología | CALMET | sala limpia | 51/51 (peor 0,30° y 0,22 %) |
+| [`dispersion.penacho`](core/dispersion/penacho/README.md) | penacho gaussiano estacionario | AERMOD | traducción | 142 casos: 124 idénticos, 15 solo en los últimos bits, 2 solo en un volcado de depuración |
+| [`dispersion.puffs`](core/dispersion/puffs/README.md) | puffs lagrangianos | CALPUFF | sala limpia | 65/65 (FAC2 ≥ 0,993) |
 
 - **Traducción**: los programas de la EPA son de dominio público. Su Fortran se ha traducido a
   Python, rutina a rutina; cada función indica la rutina original a la que equivale.
@@ -97,7 +97,7 @@ lagaus/
 │   ├── arquitectura.md     convenciones del código, núcleo compilado, cómo añadir un motor
 │   ├── equivalencias.md    motor por motor: fichero de lagaus ↔ módulo de la traducción ↔ original
 │   └── validacion.md       cómo se ha validado y resultados por motor
-├── lagaus/
+├── core/                   el código: se instala e importa como `lagaus`
 │   ├── __main__.py         línea de órdenes: python -m lagaus <motor> …
 │   ├── terreno/            relieve · superficie · edificios · geofisica
 │   ├── meteo/              capa_limite · viento3d
@@ -122,6 +122,10 @@ pip install -e .
 
 Con conda: `conda install numpy numba rasterio pyproj` y después `pip install -e . --no-deps`.
 Para las pruebas: `pip install -e ".[pruebas]"`.
+
+El código está en la carpeta `core/` y se importa como `lagaus`. Esa correspondencia la establece
+la instalación, así que también hace falta instalar el repositorio (`pip install -e .`) para
+trabajar sobre el código o pasar el auditor.
 
 ## Uso rápido
 

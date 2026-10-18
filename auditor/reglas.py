@@ -70,7 +70,7 @@ def _en_base(base, ruta):
 # ------------------------------------------------------------------------------ reglas
 def r1_sintaxis():
     errores = []
-    for f in sorted(list((RAIZ / "lagaus").rglob("*.py")) + list(AUDITOR.rglob("*.py"))):
+    for f in sorted(list((RAIZ / "core").rglob("*.py")) + list(AUDITOR.rglob("*.py"))):
         if "_nucleo_gen" in f.name:
             continue
         try:
@@ -123,13 +123,13 @@ def r2_r3_pruebas(limite=LIMITE_PRUEBA_S, total=LIMITE_TOTAL_S, extra=()):
 def _parte(ruta):
     """Motor (o parte del paquete) al que pertenece un fichero de código."""
     p = Path(ruta).parts
-    if len(p) >= 4 and p[0] == "lagaus" and p[1] in ("terreno", "meteo", "dispersion"):
+    if len(p) >= 4 and p[0] == "core" and p[1] in ("terreno", "meteo", "dispersion"):
         return p[2]
     return "paquete"
 
 
 def r4_pruebas_nuevas(cam):
-    codigo = [r for r, e in cam.items() if e in "AM" and r.startswith("lagaus/") and r.endswith(".py")]
+    codigo = [r for r, e in cam.items() if e in "AM" and r.startswith("core/") and r.endswith(".py")]
     pruebas = [r for r, e in cam.items() if e in "AM" and r.startswith("auditor/pruebas/") and r.endswith(".py")]
     casos_nuevos = {Path(r).parts[2] for r, e in cam.items() if e == "A" and r.startswith("auditor/casos/")
                     and r.endswith("caso.json")}

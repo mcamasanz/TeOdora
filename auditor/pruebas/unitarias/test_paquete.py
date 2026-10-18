@@ -4,10 +4,12 @@ puntos de entrada de cada motor existen. Las validaciones numéricas frente a lo
 originales viven en el repositorio de laboratorio (ver docs/validacion.md)."""
 import importlib
 import pkgutil
+from pathlib import Path
 
 import pytest
 
 import lagaus
+import lagaus.dispersion
 from lagaus.__main__ import main
 
 # sin `_nucleo_gen` (el núcleo numba se genera al correr y no se versiona): el número de pruebas
@@ -18,6 +20,13 @@ MODULOS = sorted(m.name for m in pkgutil.walk_packages(lagaus.__path__, "lagaus.
 
 def test_version():
     assert lagaus.__version__ == "0.1.0"
+
+
+def test_se_importa_desde_core():
+    # el código vive en core/ y se instala como lagaus (pyproject.toml, package-dir)
+    raiz = Path(__file__).resolve().parents[3]
+    assert Path(lagaus.__file__).resolve().parent == raiz / "core"
+    assert Path(lagaus.dispersion.__file__).resolve().parent == raiz / "core" / "dispersion"
 
 
 @pytest.mark.parametrize("nombre", MODULOS)
