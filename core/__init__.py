@@ -18,8 +18,8 @@ Paquetes:
 
 Cada motor se puede lanzar por línea de órdenes: `python -m odora <motor> [argumentos]`.
 """
-__version__ = "0.1.0"
-__fecha__ = "2026-10-18"
+__version__ = "0.1.1"
+__fecha__ = "2026-10-20"
 
 MOTORES = ("relieve", "superficie", "edificios", "geofisica", "capa_limite", "viento3d", "penacho",
            "puffs")

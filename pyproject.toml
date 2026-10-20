@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "odora"
-version = "0.1.0"
+version = "0.1.1"
 description = "Motores propios de terreno, meteorología y dispersión atmosférica (penacho gaussiano y puffs lagrangianos)"
 readme = "README.md"
 requires-python = ">=3.11"

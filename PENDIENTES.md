@@ -35,6 +35,10 @@ MDISP 2 y 4 (65/65 casos).*
 - Entrada directa de campos diagnósticos (IDIOPT1-5).
 - Capa caliente y piel fría de COARE (IWARM/ICOOL): a medias.
 - Temperatura del agua del pronóstico (ITWPROG=2).
+- **Desde la v0.1.1** (ver su README §Transiciones): volver a correr la batería de laboratorio
+  de 51 casos con las reglas nuevas de las transiciones; la altura convectiva de la tarde se
+  separa poco a poco del original (|ΔZI| relativo medio 0,6 %) y, con ITPROG = 1 y
+  estaciones, la ZI y la temperatura de día (2,3 %), igual que en la v0.1.0.
 - **No reproducibles** (documentado):
   - estaciones en formato sin formato (IFORMS/IFORMP/IFORMC=1): el binario no está publicado;
   - ICOARE −11/−12: necesita una versión de SEA.DAT no publicada.

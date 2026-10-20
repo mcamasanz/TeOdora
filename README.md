@@ -17,7 +17,7 @@ necesita ningún ejecutable externo.
 
 | | |
 |---|---|
-| Versión | **0.1.0** (2026-10-18) |
+| Versión | **0.1.1** (2026-10-20) |
 | Python | 3.11 o superior |
 | Dependencias | numpy, numba, rasterio, pyproj |
 | Estado | 8 motores validados dentro de su alcance; lo pendiente, en [PENDIENTES.md](PENDIENTES.md) |
@@ -187,8 +187,8 @@ versión fija de este repositorio y le añade su interfaz, sus catálogos de fue
 
 ## Versiones
 
-Versionado semántico. Historial en [CHANGELOG.md](CHANGELOG.md). Esta es la **v0.1.0**, la base
-sobre la que se irán publicando las actualizaciones.
+Versionado semántico. Historial en [CHANGELOG.md](CHANGELOG.md). La última es la **v0.1.1**; la v0.1.0 es la
+base sobre la que se van publicando las actualizaciones.
 
 ## Licencia
 

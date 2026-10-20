@@ -27,6 +27,12 @@ PROGRAMA = "CALMET_PY (CIRCE)"
 MODO_PSI_W = "anterior"
 PRUEBA_T2 = 0
 AV_INICIAL = False    # promedio de la altura convectiva con el viento final (True: con el inicial)
+# Horas de transición con ITPROG = 1, 2 [caja negra: La Galera, 2026-10-20, ver README §Transiciones]
+N_CON_ALTURA_ANTERIOR = True   # N del bloqueo: temperatura ajustada con la convectiva guardada
+N_MASCARA = "zupt"             # N: "zupt" (T(ZUPT) adiabática si h ≥ ZUPT), "cara" o "centro"
+PSI_DE_T3D = "bajo_primer_nivel"   # ψ de la convectiva: niveles del pronóstico y, por debajo del
+                                   # primero, la temperatura 3D de la hora anterior ("" = θ constante)
+T3D_CON_PROMEDIADA = True      # temperatura 3D de salida ajustada con la convectiva promediada
 VERSION = "0.1"
 NIVEL = "261018"
 IRH_SIN_DATO = 80     # humedad relativa (%) con NOOBS=1 e ITPROG=2 [caja negra: fija, no depende
@@ -107,6 +113,37 @@ def _adiabatica(tk, ts, h, adiab, malla, caras=None):
             2.0 * (zf[kk + 1] - zf[kk]))
         tk[kk] = np.where(lleno, ts - 0.0098 * zc[kk], np.where(tapa, mezcla, tk[kk]))
     return tk
+
+
+def _n_zupt(tb, h, zc, zupt):
+    """N del dominio con la temperatura media de la capa 1 y la media en ZUPT, donde T(ZUPT) es la
+    interpolada de tb (sin ajuste adiabático) o, si la convectiva h llega a ZUPT, la adiabática
+    desde la capa 1 [caja negra: La Galera 2026-10-20, amanecer y atardecer]."""
+    zc = np.asarray(zc, float)
+    k = int(np.clip(np.searchsorted(zc, zupt), 1, len(zc) - 1))
+    w = (zupt - zc[k - 1]) / (zc[k] - zc[k - 1])
+    tz = tb[k - 1] + w * (tb[k] - tb[k - 1])
+    tz = np.where(h >= zupt, tb[0] - 0.0098 * (zupt - zc[0]), tz)
+    t1 = float(np.mean(tb[0]))
+    n2 = viento.G_FR / t1 * ((float(np.mean(tz)) - t1) / (zupt - zc[0]) + 0.01)
+    return math.sqrt(n2) if n2 > 0 else 0.0
+
+
+def _theta_capas(t3d, zc):
+    """θ = T + 0,0098 z con la temperatura 3D en los centros de capa: lineal entre centros y, fuera
+    de ellos, prolongada con la pendiente de los dos centros extremos (también por debajo del
+    primero) [caja negra: Δθ y ψ de la primera hora convectiva, La Galera 2026-10-20]."""
+    zc = np.asarray(zc, float)
+    th = np.asarray(t3d, float) + 0.0098 * zc[:, None, None]
+
+    def f(zq):
+        zq = np.asarray(zq, float)
+        k = np.clip(np.searchsorted(zc, zq), 1, len(zc) - 1)
+        za, zb = zc[k - 1], zc[k]
+        ta = np.take_along_axis(th, (k - 1)[None], 0)[0]
+        tb = np.take_along_axis(th, k[None], 0)[0]
+        return ta + (zq - za) / (zb - za) * (tb - ta)
+    return f
 
 
 def _media_dos_tramos(t0, g1, g2, h, za, zb):
@@ -498,6 +535,7 @@ def ejecutar(argv=None, carpeta=None):
                     # [caja negra] [W10]
                     irh = dat[obs.nears - 1, 5].astype(int)
             t1 = tk[0]
+            tk_base = tk          # temperatura de la hora antes del ajuste adiabático
             # flujo sensible: balance de energía de día, Venkatram de noche (con el viento inicial)
             qh_dia = micromet.flujo_sensible_diurno(qsw, t1, nub, geo["albedo"], geo["bowen"],
                                                     geo["hcg"], geo["qf"])
@@ -508,7 +546,24 @@ def ejecutar(argv=None, carpeta=None):
             # altura de mezcla convectiva y temperatura final antes del viento: el N del bloqueo
             # usa la temperatura ya ajustada [caja negra: caso del Prepirineo, N medido por horas]
             zp_p, tp_p = previo.get("niv", (ph["zp"], ph["tp"]))
-            th_prev = lambda zq: prog.theta_niveles(zp_p, tp_p, zq)
+            th_prog = lambda zq: prog.theta_niveles(zp_p, tp_p, zq)
+            th_prev = th_prog
+            if itprog == 2 and PSI_DE_T3D and "t3d" in previo:
+                # ψ por debajo del primer nivel del pronóstico con la temperatura 3D de la hora
+                # anterior (centros de capa, lineal y prolongada hasta el suelo), no con θ constante:
+                # con un primer nivel alto (975 hPa de ERA5, ~100 m) la ψ de la primera hora
+                # convectiva salía 2-3 veces menor y esa altura un 25-50 % más alta. Por encima del
+                # primer nivel, los niveles del pronóstico como hasta ahora [caja negra: Δθ del LDB
+                # y w*, La Galera 2026-10-20]. Solo con ITPROG = 2: con ITPROG = 1 la capa 1 es la
+                # de las estaciones y empeora (caso con ICON-EU y 36 estaciones)
+                if PSI_DE_T3D == "bajo_primer_nivel":
+                    th_cap = _theta_capas(previo["t3d_base"], malla.zc)
+                    z1 = prog.a_malla(np.asarray(zp_p[0], float))
+                    th_prev = lambda zq, _p=th_prog, _c=th_cap, _z=z1: np.where(
+                        np.asarray(zq) < _z, _c(zq), _p(zq))
+                else:
+                    th_prev = _theta_capas(previo["t3d" if PSI_DE_T3D == "ajustada" else "t3d_base"],
+                                           malla.zc)
             if itprog == 0:
                 # gradiente sobre la capa de mezcla del último sondeo de la estación IUPT
                 # [UG] sec. 2.3.1; caja negra [T8]
@@ -522,32 +577,44 @@ def ejecutar(argv=None, carpeta=None):
             hraw, hconv, psi = zm.convectiva(qh0, t1, rho, th_prev, agua,
                                              u[kz] if AV_INICIAL else None,
                                              v[kz] if AV_INICIAL else None, dx, bg=bg)
-            th_psi_w = th_prev if MODO_PSI_W == "anterior" else (
+            # sobre el agua, ψ como hasta ahora (niveles del pronóstico o sondeo)
+            th_psi_w = (th_prev if itprog == 0 else th_prog) if MODO_PSI_W == "anterior" else (
                 lambda zq: prog.theta_niveles(ph["zp"], ph["tp"], zq))
             previo["niv"] = (ph["zp"], ph["tp"])
             adiab = [hconv > malla.zc[kk] for kk in range(nz)]
             tk = _adiabatica(tk, t1, hconv, adiab, malla, caras)
+            # N del bloqueo (ITPROG = 1, 2): temperatura de la hora ajustada con la convectiva
+            # GUARDADA de la hora anterior (la promediada), no con la de esta hora, que aún no
+            # existe cuando se calcula el viento [caja negra: La Galera 2026-10-20; las diferencias
+            # del amanecer y del atardecer desaparecen con IFRADJ = 0 y con esta N]
+            z_mask = malla.zface[1:] if N_MASCARA == "cara" else malla.zc
+            adiab_n = ([h_ant >= z_mask[kk] for kk in range(nz)] if N_CON_ALTURA_ANTERIOR
+                       else adiab)
+            tk_n = (_adiabatica(tk_base, t1, h_ant, adiab_n, malla)
+                    if N_CON_ALTURA_ANTERIOR and itprog == 2 else tk)
             # paso 1
             if ikine and not ifradj:
-                tkn = ph["t"].copy() if itprog == 1 else tk
+                tkn = ph["t"].copy() if itprog == 1 else tk_n
                 if itprog == 1:
                     for kk in range(nz):
-                        tkn[kk] = np.where(adiab[kk], tkn[0] - 0.0098 * (malla.zc[kk] - malla.zc[0]),
+                        tkn[kk] = np.where(adiab_n[kk], tkn[0] - 0.0098 * (malla.zc[kk] - malla.zc[0]),
                                            tkn[kk])
                 if itprog == 0:
                     gam = grad_sond.hora(t, float(h_ant[sond.jc[iupt], sond.ic[iupt]]))
                     n2 = viento.G_FR / dat[isurft, 4] * (gam + 0.01)
                     nbv = math.sqrt(n2) if n2 > 0 else 0.0
+                elif N_CON_ALTURA_ANTERIOR and N_MASCARA == "zupt":
+                    nbv = _n_zupt(ph["t"] if itprog == 1 else tk_base, h_ant, malla.zc, zupt)
                 else:
                     nbv = viento.brunt_vaisala(tkn, malla.zc, zupt)
             if ifradj:
                 # N con la temperatura del pronóstico (también con ITPROG=1: las estaciones no
                 # entran en el bloqueo) [O14]
-                tkn = tk
+                tkn = tk_n
                 if itprog == 1:
                     tkn = ph["t"].copy()
                     for kk in range(nz):
-                        tkn[kk] = np.where(adiab[kk], tkn[0] - 0.0098 * (malla.zc[kk] - malla.zc[0]),
+                        tkn[kk] = np.where(adiab_n[kk], tkn[0] - 0.0098 * (malla.zc[kk] - malla.zc[0]),
                                            tkn[kk])
                 if itprog == 0:
                     # con los sondeos (ITPROG=0), N del gradiente del sondeo IUPT entre su primer
@@ -555,6 +622,8 @@ def ejecutar(argv=None, carpeta=None):
                     gam = grad_sond.hora(t, float(h_ant[sond.jc[iupt], sond.ic[iupt]]))
                     n2 = viento.G_FR / dat[isurft, 4] * (gam + 0.01)
                     nbv = math.sqrt(n2) if n2 > 0 else 0.0
+                elif N_CON_ALTURA_ANTERIOR and N_MASCARA == "zupt":
+                    nbv = _n_zupt(ph["t"] if itprog == 1 else tk_base, h_ant, malla.zc, zupt)
                 else:
                     nbv = viento.brunt_vaisala(tkn, malla.zc, zupt)
                 if ikine:
@@ -712,6 +781,15 @@ def ejecutar(argv=None, carpeta=None):
             elif con_mar:
                 hconv = hraw
                 zm.h = hconv
+            if (T3D_CON_PROMEDIADA and itprog in (1, 2) and not con_mar and not AV_INICIAL
+                    and p.get("IAVEZI", 0)):
+                # temperatura 3D de salida ajustada con la convectiva YA promediada (la que se
+                # escribe y queda guardada), no con la de antes del promedio [caja negra: capas
+                # adiabáticas de T-LEV hora a hora, La Galera 2026-10-20]
+                base = tk_base.copy()
+                base[0] = tk[0]
+                tk = _adiabatica(base, tk[0], hconv, [hconv > malla.zc[kk] for kk in range(nz)],
+                                 malla)
             # la N de la altura mecánica usa la temperatura del pronóstico en la capa 1 (también
             # con ITPROG=1) [O13]
             zi = zm.efectiva(qh, ust, el, ph["t"][0], hraw, psi, agua, ust_w, u[kz], v[kz], dx,
@@ -746,6 +824,7 @@ def ejecutar(argv=None, carpeta=None):
                 rmm = prog.a_malla(ph["rain_puntos"])
                 rmm = np.where(rmm >= cutp, rmm, 0.0)
                 ipcode = np.where(rmm > 0, np.where(t1 > 273.15, 10, 20), 0)
+            previo["t3d"], previo["t3d_base"] = tk, tk_base     # para la ψ de la hora siguiente
             d2 = {"IPGT": ipgt, "USTAR": ust, "ZI": zi, "EL": el, "WSTAR": wst, "RMM": rmm,
                   "TEMPK": t1, "RHO": rho, "QSW": qsw, "IRH": irh, "IPCODE": ipcode}
             hora = fichero_viento.Hora(ndathr, u, v, w, tk, d2)

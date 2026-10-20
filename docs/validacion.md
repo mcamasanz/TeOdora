@@ -13,7 +13,7 @@ paquete, ya con los nombres nuevos, y dan los mismos resultados que en el labora
 | `terreno.edificios` | BPIPPRM 04274 | 37 | 37 idénticos |
 | `terreno.geofisica` | MAKEGEO 2.29 | 24 | 14 idénticos · 10 con ±1 en la última cifra de unos pocos valores |
 | `meteo.capa_limite` | AERMET v26135 | 87 pasos (39 casos) | 73 idénticos · 14 fuera de alcance (formatos antiguos de EE. UU.) |
-| `meteo.viento3d` | CALMET 5.8.5 | 51 | 51 dentro del criterio (peor: 0,30° de dirección, 0,22 % de velocidad) |
+| `meteo.viento3d` | CALMET 5.8.5 | 51 (+2 en v0.1.1) | 51 dentro del criterio (peor: 0,30° de dirección, 0,22 % de velocidad); v0.1.1: ver abajo |
 | `dispersion.penacho` | AERMOD v26135 | 142 | 124 idénticos · 15 solo en los últimos bits · 2 solo en un volcado de depuración · 1 fuera de alcance |
 | `dispersion.puffs` | CALPUFF 5.8.5 | 65 | 65 dentro del criterio (peor FAC2: 0,993) |
 
@@ -98,6 +98,16 @@ usan formatos antiguos de EE. UU. (TD-6201, CD-144, SCRAM, SAMSON, HUSWO).
 - **R**: casos reales de Lleida y Huesca.
 
 Peor dirección media: 0,30°. Peor sesgo de velocidad: 0,22 %.
+
+**v0.1.1 (2026-10-20).** Cambian las horas de transición (amanecer y atardecer) con ITPROG = 1, 2
+y el bloqueo activo (IFRADJ = 1); ITPROG = 0 no cambia. Contrastado con calmet.exe 5.8.5 en dos
+casos reales de relieve complejo (La Galera, Montsià: 125×125 celdas de 400 m, 0-1 437 m), uno
+con ERA5 sin estaciones y otro con ICON-EU y 36 estaciones: celdas·hora con |Δv| > 0,1 m/s a
+10 m, 6 800 → 89 y 942 → 227; P98 de 24 h en 441 receptores, 16,3 % → 0,2 % y 0,9 % → 0,1 % de
+diferencia media por receptor. El caso de regresión `llano_lleida` sale idéntico byte a byte.
+⚠️ La batería de laboratorio de 51 casos aún no se ha vuelto a correr con la v0.1.1: los casos
+con relieve y bloqueo (S, R) pueden moverse en las horas de transición. Detalle en
+[core/meteo/viento3d/README.md](../core/meteo/viento3d/README.md) §Transiciones.
 
 ### `dispersion.penacho` (≡ AERMOD)
 142 casos. Familias:

@@ -36,6 +36,38 @@ peor sesgo de velocidad 0,22 %): pronóstico solo, estaciones, sondeos, costa (b
 oleaje, OCD), brisa, pluviómetros, temperatura 3D de sondeos, O'Brien, efectos cinemáticos,
 barreras y proyecciones LCC/TTM. Pendiente: IDIOPT, capa caliente/piel fría de COARE e ITWPROG=2
 (ver PENDIENTES.md).
+
+### Transiciones (amanecer y atardecer) con ITPROG = 1, 2 — desde la v0.1.1
+Caja negra con calmet.exe 5.8.5 en La Galera (Montsià, relieve de 0 a 1 437 m, 125×125 celdas de
+400 m, 2026-10-20). Con la v0.1.0, el viento a 10 m se separaba del original justo al amanecer y al
+atardecer (T1, ERA5 en una columna, NOOBS=2: |Δv| > 0,1 m/s en 767, 2 621 y 3 300 celdas a las
+06, 07 y 19 UTC), sobre todo en ladera. Con IFRADJ = 0 las diferencias desaparecían: venían del
+bloqueo, cuya N era otra. Tres reglas, medidas una a una:
+
+1. **N del bloqueo** (`N_CON_ALTURA_ANTERIOR`, `N_MASCARA = "zupt"`, `_n_zupt`): temperatura de la
+   hora sin ajustar y, solo donde la convectiva GUARDADA de la hora anterior (la promediada) llega
+   a ZUPT, T(ZUPT) adiabática desde la capa 1. Barrido de N forzada a las 07 UTC: el original usa
+   0,0061 (15 celdas distintas frente a 1 444 con 0,0045 y 773 con 0,0072); la v0.1.0 daba 0,0034.
+2. **ψ de la convectiva** (`PSI_DE_T3D = "bajo_primer_nivel"`, solo ITPROG = 2): por debajo del
+   primer nivel del pronóstico, θ de la temperatura 3D de la hora anterior (centros de capa, lineal
+   y prolongada hasta el suelo) en vez de θ constante. Con el 975 hPa de ERA5 a ~100 m del suelo la
+   ψ de la primera hora salía 2-3 veces menor y la altura de esa hora un 25-50 % mayor. Medido con
+   el Δθ del LDB y con w* en un caso llano y uniforme: ψ = 0,005183 frente a 0,005184 implícita
+   (1.er día) y h = 190,2 frente a 190,1 m (2.º día). Con ITPROG = 1 (capa 1 de las estaciones)
+   empeoraba un caso con ICON-EU y 36 estaciones, y no se aplica.
+3. **Temperatura 3D de salida** (`T3D_CON_PROMEDIADA`): ajustada con la convectiva YA promediada
+   (IAVEZI); las capas adiabáticas de T-LEV coinciden con las de la promediada hora a hora.
+
+Resultado (48 h con 24 de arranque; nivel 1, celdas·hora con |Δv| > 0,1 m/s · P98 de 24 h en 441
+receptores con un área de 1 g/s, diferencia media por receptor):
+
+| Caso | v0.1.0 | v0.1.1 |
+|---|---|---|
+| T1 · ERA5, NOOBS=2, ITPROG=2 | 6 800 · 16,3 % (máx. 66 %) | 89 · 0,2 % (máx. 2 %) |
+| T2 · ICON-EU 10×10 + 36 estaciones, ITPROG=1 | 942 · 0,9 % (máx. 15 %) | 227 · 0,1 % (máx. 3 %) |
+
+Sigue abierto: la convectiva de la tarde (13-18 UTC) se separa poco a poco (T1: |ΔZI| relativo
+medio 0,6 %) y, con ITPROG = 1, la ZI y la temperatura de día (T2: 2,3 %), igual que en la v0.1.0.
 <!-- /manual -->
 
 ## Ficheros
@@ -200,6 +232,8 @@ Programa principal: fichero de control -> CALMET.DAT 2.0 (o PACOUT.DAT con IFORM
 | `_reales(c, nombre)` | — | — |
 | `_extrapolacion_semejanza(obs, dat, malla, p, z0, t1, t1p, nub, qh_dia, rho, hraw, psi, agua, hem)` | IEXTRP=±4: L y altura de mezcla de cada estación con su viento observado y los campos de su celda (balance de energía de día, Venkatram de noche, como en la malla) y función (k, ws… | — |
 | `_adiabatica(tk, ts, h, adiab, malla, caras)` | Temperatura adiabática bajo la altura de mezcla convectiva h. | — |
+| `_n_zupt(tb, h, zc, zupt)` | N del dominio con T(ZUPT) adiabática donde la convectiva h llega a ZUPT (§Transiciones). | — |
+| `_theta_capas(t3d, zc)` | θ de la temperatura 3D en los centros de capa, lineal y prolongada fuera de ellos (§Transiciones). | — |
 | `_media_dos_tramos(t0, g1, g2, h, za, zb)` | Media en [za, zb] del perfil T(z) = t0 + g1·z bajo h y T(h) + g2·(z − h) encima. | — |
 | `_vientos_mar(dm, dmar, po, malla, p, icoare, hem, alto, h_agua, agua, olas_boya, icool)` | Vientos por capa de las estaciones sobre el agua para el paso 2: | — |
 | `ejecutar(argv, carpeta)` | — | — |
