@@ -61,6 +61,14 @@ se dedujo con experimentos dirigidos. Su procedencia está en el repositorio de 
 - Los binarios difieren en los últimos bits (mediana ~1e-15 relativo). La libm del original lleva
   FMA y está compilada con reasociación. Ni las funciones correctamente redondeadas lo eliminan.
 
+## Utilidades (no son motores)
+
+Desde la v0.1.2 hay también código que no reproduce ningún programa: coordenadas (`comun`), el
+almacén del viento (`meteo.viento3d.almacen`), la preparación de casos (`preparacion`: entradas y
+control escritos desde cero, solo con asignaciones) y, por partes, las fuentes de datos. No se traduce ni se valida frente a un original: se escribe directamente en este
+repositorio, con sus pruebas unitarias (regla R4 del auditor), y se valida frente al proyecto del
+que viene (mismos resultados bit a bit en el proyecto de La Galera).
+
 ## Cómo añadir o ampliar un motor
 
 1. Escribir o traducir el código en el laboratorio y validarlo allí frente al original, con su

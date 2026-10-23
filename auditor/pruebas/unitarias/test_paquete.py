@@ -19,7 +19,7 @@ MODULOS = sorted(m.name for m in pkgutil.walk_packages(odora.__path__, "odora.")
 
 
 def test_version():
-    assert odora.__version__ == "0.1.1"
+    assert odora.__version__ == "0.1.2"
 
 
 def test_se_importa_desde_core():

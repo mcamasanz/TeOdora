@@ -3,6 +3,41 @@
 Formato basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/); versionado
 semántico.
 
+## [0.1.2] — 2026-10-23
+
+Utilidades que no son motores, para que los proyectos (La Galera, digicompost…) no las tengan
+repetidas: coordenadas, almacén y lectura selectiva del viento, preparación de casos de viento3d
+y de puffs con el control escrito desde cero, y malla de receptores. Los motores no cambian (las
+baterías y los casos de regresión dan lo mismo). Las fuentes de datos y las métricas de
+validación quedan para otra versión (PENDIENTES §3).
+
+### Añadido
+- `comun.geo`: huso y EPSG del UTM (ETRS89 o WGS-84), ida y vuelta de coordenadas, convergencia de
+  meridianos, giro del viento a la cuadrícula, distancia y rumbo, cuadrados de dominio. Viene del
+  proyecto de La Galera (validado allí con pyproj: γ = −1,65° en EPSG:25831).
+- `meteo.viento3d.almacen`: almacén comprimido (.cmz) del fichero de viento, ≈ 9× con error máximo
+  de medio paso de cuantización por variable (enteros y EL sin pérdida), recorte al vuelo de las
+  horas de arranque y lectura de una sola variable sin reconstruir el fichero. Lee los .cmz que ya
+  escribía el proyecto de La Galera (mismo formato).
+- `meteo.viento3d.fichero_viento.leer_campos`: lectura selectiva por capas y campos 2D (un mes de
+  125×125×12 baja de ~5,5 GB a unos cientos de MB en memoria).
+- `preparacion` (necesita pandas: extra `odora[preparacion]`): casos de `meteo.viento3d` montados
+  desde datos ya descargados. `preparacion.control.Control` guarda las asignaciones EN ORDEN y
+  escribe el control solo con `! NOMBRE = valor !` y `!END!` (los lectores ignoran el resto), con
+  nombres de fichero propios (`viento3d.inp`, `geo.dat`, `pronostico3d.dat`, `nubes.dat`,
+  `estaciones.dat`, `viento3d.dat`). `preparacion.viento3d`: control con y sin estaciones, malla y
+  fichero geofísico, pronóstico 3D en una columna (reanálisis) o en columnas (modelo), nubes,
+  medias horarias y fichero de estaciones, recorte de las horas de arranque y viento en un punto
+  con dirección geográfica. Viene del proyecto de La Galera: allí da los mismos ficheros byte a
+  byte y la misma secuencia de asignaciones en el control.
+- `preparacion.puffs`: control de `dispersion.puffs` desde cero para una especie sin química ni
+  deposición, fuentes de área (`fuente_area`, g/(s·m²) por m²) y receptores discretos sobre el
+  viento 3D; `salida.concentraciones` (fin de cada periodo y matriz por receptor). En La Galera:
+  misma secuencia de asignaciones que su escritor salvo los nombres de las salidas de
+  deposición y visibilidad, y el mismo penacho bit a bit.
+- `preparacion.receptores.malla_anidada`: rejillas regulares anidadas alrededor de un centro
+  (cada nivel fuera del interior, sin duplicados) más receptores discretos dentro del dominio.
+
 ## [0.1.1] — 2026-10-20
 
 Corrección de `meteo.viento3d` en las horas de transición (amanecer y atardecer) con relieve.

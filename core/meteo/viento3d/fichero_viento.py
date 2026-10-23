@@ -280,6 +280,56 @@ def leer(ruta, horas=True):
     return cab, salida
 
 
+def leer_campos(ruta, niveles=(1,), campos2d=("TEMPK",)):
+    """Lectura SELECTIVA: el viento horizontal (U, V) de las capas `niveles` (1 = la más baja) y los
+    campos 2D `campos2d` de cada hora, sin cargar el resto. Un mes de 125×125 celdas y 12 capas
+    ocupa ~5,5 GB en memoria con `leer`; así, unos cientos de MB. De cada registro de campo solo se
+    lee la etiqueta y la fecha (12 bytes) y se salta lo que no se pide.
+    Devuelve (Cabecera, dict) con
+      ndathr  (horas,) int64: fecha AAAAJJJHH de cada hora (hora FINAL), en el orden del fichero
+      u, v    {nivel: (horas, ny, nx) float32}
+      <campo> (horas, ny, nx): int32 los enteros (ENTEROS_2D), float32 los demás."""
+    cab, _ = leer(ruta, horas=False)
+    nx, ny = cab.nx, cab.ny
+    n2d = 12 + 4 * nx * ny
+    quiero = {}
+    for k in niveles:
+        quiero["U-LEV%3d" % k] = ("u", k)
+        quiero["V-LEV%3d" % k] = ("v", k)
+    for c in campos2d:
+        quiero["%-8s" % c] = (c, None)
+    datos = {e: [] for e in quiero}
+    primera = next(iter(quiero), None)          # la que marca cada hora nueva
+    fechas = []
+    with open(ruta, "rb") as f:
+        while True:
+            h = f.read(4)
+            if len(h) < 4:
+                break
+            n = struct.unpack("<i", h)[0]
+            if n != n2d:
+                f.seek(n + 4, 1)
+                continue
+            pre = f.read(12)
+            etq = pre[:8].decode("latin-1")
+            if etq in quiero:
+                tipo = "<i4" if etq.strip() in ENTEROS_2D else "<f4"
+                datos[etq].append(np.frombuffer(f.read(n - 12), tipo).reshape(ny, nx))
+                f.seek(4, 1)
+                if etq == primera:
+                    fechas.append(struct.unpack("<i", pre[8:12])[0])
+            else:
+                f.seek(n - 12 + 4, 1)
+    out = {"ndathr": np.asarray(fechas, np.int64), "u": {}, "v": {}}
+    for etq, (clave, k) in quiero.items():
+        a = np.array(datos[etq])
+        if k is None:
+            out[clave] = a
+        else:
+            out[clave][k] = a
+    return cab, out
+
+
 def leer_pacout(ruta, nusta=0):
     """Lee un PACOUT.DAT -> (Cabecera mínima, [Hora]) con u, v de dos «capas» (la baja y la alta
     de MESOPUFF II), w y t nulos y los campos 2D ZI, USTAR, WSTAR, EL, IPGT, RMM y RHO (la media

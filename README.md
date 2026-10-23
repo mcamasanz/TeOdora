@@ -17,9 +17,9 @@ necesita ningún ejecutable externo.
 
 | | |
 |---|---|
-| Versión | **0.1.1** (2026-10-20) |
+| Versión | **0.1.2** (2026-10-23) |
 | Python | 3.11 o superior |
-| Dependencias | numpy, numba, rasterio, pyproj |
+| Dependencias | numpy, numba, rasterio, pyproj (y pandas para `preparacion`: `odora[preparacion]`) |
 | Estado | 8 motores validados dentro de su alcance; lo pendiente, en [PENDIENTES.md](PENDIENTES.md) |
 
 ---
@@ -99,6 +99,8 @@ odora/
 │   ├── equivalencias.md    motor por motor: fichero de odora ↔ módulo de la traducción ↔ original
 │   └── validacion.md       cómo se ha validado y resultados por motor
 ├── core/                   el código: se instala e importa como `odora`
+│   ├── comun/              utilidades comunes (UTM, convergencia): no son motores
+│   ├── preparacion/        entradas y control de los motores (viento3d, puffs), receptores
 │   ├── __main__.py         línea de órdenes: python -m odora <motor> …
 │   ├── terreno/            relieve · superficie · edificios · geofisica
 │   ├── meteo/              capa_limite · viento3d
@@ -187,7 +189,7 @@ versión fija de este repositorio y le añade su interfaz, sus catálogos de fue
 
 ## Versiones
 
-Versionado semántico. Historial en [CHANGELOG.md](CHANGELOG.md). La última es la **v0.1.1**; la v0.1.0 es la
+Versionado semántico. Historial en [CHANGELOG.md](CHANGELOG.md). La última es la **v0.1.2**; la v0.1.0 es la
 base sobre la que se van publicando las actualizaciones.
 
 ## Licencia

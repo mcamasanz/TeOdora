@@ -72,7 +72,8 @@ MDISP 2 y 4 (65/65 casos).*
    añadir uno por cada opción validada que aún no tenga el suyo (fosos, RLINE, química GRSM y
    PVMRM, deposición en puffs, observaciones en viento3d…).
 7. **Unificar** el lector del fichero de viento, hoy duplicado en `meteo.viento3d` y
-   `dispersion.puffs`, y las utilidades comunes (formato fijo, UTM) en `comun/`.
+   `dispersion.puffs` (desde la v0.1.2 el de viento3d ya lee por capas y campos: `leer_campos`), y
+   las utilidades de formato fijo en `comun/` (el UTM ya está en `comun.geo`).
 
 ## 3. Proyectos
 
@@ -80,3 +81,7 @@ MDISP 2 y 4 (65/65 casos).*
   digicompost usa la copia de trabajo del laboratorio).
 - Edificios en la cadena de puffs de los proyectos: pasar las dimensiones de `terreno.edificios`
   al fichero de control de `dispersion.puffs`. El motor ya lo soporta.
+- Utilidades que aún están en el proyecto de La Galera y pasarán aquí (como las de la v0.1.2):
+  - **fuentes de datos**: descargas del MDT (WCS del IGN), CORINE, edificios (WFS del Catastro),
+    estaciones de Meteocat, ERA5 (CDS), GFS (NOAA y dynamical.org) y Open-Meteo;
+  - **métricas de validación** del viento frente a estaciones (Emery 2001, rosas, día y noche).

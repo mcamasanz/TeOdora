@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "odora"
-version = "0.1.1"
+version = "0.1.2"
 description = "Motores propios de terreno, meteorología y dispersión atmosférica (penacho gaussiano y puffs lagrangianos)"
 readme = "README.md"
 requires-python = ">=3.11"
@@ -18,7 +18,8 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
-pruebas = ["pytest>=7"]
+preparacion = ["pandas>=2"]
+pruebas = ["pytest>=7", "pandas>=2"]
 
 [project.scripts]
 odora = "odora.__main__:main"
@@ -28,6 +29,7 @@ odora = "odora.__main__:main"
 package-dir = { "odora" = "core" }
 packages = [
     "odora",
+    "odora.comun",
     "odora.terreno",
     "odora.terreno.relieve",
     "odora.terreno.superficie",
@@ -39,6 +41,9 @@ packages = [
     "odora.dispersion",
     "odora.dispersion.penacho",
     "odora.dispersion.puffs",
+    "odora.preparacion",
+    "odora.preparacion.viento3d",
+    "odora.preparacion.puffs",
 ]
 
 [tool.pytest.ini_options]

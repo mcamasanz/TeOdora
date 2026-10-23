@@ -109,6 +109,10 @@ diferencia media por receptor. El caso de regresión `llano_lleida` sale idénti
 con relieve y bloqueo (S, R) pueden moverse en las horas de transición. Detalle en
 [core/meteo/viento3d/README.md](../core/meteo/viento3d/README.md) §Transiciones.
 
+**v0.1.2 (2026-10-23).** Sin cambios en los motores: solo utilidades nuevas (`comun`,
+`meteo.viento3d.almacen`, `fichero_viento.leer_campos`, `preparacion`) con sus pruebas
+unitarias; los casos de regresión salen idénticos.
+
 ### `dispersion.penacho` (≡ AERMOD)
 142 casos. Familias:
 - **D**: el caso real de digicompost;

@@ -78,7 +78,8 @@ medio 0,6 %) y, con ITPROG = 1, la ZI y la temperatura de día (T2: 2,3 %), igua
 | `__main__.py` | — | `__main__.py` | funcional (CALMET) |
 | `control.py` | Lector de ficheros de control con la sintaxis publicada de CALMET (la misma de la fase 06). | `control.py` | funcional (CALMET) |
 | `entradas.py` | Lectores de las entradas de CALMET que usamos: GEO.DAT 2.0, 3D.DAT 2.1, CLOUD.DAT, SURF.DAT, UPn.DAT, SEAn.DAT y PRECIP.DAT. | `entradas.py` | funcional (CALMET) |
-| `fichero_viento.py` | Lectura y escritura del fichero de salida CALMET.DAT (versión de dataset 2.0). | `calmetdat.py` | funcional (CALMET) |
+| `almacen.py` | Almacén comprimido del fichero de viento (un .cmz por periodo, ≈ 9×), su reconstrucción y la lectura de una sola variable (`leer_campo`). Utilidad propia (desde la v0.1.2). | — | — |
+| `fichero_viento.py` | Lectura y escritura del fichero de salida CALMET.DAT (versión de dataset 2.0); `leer_campos`: lectura selectiva por capas y campos 2D (desde la v0.1.2). | `calmetdat.py` | funcional (CALMET) |
 | `lluvia.py` | Pluviómetros (NPSTA > 0): estaciones del grupo 9, PRECIP.DAT e interpolación de la precipitación a la malla. | `lluvia.py` | funcional (CALMET) |
 | `malla.py` | Malla de cálculo: centros de celda, caras y centros de las capas, gradiente del terreno. | `malla.py` | funcional (CALMET) |
 | `mar.py` | Estaciones sobre el agua (SEAn.DAT, NOWSTA > 0) y capa límite marina sobre las celdas de agua. | `mar.py` | funcional (CALMET) |

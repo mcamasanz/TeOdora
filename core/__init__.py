@@ -16,10 +16,16 @@ Paquetes:
     dispersion.penacho     dispersión gaussiana estacionaria
     dispersion.puffs       dispersión lagrangiana por puffs
 
+Utilidades (no son motores):
+    comun.geo              UTM, convergencia de meridianos, distancias y cuadrados de dominio
+    meteo.viento3d.almacen almacén comprimido (.cmz) del fichero de viento 3D
+    preparacion            entradas y control de los motores escritos desde cero (viento3d,
+                           puffs) y malla de receptores anidada
+
 Cada motor se puede lanzar por línea de órdenes: `python -m odora <motor> [argumentos]`.
 """
-__version__ = "0.1.1"
-__fecha__ = "2026-10-20"
+__version__ = "0.1.2"
+__fecha__ = "2026-10-23"
 
 MOTORES = ("relieve", "superficie", "edificios", "geofisica", "capa_limite", "viento3d", "penacho",
            "puffs")
