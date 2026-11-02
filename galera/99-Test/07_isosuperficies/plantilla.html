@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Penacho en 3D</title>
+<style>
+  :root { --fondo:#10161c; --panel:rgba(16,22,28,.86); --texto:#e6edf3; --tenue:#9fb0bf; --acento:#58b0ff; --borde:rgba(255,255,255,.14); }
+  html, body { margin:0; height:100%; background:var(--fondo); color:var(--texto); font:13px "Segoe UI",Arial,sans-serif; overflow:hidden; }
+  canvas { display:block; }
+  #panel { position:absolute; top:12px; left:12px; width:292px; padding:12px 14px; background:var(--panel); border:1px solid var(--borde); border-radius:10px; }
+  h1 { margin:0 0 2px; font-size:15px; font-weight:600; }
+  .tenue { color:var(--tenue); }
+  .fila { margin-top:11px; }
+  .fila label.t { display:flex; justify-content:space-between; margin-bottom:4px; }
+  input[type=range] { width:100%; accent-color:var(--acento); margin:0; }
+  .nivel { display:flex; align-items:center; gap:8px; margin-top:4px; cursor:pointer; }
+  .nivel i { width:14px; height:14px; border-radius:3px; display:inline-block; }
+  #hora { font-weight:600; }
+  #datos { margin-top:11px; line-height:1.5; }
+  button { margin-top:11px; padding:4px 10px; background:transparent; color:var(--texto); border:1px solid var(--borde); border-radius:6px; cursor:pointer; font:inherit; }
+  button:hover { border-color:var(--acento); }
+  #creditos { position:absolute; right:10px; bottom:6px; font-size:11px; color:var(--tenue); text-shadow:0 0 3px #000; }
+  .rotulo { position:absolute; transform:translate(-50%,-100%); padding:1px 6px; background:rgba(16,22,28,.78); border-radius:4px; font-size:11px; white-space:nowrap; pointer-events:none; }
+  .rotulo.planta { color:#ffd166; font-weight:600; }
+  #norte { position:absolute; right:14px; top:12px; width:42px; height:42px; }
+  @media (max-width:560px) { #panel { left:8px; right:8px; width:auto; } }
+</style>
+</head>
+<body>
+<div id="panel">
+  <h1>Penacho en 3D</h1>
+  <div class="tenue">Prueba · focos de ejemplo · 21-oct-2026</div>
+  <div class="fila">
+    <label class="t" for="h"><span>Hora</span><span id="hora"></span></label>
+    <input id="h" type="range" min="0" max="23" step="1">
+  </div>
+  <div class="fila" id="niveles"><div class="tenue">ou_E/m³</div></div>
+  <div class="fila">
+    <label class="t" for="e"><span>Exageración vertical</span><span id="ev"></span></label>
+    <input id="e" type="range" min="1" max="6" step="0.5" value="3">
+  </div>
+  <div id="datos" class="tenue"></div>
+  <button id="play" type="button">Animar</button>
+</div>
+<svg id="norte" viewBox="-21 -21 42 42"><g id="brujula"><path d="M0 -12 L6 11 L0 7 L-6 11 Z" fill="#e6edf3"/><text x="0" y="-13.5" text-anchor="middle" font-size="9" fill="#e6edf3">N</text></g></svg>
+<div id="creditos">Ortofoto PNOA © IGN (CC BY 4.0) · three.js (MIT)</div>
+<script>/*THREE*/</script>
+<script>/*ORBIT*/</script>
+<script>
+var D = /*DATOS*/;
+var ORTO = "data:image/jpeg;base64,/*ORTO*/";
+(function () {
+  function bytes(b) { var s = atob(b), n = s.length, a = new Uint8Array(n); for (var i = 0; i < n; i++) { a[i] = s.charCodeAt(i); } return a.buffer; }
+  var COLOR = {1: 0xffd60a, 3: 0xf77f00, 5: 0xa4000f};
+  var OPAC = {1: 0.22, 3: 0.36, 5: 1.0};
+  var escena = new THREE.Scene(); escena.background = new THREE.Color(0x10161c);
+  var render = new THREE.WebGLRenderer({antialias: true, preserveDrawingBuffer: true});
+  render.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+  render.setSize(innerWidth, innerHeight);
+  render.outputEncoding = THREE.sRGBEncoding;
+  document.body.insertBefore(render.domElement, document.body.firstChild);
+  var cam = new THREE.PerspectiveCamera(38, innerWidth / innerHeight, 10, 60000);
+  var ctl = new THREE.OrbitControls(cam, render.domElement);
+  ctl.enableDamping = true; ctl.dampingFactor = 0.1; ctl.maxPolarAngle = Math.PI * 0.495;
+  escena.add(new THREE.HemisphereLight(0xffffff, 0x555555, 0.8));
+  var sol = new THREE.DirectionalLight(0xffffff, 0.5); sol.position.set(-3000, 6000, 2000); escena.add(sol);
+
+  // Mundo: x = este, y = arriba, z = sur. El grupo lleva la exageración vertical.
+  var mundo = new THREE.Group(); escena.add(mundo);
+  var T = D.terreno, zt = new Int16Array(bytes(T.z)), n = T.n, cotaMedia = 0;
+  var pos = new Float32Array(n * n * 3), uv = new Float32Array(n * n * 2);
+  for (var j = 0; j < n; j++) { for (var i = 0; i < n; i++) {
+    var q = j * n + i, x = -T.semilado + i * T.paso, y = -T.semilado + j * T.paso, z = zt[q] / 10;
+    pos[3 * q] = x; pos[3 * q + 1] = z; pos[3 * q + 2] = -y; cotaMedia += z;
+    uv[2 * q] = i / (n - 1); uv[2 * q + 1] = j / (n - 1);
+  } }
+  cotaMedia /= n * n;
+  var ind = [];
+  for (j = 0; j < n - 1; j++) { for (i = 0; i < n - 1; i++) {
+    var a = j * n + i, b = a + 1, c = a + n, d = c + 1;
+    ind.push(a, b, c, b, d, c);
+  } }
+  var gt = new THREE.BufferGeometry();
+  gt.setAttribute("position", new THREE.BufferAttribute(pos, 3));
+  gt.setAttribute("uv", new THREE.BufferAttribute(uv, 2));
+  gt.setIndex(ind); gt.computeVertexNormals();
+  var mt = new THREE.MeshStandardMaterial({color: 0xffffff, roughness: 1, metalness: 0, side: THREE.DoubleSide});
+  var img = new Image();
+  img.onload = function () {
+    var tx = new THREE.Texture(img); tx.encoding = THREE.sRGBEncoding; tx.anisotropy = 8; tx.needsUpdate = true;
+    mt.map = tx; mt.needsUpdate = true; pinta();
+  };
+  img.src = ORTO;
+  var malla = new THREE.Mesh(gt, mt); mundo.add(malla);
+
+  // Isosuperficies: se crean la primera vez que se ve cada hora
+  var horas = Object.keys(D.horas).sort(), grupos = {}, visibles = {};
+  D.niveles.forEach(function (v) { visibles[v] = true; });
+  function grupoHora(h) {
+    if (grupos[h]) { return grupos[h]; }
+    var g = new THREE.Group(), s = D.horas[h];
+    D.niveles.forEach(function (v, k) {
+      var e = s[v.toFixed(1)]; if (!e) { return; }
+      var p = new Int16Array(bytes(e.p)), o = new Float32Array(p.length), w = D.escala_m;
+      for (var i = 0; i < p.length; i += 3) { o[i] = p[i] * w; o[i + 1] = p[i + 2] * w; o[i + 2] = -p[i + 1] * w; }
+      var ge = new THREE.BufferGeometry();
+      ge.setAttribute("position", new THREE.BufferAttribute(o, 3));
+      ge.setIndex(new THREE.BufferAttribute(new Uint16Array(bytes(e.i)), 1));
+      ge.computeVertexNormals();
+      var op = OPAC[v] === undefined ? 0.6 : OPAC[v];
+      var m = new THREE.MeshPhongMaterial({color: COLOR[v] || 0xffffff, transparent: op < 1, opacity: op, side: THREE.DoubleSide,
+                                           depthWrite: op >= 1, shininess: 12, specular: 0x111111});
+      var me = new THREE.Mesh(ge, m);
+      me.renderOrder = 10 + (D.niveles.length - k);      // de dentro afuera: lo opaco primero
+      me.userData.nivel = v;
+      g.add(me);
+    });
+    mundo.add(g); grupos[h] = g; return g;
+  }
+  var horaActual = null;
+  function verHora(h) {
+    Object.keys(grupos).forEach(function (k) { grupos[k].visible = false; });
+    var g = grupoHora(h); g.visible = true;
+    g.children.forEach(function (m) { m.visible = !!visibles[m.userData.nivel]; });
+    horaActual = h;
+    var u = parseInt(h, 10), of = (u + 2) % 24;
+    document.getElementById("hora").textContent = h + " UTC · " + (of < 10 ? "0" : "") + of + ":00 oficial";
+    var f = D.tabla ? D.tabla[u] : null;
+    document.getElementById("datos").innerHTML = f ? ("Máximo: " + String(f.maximo).replace(".", ",") + " ou_E/m³ · malla de " + f.paso_m + " m<br>1 ou_E/m³ llega a " + (f.altura_max_m || 0) +
+      " m sobre el suelo y a " + ((f.alcance_m || 0) / 1000).toFixed(1).replace(".", ",") + " km") : "";
+    pinta();
+  }
+
+  // Controles
+  var parte = {}; location.hash.replace(/^#/, "").split("&").forEach(function (t) { var u = t.split("="); parte[u[0]] = u[1]; });
+  if (parte.n) { var pedidos = parte.n.split(",").map(Number); D.niveles.forEach(function (v) { visibles[v] = pedidos.indexOf(v) >= 0; }); }
+  var cont = document.getElementById("niveles");
+  D.niveles.forEach(function (v) {
+    var l = document.createElement("label"); l.className = "nivel";
+    var ch = document.createElement("input"); ch.type = "checkbox"; ch.checked = visibles[v];
+    ch.addEventListener("change", function () { visibles[v] = ch.checked; verHora(horaActual); });
+    var i_ = document.createElement("i"); i_.style.background = "#" + (COLOR[v] || 0xffffff).toString(16).padStart(6, "0");
+    l.appendChild(ch); l.appendChild(i_); l.appendChild(document.createTextNode(String(v)));
+    cont.appendChild(l);
+  });
+  var eH = document.getElementById("h"), eE = document.getElementById("e"), eV = document.getElementById("ev");
+  eH.max = horas.length - 1;
+  eH.addEventListener("input", function () { verHora(horas[+eH.value]); });
+  function exag(v) { mundo.scale.y = v; eV.textContent = "×" + v; pinta(); }
+  eE.addEventListener("input", function () { exag(+eE.value); });
+  var bPlay = document.getElementById("play"), reloj = null;
+  bPlay.addEventListener("click", function () {
+    if (reloj) { clearInterval(reloj); reloj = null; bPlay.textContent = "Animar"; return; }
+    bPlay.textContent = "Parar";
+    reloj = setInterval(function () { eH.value = (+eH.value + 1) % horas.length; verHora(horas[+eH.value]); }, 900);
+  });
+
+  // Rótulos en la pantalla
+  var capa = document.body, rot = D.rotulos.map(function (r, k) {
+    var e = document.createElement("div"); e.className = "rotulo" + (k === 0 ? " planta" : ""); e.textContent = r.t; capa.appendChild(e);
+    return {e: e, v: new THREE.Vector3(r.x, r.z + 30, -r.y)};
+  });
+  var vt = new THREE.Vector3();
+  function rotulos() {
+    rot.forEach(function (r) {
+      vt.copy(r.v); vt.y *= mundo.scale.y; vt.project(cam);
+      var fuera = vt.z > 1 || Math.abs(vt.x) > 1 || Math.abs(vt.y) > 1;
+      r.e.style.display = fuera ? "none" : "block";
+      r.e.style.left = ((vt.x + 1) / 2 * innerWidth) + "px"; r.e.style.top = ((1 - vt.y) / 2 * innerHeight) + "px";
+    });
+    var dir = new THREE.Vector3(); cam.getWorldDirection(dir);
+    document.getElementById("brujula").setAttribute("transform", "rotate(" + (Math.atan2(dir.x, -dir.z) * -180 / Math.PI) + ")");
+  }
+
+  var pendiente = false;
+  function pinta() { pendiente = true; }
+  ctl.addEventListener("change", pinta);
+  function cuadro() {
+    requestAnimationFrame(cuadro);
+    ctl.update();
+    if (pendiente) { pendiente = false; render.render(escena, cam); rotulos(); }
+  }
+  addEventListener("resize", function () {
+    cam.aspect = innerWidth / innerHeight; cam.updateProjectionMatrix(); render.setSize(innerWidth, innerHeight); pinta();
+  });
+  // Vista inicial: desde el suroeste, mirando el penacho que va hacia el sureste. #h=15 elige la hora, #e=2 la exageración,
+  // #cx=…&cy=…&cz=…&tx=…&ty=…&tz=… la cámara y el punto al que mira, #n=1,5 los niveles.
+  exag(parte.e ? +parte.e : 3); eE.value = parte.e ? +parte.e : 3;
+  var h0 = parte.h && D.horas[parte.h] ? parte.h : "07";
+  eH.value = horas.indexOf(h0);
+  ctl.target.set(parte.tx ? +parte.tx : 1100, parte.ty ? +parte.ty : cotaMedia * mundo.scale.y, parte.tz ? +parte.tz : 600);
+  cam.position.set(parte.cx ? +parte.cx : -300, parte.cy ? +parte.cy : 1500, parte.cz ? +parte.cz : 3000);
+  ctl.update();
+  verHora(h0);
+  cuadro();
+  window.vista = {cam: cam, ctl: ctl, mundo: mundo, grupos: grupos, render: render};
+})();
+</script>
+</body>
+</html>

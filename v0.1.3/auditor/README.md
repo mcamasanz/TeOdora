@@ -3,8 +3,8 @@
 Ningún cambio entra en la rama principal de teOdors sin pasar el auditor:
 
 ```bash
-python -m auditor                 # audita lo que cambia respecto a main (confirmado y sin confirmar)
-python -m auditor --base v0.1.0   # respecto a otra referencia de git
+python -m auditor                 # desde la carpeta de la versión: audita lo que cambia respecto a la anterior
+python -m auditor --base ../v0.1.0   # respecto a otra carpeta
 python -m auditor --solo-pruebas  # solo las pruebas y sus tiempos (R1-R3)
 ```
 
@@ -20,8 +20,9 @@ El resultado es **APTO** (código 0) o **NO APTO** (código 1), con el detalle d
 | **R4 pruebas nuevas** | cada motor (o parte del paquete) con código **añadido o modificado** trae pruebas nuevas o modificadas que lo nombran, o un caso nuevo de regresión | todo código nuevo llega con su prueba |
 | **R5 referencias** | si cambia una referencia (`casos/*/*/referencia/` o `caso.json`), `CAMBIOS_REFERENCIA.md` tiene una entrada nueva que nombra el caso y lo justifica | un resultado no cambia sin explicar por qué |
 | **R6 sin perder pruebas** | no se borran ficheros de pruebas ni casos, y ningún fichero de pruebas pierde funciones `test_` | el conjunto de pruebas solo crece |
+| **R7 versiones** | cada carpeta se llama como su versión, una publicada no se toca y cada planta usa una versión que existe | saber siempre qué código usa cada planta |
 
-R4, R5 y R6 comparan con la rama `main` (o la referencia que se indique con `--base`).
+R4, R5 y R6 comparan esta carpeta con la de la versión anterior, a su lado (o la que se indique con `--base`). R7 mira todas las versiones y plantas del repositorio: una versión con su etiqueta no se toca.
 
 ## Qué hay aquí
 

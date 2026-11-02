@@ -1,0 +1,145 @@
+{
+  "formato": 1,
+  "identidad": {
+    "app_nombre": "ENCE La Galera · Dispersión",
+    "organizacion": "CIRCE",
+    "ajustes": "ENCE_Galera",
+    "app_id": "CIRCE.ENCE.LaGalera",
+    "version": "0.1.0",
+    "entidad": "Fundación CIRCE",
+    "red_datos": "la red de CIRCE (o a la VPN)",
+    "prefijo_env": "ENCE_GALERA",
+    "carpeta_local": "ence_galera",
+    "registro": "galera",
+    "agente_http": "Mozilla/5.0 ENCE-Galera",
+    "nombre_casos": "ENCE La Galera",
+    "nota": "ajustes: el fichero %APPDATA%\\CIRCE\\ENCE_Galera.ini, con la disposición y las preferencias de quien usa la app; NO cambiarlo, o las pierde. app_id: el icono de la barra de tareas de Windows. version: la de esta aplicación, no la de teOdors. red_datos: a qué conectarse si no se llega a la carpeta de datos."
+  },
+  "proyeccion": {
+    "epsg": "EPSG:25831",
+    "crs_geo": "EPSG:4258",
+    "zona_horaria": "Europe/Madrid",
+    "nota": "La Galera (0,46° E) cae en el huso 31. Convergencia medida con pyproj: −1,65° en 25831 y +2,26° en 25830; ninguno la anula, así que un viento geográfico se gira siempre con geo.dir_geo_a_rejilla."
+  },
+  "dominio": {
+    "lado_km": 50.0,
+    "margen_m": 500.0,
+    "res_terreno_m": 25.0,
+    "radio_edificios_km": 2.0,
+    "radio_edificios_focos_m": 200.0,
+    "celda_viento_m": 400.0,
+    "zface": [0, 20, 40, 60, 90, 130, 200, 300, 500, 800, 1200, 2000, 3000],
+    "nota": "Dominio FIJO (decisión del usuario, 2026-10-14): lado_km es el LADO del terreno; el cálculo llega a 24,5 km del centro. 50 km / 400 m = 125 × 125 celdas de viento. Edificios: se descargan a 2 km (las viviendas son receptores) y se enseñan a 200 m (estelas de chimenea)."
+  },
+  "receptores": {
+    "por_km2": 10,
+    "niveles": [
+      ["cercana", 25.0, 500.0],
+      ["proxima", 50.0, 1000.0],
+      ["fina", 100.0, 3000.0],
+      ["media", 300.0, 6000.0],
+      ["gruesa", 700.0, null]
+    ],
+    "estilos": {
+      "cercana": ["#7a0177", 1.2, "Cercana · 25 m (±500 m)"],
+      "proxima": ["#c51b8a", 1.4, "Próxima · 50 m (±1 km)"],
+      "fina": ["#d7301f", 1.6, "Fina · 100 m (±3 km)"],
+      "media": ["#f28e1c", 1.8, "Media · 300 m (±6 km)"],
+      "gruesa": ["#555555", 2.0, "Gruesa · 700 m (todo el dominio)"],
+      "nucleo": ["#2b7bba", 4.0, "Núcleos CORINE"],
+      "vivienda": ["#7b3294", 2.6, "Viviendas del Catastro (< 2 km)"],
+      "nombrado": ["#00a6a6", 4.0, "Receptores con nombre"]
+    },
+    "nota": "niveles: [clase, paso en m, semilado en m; null = todo el dominio], de dentro afuera y centrados en la planta mientras no haya lista de focos (pedirla a ENCE). Decisión del usuario, 2026-10-31; lo que aporta cada uno, medido en 99-Test/04_malla_cercana. fina: La Galera y el 89 % de Santa Bàrbara, con el Institut Les Planes. gruesa: llega justo al borde, 35 × 700 m = 24,5 km. Sin nivel de 5 m: ±100 m cae en UNA celda de viento de 400 m y dentro de la planta. Las viviendas del Catastro a menos de 2 km son receptores porque CORINE no ve el casco de La Galera (unidad mínima 25 ha). estilos: [color, radio en píxeles, texto] de cada clase en la capa del mapa."
+  },
+  "reanalisis": {
+    "anios": [2021, 2022, 2023, 2024, 2025]
+  },
+  "estaciones": {
+    "proveedor": "Meteocat",
+    "radio_km": 20.0,
+    "codigos": ["C9", "UX", "UU", "U9", "US", "UW", "X5", "U7"],
+    "objetivo": "C9",
+    "ceros_sospechosos": {"C9": "2025-06-01"},
+    "mediodia_utc_h": 12.0,
+    "agente_http": "ENCE-Galera/0.1",
+    "nota": "Meteocat, datos abiertos. objetivo: Mas de Barberans, la más cercana a la planta (decisión del usuario, 2026-10-20). ceros_sospechosos: desde esa fecha, un 0 m/s exacto se invalida (en C9, las calmas se multiplican por 5-10 desde junio de 2025 y hay 0 m/s con ERA5 > 2 m/s; decisión del usuario, 2026-10-20). agente_http: el de este servicio, distinto del de identidad; se deja como estaba. mediodia_utc_h: con él, teOdors deduce si la hora de una estación es la del inicio o la del final de su media (ventana de ±0,6 h). El mediodía solar de aquí es 11,97 h; se deja en 12,0, como estaba en el código, para que la convención deducida no cambie."
+  },
+  "pronostico": {
+    "caja_gfs": {"lat": [40.25, 41.25], "lon": [0.0, 1.0]},
+    "semanas_mos": ["2022-01-17", "2024-12-16", "2023-04-24", "2025-04-07", "2022-07-11", "2024-07-29", "2021-11-01", "2023-10-16"],
+    "mos_hasta": "2025-12-31 23:00",
+    "n_col": 4,
+    "paso_col_m": 12500.0,
+    "nota": "caja_gfs: 5 × 5 puntos de GFS 0,25° con las 8 estaciones y la planta. semanas_mos: las de validación de la prueba «dejando una estación fuera» del MOS, 2 por estación del año y antes de 2025-06 por el anemómetro de C9. mos_hasta: el último dato de las estaciones descargado; lo posterior no entra en la tabla del MOS. n_col y paso_col_m: columnas de GFS en la malla del viento, centradas en la planta (GFS: ~21 × 28 km)."
+  },
+  "series": {
+    "r1_km": 5.0,
+    "rmax_km": 30.0,
+    "era5": "odora_era5_8est",
+    "gfs": "odora_gfs_8est",
+    "preferidas": ["odora_era5_8est", "odora_gfs_8est"],
+    "titulos": {
+      "odora_era5_8est": "teOdors · ERA5 + 8 estaciones · 0–20 m",
+      "exe_era5_8est": "ejecutable de referencia · ERA5 + 8 estaciones · 0–20 m",
+      "odora_gfs_8est": "teOdors · GFS + 8 estaciones · 0–20 m"
+    },
+    "dia_prueba": "2026-10-21",
+    "nota": "Radios de influencia de las estaciones en el viento 3D (R1 y R2; RMAX1 y RMAX2). Con R1 = 15 km se repartían las calmas de los anemómetros abrigados de 2 m: ver CLAUDE.md. Nombres de carpeta en DATOS/viento3d, ya en disco: no cambiarlos. era5: la de los años del reanálisis (viento3d_series). gfs: la de un día suelto (viento_periodo, respuestas). preferidas: la app usa la primera que exista. titulos: los de la leyenda del viento. dia_prueba: el día que calcula respuestas sin --dia."
+  },
+  "fuentes": {
+    "mdt": "IGN",
+    "usos": "CORINE",
+    "edificios": "Catastro",
+    "nombres_nucleos": "CartoCiudad (IGN)",
+    "fondos": [
+      ["Satélite (ortofoto PNOA)", "https://www.ign.es/wmts/pnoa-ma?request=GetTile&service=WMTS&VERSION=1.0.0&Layer=OI.OrthoimageCoverage&Style=default&Format=image/jpeg&TileMatrixSet=GoogleMapsCompatible&TileMatrix={z}&TileRow={y}&TileCol={x}", "© <a href=\"https://www.ign.es\" target=\"_blank\">Instituto Geográfico Nacional</a> · CC BY 4.0 <a href=\"https://www.scne.es\" target=\"_blank\">scne.es</a>", 19],
+      ["Callejero (OSM)", "https://tile.openstreetmap.org/{z}/{x}/{y}.png", "© <a href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a>", 19]
+    ],
+    "creditos": [
+      "Satélite (ortofoto PNOA) y MDT: © Instituto Geográfico Nacional de España, CC BY 4.0 scne.es",
+      "Uso del suelo: CORINE Land Cover 2018 (Copernicus / IGN)",
+      "Edificios: © Dirección General del Catastro (dato transformado)",
+      "Alturas de los edificios de la planta: LiDAR del Institut Cartogràfic i Geològic de Catalunya",
+      "Callejero: © colaboradores de OpenStreetMap (ODbL)",
+      "Nombres de los núcleos: CartoCiudad, © Instituto Geográfico Nacional, CC BY 4.0"
+    ],
+    "nota": "mdt, usos, edificios y nombres_nucleos: cómo llama la interfaz a cada servicio. fondos: [nombre, url, atribución, zoom nativo máximo], el primero el que se ve al abrir. Solo dos, por decisión del usuario, con licencia apta para un producto (guía 10): satélite y callejero; el relieve ya lo da la capa de elevación, y Esri NO (exige cuenta comercial). Si el acceso a las teselas de OSM se restringe, el callejero se cambia por el mapa base del IGN (https://www.ign.es/wmts/ign-base, capa IGNBaseTodo, image/png). creditos: los de esta planta en «Acerca de»; las librerías las añade teOdors.",
+    "corine_gpkg": [
+      "$OneDriveCommercial/Escritorio/Mountains/inundaciones/src/data/usos/CLC2018_ES.gpkg",
+      "$OneDriveCommercial/Escritorio/PyroSmoke/src/data/usos/CLC2018_ES.gpkg",
+      "$OneDriveCommercial/Escritorio/stl/src/data/usos/CLC2018_ES.gpkg",
+      "$OneDrive/Escritorio/Mountains/inundaciones/src/data/usos/CLC2018_ES.gpkg",
+      "$OneDrive/Escritorio/PyroSmoke/src/data/usos/CLC2018_ES.gpkg",
+      "$OneDrive/Escritorio/stl/src/data/usos/CLC2018_ES.gpkg"
+    ]
+  },
+  "viento_local": {
+    "puntos": [[286796.0, 4507440.0], [286228.0, 4507320.0]],
+    "radio_m": 200.0,
+    "radio_borde_m": 250.0,
+    "margen_m": 50.0,
+    "dx": 2.5,
+    "dz": 1.25,
+    "alto_m": 3.0,
+    "lidar": "viento_local/planta_1m.npz",
+    "lidar_zona": [286512.0, 4507400.0, 600.0],
+    "lidar_teselas": ["286507", "287507"],
+    "biblioteca": "viento_local/viento_local.npz",
+    "nota": "Puntos: los depósitos y la nave (la marca de la planta queda en su borde noroeste) y el centro de las naves de Dacame (receptores.json; usuario, 2026-11-01: por su cercanía). A menos de radio_m del segmento entre ellos manda este modelo (usuario, 2026-11-01) y hasta radio_borde_m se funde con el viento de la zona. dx y dz: en 99-Test/06, con 10 m un obstáculo de 10 m ocupa una celda y su estela no sale. lidar y biblioteca: relativos a esta carpeta. lidar_zona: x, y y semilado de las rejillas de 1 m, la planta y Dacame. lidar_teselas: las del ICGC de las que salen; empiezan en x = 286 000, y los 88 m de más hacia el oeste quedan sin datos y solo son margen de cálculo. Si cambian los edificios, rehacerla: python -m teodors.operacion.viento_local_biblioteca."
+  },
+  "operacion": {
+    "modo_edicion": "circe",
+    "texto_modo_edicion": "modo CIRCE",
+    "tipos_foco_extra": {},
+    "ejemplo": "recursos/ejemplo",
+    "nota": "modo_edicion: la opción de main.py (--circe) y el valor de ENCE_GALERA_MODO; texto_modo_edicion: cómo se rotula en los títulos y los botones. tipos_foco_extra: los de esta planta, además de los 15 de teOdors: {clave: [nombre, [modelos], funcionamiento]}; hoy, ninguno. ejemplo: la hora de viento y penacho de la ventana de configuración, relativa a esta carpeta."
+  },
+  "visor3d": {
+    "ortofoto": "recursos/visor3d/ortofoto.jpg",
+    "semilado_m": 3200.0,
+    "credito": "Ortofoto PNOA © IGN (CC BY 4.0)",
+    "rotulos": [{"t": "La Galera", "lon": 0.4633333333333333, "lat": 40.681666666666665}],
+    "nota": "ortofoto: relativa a esta carpeta; ningún código la genera. semilado_m: lo que cubre, en m alrededor de la planta. credito: lo que hay que citar de ella. rotulos: los que no salen de los receptores; La Galera, el pueblo: CORINE no lo ve (40° 40′ 54″ N, 0° 27′ 48″ E)."
+  }
+}

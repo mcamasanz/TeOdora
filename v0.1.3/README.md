@@ -17,7 +17,7 @@ necesita ningún ejecutable externo.
 
 | | |
 |---|---|
-| Versión | **0.1.2** (2026-10-23) |
+| Versión | **0.1.3** (2026-11-02) |
 | Python | 3.11 o superior |
 | Dependencias | numpy, numba, rasterio, pyproj (y pandas para `preparacion`: `teodors[preparacion]`; scipy para `meteo.viento_local`: `teodors[viento_local]`; las descargas: `teodors[fuentes]`; las métricas: `teodors[preparacion,mapas]`; los casos y la operación de una planta: `teodors[fuentes]`; el penacho en 3D: `teodors[penacho_3d]`; el MOS: `teodors[mos]`; la interfaz: `teodors[gui]`, y con el penacho en 3D, `teodors[gui3d]`) |
 | Estado | 8 motores validados dentro de su alcance; lo pendiente, en [PENDIENTES.md](PENDIENTES.md) |
@@ -88,12 +88,15 @@ flowchart LR
 ## Estructura del repositorio
 
 ```
-teOdors/
+v0.1.3/                     una versión del núcleo: una vez publicada, no se toca
 ├── README.md               este fichero
 ├── CHANGELOG.md            historial de versiones
 ├── PENDIENTES.md           lo que queda por traducir o mejorar
 ├── LICENSE                 licencia (propietaria)
+├── THIRD-PARTY-NOTICES.md  librerías de terceros
 ├── pyproject.toml          paquete instalable
+├── cargador/               «import teodors» con esta versión, sin instalar nada
+├── nueva_planta.py         crea la carpeta de una planta nueva
 ├── docs/
 │   ├── arquitectura.md     convenciones del código, núcleo compilado, cómo añadir un motor
 │   ├── equivalencias.md    motor por motor: fichero de teOdors ↔ módulo de la traducción ↔ original
@@ -112,13 +115,12 @@ teOdors/
 │   ├── terreno/            relieve · superficie · edificios · geofisica
 │   ├── meteo/              capa_limite · viento3d · viento_local (no validado, no es un motor)
 │   └── dispersion/         penacho · puffs
-├── auditor/                la puerta de entrada a main: reglas, pruebas y casos de regresión
-│   ├── casos/              un caso pequeño por motor (y por opción) con su salida de referencia
-│   └── pruebas/            unitarias y de regresión
-└── .github/workflows/      el auditor se ejecuta en cada pull request hacia main
+└── auditor/                la puerta de entrada a main: reglas, pruebas y casos de regresión
+    ├── casos/              un caso pequeño por motor (y por opción) con su salida de referencia
+    └── pruebas/            unitarias y de regresión
 ```
 
-Cada carpeta tiene su `README.md`: qué hace, entradas y salidas, ejemplos de uso, validación y la
+Cómo se organizan las versiones y las plantas, en el `README.md` de la raíz del repositorio. Cada carpeta tiene su `README.md`: qué hace, entradas y salidas, ejemplos de uso, validación y la
 tabla de **todos sus ficheros y funciones con su definición y su equivalencia** con el programa
 original.
 
@@ -126,16 +128,15 @@ original.
 
 ```bash
 git clone <url-del-repositorio> teOdors
-cd teOdors
+cd teOdors/v0.1.3
 pip install -e .
 ```
 
 Con conda: `conda install numpy numba rasterio pyproj` y después `pip install -e . --no-deps`.
 Para las pruebas: `pip install -e ".[pruebas]"`.
 
-El código está en la carpeta `core/` y se importa como `teodors`. Esa correspondencia la establece
-la instalación, así que también hace falta instalar el repositorio (`pip install -e .`) para
-trabajar sobre el código o pasar el auditor.
+El código está en la carpeta `core/` y se importa como `teodors`. Esa correspondencia la establece la instalación o, sin
+instalar nada, la carpeta `cargador/` en el camino de Python: así eligen su versión las plantas.
 
 ## Uso rápido
 
@@ -173,7 +174,7 @@ mensaje claro (código de salida 2). Nunca da un resultado distinto del original
 Nada entra en `main` sin que el [auditor](auditor/README.md) dé **APTO**:
 
 ```bash
-python -m auditor                 # reglas R1-R6 frente a main
+python -m auditor                 # desde esta carpeta: reglas R1-R7, frente a la versión anterior
 python -m auditor --instalar-hook # audita automáticamente antes de cada push a main
 ```
 
@@ -184,21 +185,21 @@ python -m auditor --instalar-hook # audita automáticamente antes de cada push a
 | R4 | todo código nuevo o modificado trae pruebas nuevas o un caso de regresión nuevo |
 | R5 | una salida de referencia solo cambia con su justificación en `auditor/CAMBIOS_REFERENCIA.md` |
 | R6 | no se borra ninguna prueba ni ningún caso |
+| R7 | cada carpeta se llama como su versión, una publicada no se toca y cada planta usa una versión que existe |
 
 Los casos de regresión son entradas pequeñas de cada motor cuyas salidas de referencia coinciden
 con las del programa original (ver [auditor/casos/README.md](auditor/casos/README.md)).
 
 ## Proyectos que lo usan
 
-`teodors` es el **núcleo**. La herramienta de compostaje digicompost construye su interfaz encima. La
-planta de La Galera (Tarragona) usa la de `teodors.gui` (extra `gui`): una planta es su carpeta, con su
-`planta.json` y sus datos, y un `main.py` de pocas líneas. Cada proyecto descarga una versión fija de
-este repositorio.
+`teodors` es el **núcleo**. La herramienta de compostaje digicompost construye su interfaz encima. Las plantas usan la de
+`teodors.gui` (extra `gui`): una planta es su carpeta, al lado de las versiones, con sus datos de entrada y un fichero `VERSION`
+con la versión que usa. Qué versión usa cada una, en el `README.md` de la raíz.
 
 ## Versiones
 
-Versionado semántico. Historial en [CHANGELOG.md](CHANGELOG.md). La última es la **v0.1.2**; la v0.1.0 es la
-base sobre la que se van publicando las actualizaciones.
+Versionado semántico. Historial en [CHANGELOG.md](CHANGELOG.md). Desde la **v0.1.3**, cada versión exacta es una carpeta; las
+anteriores siguen en sus etiquetas de git, en la raíz de cada una.
 
 ## Licencia
 

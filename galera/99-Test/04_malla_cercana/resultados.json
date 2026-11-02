@@ -1,0 +1,614 @@
+{
+ "fecha": "2026-10-31 11:31",
+ "horas": 42,
+ "receptores": {
+  "actual": {
+   "total": 8011,
+   "por_clase": {
+    "gruesa": 4752,
+    "nucleo": 66,
+    "media": 1512,
+    "fina": 1681
+   }
+  },
+  "propuesta": {
+   "total": 12091,
+   "por_clase": {
+    "gruesa": 4752,
+    "nucleo": 66,
+    "media": 1512,
+    "fina": 1240,
+    "n50": 1240,
+    "n25": 1600,
+    "n5": 1681
+   }
+  }
+ },
+ "focos": {
+  "PILAS": {
+   "coste": {
+    "actual": {
+     "segundos": 26.07297968864441,
+     "memoria_mb": 328.056832,
+     "fichero_mb": 2.776577
+    },
+    "propuesta": {
+     "segundos": 35.310213804244995,
+     "memoria_mb": 338.587648,
+     "fichero_mb": 4.281741
+    }
+   },
+   "misma_malla_dif_max_rel": 0.0,
+   "valores_a_guardar": {
+    "umbral_1e-6_del_max": 1.5020050341263413e-09,
+    "viejos": 66097,
+    "nuevos": 68994,
+    "por_clase": {
+     "fina": 13064,
+     "gruesa": 32335,
+     "media": 15311,
+     "n25": 18962,
+     "n5": 41438,
+     "n50": 13556,
+     "nucleo": 425
+    }
+   },
+   "pico": {
+    "valor_ug_m3": 2204.177901148796,
+    "dx_m": -65.0,
+    "dy_m": 30.0,
+    "max_8_vecinos_ug_m3": 2052.4810533970594,
+    "distancia_vecinos_m": 5.0,
+    "pico_malla_actual_ug_m3": 1502.0050341263413
+   },
+   "zonas": [
+    {
+     "zona_m": [
+      0.0,
+      100.0
+     ],
+     "paso": 5.0,
+     "grueso": 25.0,
+     "media": {
+      "n": 1162,
+      "mediana_pct": 6.58622302099255,
+      "p95_pct": 117.19145375320306,
+      "pico_fino": 0.0011935091765952251,
+      "pico_grueso": 0.0011570444136547546,
+      "pico_perdido_pct": 3.055256185335342
+     },
+     "maximo": {
+      "n": 1209,
+      "mediana_pct": 6.0459730267804455,
+      "p95_pct": 220.01488027683644,
+      "pico_fino": 0.002204177901148796,
+      "pico_grueso": 0.002116831485182047,
+      "pico_perdido_pct": 3.9627661597199104
+     },
+     "horaria_mediana_pct": 18.283456426411774,
+     "horas_con_penacho": 42
+    },
+    {
+     "zona_m": [
+      0.0,
+      100.0
+     ],
+     "paso": 5.0,
+     "grueso": 50.0,
+     "media": {
+      "n": 1202,
+      "mediana_pct": 19.906708695426207,
+      "p95_pct": 516.576474422551,
+      "pico_fino": 0.0011935091765952251,
+      "pico_grueso": 0.0007331914352149178,
+      "pico_perdido_pct": 38.56842916729602
+     },
+     "maximo": {
+      "n": 1250,
+      "mediana_pct": 15.435629629102527,
+      "p95_pct": 485.73899416985824,
+      "pico_fino": 0.002204177901148796,
+      "pico_grueso": 0.002044850494712591,
+      "pico_perdido_pct": 7.228427721426889
+     },
+     "horaria_mediana_pct": 42.11938407101204,
+     "horas_con_penacho": 42
+    },
+    {
+     "zona_m": [
+      100.0,
+      500.0
+     ],
+     "paso": 25.0,
+     "grueso": 50.0,
+     "media": {
+      "n": 378,
+      "mediana_pct": 5.966203201646635,
+      "p95_pct": 98.09398367131595,
+      "pico_fino": 0.00026173276283964094,
+      "pico_grueso": 0.00026173276283964094,
+      "pico_perdido_pct": 0.0
+     },
+     "maximo": {
+      "n": 397,
+      "mediana_pct": 10.432686737876676,
+      "p95_pct": 94.17426275186588,
+      "pico_fino": 0.001328267971985042,
+      "pico_grueso": 0.001328267971985042,
+      "pico_perdido_pct": 0.0
+     },
+     "horaria_mediana_pct": 18.129545034530338,
+     "horas_con_penacho": 42
+    },
+    {
+     "zona_m": [
+      100.0,
+      500.0
+     ],
+     "paso": 25.0,
+     "grueso": 100.0,
+     "media": {
+      "n": 474,
+      "mediana_pct": 16.039542672498644,
+      "p95_pct": 175.4199687109641,
+      "pico_fino": 0.00026173276283964094,
+      "pico_grueso": 0.00013444865929421147,
+      "pico_perdido_pct": 48.631322332166036
+     },
+     "maximo": {
+      "n": 502,
+      "mediana_pct": 19.52795008482379,
+      "p95_pct": 209.6856703690719,
+      "pico_fino": 0.001328267971985042,
+      "pico_grueso": 0.001328267971985042,
+      "pico_perdido_pct": 0.0
+     },
+     "horaria_mediana_pct": 47.4297159611606,
+     "horas_con_penacho": 42
+    },
+    {
+     "zona_m": [
+      500.0,
+      1000.0
+     ],
+     "paso": 50.0,
+     "grueso": 100.0,
+     "media": {
+      "n": 265,
+      "mediana_pct": 6.280481792668743,
+      "p95_pct": 101.84241174091136,
+      "pico_fino": 4.1556202194230075e-05,
+      "pico_grueso": 3.7532356145302905e-05,
+      "pico_perdido_pct": 9.682901315476478
+     },
+     "maximo": {
+      "n": 273,
+      "mediana_pct": 11.75718634140351,
+      "p95_pct": 104.45740701506439,
+      "pico_fino": 0.0002226991200586781,
+      "pico_grueso": 0.00016725405293982476,
+      "pico_perdido_pct": 24.89685055973474
+     },
+     "horaria_mediana_pct": 18.719528532751724,
+     "horas_con_penacho": 42
+    },
+    {
+     "zona_m": [
+      1000.0,
+      2000.0
+     ],
+     "paso": 100.0,
+     "grueso": 300.0,
+     "media": {
+      "n": 312,
+      "mediana_pct": 15.551148118063319,
+      "p95_pct": 154.34968978231785,
+      "pico_fino": 1.3635696021313934e-05,
+      "pico_grueso": 7.94146040000357e-06,
+      "pico_perdido_pct": 41.759772382793756
+     },
+     "maximo": {
+      "n": 327,
+      "mediana_pct": 18.18460122233403,
+      "p95_pct": 255.52453403813726,
+      "pico_fino": 0.00010097875201608986,
+      "pico_grueso": 6.720730743836612e-05,
+      "pico_perdido_pct": 33.44410967996776
+     },
+     "horaria_mediana_pct": 38.695339695838506,
+     "horas_con_penacho": 42
+    }
+   ]
+  },
+  "BIOFILTRO": {
+   "coste": {
+    "actual": {
+     "segundos": 26.688041925430298,
+     "memoria_mb": 330.0352,
+     "fichero_mb": 2.773621
+    },
+    "propuesta": {
+     "segundos": 33.49650526046753,
+     "memoria_mb": 357.756928,
+     "fichero_mb": 4.180181
+    }
+   },
+   "misma_malla_dif_max_rel": 0.0,
+   "valores_a_guardar": {
+    "umbral_1e-6_del_max": 3.3091381192207333e-09,
+    "viejos": 52164,
+    "nuevos": 37831,
+    "por_clase": {
+     "fina": 11187,
+     "gruesa": 23870,
+     "media": 12819,
+     "n25": 14741,
+     "n5": 15883,
+     "n50": 11206,
+     "nucleo": 289
+    }
+   },
+   "pico": {
+    "valor_ug_m3": 6299.349013715982,
+    "dx_m": 60.0,
+    "dy_m": -55.0,
+    "max_8_vecinos_ug_m3": 6276.675034314394,
+    "distancia_vecinos_m": 5.0,
+    "pico_malla_actual_ug_m3": 3309.1381192207336
+   },
+   "zonas": [
+    {
+     "zona_m": [
+      0.0,
+      100.0
+     ],
+     "paso": 5.0,
+     "grueso": 25.0,
+     "media": {
+      "n": 201,
+      "mediana_pct": 22.732776373111907,
+      "p95_pct": 988.2907483881958,
+      "pico_fino": 0.0035858553656864735,
+      "pico_grueso": 0.003229876924749641,
+      "pico_perdido_pct": 9.927295014272952
+     },
+     "maximo": {
+      "n": 218,
+      "mediana_pct": 12.424543369349625,
+      "p95_pct": 967.3554269879974,
+      "pico_fino": 0.0062993490137159824,
+      "pico_grueso": 0.0062751914374530315,
+      "pico_perdido_pct": 0.3834932182730455
+     },
+     "horaria_mediana_pct": 31.25150501490194,
+     "horas_con_penacho": 42
+    },
+    {
+     "zona_m": [
+      0.0,
+      100.0
+     ],
+     "paso": 5.0,
+     "grueso": 50.0,
+     "media": {
+      "n": 207,
+      "mediana_pct": 36.005973897931085,
+      "p95_pct": 5910.862461731606,
+      "pico_fino": 0.0035858553656864735,
+      "pico_grueso": 0.0029321809083090295,
+      "pico_perdido_pct": 18.22924771680815
+     },
+     "maximo": {
+      "n": 226,
+      "mediana_pct": 17.971446632768444,
+      "p95_pct": 5715.792966426738,
+      "pico_fino": 0.0062993490137159824,
+      "pico_grueso": 0.0062751914374530315,
+      "pico_perdido_pct": 0.3834932182730455
+     },
+     "horaria_mediana_pct": 38.524557292908035,
+     "horas_con_penacho": 42
+    },
+    {
+     "zona_m": [
+      100.0,
+      500.0
+     ],
+     "paso": 25.0,
+     "grueso": 50.0,
+     "media": {
+      "n": 247,
+      "mediana_pct": 8.936668761058769,
+      "p95_pct": 55.370543371057735,
+      "pico_fino": 0.0014182169401382595,
+      "pico_grueso": 0.0014182169401382595,
+      "pico_perdido_pct": 0.0
+     },
+     "maximo": {
+      "n": 278,
+      "mediana_pct": 13.264109275343522,
+      "p95_pct": 120.0561968928351,
+      "pico_fino": 0.0037715486250817776,
+      "pico_grueso": 0.0037715486250817776,
+      "pico_perdido_pct": 0.0
+     },
+     "horaria_mediana_pct": 29.866221838513574,
+     "horas_con_penacho": 42
+    },
+    {
+     "zona_m": [
+      100.0,
+      500.0
+     ],
+     "paso": 25.0,
+     "grueso": 100.0,
+     "media": {
+      "n": 314,
+      "mediana_pct": 25.31441123457555,
+      "p95_pct": 199.00966687836478,
+      "pico_fino": 0.0014182169401382595,
+      "pico_grueso": 0.0004467602343670965,
+      "pico_perdido_pct": 68.49845593273321
+     },
+     "maximo": {
+      "n": 352,
+      "mediana_pct": 23.314521292108992,
+      "p95_pct": 355.67192366050733,
+      "pico_fino": 0.0037715486250817776,
+      "pico_grueso": 0.0033091381192207336,
+      "pico_perdido_pct": 12.260494344044615
+     },
+     "horaria_mediana_pct": 59.96059321696337,
+     "horas_con_penacho": 42
+    },
+    {
+     "zona_m": [
+      500.0,
+      1000.0
+     ],
+     "paso": 50.0,
+     "grueso": 100.0,
+     "media": {
+      "n": 226,
+      "mediana_pct": 7.602406313527912,
+      "p95_pct": 67.53029313300738,
+      "pico_fino": 7.917374290397032e-05,
+      "pico_grueso": 4.458266464430291e-05,
+      "pico_perdido_pct": 43.69008839410671
+     },
+     "maximo": {
+      "n": 240,
+      "mediana_pct": 13.834210982241979,
+      "p95_pct": 105.18785705746605,
+      "pico_fino": 0.0004206804442219436,
+      "pico_grueso": 0.0004206804442219436,
+      "pico_perdido_pct": 0.0
+     },
+     "horaria_mediana_pct": 22.399412785462815,
+     "horas_con_penacho": 42
+    },
+    {
+     "zona_m": [
+      1000.0,
+      2000.0
+     ],
+     "paso": 100.0,
+     "grueso": 300.0,
+     "media": {
+      "n": 295,
+      "mediana_pct": 18.980384279716663,
+      "p95_pct": 163.0546989471033,
+      "pico_fino": 2.400151797820631e-05,
+      "pico_grueso": 7.68937757788517e-06,
+      "pico_perdido_pct": 67.96295307293802
+     },
+     "maximo": {
+      "n": 305,
+      "mediana_pct": 22.83319892522791,
+      "p95_pct": 151.88181565199025,
+      "pico_fino": 0.00015614466974511743,
+      "pico_grueso": 0.00010244450095342472,
+      "pico_perdido_pct": 34.39129166519108
+     },
+     "horaria_mediana_pct": 41.65464604192151,
+     "horas_con_penacho": 42
+    }
+   ]
+  },
+  "CHIMENEA": {
+   "coste": {
+    "actual": {
+     "segundos": 30.142085790634155,
+     "memoria_mb": 337.506304,
+     "fichero_mb": 2.710341
+    },
+    "propuesta": {
+     "segundos": 37.922266483306885,
+     "memoria_mb": 350.02368,
+     "fichero_mb": 4.099369
+    }
+   },
+   "misma_malla_dif_max_rel": 0.0,
+   "valores_a_guardar": {
+    "umbral_1e-6_del_max": 7.56106455810368e-11,
+    "viejos": 73623,
+    "nuevos": 47271,
+    "por_clase": {
+     "fina": 13814,
+     "gruesa": 37509,
+     "media": 16649,
+     "n25": 18891,
+     "n5": 19119,
+     "n50": 14407,
+     "nucleo": 505
+    }
+   },
+   "pico": {
+    "valor_ug_m3": 81.707737990655,
+    "dx_m": 125.0,
+    "dy_m": -50.0,
+    "max_8_vecinos_ug_m3": 76.6537050367333,
+    "distancia_vecinos_m": 25.0,
+    "pico_malla_actual_ug_m3": 75.6106455810368
+   },
+   "zonas": [
+    {
+     "zona_m": [
+      0.0,
+      100.0
+     ],
+     "paso": 5.0,
+     "grueso": 25.0,
+     "media": {
+      "n": 572,
+      "mediana_pct": 10.76495548109197,
+      "p95_pct": 225.28283961523178,
+      "pico_fino": 1.0683823978887194e-05,
+      "pico_grueso": 1.0425122909240078e-05,
+      "pico_perdido_pct": 2.421427666333209
+     },
+     "maximo": {
+      "n": 610,
+      "mediana_pct": 8.416303645016088,
+      "p95_pct": 248.57182658900618,
+      "pico_fino": 7.999318768270314e-05,
+      "pico_grueso": 7.73452193243429e-05,
+      "pico_perdido_pct": 3.310242328213653
+     },
+     "horaria_mediana_pct": 54.78742903727718,
+     "horas_con_penacho": 42
+    },
+    {
+     "zona_m": [
+      0.0,
+      100.0
+     ],
+     "paso": 5.0,
+     "grueso": 50.0,
+     "media": {
+      "n": 592,
+      "mediana_pct": 32.42503074771451,
+      "p95_pct": 839.5263335982737,
+      "pico_fino": 1.0683823978887194e-05,
+      "pico_grueso": 9.1624356357937e-06,
+      "pico_perdido_pct": 14.24011052690478
+     },
+     "maximo": {
+      "n": 630,
+      "mediana_pct": 25.874559528781493,
+      "p95_pct": 1057.5905087674362,
+      "pico_fino": 7.999318768270314e-05,
+      "pico_grueso": 7.56106455810368e-05,
+      "pico_perdido_pct": 5.4786441553622005
+     },
+     "horaria_mediana_pct": 79.94966917078597,
+     "horas_con_penacho": 42
+    },
+    {
+     "zona_m": [
+      100.0,
+      500.0
+     ],
+     "paso": 25.0,
+     "grueso": 50.0,
+     "media": {
+      "n": 342,
+      "mediana_pct": 5.369670568241714,
+      "p95_pct": 118.08009301133097,
+      "pico_fino": 1.6941283035264353e-05,
+      "pico_grueso": 1.5548891814424044e-05,
+      "pico_perdido_pct": 8.218924257046877
+     },
+     "maximo": {
+      "n": 347,
+      "mediana_pct": 7.065196707471784,
+      "p95_pct": 68.61568563956642,
+      "pico_fino": 8.1707737990655e-05,
+      "pico_grueso": 7.66537050367333e-05,
+      "pico_perdido_pct": 6.185501004200777
+     },
+     "horaria_mediana_pct": 24.687655376368912,
+     "horas_con_penacho": 42
+    },
+    {
+     "zona_m": [
+      100.0,
+      500.0
+     ],
+     "paso": 25.0,
+     "grueso": 100.0,
+     "media": {
+      "n": 429,
+      "mediana_pct": 17.170717335480738,
+      "p95_pct": 296.4595951633449,
+      "pico_fino": 1.6941283035264353e-05,
+      "pico_grueso": 1.3651733828908935e-05,
+      "pico_perdido_pct": 19.417355813653625
+     },
+     "maximo": {
+      "n": 435,
+      "mediana_pct": 15.410323577715982,
+      "p95_pct": 206.9589682558062,
+      "pico_fino": 8.1707737990655e-05,
+      "pico_grueso": 7.56106455810368e-05,
+      "pico_perdido_pct": 7.46207465725649
+     },
+     "horaria_mediana_pct": 55.59444968339704,
+     "horas_con_penacho": 42
+    },
+    {
+     "zona_m": [
+      500.0,
+      1000.0
+     ],
+     "paso": 50.0,
+     "grueso": 100.0,
+     "media": {
+      "n": 253,
+      "mediana_pct": 5.902291641895122,
+      "p95_pct": 136.85672084978754,
+      "pico_fino": 8.328384078313042e-06,
+      "pico_grueso": 8.328384078313042e-06,
+      "pico_perdido_pct": 0.0
+     },
+     "maximo": {
+      "n": 257,
+      "mediana_pct": 7.771844750509696,
+      "p95_pct": 52.162012186041494,
+      "pico_fino": 5.7439174270257354e-05,
+      "pico_grueso": 5.576335024670698e-05,
+      "pico_perdido_pct": 2.9175628738418946
+     },
+     "horaria_mediana_pct": 21.92143597281948,
+     "horas_con_penacho": 42
+    },
+    {
+     "zona_m": [
+      1000.0,
+      2000.0
+     ],
+     "paso": 100.0,
+     "grueso": 300.0,
+     "media": {
+      "n": 304,
+      "mediana_pct": 14.860742435612092,
+      "p95_pct": 150.68609221871196,
+      "pico_fino": 4.647729479992765e-06,
+      "pico_grueso": 3.983226796188703e-06,
+      "pico_perdido_pct": 14.29736146788596
+     },
+     "maximo": {
+      "n": 311,
+      "mediana_pct": 18.36508588638673,
+      "p95_pct": 160.93423900626286,
+      "pico_fino": 4.680894562625326e-05,
+      "pico_grueso": 3.305296922917478e-05,
+      "pico_perdido_pct": 29.38749466162577
+     },
+     "horaria_mediana_pct": 43.77800616880908,
+     "horas_con_penacho": 42
+    }
+   ]
+  }
+ }
+}

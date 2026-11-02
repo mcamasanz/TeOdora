@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Los cálculos de una planta (viento, respuestas, resultados) no se versionan: van a la carpeta de su rutas.json
+datos/
+
+# Claves: nunca al repositorio
+**/keys/
+*api-key*
+
+# Ejecutables de terceros: nunca al repositorio
+*.exe
+
+# Temporales de Office
+~$*

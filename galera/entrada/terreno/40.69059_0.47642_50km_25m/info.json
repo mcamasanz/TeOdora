@@ -1,0 +1,474 @@
+{
+  "centro": {
+    "lat": 40.6905923,
+    "lon": 0.4764197
+  },
+  "lado_km": 50.0,
+  "res_m": 25.0,
+  "epsg": "EPSG:25831",
+  "ext_utm": [
+    261750.0,
+    311750.0,
+    4482450.0,
+    4532450.0
+  ],
+  "forma": [
+    2000,
+    2000
+  ],
+  "mdt": {
+    "fuente": "IGN · MDT por WCS (servicios.idee.es), CC BY 4.0 scne.es",
+    "cobertura": "Elevacion25830_25",
+    "crs_origen": "EPSG:25830",
+    "remuestreo": "bilineal"
+  },
+  "corine": {
+    "fuente": "CORINE Land Cover 2018 (Copernicus / IGN)",
+    "fichero": "C:\\Users\\MiguelCamaraSanz\\OneDrive - Fundacion CIRCE\\Escritorio\\PyroSmoke\\src\\data\\usos\\CLC2018_ES.gpkg",
+    "poligonos": 992
+  },
+  "fecha": "2026-10-22T16:01:10",
+  "estadisticas": {
+    "z_min": 0.0,
+    "z_media": 305.3168029785156,
+    "z_max": 1436.9232177734375,
+    "pct_mar": 14.97,
+    "pct_urbano_industrial": 1.91,
+    "usos": [
+      {
+        "codigo": 223,
+        "nombre": "Olivares",
+        "pct": 22.89
+      },
+      {
+        "codigo": 323,
+        "nombre": "Vegetación esclerófila",
+        "pct": 15.91
+      },
+      {
+        "codigo": 222,
+        "nombre": "Frutales",
+        "pct": 10.17
+      },
+      {
+        "codigo": 312,
+        "nombre": "Bosque de coníferas",
+        "pct": 9.79
+      },
+      {
+        "codigo": 213,
+        "nombre": "Arrozales",
+        "pct": 7.16
+      },
+      {
+        "codigo": 242,
+        "nombre": "Mosaico de cultivos",
+        "pct": 4.26
+      },
+      {
+        "codigo": 523,
+        "nombre": "Mares y océanos",
+        "pct": 2.04
+      },
+      {
+        "codigo": 313,
+        "nombre": "Bosque mixto",
+        "pct": 1.75
+      },
+      {
+        "codigo": 321,
+        "nombre": "Pastizales naturales",
+        "pct": 1.67
+      },
+      {
+        "codigo": 324,
+        "nombre": "Matorral boscoso de transición",
+        "pct": 1.5
+      },
+      {
+        "codigo": 243,
+        "nombre": "Agrícola con vegetación natural",
+        "pct": 1.42
+      },
+      {
+        "codigo": 311,
+        "nombre": "Bosque de frondosas",
+        "pct": 1.29
+      },
+      {
+        "codigo": 212,
+        "nombre": "Regadío permanente",
+        "pct": 1.04
+      },
+      {
+        "codigo": 112,
+        "nombre": "Tejido urbano discontinuo",
+        "pct": 0.75
+      },
+      {
+        "codigo": 331,
+        "nombre": "Playas, dunas y arenales",
+        "pct": 0.67
+      },
+      {
+        "codigo": 211,
+        "nombre": "Tierras de labor en secano",
+        "pct": 0.63
+      },
+      {
+        "codigo": 121,
+        "nombre": "Zonas industriales o comerciales",
+        "pct": 0.59
+      },
+      {
+        "codigo": 111,
+        "nombre": "Tejido urbano continuo",
+        "pct": 0.57
+      },
+      {
+        "codigo": 231,
+        "nombre": "Praderas",
+        "pct": 0.44
+      },
+      {
+        "codigo": 422,
+        "nombre": "Salinas",
+        "pct": 0.43
+      },
+      {
+        "codigo": 511,
+        "nombre": "Cursos de agua",
+        "pct": 0.4
+      },
+      {
+        "codigo": 421,
+        "nombre": "Marismas",
+        "pct": 0.34
+      },
+      {
+        "codigo": 521,
+        "nombre": "Lagunas costeras",
+        "pct": 0.3
+      },
+      {
+        "codigo": 332,
+        "nombre": "Roquedo",
+        "pct": 0.29
+      },
+      {
+        "codigo": 411,
+        "nombre": "Humedales",
+        "pct": 0.23
+      },
+      {
+        "codigo": 131,
+        "nombre": "Extracción minera",
+        "pct": 0.16
+      },
+      {
+        "codigo": 333,
+        "nombre": "Vegetación escasa",
+        "pct": 0.12
+      },
+      {
+        "codigo": 142,
+        "nombre": "Instalaciones deportivas y recreativas",
+        "pct": 0.07
+      },
+      {
+        "codigo": 123,
+        "nombre": "Zonas portuarias",
+        "pct": 0.04
+      },
+      {
+        "codigo": 122,
+        "nombre": "Redes viarias y ferroviarias",
+        "pct": 0.03
+      },
+      {
+        "codigo": 133,
+        "nombre": "Zonas en construcción",
+        "pct": 0.03
+      },
+      {
+        "codigo": 241,
+        "nombre": "Cultivos anuales con permanentes",
+        "pct": 0.03
+      },
+      {
+        "codigo": 512,
+        "nombre": "Láminas de agua",
+        "pct": 0.02
+      },
+      {
+        "codigo": 132,
+        "nombre": "Escombreras y vertederos",
+        "pct": 0.01
+      },
+      {
+        "codigo": 221,
+        "nombre": "Viñedos",
+        "pct": 0.01
+      }
+    ]
+  },
+  "planta": {
+    "z": 98.4925765991211,
+    "uso": 223,
+    "uso_nombre": "Olivares"
+  },
+  "capas_mapa": [
+    {
+      "id": "elevacion",
+      "nombre": "Elevación (MDT IGN)",
+      "png": "mapa_elevacion.png",
+      "bounds": [
+        [
+          40.45853922177957,
+          0.1711900875346755
+        ],
+        [
+          40.9215069312672,
+          0.7793998486310534
+        ]
+      ],
+      "leyenda": {
+        "tipo": "continua",
+        "min": 0.0,
+        "max": 1436.9232177734375,
+        "unidad": "m",
+        "gradiente": "#15d06a, #7de57f, #e9fb95, #d4c882, #9e8365, #957771, #cbbcb9, #ffffff"
+      }
+    },
+    {
+      "id": "usos",
+      "nombre": "Uso del suelo (CORINE 2018)",
+      "png": "mapa_usos.png",
+      "bounds": [
+        [
+          40.45853922177957,
+          0.1711900875346755
+        ],
+        [
+          40.9215069312672,
+          0.7793998486310534
+        ]
+      ],
+      "leyenda": {
+        "tipo": "clases",
+        "clases": [
+          {
+            "codigo": 223,
+            "nombre": "Olivares",
+            "pct": 22.89,
+            "color": "#e4a100"
+          },
+          {
+            "codigo": 323,
+            "nombre": "Vegetación esclerófila",
+            "pct": 15.91,
+            "color": "#a5e54c"
+          },
+          {
+            "codigo": 222,
+            "nombre": "Frutales",
+            "pct": 10.17,
+            "color": "#f2a600"
+          },
+          {
+            "codigo": 312,
+            "nombre": "Bosque de coníferas",
+            "pct": 9.79,
+            "color": "#00a600"
+          },
+          {
+            "codigo": 213,
+            "nombre": "Arrozales",
+            "pct": 7.16,
+            "color": "#e68080"
+          },
+          {
+            "codigo": 242,
+            "nombre": "Mosaico de cultivos",
+            "pct": 4.26,
+            "color": "#ffff00"
+          },
+          {
+            "codigo": 523,
+            "nombre": "Mares y océanos",
+            "pct": 2.04,
+            "color": "#e5f2fe"
+          },
+          {
+            "codigo": 313,
+            "nombre": "Bosque mixto",
+            "pct": 1.75,
+            "color": "#4de600"
+          },
+          {
+            "codigo": 321,
+            "nombre": "Pastizales naturales",
+            "pct": 1.67,
+            "color": "#cce64d"
+          },
+          {
+            "codigo": 324,
+            "nombre": "Matorral boscoso de transición",
+            "pct": 1.5,
+            "color": "#a6e600"
+          },
+          {
+            "codigo": 243,
+            "nombre": "Agrícola con vegetación natural",
+            "pct": 1.42,
+            "color": "#ffcc4d"
+          },
+          {
+            "codigo": 311,
+            "nombre": "Bosque de frondosas",
+            "pct": 1.29,
+            "color": "#80ff00"
+          },
+          {
+            "codigo": 212,
+            "nombre": "Regadío permanente",
+            "pct": 1.04,
+            "color": "#ffe64d"
+          },
+          {
+            "codigo": 112,
+            "nombre": "Tejido urbano discontinuo",
+            "pct": 0.75,
+            "color": "#ff0000"
+          },
+          {
+            "codigo": 331,
+            "nombre": "Playas, dunas y arenales",
+            "pct": 0.67,
+            "color": "#e6e6e6"
+          },
+          {
+            "codigo": 211,
+            "nombre": "Tierras de labor en secano",
+            "pct": 0.63,
+            "color": "#ffffa8"
+          },
+          {
+            "codigo": 121,
+            "nombre": "Zonas industriales o comerciales",
+            "pct": 0.59,
+            "color": "#b333e6"
+          },
+          {
+            "codigo": 111,
+            "nombre": "Tejido urbano continuo",
+            "pct": 0.57,
+            "color": "#e6004d"
+          },
+          {
+            "codigo": 231,
+            "nombre": "Praderas",
+            "pct": 0.44,
+            "color": "#f2f24d"
+          },
+          {
+            "codigo": 422,
+            "nombre": "Salinas",
+            "pct": 0.43,
+            "color": "#e5e5fe"
+          },
+          {
+            "codigo": 511,
+            "nombre": "Cursos de agua",
+            "pct": 0.4,
+            "color": "#00cce6"
+          },
+          {
+            "codigo": 421,
+            "nombre": "Marismas",
+            "pct": 0.34,
+            "color": "#ccccfe"
+          },
+          {
+            "codigo": 521,
+            "nombre": "Lagunas costeras",
+            "pct": 0.3,
+            "color": "#00fea5"
+          },
+          {
+            "codigo": 332,
+            "nombre": "Roquedo",
+            "pct": 0.29,
+            "color": "#cccccc"
+          },
+          {
+            "codigo": 411,
+            "nombre": "Humedales",
+            "pct": 0.23,
+            "color": "#a5a6ff"
+          },
+          {
+            "codigo": 131,
+            "nombre": "Extracción minera",
+            "pct": 0.16,
+            "color": "#a800cf"
+          },
+          {
+            "codigo": 333,
+            "nombre": "Vegetación escasa",
+            "pct": 0.12,
+            "color": "#bffeb2"
+          },
+          {
+            "codigo": 142,
+            "nombre": "Instalaciones deportivas y recreativas",
+            "pct": 0.07,
+            "color": "#ffe6ff"
+          },
+          {
+            "codigo": 123,
+            "nombre": "Zonas portuarias",
+            "pct": 0.04,
+            "color": "#e6b3b3"
+          },
+          {
+            "codigo": 122,
+            "nombre": "Redes viarias y ferroviarias",
+            "pct": 0.03,
+            "color": "#cc0000"
+          },
+          {
+            "codigo": 133,
+            "nombre": "Zonas en construcción",
+            "pct": 0.03,
+            "color": "#ff4dff"
+          },
+          {
+            "codigo": 241,
+            "nombre": "Cultivos anuales con permanentes",
+            "pct": 0.03,
+            "color": "#ffe6a6"
+          },
+          {
+            "codigo": 512,
+            "nombre": "Láminas de agua",
+            "pct": 0.02,
+            "color": "#a5e6e6"
+          },
+          {
+            "codigo": 132,
+            "nombre": "Escombreras y vertederos",
+            "pct": 0.01,
+            "color": "#a84d00"
+          },
+          {
+            "codigo": 221,
+            "nombre": "Viñedos",
+            "pct": 0.01,
+            "color": "#d96600"
+          }
+        ]
+      }
+    }
+  ]
+}

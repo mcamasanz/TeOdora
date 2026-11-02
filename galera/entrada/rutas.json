@@ -1,0 +1,4 @@
+{
+  "datos": "Z:\\Miguel\\03-Odora\\ENCE_LaGalera",
+  "nota": "Carpeta de DATOS de la herramienta (terreno, meteo, viento 3D, MOS, validaciones, logs). Unidad de red \\\\10.10.200.245\\tb; decisión del usuario del 2026-10-21. La variable de entorno ENCE_GALERA_DATOS tiene prioridad. Los cálculos en marcha van a %TEMP%\\ence_galera (config.LOCAL)."
+}

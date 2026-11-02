@@ -1,0 +1,28 @@
+{
+  "centro": {
+    "lat": 40.6905923,
+    "lon": 0.4764197
+  },
+  "radio_km": 2.0,
+  "epsg": "EPSG:25831",
+  "fecha": "2026-10-24T18:59:16",
+  "fuente": "Dirección General del Catastro · WFS INSPIRE Buildings (dato transformado: huella, uso y plantas)",
+  "altura": "estimada = plantas × 3 m (subestima naves)",
+  "n": 867,
+  "por_uso": {
+    "Residencial": 393,
+    "Agrario": 279,
+    "Industrial": 177,
+    "Comercial": 7,
+    "Serv. públicos": 6,
+    "Otro": 4,
+    "Oficinas": 1
+  },
+  "superficie_m2": 181965.20221268985,
+  "altura_max_m": 42.0,
+  "mas_cercano": {
+    "uso": "Industrial",
+    "dist_m": 3.4804870223440365,
+    "plantas": 8
+  }
+}

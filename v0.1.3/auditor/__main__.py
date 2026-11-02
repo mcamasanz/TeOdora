@@ -32,8 +32,8 @@ def _informe(res):
 
 def main(argv=None):
     p = argparse.ArgumentParser(prog="python -m auditor", description=__doc__.splitlines()[0])
-    p.add_argument("--base", default="main", help="referencia de git con la que se compara (main)")
-    p.add_argument("--solo-pruebas", action="store_true", help="solo R1-R3 (sin comparar con git)")
+    p.add_argument("--base", default=None, help="carpeta con la que se compara (la de la versión anterior)")
+    p.add_argument("--solo-pruebas", action="store_true", help="solo R1-R3 (sin comparar con otra versión)")
     p.add_argument("--limite", type=float, default=reglas.LIMITE_PRUEBA_S, help="segundos por prueba")
     p.add_argument("--total", type=float, default=reglas.LIMITE_TOTAL_S, help="segundos del conjunto")
     p.add_argument("--instalar-hook", action="store_true")
@@ -45,7 +45,7 @@ def main(argv=None):
     p.add_argument("--regenerar")
     a = p.parse_args(argv)
     if a.instalar_hook:
-        destino = reglas.RAIZ / ".git" / "hooks" / "pre-push"
+        destino = reglas.RAIZ / reglas._git("rev-parse", "--git-path", "hooks/pre-push").strip()
         shutil.copy2(reglas.AUDITOR / "hooks" / "pre-push", destino)
         print("instalado:", destino)
         return 0

@@ -1,0 +1,27 @@
+{
+ "girar_azimut_rad": -0.4606064705627264,
+ "acercar_antes_m": 3004.400906833448,
+ "acercar_despues_m": 2854.180861491775,
+ "hora_texto": "15 UTC · 17:00 oficial",
+ "hora_grupos_visibles": [
+  "15"
+ ],
+ "exageracion": 1,
+ "niveles_visibles": [
+  [
+   1,
+   false
+  ],
+  [
+   3,
+   true
+  ],
+  [
+   5,
+   true
+  ]
+ ],
+ "errores_gl": 0,
+ "triangulos_hora_15": 9232,
+ "fallos": []
+}

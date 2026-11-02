@@ -14,7 +14,7 @@ Lleva de los focos y los planes de una planta a lo que dice la norma en cada rec
 | `simulacion` | `calcular` (los años del reanálisis) y `calcular_periodo` (un día, un episodio o una predicción, con su penacho hora a hora), sin lanzar el motor; lo que guarda y su `firma` |
 | `penacho_mapa`, `viento_mapa` | las imágenes de concentración, su leyenda y el panel del tiempo; el viento en superficie, para la capa del mapa |
 | `penacho_3d` | el penacho en 3D: aquí sí se lanza el motor. Calcula y guarda; montar la página es de la interfaz |
-| `respuestas`, `viento_periodo`, `viento3d_series`, `ejemplo_configuracion` | tareas por línea de órdenes: `python -m teodors.operacion.<tarea>` |
+| `respuestas`, `viento_periodo`, `viento3d_series`, `ejemplo_configuracion`, `viento_local_biblioteca` | tareas por línea de órdenes: `python -m teodors.operacion.<tarea>` |
 
 Necesita `teodors[fuentes]`; el penacho en 3D, también `teodors[penacho_3d]` (pyvista), que se carga al usarlo. Importar estos módulos no lee la planta.
 
@@ -114,5 +114,6 @@ Comprueban el código: **no dicen nada de ningún resultado.** Viene del proyect
 | `respuestas.py` | Respuesta de cada foco a una emisión unidad. | proyecto La Galera (`gui/tareas/respuestas_dia.py`) | — |
 | `viento_periodo.py` | Viento 3D de un periodo. | proyecto La Galera (`gui/tareas/viento_dia_local.py`) | — |
 | `viento3d_series.py` | Series de viento 3D de los años del reanálisis. | proyecto La Galera (`gui/tareas/viento3d_series.py`) | — |
+| `viento_local_biblioteca.py` | tarea: rehace la biblioteca del viento local de la planta, con su bloque `viento_local` | `meteo.viento_local` | — |
 | `ejemplo_configuracion.py` | El ejemplo de la ventana de configuración. | proyecto La Galera (`gui/tareas/ejemplo_configuracion.py`) | — |
 | `recursos/iconos/` | Iconos del panel del tiempo (día o noche, cielo, termómetro). | proyecto La Galera (`gui/recursos/iconos/`) | — |

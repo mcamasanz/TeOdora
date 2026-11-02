@@ -1,0 +1,37 @@
+{
+  "NA": {
+    "desc": "NA",
+    "pollutant": "H2S",
+    "unidad": "ou_E",
+    "q_reposo": 34.0,
+    "q_volteo": 234.0
+  },
+  "NG": {
+    "desc": "NG",
+    "pollutant": "H2S",
+    "unidad": "ou_E",
+    "q_reposo": 34.0,
+    "q_volteo": 234.0
+  },
+  "NO": {
+    "desc": "NO",
+    "pollutant": "H2S",
+    "unidad": "ou_E",
+    "q_reposo": 34.0,
+    "q_volteo": 234.0
+  },
+  "S1": {
+    "desc": "S1",
+    "pollutant": "H2S",
+    "unidad": "ou_E",
+    "q_reposo": 34.0,
+    "q_volteo": 234.0
+  },
+  "S2": {
+    "desc": "S2",
+    "pollutant": "H2S",
+    "unidad": "ou_E",
+    "q_reposo": 34.0,
+    "q_volteo": 234.0
+  }
+}

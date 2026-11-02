@@ -1,4 +1,5 @@
-# Auditor de teOdors: ningún cambio entra en main sin dar APTO (ver auditor/README.md).
+# Auditor de teOdors: ningún cambio entra en main sin dar APTO (ver v*/auditor/README.md).
+# Audita la última versión. Las anteriores no cambian: lo vigila su regla R7, que mira todas las versiones y plantas.
 name: auditor
 
 on:
@@ -16,15 +17,21 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 0          # historial completo: el auditor compara con main
+          fetch-depth: 0          # historial completo y etiquetas: R7 las necesita
 
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
           cache: pip
+          cache-dependency-path: "v*/pyproject.toml"
+
+      - name: La última versión
+        shell: bash
+        run: echo "ULTIMA=$(ls -d v*/ | sort -V | tail -1 | tr -d /)" >> "$GITHUB_ENV"
 
       - name: Dependencias
-        run: pip install -e ".[pruebas,pruebas_gui]"
+        shell: bash
+        run: pip install -e "$ULTIMA[pruebas,pruebas_gui]"
 
       # Sin caché de numba: se invalida con la fecha de los ficheros, que cambia en cada checkout.
       # El núcleo del penacho compila en unos minutos (prueba marcada `compilacion`).
@@ -32,11 +39,4 @@ jobs:
         shell: bash
         env:
           PYTHONIOENCODING: utf-8
-        run: |
-          if [ "${{ github.event_name }}" = "pull_request" ]; then
-            python -m auditor --base "origin/${{ github.base_ref }}"
-          elif [ "${{ github.event.before }}" = "0000000000000000000000000000000000000000" ]; then
-            python -m auditor --solo-pruebas      # primer push de la rama: no hay con qué comparar
-          else
-            python -m auditor --base "${{ github.event.before }}"
-          fi
+        run: cd "$ULTIMA" && python -m auditor

@@ -1,0 +1,11 @@
+# lo que dejan las pruebas al correr
+*.png
+*.txt
+*.tabla
+*.ini.*
+estilos/
+indicador/
+tabla/
+gases/
+capas/
+planes/

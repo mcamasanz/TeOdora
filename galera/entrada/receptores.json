@@ -1,0 +1,9 @@
+{
+ "formato": 1,
+ "epsg": "EPSG:25831",
+ "actualizado": "2026-11-01",
+ "notas": "Dacame S.L.: fábrica vecina, Ctra. Santa Bàrbara-La Sénia (TP-3311) km 4,6. Ubicación confirmada por el usuario (2026-10-31). Un solo punto (decisión del usuario, 2026-11-01): el centro de sus 4 naves del Catastro, ponderado por superficie. en_tabla = false: se calcula y sale en el mapa, pero no en la tabla de la simulación (decisión del usuario, 2026-10-31).",
+ "receptores": [
+  {"id": "DACAME", "nombre": "Dacame", "x": 286227.7, "y": 4507319.8, "catastro": ["43064A04600114", "43064A04600034", "43064A04600115", "43064A04600116"], "dist_m": 557, "rumbo": 254, "en_tabla": false}
+ ]
+}

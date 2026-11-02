@@ -1,0 +1,9 @@
+# Código y documentación: texto, con el final de línea del sistema al sacarlo.
+* text=auto
+
+# Datos de las plantas: tal cual
+*.tif binary
+*.gpkg binary
+*.npz binary
+*.png binary
+*.jpg binary

@@ -9,9 +9,10 @@
 | R4 pruebas nuevas | cada motor (o parte del paquete) con código añadido o modificado trae pruebas nuevas o modificadas que lo nombran, o un caso nuevo de regresión |
 | R5 referencias | una referencia o un caso.json modificado solo se acepta si CAMBIOS_REFERENCIA.md tiene una entrada nueva que nombra el caso |
 | R6 sin perder pruebas | no se borran ficheros de pruebas ni casos, ni bajan las funciones de prueba de un fichero |
+| R7 versiones | cada carpeta se llama como su versión, una versión publicada no se toca y cada planta usa una versión que existe |
 
-R4-R6 comparan con una referencia de git (por defecto la rama `main`): los cambios ya confirmados y
-los que aún están en el árbol de trabajo.
+R4-R6 comparan esta carpeta con la de la versión anterior, que está a su lado (v0.1.4 frente a v0.1.3): lo que git
+sigue o seguiría, también lo que aún no está confirmado. Si no hay versión anterior, no hay con qué comparar.
 """
 import json
 import os
@@ -37,34 +38,52 @@ class Resultado:
 
 
 # ------------------------------------------------------------------------------ git
-def _git(*args):
-    r = subprocess.run(["git", *args], cwd=RAIZ, capture_output=True, text=True, encoding="utf-8")
+def _git(*args, cwd=None):
+    r = subprocess.run(["git", *args], cwd=cwd or RAIZ, capture_output=True, text=True, encoding="utf-8")
     if r.returncode != 0:
         raise RuntimeError("git %s: %s" % (" ".join(args), r.stderr.strip()))
     return r.stdout
 
 
+def _numero(carpeta):
+    """(0, 1, 3) si la carpeta se llama como una versión (v0.1.3); None si no."""
+    m = re.fullmatch(r"v(\d+)\.(\d+)\.(\d+)", Path(carpeta).name)
+    return tuple(int(x) for x in m.groups()) if m else None
+
+
+def version_anterior():
+    """La carpeta de la versión anterior a esta, a su lado; None si no hay ninguna."""
+    yo = _numero(RAIZ)
+    if yo is None:
+        return None
+    otras = [(_numero(c), c) for c in RAIZ.parent.iterdir() if c.is_dir() and _numero(c) and _numero(c) < yo]
+    return max(otras, key=lambda o: o[0])[1] if otras else None
+
+
+def _ficheros(carpeta):
+    """Lo que git sigue o seguiría en esa carpeta, sin lo ignorado: {ruta relativa: fichero}."""
+    nombres = _git("ls-files", "-z", "--cached", "--others", "--exclude-standard", cwd=carpeta).split("\0")
+    return {n: Path(carpeta) / n for n in nombres if n and (Path(carpeta) / n).is_file()}
+
+
+def _bytes(fichero):
+    return fichero.read_bytes().replace(b"\r\n", b"\n")      # el final de línea depende de cómo los saque git
+
+
 def cambios(base):
-    """{ruta: estado} de lo que cambia respecto a `base` (A añadido, M modificado, D borrado, R…),
-    contando también lo no confirmado y los ficheros nuevos sin seguimiento."""
-    out = {}
-    for linea in _git("diff", "--name-status", "-M", base).splitlines():
-        p = linea.split("\t")
-        if p[0].startswith("R"):
-            out[p[1]] = "D"
-            out[p[2]] = "A"
-        else:
-            out[p[1]] = p[0][0]
-    for linea in _git("ls-files", "--others", "--exclude-standard").splitlines():
-        out.setdefault(linea, "A")
+    """{ruta: estado} de lo que cambia respecto a la carpeta `base` (A añadido, M modificado, D borrado); {} si no hay con qué comparar."""
+    if base is None:
+        return {}
+    ahora, antes = _ficheros(RAIZ), _ficheros(base)
+    out = {r: "A" for r in ahora if r not in antes}
+    out.update({r: "D" for r in antes if r not in ahora})
+    out.update({r: "M" for r in ahora if r in antes and _bytes(ahora[r]) != _bytes(antes[r])})
     return out
 
 
 def _en_base(base, ruta):
-    try:
-        return _git("show", "%s:%s" % (base, ruta))
-    except RuntimeError:
-        return ""
+    f = Path(base) / ruta
+    return f.read_text(encoding="utf-8", errors="replace") if f.is_file() else ""
 
 
 # ------------------------------------------------------------------------------ reglas
@@ -84,7 +103,9 @@ def _pytest(argumentos):
     """Corre pytest en la raíz del repositorio: (código de salida, salida, {prueba: tiempo y marcas})."""
     with tempfile.TemporaryDirectory() as d:
         tiempos = Path(d) / "tiempos.json"
-        env = dict(os.environ, AUDITOR_TIEMPOS=str(tiempos), PYTHONIOENCODING="utf-8")
+        # el cargador de ESTA carpeta, delante: con varias versiones, las pruebas no pueden coger otra
+        camino = os.pathsep.join(p for p in (str(RAIZ / "cargador"), os.environ.get("PYTHONPATH")) if p)
+        env = dict(os.environ, AUDITOR_TIEMPOS=str(tiempos), PYTHONIOENCODING="utf-8", PYTHONPATH=camino)
         r = subprocess.run([sys.executable, "-m", "pytest", "-q", "-p", "no:cacheprovider", *argumentos],
                            cwd=RAIZ, env=env, capture_output=True, text=True, encoding="utf-8",
                            errors="replace")
@@ -171,14 +192,48 @@ def r6_sin_perder_pruebas(cam, base):
     return Resultado("R6 sin perder pruebas", not det, det or ["ninguna prueba ni caso eliminado"])
 
 
-def auditar(base="main", solo_pruebas=False, limite=LIMITE_PRUEBA_S, total=LIMITE_TOTAL_S):
+def r7_versiones():
+    """Cada carpeta se llama como su versión, una publicada (con su etiqueta) no se toca y cada planta usa una versión que existe."""
+    det = []
+    version = re.search(r'__version__ = "([^"]+)"', (RAIZ / "core" / "__init__.py").read_text(encoding="utf-8")).group(1)
+    proyecto = re.search(r'(?m)^version = "([^"]+)"', (RAIZ / "pyproject.toml").read_text(encoding="utf-8")).group(1)
+    if version != proyecto:
+        det.append("core dice %s y pyproject.toml dice %s" % (version, proyecto))
+    if _numero(RAIZ) is None:
+        return Resultado("R7 versiones", not det, det or ["no está en una carpeta de versión: nada más que mirar"])
+    if RAIZ.name != "v" + version:
+        det.append("la carpeta %s contiene la versión %s" % (RAIZ.name, version))
+    padre = RAIZ.parent
+    for c in sorted((p for p in padre.iterdir() if p.is_dir() and _numero(p)), key=_numero):
+        etiqueta = "refs/tags/" + c.name
+        if not _git("tag", "--list", c.name, cwd=padre).strip() or not _git("ls-tree", "-d", etiqueta, c.name, cwd=padre).strip():
+            continue                                 # sin publicar, o publicada antes de que hubiera carpetas
+        tocados = _git("diff", "--name-only", etiqueta, "--", c.name + "/", cwd=padre).split("\n")
+        tocados += _git("ls-files", "--others", "--exclude-standard", "--", c.name + "/", cwd=padre).split("\n")
+        tocados = [t for t in tocados if t]
+        if tocados:
+            det.append("%s está publicada y ha cambiado: %s" % (c.name, ", ".join(tocados[:5])))
+    plantas = sorted(p for p in padre.iterdir() if p.is_dir() and (p / "VERSION").is_file())
+    for c in plantas:
+        pide = (c / "VERSION").read_text(encoding="utf-8").strip()
+        if not (padre / pide / "cargador").is_dir():
+            det.append("la planta %s usa %s, que no existe" % (c.name, pide))
+        if not (c / "entrada" / "planta.json").is_file():
+            det.append("la planta %s no tiene entrada/planta.json" % c.name)
+    return Resultado("R7 versiones", not det, det or ["%s · plantas: %s" % (RAIZ.name, ", ".join(c.name for c in plantas) or "ninguna")])
+
+
+def auditar(base=None, solo_pruebas=False, limite=LIMITE_PRUEBA_S, total=LIMITE_TOTAL_S):
+    """`base`: la carpeta con la que comparar; por defecto, la de la versión anterior."""
     res = [r1_sintaxis()]
     res += list(r2_r3_pruebas(limite, total))
     if not solo_pruebas:
+        base = Path(base) if base else version_anterior()
         try:
             cam = cambios(base)
         except RuntimeError as e:
             res.append(Resultado("R4-R6 cambios", False, ["no se pudo comparar con «%s»: %s" % (base, e)]))
         else:
-            res += [r4_pruebas_nuevas(cam), r5_referencias(cam, base), r6_sin_perder_pruebas(cam, base)]
+            res.append(Resultado("R4-R6 base", True, ["frente a %s" % base.name if base else "no hay versión anterior con la que comparar"]))
+            res += [r4_pruebas_nuevas(cam), r5_referencias(cam, base), r6_sin_perder_pruebas(cam, base), r7_versiones()]
     return res

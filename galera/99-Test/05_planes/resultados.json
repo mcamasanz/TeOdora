@@ -1,0 +1,534 @@
+{
+ "fecha": "2026-10-31 16:18",
+ "receptores": 12263,
+ "focos": {
+  "PILAS": {
+   "inicio_B_periodo": 24,
+   "convencion_emision_ok": true,
+   "suma_R_igual_A_dif_rel": 6.432108189541392e-08,
+   "directo_negativos_rel": 0.0,
+   "plan_on_off": {
+    "max_directo_ug_m3": 2116.831485182047,
+    "dif_max_rel_al_maximo": 6.432108189541392e-08,
+    "receptor_horas_evaluadas": 9669,
+    "rel_p50_pct": 2.0672835649327736e-06,
+    "rel_p99_pct": 9.484756367106438e-06,
+    "rel_max_pct": 0.0005907169370360187,
+    "masa_mal_atribuida_pct": 2.502050943070951e-06,
+    "media": {
+     "max_rel_pct": 5.914717958644096e-06,
+     "mediana_rel_pct": 9.938398921347426e-07
+    },
+    "maximo": {
+     "max_rel_pct": 1.0479399578710901e-05,
+     "mediana_rel_pct": 2.2861389178624706e-06
+    },
+    "p98": {
+     "max_rel_pct": 8.809339233304092e-06,
+     "mediana_rel_pct": 1.7087385963072e-06
+    }
+   },
+   "tras_apagar": [
+    {
+     "horas_desde_apagar": 1,
+     "fin": "2026-10-21 06:00:00",
+     "resto_masa_pct": 91.20516062093311,
+     "max_directo_ug_m3": 6.627553375437856,
+     "max_constante_ug_m3": 924.3588428944349
+    },
+    {
+     "horas_desde_apagar": 2,
+     "fin": "2026-10-21 07:00:00",
+     "resto_masa_pct": 29.637553556279215,
+     "max_directo_ug_m3": 0.5334135551038344,
+     "max_constante_ug_m3": 1293.4631668031216
+    },
+    {
+     "horas_desde_apagar": 3,
+     "fin": "2026-10-21 08:00:00",
+     "resto_masa_pct": 4.396015833121956,
+     "max_directo_ug_m3": 0.022626693407801213,
+     "max_constante_ug_m3": 1348.6166717484593
+    },
+    {
+     "horas_desde_apagar": 4,
+     "fin": "2026-10-21 09:00:00",
+     "resto_masa_pct": 0.0,
+     "max_directo_ug_m3": 0.0,
+     "max_constante_ug_m3": 935.9300602227449
+    },
+    {
+     "horas_desde_apagar": 5,
+     "fin": "2026-10-21 10:00:00",
+     "resto_masa_pct": 0.0,
+     "max_directo_ug_m3": 0.0,
+     "max_constante_ug_m3": 808.6581947281957
+    },
+    {
+     "horas_desde_apagar": 6,
+     "fin": "2026-10-21 11:00:00",
+     "resto_masa_pct": 0.0,
+     "max_directo_ug_m3": 0.0,
+     "max_constante_ug_m3": 634.4845169223845
+    },
+    {
+     "horas_desde_apagar": 7,
+     "fin": "2026-10-21 12:00:00",
+     "resto_masa_pct": 0.0,
+     "max_directo_ug_m3": 0.0,
+     "max_constante_ug_m3": 550.5273002199829
+    },
+    {
+     "horas_desde_apagar": 8,
+     "fin": "2026-10-21 13:00:00",
+     "resto_masa_pct": 0.0,
+     "max_directo_ug_m3": 0.0,
+     "max_constante_ug_m3": 523.0973474681377
+    },
+    {
+     "horas_desde_apagar": 9,
+     "fin": "2026-10-21 14:00:00",
+     "resto_masa_pct": 0.0,
+     "max_directo_ug_m3": 0.0,
+     "max_constante_ug_m3": 578.6136025562882
+    },
+    {
+     "horas_desde_apagar": 10,
+     "fin": "2026-10-21 15:00:00",
+     "resto_masa_pct": 0.0,
+     "max_directo_ug_m3": 0.0,
+     "max_constante_ug_m3": 535.5008761398494
+    },
+    {
+     "horas_desde_apagar": 11,
+     "fin": "2026-10-21 16:00:00",
+     "resto_masa_pct": 0.0,
+     "max_directo_ug_m3": 0.0,
+     "max_constante_ug_m3": 553.8128898479044
+    },
+    {
+     "horas_desde_apagar": 12,
+     "fin": "2026-10-21 17:00:00",
+     "resto_masa_pct": 0.0,
+     "max_directo_ug_m3": 0.0,
+     "max_constante_ug_m3": 612.5811487436295
+    },
+    {
+     "horas_desde_apagar": 13,
+     "fin": "2026-10-21 18:00:00",
+     "resto_masa_pct": 0.0,
+     "max_directo_ug_m3": 0.0,
+     "max_constante_ug_m3": 864.6441274322569
+    },
+    {
+     "horas_desde_apagar": 14,
+     "fin": "2026-10-21 19:00:00",
+     "resto_masa_pct": 0.0,
+     "max_directo_ug_m3": 0.0,
+     "max_constante_ug_m3": 910.7343503274024
+    },
+    {
+     "horas_desde_apagar": 15,
+     "fin": "2026-10-21 20:00:00",
+     "resto_masa_pct": 0.0,
+     "max_directo_ug_m3": 0.0,
+     "max_constante_ug_m3": 1002.091565169394
+    },
+    {
+     "horas_desde_apagar": 16,
+     "fin": "2026-10-21 21:00:00",
+     "resto_masa_pct": 0.0,
+     "max_directo_ug_m3": 0.0,
+     "max_constante_ug_m3": 1014.5931737497449
+    },
+    {
+     "horas_desde_apagar": 17,
+     "fin": "2026-10-21 22:00:00",
+     "resto_masa_pct": 0.0,
+     "max_directo_ug_m3": 0.0,
+     "max_constante_ug_m3": 957.2794078849256
+    },
+    {
+     "horas_desde_apagar": 18,
+     "fin": "2026-10-21 23:00:00",
+     "resto_masa_pct": 0.0,
+     "max_directo_ug_m3": 0.0,
+     "max_constante_ug_m3": 1169.5686262100935
+    }
+   ],
+   "plan_dos_dias": {
+    "max_directo_ug_m3": 2116.831485182047,
+    "dif_max_rel_al_maximo": 6.432108189541392e-08,
+    "receptor_horas_evaluadas": 13512,
+    "rel_p50_pct": 1.9500618587665615e-06,
+    "rel_p99_pct": 8.882559759517557e-06,
+    "rel_max_pct": 3.177349095889854e-05,
+    "masa_mal_atribuida_pct": 2.4520886889170146e-06,
+    "media": {
+     "max_rel_pct": 5.914717958644096e-06,
+     "mediana_rel_pct": 8.780235745035634e-07
+    },
+    "maximo": {
+     "max_rel_pct": 1.0479399578710901e-05,
+     "mediana_rel_pct": 2.2775093644318016e-06
+    },
+    "p98": {
+     "max_rel_pct": 9.865896583398822e-06,
+     "mediana_rel_pct": 1.6998014198166668e-06
+    }
+   }
+  },
+  "BIOFILTRO": {
+   "inicio_B_periodo": 24,
+   "convencion_emision_ok": true,
+   "suma_R_igual_A_dif_rel": 5.071145022226407e-08,
+   "directo_negativos_rel": 0.0,
+   "plan_on_off": {
+    "max_directo_ug_m3": 6275.1914374530315,
+    "dif_max_rel_al_maximo": 5.071145022226407e-08,
+    "receptor_horas_evaluadas": 5423,
+    "rel_p50_pct": 1.849626556551009e-06,
+    "rel_p99_pct": 8.314439455557934e-06,
+    "rel_max_pct": 0.00028841539199881864,
+    "masa_mal_atribuida_pct": 2.5163538969052997e-06,
+    "media": {
+     "max_rel_pct": 5.835329651545057e-06,
+     "mediana_rel_pct": 9.044930590094291e-07
+    },
+    "maximo": {
+     "max_rel_pct": 9.924190437873906e-06,
+     "mediana_rel_pct": 2.146906822526377e-06
+    },
+    "p98": {
+     "max_rel_pct": 7.753104545547658e-06,
+     "mediana_rel_pct": 1.4845371605499273e-06
+    }
+   },
+   "tras_apagar": [
+    {
+     "horas_desde_apagar": 1,
+     "fin": "2026-10-21 06:00:00",
+     "resto_masa_pct": 91.62708283255282,
+     "max_directo_ug_m3": 7.095193723216653,
+     "max_constante_ug_m3": 3677.0801525563
+    },
+    {
+     "horas_desde_apagar": 2,
+     "fin": "2026-10-21 07:00:00",
+     "resto_masa_pct": 31.51555141177731,
+     "max_directo_ug_m3": 0.6804423549056082,
+     "max_constante_ug_m3": 3106.063464656472
+    },
+    {
+     "horas_desde_apagar": 3,
+     "fin": "2026-10-21 08:00:00",
+     "resto_masa_pct": 6.7469742586017265,
+     "max_directo_ug_m3": 0.03728874276021088,
+     "max_constante_ug_m3": 3631.1428993940353
+    },
+    {
+     "horas_desde_apagar": 4,
+     "fin": "2026-10-21 09:00:00",
+     "resto_masa_pct": 0.0,
+     "max_directo_ug_m3": 0.0,
+     "max_constante_ug_m3": 2421.0133124142885
+    },
+    {
+     "horas_desde_apagar": 5,
+     "fin": "2026-10-21 10:00:00",
+     "resto_masa_pct": 0.0,
+     "max_directo_ug_m3": 0.0,
+     "max_constante_ug_m3": 2061.5935791283846
+    },
+    {
+     "horas_desde_apagar": 6,
+     "fin": "2026-10-21 11:00:00",
+     "resto_masa_pct": 0.0,
+     "max_directo_ug_m3": 0.0,
+     "max_constante_ug_m3": 1668.2995483279228
+    },
+    {
+     "horas_desde_apagar": 7,
+     "fin": "2026-10-21 12:00:00",
+     "resto_masa_pct": 0.0,
+     "max_directo_ug_m3": 0.0,
+     "max_constante_ug_m3": 1551.1175151914358
+    },
+    {
+     "horas_desde_apagar": 8,
+     "fin": "2026-10-21 13:00:00",
+     "resto_masa_pct": 0.0,
+     "max_directo_ug_m3": 0.0,
+     "max_constante_ug_m3": 1486.8234284222126
+    },
+    {
+     "horas_desde_apagar": 9,
+     "fin": "2026-10-21 14:00:00",
+     "resto_masa_pct": 0.0,
+     "max_directo_ug_m3": 0.0,
+     "max_constante_ug_m3": 1706.6755099222064
+    },
+    {
+     "horas_desde_apagar": 10,
+     "fin": "2026-10-21 15:00:00",
+     "resto_masa_pct": 0.0,
+     "max_directo_ug_m3": 0.0,
+     "max_constante_ug_m3": 1584.9843621253967
+    },
+    {
+     "horas_desde_apagar": 11,
+     "fin": "2026-10-21 16:00:00",
+     "resto_masa_pct": 0.0,
+     "max_directo_ug_m3": 0.0,
+     "max_constante_ug_m3": 1644.3164786323905
+    },
+    {
+     "horas_desde_apagar": 12,
+     "fin": "2026-10-21 17:00:00",
+     "resto_masa_pct": 0.0,
+     "max_directo_ug_m3": 0.0,
+     "max_constante_ug_m3": 1710.0858967751265
+    },
+    {
+     "horas_desde_apagar": 13,
+     "fin": "2026-10-21 18:00:00",
+     "resto_masa_pct": 0.0,
+     "max_directo_ug_m3": 0.0,
+     "max_constante_ug_m3": 2718.371106311679
+    },
+    {
+     "horas_desde_apagar": 14,
+     "fin": "2026-10-21 19:00:00",
+     "resto_masa_pct": 0.0,
+     "max_directo_ug_m3": 0.0,
+     "max_constante_ug_m3": 3485.3005781769753
+    },
+    {
+     "horas_desde_apagar": 15,
+     "fin": "2026-10-21 20:00:00",
+     "resto_masa_pct": 0.0,
+     "max_directo_ug_m3": 0.0,
+     "max_constante_ug_m3": 4083.135165274143
+    },
+    {
+     "horas_desde_apagar": 16,
+     "fin": "2026-10-21 21:00:00",
+     "resto_masa_pct": 0.0,
+     "max_directo_ug_m3": 0.0,
+     "max_constante_ug_m3": 3217.618679627776
+    },
+    {
+     "horas_desde_apagar": 17,
+     "fin": "2026-10-21 22:00:00",
+     "resto_masa_pct": 0.0,
+     "max_directo_ug_m3": 0.0,
+     "max_constante_ug_m3": 3849.527332931757
+    },
+    {
+     "horas_desde_apagar": 18,
+     "fin": "2026-10-21 23:00:00",
+     "resto_masa_pct": 0.0,
+     "max_directo_ug_m3": 0.0,
+     "max_constante_ug_m3": 4548.37828874588
+    }
+   ],
+   "plan_dos_dias": {
+    "max_directo_ug_m3": 6275.1914374530315,
+    "dif_max_rel_al_maximo": 5.071145022226407e-08,
+    "receptor_horas_evaluadas": 7355,
+    "rel_p50_pct": 1.6570998975381994e-06,
+    "rel_p99_pct": 8.635570331059384e-06,
+    "rel_max_pct": 3.359188849950025e-05,
+    "masa_mal_atribuida_pct": 2.4729030385662715e-06,
+    "media": {
+     "max_rel_pct": 5.2282579296590956e-06,
+     "mediana_rel_pct": 7.755598200980167e-07
+    },
+    "maximo": {
+     "max_rel_pct": 9.924190437873906e-06,
+     "mediana_rel_pct": 2.145678017638202e-06
+    },
+    "p98": {
+     "max_rel_pct": 1.5279341747700736e-05,
+     "mediana_rel_pct": 1.4886815283830344e-06
+    }
+   }
+  },
+  "CHIMENEA": {
+   "inicio_B_periodo": 24,
+   "convencion_emision_ok": true,
+   "suma_R_igual_A_dif_rel": 7.633419218115418e-08,
+   "directo_negativos_rel": 0.0,
+   "plan_on_off": {
+    "max_directo_ug_m3": 77.3452193243429,
+    "dif_max_rel_al_maximo": 8.063968567095455e-08,
+    "receptor_horas_evaluadas": 18201,
+    "rel_p50_pct": 1.9943536906605674e-06,
+    "rel_p99_pct": 8.337676955741883e-06,
+    "rel_max_pct": 0.0005244922914618649,
+    "masa_mal_atribuida_pct": 2.439560819183273e-06,
+    "media": {
+     "max_rel_pct": 8.390925005678483e-06,
+     "mediana_rel_pct": 9.83789306531856e-07
+    },
+    "maximo": {
+     "max_rel_pct": 1.0080661759154106e-05,
+     "mediana_rel_pct": 2.1409289357814634e-06
+    },
+    "p98": {
+     "max_rel_pct": 8.501429778848524e-06,
+     "mediana_rel_pct": 1.7010553149225675e-06
+    }
+   },
+   "tras_apagar": [
+    {
+     "horas_desde_apagar": 1,
+     "fin": "2026-10-21 06:00:00",
+     "resto_masa_pct": 84.79819795074928,
+     "max_directo_ug_m3": 2.984667844430078,
+     "max_constante_ug_m3": 19.8091656784527
+    },
+    {
+     "horas_desde_apagar": 2,
+     "fin": "2026-10-21 07:00:00",
+     "resto_masa_pct": 29.295189653771025,
+     "max_directo_ug_m3": 0.8169222098786122,
+     "max_constante_ug_m3": 56.879107432905585
+    },
+    {
+     "horas_desde_apagar": 3,
+     "fin": "2026-10-21 08:00:00",
+     "resto_masa_pct": 5.81458993581273,
+     "max_directo_ug_m3": 0.05100920930090069,
+     "max_constante_ug_m3": 59.23239586991258
+    },
+    {
+     "horas_desde_apagar": 4,
+     "fin": "2026-10-21 09:00:00",
+     "resto_masa_pct": 0.0,
+     "max_directo_ug_m3": 0.0,
+     "max_constante_ug_m3": 73.79109592875466
+    },
+    {
+     "horas_desde_apagar": 5,
+     "fin": "2026-10-21 10:00:00",
+     "resto_masa_pct": 0.0,
+     "max_directo_ug_m3": 0.0,
+     "max_constante_ug_m3": 77.19060522504151
+    },
+    {
+     "horas_desde_apagar": 6,
+     "fin": "2026-10-21 11:00:00",
+     "resto_masa_pct": 0.0,
+     "max_directo_ug_m3": 0.0,
+     "max_constante_ug_m3": 76.6537050367333
+    },
+    {
+     "horas_desde_apagar": 7,
+     "fin": "2026-10-21 12:00:00",
+     "resto_masa_pct": 0.0,
+     "max_directo_ug_m3": 0.0,
+     "max_constante_ug_m3": 81.707737990655
+    },
+    {
+     "horas_desde_apagar": 8,
+     "fin": "2026-10-21 13:00:00",
+     "resto_masa_pct": 0.0,
+     "max_directo_ug_m3": 0.0,
+     "max_constante_ug_m3": 80.16221545403823
+    },
+    {
+     "horas_desde_apagar": 9,
+     "fin": "2026-10-21 14:00:00",
+     "resto_masa_pct": 0.0,
+     "max_directo_ug_m3": 0.0,
+     "max_constante_ug_m3": 63.41185508063063
+    },
+    {
+     "horas_desde_apagar": 10,
+     "fin": "2026-10-21 15:00:00",
+     "resto_masa_pct": 0.0,
+     "max_directo_ug_m3": 0.0,
+     "max_constante_ug_m3": 63.943305576685816
+    },
+    {
+     "horas_desde_apagar": 11,
+     "fin": "2026-10-21 16:00:00",
+     "resto_masa_pct": 0.0,
+     "max_directo_ug_m3": 0.0,
+     "max_constante_ug_m3": 65.89152326341718
+    },
+    {
+     "horas_desde_apagar": 12,
+     "fin": "2026-10-21 17:00:00",
+     "resto_masa_pct": 0.0,
+     "max_directo_ug_m3": 0.0,
+     "max_constante_ug_m3": 61.36245792731643
+    },
+    {
+     "horas_desde_apagar": 13,
+     "fin": "2026-10-21 18:00:00",
+     "resto_masa_pct": 0.0,
+     "max_directo_ug_m3": 0.0,
+     "max_constante_ug_m3": 16.514719391125254
+    },
+    {
+     "horas_desde_apagar": 14,
+     "fin": "2026-10-21 19:00:00",
+     "resto_masa_pct": 0.0,
+     "max_directo_ug_m3": 0.0,
+     "max_constante_ug_m3": 24.7999432758661
+    },
+    {
+     "horas_desde_apagar": 15,
+     "fin": "2026-10-21 20:00:00",
+     "resto_masa_pct": 0.0,
+     "max_directo_ug_m3": 0.0,
+     "max_constante_ug_m3": 16.232657799264416
+    },
+    {
+     "horas_desde_apagar": 16,
+     "fin": "2026-10-21 21:00:00",
+     "resto_masa_pct": 0.0,
+     "max_directo_ug_m3": 0.0,
+     "max_constante_ug_m3": 13.628735359816346
+    },
+    {
+     "horas_desde_apagar": 17,
+     "fin": "2026-10-21 22:00:00",
+     "resto_masa_pct": 0.0,
+     "max_directo_ug_m3": 0.0,
+     "max_constante_ug_m3": 17.733618733473122
+    },
+    {
+     "horas_desde_apagar": 18,
+     "fin": "2026-10-21 23:00:00",
+     "resto_masa_pct": 0.0,
+     "max_directo_ug_m3": 0.0,
+     "max_constante_ug_m3": 17.648146240389906
+    }
+   ],
+   "plan_dos_dias": {
+    "max_directo_ug_m3": 77.3452193243429,
+    "dif_max_rel_al_maximo": 8.063968567095455e-08,
+    "receptor_horas_evaluadas": 25804,
+    "rel_p50_pct": 2.0293006792238846e-06,
+    "rel_p99_pct": 8.091628954921347e-06,
+    "rel_max_pct": 3.39942132136478e-05,
+    "masa_mal_atribuida_pct": 2.407040503310654e-06,
+    "media": {
+     "max_rel_pct": 8.390925005678483e-06,
+     "mediana_rel_pct": 8.792189573667404e-07
+    },
+    "maximo": {
+     "max_rel_pct": 9.940114105969487e-06,
+     "mediana_rel_pct": 2.171993908345765e-06
+    },
+    "p98": {
+     "max_rel_pct": 1.5734019817556242e-05,
+     "mediana_rel_pct": 1.7126927984348649e-06
+    }
+   }
+  }
+ }
+}
