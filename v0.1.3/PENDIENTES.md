@@ -91,6 +91,7 @@ Fallos heredados que se vieron al mover el código función a función. Se movie
 - `casos.viento3d`: restos de `_reservado_gb`; `preparar_mes` arranca en frío sin avisar.
 - `mos`: `anemometro_m` sale siempre 10 en la tabla; los modelos se guardan y nada los aplica.
 - `gui.web._descarga`: hasta 40 s en el hilo de la interfaz si no hay red.
+- `gui.web`: en un equipo nuevo, las librerías del mapa se bajan la primera vez que se abre. Al crear una planta de prueba, la de jQuery falló por el certificado SSL (2026-11-02) y la aplicación funcionó igual. Hay que probarlo en el PC del operario.
 
 ## 4. Proyectos
 

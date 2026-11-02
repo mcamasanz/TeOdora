@@ -313,7 +313,7 @@ Image.fromarray(np.abs(gris_turbo - color_ref).astype(np.uint8).clip(0, 255) * 8
 dif = np.abs(gris_turbo - color_ref)[60:-140, 60:-340]
 mancha = dif.sum(axis=2) > 0
 ok("El filtro da lo mismo que pintar en color con matplotlib", dif.max() <= 25 and np.percentile(dif[mancha], 99) <= 8 if mancha.any() else True,
-   f"máx. {dif.max()}, en los {mancha.sum()} píxeles distintos: media {dif[mancha].mean() if mancha.any() else 0:.2f}, P99 {np.percentile(dif[mancha], 99) if mancha.any() else 0:.0f}")
+   f"máx. {dif.max()} ({(dif.max(axis=2) > 16).sum()} píxeles por encima de 16), en los {mancha.sum()} píxeles distintos: media {dif[mancha].mean() if mancha.any() else 0:.2f}, P99 {np.percentile(dif[mancha], 99) if mancha.any() else 0:.0f}")
 v.mapa.quitar_capa("ref")
 espera(0.5)
 p._botones_capa["plan_norma"].click()

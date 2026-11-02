@@ -114,7 +114,7 @@ p = v.panel
 Z = v.mapa
 t0 = time.time()
 d_lib = viento_mapa.datos_local()
-print(f"Biblioteca: {viento_mapa.BIBLIOTECA.stat().st_size / 1e6:.2f} MB en disco · preparada en {time.time() - t0:.2f} s · {sum(len(x) for x in d_lib['u']) * 2 / 1e6:.1f} MB al mapa · {d_lib['nx']} × {d_lib['ny']} celdas de {d_lib['dx']} m", file=out, flush=True)
+print(f"Biblioteca: {viento_mapa.biblioteca().stat().st_size / 1e6:.2f} MB en disco · preparada en {time.time() - t0:.2f} s · {sum(len(x) for x in d_lib['u']) * 2 / 1e6:.1f} MB al mapa · {d_lib['nx']} × {d_lib['ny']} celdas de {d_lib['dx']} m", file=out, flush=True)
 ok("Al abrir sigue sin haber viento", js(Z, "mapaApp.estadoViento() === null") is True or js(Z, "(mapaApp.estadoViento()||{}).modo") in (None, ""))
 p.set_horizonte_meteo("reanalisis")
 espera(1)
@@ -146,7 +146,7 @@ def bilin(A, x, y):
     return (A[j, i] * (1 - fx) + A[j, i + 1] * fx) * (1 - fy) + (A[j + 1, i] * (1 - fx) + A[j + 1, i + 1] * fx) * fy
 
 
-with np.load(viento_mapa.BIBLIOTECA) as z:
+with np.load(viento_mapa.biblioteca()) as z:
     lu, lv = z["u"].astype(float), z["v"].astype(float)
     SOL, ESC, PASO = int(z["solido"]), float(z["escala"]), float(z["paso"])
     x0, y0, dx, cx, cy, cx2, cy2, R, RB = (float(z[k]) for k in ("x0", "y0", "dx", "cx", "cy", "cx2", "cy2", "radio", "radio_borde"))
