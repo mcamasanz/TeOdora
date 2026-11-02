@@ -63,6 +63,20 @@ def test_cambios_entre_dos_carpetas(repo):
     assert reglas._en_base(vieja, "dato.txt") == "uno\ndos\n" and reglas._en_base(vieja, "no_esta.txt") == ""
 
 
+def test_r4_subir_de_version_no_es_codigo_pero_lo_demas_si(repo):
+    vieja = repo / "v0.1.3"
+    assert reglas.r4_pruebas_nuevas(reglas.cambios(vieja)).ok            # entre las dos solo cambia el número
+    f = repo / "v0.1.4" / "core" / "dispersion" / "puffs" / "principal.py"
+    f.parent.mkdir(parents=True)
+    f.write_text("x = 1\n", encoding="utf-8")
+    r = reglas.r4_pruebas_nuevas(reglas.cambios(vieja))
+    assert not r.ok and "puffs" in " ".join(r.detalle)
+    p = repo / "v0.1.4" / "auditor" / "pruebas" / "test_algo.py"
+    p.parent.mkdir(parents=True)
+    p.write_text("def test_puffs():\n    pass\n", encoding="utf-8")
+    assert reglas.r4_pruebas_nuevas(reglas.cambios(vieja)).ok
+
+
 def test_r7_todo_en_orden(repo):
     r = reglas.r7_versiones()
     assert r.ok, r.detalle

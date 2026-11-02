@@ -150,7 +150,8 @@ def _parte(ruta):
 
 
 def r4_pruebas_nuevas(cam):
-    codigo = [r for r, e in cam.items() if e in "AM" and r.startswith("core/") and r.endswith(".py")]
+    # core/__init__.py lleva el número de versión, que cambia en todas: si contara, y con él la prueba que lo mira, cualquier código pasaría
+    codigo = [r for r, e in cam.items() if e in "AM" and r.startswith("core/") and r.endswith(".py") and r != "core/__init__.py"]
     pruebas = [r for r, e in cam.items() if e in "AM" and r.startswith("auditor/pruebas/") and r.endswith(".py")]
     casos_nuevos = {Path(r).parts[2] for r, e in cam.items() if e == "A" and r.startswith("auditor/casos/")
                     and r.endswith("caso.json")}

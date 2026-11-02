@@ -3,7 +3,7 @@
 Planta de biometano de ENCE en La Galera (Montsià, Tarragona), en 40,6905923 N y 0,4764197 E. La versión de teOdors que usa está en [`VERSION`](VERSION).
 
 ⚠️ **Los 13 focos de `entrada/focos.json` son de ejemplo:** posiciones leídas a ojo en la ortofoto y valores inventados, a la espera de la visita a la planta. Lo que se calcule
-con ellos prueba la herramienta, pero no es un resultado. La normativa de `entrada/normativa.json` también es preliminar.
+con ellos prueba la herramienta, pero no es un resultado. La normativa de `entrada/normativa.json` también es preliminar, y la serie de viento de 5 años está sin terminar (18 de 60 meses el 2026-10-21, en la carpeta de cálculos).
 
 ## Abrir la aplicación
 

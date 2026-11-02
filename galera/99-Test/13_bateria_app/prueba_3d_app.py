@@ -53,7 +53,7 @@ for g in ("ventana", "focos", "planes", "apariencia"):
 aj.sync()
 tema.aplicar(app)
 from teodors.gui.ventana import VentanaPrincipal
-registro.configurar()
+_planta.asegurar_carpetas(); registro.configurar(_planta.DIR_LOGS, _planta.REGISTRO)
 fallos = []
 
 

@@ -53,7 +53,7 @@ from teodors.operacion import focos as F  # noqa: E402
 from teodors.comun import registro  # noqa: E402
 from teodors.gui import tema  # noqa: E402
 
-registro.configurar()
+_planta.asegurar_carpetas(); registro.configurar(_planta.DIR_LOGS, _planta.REGISTRO)
 tema.aplicar(app)
 B = QtWidgets.QMessageBox.StandardButton
 fallos = []

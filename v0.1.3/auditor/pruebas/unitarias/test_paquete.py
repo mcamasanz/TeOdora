@@ -31,7 +31,9 @@ def _modulo(nombre):
 
 
 def test_version():
-    assert teodors.__version__ == "0.1.3"
+    # el mismo número en el paquete y en pyproject.toml; el de la carpeta lo mira la regla R7
+    raiz = Path(__file__).resolve().parents[3]
+    assert 'version = "%s"' % teodors.__version__ in (raiz / "pyproject.toml").read_text(encoding="utf-8")
 
 
 def test_se_importa_desde_core():

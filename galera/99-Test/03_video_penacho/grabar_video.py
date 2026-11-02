@@ -177,7 +177,7 @@ def main():
     from teodors.comun import registro
     from teodors.gui.ventana import VentanaPrincipal
     from teodors.fuentes import terreno
-    registro.configurar()
+    _planta.asegurar_carpetas(); registro.configurar(_planta.DIR_LOGS, _planta.REGISTRO)
 
     v = VentanaPrincipal(dia_inicial=args.dia)
     v.show()

@@ -42,7 +42,7 @@ aj.sync()
 tema.aplicar(app)
 from teodors.gui.ventana import VentanaPrincipal
 from teodors.casos import receptores as receptores_mapa
-registro.configurar()
+_planta.asegurar_carpetas(); registro.configurar(_planta.DIR_LOGS, _planta.REGISTRO)
 v = VentanaPrincipal()
 for b in ("WindowStaysOnTopHint", "WindowTransparentForInput", "WindowDoesNotAcceptFocus"):
     v.setWindowFlag(getattr(QtCore.Qt.WindowType, b), True)

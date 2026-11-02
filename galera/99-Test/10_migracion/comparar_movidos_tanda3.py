@@ -72,7 +72,7 @@ AG = ('"Mozilla/5.0 ENCE-Galera"', "config.AGENTE_HTTP", AGENTE)
 RES_L = "    res_m = config.RES_TERRENO_M if res_m is None else res_m\n"
 ANIOS_L = "    anios = config.REANALISIS_ANIOS if anios is None else anios\n"
 RADIO_L = '    radio_km = config.pide("estaciones", "radio_km") if radio_km is None else radio_km\n'
-REGISTRO = ("    log = registro.configurar()\n", "    config.asegurar_carpetas()\n    log = registro.configurar(config.DIR_LOGS, config.REGISTRO)\n", REG)
+REGISTRO = ("    log = _planta.asegurar_carpetas(); registro.configurar(_planta.DIR_LOGS, _planta.REGISTRO)\n", "    config.asegurar_carpetas()\n    log = registro.configurar(config.DIR_LOGS, config.REGISTRO)\n", REG)
 
 ESPERADOS = {
     ("terreno.py", "rejilla"): [("res_m=config.RES_TERRENO_M):\n", "res_m=None):\n" + RES_L, DEF), GEO_L],

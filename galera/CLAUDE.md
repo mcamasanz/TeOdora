@@ -1,6 +1,6 @@
 # ENCE Tarragona — herramienta de dispersión de contaminantes y olores
 
-> ⚠️ **RECTIFICACIÓN (2026-11-02): el proyecto se ha reorganizado, y odora se llama teOdors.** Esto vive en el repositorio `teOdors`, en la carpeta `galera/`. Lo que sigue se escribió
+> ⚠️ **RECTIFICACIÓN (2026-11-02): el proyecto se ha reorganizado, y odora se llama teOdors.** Esto vive en el repositorio https://github.com/mcamasanz/TeOdora.git, en la carpeta `galera/`. Lo que sigue se escribió
 > antes y conserva los nombres de entonces (regla 6). Cuando diga… léelo como:
 >
 > | Dice | Ahora |

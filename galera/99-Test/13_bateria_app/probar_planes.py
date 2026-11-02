@@ -30,7 +30,7 @@ app = QtWidgets.QApplication(sys.argv[:1])
 from teodors.operacion import planes as E
 from teodors.comun import registro
 from teodors.gui.ventana_planes import VentanaPlanes
-registro.configurar()
+_planta.asegurar_carpetas(); registro.configurar(_planta.DIR_LOGS, _planta.REGISTRO)
 fallos = []
 
 

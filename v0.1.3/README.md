@@ -127,8 +127,8 @@ original.
 ## Instalación
 
 ```bash
-git clone <url-del-repositorio> teOdors
-cd teOdors/v0.1.3
+git clone https://github.com/mcamasanz/TeOdora.git
+cd TeOdora/v0.1.3
 pip install -e .
 ```
 

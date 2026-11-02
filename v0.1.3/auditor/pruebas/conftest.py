@@ -27,7 +27,7 @@ def instalacion():
     try:
         import teodors
     except ImportError:
-        return "no se encuentra el paquete teOdors: instala este repositorio con «pip install -e .»"
+        return "no se encuentra el paquete teOdors: instala esta versión con «pip install -e .» o pon su carpeta cargador en PYTHONPATH"
     origen = Path(teodors.__file__).resolve().parent
     if origen != RAIZ / "core":
         return ("teOdors se importa desde %s y no desde %s: instala este repositorio con "
