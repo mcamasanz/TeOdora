@@ -25,6 +25,7 @@ También `--dia AAAA-MM-DD`, `--focos` y `--planes`. Sin la carpeta de cálculos
 | Núcleos de población | `terreno/…/nucleos_nombres.json` | CORINE, con los nombres de CartoCiudad |
 | Edificios a menos de 2 km (867) | `edificios/40.69059_0.47642_r2km/edificios.gpkg` | Catastro: solo huella, uso y plantas |
 | Focos | `focos.json` | ⚠️ de ejemplo |
+| Planes de operación guardados | `planes/` | los crea quien opera la planta, desde la aplicación. Aún no hay ninguno |
 | Receptores con nombre (Dacame) | `receptores.json` | Catastro |
 | Límites | `normativa.json` | ⚠️ preliminar |
 | Viento alrededor de los edificios | `viento_local/viento_local.npz` | calculado con `viento_local/planta_1m.npz`, de LiDAR del ICGC. ⚠️ No validado: solo enseña el efecto de los edificios |
@@ -35,13 +36,13 @@ También `--dia AAAA-MM-DD`, `--focos` y `--planes`. Sin la carpeta de cálculos
 
 Van a la carpeta de `entrada/rutas.json` (`Z:\Miguel\03-Odora\ENCE_LaGalera`), o a la de la variable `ENCE_GALERA_DATOS` si está puesta: viento, meteorología, respuestas de los focos y resultados. Las claves, en `%APPDATA%\CIRCE\claves`.
 
-Tareas, con `PYTHONPATH=../v0.1.3/cargador` y `TEODORS_PLANTA=entrada`:
+Tareas, con `PYTHONPATH=../v0.1.5/cargador` y `TEODORS_PLANTA=entrada`:
 
 | Para qué | Orden |
 |---|---|
 | Serie de viento de varios años | `python -m teodors.operacion.viento3d_series` |
 | Rehacer el viento local, si cambian los edificios | `python -m teodors.operacion.viento_local_biblioteca` |
-| De las nubes LiDAR a sus rejillas de 1 m | `python -I ../v0.1.3/core/fuentes/lidar.py <carpeta .laz> <carpeta de las librerías> entrada/viento_local/planta_1m.npz 286512 4507400 600` |
+| De las nubes LiDAR a sus rejillas de 1 m | `python -I ../v0.1.5/core/fuentes/lidar.py <carpeta .laz> <carpeta de las librerías> entrada/viento_local/planta_1m.npz 286512 4507400 600` |
 
 ## Pruebas: `99-Test/`
 

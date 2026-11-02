@@ -5,12 +5,13 @@
 >
 > | Dice | Ahora |
 > |---|---|
-> | `odora`, `lib/odora/core` | `teodors`, `../v0.1.3/core` (la versión, en `VERSION`) |
+> | `odora`, `lib/odora/core` | `teodors`, `../v0.1.5/core` (la versión, en `VERSION`) |
 > | `lib/galera/gui/planta/` | `entrada/` |
 > | `DATOS/terreno`, `DATOS/edificios` | `entrada/terreno`, `entrada/edificios`: van con la planta. En DATOS, solo los cálculos |
 > | `DATOS/viento_local/planta_1m.npz`, `gui/planta/viento_local.npz` | `entrada/viento_local/` |
+> | `DATOS/escenarios/`, `config.DIR_ESCENARIOS` | `entrada/planes/`, `planta.DIR_PLANES` (desde la v0.1.5, decisión del usuario, 2026-11-02: un plan no se puede recalcular). ⚠️ Cuando vuelva Z:, mirar si hay planes en `Z:\Miguel\03-Odora\ENCE_LaGalera\escenarios` y moverlos aquí: no se ha podido comprobar |
 > | `gui/recursos/ejemplo`, `gui/recursos/visor3d/ortofoto.jpg` | `entrada/recursos/` |
-> | `lib/galera/gui/*.py`, `gui/tareas/*.py`, `entradas/`, `viento/` | en `../v0.1.3/core`: `gui`, `operacion`, `casos`, `fuentes`, `metricas`, `mos`, `planta`. Ya no queda código en la planta |
+> | `lib/galera/gui/*.py`, `gui/tareas/*.py`, `entradas/`, `viento/` | en `../v0.1.5/core`: `gui`, `operacion`, `casos`, `fuentes`, `metricas`, `mos`, `planta`. Ya no queda código en la planta |
 > | `planes_calculo`, `escenarios`, `respuestas_dia`, `viento_dia_local` | `operacion.simulacion`, `operacion.planes`, `operacion.respuestas`, `operacion.viento_periodo` |
 > | `window.ence`, clases `ence-*` | `window.mapaApp`, clases `mapa-*` |
 >

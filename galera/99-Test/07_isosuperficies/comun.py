@@ -27,6 +27,7 @@ CARGADOR = RAIZ.parent / (RAIZ / "VERSION").read_text(encoding="utf-8").strip() 
 sys.path[:0] = [str(CARGADOR), str(AQUI)]
 from teodors import planta as _planta  # noqa: E402
 _planta.activar(RAIZ / "entrada")
+_planta.actual().DIR_PLANES = _planta.DATOS / "escenarios"      # los planes de las pruebas, con la copia de los datos: nunca en la carpeta de la planta
 
 import numpy as np  # noqa: E402
 import pandas as pd  # noqa: E402

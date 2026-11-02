@@ -23,6 +23,7 @@ CARGADOR = RAIZ.parent / (RAIZ / "VERSION").read_text(encoding="utf-8").strip() 
 sys.path[:0] = [str(CARGADOR)]
 from teodors import planta as _planta  # noqa: E402
 _planta.activar(RAIZ / "entrada")
+_planta.actual().DIR_PLANES = _planta.DATOS / "escenarios"      # los planes de las pruebas, con la copia de los datos: nunca en la carpeta de la planta
 out = sys.__stdout__
 out.reconfigure(encoding="utf-8")
 INI = Path(os.environ["APPDATA"]) / "CIRCE" / "ENCE_Galera.ini"

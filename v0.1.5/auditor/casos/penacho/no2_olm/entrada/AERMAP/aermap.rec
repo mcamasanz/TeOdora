@@ -1,0 +1,14 @@
+** AERMAP - VERSION 24142                                              09/27/26
+**                                                                     22:54:00
+** AERMAP cmp_gauss
+** 
+** A total of       1  NED files were used
+** A total of    1545  receptors were processed
+** DOMAINXY 773694 4607980 30 783284 4617570 30
+** ANCHORXY 778489 4612775 778489 4612775 30 0
+** TERRHGTS EXTRACT
+RE ELEVUNIT METERS
+   DISCCART     774117.60   4608397.40     131.86     131.86
+   DISCCART     778486.80   4612807.20     199.04     229.99
+   DISCCART     778504.80   4612765.20     197.58     229.99
+   DISCCART     778504.80   4612795.20     198.67     229.99
