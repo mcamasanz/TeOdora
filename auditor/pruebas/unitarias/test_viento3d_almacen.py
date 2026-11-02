@@ -6,7 +6,7 @@ from pathlib import Path
 import numpy as np
 import pytest
 
-from odora.meteo.viento3d import almacen, fichero_viento
+from teodors.meteo.viento3d import almacen, fichero_viento
 
 REF = (Path(__file__).resolve().parents[2] / "casos" / "viento3d" / "llano_lleida" / "referencia"
        / "calmet.dat")

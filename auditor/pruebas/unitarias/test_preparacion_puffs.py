@@ -15,11 +15,11 @@ import pytest
 
 pd = pytest.importorskip("pandas")
 
-from odora.dispersion.puffs import entrada  # noqa: E402
-from odora.dispersion.puffs.principal import ejecutar  # noqa: E402
-from odora.meteo.viento3d import fichero_viento  # noqa: E402
-from odora.preparacion import receptores  # noqa: E402
-from odora.preparacion.puffs import control, parametros, salida  # noqa: E402
+from teodors.dispersion.puffs import entrada  # noqa: E402
+from teodors.dispersion.puffs.principal import ejecutar  # noqa: E402
+from teodors.meteo.viento3d import fichero_viento  # noqa: E402
+from teodors.preparacion import receptores  # noqa: E402
+from teodors.preparacion.puffs import control, parametros, salida  # noqa: E402
 
 CASO = Path(__file__).resolve().parents[2] / "casos" / "puffs" / "area_D" / "entrada" / "CALMET.DAT"
 MALLA = {"nx": 125, "ny": 125, "celda_m": 400.0, "ext": (262000.0, 312000.0, 4482000.0, 4532000.0)}

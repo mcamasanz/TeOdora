@@ -1,4 +1,4 @@
-# `odora.terreno` — terreno, superficie y edificios
+# `teodors.terreno` — terreno, superficie y edificios
 
 Todo lo que describe el **suelo** sobre el que se dispersa la emisión: la cota y la forma del
 relieve, las propiedades de la superficie, los edificios que generan estelas y la malla
@@ -23,10 +23,10 @@ CORINE + MDT ─► geofisica.corine ─► geofisica ─► GEO.DAT ───�
 ## Ejemplo: el terreno de un caso en cuatro órdenes
 
 ```bash
-python -m odora relieve aermap.inp aermap.out          # receptores y fuentes con cota
-python -m odora superficie control.inp                 # características de superficie
-python -m odora edificios bpip.inp bpip.out bpip.sum   # dimensiones de edificio
-python -m odora geofisica geo.inp                      # GEO.DAT para el campo de viento
+python -m teodors relieve aermap.inp aermap.out          # receptores y fuentes con cota
+python -m teodors superficie control.inp                 # características de superficie
+python -m teodors edificios bpip.inp bpip.out bpip.sum   # dimensiones de edificio
+python -m teodors geofisica geo.inp                      # GEO.DAT para el campo de viento
 ```
 
 Cada motor es independiente: se puede usar solo el que haga falta.

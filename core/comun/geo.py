@@ -15,6 +15,7 @@ husos distintos).
 import math
 from functools import lru_cache
 
+import numpy as np
 from pyproj import Transformer
 
 CRS_GEO = "EPSG:4326"
@@ -110,3 +111,23 @@ def cuadrado_utm(lat, lon, lado_km, epsg=None, puntos_por_lado=8):
             ys.append(ya + (yb - ya) * t)
     lons, lats = _tr(epsg, CRS_GEO).transform(xs, ys)
     return [(la, lo) for la, lo in zip(lats, lons)], ext
+
+
+def direccion(u, v):
+    """Dirección de la que viene el viento (grados, 0-360), en los mismos ejes que sus componentes u, v."""
+    return (np.degrees(np.arctan2(-u, -v)) + 360.0) % 360.0
+
+
+def elevacion_solar(t, lat, lon):
+    """Elevación del sol (grados) en instantes UTC (serie de pandas; fórmula aproximada de la NOAA)."""
+    dia = t.dt.dayofyear.to_numpy()
+    h = t.dt.hour.to_numpy() + t.dt.minute.to_numpy() / 60.0
+    g = 2 * np.pi / 365 * (dia - 1 + (h - 12) / 24)
+    decl = (0.006918 - 0.399912 * np.cos(g) + 0.070257 * np.sin(g) - 0.006758 * np.cos(2 * g)
+            + 0.000907 * np.sin(2 * g) - 0.002697 * np.cos(3 * g) + 0.00148 * np.sin(3 * g))
+    eq = 229.18 * (0.000075 + 0.001868 * np.cos(g) - 0.032077 * np.sin(g)
+                   - 0.014615 * np.cos(2 * g) - 0.040849 * np.sin(2 * g))
+    ang = np.radians(((h * 60 + eq + 4 * lon) / 4) - 180)
+    la = np.radians(lat)
+    sen = np.sin(la) * np.sin(decl) + np.cos(la) * np.cos(decl) * np.cos(ang)
+    return np.degrees(np.arcsin(np.clip(sen, -1, 1)))

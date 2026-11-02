@@ -4,45 +4,57 @@ puntos de entrada de cada motor existen. Las validaciones numéricas frente a lo
 originales viven en el repositorio de laboratorio (ver docs/validacion.md)."""
 import importlib
 import pkgutil
+from importlib.util import find_spec
 from pathlib import Path
 
 import pytest
 
-import odora
-import odora.dispersion
-from odora.__main__ import main
+import teodors
+import teodors.dispersion
+from teodors.__main__ import main
 
 # sin `_nucleo_gen` (el núcleo numba se genera al correr y no se versiona): el número de pruebas
 # no debe depender de si ya existe
-MODULOS = sorted(m.name for m in pkgutil.walk_packages(odora.__path__, "odora.")
+MODULOS = sorted(m.name for m in pkgutil.walk_packages(teodors.__path__, "teodors.")
                  if not m.name.endswith(("__main__", "_nucleo_gen")))
 
 
+# La interfaz necesita un extra aparte: sin él, sus módulos con Qt no se importan, y solo esos, con su marca; no es un salto dentro de la prueba, que contaría como fallo. Lo demás se importa siempre,
+# también `teodors.gui` y los módulos de la interfaz que no cargan Qt. Que nada de lo demás lo cargue, sin que nadie lo instale, lo comprueba test_gui.py en un proceso aparte.
+GUI_SIN_QT = ("teodors.gui", "teodors.gui.penacho_3d", "teodors.gui.principal", "teodors.gui.web")
+HAY_GUI = find_spec("PySide6") is not None and find_spec("folium") is not None
+sin_gui = pytest.mark.skipif(not HAY_GUI, reason="sin teodors[pruebas_gui]")
+
+
+def _modulo(nombre):
+    return pytest.param(nombre, marks=sin_gui) if nombre.startswith("teodors.gui.") and nombre not in GUI_SIN_QT else nombre
+
+
 def test_version():
-    assert odora.__version__ == "0.1.2"
+    assert teodors.__version__ == "0.1.3"
 
 
 def test_se_importa_desde_core():
-    # el código vive en core/ y se instala como odora (pyproject.toml, package-dir)
+    # el código vive en core/ y se instala como teOdors (pyproject.toml, package-dir)
     raiz = Path(__file__).resolve().parents[3]
-    assert Path(odora.__file__).resolve().parent == raiz / "core"
-    assert Path(odora.dispersion.__file__).resolve().parent == raiz / "core" / "dispersion"
+    assert Path(teodors.__file__).resolve().parent == raiz / "core"
+    assert Path(teodors.dispersion.__file__).resolve().parent == raiz / "core" / "dispersion"
 
 
-@pytest.mark.parametrize("nombre", MODULOS)
+@pytest.mark.parametrize("nombre", [_modulo(m) for m in MODULOS])
 def test_importa(nombre):
     importlib.import_module(nombre)
 
 
 @pytest.mark.parametrize("ruta, funcion", [
-    ("odora.terreno.relieve.__main__", "ejecutar"),
-    ("odora.terreno.superficie.__main__", "main"),
-    ("odora.terreno.edificios.__main__", "main"),
-    ("odora.terreno.geofisica.principal", "ejecutar"),
-    ("odora.meteo.capa_limite.__main__", "ejecutar"),
-    ("odora.meteo.viento3d.principal", "ejecutar"),
-    ("odora.dispersion.penacho.principal", "ejecutar"),
-    ("odora.dispersion.puffs.principal", "ejecutar"),
+    ("teodors.terreno.relieve.__main__", "ejecutar"),
+    ("teodors.terreno.superficie.__main__", "main"),
+    ("teodors.terreno.edificios.__main__", "main"),
+    ("teodors.terreno.geofisica.principal", "ejecutar"),
+    ("teodors.meteo.capa_limite.__main__", "ejecutar"),
+    ("teodors.meteo.viento3d.principal", "ejecutar"),
+    ("teodors.dispersion.penacho.principal", "ejecutar"),
+    ("teodors.dispersion.puffs.principal", "ejecutar"),
 ])
 def test_puntos_de_entrada(ruta, funcion):
     assert callable(getattr(importlib.import_module(ruta), funcion))

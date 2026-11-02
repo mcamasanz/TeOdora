@@ -3,6 +3,82 @@
 Formato basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/); versionado
 semántico.
 
+## [0.1.3] — 2026-11-02
+
+**odora pasa a llamarse teOdors.** El paquete es `teodors` (`import teodors`, `python -m teodors`). Lo
+que sigue, hasta la 0.1.2, conserva el nombre antiguo porque cuenta lo que pasó entonces.
+
+La herramienta entera pasa de los proyectos a teOdors, por tandas, para que replicarla en otra planta
+sea cambiar de carpeta. Los motores no cambian: solo el texto de 7 mensajes, que nombraban el programa al que equivalen.
+
+**El repositorio se organiza por versiones y plantas:** cada versión exacta, en su carpeta (`v0.1.3/`), que no se vuelve a tocar; cada planta, en
+la suya, con sus datos de entrada y un fichero `VERSION` con la versión que usa. Ver el `README.md` de la raíz. Las versiones anteriores siguen en
+sus etiquetas, con la organización de entonces.
+
+### Añadido
+- `planta.nueva`: crea la carpeta de una planta a partir de sus coordenadas y, con `--descargar`, baja su terreno, sus usos del suelo y
+  sus edificios y anota las estaciones cercanas. El ejemplo de la configuración y la ortofoto del visor 3D pasan a ser opcionales.
+- `planta`: el terreno, los usos del suelo y los edificios van en la carpeta de la planta, no en DATOS (los cálculos): sin la unidad de datos sigue
+  habiendo mapa. `rutas.json` admite una ruta relativa a esa carpeta.
+- `planta`: una planta se lee de su carpeta (`planta.json`, `emplazamiento.json`, `rutas.json`…).
+  `planta.activar(carpeta)` la fija para el proceso y sus hijos; `planta.DATOS`, `planta.EPSG_UTM`…
+  dan los suyos; `planta.geo` hace las cuentas de `comun.geo` en su huso. Los motores no la usan: lo
+  comprueba una prueba.
+- `comun.registro`, `comun.formato`, `comun.errores`, `comun.procesos`, `comun.mercator` y
+  `comun.escalas` (extra `odora[mapas]` = matplotlib); `comun.geo.direccion` y
+  `comun.geo.elevacion_solar`.
+- `meteo.viento_local` (extra `teodors[viento_local]` = scipy). ⚠️ **NO VALIDADO y fuera de los motores:** no está en `MOTORES` ni
+  se lanza con `python -m teodors`. Solo enseña el efecto de los edificios en el viento: no da valores para un sensor y el penacho no
+  lo usa. `modelo`: masa consistente con zonas empíricas de estela, y de un LiDAR en rejilla a los obstáculos. `biblioteca`: un campo
+  por dirección, y `mezcla` para un viento cualquiera. Viene del proyecto de La Galera: mismo código función a función, salvo el
+  import perezoso de scipy, y lo propio del sitio pasa al bloque `viento_local` de su `planta.json`. Allí reproduce byte a byte las
+  2 direcciones que se han recalculado de su biblioteca de 36. `mezcla` es nueva en Python: la hacía el mapa de su aplicación.
+
+- `fuentes` (extras `teodors[fuentes]`, `teodors[lidar]` y `teodors[gfs_historico]`): de un servicio de internet a la carpeta de DATOS de la
+  planta. `terreno` (MDT del IGN, CORINE, CartoCiudad), `catastro`, `meteocat`, `era5` (CDS), `gfs_noaa`, `gfs_dynamical` y `lidar`, más
+  `descargar_era5` y `descargar_meteocat` por línea de órdenes. **Son servicios de España**, salvo ERA5 y GFS: no se ha intentado generalizarlos.
+  Vienen del proyecto de La Galera: mismo código función a función, salvo lo propio del sitio, que pasa a planta.json (bloques `estaciones` y
+  `pronostico`; `identidad.agente_http`; `viento_local.lidar_zona`), y los valores por defecto que dependían de la planta, que se resuelven al
+  llamar. Nuevo: `gfs_noaa.indices_caja` admite una caja al oeste de Greenwich (allí no se ha usado). Las versiones de HTTP con reintentos
+  no son iguales y se mueven sin fundirlas. Las pruebas no usan la red: ninguna descarga de verdad se ha lanzado con este código.
+- `planta.pide` (un campo que hace falta, con un error que dice cuál) y `planta.AGENTE_HTTP`.
+- `metricas` (`teodors[preparacion,mapas]`; matplotlib, solo para las figuras): validación del viento frente a las estaciones. `viento`: métricas y
+  umbrales de Emery, Tai y Yarwood (2001), horas de una estación, rosas y su figura. `calidad`: control de calidad de una estación y sus rosas, con
+  `python -m teodors.metricas.calidad`. No son motores. Vienen del proyecto de La Galera: mismo código función a función, salvo los valores por
+  defecto que dependían de la planta, que se resuelven al llamar; la lectura de `estaciones.ceros_sospechosos`, al llamar y opcional, y
+  `viento.convencion`, cuya ventana fija de 11,4 a 12,6 h UTC solo valía cerca del meridiano 0 y ahora va alrededor de `mediodia_h`: por
+  defecto, `estaciones.mediodia_utc_h` de la planta y, sin él, el mediodía solar en su longitud (`viento.mediodia_solar`, nueva). Las
+  estaciones son las de `fuentes.meteocat`. `a_horario` y `preparacion.viento3d.estaciones.medias_horarias` no se funden: dan horas distintas.
+- `casos` (`teodors[fuentes]`): lo único que junta una planta, sus datos y los motores. `viento3d`: prepara, lanza y guarda los meses de una serie de viento 3D,
+  con ERA5 y estaciones. `gfs_columnas`: las columnas de GFS para el pronóstico 3D. `receptores`: la malla de la planta y los estilos de su capa.
+  `preparacion.puffs.control_fuentes`: control de puffs con varias especies y fuentes de área, punto y volumen, con un perfil de 24 h por fuente y especie; no
+  necesita planta. Vienen del proyecto de La Galera: mismo código función a función, salvo lo propio del sitio, que pasa a planta.json (`receptores.niveles` y
+  `estilos`, `pronostico.n_col` y `paso_col_m`, `series.r1_km` y `rmax_km`, `identidad.nombre_casos`); los valores por defecto que dependían de la planta,
+  que se resuelven al llamar. Los radios solo hacen falta si hay estaciones.
+- `operacion` (`teodors[fuentes]`; el penacho en 3D, también `teodors[penacho_3d]` = pyvista): de los focos y los planes de una planta a sus resultados, sin interfaz. `focos`: tipos,
+  fichero y unidades; `planes`: diarios, semanales o mensuales, en hora oficial; `normativa`: columnas y estadísticos, por año civil en el peor año; `periodos`; `simulacion`: suma las
+  respuestas sin lanzar el motor; `penacho_mapa`, `viento_mapa`, `penacho_3d`; y por línea de órdenes, `respuestas`, `viento_periodo`, `viento3d_series` y `ejemplo_configuracion`.
+  Vienen del proyecto de La Galera: mismo código función a función, salvo lo propio del sitio, que pasa a planta.json (`proyeccion.zona_horaria`; `series.era5`, `gfs`, `preferidas`,
+  `titulos` y `dia_prueba`; `operacion.tipos_foco_extra` y `ejemplo`; `visor3d`). La firma de un resultado da el mismo valor y lo guardado se sigue leyendo. Nuevo: la plantilla nacional
+  de normativa (`normativa_nacional.json`, RD 102/2011, PRELIMINAR), que el `normativa.json` de la planta sustituye, y `package-data` para ella y los iconos.
+  `geometria` (de una ficha de foco a una fuente del motor) está en `operacion.focos`: `preparacion` no sabe nada de los focos. `penacho_3d` calcula y guarda; montar su página es de la interfaz.
+- `mos` (`teodors[mos]`): corrección estadística de la predicción de GFS en cada estación. `tabla`: tabla de entrenamiento, partición por semanas de la hora de validez y error de GFS sin
+  corregir; `entrenar`: modelos por estación y sus métricas en las semanas de validación; los dos, también por línea de órdenes. No es un motor y no entra en `MOTORES`. ⚠️ Su mejora de
+  dirección es local a la estación: ver su README. Guarda los modelos, pero ninguna función los aplica aún a una predicción nueva. Viene del proyecto de La Galera: mismo código función a
+  función, salvo `estaciones.codigos`, que se leía al importar y ahora al empezar; la última hora que cuenta, que pasa a `pronostico.mos_hasta`; el número de estaciones de un rótulo, y
+  scikit-learn, joblib y xarray, que se importan al usarlos. Mismas rutas y formatos en `DATOS/mos/`. Con este código no se ha entrenado nada con datos reales.
+
+- `gui` (`teodors[gui]`; con el penacho en 3D, `teodors[gui3d]`): la aplicación de escritorio de una planta, en PySide6 y con el mapa en una página web. Importar el paquete, `web`, `penacho_3d` o `principal` no
+  carga Qt, y nada fuera de este paquete lo carga: lo comprueba una prueba, y los módulos con Qt no se prueban si no está instalado (`teodors[pruebas_gui]`, que usa la integración continua).
+  `principal.main`: el arranque, lo que llama el `main.py` de cada planta. Viene del proyecto de La Galera: mismo código función a función, salvo lo propio del sitio, que pasa a planta.json (`identidad.ajustes`, `app_id`,
+  `version`, `entidad` y `red_datos`; `fuentes.mdt`, `usos`, `edificios`, `nombres_nucleos`, `fondos` y `creditos`; `estaciones.proveedor`; `operacion.texto_modo_edicion`), y la zona horaria, la fecha mínima y «N años», que salen de lo que ya tenía. El
+  objeto de la página pasa de llevar el nombre de un cliente a `window.mapaApp`, las clases CSS a `mapa-*`, el panel de las partículas a `mapaViento` y el puente a `MAPA:`, por script. Allí da los mismos textos, los mismos colores y, en los 4
+  estilos, los mismos píxeles en el panel, y las mismas páginas, sin ventanas de verdad. `planta.CLAVE_EDICION`: el valor de `operacion.modo_edicion`. three.js va con su licencia, pero el `LICENSE` de teOdors aún no contempla a terceros.
+
+### Cambiado
+- `preparacion.viento3d.geofisica` lanza su proceso con `comun.procesos.entorno`, que además quita
+  `PYTHONHOME`.
+
 ## [0.1.2] — 2026-10-23
 
 Utilidades que no son motores, para que los proyectos (La Galera, digicompost…) no las tengan

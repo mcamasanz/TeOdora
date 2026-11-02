@@ -285,7 +285,7 @@ def ejecutar(ruta_inp, carpeta=None, salida=None, verbose=True, traza_ids=(), re
     cab, horas = fichero_viento.leer(metdat)
     nx, ny, nz = cab.nx, cab.ny, cab.nz
     if (cfg.i("NX"), cfg.i("NY")) != (nx, ny):
-        raise ValueError("la malla de CALPUFF.INP no coincide con la del CALMET.DAT")
+        raise ValueError("la malla del control de puffs no coincide con la del fichero de viento")
     dg = cab.dgrid
     x0km, y0km = float(np.float32(cfg.r("XORIGKM"))), float(np.float32(cfg.r("YORIGKM")))
     zface = np.asarray(cab.zface, float)
@@ -474,7 +474,7 @@ def ejecutar(ruta_inp, carpeta=None, salida=None, verbose=True, traza_ids=(), re
                 us = float(np.sqrt(u32 * u32 + v32 * v32))
                 zis = min(max(ZI[iy, ix], par[nucleo.C_XMINZI]), par[nucleo.C_XMAXZI])
                 if T3 is None:
-                    raise NoImplementado("sobreelevación sin temperaturas 3D en el CALMET.DAT")
+                    raise NoImplementado("sobreelevación sin temperaturas 3D en el fichero de viento")
                 if f.bdw and mbdw == 2:
                     pri = _prime(f, u32, v32, us, U, V, T3, ix, iy, zface, int(IPGT[iy, ix]),
                                  int(ilu[iy, ix]), par, plx0)

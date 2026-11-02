@@ -1,8 +1,8 @@
-# odora
+# teOdors
 
 **Motores propios de terreno, meteorología y dispersión atmosférica, en Python.**
 
-`odora` (del latín *odor*, olor) reúne en una sola herramienta las dos familias de modelos de
+`teodors` (del latín *odor*, olor) reúne en una sola herramienta las dos familias de modelos de
 calidad del aire de referencia y todo lo que necesitan para funcionar. Nace para los estudios de
 impacto por olores (compostaje, biometano, industria), pero sirve para cualquier contaminante:
 
@@ -19,7 +19,7 @@ necesita ningún ejecutable externo.
 |---|---|
 | Versión | **0.1.2** (2026-10-23) |
 | Python | 3.11 o superior |
-| Dependencias | numpy, numba, rasterio, pyproj (y pandas para `preparacion`: `odora[preparacion]`) |
+| Dependencias | numpy, numba, rasterio, pyproj (y pandas para `preparacion`: `teodors[preparacion]`; scipy para `meteo.viento_local`: `teodors[viento_local]`; las descargas: `teodors[fuentes]`; las métricas: `teodors[preparacion,mapas]`; los casos y la operación de una planta: `teodors[fuentes]`; el penacho en 3D: `teodors[penacho_3d]`; el MOS: `teodors[mos]`; la interfaz: `teodors[gui]`, y con el penacho en 3D, `teodors[gui3d]`) |
 | Estado | 8 motores validados dentro de su alcance; lo pendiente, en [PENDIENTES.md](PENDIENTES.md) |
 
 ---
@@ -88,7 +88,7 @@ flowchart LR
 ## Estructura del repositorio
 
 ```
-odora/
+teOdors/
 ├── README.md               este fichero
 ├── CHANGELOG.md            historial de versiones
 ├── PENDIENTES.md           lo que queda por traducir o mejorar
@@ -96,14 +96,21 @@ odora/
 ├── pyproject.toml          paquete instalable
 ├── docs/
 │   ├── arquitectura.md     convenciones del código, núcleo compilado, cómo añadir un motor
-│   ├── equivalencias.md    motor por motor: fichero de odora ↔ módulo de la traducción ↔ original
+│   ├── equivalencias.md    motor por motor: fichero de teOdors ↔ módulo de la traducción ↔ original
 │   └── validacion.md       cómo se ha validado y resultados por motor
-├── core/                   el código: se instala e importa como `odora`
+├── core/                   el código: se instala e importa como `teodors`
 │   ├── comun/              utilidades comunes (UTM, convergencia): no son motores
+│   ├── planta/             lo que se sabe de un emplazamiento, leído de su carpeta
+│   ├── fuentes/            descargas de terreno, usos, edificios, estaciones, ERA5 y GFS (servicios de España, salvo ERA5 y GFS)
+│   ├── metricas/           validación del viento frente a las estaciones: métricas, rosas y control de calidad
 │   ├── preparacion/        entradas y control de los motores (viento3d, puffs), receptores
-│   ├── __main__.py         línea de órdenes: python -m odora <motor> …
+│   ├── casos/              los casos de una planta: une su carpeta, sus datos y los motores
+│   ├── operacion/          de los focos y los planes de una planta a sus resultados, sin interfaz
+│   ├── mos/                corrección estadística de la predicción de GFS en cada estación
+│   ├── gui/                la aplicación de escritorio de una planta (extra `gui`)
+│   ├── __main__.py         línea de órdenes: python -m teodors <motor> …
 │   ├── terreno/            relieve · superficie · edificios · geofisica
-│   ├── meteo/              capa_limite · viento3d
+│   ├── meteo/              capa_limite · viento3d · viento_local (no validado, no es un motor)
 │   └── dispersion/         penacho · puffs
 ├── auditor/                la puerta de entrada a main: reglas, pruebas y casos de regresión
 │   ├── casos/              un caso pequeño por motor (y por opción) con su salida de referencia
@@ -118,15 +125,15 @@ original.
 ## Instalación
 
 ```bash
-git clone <url-del-repositorio> odora
-cd odora
+git clone <url-del-repositorio> teOdors
+cd teOdors
 pip install -e .
 ```
 
 Con conda: `conda install numpy numba rasterio pyproj` y después `pip install -e . --no-deps`.
 Para las pruebas: `pip install -e ".[pruebas]"`.
 
-El código está en la carpeta `core/` y se importa como `odora`. Esa correspondencia la establece
+El código está en la carpeta `core/` y se importa como `teodors`. Esa correspondencia la establece
 la instalación, así que también hace falta instalar el repositorio (`pip install -e .`) para
 trabajar sobre el código o pasar el auditor.
 
@@ -136,22 +143,22 @@ Cada motor se lanza como su programa de referencia, en la carpeta del caso y con
 de control:
 
 ```bash
-python -m odora relieve     caso.inp caso.out
-python -m odora capa_limite aermet.inp
-python -m odora edificios   entrada.inp salida.out resumen.sum
-python -m odora penacho     caso.inp caso.out
-python -m odora geofisica   geo.inp
-python -m odora viento3d    CMET.INP
-python -m odora puffs       CALPUFF.INP
-python -m odora --version
+python -m teodors relieve     caso.inp caso.out
+python -m teodors capa_limite aermet.inp
+python -m teodors edificios   entrada.inp salida.out resumen.sum
+python -m teodors penacho     caso.inp caso.out
+python -m teodors geofisica   geo.inp
+python -m teodors viento3d    CMET.INP
+python -m teodors puffs       CALPUFF.INP
+python -m teodors --version
 ```
 
 Desde Python:
 
 ```python
-from odora.dispersion.penacho.principal import ejecutar as penacho
-from odora.meteo.viento3d.principal import ejecutar as viento3d
-from odora.dispersion.puffs.principal import ejecutar as puffs
+from teodors.dispersion.penacho.principal import ejecutar as penacho
+from teodors.meteo.viento3d.principal import ejecutar as viento3d
+from teodors.dispersion.puffs.principal import ejecutar as puffs
 
 penacho(["caso.inp", "caso.out"])                 # listado, POSTFILE, PLOTFILE…
 viento3d(["CMET.INP"], carpeta="caso_puffs")      # CALMET.DAT
@@ -183,9 +190,10 @@ con las del programa original (ver [auditor/casos/README.md](auditor/casos/READM
 
 ## Proyectos que lo usan
 
-`odora` es el **núcleo**. Las interfaces de cada proyecto se construyen encima: la herramienta de
-compostaje digicompost y la de la planta de La Galera (Tarragona). Cada proyecto descarga una
-versión fija de este repositorio y le añade su interfaz, sus catálogos de fuentes y sus datos.
+`teodors` es el **núcleo**. La herramienta de compostaje digicompost construye su interfaz encima. La
+planta de La Galera (Tarragona) usa la de `teodors.gui` (extra `gui`): una planta es su carpeta, con su
+`planta.json` y sus datos, y un `main.py` de pocas líneas. Cada proyecto descarga una versión fija de
+este repositorio.
 
 ## Versiones
 

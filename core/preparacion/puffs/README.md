@@ -1,4 +1,4 @@
-# `odora.preparacion.puffs` — casos de puffs
+# `teodors.preparacion.puffs` — casos de puffs
 
 <!-- manual -->
 ## Qué hace
@@ -18,8 +18,8 @@ el fichero de concentraciones como fechas y matriz.
 
 ```python
 import pandas as pd
-from odora.dispersion.puffs.principal import ejecutar
-from odora.preparacion.puffs import control, salida
+from teodors.dispersion.puffs.principal import ejecutar
+from teodors.preparacion.puffs import control, salida
 
 pila = control.fuente_area("PILA1", vertices, 2.0, 98.0, q_g_s / area_m2)   # q POR m²
 control.escribir(caso / "puffs.inp", malla, zface, pd.Timestamp("2024-07-01 00:00"), 744, 31,
@@ -32,8 +32,30 @@ fines, conc = salida.concentraciones(caso / "conc.dat")      # (periodos, recept
 registro k del viento (hora FINAL): con el viento de un día que empieza a las 00, el primer periodo
 es el de las 00.
 
+⚠️ El motor solo aborta si NX y NY no coinciden con los del viento. NZ y ZFACE los toma del viento: medido, con otros en el control da el mismo resultado,
+sin avisar. Aquí se escriben los del viento que se pasan.
+
+## Varias especies y fuentes
+
+`control_fuentes` escribe el control para lo que `control` no hace: varias especies, fuentes de área, punto y volumen, con un perfil de 24 h por fuente y especie, y
+receptores con altura.
+
+```python
+from teodors.preparacion.puffs import control_fuentes as cf
+
+fuente = {"id": "A1", "verts": vertices, "h": 2.0, "cota": 100.0}     # de una ficha de foco lo saca `operacion.focos.geometria`
+fuente.update(q={"OLOR": q_por_m2}, perfil={"OLOR": perfil_de_24_factores})
+cf.escribir(caso / "puffs.inp", malla, zface, ini, nhoras, zona, ["OLOR"], areas=[fuente], receptores=recs)
+```
+
+- **Unidades:** las del motor: en un área, POR m²; en un punto o un volumen, en total.
+- **Respuestas:** el modelo es lineal, sin química ni deposición. Con una especie por hora del día, cada una emitida solo en su hora, la suma de las respuestas por
+  un perfil cualquiera da la corrida directa con ese perfil, también con una chimenea con sobreelevación. Con el viento de `puffs/area_D` la diferencia es de
+  7,5·10⁻⁸ del máximo. El factor h del motor va en el periodo cuyo FIN tiene hora h + 1, y el primer periodo emite la hora anterior a su inicio.
+- ⚠️ Sin efecto de los edificios: no se pasan sus dimensiones al motor.
+
 ## Validación
-Pruebas en `auditor/pruebas/unitarias/test_preparacion_puffs.py`: el control se vuelve a leer con
+Pruebas en `auditor/pruebas/unitarias/test_preparacion_puffs.py` y, las de `control_fuentes`, en `test_casos_planta.py`: el control se vuelve a leer con
 `dispersion.puffs.entrada` (malla, fechas, especie, fuentes, receptores) y se lanza el motor sobre
 el viento del caso de regresión `puffs/area_D`. En el proyecto de La Galera (2026-10-23) da la
 misma secuencia de asignaciones que su escritor (plantilla + sustituciones) salvo los nombres de
@@ -48,4 +70,5 @@ penacho bit a bit; el control pasa de 73 a 5 kB.
 | `__init__.py` | Preparación de casos de `dispersion.puffs`. | — | — |
 | `parametros.py` | Asignaciones de partida del control, en orden, con marcas para la especie, las fuentes de área y los receptores (generado; no se edita a mano). | proyecto La Galera | — |
 | `control.py` | `fuente_area`, `preparar` / `escribir`: control del caso. | proyecto La Galera (`puffs.py`) | — |
+| `control_fuentes.py` | `preparar` / `escribir`: control con varias especies y fuentes de área, punto y volumen, cada una con su perfil de 24 h. | proyecto La Galera (`gui/tareas/control_fuentes.py`) | — |
 | `salida.py` | `fecha`, `concentraciones`: fin de cada periodo y matriz de una especie. | proyecto La Galera (`puffs.py`) | — |

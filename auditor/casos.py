@@ -7,7 +7,7 @@ Cada caso vive en `auditor/casos/<motor>/<nombre>/`:
     referencia/    salidas que debe producir el motor
     caso.json      cómo se corre y qué se compara:
                    motor, descripcion, carpeta (donde se lanza, dentro de entrada),
-                   ordenes (argumentos de `python -m odora <motor>`, una o varias corridas),
+                   ordenes (argumentos de `python -m teodors <motor>`, una o varias corridas),
                    entorno (variables), salidas (ficheros que se comparan), marcas (p. ej.
                    «compilacion»), original (resultado del contraste con el programa original)
 """
@@ -58,7 +58,7 @@ def listar(motor=None):
     return out
 
 
-# Lanza `python -m odora …` con el reloj fijado en una fecha y hora dadas (para comprobar que las
+# Lanza `python -m teodors …` con el reloj fijado en una fecha y hora dadas (para comprobar que las
 # salidas no dependen del día ni de la hora de la corrida). Los motores leen la hora con
 # datetime.datetime.now(), que aquí devuelve siempre la fecha fijada.
 _CON_RELOJ = """
@@ -68,8 +68,8 @@ class _Reloj(_d.datetime):
     def now(cls, tz=None):
         return cls(*%r)
 _d.datetime = _Reloj
-sys.argv = ["odora"] + sys.argv[1:]
-runpy.run_module("odora", run_name="__main__", alter_sys=True)
+sys.argv = ["teodors"] + sys.argv[1:]
+runpy.run_module("teodors", run_name="__main__", alter_sys=True)
 """
 
 
@@ -82,7 +82,7 @@ def ejecutar(caso, trabajo, reloj=None):
     shutil.copytree(caso.ruta / "entrada", trabajo)
     env = dict(os.environ, PYTHONIOENCODING="utf-8", **caso.entorno)
     env["PYTHONPATH"] = str(RAIZ) + os.pathsep + env.get("PYTHONPATH", "")
-    lanzar = [sys.executable, "-m", "odora"] if reloj is None else \
+    lanzar = [sys.executable, "-m", "teodors"] if reloj is None else \
         [sys.executable, "-c", _CON_RELOJ % (tuple(reloj.timetuple())[:6],)]
     t0 = time.perf_counter()
     for args in caso.ordenes:
@@ -90,7 +90,7 @@ def ejecutar(caso, trabajo, reloj=None):
                            cwd=trabajo / caso.carpeta, env=env, capture_output=True, text=True,
                            encoding="latin-1")
         if r.returncode != 0:
-            raise RuntimeError("odora %s %s terminó con código %d:\n%s" % (
+            raise RuntimeError("teOdors %s %s terminó con código %d:\n%s" % (
                 caso.motor, " ".join(args), r.returncode, (r.stderr or r.stdout)[-3000:]))
     return time.perf_counter() - t0
 

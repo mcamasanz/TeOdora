@@ -1,4 +1,4 @@
-# `odora.dispersion.penacho` — penacho
+# `teodors.dispersion.penacho` — penacho
 
 Equivale a **AERMOD**: traducido del código de AERMOD (dominio público); cada función indica la rutina original.
 
@@ -21,10 +21,10 @@ sidewash.
 
 ## Uso
 ```bash
-python -m odora penacho caso.inp caso.out
+python -m teodors penacho caso.inp caso.out
 ```
 ```python
-from odora.dispersion.penacho.principal import ejecutar
+from teodors.dispersion.penacho.principal import ejecutar
 ejecutar(["caso.inp", "caso.out"])     # en la carpeta del caso
 ```
 Variable `AERMOD_NUMBA=0`: fuerza la vía Python pura (más lenta, mismos resultados bit a bit).

@@ -1,4 +1,4 @@
-# Auditor de odora: ningún cambio entra en main sin dar APTO (ver auditor/README.md).
+# Auditor de teOdors: ningún cambio entra en main sin dar APTO (ver auditor/README.md).
 name: auditor
 
 on:
@@ -24,7 +24,7 @@ jobs:
           cache: pip
 
       - name: Dependencias
-        run: pip install -e ".[pruebas]"
+        run: pip install -e ".[pruebas,pruebas_gui]"
 
       # Sin caché de numba: se invalida con la fecha de los ficheros, que cambia en cada checkout.
       # El núcleo del penacho compila en unos minutos (prueba marcada `compilacion`).

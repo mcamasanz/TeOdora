@@ -1,16 +1,16 @@
 # -*- coding: utf-8 -*-
-"""Línea de órdenes de odora: lanza cualquier motor con su fichero de control.
+"""Línea de órdenes de teOdors: lanza cualquier motor con su fichero de control.
 
-    python -m odora <motor> [argumentos]
+    python -m teodors <motor> [argumentos]
 
-    python -m odora relieve     [control [salida]]          cotas y altura de colina
-    python -m odora superficie  [control]                   rugosidad, Bowen y albedo
-    python -m odora edificios   entrada salida resumen      dimensiones de edificio
-    python -m odora geofisica   [control]                   malla de usos y terreno
-    python -m odora capa_limite [control]                   meteorología de capa límite
-    python -m odora viento3d    [control]                   campo de viento 3D
-    python -m odora penacho     [control [salida]]          dispersión gaussiana
-    python -m odora puffs       [control]                   dispersión por puffs
+    python -m teodors relieve     [control [salida]]          cotas y altura de colina
+    python -m teodors superficie  [control]                   rugosidad, Bowen y albedo
+    python -m teodors edificios   entrada salida resumen      dimensiones de edificio
+    python -m teodors geofisica   [control]                   malla de usos y terreno
+    python -m teodors capa_limite [control]                   meteorología de capa límite
+    python -m teodors viento3d    [control]                   campo de viento 3D
+    python -m teodors penacho     [control [salida]]          dispersión gaussiana
+    python -m teodors puffs       [control]                   dispersión por puffs
 
 Se ejecuta en la carpeta del caso. Códigos de salida: 0 terminado (los errores del caso van a
 su fichero de salida), 1 orden desconocida, 2 opción fuera del alcance del motor.
@@ -21,7 +21,7 @@ from . import MOTORES, __version__
 
 
 def _fuera(motor, e):
-    print("odora %s: opción fuera de alcance: %s" % (motor, e), file=sys.stderr)
+    print("teOdors %s: opción fuera de alcance: %s" % (motor, e), file=sys.stderr)
     return 2
 
 
@@ -31,7 +31,7 @@ def main(argv=None):
         print(__doc__)
         return 0 if argv else 1
     if argv[0] in ("-V", "--version"):
-        print("odora", __version__)
+        print("teodors", __version__)
         return 0
     motor, args = argv[0].lower(), argv[1:]
     sys.argv = [sys.argv[0]] + args
@@ -76,7 +76,7 @@ def main(argv=None):
             return 0
         except NoImplementado as e:
             return _fuera(motor, e)
-    print("odora: motor desconocido «%s». Motores: %s" % (motor, ", ".join(MOTORES)), file=sys.stderr)
+    print("teOdors: motor desconocido «%s». Motores: %s" % (motor, ", ".join(MOTORES)), file=sys.stderr)
     return 1
 
 

@@ -2,13 +2,14 @@
 """Malla del viento 3D sobre un terreno fino y su fichero geofísico con `terreno.geofisica`
 (fracciones de uso de CORINE y cota media por celda, y propiedades de superficie ponderadas).
 Viene del proyecto de La Galera (2026-10-23)."""
-import os
 import shutil
 import subprocess
 import sys
 from pathlib import Path
 
 import numpy as np
+
+from teodors.comun import procesos
 
 
 def malla(Z, U, transform, celda_m):
@@ -27,13 +28,13 @@ def malla(Z, U, transform, celda_m):
             "Z": Z, "U": U, "transform": transform}
 
 
-def escribir(ruta, m, zona, mar=None, hem="N", datum="WGS-84", titulo="Malla geofísica (odora)"):
+def escribir(ruta, m, zona, mar=None, hem="N", datum="WGS-84", titulo="Malla geofísica (teOdors)"):
     """Fichero geofísico de la malla `m` (de `malla`) en `ruta`. `mar`: máscara (como Z) de las
     celdas finas de mar sin polígono de CORINE, que entran como 523 (mar); el resto de huecos
     (código 0) quedan sin dato. El motor se lanza en `<carpeta de ruta>/geofisica`.
     Devuelve {"nx", "ny", "categorias"} (categorías del viento 3D presentes)."""
-    from odora.meteo.viento3d.entradas import leer_geo
-    from odora.terreno.geofisica import corine
+    from teodors.meteo.viento3d.entradas import leer_geo
+    from teodors.terreno.geofisica import corine
 
     ruta = Path(ruta)
     Z, U, tr = m["Z"], m["U"], m["transform"]
@@ -60,11 +61,9 @@ def escribir(ruta, m, zona, mar=None, hem="N", datum="WGS-84", titulo="Malla geo
 
 
 def _lanzar(carpeta):
-    """`python -m odora geofisica geo.inp` en `carpeta`, en un proceso aparte: el motor busca sus
+    """`python -m teodors geofisica geo.inp` en `carpeta`, en un proceso aparte: el motor busca sus
     ficheros en la carpeta actual, y cambiar la del propio proceso no vale si otros hilos preparan
-    casos a la vez. El hijo recibe el mismo sys.path, para que use este mismo odora."""
-    ruta = os.pathsep.join(os.path.abspath(p) for p in sys.path if p)
-    env = dict(os.environ, PYTHONPATH=ruta, PYTHONIOENCODING="utf-8")
-    p = subprocess.run([sys.executable, "-m", "odora", "geofisica", "geo.inp"], cwd=str(carpeta),
-                       capture_output=True, text=True, encoding="utf-8", errors="replace", env=env)
+    casos a la vez."""
+    p = subprocess.run([sys.executable, "-m", "teodors", "geofisica", "geo.inp"], cwd=str(carpeta),
+                       capture_output=True, text=True, encoding="utf-8", errors="replace", env=procesos.entorno())
     return p.returncode, p.stdout + p.stderr

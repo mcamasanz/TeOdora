@@ -2,7 +2,7 @@
 """Traducción de AERMET 26135 (US EPA, dominio público): programa principal (aermet.f90) y
 CLEANUP (mod_misc.f90).
 
-Uso:  python -m odora.meteo.capa_limite [fichero_de_control]     (por defecto aermet.inp, como el original)
+Uso:  python -m teodors.meteo.capa_limite [fichero_de_control]     (por defecto aermet.inp, como el original)
 Códigos de salida: 0 terminado (con éxito o no, como el original), 2 opción fuera de alcance,
 3 el original aborta en ese punto con un error de ejecución (se escribe su mismo mensaje).
 """

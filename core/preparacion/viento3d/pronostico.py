@@ -17,7 +17,7 @@ from pathlib import Path
 
 import numpy as np
 
-from odora.comun import geo
+from teodors.comun import geo
 
 RD, G = 287.05, 9.80665
 
@@ -42,7 +42,7 @@ def _z_superficie(ps, pmsl, t2_c):
 
 
 def escribir_columna(ruta, pfl, sfc, ext, punto, horas, epsg, npx=3, margen=0.5,
-                     titulo="ERA5 -> pronostico 3D (odora)",
+                     titulo="ERA5 -> pronostico 3D (teOdors)",
                      comentario="ERA5 pressure levels, single column at model orography"):
     """Pronóstico 3D con UNA columna (reanálisis) repetida en npx×npx nodos.
       pfl     tabla (time, level hPa, height_asl_m, temp_c, wdir, wspd) de los niveles de presión
@@ -127,7 +127,7 @@ def rejilla_puntos(centro_xy, n, paso_m, epsg):
 
 
 def escribir_columnas(ruta, df, n, xs, ys, horas, niveles, centro_latlon, epsg,
-                      titulo="Model columns -> pronostico 3D (odora)",
+                      titulo="Model columns -> pronostico 3D (teOdors)",
                       comentario="Pressure levels, one column per cell"):
     """Pronóstico 3D con una columna PROPIA en cada nodo de la malla n×n (xs, ys de
     `rejilla_puntos`). df: filas (time, i, j) con surface_pressure, pressure_msl (hPa),

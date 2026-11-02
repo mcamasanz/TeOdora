@@ -1,4 +1,4 @@
-# `odora.terreno.relieve` — relieve
+# `teodors.terreno.relieve` — relieve
 
 Equivale a **AERMAP**: traducido del código de AERMAP (dominio público); cada función indica la rutina original.
 
@@ -16,10 +16,10 @@ modelo digital del terreno.
 
 ## Uso
 ```bash
-python -m odora relieve caso.inp caso.out
+python -m teodors relieve caso.inp caso.out
 ```
 ```python
-from odora.terreno.relieve.__main__ import ejecutar
+from teodors.terreno.relieve.__main__ import ejecutar
 ejecutar("caso.inp", "caso.out")          # en la carpeta del caso
 ```
 

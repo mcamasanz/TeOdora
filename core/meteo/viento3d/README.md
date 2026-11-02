@@ -1,4 +1,4 @@
-# `odora.meteo.viento3d` — viento3d
+# `teodors.meteo.viento3d` — viento3d
 
 Equivale a **CALMET**: reescrito en **sala limpia** desde la documentación publicada de CALMET; la equivalencia es funcional: nunca se ha abierto su código.
 
@@ -17,11 +17,11 @@ mezcla, precipitación).
 
 ## Uso
 ```bash
-python -m odora viento3d CMET.INP
+python -m teodors viento3d CMET.INP
 ```
 ```python
-from odora.meteo.viento3d.principal import ejecutar
-from odora.meteo.viento3d import fichero_viento
+from teodors.meteo.viento3d.principal import ejecutar
+from teodors.meteo.viento3d import fichero_viento
 ejecutar(["CMET.INP"], carpeta="caso")
 cab, horas = fichero_viento.leer("caso/CALMET.DAT")    # cabecera y campos de cada hora
 ```

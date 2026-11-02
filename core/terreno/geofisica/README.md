@@ -1,4 +1,4 @@
-# `odora.terreno.geofisica` — geofisica
+# `teodors.terreno.geofisica` — geofisica
 
 Equivale a **MAKEGEO**: reescrito en **sala limpia** desde la documentación publicada de MAKEGEO; la equivalencia es funcional: nunca se ha abierto su código.
 
@@ -18,11 +18,11 @@ Bowen, flujo de calor del suelo, calor antropogénico, índice foliar) y la cota
 
 ## Uso
 ```bash
-python -m odora geofisica geo.inp
+python -m teodors geofisica geo.inp
 ```
 ```python
-from odora.terreno.geofisica import corine
-from odora.terreno.geofisica.principal import ejecutar
+from teodors.terreno.geofisica import corine
+from teodors.terreno.geofisica.principal import ejecutar
 corine.preparar("caso", uso_fino, z_fino, extension, res_m=250)   # escribe lu.dat, terr.dat, geo.inp
 ejecutar(["caso/geo.inp"])
 ```
@@ -46,7 +46,7 @@ categorías (NSPLIT), segundo fichero de usos y proyecciones distintas de UTM.
 | `calculo.py` | Geofísica de la malla para CALMET (GEO.DAT) a partir de fracciones de uso del suelo y cotas. | `geo.py` | funcional (MAKEGEO) |
 | `control.py` | Lector de ficheros de control con la sintaxis de los preprocesadores de CALMET. | `control.py` | funcional (MAKEGEO) |
 | `corine.py` | Adaptador de datos propios a la rejilla de CALMET: CORINE Land Cover + MDT -> fracciones de uso del suelo y cota media por celda, y de ahí LU.DAT, TERR.DAT y el fichero de control. | `corine.py` | funcional (MAKEGEO) |
-| `principal.py` | Programa principal: ``python -m odora.terreno.geofisica [fichero_de_control]``. | `principal.py` | funcional (MAKEGEO) |
+| `principal.py` | Programa principal: ``python -m teodors.terreno.geofisica [fichero_de_control]``. | `principal.py` | funcional (MAKEGEO) |
 
 ## Funciones por fichero
 
@@ -96,7 +96,7 @@ Adaptador de datos propios a la rejilla de CALMET: CORINE Land Cover + MDT -> fr
 
 ### `principal.py`
 
-Programa principal: ``python -m odora.terreno.geofisica [fichero_de_control]``.
+Programa principal: ``python -m teodors.terreno.geofisica [fichero_de_control]``.
 
 | Función | Definición | Equivale a |
 |---|---|---|

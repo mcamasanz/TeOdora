@@ -1,5 +1,5 @@
 #!/bin/sh
-# Hook pre-push de odora: si se sube a la rama principal, el auditor tiene que dar APTO.
+# Hook pre-push de teOdors: si se sube a la rama principal, el auditor tiene que dar APTO.
 # Se instala con: python -m auditor --instalar-hook
 while read local_ref local_sha remote_ref remote_sha; do
     if [ "$remote_ref" = "refs/heads/main" ]; then

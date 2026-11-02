@@ -55,12 +55,12 @@ MDISP 2 y 4 (65/65 casos).*
 
 1. **Sin huella en los textos**: las cabeceras de las salidas y algunos mensajes aún nombran el
    programa original. Pasarán a «<proyecto> · <motor> 0.1». El nombre del proyecto lo fija cada
-   proyecto (`identidad.py`).
+   proyecto (bloque `identidad` de `planta.json`, ver `core/planta/README.md`).
 2. **Velocidad**: llevar al núcleo compilado el bucle horario del penacho, la química GRSM, las
    carreteras (RLINE) y las líneas flotantes, hoy en Python puro.
 3. **Núcleos compilados por adelantado**, para no compilar con numba en el equipo del cliente
    (hoy, unos 3 minutos la primera vez).
-4. **Ejecutable con Nuitka** y **licencia por localización**:
+4. **Ejecutable con Nuitka** y **licencia por localización** (⚠️ PySide6 es LGPL: en modo carpeta, no en un único fichero, con las DLL de Qt sustituibles, el texto de la LGPL y el enlace a su código fuente):
    - dominio firmado;
    - comprobación en cada motor;
    - datos recortados a la zona del cliente.
@@ -75,13 +75,39 @@ MDISP 2 y 4 (65/65 casos).*
    `dispersion.puffs` (desde la v0.1.2 el de viento3d ya lee por capas y campos: `leer_campos`), y
    las utilidades de formato fijo en `comun/` (el UTM ya está en `comun.geo`).
 
-## 3. Proyectos
+## 3. Revisión tras la migración a 0.1.3
 
-- digicompost y la planta de La Galera (Tarragona): pasar a usar `odora` como dependencia (hoy
+Fallos heredados que se vieron al mover el código función a función. Se movieron tal cual para no cambiar resultados durante la migración, y siguen ahí:
+
+- `metricas`: `rosas_dia` da 23 h el 1 de enero; en `_rosa_clases`, una velocidad NaN cuenta como ≥ 8 m/s.
+- `fuentes.meteocat.para_mapa` lee `era5_vs_meteocat.json`, que no escribe nadie.
+- `fuentes.terreno`: juntas de hasta 0,26 m entre bloques del MDT (96 de 19 023 celdas en un plano al 2 %); su efecto real está sin medir.
+- `dispersion.puffs` toma NZ y ZFACE del viento sin avisar si no coinciden con su control.
+- `operacion.ejemplo_configuracion` no puede rehacer el ejemplo con los datos actuales.
+- `operacion`: un NOx o un CO sin límite en la normativa hace fallar la simulación.
+- `operacion.viento_mapa._mes`: un `.cmz` nuevo del mismo mes no se ve hasta reiniciar.
+- `operacion.planes`: un plan mensual pierde 2 h en enero.
+- `casos.gfs_columnas`: `xr.concat` sin `join`.
+- `casos.viento3d`: restos de `_reservado_gb`; `preparar_mes` arranca en frío sin avisar.
+- `mos`: `anemometro_m` sale siempre 10 en la tabla; los modelos se guardan y nada los aplica.
+- `gui.web._descarga`: hasta 40 s en el hilo de la interfaz si no hay red.
+
+## 4. Proyectos
+
+- digicompost y la planta de La Galera (Tarragona): pasar a usar `teodors` como dependencia (hoy
   digicompost usa la copia de trabajo del laboratorio).
+- `meteo.viento_local`, **sin validar**: comparar con medidas de una planta (sensores cerca de los edificios), y que deje de
+  enseñar la estela lejana por fórmula. Sin estabilidad ni concentraciones. Los umbrales de `obstaculos` salen de una sola planta.
 - Edificios en la cadena de puffs de los proyectos: pasar las dimensiones de `terreno.edificios`
   al fichero de control de `dispersion.puffs`. El motor ya lo soporta.
-- Utilidades que aún están en el proyecto de La Galera y pasarán aquí (como las de la v0.1.2):
-  - **fuentes de datos**: descargas del MDT (WCS del IGN), CORINE, edificios (WFS del Catastro),
-    estaciones de Meteocat, ERA5 (CDS), GFS (NOAA y dynamical.org) y Open-Meteo;
-  - **métricas de validación** del viento frente a estaciones (Emery 2001, rosas, día y noche).
+- `fuentes` (0.1.3): son servicios de España, salvo ERA5 y GFS. Una planta fuera de España, o fuera de Cataluña para las estaciones,
+  necesita otros. La caja de `gfs_noaa` admite el oeste de Greenwich, sin usar aún allí. En `terreno.descargar_mdt`, en la costura entre
+  tramos gana la celda del primero aunque su ventana bilineal quede incompleta (medido: 0,26 m sobre un plano del 2 %).
+- `metricas` (0.1.3): las estaciones son las de `fuentes.meteocat`. Una planta con otra red necesita otro proveedor; `rosas_dia` da por hecho
+  la convención horaria de ese servicio. En `calidad`, las figuras se reparten pensando en 5 años (`list(rosas)[:6]`).
+- `casos` (0.1.3): el mes de viento 3D se prepara solo con ERA5 y estaciones de `fuentes.meteocat`. `_reservado_gb` aún mira carpetas de estudios de
+  una planta. `gfs_columnas.niveles` junta plazos distintos con `xr.concat` sin `join`: fallará en una versión futura de xarray. `dispersion.puffs` no
+  compara NZ y ZFACE del control con los del viento: los toma del viento, y solo aborta si no coinciden NX y NY.
+- `operacion` (0.1.3): los límites son PRELIMINARES, y lo que da es lo que aporta la planta, sin el fondo de la zona. Las respuestas de un foco se calculan con un día o un periodo: con una
+  serie de varios años habrá que cambiar su formato. `ejemplo_configuracion` lee lo que ya no se escribe: no funciona hasta adaptarlo a los resultados de hoy. Un gas sin límite y sin umbral
+  (NOx o CO, si una planta les quita el límite) da `ref` None y la simulación falla. `viento_periodo` guarda cada día de una serie en el .cmz de su mes: otro día del mismo mes lo sustituye.

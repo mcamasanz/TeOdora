@@ -14,11 +14,11 @@ import pytest
 
 pd = pytest.importorskip("pandas")
 
-from odora.meteo.viento3d import entradas, fichero_viento  # noqa: E402
-from odora.meteo.viento3d.control import Control  # noqa: E402
-from odora.preparacion import control as ctl_base  # noqa: E402
-from odora.preparacion.viento3d import control, estaciones, geofisica, nubes, parametros  # noqa: E402
-from odora.preparacion.viento3d import pronostico, salida  # noqa: E402
+from teodors.meteo.viento3d import entradas, fichero_viento  # noqa: E402
+from teodors.meteo.viento3d.control import Control  # noqa: E402
+from teodors.preparacion import control as ctl_base  # noqa: E402
+from teodors.preparacion.viento3d import control, estaciones, geofisica, nubes, parametros  # noqa: E402
+from teodors.preparacion.viento3d import pronostico, salida  # noqa: E402
 
 REF = (Path(__file__).resolve().parents[2] / "casos" / "viento3d" / "llano_lleida" / "referencia"
        / "calmet.dat")

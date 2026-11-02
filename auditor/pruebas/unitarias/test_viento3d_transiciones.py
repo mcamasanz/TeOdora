@@ -6,7 +6,7 @@ import math
 
 import numpy as np
 
-from odora.meteo.viento3d import principal, viento
+from teodors.meteo.viento3d import principal, viento
 
 ZC = np.array([10.0, 30.0, 50.0, 75.0, 110.0, 165.0, 250.0, 400.0])
 

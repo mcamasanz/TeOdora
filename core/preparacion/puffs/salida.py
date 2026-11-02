@@ -16,7 +16,7 @@ def fecha(t):
 def concentraciones(ruta, especie=0):
     """(fines, conc): datetime del FIN de cada periodo y concentraciones (periodos, receptores)
     de la especie `especie` (posición o nombre), en g/m³."""
-    from odora.dispersion.puffs import fichero_conc
+    from teodors.dispersion.puffs import fichero_conc
     _, periodos = fichero_conc.leer(ruta)
     fines = [fecha(p.fin) for p in periodos]
     if not periodos:

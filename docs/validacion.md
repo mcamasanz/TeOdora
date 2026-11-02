@@ -1,6 +1,6 @@
 # Validación
 
-*v0.1.0 (2026-10-18).* Cada motor de `odora` se ha validado frente a su programa de referencia
+*v0.1.0 (2026-10-18).* Cada motor de `teodors` se ha validado frente a su programa de referencia
 con una batería de casos. Las ocho baterías se han vuelto a correr sobre el código de este
 paquete, ya con los nombres nuevos, y dan los mismos resultados que en el laboratorio.
 
@@ -26,7 +26,7 @@ Hay dos criterios, según cómo se ha construido el motor.
 
 **Motores traducidos** (relieve, superficie, edificios, capa_limite y penacho). Su Fortran es de
 dominio público y se ha traducido rutina a rutina. Cada caso se corre con el original y con
-`odora` sobre las mismas entradas, y se comparan **todos** los ficheros que escriben:
+`teodors` sobre las mismas entradas, y se comparan **todos** los ficheros que escriben:
 - los de texto, carácter a carácter, salvo la fecha y la hora de la corrida;
 - los binarios, byte a byte;
 - también la pantalla y los mensajes de error, incluidos los casos que deben abortar.
@@ -112,6 +112,23 @@ con relieve y bloqueo (S, R) pueden moverse en las horas de transición. Detalle
 **v0.1.2 (2026-10-23).** Sin cambios en los motores: solo utilidades nuevas (`comun`,
 `meteo.viento3d.almacen`, `fichero_viento.leer_campos`, `preparacion`) con sus pruebas
 unitarias; los casos de regresión salen idénticos.
+
+**v0.1.3 (sin publicar).** `meteo.viento_local` **no está validado** y no es un motor: no se ha comparado con ninguna medida de una
+planta. Sus pruebas comprueban la formulación y dejan medido dónde queda frente a referencias externas: ver
+[core/meteo/viento_local/README.md](../core/meteo/viento_local/README.md).
+
+`fuentes` tampoco es un motor. Sus pruebas simulan las respuestas de los servicios y no salen a la red: comprueban el código, no que los
+servicios sigan respondiendo así. Ver [core/fuentes/README.md](../core/fuentes/README.md).
+
+`metricas` tampoco es un motor: mide un viento frente a las estaciones, y sus pruebas, con datos inventados, comprueban las cuentas. No dicen
+lo bien que acierta ningún modelo en ningún sitio. Ver [core/metricas/README.md](../core/metricas/README.md).
+
+`casos` tampoco es un motor. Sus pruebas lanzan los motores de verdad con una planta inventada: la suma de las respuestas por hora de emisión
+da la corrida directa con un perfil, y un área va por m². Comprueban el código, no la calidad del viento: ver
+[core/casos/README.md](../core/casos/README.md).
+
+`operacion` tampoco es un motor. Sus pruebas comprueban las cuentas a mano y, la cuenta entera, frente a una corrida directa de `dispersion.puffs` con la emisión del plan, con
+una planta y unos focos inventados. No dicen nada de ningún resultado ni sirven para declarar que se cumple una norma: ver [core/operacion/README.md](../core/operacion/README.md).
 
 ### `dispersion.penacho` (≡ AERMOD)
 142 casos. Familias:

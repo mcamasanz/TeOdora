@@ -12,8 +12,8 @@ Configuración: campo inicial del pronóstico 3D (IPROG = 14, IWFCOD = 1), nubes
 Viene del proyecto de La Galera (2026-10-23); la secuencia de asignaciones es la misma que la del
 escritor que usaba allí, comprobado caso a caso.
 """
-from odora.preparacion.control import Control
-from odora.preparacion.viento3d.parametros import PARAMETROS
+from teodors.preparacion.control import Control
+from teodors.preparacion.viento3d.parametros import PARAMETROS
 
 NOMBRES = {"geo": "geo.dat", "estaciones": "estaciones.dat", "listado": "viento3d.lst",
            "viento": "viento3d.dat", "nubes": "nubes.dat", "pronostico": "pronostico3d.dat"}
@@ -26,7 +26,7 @@ def registro_estacion(k, nombre, ide, x_km, y_km, altura_m):
 
 def preparar(malla, ini, nhoras, zona, zface, terrad_km=5.0, hem="N", datum="WGS-84",
              estaciones=None, r1_km=5.0, rmax_km=30.0, isurft=1, extra=None, nombres=None,
-             titulo="Caso de viento 3D (odora)"):
+             titulo="Caso de viento 3D (teOdors)"):
     """Control (`preparacion.control.Control`) de un caso.
       malla       {"nx", "ny", "celda_m", "ext": (xmin, xmax, ymin, ymax) en m}
       ini, nhoras primera hora (con .year, .month, .day, .hour) y número de horas

@@ -13,7 +13,7 @@ AERSURFACE solo entiende las clases NLCD de EE. UU. El adaptador:
 Después se ejecuta el motor validado con un fichero de control normal.
 
 Uso (CLI):
-    python -m odora.terreno.superficie.corine --npz elevacion_uso.npz --lat 41.61806 --lon 0.34259 \
+    python -m teodors.terreno.superficie.corine --npz elevacion_uso.npz --lat 41.61806 --lon 0.34259 \
         --salida carpeta [--freq MONTHLY] [--sectores 12] [--ap NONAP] \
         [--clima "AVERAGE NOSNOW NONARID"] [--zorad 1.0]
 """
@@ -78,7 +78,7 @@ def a_geotiff(clc, transform, crs, lat, lon, carpeta, prefijo="sitio", imp=None,
     nlcd = lut[np.clip(c2, 0, 999)]
     if (nlcd == 0).any():
         raise ValueError("Hay celdas sin dato o con códigos CORINE sin equivalencia dentro del "
-                         f"cuadro de ±{SEMILADO / 1000:g} km: AERSURFACE abortaría (CheckLC). "
+                         f"cuadro de ±{SEMILADO / 1000:g} km: superficie se pararía (CheckLC). "
                          "Amplía el terreno de origen.")
     prof = dict(driver="GTiff", width=n, height=n, count=1, dtype="uint8", crs=dst_crs,
                 transform=dst_tr, compress=None, tiled=False)

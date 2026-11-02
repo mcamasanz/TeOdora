@@ -1,4 +1,4 @@
-# `odora.terreno.superficie` — superficie
+# `teodors.terreno.superficie` — superficie
 
 Equivale a **AERSURFACE**: traducido del código de AERSURFACE (dominio público); cada función indica la rutina original.
 
@@ -19,11 +19,11 @@ reproyecta a una Albers centrada en el sitio a 30 m y escribe los GeoTIFF y el c
 
 ## Uso
 ```bash
-python -m odora superficie control.inp
-python -m odora.terreno.superficie.corine --npz elevacion_uso.npz --lat 41.61806 --lon 0.34259 --salida caso
+python -m teodors superficie control.inp
+python -m teodors.terreno.superficie.corine --npz elevacion_uso.npz --lat 41.61806 --lon 0.34259 --salida caso
 ```
 ```python
-from odora.terreno.superficie.__main__ import main
+from teodors.terreno.superficie.__main__ import main
 main(["control.inp"])
 ```
 
@@ -42,7 +42,7 @@ Lleida con CORINE. Fuera: datum NAD27/NADCON y el volcado de depuración EFFRAD.
 | Fichero | Contenido | Viene de | Equivale a |
 |---|---|---|---|
 | `__init__.py` | paquete | `__init__.py` | — |
-| `__main__.py` | python -m odora.terreno.superficie control.inp | `__main__.py` | — |
+| `__main__.py` | python -m teodors.terreno.superficie control.inp | `__main__.py` | — |
 | `albers.py` | Proyección cónica equivalente de Albers tal como la implementa AERSURFACE v26135 (mod_Geographic.f: ComputeQ, LATLON2ALBERS, ALBERS2LATLON; Snyder 1987). | `albers.py` | `mod_Geographic.f` |
 | `control.py` | Fichero de control de AERSURFACE (mod_ProcCtrlFile.f), con la misma semántica: valores por defecto, orden de procesado de las palabras clave, ordenación de sectores (incluida la peculiar reordenación de POSTSECT) y texto… | `control.py` | `mod_ProcCtrlFile.f` |
 | `corine.py` | Adaptador CORINE -> AERSURFACE para Europa/España (NO forma parte de la traducción: es una decisión nuestra, documentada aquí). | `corine.py` | — |
@@ -59,7 +59,7 @@ Lleida con CORINE. Fuera: datum NAD27/NADCON y el volcado de depuración EFFRAD.
 
 ### `__main__.py`
 
-python -m odora.terreno.superficie control.inp
+python -m teodors.terreno.superficie control.inp
 
 | Función | Definición | Equivale a |
 |---|---|---|

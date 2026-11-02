@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""odora — motores propios de terreno, meteorología y dispersión atmosférica.
+"""teOdors — motores propios de terreno, meteorología y dispersión atmosférica.
 
 Del latín *odor* (olor): nace para los estudios de impacto por olores. Reúne las dos familias de
 modelos de dispersión, el penacho gaussiano estacionario (`dispersion.penacho`) y los puffs
@@ -17,14 +17,30 @@ Paquetes:
     dispersion.puffs       dispersión lagrangiana por puffs
 
 Utilidades (no son motores):
-    comun.geo              UTM, convergencia de meridianos, distancias y cuadrados de dominio
+    comun                  UTM y convergencia, registro, formatos de número, procesos hijos, imágenes
+                           para mapas web y escalas de color
+    planta                 lo que teOdors sabe de un emplazamiento, leído de su carpeta (los motores
+                           no lo usan)
+    fuentes                descargas de terreno, usos, edificios, estaciones, ERA5 y GFS a la carpeta
+                           de datos de la planta; son servicios de España, salvo ERA5 y GFS
+    metricas               validación del viento frente a las estaciones: métricas, rosas y control
+                           de calidad
+    casos                  los casos de una planta: une su carpeta, sus datos y los motores (viento 3D
+                           de un mes o una serie, columnas de GFS, malla de receptores)
+    operacion              de los focos y los planes de una planta a sus resultados, sin interfaz:
+                           unidades, normativa, periodos, simulación sin motor, imágenes, penacho en 3D
+    mos                    corrección estadística de la predicción de GFS en cada estación; su mejora de
+                           dirección es local a la estación
+    gui                    la aplicación de escritorio de una planta (`teodors[gui]`: PySide6 y folium): lo de cada
+                           sitio sale de su carpeta, y nada fuera de este paquete carga Qt
     meteo.viento3d.almacen almacén comprimido (.cmz) del fichero de viento 3D
+    meteo.viento_local     viento alrededor de los edificios. NO VALIDADO: solo enseña su efecto
     preparacion            entradas y control de los motores escritos desde cero (viento3d,
                            puffs) y malla de receptores anidada
 
-Cada motor se puede lanzar por línea de órdenes: `python -m odora <motor> [argumentos]`.
+Cada motor se puede lanzar por línea de órdenes: `python -m teodors <motor> [argumentos]`.
 """
-__version__ = "0.1.2"
+__version__ = "0.1.3"
 __fecha__ = "2026-10-23"
 
 MOTORES = ("relieve", "superficie", "edificios", "geofisica", "capa_limite", "viento3d", "penacho",

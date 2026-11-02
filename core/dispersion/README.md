@@ -1,4 +1,4 @@
-# `odora.dispersion` — modelos de dispersión
+# `teodors.dispersion` — modelos de dispersión
 
 Las dos familias de modelos de dispersión de la herramienta: el penacho gaussiano y los puffs lagrangianos.
 
@@ -19,8 +19,8 @@ puffs   ◄── CALMET.DAT (meteo.viento3d) + fuentes y receptores del fichero
 ## Ejemplo: las mismas fuentes con los dos modelos
 
 ```python
-from odora.dispersion.penacho.principal import ejecutar as penacho
-from odora.dispersion.puffs.principal import ejecutar as puffs
+from teodors.dispersion.penacho.principal import ejecutar as penacho
+from teodors.dispersion.puffs.principal import ejecutar as puffs
 
 penacho(["penacho/caso.inp", "penacho/caso.out"])       # concentración por receptor y hora
 cab, periodos = puffs("puffs/CALPUFF.INP")              # ídem, con el viento 3D

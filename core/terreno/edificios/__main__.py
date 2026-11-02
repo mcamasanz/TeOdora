@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """Traducción de BPIPPRM 04274 (US EPA, dominio público).
 
-Uso:  python -m odora.terreno.edificios entrada salida resumen      (los mismos argumentos que el original)
+Uso:  python -m teodors.terreno.edificios entrada salida resumen      (los mismos argumentos que el original)
 Códigos de salida: 0 terminado, 3 el original aborta en ese punto con un error de ejecución
 (se escribe su mismo mensaje).
 """
@@ -14,7 +14,7 @@ from .nucleo import ejecutar
 def main(argv=None):
     argv = sys.argv[1:] if argv is None else argv
     if len(argv) < 3:
-        sys.stdout.write(" Uso: python -m odora.terreno.edificios entrada salida resumen\n")
+        sys.stdout.write(" Uso: python -m teodors.terreno.edificios entrada salida resumen\n")
         return 1
     pant = []
     try:

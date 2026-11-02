@@ -4,7 +4,9 @@ Este software y su documentación son propietarios y confidenciales. Queda prohi
 modificarlo, distribuirlo, sublicenciarlo o usarlo, total o parcialmente, sin la autorización
 previa y por escrito del titular.
 
-Las partes de `odora.terreno.relieve`, `odora.terreno.superficie`, `odora.terreno.edificios`, `odora.meteo.capa_limite` y `odora.dispersion.penacho` son traducciones a Python de programas de la Agencia de Protección Ambiental de EE. UU. (US EPA), que son de dominio público en EE. UU.
+Las partes de `teodors.terreno.relieve`, `teodors.terreno.superficie`, `teodors.terreno.edificios`, `teodors.meteo.capa_limite` y `teodors.dispersion.penacho` son traducciones a Python de programas de la Agencia de Protección Ambiental de EE. UU. (US EPA), que son de dominio público en EE. UU.
 (17 U.S.C. 105). Su nombre y su logotipo no se usan para promocionar este producto.
 
-Las partes de `odora.terreno.geofisica`, `odora.meteo.viento3d` y `odora.dispersion.puffs` son implementaciones propias escritas desde documentación publicada. No contienen código de terceros.
+Las partes de `teodors.terreno.geofisica`, `teodors.meteo.viento3d` y `teodors.dispersion.puffs` son implementaciones propias escritas desde documentación publicada. No contienen código de terceros.
+
+Esta licencia no cubre `core/gui/recursos/visor3d/three.min.js` ni `OrbitControls.js`, de three.js, que tienen la suya (MIT, en `LICENSE-three.txt`). Las librerías de terceros, en `THIRD-PARTY-NOTICES.md`.

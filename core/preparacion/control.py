@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """Fichero de control como lista ORDENADA de asignaciones, para escribirlo desde cero.
 
-Los lectores de odora (`meteo.viento3d.control`, `dispersion.puffs.entrada`) solo tienen en cuenta
+Los lectores de teOdors (`meteo.viento3d.control`, `dispersion.puffs.entrada`) solo tienen en cuenta
 lo que va entre delimitadores «!» con la forma «!NOMBRE = valor!», en orden; el resto es comentario.
 Así que un fichero con solo esas asignaciones es equivalente a uno lleno de comentarios. El orden sí
 importa: las variables repetidas (fuentes, receptores, especies) se reparten por su posición.
@@ -13,7 +13,7 @@ posición. Solo se escriben las activas.
 
 
 class Control:
-    def __init__(self, parametros, titulo="Caso de odora"):
+    def __init__(self, parametros, titulo="Caso de teOdors"):
         self.entradas = [list(e) for e in parametros]
         self.titulo = titulo
 

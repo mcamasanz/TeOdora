@@ -1,4 +1,4 @@
-# `odora.preparacion.viento3d` — casos del viento 3D
+# `teodors.preparacion.viento3d` — casos del viento 3D
 
 <!-- manual -->
 ## Qué hace

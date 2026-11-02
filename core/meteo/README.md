@@ -1,4 +1,4 @@
-# `odora.meteo` — meteorología
+# `teodors.meteo` — meteorología
 
 Convierte los datos meteorológicos (observaciones, sondeos, pronósticos) en lo que necesitan los
 modelos de dispersión: los **parámetros de capa límite** del punto para el penacho y el **campo de
@@ -8,6 +8,7 @@ viento 3D** de todo el dominio para los puffs.
 |---|---|---|---|
 | [`capa_limite/`](capa_limite/README.md) | u\*, L, w\*, alturas de mezcla y perfiles a partir de observaciones de superficie, sondeos y estación propia | AERMET | `dispersion.penacho` (`.sfc`, `.pfl`) |
 | [`viento3d/`](viento3d/README.md) | viento 3D ajustado al terreno con pronóstico y observaciones, y micrometeorología por celda | CALMET | `dispersion.puffs` (CALMET.DAT) |
+| [`viento_local/`](viento_local/README.md) | ⚠️ **No validado y no es un motor:** viento alrededor de los edificios, a pocos metros, para enseñar su efecto | — | nadie: ni un sensor ni el penacho |
 
 ## Flujo típico
 
@@ -19,12 +20,12 @@ pronóstico 3D + GEO.DAT (+ estaciones, boyas, pluviómetros) ─► viento3d �
 ## Ejemplo
 
 ```bash
-python -m odora capa_limite aermet.inp       # escribe el .sfc y el .pfl
-python -m odora viento3d CMET.INP            # escribe el CALMET.DAT
+python -m teodors capa_limite aermet.inp       # escribe el .sfc y el .pfl
+python -m teodors viento3d CMET.INP            # escribe el CALMET.DAT
 ```
 
 ```python
-from odora.meteo.viento3d import fichero_viento
+from teodors.meteo.viento3d import fichero_viento
 cab, horas = fichero_viento.leer("CALMET.DAT")
 print(cab.nx, cab.ny, cab.nz, len(horas))     # tamaño de la malla y horas escritas
 ```

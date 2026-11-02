@@ -7,7 +7,7 @@ import math
 
 import pytest
 
-from odora.comun import geo
+from teodors.comun import geo
 
 LAT, LON = 40.6905923, 0.4764197
 

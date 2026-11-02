@@ -3,9 +3,9 @@
 PROGRAM AERMAP).
 
 Uso (mismos argumentos que el original):
-    python -m odora.terreno.relieve                      -> lee aermap.inp, escribe aermap.out
-    python -m odora.terreno.relieve caso.inp             -> escribe caso.out
-    python -m odora.terreno.relieve caso.inp salida.out
+    python -m teodors.terreno.relieve                      -> lee aermap.inp, escribe aermap.out
+    python -m teodors.terreno.relieve caso.inp             -> escribe caso.out
+    python -m teodors.terreno.relieve caso.inp salida.out
 """
 import datetime
 import sys
@@ -225,12 +225,12 @@ def main(argv=None):
     try:
         ejecutar(inp, out)
     except NoTraducido as ex:
-        print(f"AERMAP (traducción): opción no traducida: {ex}", file=sys.stderr)
+        print(f"relieve: opción no traducida: {ex}", file=sys.stderr)
         return 2
     except AbortoFortran as ex:
-        print(f"AERMAP (traducción): el original aborta aquí: {ex}", file=sys.stderr)
+        print(f"relieve: el original aborta aquí: {ex}", file=sys.stderr)
         return 3
-    print(f"AERMAP (traducción) terminado en {time.perf_counter() - t0:.1f} s")
+    print(f"relieve terminado en {time.perf_counter() - t0:.1f} s")
     return 0
 
 

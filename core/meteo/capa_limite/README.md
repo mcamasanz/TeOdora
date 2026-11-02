@@ -1,4 +1,4 @@
-# `odora.meteo.capa_limite` — capa_limite
+# `teodors.meteo.capa_limite` — capa_limite
 
 Equivale a **AERMET**: traducido del código de AERMET (dominio público); cada función indica la rutina original.
 
@@ -16,10 +16,10 @@ Monin-Obukhov, velocidad convectiva, alturas de mezcla mecánica y convectiva, y
 
 ## Uso
 ```bash
-python -m odora capa_limite aermet.inp
+python -m teodors capa_limite aermet.inp
 ```
 ```python
-from odora.meteo.capa_limite.__main__ import ejecutar
+from teodors.meteo.capa_limite.__main__ import ejecutar
 ejecutar("aermet.inp")
 ```
 

@@ -1,0 +1,32 @@
+<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="sun" cx="46%" cy="40%" r="62%">
+      <stop offset="0%" stop-color="#fff4bd"/>
+      <stop offset="55%" stop-color="#ffd21e"/>
+      <stop offset="100%" stop-color="#f39c00"/>
+    </radialGradient>
+    <linearGradient id="cl" gradientUnits="userSpaceOnUse" x1="34" y1="26" x2="34" y2="50">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#c3cede"/>
+    </linearGradient>
+  </defs>
+  <g stroke="#ffb61e" stroke-width="3" stroke-linecap="round">
+    <line x1="22" y1="4"  x2="22" y2="0"/>
+    <line x1="12.7" y1="7.7" x2="9.5" y2="4.5"/>
+    <line x1="9" y1="17" x2="4.5" y2="17"/>
+    <line x1="31.3" y1="7.7" x2="34.5" y2="4.5"/>
+    <line x1="35" y1="17" x2="39.5" y2="17"/>
+  </g>
+  <circle cx="22" cy="17" r="9" fill="url(#sun)" stroke="#f39c00" stroke-width="1"/>
+  <g fill="url(#cl)">
+    <circle cx="27" cy="39" r="11"/>
+    <circle cx="41" cy="34" r="14"/>
+    <circle cx="52" cy="40" r="10"/>
+    <rect x="22" y="40" width="34" height="12" rx="6"/>
+  </g>
+  <g stroke="#3fa0ff" stroke-width="3" stroke-linecap="round">
+    <line x1="30" y1="55" x2="27" y2="62"/>
+    <line x1="40" y1="55" x2="37" y2="62"/>
+    <line x1="50" y1="55" x2="47" y2="62"/>
+  </g>
+</svg>

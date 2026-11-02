@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """Traducción de AERSURFACE v26135 a Python. Uso (como el original, desde la carpeta del caso):
 
-    python -m odora.terreno.superficie control.inp
+    python -m teodors.terreno.superficie control.inp
 """
 import sys
 import time
@@ -33,7 +33,7 @@ def main(argv=None):
                 salida.escribir_rejilla(base / ou, r.rejillas[tipo], tipo, nombre, ini)
     for a in c.avisos + r.avisos:
         print("AVISO:", a)
-    print(f"AERSURFACE (Python) terminado en {time.perf_counter() - t0:.2f} s")
+    print(f"superficie terminado en {time.perf_counter() - t0:.2f} s")
     return 0
 
 

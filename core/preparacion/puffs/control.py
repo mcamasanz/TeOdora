@@ -9,8 +9,8 @@ demás parámetros (dispersión, ajuste por relieve…) son los de partida; `ext
 Viene del proyecto de La Galera (2026-10-23); la secuencia de asignaciones es la misma que la del
 escritor que usaba allí, salvo los nombres de las salidas de deposición y visibilidad.
 """
-from odora.preparacion.control import Control
-from odora.preparacion.puffs.parametros import PARAMETROS
+from teodors.preparacion.control import Control
+from teodors.preparacion.puffs.parametros import PARAMETROS
 
 NOMBRES = {"viento": "viento3d.dat", "listado": "puffs.lst", "concentraciones": "conc.dat"}
 
@@ -34,7 +34,7 @@ def _areas(fuentes):
 
 
 def preparar(malla, zface, ini, nhoras, zona, fuentes, receptores, especie="OLOR", hem="N",
-             datum="WGS-84", extra=None, nombres=None, titulo="Caso de puffs (odora)"):
+             datum="WGS-84", extra=None, nombres=None, titulo="Caso de puffs (teOdors)"):
     """Control (`preparacion.control.Control`) de un caso.
       malla       {"nx", "ny", "celda_m", "ext": (xmin, xmax, ymin, ymax) en m}: la del viento
       zface       caras de las capas del viento (m sobre el suelo)
