@@ -16,6 +16,7 @@
 >
 > Cómo se organiza y cómo se trabaja: `../README.md`. Los datos de entrada y sus créditos: `README.md`. **Abrir la app:** `C:\e2s\python.exe main.py`, desde esta carpeta. Para cambiar el núcleo, una versión nueva: una publicada no se toca.
 > Los scripts `99-Test/10_migracion/comparar_movidos*.py` y `07_isosuperficies/*_f1cfddb.py` son historia: miran commits antiguos y ya no se lanzan.
+> ⚠️ RECTIFICACIÓN (2026-11-02), en «Escalas de color»: el filtro, sobre la ortofoto, da máx. 26 y no 16. Son 2 píxeles de unos 11 500 (media 0,79, P99 4), y da igual con el código anterior a la reorganización. Causa sin aclarar; pasó el mismo día con un máximo ≤ 25. La prueba ya no mira un máximo absoluto: P99 ≤ 8 y menos del 0,1 % de píxeles por encima de 16.
 
 ## 1. Qué se construye
 
