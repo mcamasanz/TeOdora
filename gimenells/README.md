@@ -4,6 +4,10 @@ Planta de compostaje en pilas en **41,61854 N, 0,34222 E** (huso 31, EPSG:25831)
 (Lleida), pero según el Catastro está al otro lado del límite: polígono 7, parcela 205, paraje Moncalvo, **Zaidín (Huesca)**. La versión de teOdors
 que usa está en [`VERSION`](VERSION).
 
+![La aplicación de Gimenells, con el percentil 98 de olor del plan «Operación normal» sobre la ortofoto](../.github/imagenes/gimenells.jpg)
+
+<sub>Con emisiones provisionales y un solo día de viento repetido: la imagen enseña la herramienta, no es un resultado.</sub>
+
 ⚠️ **Las emisiones de las pilas son provisionales** (ver abajo): lo que se calcule con ellas prueba la herramienta, pero no es un resultado.
 La serie de viento de 5 años aún no existe: el reanálisis repite el día de prueba, el 21 de octubre de 2026.
 
