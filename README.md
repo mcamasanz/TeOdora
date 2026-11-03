@@ -75,6 +75,8 @@ TeOdora/
 │   ├── docs/              Su documentación
 │   └── 99-Test/           Sus pruebas
 │
+├── gimenells/             Otra instalación, con lo mínimo: VERSION, main.py y entrada/
+│
 └── .github/workflows/     El auditor, en cada subida a main
 ```
 
@@ -82,6 +84,7 @@ TeOdora/
 flowchart LR
     subgraph plantas [Instalaciones]
         A["galera<br/>VERSION: v0.1.5"]
+        C["gimenells<br/>VERSION: v0.1.5"]
         B["otra planta<br/>VERSION: v0.1.3"]
     end
     subgraph nucleo [Núcleo]
@@ -89,6 +92,7 @@ flowchart LR
         V4["v0.1.5<br/>publicada: no cambia"]
     end
     A --> V4
+    C --> V4
     B --> V3
 ```
 
@@ -104,6 +108,7 @@ Dos reglas sostienen todo lo demás:
 | Instalación | Carpeta | Versión | Estado |
 |---|---|---|---|
 | Planta de biometano de ENCE en La Galera (Montsià, Tarragona) | [`galera/`](galera/) | `v0.1.5` | En desarrollo: focos de ejemplo y serie de viento de 5 años por terminar. Sin probar aún en el PC del operario |
+| Planta de compostaje en pilas de Gimenells (DIGICOMPOST); según el Catastro, en Zaidín (Huesca) | [`gimenells/`](gimenells/) | `v0.1.5` | Preliminar: las 30 pilas con emisiones provisionales y un día de viento, el 21/10/2026. Sin serie de 5 años |
 
 ## Versiones del núcleo
 
@@ -199,6 +204,7 @@ El **auditor** decide qué entra en `main`: se ejecuta en cada subida y se puede
 | Las reglas del auditor | [`v0.1.5/auditor/README.md`](v0.1.5/auditor/README.md) |
 | Lo que queda por hacer | [`v0.1.5/PENDIENTES.md`](v0.1.5/PENDIENTES.md) |
 | Los datos de La Galera y sus créditos | [`galera/README.md`](galera/README.md) |
+| Los datos de Gimenells y sus créditos | [`gimenells/README.md`](gimenells/README.md) |
 
 ## Licencia
 

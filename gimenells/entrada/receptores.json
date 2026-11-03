@@ -1,0 +1,41 @@
+{
+  "formato": 1,
+  "epsg": "EPSG:25831",
+  "actualizado": "2026-11-03",
+  "notas": "Pueblos del municipio de la planta que CORINE no ve como zona residencial (unidad mínima 25 ha): su centro de población en CartoCiudad (IGN, CC BY 4.0). Sin ellos, la tabla de la simulación solo tendría núcleos de más lejos.",
+  "receptores": [
+    {
+      "id": "GIMENELLS",
+      "nombre": "Gimenells",
+      "x": 282627.7,
+      "y": 4614384.9,
+      "lat": 41.65158,
+      "lon": 0.389588,
+      "cartociudad": "900014663",
+      "dist_m": 5390,
+      "rumbo": 49
+    },
+    {
+      "id": "SANTA_MARIA_DE_GIMENELLS",
+      "nombre": "Santa Maria de Gimenells",
+      "x": 283854.1,
+      "y": 4614767.7,
+      "lat": 41.655358,
+      "lon": 0.404163,
+      "cartociudad": "900013935",
+      "dist_m": 6586,
+      "rumbo": 53
+    },
+    {
+      "id": "EL_PLA_DE_LA_FONT",
+      "nombre": "el Pla de la Font",
+      "x": 279631.5,
+      "y": 4618448.9,
+      "lat": 41.687324,
+      "lon": 0.352145,
+      "cartociudad": "900014198",
+      "dist_m": 7686,
+      "rumbo": 8
+    }
+  ]
+}

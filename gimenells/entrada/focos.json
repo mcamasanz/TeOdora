@@ -1,0 +1,489 @@
+{
+  "formato": 2,
+  "planta": "Gimenells",
+  "epsg": "EPSG:25831",
+  "actualizado": "2026-11-03",
+  "ejemplo": true,
+  "focos": [
+    {
+      "id": "P01",
+      "nombre": "Pila 1",
+      "unidad": "Nave · L70",
+      "tipo": "pila",
+      "modelo": "superficie",
+      "ubicacion": {
+        "poligono": [[278537.71, 4610815.52], [278469.87, 4610798.16], [278471.57, 4610791.33], [278539.41, 4610808.69]]
+      },
+      "altura_m": 3.5,
+      "material": "NA",
+      "funcionamiento": {"modo": "horario", "horas": "8-16", "fuera_pct": 10.0},
+      "olor": {"valor": 340.0, "unidad": "ou_E/(s·m2)"},
+      "gases": [],
+      "observaciones": ""
+    },
+    {
+      "id": "P02",
+      "nombre": "Pila 2",
+      "unidad": "Nave · L70",
+      "tipo": "pila",
+      "modelo": "superficie",
+      "ubicacion": {
+        "poligono": [[278541.87, 4610799.06], [278474.11, 4610781.69], [278475.82, 4610774.86], [278543.58, 4610792.22]]
+      },
+      "altura_m": 3.5,
+      "material": "NA",
+      "funcionamiento": {"modo": "horario", "horas": "8-16", "fuera_pct": 10.0},
+      "olor": {"valor": 340.0, "unidad": "ou_E/(s·m2)"},
+      "gases": [],
+      "observaciones": ""
+    },
+    {
+      "id": "P03",
+      "nombre": "Pila 3",
+      "unidad": "Nave · L70",
+      "tipo": "pila",
+      "modelo": "superficie",
+      "ubicacion": {
+        "poligono": [[278546.11, 4610782.59], [278478.27, 4610765.23], [278479.98, 4610758.4], [278547.82, 4610775.75]]
+      },
+      "altura_m": 3.5,
+      "material": "NA",
+      "funcionamiento": {"modo": "horario", "horas": "8-16", "fuera_pct": 10.0},
+      "olor": {"valor": 340.0, "unidad": "ou_E/(s·m2)"},
+      "gases": [],
+      "observaciones": ""
+    },
+    {
+      "id": "P04",
+      "nombre": "Pila 4",
+      "unidad": "Nave · L70",
+      "tipo": "pila",
+      "modelo": "superficie",
+      "ubicacion": {
+        "poligono": [[278550.28, 4610766.12], [278482.52, 4610748.76], [278484.23, 4610741.93], [278552.07, 4610759.29]]
+      },
+      "altura_m": 3.5,
+      "material": "NA",
+      "funcionamiento": {"modo": "horario", "horas": "8-16", "fuera_pct": 10.0},
+      "olor": {"valor": 340.0, "unidad": "ou_E/(s·m2)"},
+      "gases": [],
+      "observaciones": ""
+    },
+    {
+      "id": "P05",
+      "nombre": "Pila 5",
+      "unidad": "Nave · L70",
+      "tipo": "pila",
+      "modelo": "superficie",
+      "ubicacion": {
+        "poligono": [[278554.52, 4610749.65], [278486.68, 4610732.29], [278488.47, 4610725.46], [278556.23, 4610742.82]]
+      },
+      "altura_m": 3.5,
+      "material": "NA",
+      "funcionamiento": {"modo": "horario", "horas": "8-16", "fuera_pct": 10.0},
+      "olor": {"valor": 340.0, "unidad": "ou_E/(s·m2)"},
+      "gases": [],
+      "observaciones": ""
+    },
+    {
+      "id": "P06",
+      "nombre": "Pila 6",
+      "unidad": "Nave · L40",
+      "tipo": "pila",
+      "modelo": "superficie",
+      "ubicacion": {
+        "poligono": [[278579.67, 4610840.9], [278572.94, 4610839.11], [278582.84, 4610800.46], [278589.57, 4610802.14]]
+      },
+      "altura_m": 3.0,
+      "material": "NA",
+      "funcionamiento": {"modo": "horario", "horas": "8-16", "fuera_pct": 10.0},
+      "olor": {"valor": 340.0, "unidad": "ou_E/(s·m2)"},
+      "gases": [],
+      "observaciones": ""
+    },
+    {
+      "id": "P07",
+      "nombre": "Pila 7",
+      "unidad": "Nave · L50",
+      "tipo": "pila",
+      "modelo": "superficie",
+      "ubicacion": {
+        "poligono": [[278584.13, 4610783.28], [278577.33, 4610781.6], [278589.76, 4610733.21], [278596.49, 4610734.89]]
+      },
+      "altura_m": 3.0,
+      "material": "NA",
+      "funcionamiento": {"modo": "horario", "horas": "8-16", "fuera_pct": 10.0},
+      "olor": {"valor": 340.0, "unidad": "ou_E/(s·m2)"},
+      "gases": [],
+      "observaciones": ""
+    },
+    {
+      "id": "P08",
+      "nombre": "Pila 8",
+      "unidad": "Nave · L40",
+      "tipo": "pila",
+      "modelo": "superficie",
+      "ubicacion": {
+        "poligono": [[278590.35, 4610843.56], [278583.55, 4610841.88], [278593.44, 4610803.12], [278600.25, 4610804.91]]
+      },
+      "altura_m": 3.0,
+      "material": "NA",
+      "funcionamiento": {"modo": "horario", "horas": "8-16", "fuera_pct": 10.0},
+      "olor": {"valor": 340.0, "unidad": "ou_E/(s·m2)"},
+      "gases": [],
+      "observaciones": ""
+    },
+    {
+      "id": "P09",
+      "nombre": "Pila 9",
+      "unidad": "Nave · L50",
+      "tipo": "pila",
+      "modelo": "superficie",
+      "ubicacion": {
+        "poligono": [[278591.91, 4610785.32], [278585.1, 4610783.53], [278597.54, 4610735.13], [278604.26, 4610736.82]]
+      },
+      "altura_m": 3.0,
+      "material": "NA",
+      "funcionamiento": {"modo": "horario", "horas": "8-16", "fuera_pct": 10.0},
+      "olor": {"valor": 340.0, "unidad": "ou_E/(s·m2)"},
+      "gases": [],
+      "observaciones": ""
+    },
+    {
+      "id": "P10",
+      "nombre": "Pila 10",
+      "unidad": "Nave · L40",
+      "tipo": "pila",
+      "modelo": "superficie",
+      "ubicacion": {
+        "poligono": [[278601.04, 4610846.36], [278594.23, 4610844.56], [278604.13, 4610805.92], [278610.94, 4610807.6]]
+      },
+      "altura_m": 3.0,
+      "material": "NA",
+      "funcionamiento": {"modo": "horario", "horas": "8-16", "fuera_pct": 10.0},
+      "olor": {"valor": 340.0, "unidad": "ou_E/(s·m2)"},
+      "gases": [],
+      "observaciones": ""
+    },
+    {
+      "id": "P11",
+      "nombre": "Pila 11",
+      "unidad": "Nave · L50",
+      "tipo": "pila",
+      "modelo": "superficie",
+      "ubicacion": {
+        "poligono": [[278599.7, 4610787.31], [278592.89, 4610785.52], [278605.25, 4610737.13], [278612.06, 4610738.92]]
+      },
+      "altura_m": 3.0,
+      "material": "NA",
+      "funcionamiento": {"modo": "horario", "horas": "8-16", "fuera_pct": 10.0},
+      "olor": {"valor": 340.0, "unidad": "ou_E/(s·m2)"},
+      "gases": [],
+      "observaciones": ""
+    },
+    {
+      "id": "P12",
+      "nombre": "Pila 12",
+      "unidad": "Nave · L40",
+      "tipo": "pila",
+      "modelo": "superficie",
+      "ubicacion": {
+        "poligono": [[278611.64, 4610849.03], [278604.91, 4610847.35], [278614.81, 4610808.59], [278621.62, 4610810.38]]
+      },
+      "altura_m": 3.0,
+      "material": "NA",
+      "funcionamiento": {"modo": "horario", "horas": "8-16", "fuera_pct": 10.0},
+      "olor": {"valor": 340.0, "unidad": "ou_E/(s·m2)"},
+      "gases": [],
+      "observaciones": ""
+    },
+    {
+      "id": "P13",
+      "nombre": "Pila 13",
+      "unidad": "Nave · L50",
+      "tipo": "pila",
+      "modelo": "superficie",
+      "ubicacion": {
+        "poligono": [[278607.48, 4610789.24], [278600.67, 4610787.56], [278613.02, 4610739.17], [278619.83, 4610740.85]]
+      },
+      "altura_m": 3.0,
+      "material": "NA",
+      "funcionamiento": {"modo": "horario", "horas": "8-16", "fuera_pct": 10.0},
+      "olor": {"valor": 340.0, "unidad": "ou_E/(s·m2)"},
+      "gases": [],
+      "observaciones": ""
+    },
+    {
+      "id": "P14",
+      "nombre": "Pila 14",
+      "unidad": "Nave · L40",
+      "tipo": "pila",
+      "modelo": "superficie",
+      "ubicacion": {
+        "poligono": [[278622.32, 4610851.8], [278615.51, 4610850.01], [278625.5, 4610811.36], [278632.22, 4610813.04]]
+      },
+      "altura_m": 3.0,
+      "material": "NA",
+      "funcionamiento": {"modo": "horario", "horas": "8-16", "fuera_pct": 10.0},
+      "olor": {"valor": 340.0, "unidad": "ou_E/(s·m2)"},
+      "gases": [],
+      "observaciones": ""
+    },
+    {
+      "id": "P15",
+      "nombre": "Pila 15",
+      "unidad": "Nave · L50",
+      "tipo": "pila",
+      "modelo": "superficie",
+      "ubicacion": {
+        "poligono": [[278615.25, 4610791.29], [278608.44, 4610789.5], [278620.8, 4610741.11], [278627.6, 4610742.79]]
+      },
+      "altura_m": 3.0,
+      "material": "NG",
+      "funcionamiento": {"modo": "horario", "horas": "8-16", "fuera_pct": 10.0},
+      "olor": {"valor": 340.0, "unidad": "ou_E/(s·m2)"},
+      "gases": [],
+      "observaciones": ""
+    },
+    {
+      "id": "P16",
+      "nombre": "Pila 16",
+      "unidad": "Nave · L40",
+      "tipo": "pila",
+      "modelo": "superficie",
+      "ubicacion": {
+        "poligono": [[278633.01, 4610854.47], [278626.2, 4610852.79], [278636.1, 4610814.03], [278642.9, 4610815.71]]
+      },
+      "altura_m": 3.0,
+      "material": "NA",
+      "funcionamiento": {"modo": "horario", "horas": "8-16", "fuera_pct": 10.0},
+      "olor": {"valor": 340.0, "unidad": "ou_E/(s·m2)"},
+      "gases": [],
+      "observaciones": ""
+    },
+    {
+      "id": "P17",
+      "nombre": "Pila 17",
+      "unidad": "Nave · L50",
+      "tipo": "pila",
+      "modelo": "superficie",
+      "ubicacion": {
+        "poligono": [[278622.96, 4610793.27], [278616.24, 4610791.47], [278628.58, 4610743.08], [278635.39, 4610744.87]]
+      },
+      "altura_m": 3.0,
+      "material": "NA",
+      "funcionamiento": {"modo": "horario", "horas": "8-16", "fuera_pct": 10.0},
+      "olor": {"valor": 340.0, "unidad": "ou_E/(s·m2)"},
+      "gases": [],
+      "observaciones": ""
+    },
+    {
+      "id": "P18",
+      "nombre": "Pila 18",
+      "unidad": "Nave · L40",
+      "tipo": "pila",
+      "modelo": "superficie",
+      "ubicacion": {
+        "poligono": [[278643.61, 4610857.25], [278636.88, 4610855.45], [278646.78, 4610816.69], [278653.59, 4610818.48]]
+      },
+      "altura_m": 3.0,
+      "material": "NA",
+      "funcionamiento": {"modo": "horario", "horas": "8-16", "fuera_pct": 10.0},
+      "olor": {"valor": 340.0, "unidad": "ou_E/(s·m2)"},
+      "gases": [],
+      "observaciones": ""
+    },
+    {
+      "id": "P19",
+      "nombre": "Pila 19",
+      "unidad": "Nave · L50",
+      "tipo": "pila",
+      "modelo": "superficie",
+      "ubicacion": {
+        "poligono": [[278630.76, 4610795.21], [278624.04, 4610793.53], [278636.39, 4610745.03], [278643.2, 4610746.82]]
+      },
+      "altura_m": 3.0,
+      "material": "NA",
+      "funcionamiento": {"modo": "horario", "horas": "8-16", "fuera_pct": 10.0},
+      "olor": {"valor": 340.0, "unidad": "ou_E/(s·m2)"},
+      "gases": [],
+      "observaciones": ""
+    },
+    {
+      "id": "P20",
+      "nombre": "Pila 20",
+      "unidad": "Nave · L40",
+      "tipo": "pila",
+      "modelo": "superficie",
+      "ubicacion": {
+        "poligono": [[278654.28, 4610859.93], [278647.56, 4610858.25], [278657.46, 4610819.49], [278664.18, 4610821.17]]
+      },
+      "altura_m": 3.0,
+      "material": "NA",
+      "funcionamiento": {"modo": "horario", "horas": "8-16", "fuera_pct": 10.0},
+      "olor": {"valor": 340.0, "unidad": "ou_E/(s·m2)"},
+      "gases": [],
+      "observaciones": ""
+    },
+    {
+      "id": "P21",
+      "nombre": "Pila 21",
+      "unidad": "Nave · L50",
+      "tipo": "pila",
+      "modelo": "superficie",
+      "ubicacion": {
+        "poligono": [[278638.52, 4610797.2], [278631.8, 4610795.52], [278644.15, 4610747.12], [278650.96, 4610748.8]]
+      },
+      "altura_m": 3.0,
+      "material": "NA",
+      "funcionamiento": {"modo": "horario", "horas": "8-16", "fuera_pct": 10.0},
+      "olor": {"valor": 340.0, "unidad": "ou_E/(s·m2)"},
+      "gases": [],
+      "observaciones": ""
+    },
+    {
+      "id": "P22",
+      "nombre": "Pila 22",
+      "unidad": "Nave · L40",
+      "tipo": "pila",
+      "modelo": "superficie",
+      "ubicacion": {
+        "poligono": [[278664.97, 4610862.7], [278658.16, 4610860.91], [278668.06, 4610822.15], [278674.87, 4610823.94]]
+      },
+      "altura_m": 3.0,
+      "material": "NA",
+      "funcionamiento": {"modo": "horario", "horas": "8-16", "fuera_pct": 10.0},
+      "olor": {"valor": 340.0, "unidad": "ou_E/(s·m2)"},
+      "gases": [],
+      "observaciones": ""
+    },
+    {
+      "id": "P23",
+      "nombre": "Pila 23",
+      "unidad": "Nave · L50",
+      "tipo": "pila",
+      "modelo": "superficie",
+      "ubicacion": {
+        "poligono": [[278646.3, 4610799.24], [278639.57, 4610797.44], [278651.93, 4610749.05], [278658.73, 4610750.73]]
+      },
+      "altura_m": 3.0,
+      "material": "NA",
+      "funcionamiento": {"modo": "horario", "horas": "8-16", "fuera_pct": 10.0},
+      "olor": {"valor": 340.0, "unidad": "ou_E/(s·m2)"},
+      "gases": [],
+      "observaciones": ""
+    },
+    {
+      "id": "P24",
+      "nombre": "Pila 24",
+      "unidad": "Nave · L40",
+      "tipo": "pila",
+      "modelo": "superficie",
+      "ubicacion": {
+        "poligono": [[278675.65, 4610865.37], [278668.84, 4610863.69], [278678.74, 4610824.93], [278685.55, 4610826.61]]
+      },
+      "altura_m": 3.0,
+      "material": "NA",
+      "funcionamiento": {"modo": "horario", "horas": "8-16", "fuera_pct": 10.0},
+      "olor": {"valor": 340.0, "unidad": "ou_E/(s·m2)"},
+      "gases": [],
+      "observaciones": ""
+    },
+    {
+      "id": "P25",
+      "nombre": "Pila 25",
+      "unidad": "Nave · L50",
+      "tipo": "pila",
+      "modelo": "superficie",
+      "ubicacion": {
+        "poligono": [[278654.08, 4610801.15], [278647.27, 4610799.47], [278659.71, 4610750.97], [278666.43, 4610752.76]]
+      },
+      "altura_m": 3.0,
+      "material": "NA",
+      "funcionamiento": {"modo": "horario", "horas": "8-16", "fuera_pct": 10.0},
+      "olor": {"valor": 340.0, "unidad": "ou_E/(s·m2)"},
+      "gases": [],
+      "observaciones": ""
+    },
+    {
+      "id": "P26",
+      "nombre": "Pila 26",
+      "unidad": "Nave · L40",
+      "tipo": "pila",
+      "modelo": "superficie",
+      "ubicacion": {
+        "poligono": [[278686.25, 4610868.15], [278679.53, 4610866.35], [278689.42, 4610827.59], [278696.15, 4610829.39]]
+      },
+      "altura_m": 3.0,
+      "material": "NA",
+      "funcionamiento": {"modo": "horario", "horas": "8-16", "fuera_pct": 10.0},
+      "olor": {"valor": 340.0, "unidad": "ou_E/(s·m2)"},
+      "gases": [],
+      "observaciones": ""
+    },
+    {
+      "id": "P27",
+      "nombre": "Pila 27",
+      "unidad": "Nave · L50",
+      "tipo": "pila",
+      "modelo": "superficie",
+      "ubicacion": {
+        "poligono": [[278661.84, 4610803.15], [278655.03, 4610801.47], [278667.47, 4610753.07], [278674.19, 4610754.75]]
+      },
+      "altura_m": 3.0,
+      "material": "NA",
+      "funcionamiento": {"modo": "horario", "horas": "8-16", "fuera_pct": 10.0},
+      "olor": {"valor": 340.0, "unidad": "ou_E/(s·m2)"},
+      "gases": [],
+      "observaciones": ""
+    },
+    {
+      "id": "P28",
+      "nombre": "Pila 28",
+      "unidad": "Nave · L40",
+      "tipo": "pila",
+      "modelo": "superficie",
+      "ubicacion": {
+        "poligono": [[278696.94, 4610870.82], [278690.13, 4610869.14], [278700.03, 4610830.38], [278706.83, 4610832.06]]
+      },
+      "altura_m": 3.0,
+      "material": "NA",
+      "funcionamiento": {"modo": "horario", "horas": "8-16", "fuera_pct": 10.0},
+      "olor": {"valor": 340.0, "unidad": "ou_E/(s·m2)"},
+      "gases": [],
+      "observaciones": ""
+    },
+    {
+      "id": "P29",
+      "nombre": "Pila 29",
+      "unidad": "Nave · L50",
+      "tipo": "pila",
+      "modelo": "superficie",
+      "ubicacion": {
+        "poligono": [[278669.61, 4610805.2], [278662.8, 4610803.41], [278675.24, 4610755.01], [278681.96, 4610756.69]]
+      },
+      "altura_m": 3.0,
+      "material": "NA",
+      "funcionamiento": {"modo": "horario", "horas": "8-16", "fuera_pct": 10.0},
+      "olor": {"valor": 340.0, "unidad": "ou_E/(s·m2)"},
+      "gases": [],
+      "observaciones": ""
+    },
+    {
+      "id": "P30",
+      "nombre": "Pila 30",
+      "unidad": "Nave · L50",
+      "tipo": "pila",
+      "modelo": "superficie",
+      "ubicacion": {
+        "poligono": [[278677.41, 4610807.18], [278670.6, 4610805.39], [278683.04, 4610756.99], [278689.76, 4610758.79]]
+      },
+      "altura_m": 3.0,
+      "material": "NA",
+      "funcionamiento": {"modo": "horario", "horas": "8-16", "fuera_pct": 10.0},
+      "olor": {"valor": 340.0, "unidad": "ou_E/(s·m2)"},
+      "gases": [],
+      "observaciones": ""
+    }
+  ]
+}

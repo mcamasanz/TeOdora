@@ -1,0 +1,233 @@
+{
+  "formato": 1,
+  "identidad": {
+    "app_nombre": "Gimenells · Dispersión",
+    "organizacion": "CIRCE",
+    "ajustes": "gimenells",
+    "app_id": "CIRCE.gimenells",
+    "version": "0.1.0",
+    "entidad": "Fundación CIRCE",
+    "red_datos": "la red donde están los datos",
+    "prefijo_env": "GIMENELLS",
+    "carpeta_local": "gimenells",
+    "registro": "gimenells",
+    "agente_http": "Mozilla/5.0 teOdors",
+    "nombre_casos": "Gimenells"
+  },
+  "proyeccion": {
+    "epsg": "EPSG:25831",
+    "crs_geo": "EPSG:4258",
+    "zona_horaria": "Europe/Madrid"
+  },
+  "dominio": {
+    "lado_km": 50.0,
+    "margen_m": 500.0,
+    "res_terreno_m": 25.0,
+    "radio_edificios_km": 2.0,
+    "radio_edificios_focos_m": 200.0,
+    "celda_viento_m": 400.0,
+    "zface": [
+      0,
+      20,
+      40,
+      60,
+      90,
+      130,
+      200,
+      300,
+      500,
+      800,
+      1200,
+      2000,
+      3000
+    ]
+  },
+  "receptores": {
+    "por_km2": 10,
+    "niveles": [
+      [
+        "cercana",
+        25.0,
+        500.0
+      ],
+      [
+        "proxima",
+        50.0,
+        1000.0
+      ],
+      [
+        "fina",
+        100.0,
+        3000.0
+      ],
+      [
+        "media",
+        300.0,
+        6000.0
+      ],
+      [
+        "gruesa",
+        700.0,
+        null
+      ]
+    ],
+    "estilos": {
+      "cercana": [
+        "#7a0177",
+        1.2,
+        "Cercana · 25 m (±500 m)"
+      ],
+      "proxima": [
+        "#c51b8a",
+        1.4,
+        "Próxima · 50 m (±1 km)"
+      ],
+      "fina": [
+        "#d7301f",
+        1.6,
+        "Fina · 100 m (±3 km)"
+      ],
+      "media": [
+        "#f28e1c",
+        1.8,
+        "Media · 300 m (±6 km)"
+      ],
+      "gruesa": [
+        "#555555",
+        2.0,
+        "Gruesa · 700 m (todo el dominio)"
+      ],
+      "nucleo": [
+        "#2b7bba",
+        4.0,
+        "Núcleos CORINE"
+      ],
+      "vivienda": [
+        "#7b3294",
+        2.6,
+        "Viviendas del Catastro (< 2 km)"
+      ],
+      "nombrado": [
+        "#00a6a6",
+        4.0,
+        "Receptores con nombre"
+      ]
+    }
+  },
+  "reanalisis": {
+    "anios": [
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ]
+  },
+  "estaciones": {
+    "proveedor": "Meteocat",
+    "radio_km": 20.0,
+    "codigos": [
+      "VH",
+      "VK",
+      "XY",
+      "XN"
+    ],
+    "objetivo": "VH",
+    "ceros_sospechosos": {},
+    "mediodia_utc_h": 12.0,
+    "agente_http": "teOdors"
+  },
+  "pronostico": {
+    "caja_gfs": {
+      "lat": [
+        41.0,
+        42.0
+      ],
+      "lon": [
+        -0.25,
+        0.75
+      ]
+    },
+    "semanas_mos": [],
+    "mos_hasta": "",
+    "n_col": 4,
+    "paso_col_m": 12500.0
+  },
+  "series": {
+    "r1_km": 5.0,
+    "rmax_km": 30.0,
+    "era5": "era5_estaciones",
+    "gfs": "gfs_estaciones",
+    "preferidas": [
+      "era5_estaciones",
+      "gfs_estaciones"
+    ],
+    "titulos": {
+      "era5_estaciones": "teOdors · ERA5 + estaciones · 0–20 m",
+      "gfs_estaciones": "teOdors · GFS + estaciones · 0–20 m"
+    },
+    "dia_prueba": "2026-10-21"
+  },
+  "fuentes": {
+    "mdt": "IGN",
+    "usos": "CORINE",
+    "edificios": "Catastro",
+    "nombres_nucleos": "CartoCiudad (IGN)",
+    "fondos": [
+      [
+        "Satélite (ortofoto PNOA)",
+        "https://www.ign.es/wmts/pnoa-ma?request=GetTile&service=WMTS&VERSION=1.0.0&Layer=OI.OrthoimageCoverage&Style=default&Format=image/jpeg&TileMatrixSet=GoogleMapsCompatible&TileMatrix={z}&TileRow={y}&TileCol={x}",
+        "© <a href=\"https://www.ign.es\" target=\"_blank\">Instituto Geográfico Nacional</a> · CC BY 4.0 <a href=\"https://www.scne.es\" target=\"_blank\">scne.es</a>",
+        19
+      ],
+      [
+        "Callejero (OSM)",
+        "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+        "© <a href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a>",
+        19
+      ]
+    ],
+    "creditos": [
+      "Satélite (ortofoto PNOA) y MDT: © Instituto Geográfico Nacional de España, CC BY 4.0 scne.es",
+      "Uso del suelo: CORINE Land Cover 2018 (Copernicus / IGN)",
+      "Edificios: © Dirección General del Catastro (dato transformado)",
+      "Alturas de los edificios de la planta: LiDAR del Institut Cartogràfic i Geològic de Catalunya",
+      "Callejero: © colaboradores de OpenStreetMap (ODbL)",
+      "Nombres de los núcleos: CartoCiudad, © Instituto Geográfico Nacional, CC BY 4.0"
+    ],
+    "corine_gpkg": [
+      "$OneDriveCommercial/Escritorio/Mountains/inundaciones/src/data/usos/CLC2018_ES.gpkg",
+      "$OneDriveCommercial/Escritorio/PyroSmoke/src/data/usos/CLC2018_ES.gpkg",
+      "$OneDriveCommercial/Escritorio/stl/src/data/usos/CLC2018_ES.gpkg",
+      "$OneDrive/Escritorio/Mountains/inundaciones/src/data/usos/CLC2018_ES.gpkg",
+      "$OneDrive/Escritorio/PyroSmoke/src/data/usos/CLC2018_ES.gpkg",
+      "$OneDrive/Escritorio/stl/src/data/usos/CLC2018_ES.gpkg"
+    ]
+  },
+  "viento_local": {
+    "puntos": [[278513.1, 4610770.5], [278636.6, 4610801.6]],
+    "radio_m": 200.0,
+    "radio_borde_m": 250.0,
+    "margen_m": 50.0,
+    "dx": 2.5,
+    "dz": 1.25,
+    "alto_m": 3.0,
+    "lidar": "viento_local/planta_1m.npz",
+    "lidar_zona": [278575.0, 4610786.0, 400.0],
+    "lidar_teselas": ["278610", "278611"],
+    "biblioteca": "viento_local/viento_local.npz",
+    "nota": "Puntos: el centro de las pilas L70 (oeste, bajo el edificio de cubierta azul) y el de las L40 y L50 (este). Radios, dx, dz y alto_m como en La Galera. LiDAR territorial del ICGC 2021-2023, 16 puntos/m². En él solo la mitad sur del edificio azul está clasificada como edificio (14 m); la norte, igual de alta, deja pasar el láser hasta el suelo y queda sin clasificar, y las pilas L40 y L50 están al aire libre. Si cambian los edificios, rehacerla: python -m teodors.operacion.viento_local_biblioteca."
+  },
+  "operacion": {
+    "modo_edicion": "circe",
+    "texto_modo_edicion": "modo CIRCE",
+    "tipos_foco_extra": {},
+    "ejemplo": "recursos/ejemplo"
+  },
+  "visor3d": {
+    "ortofoto": "recursos/visor3d/ortofoto.jpg",
+    "semilado_m": 3200.0,
+    "credito": "Ortofoto PNOA © IGN (CC BY 4.0)",
+    "rotulos": []
+  }
+}

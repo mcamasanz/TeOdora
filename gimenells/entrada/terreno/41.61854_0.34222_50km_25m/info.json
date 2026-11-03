@@ -1,0 +1,408 @@
+{
+  "centro": {
+    "lat": 41.61854,
+    "lon": 0.34222
+  },
+  "lado_km": 50.0,
+  "res_m": 25.0,
+  "epsg": "EPSG:25831",
+  "ext_utm": [
+    253550.0,
+    303550.0,
+    4585825.0,
+    4635825.0
+  ],
+  "forma": [
+    2000,
+    2000
+  ],
+  "mdt": {
+    "fuente": "IGN · MDT por WCS (servicios.idee.es), CC BY 4.0 scne.es",
+    "cobertura": "Elevacion25830_25",
+    "crs_origen": "EPSG:25830",
+    "remuestreo": "bilineal"
+  },
+  "corine": {
+    "fuente": "CORINE Land Cover 2018 (Copernicus / IGN)",
+    "fichero": "C:\\Users\\MiguelCamaraSanz\\OneDrive - Fundacion CIRCE\\Escritorio\\PyroSmoke\\src\\data\\usos\\CLC2018_ES.gpkg",
+    "poligonos": 1078
+  },
+  "fecha": "2026-11-03T08:33:05",
+  "estadisticas": {
+    "z_min": 69.0,
+    "z_media": 238.64495849609375,
+    "z_max": 466.93585205078125,
+    "pct_mar": 0.0,
+    "pct_urbano_industrial": 1.64,
+    "usos": [
+      {
+        "codigo": 212,
+        "nombre": "Regadío permanente",
+        "pct": 34.2
+      },
+      {
+        "codigo": 222,
+        "nombre": "Frutales",
+        "pct": 18.52
+      },
+      {
+        "codigo": 211,
+        "nombre": "Tierras de labor en secano",
+        "pct": 16.85
+      },
+      {
+        "codigo": 323,
+        "nombre": "Vegetación esclerófila",
+        "pct": 8.76
+      },
+      {
+        "codigo": 242,
+        "nombre": "Mosaico de cultivos",
+        "pct": 4.18
+      },
+      {
+        "codigo": 223,
+        "nombre": "Olivares",
+        "pct": 3.16
+      },
+      {
+        "codigo": 312,
+        "nombre": "Bosque de coníferas",
+        "pct": 2.43
+      },
+      {
+        "codigo": 243,
+        "nombre": "Agrícola con vegetación natural",
+        "pct": 2.23
+      },
+      {
+        "codigo": 213,
+        "nombre": "Arrozales",
+        "pct": 1.84
+      },
+      {
+        "codigo": 324,
+        "nombre": "Matorral boscoso de transición",
+        "pct": 1.2
+      },
+      {
+        "codigo": 512,
+        "nombre": "Láminas de agua",
+        "pct": 1.12
+      },
+      {
+        "codigo": 221,
+        "nombre": "Viñedos",
+        "pct": 1.1
+      },
+      {
+        "codigo": 311,
+        "nombre": "Bosque de frondosas",
+        "pct": 0.94
+      },
+      {
+        "codigo": 121,
+        "nombre": "Zonas industriales o comerciales",
+        "pct": 0.66
+      },
+      {
+        "codigo": 231,
+        "nombre": "Praderas",
+        "pct": 0.57
+      },
+      {
+        "codigo": 112,
+        "nombre": "Tejido urbano discontinuo",
+        "pct": 0.53
+      },
+      {
+        "codigo": 111,
+        "nombre": "Tejido urbano continuo",
+        "pct": 0.45
+      },
+      {
+        "codigo": 321,
+        "nombre": "Pastizales naturales",
+        "pct": 0.44
+      },
+      {
+        "codigo": 124,
+        "nombre": "Aeropuertos",
+        "pct": 0.11
+      },
+      {
+        "codigo": 122,
+        "nombre": "Redes viarias y ferroviarias",
+        "pct": 0.1
+      },
+      {
+        "codigo": 133,
+        "nombre": "Zonas en construcción",
+        "pct": 0.1
+      },
+      {
+        "codigo": 131,
+        "nombre": "Extracción minera",
+        "pct": 0.08
+      },
+      {
+        "codigo": 142,
+        "nombre": "Instalaciones deportivas y recreativas",
+        "pct": 0.08
+      },
+      {
+        "codigo": 241,
+        "nombre": "Cultivos anuales con permanentes",
+        "pct": 0.08
+      },
+      {
+        "codigo": 411,
+        "nombre": "Humedales",
+        "pct": 0.08
+      },
+      {
+        "codigo": 313,
+        "nombre": "Bosque mixto",
+        "pct": 0.07
+      },
+      {
+        "codigo": 141,
+        "nombre": "Zonas verdes urbanas",
+        "pct": 0.06
+      },
+      {
+        "codigo": 132,
+        "nombre": "Escombreras y vertederos",
+        "pct": 0.04
+      },
+      {
+        "codigo": 333,
+        "nombre": "Vegetación escasa",
+        "pct": 0.01
+      }
+    ]
+  },
+  "planta": {
+    "z": 199.2490997314453,
+    "uso": 212,
+    "uso_nombre": "Regadío permanente"
+  },
+  "capas_mapa": [
+    {
+      "id": "elevacion",
+      "nombre": "Elevación (MDT IGN)",
+      "png": "mapa_elevacion.png",
+      "bounds": [
+        [
+          41.38616453773538,
+          0.031942887382215464
+        ],
+        [
+          41.849958179124286,
+          0.6499298569303268
+        ]
+      ],
+      "leyenda": {
+        "tipo": "continua",
+        "min": 69.0,
+        "max": 466.93585205078125,
+        "unidad": "m",
+        "gradiente": "#15d06a, #7de57f, #e9fb95, #d4c882, #9e8365, #957771, #cbbcb9, #ffffff"
+      }
+    },
+    {
+      "id": "usos",
+      "nombre": "Uso del suelo (CORINE 2018)",
+      "png": "mapa_usos.png",
+      "bounds": [
+        [
+          41.38616453773538,
+          0.031942887382215464
+        ],
+        [
+          41.849958179124286,
+          0.6499298569303268
+        ]
+      ],
+      "leyenda": {
+        "tipo": "clases",
+        "clases": [
+          {
+            "codigo": 212,
+            "nombre": "Regadío permanente",
+            "pct": 34.2,
+            "color": "#ffe64d"
+          },
+          {
+            "codigo": 222,
+            "nombre": "Frutales",
+            "pct": 18.52,
+            "color": "#f2a600"
+          },
+          {
+            "codigo": 211,
+            "nombre": "Tierras de labor en secano",
+            "pct": 16.85,
+            "color": "#ffffa8"
+          },
+          {
+            "codigo": 323,
+            "nombre": "Vegetación esclerófila",
+            "pct": 8.76,
+            "color": "#a5e54c"
+          },
+          {
+            "codigo": 242,
+            "nombre": "Mosaico de cultivos",
+            "pct": 4.18,
+            "color": "#ffff00"
+          },
+          {
+            "codigo": 223,
+            "nombre": "Olivares",
+            "pct": 3.16,
+            "color": "#e4a100"
+          },
+          {
+            "codigo": 312,
+            "nombre": "Bosque de coníferas",
+            "pct": 2.43,
+            "color": "#00a600"
+          },
+          {
+            "codigo": 243,
+            "nombre": "Agrícola con vegetación natural",
+            "pct": 2.23,
+            "color": "#ffcc4d"
+          },
+          {
+            "codigo": 213,
+            "nombre": "Arrozales",
+            "pct": 1.84,
+            "color": "#e68080"
+          },
+          {
+            "codigo": 324,
+            "nombre": "Matorral boscoso de transición",
+            "pct": 1.2,
+            "color": "#a6e600"
+          },
+          {
+            "codigo": 512,
+            "nombre": "Láminas de agua",
+            "pct": 1.12,
+            "color": "#a5e6e6"
+          },
+          {
+            "codigo": 221,
+            "nombre": "Viñedos",
+            "pct": 1.1,
+            "color": "#d96600"
+          },
+          {
+            "codigo": 311,
+            "nombre": "Bosque de frondosas",
+            "pct": 0.94,
+            "color": "#80ff00"
+          },
+          {
+            "codigo": 121,
+            "nombre": "Zonas industriales o comerciales",
+            "pct": 0.66,
+            "color": "#b333e6"
+          },
+          {
+            "codigo": 231,
+            "nombre": "Praderas",
+            "pct": 0.57,
+            "color": "#f2f24d"
+          },
+          {
+            "codigo": 112,
+            "nombre": "Tejido urbano discontinuo",
+            "pct": 0.53,
+            "color": "#ff0000"
+          },
+          {
+            "codigo": 111,
+            "nombre": "Tejido urbano continuo",
+            "pct": 0.45,
+            "color": "#e6004d"
+          },
+          {
+            "codigo": 321,
+            "nombre": "Pastizales naturales",
+            "pct": 0.44,
+            "color": "#cce64d"
+          },
+          {
+            "codigo": 124,
+            "nombre": "Aeropuertos",
+            "pct": 0.11,
+            "color": "#d9bfd9"
+          },
+          {
+            "codigo": 122,
+            "nombre": "Redes viarias y ferroviarias",
+            "pct": 0.1,
+            "color": "#cc0000"
+          },
+          {
+            "codigo": 133,
+            "nombre": "Zonas en construcción",
+            "pct": 0.1,
+            "color": "#ff4dff"
+          },
+          {
+            "codigo": 131,
+            "nombre": "Extracción minera",
+            "pct": 0.08,
+            "color": "#a800cf"
+          },
+          {
+            "codigo": 142,
+            "nombre": "Instalaciones deportivas y recreativas",
+            "pct": 0.08,
+            "color": "#ffe6ff"
+          },
+          {
+            "codigo": 241,
+            "nombre": "Cultivos anuales con permanentes",
+            "pct": 0.08,
+            "color": "#ffe6a6"
+          },
+          {
+            "codigo": 411,
+            "nombre": "Humedales",
+            "pct": 0.08,
+            "color": "#a5a6ff"
+          },
+          {
+            "codigo": 313,
+            "nombre": "Bosque mixto",
+            "pct": 0.07,
+            "color": "#4de600"
+          },
+          {
+            "codigo": 141,
+            "nombre": "Zonas verdes urbanas",
+            "pct": 0.06,
+            "color": "#ffa6ff"
+          },
+          {
+            "codigo": 132,
+            "nombre": "Escombreras y vertederos",
+            "pct": 0.04,
+            "color": "#a84d00"
+          },
+          {
+            "codigo": 333,
+            "nombre": "Vegetación escasa",
+            "pct": 0.01,
+            "color": "#bffeb2"
+          }
+        ]
+      }
+    }
+  ]
+}
