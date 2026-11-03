@@ -6,6 +6,13 @@ __pycache__/
 # Los cálculos de una planta (viento, respuestas, resultados) no se versionan: van a la carpeta de su rutas.json
 datos/
 
+# Una instalación lleva solo VERSION, main.py, README.md y entrada/. Sus pruebas, documentación y notas de trabajo se quedan en el
+# equipo de quien la mantiene. La documentación de cada versión del núcleo (v*/docs/) sí va.
+/*/99-Test/
+/*/docs/
+/*/CLAUDE.md
+!/v*/docs/
+
 # Claves: nunca al repositorio
 **/keys/
 *api-key*

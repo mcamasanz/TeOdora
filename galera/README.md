@@ -44,9 +44,10 @@ Tareas, con `PYTHONPATH=../v0.1.5/cargador` y `TEODORS_PLANTA=entrada`:
 | Rehacer el viento local, si cambian los edificios | `python -m teodors.operacion.viento_local_biblioteca` |
 | De las nubes LiDAR a sus rejillas de 1 m | `python -I ../v0.1.5/core/fuentes/lidar.py <carpeta .laz> <carpeta de las librerías> entrada/viento_local/planta_1m.npz 286512 4507400 600` |
 
-## Pruebas: `99-Test/`
+## Pruebas y documentación del proyecto
 
-Una carpeta por prueba, con su README. La que comprueba la aplicación entera con clics simulados es [`13_bateria_app`](99-Test/13_bateria_app/README.md). La documentación del proyecto y las decisiones tomadas, en [`CLAUDE.md`](CLAUDE.md) y [`docs/`](docs/).
+No van en el repositorio, que solo lleva la instalación: las pruebas (`99-Test/`), la documentación (`docs/`) y las decisiones tomadas
+(`CLAUDE.md`) están en el equipo de quien mantiene la planta.
 
 ## Créditos de los datos
 

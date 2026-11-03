@@ -71,11 +71,10 @@ TeOdora/
 ├── galera/                Una instalación
 │   ├── VERSION            La versión del núcleo que usa
 │   ├── main.py            Abre su aplicación con esa versión
-│   ├── entrada/           Terreno, usos del suelo, edificios, focos, planes, receptores, normativa…
-│   ├── docs/              Su documentación
-│   └── 99-Test/           Sus pruebas
+│   ├── README.md          Qué es, de dónde sale cada dato y sus créditos
+│   └── entrada/           Terreno, usos del suelo, edificios, focos, planes, receptores, normativa…
 │
-├── gimenells/             Otra instalación, con lo mínimo: VERSION, main.py y entrada/
+├── gimenells/             Otra instalación, igual
 │
 └── .github/workflows/     El auditor, en cada subida a main
 ```
