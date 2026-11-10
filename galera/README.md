@@ -7,7 +7,7 @@ Planta de biometano de ENCE en La Galera (Montsià, Tarragona), en 40,6905923 N 
 <sub>Con focos de ejemplo y un solo día de viento repetido: la imagen enseña la herramienta, no es un resultado.</sub>
 
 ⚠️ **Los 13 focos de `entrada/focos.json` son de ejemplo:** posiciones leídas a ojo en la ortofoto y valores inventados, a la espera de la visita a la planta. Lo que se calcule
-con ellos prueba la herramienta, pero no es un resultado. La normativa de `entrada/normativa.json` también es preliminar, y la serie de viento de 5 años está sin terminar (18 de 60 meses el 2026-10-21, en la carpeta de cálculos).
+con ellos prueba la herramienta, pero no es un resultado. La normativa de `entrada/normativa.json` también es preliminar. La serie de viento de 5 años (2021-2025, 60 meses) está completa desde el 2026-11-06, en la carpeta de cálculos: en 6 meses, las horas en que no había ninguna estación de Meteocat (de 1 a 19 h seguidas) llevan la temperatura, la humedad y la presión del ERA5 (ver el `CHANGELOG` de la `v0.1.7`).
 
 ## Abrir la aplicación
 
@@ -16,7 +16,7 @@ python main.py                  # modo operario: consulta los focos y crea plane
 python main.py --circe          # además, añade y cambia focos
 ```
 
-También `--dia AAAA-MM-DD`, `--focos` y `--planes`. Sin la carpeta de cálculos se abre igual, con el terreno y los edificios, pero sin viento ni simulaciones.
+También `--dia AAAA-MM-DD`, `--focos` y `--planes`. Sin la carpeta de cálculos se abre igual, con el terreno, los edificios y el viento de `viento/`, pero sin simulaciones.
 
 ## Datos de entrada: `entrada/`
 
@@ -32,21 +32,39 @@ También `--dia AAAA-MM-DD`, `--focos` y `--planes`. Sin la carpeta de cálculos
 | Planes de operación guardados | `planes/` | los crea quien opera la planta, desde la aplicación. Aún no hay ninguno |
 | Receptores con nombre (Dacame) | `receptores.json` | Catastro |
 | Límites | `normativa.json` | ⚠️ preliminar |
-| Viento alrededor de los edificios | `viento_local/viento_local.npz` | calculado con `viento_local/planta_1m.npz`, de LiDAR del ICGC. ⚠️ No validado: solo enseña el efecto de los edificios |
 | Ejemplo de la ventana de configuración | `recursos/ejemplo/` | una hora de viento y de penacho, con los focos de ejemplo. No es un resultado |
 | Ortofoto del visor 3D | `recursos/visor3d/ortofoto.jpg` | PNOA, ±3,2 km |
+
+## El viento: `viento/`
+
+Junto a `entrada/`, para tener el viento sin la carpeta de cálculos (o en la de `ENCE_GALERA_VIENTO`, si está puesta).
+
+| Qué | Dónde | De dónde sale |
+|---|---|---|
+| Viento 3D de la serie del reanálisis (2021-2025, 60 meses), 714 MB | `viento/3d/`: un `AAAAMM.vz` por mes, `bases/` e `indice.json` | los .cmz de la carpeta de cálculos (27 GB), comprimidos con `teodors.casos.viento3d.construir_paquete` (patrones POD y correcciones: U y V a ±0,25 m/s). Se usa si no está el .cmz del mes |
+| Viento alrededor de los edificios, 36 direcciones | `viento/local/viento_local.npz` (ruta en `planta.json`, `viento_local.biblioteca`) | calculado con el LiDAR de al lado. ⚠️ No validado: solo enseña el efecto de los edificios |
+| LiDAR de la planta, a 1 m | `viento/local/planta_1m.npz` (ruta en `planta.json`, `viento_local.lidar`) | ICGC; solo hace falta para rehacer el viento local |
+
+Los meses nuevos de la serie (otro año) se suman al paquete sin rehacerlo: `teodors.casos.viento3d.anadir_paquete()`.
+
+## La dispersión: `dispersion/`
+
+Las respuestas de los focos (concentración por g/s emitido, por hora de emisión) de todos los días de la serie, comprimidas: es lo que lee el reanálisis de un
+plan, que así no lanza el motor. Una carpeta por foco y un fichero por mes, ~56 kB por foco y día (con 13 focos, 5 años en ~1,3 GB). ⚠️ Aún no está: se
+calculará cuando los focos estén cerrados (`python -m teodors.operacion.respuestas` en cada día y `python -m teodors.operacion.serie_respuestas` para
+empaquetarlos aquí). El reanálisis cuenta del primer al último día que haya, sobre las horas simuladas.
 
 ## Los cálculos: fuera del repositorio
 
 Van a la carpeta de `entrada/rutas.json` (`Z:\Miguel\03-Odora\ENCE_LaGalera`), o a la de la variable `ENCE_GALERA_DATOS` si está puesta: viento, meteorología, respuestas de los focos y resultados. Las claves, en `%APPDATA%\CIRCE\claves`.
 
-Tareas, con `PYTHONPATH=../v0.1.5/cargador` y `TEODORS_PLANTA=entrada`:
+Tareas, con `PYTHONPATH=../v0.1.7/cargador` y `TEODORS_PLANTA=entrada`:
 
 | Para qué | Orden |
 |---|---|
 | Serie de viento de varios años | `python -m teodors.operacion.viento3d_series` |
 | Rehacer el viento local, si cambian los edificios | `python -m teodors.operacion.viento_local_biblioteca` |
-| De las nubes LiDAR a sus rejillas de 1 m | `python -I ../v0.1.5/core/fuentes/lidar.py <carpeta .laz> <carpeta de las librerías> entrada/viento_local/planta_1m.npz 286512 4507400 600` |
+| De las nubes LiDAR a sus rejillas de 1 m | `python -I ../v0.1.7/core/fuentes/lidar.py <carpeta .laz> <carpeta de las librerías> viento/local/planta_1m.npz 286512 4507400 600` |
 
 ## Pruebas y documentación del proyecto
 

@@ -1,0 +1,8 @@
+{
+ "formato": 1,
+ "algoritmo": "pbkdf2_sha256",
+ "iteraciones": 200000,
+ "sal": "7ad37a34e4b8e837a874ed626869f369",
+ "huella": "6bc1413e2150493f1a26b454a3c5bbb47e62bf88a019cb65001ea73baf42e611",
+ "cambiada": "2026-11-08T13:03"
+}

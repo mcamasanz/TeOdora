@@ -1,0 +1,16 @@
+{
+ "recuadro": [
+  286610.0,
+  4507260.0,
+  287010.0,
+  4507660.0
+ ],
+ "epsg": "EPSG:25831",
+ "res_m": 0.25,
+ "fondo": "Satélite (ortofoto PNOA)",
+ "credito": "© Instituto Geográfico Nacional · CC BY 4.0 scne.es",
+ "z": 19,
+ "teselas": 64,
+ "fallos": 0,
+ "fecha": "2026-11-08"
+}

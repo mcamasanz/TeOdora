@@ -1,13 +1,11 @@
 {
  "formato": 1,
  "actualizado": "2026-11-01",
- "notas": "PRELIMINAR (usuario, 2026-11-01): aún no se conocen los gases ni las emisiones de la planta. Se cambia aquí, sin tocar el código, y los resultados se recalculan solos. Valores del RD 102/2011, Anexo I (docs/referencias/normativa/marco_normativo_ES_UE.md), en µg/m³. promedio: hora, dia, 8h o anio; superaciones_anio: las que se admiten por año civil. NOx se compara como NO₂: sin química, es un tope. Lo que no figura aquí no tiene límite y usa sin_limite.",
+ "notas": "PRELIMINAR (usuario, 2026-11-01): aún no se conocen los gases ni las emisiones de la planta. Se cambia aquí, sin tocar el código, y los resultados se recalculan solos. Valores del RD 102/2011, Anexo I (docs/referencias/normativa/marco_normativo_ES_UE.md), en µg/m³. promedio: hora, dia, 8h o anio; superaciones_anio: las que se admiten por año civil. Lo que no figura aquí no tiene límite y usa sin_limite.",
  "olor": {"percentil": 98},
  "sin_limite": {"percentil": 98},
  "gases": {
   "NO2": [{"valor": 200, "promedio": "hora", "superaciones_anio": 18}, {"valor": 40, "promedio": "anio"}],
-  "NOx": [{"valor": 200, "promedio": "hora", "superaciones_anio": 18}, {"valor": 40, "promedio": "anio"}],
-  "SO2": [{"valor": 350, "promedio": "hora", "superaciones_anio": 24}, {"valor": 125, "promedio": "dia", "superaciones_anio": 3}],
-  "CO": [{"valor": 10000, "promedio": "8h"}]
+  "SO2": [{"valor": 350, "promedio": "hora", "superaciones_anio": 24}, {"valor": 125, "promedio": "dia", "superaciones_anio": 3}]
  }
 }

@@ -1,0 +1,135 @@
+** AERMAP - VERSION 24142                                              10/18/26
+**                                                                     20:25:29
+
+CO STARTING
+   TITLEONE  redes
+   DATATYPE  NED
+   DATAFILE  lleida_geo.tif
+   TERRHGTS  EXTRACT
+   DOMAINXY  771000 4605000 30 786000 4620000 30
+   ANCHORXY  778494 4612770 778494 4612770 30 0
+   RUNORNOT  RUN
+CO FINISHED
+
+SO STARTING
+   LOCATION  CHIM1    POINT     778430.0  4612798.5
+   LOCATION  VOL1     VOLUME    779120.4  4611905.7  0.0
+   LOCATION  PILA1    AREA      777310.0  4613902.0
+SO FINISHED
+
+RE STARTING
+   GRIDCART  CART1  STA
+                    XYINC  772500.0  12  1000.0  4606500.0  12  1000.0
+   GRIDCART  CART1  END
+   GRIDCART  CART2  STA
+   GRIDCART  CART2  XPNTS 775000. 775333.3 776012.5 777777.7 779100.
+   GRIDCART  CART2  YPNTS 4609000. 4609500. 4610250.75 4612000. 4613000. 4614500.
+   GRIDCART  CART2  END
+   GRIDPOLR  POL1   STA
+             POL1   ORIG   CHIM1
+             POL1   DIST   100.  250.  500.  1000.  2000.  3500.
+             POL1   GDIR   36  10.  10.
+   GRIDPOLR  POL1   END
+   GRIDPOLR  POL2   STA
+             POL2   ORIG   779000.0  4611000.0
+             POL2   DIST   300.  600.  1200.
+             POL2   DDIR   15.  45.  90.  180.  270.  355.
+   GRIDPOLR  POL2   END
+   DISCPOLR  CHIM1  1500.  45.
+   DISCPOLR  VOL1   800.   200.
+   DISCCART  778000.0  4612000.0
+RE FINISHED
+
+OU STARTING
+   RECEPTOR  salida.rec
+   SOURCLOC  salida.src
+OU FINISHED
+
+ Exiting NEDCHK
+  
+ Finished Reading Input NED Data
+  
+ Exiting CHKADJ
+ Exiting DOMCNV
+ Exiting RECCNV
+ Exiting SRCCNV
+ Exiting CHKEXT
+ Exiting DEMREC
+ Exiting DEMSRC
+ *** AERMAP - VERSION 24142 ***    ***  redes                                                               ***        10/18/26
+                                   ***                                                                      ***        20:25:29
+
+
+  *** Message Summary For AERMAP Setup ***
+
+ --------- Summary of Total Messages --------
+  
+ A Total of          0 Fatal Error Message(s)
+ A Total of          4 Warning Message(s)
+ A Total of          0 Informational Message(s)
+  
+  
+    ******** FATAL ERROR MESSAGES ******** 
+               ***  NONE  ***         
+  
+  
+    ********   WARNING MESSAGES   ******** 
+ OU W450      43 NEDCHK:Parameter not found in TIFF file.  TiffTag:                 274
+ OU W465      43 NEDCHK:TIFF parameter has unexpected value.   GeoKey:             2048
+ OU W471      43 NEDCHK:Datum not found, use NAD83 as default. NED file:              1
+ OU W473      43 NEDCHK:Default elevation units of METERS used; NED file:             1
+
+ ***********************************
+ *** SETUP Finishes Successfully ***
+ ***********************************
+
+ *** AERMAP - VERSION 24142 ***    ***  redes                                                               ***        10/18/26
+                                   ***                                                                      ***        20:25:29
+
+
+                                            ***     AERMAP SETUP OPTIONS SUMMARY       ***
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+  
+ **This Run Includes:       1  NED File(s)
+  
+ **This Run Includes:     411  Receptor(s); and        3  Source(s)
+  
+ **The Input Receptors and Sources Were Assigned a NADA Value of  0:  No NAD Shifts Included in Calculations
+
+ **The Input Receptors and Sources Are Offset:        0.00 meters East;         0.00 meters North
+      from the User-specified Anchor Point at:   778494.00 meters East;   4612770.00 meters North;  Zone  30
+  
+ **Terrain heights were EXTRACTed from NED data
+  
+ **The Following Debug Output Files Have Been Automatically Generated:
+
+   DOMDETAIL.OUT - Details of User-specified Domain and Relation to NED Files
+   MAPDETAIL.OUT - Details Regarding Input NED Files
+   MAPPARAMS.OUT - Summary of NED File Parameters and NED File Adjacency
+ *** AERMAP - VERSION 24142 ***    ***  redes                                                               ***        10/18/26
+                                   ***                                                                      ***        20:25:29
+
+ *** Message Summary For AERMAP Execution ***
+
+ --------- Summary of Total Messages --------
+  
+ A Total of          0 Fatal Error Message(s)
+ A Total of          4 Warning Message(s)
+ A Total of          0 Informational Message(s)
+  
+  
+    ******** FATAL ERROR MESSAGES ******** 
+               ***  NONE  ***         
+  
+  
+    ********   WARNING MESSAGES   ******** 
+ OU W450      43 NEDCHK:Parameter not found in TIFF file.  TiffTag:                 274
+ OU W465      43 NEDCHK:TIFF parameter has unexpected value.   GeoKey:             2048
+ OU W471      43 NEDCHK:Datum not found, use NAD83 as default. NED file:              1
+ OU W473      43 NEDCHK:Default elevation units of METERS used; NED file:             1
+
+    ************************************
+    *** AERMAP Finishes Successfully ***
+    ************************************
+

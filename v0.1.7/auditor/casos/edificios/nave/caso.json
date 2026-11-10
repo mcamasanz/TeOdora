@@ -1,0 +1,20 @@
+{
+  "motor": "edificios",
+  "descripcion": "Nave de varios niveles y chimenea junto a ella: dimensiones por dirección y GEP.",
+  "carpeta": "",
+  "ordenes": [
+    [
+      "nave.inp",
+      "nave.out",
+      "nave.sum"
+    ]
+  ],
+  "entorno": {},
+  "salidas": [
+    "nave.out",
+    "nave.sum"
+  ],
+  "marcas": [],
+  "original": "idéntico al original salvo fecha y hora",
+  "segundos": 0.2
+}

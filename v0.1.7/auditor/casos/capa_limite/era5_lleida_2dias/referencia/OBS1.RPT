@@ -1,0 +1,162 @@
+ AERMET_SETUP
+ SUCCESSFUL
+
+ AERMET VERSION  26135
+
+ START PROCESSING DATE/TIME: OCTOBER 18, 2026  20:25:40 PM
+
+ RUNSTREAM CONTROL FILE: S1.INP
+
+
+ ****************************  INPUT SUMMARY **************************** 
+
+ PROCESSING STAGES 1
+
+
+
+ 1.  JOB FILE NAMES
+
+ MESSAGES   OPEN     OBS1.MSG
+ REPORT     OPEN     OBS1.RPT
+ DEBUG      NO FILE
+
+
+
+ 2. UPPERAIR DATA
+
+ PROCESSING DATES: 06/01/2023 - 06/02/2023
+
+                    SITE ID     LATITUDE    LONGITUDE     TIME ADJUSTMENT    ELEVATION
+                   --------     --------    ---------     ---------------    ---------
+ LOCATION:         00008190        41.38         2.12             0              95.00
+
+ DATA FILE:      OPEN      SPM00008190_2023.txt
+ EXTRACT FILE:   OPEN      UAEXOUT.DAT
+ QAOUT FILE:     OPEN      UAQAOUT.DAT
+
+ UPPER AIR DATA ABOVE 5000 NOT EXTRACTED
+
+ UPPER AIR AUTOMATIC DATA CHECKS ARE: OFF
+
+
+
+ 3. SURFACE DATA
+
+ NO PROCESSING REQUESTED
+
+
+
+
+ 4. ONSITE DATA
+
+ PROCESSING DATES: 06/01/2023 - 06/02/2023
+
+                    SITE ID     LATITUDE    LONGITUDE     TIME ADJUSTMENT    ELEVATION
+                   --------     --------    ---------     ---------------    ---------
+ LOCATION:           000001        41.62         0.34             0             178.00
+
+ DATA FILE:      OPEN      onsite.dat
+ QAOUT FILE:     OPEN      ONSITE.OQA
+
+ NUMBER OF OBSERVATIONS/HOUR:  1
+
+ THRESHOLD WIND SPEED (M/S):    0.50
+
+ HEIGHTS FOR TOWER DATA (M) BASED ON THE OSHEIGHTS KEYWORD:
+
+   10.00
+
+
+
+ 5. PROG DATA
+
+ NO PROCESSING REQUESTED
+
+
+
+
+ 6. METPREP DATA
+
+ NO PROCESSING REQUESTED
+
+
+
+ ****************************  QA SUMMARY **************************** 
+
+
+ UPPERAIR DATA
+
+ NON-QA SUMMARY CHECKS
+
+ CALM WIND CONDITIONS (WS=0, WD=0):        0
+ ZERO WIND SPEED; NON-ZERO WIND DIRECTION:        0
+ DEW POINT GREATER THAN DRY BULB TEMPERATURE:        0
+ NUMBER OF SOUNDINGS THAT DO NOT EXTEND TO 5000 M:        0
+
+ NUMBER OF DAYS WITH NO SOUNDINGS:    0
+
+ NUMBER OF DAYS WITH SOUNDINGS BUT NO AM SOUNDINGS:    0
+
+
+ ONSITE DATA
+
+ VARIABLE   MISSING VALUE   LOWER BOUND          UPPER BOUND
+   TT          99.00        <= -30.00            >= 40.00            
+   WD         999.00        < 0.00               > 360.00            
+   WS          99.00        < 0.00               > 50.00             
+
+
+HOURLY VALUES
+
+
+ LEVEL                VARIABLE       #          #        LOWER       UPPER        %
+                                    OBS      MISSING     BOUND       BOUND     ACCEPTED
+   10.000 M               TT         48          0          0          0        100.00
+                          WD         48          3          0          0         93.75
+                          WS         48          0          0          0        100.00
+
+ WIND AND TEMPERATURE CHECKS (IF APPLICABLE)
+ NUMBER OF OBS:
+
+      3 CALM WINDS (< THRESHOLD)
+      0 NO INPUT WD WITH WS
+      0 NO INPUT WD WITH WS
+
+
+ ****************************  MESSAGE SUMMARY **************************** 
+
+
+
+ ERROR MESSAGES        0 MESSAGES
+
+
+
+ WARNING MESSAGES        0 MESSAGES
+
+
+
+ INFORMATION MESSAGES       16 MESSAGES
+
+ I01:        1
+ I20:        2
+ I22:        1
+ I23:        1
+ I24:        1
+ I25:        1
+ I26:        1
+ I31:        4
+ I60:        2
+ I63:        1
+ I64:        1
+
+
+ QA MESSAGES        7 MESSAGES
+
+ Q19:        1
+ Q61:        3
+ Q64:        3
+
+
+ AERMET FINISHED SUCCESSFULLY
+
+ END PROCESSING DATE/TIME: OCTOBER 18, 2026  20:25:40 PM

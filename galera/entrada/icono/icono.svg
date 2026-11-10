@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+<defs><clipPath id="c"><rect x="12" y="12" width="232" height="232" rx="52"/></clipPath></defs>
+<rect x="12" y="12" width="232" height="232" rx="52" fill="#F6FAF7"/>
+<g clip-path="url(#c)">
+<path d="M0 194 C70 176 160 176 256 188 V256 H0Z" fill="#B4DA6A"/>
+<rect x="150" y="94" width="30" height="104" fill="#E2E9E5"/><rect x="150" y="94" width="9" height="104" fill="#BFCBC6"/>
+<rect x="147" y="86" width="36" height="11" rx="4" fill="#1F7A55"/>
+<rect x="184" y="128" width="26" height="70" fill="#E2E9E5"/><rect x="184" y="128" width="8" height="70" fill="#BFCBC6"/>
+<rect x="181" y="121" width="32" height="10" rx="4" fill="#1F7A55"/>
+<rect x="34" y="142" width="112" height="56" fill="#E2E9E5"/><rect x="34" y="142" width="24" height="56" fill="#BFCBC6"/>
+<path d="M36 141 C40 98 140 98 144 141Z" fill="#1F7A55"/>
+<rect x="30" y="137" width="120" height="8" rx="3" fill="#0B4733"/>
+<rect x="128" y="170" width="56" height="28" fill="#1F7A55"/>
+<path d="M0 208 C80 192 170 198 256 222 V256 H0Z" fill="#4E9B2C"/>
+<path d="M0 230 C70 214 160 222 256 246" fill="none" stroke="#B4DA6A" stroke-width="7"/>
+</g>
+<rect x="12" y="12" width="232" height="232" rx="52" fill="none" stroke="#0B4733" stroke-width="12"/>
+</svg>
