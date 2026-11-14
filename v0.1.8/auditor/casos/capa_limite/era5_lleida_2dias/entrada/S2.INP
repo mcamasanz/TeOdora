@@ -1,0 +1,175 @@
+JOB
+   REPORT    OBS2.RPT
+   MESSAGES  OBS2.MSG
+
+UPPERAIR
+   QAOUT     UAQAOUT.DAT
+
+ONSITE
+   QAOUT     ONSITE.OQA
+
+METPREP
+   XDATES    2023/06/01 TO 2023/06/02
+   METHOD    REFLEVEL  SUBNWS
+   METHOD    WIND_DIR  NORAND
+   METHOD    STABLEBL  ADJ_U*
+   OUTPUT    OBS.SFC
+   PROFILE   OBS.PFL
+   FREQ_SECT  MONTHLY  12
+   SECTOR   1  345   15
+   SECTOR   2   15   45
+   SECTOR   3   45   75
+   SECTOR   4   75  105
+   SECTOR   5  105  135
+   SECTOR   6  135  165
+   SECTOR   7  165  195
+   SECTOR   8  195  225
+   SECTOR   9  225  255
+   SECTOR  10  255  285
+   SECTOR  11  285  315
+   SECTOR  12  315  345
+   SITE_CHAR   1   1   0.18   0.72   0.0328
+   SITE_CHAR   1   2   0.18   0.72   0.0405
+   SITE_CHAR   1   3   0.18   0.72   0.0306
+   SITE_CHAR   1   4   0.18   0.72   0.0424
+   SITE_CHAR   1   5   0.18   0.72   0.0322
+   SITE_CHAR   1   6   0.18   0.72   0.0312
+   SITE_CHAR   1   7   0.18   0.72   0.0450
+   SITE_CHAR   1   8   0.18   0.72   0.0851
+   SITE_CHAR   1   9   0.18   0.72   0.1095
+   SITE_CHAR   1  10   0.18   0.72   0.0776
+   SITE_CHAR   1  11   0.18   0.72   0.1066
+   SITE_CHAR   1  12   0.18   0.72   0.0503
+   SITE_CHAR   2   1   0.18   0.72   0.0328
+   SITE_CHAR   2   2   0.18   0.72   0.0405
+   SITE_CHAR   2   3   0.18   0.72   0.0306
+   SITE_CHAR   2   4   0.18   0.72   0.0424
+   SITE_CHAR   2   5   0.18   0.72   0.0322
+   SITE_CHAR   2   6   0.18   0.72   0.0312
+   SITE_CHAR   2   7   0.18   0.72   0.0450
+   SITE_CHAR   2   8   0.18   0.72   0.0851
+   SITE_CHAR   2   9   0.18   0.72   0.1095
+   SITE_CHAR   2  10   0.18   0.72   0.0776
+   SITE_CHAR   2  11   0.18   0.72   0.1066
+   SITE_CHAR   2  12   0.18   0.72   0.0503
+   SITE_CHAR   3   1   0.14   0.32   0.0437
+   SITE_CHAR   3   2   0.14   0.32   0.1035
+   SITE_CHAR   3   3   0.14   0.32   0.0408
+   SITE_CHAR   3   4   0.14   0.32   0.0565
+   SITE_CHAR   3   5   0.14   0.32   0.0429
+   SITE_CHAR   3   6   0.14   0.32   0.0416
+   SITE_CHAR   3   7   0.14   0.32   0.0601
+   SITE_CHAR   3   8   0.14   0.32   0.1135
+   SITE_CHAR   3   9   0.14   0.32   0.1460
+   SITE_CHAR   3  10   0.14   0.32   0.1035
+   SITE_CHAR   3  11   0.14   0.32   0.1468
+   SITE_CHAR   3  12   0.14   0.32   0.0671
+   SITE_CHAR   4   1   0.14   0.32   0.1035
+   SITE_CHAR   4   2   0.14   0.32   0.0540
+   SITE_CHAR   4   3   0.14   0.32   0.0408
+   SITE_CHAR   4   4   0.14   0.32   0.0565
+   SITE_CHAR   4   5   0.14   0.32   0.0429
+   SITE_CHAR   4   6   0.14   0.32   0.0416
+   SITE_CHAR   4   7   0.14   0.32   0.0601
+   SITE_CHAR   4   8   0.14   0.32   0.1135
+   SITE_CHAR   4   9   0.14   0.32   0.1460
+   SITE_CHAR   4  10   0.14   0.32   0.1035
+   SITE_CHAR   4  11   0.14   0.32   0.1468
+   SITE_CHAR   4  12   0.14   0.32   0.0671
+   SITE_CHAR   5   1   0.14   0.32   0.0437
+   SITE_CHAR   5   2   0.14   0.32   0.0540
+   SITE_CHAR   5   3   0.14   0.32   0.0408
+   SITE_CHAR   5   4   0.14   0.32   0.0565
+   SITE_CHAR   5   5   0.14   0.32   0.0429
+   SITE_CHAR   5   6   0.14   0.32   0.0416
+   SITE_CHAR   5   7   0.14   0.32   0.0601
+   SITE_CHAR   5   8   0.14   0.32   0.1135
+   SITE_CHAR   5   9   0.14   0.32   0.1460
+   SITE_CHAR   5  10   0.14   0.32   0.1035
+   SITE_CHAR   5  11   0.14   0.32   0.1468
+   SITE_CHAR   5  12   0.14   0.32   0.0671
+   SITE_CHAR   6   1   0.20   0.51   0.2072
+   SITE_CHAR   6   2   0.20   0.51   0.2253
+   SITE_CHAR   6   3   0.20   0.51   0.2016
+   SITE_CHAR   6   4   0.20   0.51   0.2295
+   SITE_CHAR   6   5   0.20   0.51   0.2057
+   SITE_CHAR   6   6   0.20   0.51   0.2031
+   SITE_CHAR   6   7   0.20   0.51   0.2351
+   SITE_CHAR   6   8   0.20   0.51   0.3029
+   SITE_CHAR   6   9   0.20   0.51   0.3348
+   SITE_CHAR   6  10   0.20   0.51   0.2919
+   SITE_CHAR   6  11   0.20   0.51   0.3291
+   SITE_CHAR   6  12   0.20   0.51   0.2457
+   SITE_CHAR   7   1   0.20   0.51   0.2072
+   SITE_CHAR   7   2   0.20   0.51   0.2253
+   SITE_CHAR   7   3   0.20   0.51   0.2016
+   SITE_CHAR   7   4   0.20   0.51   0.2295
+   SITE_CHAR   7   5   0.20   0.51   0.2057
+   SITE_CHAR   7   6   0.20   0.51   0.2031
+   SITE_CHAR   7   7   0.20   0.51   0.2351
+   SITE_CHAR   7   8   0.20   0.51   0.3029
+   SITE_CHAR   7   9   0.20   0.51   0.3348
+   SITE_CHAR   7  10   0.20   0.51   0.2919
+   SITE_CHAR   7  11   0.20   0.51   0.3291
+   SITE_CHAR   7  12   0.20   0.51   0.2457
+   SITE_CHAR   8   1   0.20   0.51   0.2295
+   SITE_CHAR   8   2   0.20   0.51   0.2253
+   SITE_CHAR   8   3   0.20   0.51   0.2016
+   SITE_CHAR   8   4   0.20   0.51   0.2295
+   SITE_CHAR   8   5   0.20   0.51   0.2057
+   SITE_CHAR   8   6   0.20   0.51   0.2031
+   SITE_CHAR   8   7   0.20   0.51   0.2351
+   SITE_CHAR   8   8   0.20   0.51   0.3029
+   SITE_CHAR   8   9   0.20   0.51   0.3348
+   SITE_CHAR   8  10   0.20   0.51   0.2919
+   SITE_CHAR   8  11   0.20   0.51   0.3291
+   SITE_CHAR   8  12   0.20   0.51   0.2457
+   SITE_CHAR   9   1   0.20   0.72   0.2072
+   SITE_CHAR   9   2   0.20   0.72   0.2295
+   SITE_CHAR   9   3   0.20   0.72   0.2016
+   SITE_CHAR   9   4   0.20   0.72   0.2295
+   SITE_CHAR   9   5   0.20   0.72   0.2057
+   SITE_CHAR   9   6   0.20   0.72   0.2031
+   SITE_CHAR   9   7   0.20   0.72   0.2351
+   SITE_CHAR   9   8   0.20   0.72   0.3029
+   SITE_CHAR   9   9   0.20   0.72   0.3348
+   SITE_CHAR   9  10   0.20   0.72   0.2919
+   SITE_CHAR   9  11   0.20   0.72   0.3291
+   SITE_CHAR   9  12   0.20   0.72   0.2457
+   SITE_CHAR  10   1   0.20   0.72   0.2072
+   SITE_CHAR  10   2   0.20   0.72   0.2253
+   SITE_CHAR  10   3   0.20   0.72   0.2016
+   SITE_CHAR  10   4   0.20   0.72   0.2295
+   SITE_CHAR  10   5   0.20   0.72   0.2057
+   SITE_CHAR  10   6   0.20   0.72   0.2031
+   SITE_CHAR  10   7   0.20   0.72   0.2351
+   SITE_CHAR  10   8   0.20   0.72   0.3029
+   SITE_CHAR  10   9   0.20   0.72   0.3348
+   SITE_CHAR  10  10   0.20   0.72   0.2919
+   SITE_CHAR  10  11   0.20   0.72   0.3291
+   SITE_CHAR  10  12   0.20   0.72   0.2457
+   SITE_CHAR  11   1   0.20   0.72   0.2072
+   SITE_CHAR  11   2   0.20   0.72   0.2253
+   SITE_CHAR  11   3   0.20   0.72   0.2016
+   SITE_CHAR  11   4   0.20   0.72   0.2295
+   SITE_CHAR  11   5   0.20   0.72   0.2057
+   SITE_CHAR  11   6   0.20   0.72   0.2031
+   SITE_CHAR  11   7   0.20   0.72   0.2351
+   SITE_CHAR  11   8   0.20   0.72   0.3029
+   SITE_CHAR  11   9   0.20   0.72   0.3348
+   SITE_CHAR  11  10   0.20   0.72   0.2919
+   SITE_CHAR  11  11   0.20   0.72   0.3291
+   SITE_CHAR  11  12   0.20   0.72   0.2457
+   SITE_CHAR  12   1   0.18   0.72   0.0328
+   SITE_CHAR  12   2   0.18   0.72   0.0405
+   SITE_CHAR  12   3   0.18   0.72   0.0306
+   SITE_CHAR  12   4   0.18   0.72   0.0424
+   SITE_CHAR  12   5   0.18   0.72   0.0322
+   SITE_CHAR  12   6   0.18   0.72   0.0776
+   SITE_CHAR  12   7   0.18   0.72   0.0450
+   SITE_CHAR  12   8   0.18   0.72   0.0851
+   SITE_CHAR  12   9   0.18   0.72   0.1095
+   SITE_CHAR  12  10   0.18   0.72   0.0776
+   SITE_CHAR  12  11   0.18   0.72   0.1066
+   SITE_CHAR  12  12   0.18   0.72   0.0503
+

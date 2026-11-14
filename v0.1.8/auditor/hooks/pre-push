@@ -1,0 +1,14 @@
+#!/bin/sh
+# Hook pre-push de teOdors: si se sube a la rama principal, el auditor de la última versión tiene que dar APTO.
+# Se instala con: python -m auditor --instalar-hook
+while read local_ref local_sha remote_ref remote_sha; do
+    if [ "$remote_ref" = "refs/heads/main" ]; then
+        ultima="$(ls -d v*/ | sort -V | tail -1)"
+        echo "auditor: comprobando $ultima antes de subirlo a main…"
+        ( cd "$ultima" && python -m auditor ) || {
+            echo "auditor: NO APTO. El push a main se ha cancelado."
+            exit 1
+        }
+    fi
+done
+exit 0

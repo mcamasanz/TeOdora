@@ -1,0 +1,28 @@
+{
+  "motor": "capa_limite",
+  "descripcion": "Estación propia (ERA5 en Lleida) y sondeo IGRA de Barcelona, dos días: extracción, control de calidad y cálculo del .sfc y el .pfl.",
+  "carpeta": "",
+  "ordenes": [
+    [
+      "S1.INP"
+    ],
+    [
+      "S2.INP"
+    ]
+  ],
+  "entorno": {},
+  "salidas": [
+    "OBS.PFL",
+    "OBS.SFC",
+    "OBS1.MSG",
+    "OBS1.RPT",
+    "OBS2.MSG",
+    "OBS2.RPT",
+    "ONSITE.OQA",
+    "UAEXOUT.DAT",
+    "UAQAOUT.DAT"
+  ],
+  "marcas": [],
+  "original": "idéntico al original salvo fecha y hora",
+  "segundos": 0.5
+}

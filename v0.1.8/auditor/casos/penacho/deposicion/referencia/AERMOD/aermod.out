@@ -1,0 +1,2352 @@
+CO STARTING
+   TITLEONE AERMOD cmp_gauss
+   TITLETWO MDT05+CORINE (CNIG) · ERA5 (CDS) · 1545 receptores
+   MODELOPT CONC DEPOS DDEP WDEP ALPHA
+   AVERTIME 1 24 PERIOD
+   POLLUTID H2S
+   GDSEASON 3 3 5 5 1 1 1 1 2 2 3 3
+   GDLANUSE 9*2 9*3 9*4 9*6
+   GASDEPDF 0.1 0.6 0.3
+   RUNORNOT RUN
+   ERRORFIL ERRORS.OUT
+CO FINISHED
+ 
+SO STARTING
+   ELEVUNIT METERS
+   LOCATION P01 AREAPOLY 778451.3 4612733.9 195.70
+   LOCATION P02 AREAPOLY 778511.9 4612840.5 198.83
+   LOCATION P03 AREAPOLY 778509.0 4612779.7 198.11
+   LOCATION P04 AREAPOLY 778522.4 4612844.0 198.52
+   LOCATION P05 AREAPOLY 778516.6 4612782.2 198.01
+   LOCATION P06 AREAPOLY 778532.8 4612847.5 198.17
+   LOCATION P07 AREAPOLY 778524.2 4612784.7 197.75
+   LOCATION P08 AREAPOLY 778543.2 4612850.9 197.80
+   LOCATION P09 AREAPOLY 778553.7 4612854.4 197.43
+   LOCATION P10 AREAPOLY 778539.5 4612789.8 197.35
+   LOCATION P11 AREAPOLY 778564.2 4612857.8 197.04
+   LOCATION P12 AREAPOLY 778547.1 4612792.2 196.82
+   LOCATION P13 AREAPOLY 778574.6 4612861.3 196.72
+   LOCATION P14 AREAPOLY 778554.7 4612794.7 196.33
+   LOCATION P15 AREAPOLY 778585.0 4612864.7 196.41
+   LOCATION P16 AREAPOLY 778562.3 4612797.3 195.90
+   LOCATION P17 AREAPOLY 778570.0 4612799.9 195.52
+ 
+** Puntuales:  QS(g/s)  HS(m)  TS(K)  VS(m/s)  DS(m)
+** Área:       QS(g/s/m2)  HS(m)  nvert
+   SRCPARAM P01 0.0000182875 2 4
+   AREAVERT P01 778451.3 4612733.9 778384.8 4612711.9 778387.1 4612705.2 778453.5 4612727.2
+   SRCPARAM P02 0.0000182875 2 4
+   AREAVERT P02 778511.9 4612840.5 778505.2 4612838.3 778517.9 4612800.4 778524.5 4612802.6
+   SRCPARAM P03 0.0000182875 2 4
+   AREAVERT P03 778509.0 4612779.7 778502.4 4612777.4 778518.1 4612730.0 778524.7 4612732.1
+   SRCPARAM P04 0.0000182875 2 4
+   AREAVERT P04 778522.4 4612844.0 778515.7 4612841.8 778528.3 4612803.8 778534.9 4612806.0
+   SRCPARAM P05 0.0000182875 2 4
+   AREAVERT P05 778516.6 4612782.2 778510.0 4612779.9 778525.7 4612732.5 778532.4 4612734.7
+   SRCPARAM P06 0.0000182875 2 4
+   AREAVERT P06 778532.8 4612847.5 778526.2 4612845.2 778538.7 4612807.2 778545.4 4612809.5
+   SRCPARAM P07 0.0000182875 2 4
+   AREAVERT P07 778524.2 4612784.7 778517.7 4612782.5 778533.4 4612735.0 778540.0 4612737.2
+   SRCPARAM P08 0.0000182875 2 4
+   AREAVERT P08 778543.2 4612850.9 778536.6 4612848.7 778549.2 4612810.7 778555.8 4612812.9
+   SRCPARAM P09 0.0000182875 2 4
+   AREAVERT P09 778553.7 4612854.4 778547.0 4612852.1 778559.6 4612814.1 778566.3 4612816.4
+   SRCPARAM P10 0.0000182875 2 4
+   AREAVERT P10 778539.5 4612789.8 778532.9 4612787.5 778548.6 4612740.1 778555.3 4612742.2
+   SRCPARAM P11 0.0000182875 2 4
+   AREAVERT P11 778564.2 4612857.8 778557.5 4612855.7 778570.1 4612817.7 778576.7 4612819.8
+   SRCPARAM P12 0.0000182875 2 4
+   AREAVERT P12 778547.1 4612792.2 778540.4 4612790.1 778556.2 4612742.5 778562.8 4612744.8
+   SRCPARAM P13 0.0000182875 2 4
+   AREAVERT P13 778574.6 4612861.3 778568.0 4612859.0 778580.5 4612821.1 778587.1 4612823.3
+   SRCPARAM P14 0.0000182875 2 4
+   AREAVERT P14 778554.7 4612794.7 778548.0 4612792.6 778563.8 4612745.2 778570.4 4612747.3
+   SRCPARAM P15 0.0000182875 2 4
+   AREAVERT P15 778585.0 4612864.7 778578.4 4612862.6 778590.9 4612824.6 778597.6 4612826.7
+   SRCPARAM P16 0.0000182875 2 4
+   AREAVERT P16 778562.3 4612797.3 778555.7 4612795.1 778571.4 4612747.6 778578.0 4612749.8
+   SRCPARAM P17 0.0000182875 2 4
+   AREAVERT P17 778570.0 4612799.9 778563.3 4612797.6 778579.1 4612750.2 778585.7 4612752.4
+ 
+   GASDEPOS P01-P09 0.1761 1.61E-5 1.0E5 1.0E3
+   GASDEPOS P10-P16 0.1761 1.61E-5 1.0E5 1.0E3
+   GASDEPOS P17 0.15 1.5E-5 5.0E4 800.0
+   DEPOUNIT 3.6E6 GRAMS/SEC MILLIGRAMS/M**2
+   SRCGROUP ALL
+   SRCGROUP NORTE P02 P04 P06 P08 P09 P11 P13 P15
+SO FINISHED
+ 
+RE STARTING
+   INCLUDED ..\AERMAP\aermap.rec
+RE FINISHED
+ 
+ME STARTING
+   SURFFILE aermet.sfc FREE
+   PROFFILE aermet.pfl FREE
+   SURFDATA 99999 2023 ERA5
+   UAIRDATA 99999999 2023 ERA5
+   STARTEND 2023 02 03 01 2023 02 03 06
+   PROFBASE 199.00
+ME FINISHED
+ 
+OU STARTING
+   RECTABLE ALLAVE FIRST-SECOND
+   MAXTABLE ALLAVE 50
+   FILEFORM EXP
+   SUMMFILE aermod.sum
+   PLOTFILE PERIOD ALL aermod.plt
+   PLOTFILE 1 ALL FIRST aermod_max.plt
+   POSTFILE 1 ALL UNFORM aermod.pst
+   POSTFILE 24 NORTE PLOT aermod24.pst
+   PLOTFILE 24 ALL FIRST aermod24.plt
+OU FINISHED
+
+ ***********************************
+ *** SETUP Finishes Successfully ***
+ ***********************************
+
+ *** AERMOD - VERSION 26135  ***   *** AERMOD cmp_gauss                                                     ***        10/18/26
+ *** AERMET - VERSION  26135 ***   *** MDT05+CORINE (CNIG) · ERA5 (CDS) · 1545 receptores                   ***        20:27:12
+                                                                                                                       PAGE   1
+ *** MODELOPTs:    NonDFAULT  CONC  DEPOS  DDEP  WDEP  ELEV  DRYDPLT  WETDPLT  ALPHA  RURAL
+
+                                            ***     MODEL SETUP OPTIONS SUMMARY       ***
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+ ** Model Options Selected:
+      * Model Allows User-Specified Options
+      * Model Is Setup For Calculation of Average CONCentration Values.
+      * Model Is Setup For Calculation of Total DEPOSition Values.
+      * Model Is Setup For Calculation of Dry DEPosition Values.
+      * Model Is Setup For Calculation of Wet DEPosition Values.
+      * GAS DEPOSITION Data Provided.
+      * NO PARTICLE DEPOSITION Data Provided.
+      * Model Uses DRY DEPLETION. DDPLETE  =  T
+      * Model Uses WET DEPLETION. WETDPLT  =  T
+      * Stack-tip Downwash.
+      * Model Accounts for ELEVated Terrain Effects.
+      * Use Calms Processing Routine.
+      * Use Missing Data Processing Routine.
+      * No Exponential Decay.
+      * Model Uses RURAL Dispersion Only.
+      * CCVR_Sub - Meteorological data includes CCVR substitutions
+      * Model Assumes No FLAGPOLE Receptor Heights. 
+      * The User Specified a Pollutant Type of: H2S     
+  
+ **Model Calculates  2 Short Term Average(s) of:   1-HR  24-HR
+     and Calculates PERIOD Averages
+  
+ **This Run Includes:     17 Source(s);       2 Source Group(s); and       4 Receptor(s)
+
+                with:      0 POINT(s), including
+                           0 POINTCAP(s) and      0 POINTHOR(s)
+                 and:      0 VOLUME source(s)
+                 and:     17 AREA type source(s)
+                 and:      0 LINE source(s)
+                 and:      0 RLINE/RLINEXT source(s)
+                 and:      0 OPENPIT source(s)
+                 and:      0 BUOYANT LINE source(s) with a total of     0 line(s)
+                 and:      0 SWPOINT source(s)
+
+  
+ **Model Set To Continue RUNning After the Setup Testing.
+
+ **The AERMET Input Meteorological Data Version Date:  26135
+  
+ **Output Options Selected:
+          Model Outputs Tables of PERIOD Averages by Receptor
+          Model Outputs Tables of Highest Short Term Values by Receptor (RECTABLE Keyword)
+          Model Outputs Tables of Overall Maximum Short Term Values (MAXTABLE Keyword)
+          Model Outputs External File(s) of Concurrent Values for Postprocessing (POSTFILE Keyword)
+          Model Outputs External File(s) of High Values for Plotting (PLOTFILE Keyword)
+          Model Outputs Separate Summary File of High Ranked Values (SUMMFILE Keyword)
+  
+          NOTE: Option for EXPonential format used in formatted output result files (FILEFORM Keyword)
+  
+ **NOTE:  The Following Flags May Appear Following CONC Values:  c for Calm Hours
+                                                                 m for Missing Hours
+                                                                 b for Both Calm and Missing Hours
+  
+ **Misc. Inputs:  Base Elev. for Pot. Temp. Profile (m MSL) =   199.00 ;  Decay Coef. =    0.000     ;  Rot. Angle =     0.0
+  Concentration:  Emission Units = GRAMS/SEC                                ;  Emission Rate Unit Factor =   0.10000E+07
+                  Output Units   = MICROGRAMS/M**3                         
+     Deposition:  Emission Units = GRAMS/SEC                                ;  Emission Rate Unit Factor =   0.36000E+07
+                  Output Units   = MILLIGRAMS/M**2                         
+  
+ **Approximate Storage Requirements of Model =      3.5 MB of RAM.
+  
+ **Input Runstream File:          aermod.inp                                                                                      
+ **Output Print File:             aermod.out                                                                                      
+
+ **Detailed Error/Message File:   ERRORS.OUT                                                                                      
+ **File for Summary of Results:   aermod.sum                                                                                      
+ *** AERMOD - VERSION 26135  ***   *** AERMOD cmp_gauss                                                     ***        10/18/26
+ *** AERMET - VERSION  26135 ***   *** MDT05+CORINE (CNIG) · ERA5 (CDS) · 1545 receptores                   ***        20:27:12
+                                                                                                                       PAGE   2
+ *** MODELOPTs:    NonDFAULT  CONC  DEPOS  DDEP  WDEP  ELEV  DRYDPLT  WETDPLT  ALPHA  RURAL
+
+
+                                                *** AREAPOLY SOURCE DATA ***
+
+               NUMBER EMISSION RATE   LOCATION OF AREA  BASE     RELEASE  NUMBER      INIT.   URBAN  EMISSION RATE    AIRCRAFT
+   SOURCE       PART. (USER UNITS       X        Y      ELEV.    HEIGHT  OF VERTS.     SZ     SOURCE  SCALAR VARY
+     ID         CATS.   /METER**2)   (METERS) (METERS) (METERS) (METERS)            (METERS)              BY
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+ P01              0   0.18288E-04  778451.3 4612733.9   195.7     2.00       4         0.00     NO                     NO 
+ P02              0   0.18288E-04  778511.9 4612840.5   198.8     2.00       4         0.00     NO                     NO 
+ P03              0   0.18288E-04  778509.0 4612779.7   198.1     2.00       4         0.00     NO                     NO 
+ P04              0   0.18288E-04  778522.4 4612844.0   198.5     2.00       4         0.00     NO                     NO 
+ P05              0   0.18288E-04  778516.6 4612782.2   198.0     2.00       4         0.00     NO                     NO 
+ P06              0   0.18288E-04  778532.8 4612847.5   198.2     2.00       4         0.00     NO                     NO 
+ P07              0   0.18288E-04  778524.2 4612784.7   197.8     2.00       4         0.00     NO                     NO 
+ P08              0   0.18288E-04  778543.2 4612850.9   197.8     2.00       4         0.00     NO                     NO 
+ P09              0   0.18288E-04  778553.7 4612854.4   197.4     2.00       4         0.00     NO                     NO 
+ P10              0   0.18288E-04  778539.5 4612789.8   197.4     2.00       4         0.00     NO                     NO 
+ P11              0   0.18288E-04  778564.2 4612857.8   197.0     2.00       4         0.00     NO                     NO 
+ P12              0   0.18288E-04  778547.1 4612792.2   196.8     2.00       4         0.00     NO                     NO 
+ P13              0   0.18288E-04  778574.6 4612861.3   196.7     2.00       4         0.00     NO                     NO 
+ P14              0   0.18288E-04  778554.7 4612794.7   196.3     2.00       4         0.00     NO                     NO 
+ P15              0   0.18288E-04  778585.0 4612864.7   196.4     2.00       4         0.00     NO                     NO 
+ P16              0   0.18288E-04  778562.3 4612797.3   195.9     2.00       4         0.00     NO                     NO 
+ P17              0   0.18288E-04  778570.0 4612799.9   195.5     2.00       4         0.00     NO                     NO 
+ *** AERMOD - VERSION 26135  ***   *** AERMOD cmp_gauss                                                     ***        10/18/26
+ *** AERMET - VERSION  26135 ***   *** MDT05+CORINE (CNIG) · ERA5 (CDS) · 1545 receptores                   ***        20:27:12
+                                                                                                                       PAGE   3
+ *** MODELOPTs:    NonDFAULT  CONC  DEPOS  DDEP  WDEP  ELEV  DRYDPLT  WETDPLT  ALPHA  RURAL
+
+
+                                           *** SOURCE IDs DEFINING SOURCE GROUPS ***
+
+ SRCGROUP ID                                              SOURCE IDs
+ -----------                                              ----------
+
+
+  ALL        P01         , P02         , P03         , P04         , P05         , P06         , P07         , P08         ,
+
+             P09         , P10         , P11         , P12         , P13         , P14         , P15         , P16         ,
+
+             P17         ,
+
+  NORTE      P02         , P04         , P06         , P08         , P09         , P11         , P13         , P15         ,
+ *** AERMOD - VERSION 26135  ***   *** AERMOD cmp_gauss                                                     ***        10/18/26
+ *** AERMET - VERSION  26135 ***   *** MDT05+CORINE (CNIG) · ERA5 (CDS) · 1545 receptores                   ***        20:27:12
+                                                                                                                       PAGE   4
+ *** MODELOPTs:    NonDFAULT  CONC  DEPOS  DDEP  WDEP  ELEV  DRYDPLT  WETDPLT  ALPHA  RURAL
+
+                                                *** SOURCE PARTICULATE/GAS DATA ***
+
+
+
+
+        *** SOURCE ID = P01         ; SOURCE TYPE = AREAPOLY ***
+
+          DIFF IN AIR (M**2/SEC)     =   0.18E-04
+
+          DIFF IN WATER (M**2/SEC)   =   0.16E-08
+
+          LEAF LIPID RESIST (SEC/M)  =   0.10E+08
+
+          HENRY`S LAW COEFFICIENT    =   0.10E+04
+
+
+        *** SOURCE ID = P02         ; SOURCE TYPE = AREAPOLY ***
+
+          DIFF IN AIR (M**2/SEC)     =   0.18E-04
+
+          DIFF IN WATER (M**2/SEC)   =   0.16E-08
+
+          LEAF LIPID RESIST (SEC/M)  =   0.10E+08
+
+          HENRY`S LAW COEFFICIENT    =   0.10E+04
+
+
+        *** SOURCE ID = P03         ; SOURCE TYPE = AREAPOLY ***
+
+          DIFF IN AIR (M**2/SEC)     =   0.18E-04
+
+          DIFF IN WATER (M**2/SEC)   =   0.16E-08
+
+          LEAF LIPID RESIST (SEC/M)  =   0.10E+08
+
+          HENRY`S LAW COEFFICIENT    =   0.10E+04
+ *** AERMOD - VERSION 26135  ***   *** AERMOD cmp_gauss                                                     ***        10/18/26
+ *** AERMET - VERSION  26135 ***   *** MDT05+CORINE (CNIG) · ERA5 (CDS) · 1545 receptores                   ***        20:27:12
+                                                                                                                       PAGE   5
+ *** MODELOPTs:    NonDFAULT  CONC  DEPOS  DDEP  WDEP  ELEV  DRYDPLT  WETDPLT  ALPHA  RURAL
+
+                                                *** SOURCE PARTICULATE/GAS DATA ***
+
+
+
+
+        *** SOURCE ID = P04         ; SOURCE TYPE = AREAPOLY ***
+
+          DIFF IN AIR (M**2/SEC)     =   0.18E-04
+
+          DIFF IN WATER (M**2/SEC)   =   0.16E-08
+
+          LEAF LIPID RESIST (SEC/M)  =   0.10E+08
+
+          HENRY`S LAW COEFFICIENT    =   0.10E+04
+
+
+        *** SOURCE ID = P05         ; SOURCE TYPE = AREAPOLY ***
+
+          DIFF IN AIR (M**2/SEC)     =   0.18E-04
+
+          DIFF IN WATER (M**2/SEC)   =   0.16E-08
+
+          LEAF LIPID RESIST (SEC/M)  =   0.10E+08
+
+          HENRY`S LAW COEFFICIENT    =   0.10E+04
+
+
+        *** SOURCE ID = P06         ; SOURCE TYPE = AREAPOLY ***
+
+          DIFF IN AIR (M**2/SEC)     =   0.18E-04
+
+          DIFF IN WATER (M**2/SEC)   =   0.16E-08
+
+          LEAF LIPID RESIST (SEC/M)  =   0.10E+08
+
+          HENRY`S LAW COEFFICIENT    =   0.10E+04
+ *** AERMOD - VERSION 26135  ***   *** AERMOD cmp_gauss                                                     ***        10/18/26
+ *** AERMET - VERSION  26135 ***   *** MDT05+CORINE (CNIG) · ERA5 (CDS) · 1545 receptores                   ***        20:27:12
+                                                                                                                       PAGE   6
+ *** MODELOPTs:    NonDFAULT  CONC  DEPOS  DDEP  WDEP  ELEV  DRYDPLT  WETDPLT  ALPHA  RURAL
+
+                                                *** SOURCE PARTICULATE/GAS DATA ***
+
+
+
+
+        *** SOURCE ID = P07         ; SOURCE TYPE = AREAPOLY ***
+
+          DIFF IN AIR (M**2/SEC)     =   0.18E-04
+
+          DIFF IN WATER (M**2/SEC)   =   0.16E-08
+
+          LEAF LIPID RESIST (SEC/M)  =   0.10E+08
+
+          HENRY`S LAW COEFFICIENT    =   0.10E+04
+
+
+        *** SOURCE ID = P08         ; SOURCE TYPE = AREAPOLY ***
+
+          DIFF IN AIR (M**2/SEC)     =   0.18E-04
+
+          DIFF IN WATER (M**2/SEC)   =   0.16E-08
+
+          LEAF LIPID RESIST (SEC/M)  =   0.10E+08
+
+          HENRY`S LAW COEFFICIENT    =   0.10E+04
+
+
+        *** SOURCE ID = P09         ; SOURCE TYPE = AREAPOLY ***
+
+          DIFF IN AIR (M**2/SEC)     =   0.18E-04
+
+          DIFF IN WATER (M**2/SEC)   =   0.16E-08
+
+          LEAF LIPID RESIST (SEC/M)  =   0.10E+08
+
+          HENRY`S LAW COEFFICIENT    =   0.10E+04
+ *** AERMOD - VERSION 26135  ***   *** AERMOD cmp_gauss                                                     ***        10/18/26
+ *** AERMET - VERSION  26135 ***   *** MDT05+CORINE (CNIG) · ERA5 (CDS) · 1545 receptores                   ***        20:27:12
+                                                                                                                       PAGE   7
+ *** MODELOPTs:    NonDFAULT  CONC  DEPOS  DDEP  WDEP  ELEV  DRYDPLT  WETDPLT  ALPHA  RURAL
+
+                                                *** SOURCE PARTICULATE/GAS DATA ***
+
+
+
+
+        *** SOURCE ID = P10         ; SOURCE TYPE = AREAPOLY ***
+
+          DIFF IN AIR (M**2/SEC)     =   0.18E-04
+
+          DIFF IN WATER (M**2/SEC)   =   0.16E-08
+
+          LEAF LIPID RESIST (SEC/M)  =   0.10E+08
+
+          HENRY`S LAW COEFFICIENT    =   0.10E+04
+
+
+        *** SOURCE ID = P11         ; SOURCE TYPE = AREAPOLY ***
+
+          DIFF IN AIR (M**2/SEC)     =   0.18E-04
+
+          DIFF IN WATER (M**2/SEC)   =   0.16E-08
+
+          LEAF LIPID RESIST (SEC/M)  =   0.10E+08
+
+          HENRY`S LAW COEFFICIENT    =   0.10E+04
+
+
+        *** SOURCE ID = P12         ; SOURCE TYPE = AREAPOLY ***
+
+          DIFF IN AIR (M**2/SEC)     =   0.18E-04
+
+          DIFF IN WATER (M**2/SEC)   =   0.16E-08
+
+          LEAF LIPID RESIST (SEC/M)  =   0.10E+08
+
+          HENRY`S LAW COEFFICIENT    =   0.10E+04
+ *** AERMOD - VERSION 26135  ***   *** AERMOD cmp_gauss                                                     ***        10/18/26
+ *** AERMET - VERSION  26135 ***   *** MDT05+CORINE (CNIG) · ERA5 (CDS) · 1545 receptores                   ***        20:27:12
+                                                                                                                       PAGE   8
+ *** MODELOPTs:    NonDFAULT  CONC  DEPOS  DDEP  WDEP  ELEV  DRYDPLT  WETDPLT  ALPHA  RURAL
+
+                                                *** SOURCE PARTICULATE/GAS DATA ***
+
+
+
+
+        *** SOURCE ID = P13         ; SOURCE TYPE = AREAPOLY ***
+
+          DIFF IN AIR (M**2/SEC)     =   0.18E-04
+
+          DIFF IN WATER (M**2/SEC)   =   0.16E-08
+
+          LEAF LIPID RESIST (SEC/M)  =   0.10E+08
+
+          HENRY`S LAW COEFFICIENT    =   0.10E+04
+
+
+        *** SOURCE ID = P14         ; SOURCE TYPE = AREAPOLY ***
+
+          DIFF IN AIR (M**2/SEC)     =   0.18E-04
+
+          DIFF IN WATER (M**2/SEC)   =   0.16E-08
+
+          LEAF LIPID RESIST (SEC/M)  =   0.10E+08
+
+          HENRY`S LAW COEFFICIENT    =   0.10E+04
+
+
+        *** SOURCE ID = P15         ; SOURCE TYPE = AREAPOLY ***
+
+          DIFF IN AIR (M**2/SEC)     =   0.18E-04
+
+          DIFF IN WATER (M**2/SEC)   =   0.16E-08
+
+          LEAF LIPID RESIST (SEC/M)  =   0.10E+08
+
+          HENRY`S LAW COEFFICIENT    =   0.10E+04
+ *** AERMOD - VERSION 26135  ***   *** AERMOD cmp_gauss                                                     ***        10/18/26
+ *** AERMET - VERSION  26135 ***   *** MDT05+CORINE (CNIG) · ERA5 (CDS) · 1545 receptores                   ***        20:27:12
+                                                                                                                       PAGE   9
+ *** MODELOPTs:    NonDFAULT  CONC  DEPOS  DDEP  WDEP  ELEV  DRYDPLT  WETDPLT  ALPHA  RURAL
+
+                                                *** SOURCE PARTICULATE/GAS DATA ***
+
+
+
+
+        *** SOURCE ID = P16         ; SOURCE TYPE = AREAPOLY ***
+
+          DIFF IN AIR (M**2/SEC)     =   0.18E-04
+
+          DIFF IN WATER (M**2/SEC)   =   0.16E-08
+
+          LEAF LIPID RESIST (SEC/M)  =   0.10E+08
+
+          HENRY`S LAW COEFFICIENT    =   0.10E+04
+
+
+        *** SOURCE ID = P17         ; SOURCE TYPE = AREAPOLY ***
+
+          DIFF IN AIR (M**2/SEC)     =   0.15E-04
+
+          DIFF IN WATER (M**2/SEC)   =   0.15E-08
+
+          LEAF LIPID RESIST (SEC/M)  =   0.50E+07
+
+          HENRY`S LAW COEFFICIENT    =   0.80E+03
+ *** AERMOD - VERSION 26135  ***   *** AERMOD cmp_gauss                                                     ***        10/18/26
+ *** AERMET - VERSION  26135 ***   *** MDT05+CORINE (CNIG) · ERA5 (CDS) · 1545 receptores                   ***        20:27:12
+                                                                                                                       PAGE  10
+ *** MODELOPTs:    NonDFAULT  CONC  DEPOS  DDEP  WDEP  ELEV  DRYDPLT  WETDPLT  ALPHA  RURAL
+
+                                             *** DISCRETE CARTESIAN RECEPTORS ***
+                                           (X-COORD, Y-COORD, ZELEV, ZHILL, ZFLAG)
+                                                           (METERS)
+
+     ( 774117.6, 4608397.4,     131.9,     131.9,       0.0);         ( 778486.8, 4612807.2,     199.0,     230.0,       0.0);      
+     ( 778504.8, 4612765.2,     197.6,     230.0,       0.0);         ( 778504.8, 4612795.2,     198.7,     230.0,       0.0);      
+ *** AERMOD - VERSION 26135  ***   *** AERMOD cmp_gauss                                                     ***        10/18/26
+ *** AERMET - VERSION  26135 ***   *** MDT05+CORINE (CNIG) · ERA5 (CDS) · 1545 receptores                   ***        20:27:12
+                                                                                                                       PAGE  11
+ *** MODELOPTs:    NonDFAULT  CONC  DEPOS  DDEP  WDEP  ELEV  DRYDPLT  WETDPLT  ALPHA  RURAL
+
+                                            *** METEOROLOGICAL DAYS SELECTED FOR PROCESSING ***
+                                                               (1=YES; 0=NO)
+
+            1 1 1 1 1 1 1 1 1 1   1 1 1 1 1 1 1 1 1 1   1 1 1 1 1 1 1 1 1 1   1 1 1 1 1 1 1 1 1 1   1 1 1 1 1 1 1 1 1 1
+            1 1 1 1 1 1 1 1 1 1   1 1 1 1 1 1 1 1 1 1   1 1 1 1 1 1 1 1 1 1   1 1 1 1 1 1 1 1 1 1   1 1 1 1 1 1 1 1 1 1
+            1 1 1 1 1 1 1 1 1 1   1 1 1 1 1 1 1 1 1 1   1 1 1 1 1 1 1 1 1 1   1 1 1 1 1 1 1 1 1 1   1 1 1 1 1 1 1 1 1 1
+            1 1 1 1 1 1 1 1 1 1   1 1 1 1 1 1 1 1 1 1   1 1 1 1 1 1 1 1 1 1   1 1 1 1 1 1 1 1 1 1   1 1 1 1 1 1 1 1 1 1
+            1 1 1 1 1 1 1 1 1 1   1 1 1 1 1 1 1 1 1 1   1 1 1 1 1 1 1 1 1 1   1 1 1 1 1 1 1 1 1 1   1 1 1 1 1 1 1 1 1 1
+            1 1 1 1 1 1 1 1 1 1   1 1 1 1 1 1 1 1 1 1   1 1 1 1 1 1 1 1 1 1   1 1 1 1 1 1 1 1 1 1   1 1 1 1 1 1 1 1 1 1
+            1 1 1 1 1 1 1 1 1 1   1 1 1 1 1 1 1 1 1 1   1 1 1 1 1 1 1 1 1 1   1 1 1 1 1 1 1 1 1 1   1 1 1 1 1 1 1 1 1 1
+            1 1 1 1 1 1 1 1 1 1   1 1 1 1 1
+
+                       METEOROLOGICAL DATA PROCESSED BETWEEN START DATE: 2023   2  3  1
+                                                           AND END DATE: 2023   2  3  6
+
+                NOTE:  METEOROLOGICAL DATA ACTUALLY PROCESSED WILL ALSO DEPEND ON WHAT IS INCLUDED IN THE DATA FILE.
+
+
+
+                                  *** UPPER BOUND OF FIRST THROUGH FIFTH WIND SPEED CATEGORIES ***
+                                                            (METERS/SEC)
+
+                                                 1.54,   3.09,   5.14,   8.23,  10.80,
+ *** AERMOD - VERSION 26135  ***   *** AERMOD cmp_gauss                                                     ***        10/18/26
+ *** AERMET - VERSION  26135 ***   *** MDT05+CORINE (CNIG) · ERA5 (CDS) · 1545 receptores                   ***        20:27:12
+                                                                                                                       PAGE  12
+ *** MODELOPTs:    NonDFAULT  CONC  DEPOS  DDEP  WDEP  ELEV  DRYDPLT  WETDPLT  ALPHA  RURAL
+
+                                    *** UP TO THE FIRST 24 HOURS OF METEOROLOGICAL DATA ***
+
+   Surface file:   aermet.sfc                                                                         Met Version:  26135
+   Profile file:   aermet.pfl                                                                      
+   Surface format: FREE                                                                                                     
+   Profile format: FREE                                                                                                     
+   Surface station no.:    99999                  Upper air station no.: ********
+                  Name: ERA5                                       Name: ERA5                                    
+                  Year:   2023                                     Year:   2023
+
+ First 24 hours of scalar data
+ YR MO DY HR     H0     U*     W*  DT/DZ ZICNV ZIMCH  M-O LEN  Z0 BOWEN  ALB  REF WS   WD   HT  REF TA  HT IPCOD PRATE  RH SFCP CCVR
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+ ** 02 03 01  -13.4  0.078 -9.000 -9.000 -999.   75.      5.2 0.08 0.72 1.00    2.29  265.  10.  275.8  10.  0   0.00   81. 1002.  1
+ 23 02 03 02  -12.1  0.076 -9.000 -9.000 -999.   72.      5.0 0.08 0.72 1.00    2.37  257.  10.  275.5  10.  0   0.00   82. 1002.  4
+ 23 02 03 03  -10.6  0.072 -9.000 -9.000 -999.   66.      4.8 0.08 0.72 1.00    2.20  259.  10.  275.0  10. 11   1.20   83. 1002.  7
+ 23 02 03 04   -9.4  0.067 -9.000 -9.000 -999.   56.      4.4 0.11 0.72 1.00    2.00  252.  10.  274.9  10.  0   0.00   84. 1002. 10
+ 23 02 03 05   -7.4  0.059 -9.000 -9.000 -999.   47.      3.8 0.11 0.72 1.00    1.70  244.  10.  275.9  10.  0   0.00   81. 1002.  2
+ 23 02 03 06   -6.1  0.053 -9.000 -9.000 -999.   47.      3.4 0.11 0.72 1.00    1.79  238.  10.  275.2  10. 11   0.30   84. 1002.  5
+ 23 02 03 07   -5.2  0.048 -9.000 -9.000 -999.   49.      3.1 0.11 0.72 1.00    1.82  243.  10.  274.7  10.  0   0.00   86. 1003.  8
+ 23 02 03 08   -4.8  0.049 -9.000 -9.000 -999.   47.      3.1 0.11 0.72 1.00    1.70  248.  10.  274.2  10.  0   0.00   89. 1003.  0
+ 23 02 03 09   -3.0  0.051 -9.000 -9.000 -999.   46.      4.1 0.11 0.72 0.18    1.46  246.  10.  273.4  10. 11   3.40   93. 1004.  3
+ 23 02 03 10   15.9  0.084  0.370  0.005  115.  115.     -3.4 0.08 0.72 0.18    1.11  266.  10.  276.3  10.  0   0.00   77. 1004.  6
+ 23 02 03 11   64.4  0.119  0.755  0.005  240.  240.     -2.3 0.08 0.72 0.18    1.30  275.  10.  278.9  10.  0   0.00   64. 1005.  9
+ 23 02 03 12  118.9  0.152  1.046  0.005  345.  345.     -2.7 0.08 0.72 0.18    2.30  268.  10.  282.1  10.  0   0.00   51. 1004.  1
+ 23 02 03 13  159.4  0.175  1.238  0.005  426.  426.     -3.0 0.08 0.72 0.18    2.73  268.  10.  284.7  10. 11   2.20   43. 1004.  4
+ 23 02 03 14  168.8  0.202  1.319  0.005  485.  485.     -4.4 0.08 0.72 0.18    2.94  272.  10.  287.1  10.  0   0.00   34. 1003.  7
+ 23 02 03 15  145.3  0.212  1.279  0.005  515.  515.     -5.8 0.08 0.72 0.18    2.97  277.  10.  288.6  10.  0   0.00   29. 1002. 10
+ 23 02 03 16   93.5  0.209  1.101  0.005  510.  510.     -8.8 0.08 0.72 0.18    2.90  279.  10.  289.2  10. 11   1.30   27. 1001.  2
+ 23 02 03 17   24.1  0.172  0.685  0.005  477.  477.    -19.0 0.08 0.72 0.18    2.54  274.  10.  288.9  10.  0   0.00   26. 1001.  5
+ 23 02 03 18  -17.3  0.064 -9.000 -9.000 -999.  158.      4.2 0.08 0.72 0.18    2.73  262.  10.  285.0  10.  0   0.00   40. 1001.  8
+ 23 02 03 19  -13.3  0.066 -9.000 -9.000 -999.   73.      4.4 0.08 0.72 0.18    2.65  261.  10.  282.2  10. 11   0.40   49. 1002.  0
+ 23 02 03 20  -10.8  0.063 -9.000 -9.000 -999.   46.      4.1 0.11 0.72 1.00    2.46  255.  10.  281.0  10.  0   0.00   55. 1002.  3
+ 23 02 03 21  -10.9  0.061 -9.000 -9.000 -999.   35.      4.0 0.11 0.72 1.00    2.31  249.  10.  279.4  10.  0   0.00   63. 1002.  6
+ 23 02 03 22  -11.0  0.066 -9.000 -9.000 -999.   37.      4.4 0.11 0.72 1.00    2.32  246.  10.  278.8  10.  0   0.00   66. 1002.  9
+ 23 02 03 23  -12.4  0.072 -9.000 -9.000 -999.   38.      4.8 0.11 0.72 1.00    2.20  241.  10.  279.4  10. 11   3.20   63. 1002.  1
+ 23 02 03 24  -12.6  0.073 -9.000 -9.000 -999.   55.      4.9 0.11 0.72 1.00    2.69  240.  10.  280.0  10.  0   0.00   62. 1003.  4
+
+
+ First hour of profile data
+ YR MO DY HR HEIGHT F  WDIR    WSPD AMB_TMP sigmaA  sigmaW  sigmaV
+ ** 02 03 01   10.0 0  265.    2.29   275.9  999.0  -99.00  -99.00
+ ** 02 03 01  266.3 0  286.    6.07   279.5  999.0  -99.00  -99.00
+ ** 02 03 01  479.8 0  302.    5.21   280.6  999.0  -99.00  -99.00
+ ** 02 03 01  699.4 0  312.    3.41   281.2  999.0  -99.00  -99.00
+ ** 02 03 01  925.6 1  333.    2.34   282.2  999.0  -99.00  -99.00
+
+ F indicates top of profile (=1) or below (=0)
+ *** AERMOD - VERSION 26135  ***   *** AERMOD cmp_gauss                                                     ***        10/18/26
+ *** AERMET - VERSION  26135 ***   *** MDT05+CORINE (CNIG) · ERA5 (CDS) · 1545 receptores                   ***        20:27:12
+                                                                                                                       PAGE  13
+ *** MODELOPTs:    NonDFAULT  CONC  DEPOS  DDEP  WDEP  ELEV  DRYDPLT  WETDPLT  ALPHA  RURAL
+
+                              *** THE PERIOD (     6 HRS) AVERAGE CONCENTRATION   VALUES FOR SOURCE GROUP: ALL      ***
+                                  INCLUDING SOURCE(S):     P01         , P02         , P03         , P04         , P05         , 
+                 P06         , P07         , P08         , P09         , P10         , P11         , P12         , P13         , 
+                 P14         , P15         , P16         , P17         , 
+
+                                             *** DISCRETE CARTESIAN RECEPTOR POINTS ***
+
+                                        ** CONC OF H2S      IN MICROGRAMS/M**3                          **
+
+       X-COORD (M)   Y-COORD (M)        CONC                       X-COORD (M)   Y-COORD (M)        CONC
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+         774117.60    4608397.40   0.000000E+00                      778486.80    4612807.20   0.345626E+00                         
+         778504.80    4612765.20   0.314277E+02                      778504.80    4612795.20   0.531336E+01                         
+ *** AERMOD - VERSION 26135  ***   *** AERMOD cmp_gauss                                                     ***        10/18/26
+ *** AERMET - VERSION  26135 ***   *** MDT05+CORINE (CNIG) · ERA5 (CDS) · 1545 receptores                   ***        20:27:12
+                                                                                                                       PAGE  14
+ *** MODELOPTs:    NonDFAULT  CONC  DEPOS  DDEP  WDEP  ELEV  DRYDPLT  WETDPLT  ALPHA  RURAL
+
+                              *** THE PERIOD (     6 HRS) AVERAGE CONCENTRATION   VALUES FOR SOURCE GROUP: NORTE    ***
+                                  INCLUDING SOURCE(S):     P02         , P04         , P06         , P08         , P09         , 
+                 P11         , P13         , P15         , 
+
+                                             *** DISCRETE CARTESIAN RECEPTOR POINTS ***
+
+                                        ** CONC OF H2S      IN MICROGRAMS/M**3                          **
+
+       X-COORD (M)   Y-COORD (M)        CONC                       X-COORD (M)   Y-COORD (M)        CONC
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+         774117.60    4608397.40   0.000000E+00                      778486.80    4612807.20   0.000000E+00                         
+         778504.80    4612765.20   0.000000E+00                      778504.80    4612795.20   0.000000E+00                         
+ *** AERMOD - VERSION 26135  ***   *** AERMOD cmp_gauss                                                     ***        10/18/26
+ *** AERMET - VERSION  26135 ***   *** MDT05+CORINE (CNIG) · ERA5 (CDS) · 1545 receptores                   ***        20:27:12
+                                                                                                                       PAGE  15
+ *** MODELOPTs:    NonDFAULT  CONC  DEPOS  DDEP  WDEP  ELEV  DRYDPLT  WETDPLT  ALPHA  RURAL
+
+                              *** THE PERIOD (     6 HRS)   TOTAL DEPOSITION      VALUES FOR SOURCE GROUP: ALL      ***
+                                  INCLUDING SOURCE(S):     P01         , P02         , P03         , P04         , P05         , 
+                 P06         , P07         , P08         , P09         , P10         , P11         , P12         , P13         , 
+                 P14         , P15         , P16         , P17         , 
+
+                                             *** DISCRETE CARTESIAN RECEPTOR POINTS ***
+
+                                        ** DEPO OF H2S      IN MILLIGRAMS/M**2                          **
+
+       X-COORD (M)   Y-COORD (M)        DEPO                       X-COORD (M)   Y-COORD (M)        DEPO
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+         774117.60    4608397.40   0.000000E+00                      778486.80    4612807.20   0.218058E-02                         
+         778504.80    4612765.20   0.224955E+00                      778504.80    4612795.20   0.344546E-01                         
+ *** AERMOD - VERSION 26135  ***   *** AERMOD cmp_gauss                                                     ***        10/18/26
+ *** AERMET - VERSION  26135 ***   *** MDT05+CORINE (CNIG) · ERA5 (CDS) · 1545 receptores                   ***        20:27:12
+                                                                                                                       PAGE  16
+ *** MODELOPTs:    NonDFAULT  CONC  DEPOS  DDEP  WDEP  ELEV  DRYDPLT  WETDPLT  ALPHA  RURAL
+
+                              *** THE PERIOD (     6 HRS)   TOTAL DEPOSITION      VALUES FOR SOURCE GROUP: NORTE    ***
+                                  INCLUDING SOURCE(S):     P02         , P04         , P06         , P08         , P09         , 
+                 P11         , P13         , P15         , 
+
+                                             *** DISCRETE CARTESIAN RECEPTOR POINTS ***
+
+                                        ** DEPO OF H2S      IN MILLIGRAMS/M**2                          **
+
+       X-COORD (M)   Y-COORD (M)        DEPO                       X-COORD (M)   Y-COORD (M)        DEPO
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+         774117.60    4608397.40   0.000000E+00                      778486.80    4612807.20   0.000000E+00                         
+         778504.80    4612765.20   0.000000E+00                      778504.80    4612795.20   0.000000E+00                         
+ *** AERMOD - VERSION 26135  ***   *** AERMOD cmp_gauss                                                     ***        10/18/26
+ *** AERMET - VERSION  26135 ***   *** MDT05+CORINE (CNIG) · ERA5 (CDS) · 1545 receptores                   ***        20:27:12
+                                                                                                                       PAGE  17
+ *** MODELOPTs:    NonDFAULT  CONC  DEPOS  DDEP  WDEP  ELEV  DRYDPLT  WETDPLT  ALPHA  RURAL
+
+                              *** THE PERIOD (     6 HRS)     DRY DEPOSITION      VALUES FOR SOURCE GROUP: ALL      ***
+                                  INCLUDING SOURCE(S):     P01         , P02         , P03         , P04         , P05         , 
+                 P06         , P07         , P08         , P09         , P10         , P11         , P12         , P13         , 
+                 P14         , P15         , P16         , P17         , 
+
+                                             *** DISCRETE CARTESIAN RECEPTOR POINTS ***
+
+                                        ** DEPO OF H2S      IN MILLIGRAMS/M**2                          **
+
+       X-COORD (M)   Y-COORD (M)        DEPO                       X-COORD (M)   Y-COORD (M)        DEPO
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+         774117.60    4608397.40   0.000000E+00                      778486.80    4612807.20   0.218056E-02                         
+         778504.80    4612765.20   0.224955E+00                      778504.80    4612795.20   0.344544E-01                         
+ *** AERMOD - VERSION 26135  ***   *** AERMOD cmp_gauss                                                     ***        10/18/26
+ *** AERMET - VERSION  26135 ***   *** MDT05+CORINE (CNIG) · ERA5 (CDS) · 1545 receptores                   ***        20:27:12
+                                                                                                                       PAGE  18
+ *** MODELOPTs:    NonDFAULT  CONC  DEPOS  DDEP  WDEP  ELEV  DRYDPLT  WETDPLT  ALPHA  RURAL
+
+                              *** THE PERIOD (     6 HRS)     DRY DEPOSITION      VALUES FOR SOURCE GROUP: NORTE    ***
+                                  INCLUDING SOURCE(S):     P02         , P04         , P06         , P08         , P09         , 
+                 P11         , P13         , P15         , 
+
+                                             *** DISCRETE CARTESIAN RECEPTOR POINTS ***
+
+                                        ** DEPO OF H2S      IN MILLIGRAMS/M**2                          **
+
+       X-COORD (M)   Y-COORD (M)        DEPO                       X-COORD (M)   Y-COORD (M)        DEPO
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+         774117.60    4608397.40   0.000000E+00                      778486.80    4612807.20   0.000000E+00                         
+         778504.80    4612765.20   0.000000E+00                      778504.80    4612795.20   0.000000E+00                         
+ *** AERMOD - VERSION 26135  ***   *** AERMOD cmp_gauss                                                     ***        10/18/26
+ *** AERMET - VERSION  26135 ***   *** MDT05+CORINE (CNIG) · ERA5 (CDS) · 1545 receptores                   ***        20:27:12
+                                                                                                                       PAGE  19
+ *** MODELOPTs:    NonDFAULT  CONC  DEPOS  DDEP  WDEP  ELEV  DRYDPLT  WETDPLT  ALPHA  RURAL
+
+                              *** THE PERIOD (     6 HRS)     WET DEPOSITION      VALUES FOR SOURCE GROUP: ALL      ***
+                                  INCLUDING SOURCE(S):     P01         , P02         , P03         , P04         , P05         , 
+                 P06         , P07         , P08         , P09         , P10         , P11         , P12         , P13         , 
+                 P14         , P15         , P16         , P17         , 
+
+                                             *** DISCRETE CARTESIAN RECEPTOR POINTS ***
+
+                                        ** DEPO OF H2S      IN MILLIGRAMS/M**2                          **
+
+       X-COORD (M)   Y-COORD (M)        DEPO                       X-COORD (M)   Y-COORD (M)        DEPO
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+         774117.60    4608397.40   0.000000E+00                      778486.80    4612807.20   0.130402E-07                         
+         778504.80    4612765.20   0.500178E-06                      778504.80    4612795.20   0.162219E-06                         
+ *** AERMOD - VERSION 26135  ***   *** AERMOD cmp_gauss                                                     ***        10/18/26
+ *** AERMET - VERSION  26135 ***   *** MDT05+CORINE (CNIG) · ERA5 (CDS) · 1545 receptores                   ***        20:27:12
+                                                                                                                       PAGE  20
+ *** MODELOPTs:    NonDFAULT  CONC  DEPOS  DDEP  WDEP  ELEV  DRYDPLT  WETDPLT  ALPHA  RURAL
+
+                              *** THE PERIOD (     6 HRS)     WET DEPOSITION      VALUES FOR SOURCE GROUP: NORTE    ***
+                                  INCLUDING SOURCE(S):     P02         , P04         , P06         , P08         , P09         , 
+                 P11         , P13         , P15         , 
+
+                                             *** DISCRETE CARTESIAN RECEPTOR POINTS ***
+
+                                        ** DEPO OF H2S      IN MILLIGRAMS/M**2                          **
+
+       X-COORD (M)   Y-COORD (M)        DEPO                       X-COORD (M)   Y-COORD (M)        DEPO
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+         774117.60    4608397.40   0.000000E+00                      778486.80    4612807.20   0.000000E+00                         
+         778504.80    4612765.20   0.000000E+00                      778504.80    4612795.20   0.000000E+00                         
+ *** AERMOD - VERSION 26135  ***   *** AERMOD cmp_gauss                                                     ***        10/18/26
+ *** AERMET - VERSION  26135 ***   *** MDT05+CORINE (CNIG) · ERA5 (CDS) · 1545 receptores                   ***        20:27:12
+                                                                                                                       PAGE  21
+ *** MODELOPTs:    NonDFAULT  CONC  DEPOS  DDEP  WDEP  ELEV  DRYDPLT  WETDPLT  ALPHA  RURAL
+
+                              *** THE   1ST HIGHEST  1-HR AVERAGE CONCENTRATION   VALUES FOR SOURCE GROUP:  ALL      ***
+                                  INCLUDING SOURCE(S):     P01         , P02         , P03         , P04         , P05         , 
+                 P06         , P07         , P08         , P09         , P10         , P11         , P12         , P13         , 
+                 P14         , P15         , P16         , P17         , 
+
+                                             *** DISCRETE CARTESIAN RECEPTOR POINTS ***
+
+                                        ** CONC OF H2S      IN MICROGRAMS/M**3                          **
+
+      X-COORD (M)  Y-COORD (M)        CONC     (YYMMDDHH)              X-COORD (M)  Y-COORD (M)        CONC     (YYMMDDHH)
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        774117.60   4608397.40   0.000000E+00  (00000000)                778486.80   4612807.20   0.182450E+01  (23020306)          
+        778504.80   4612765.20   0.799551E+02  (23020305)                778504.80   4612795.20   0.242218E+02  (23020306)          
+ *** AERMOD - VERSION 26135  ***   *** AERMOD cmp_gauss                                                     ***        10/18/26
+ *** AERMET - VERSION  26135 ***   *** MDT05+CORINE (CNIG) · ERA5 (CDS) · 1545 receptores                   ***        20:27:12
+                                                                                                                       PAGE  22
+ *** MODELOPTs:    NonDFAULT  CONC  DEPOS  DDEP  WDEP  ELEV  DRYDPLT  WETDPLT  ALPHA  RURAL
+
+                              *** THE   1ST HIGHEST  1-HR AVERAGE CONCENTRATION   VALUES FOR SOURCE GROUP:  NORTE    ***
+                                  INCLUDING SOURCE(S):     P02         , P04         , P06         , P08         , P09         , 
+                 P11         , P13         , P15         , 
+
+                                             *** DISCRETE CARTESIAN RECEPTOR POINTS ***
+
+                                        ** CONC OF H2S      IN MICROGRAMS/M**3                          **
+
+      X-COORD (M)  Y-COORD (M)        CONC     (YYMMDDHH)              X-COORD (M)  Y-COORD (M)        CONC     (YYMMDDHH)
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        774117.60   4608397.40   0.000000E+00  (00000000)                778486.80   4612807.20   0.000000E+00  (00000000)          
+        778504.80   4612765.20   0.000000E+00  (00000000)                778504.80   4612795.20   0.000000E+00  (00000000)          
+ *** AERMOD - VERSION 26135  ***   *** AERMOD cmp_gauss                                                     ***        10/18/26
+ *** AERMET - VERSION  26135 ***   *** MDT05+CORINE (CNIG) · ERA5 (CDS) · 1545 receptores                   ***        20:27:12
+                                                                                                                       PAGE  23
+ *** MODELOPTs:    NonDFAULT  CONC  DEPOS  DDEP  WDEP  ELEV  DRYDPLT  WETDPLT  ALPHA  RURAL
+
+                              *** THE   2ND HIGHEST  1-HR AVERAGE CONCENTRATION   VALUES FOR SOURCE GROUP:  ALL      ***
+                                  INCLUDING SOURCE(S):     P01         , P02         , P03         , P04         , P05         , 
+                 P06         , P07         , P08         , P09         , P10         , P11         , P12         , P13         , 
+                 P14         , P15         , P16         , P17         , 
+
+                                             *** DISCRETE CARTESIAN RECEPTOR POINTS ***
+
+                                        ** CONC OF H2S      IN MICROGRAMS/M**3                          **
+
+      X-COORD (M)  Y-COORD (M)        CONC     (YYMMDDHH)              X-COORD (M)  Y-COORD (M)        CONC     (YYMMDDHH)
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        774117.60   4608397.40   0.000000E+00  (00000000)                778486.80   4612807.20   0.249256E+00  (23020305)          
+        778504.80   4612765.20   0.794445E+02  (23020306)                778504.80   4612795.20   0.753403E+01  (23020305)          
+ *** AERMOD - VERSION 26135  ***   *** AERMOD cmp_gauss                                                     ***        10/18/26
+ *** AERMET - VERSION  26135 ***   *** MDT05+CORINE (CNIG) · ERA5 (CDS) · 1545 receptores                   ***        20:27:12
+                                                                                                                       PAGE  24
+ *** MODELOPTs:    NonDFAULT  CONC  DEPOS  DDEP  WDEP  ELEV  DRYDPLT  WETDPLT  ALPHA  RURAL
+
+                              *** THE   2ND HIGHEST  1-HR AVERAGE CONCENTRATION   VALUES FOR SOURCE GROUP:  NORTE    ***
+                                  INCLUDING SOURCE(S):     P02         , P04         , P06         , P08         , P09         , 
+                 P11         , P13         , P15         , 
+
+                                             *** DISCRETE CARTESIAN RECEPTOR POINTS ***
+
+                                        ** CONC OF H2S      IN MICROGRAMS/M**3                          **
+
+      X-COORD (M)  Y-COORD (M)        CONC     (YYMMDDHH)              X-COORD (M)  Y-COORD (M)        CONC     (YYMMDDHH)
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        774117.60   4608397.40   0.000000E+00  (00000000)                778486.80   4612807.20   0.000000E+00  (00000000)          
+        778504.80   4612765.20   0.000000E+00  (00000000)                778504.80   4612795.20   0.000000E+00  (00000000)          
+ *** AERMOD - VERSION 26135  ***   *** AERMOD cmp_gauss                                                     ***        10/18/26
+ *** AERMET - VERSION  26135 ***   *** MDT05+CORINE (CNIG) · ERA5 (CDS) · 1545 receptores                   ***        20:27:12
+                                                                                                                       PAGE  25
+ *** MODELOPTs:    NonDFAULT  CONC  DEPOS  DDEP  WDEP  ELEV  DRYDPLT  WETDPLT  ALPHA  RURAL
+
+                              *** THE   1ST HIGHEST 24-HR AVERAGE CONCENTRATION   VALUES FOR SOURCE GROUP:  ALL      ***
+                                  INCLUDING SOURCE(S):     P01         , P02         , P03         , P04         , P05         , 
+                 P06         , P07         , P08         , P09         , P10         , P11         , P12         , P13         , 
+                 P14         , P15         , P16         , P17         , 
+
+                                             *** DISCRETE CARTESIAN RECEPTOR POINTS ***
+
+                                        ** CONC OF H2S      IN MICROGRAMS/M**3                          **
+
+      X-COORD (M)  Y-COORD (M)        CONC     (YYMMDDHH)              X-COORD (M)  Y-COORD (M)        CONC     (YYMMDDHH)
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        774117.60   4608397.40   0.000000E+00  (00000000)                778486.80   4612807.20   0.000000E+00  (00000000)          
+        778504.80   4612765.20   0.000000E+00  (00000000)                778504.80   4612795.20   0.000000E+00  (00000000)          
+ *** AERMOD - VERSION 26135  ***   *** AERMOD cmp_gauss                                                     ***        10/18/26
+ *** AERMET - VERSION  26135 ***   *** MDT05+CORINE (CNIG) · ERA5 (CDS) · 1545 receptores                   ***        20:27:12
+                                                                                                                       PAGE  26
+ *** MODELOPTs:    NonDFAULT  CONC  DEPOS  DDEP  WDEP  ELEV  DRYDPLT  WETDPLT  ALPHA  RURAL
+
+                              *** THE   1ST HIGHEST 24-HR AVERAGE CONCENTRATION   VALUES FOR SOURCE GROUP:  NORTE    ***
+                                  INCLUDING SOURCE(S):     P02         , P04         , P06         , P08         , P09         , 
+                 P11         , P13         , P15         , 
+
+                                             *** DISCRETE CARTESIAN RECEPTOR POINTS ***
+
+                                        ** CONC OF H2S      IN MICROGRAMS/M**3                          **
+
+      X-COORD (M)  Y-COORD (M)        CONC     (YYMMDDHH)              X-COORD (M)  Y-COORD (M)        CONC     (YYMMDDHH)
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        774117.60   4608397.40   0.000000E+00  (00000000)                778486.80   4612807.20   0.000000E+00  (00000000)          
+        778504.80   4612765.20   0.000000E+00  (00000000)                778504.80   4612795.20   0.000000E+00  (00000000)          
+ *** AERMOD - VERSION 26135  ***   *** AERMOD cmp_gauss                                                     ***        10/18/26
+ *** AERMET - VERSION  26135 ***   *** MDT05+CORINE (CNIG) · ERA5 (CDS) · 1545 receptores                   ***        20:27:12
+                                                                                                                       PAGE  27
+ *** MODELOPTs:    NonDFAULT  CONC  DEPOS  DDEP  WDEP  ELEV  DRYDPLT  WETDPLT  ALPHA  RURAL
+
+                              *** THE   2ND HIGHEST 24-HR AVERAGE CONCENTRATION   VALUES FOR SOURCE GROUP:  ALL      ***
+                                  INCLUDING SOURCE(S):     P01         , P02         , P03         , P04         , P05         , 
+                 P06         , P07         , P08         , P09         , P10         , P11         , P12         , P13         , 
+                 P14         , P15         , P16         , P17         , 
+
+                                             *** DISCRETE CARTESIAN RECEPTOR POINTS ***
+
+                                        ** CONC OF H2S      IN MICROGRAMS/M**3                          **
+
+      X-COORD (M)  Y-COORD (M)        CONC     (YYMMDDHH)              X-COORD (M)  Y-COORD (M)        CONC     (YYMMDDHH)
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        774117.60   4608397.40   0.000000E+00  (00000000)                778486.80   4612807.20   0.000000E+00  (00000000)          
+        778504.80   4612765.20   0.000000E+00  (00000000)                778504.80   4612795.20   0.000000E+00  (00000000)          
+ *** AERMOD - VERSION 26135  ***   *** AERMOD cmp_gauss                                                     ***        10/18/26
+ *** AERMET - VERSION  26135 ***   *** MDT05+CORINE (CNIG) · ERA5 (CDS) · 1545 receptores                   ***        20:27:12
+                                                                                                                       PAGE  28
+ *** MODELOPTs:    NonDFAULT  CONC  DEPOS  DDEP  WDEP  ELEV  DRYDPLT  WETDPLT  ALPHA  RURAL
+
+                              *** THE   2ND HIGHEST 24-HR AVERAGE CONCENTRATION   VALUES FOR SOURCE GROUP:  NORTE    ***
+                                  INCLUDING SOURCE(S):     P02         , P04         , P06         , P08         , P09         , 
+                 P11         , P13         , P15         , 
+
+                                             *** DISCRETE CARTESIAN RECEPTOR POINTS ***
+
+                                        ** CONC OF H2S      IN MICROGRAMS/M**3                          **
+
+      X-COORD (M)  Y-COORD (M)        CONC     (YYMMDDHH)              X-COORD (M)  Y-COORD (M)        CONC     (YYMMDDHH)
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        774117.60   4608397.40   0.000000E+00  (00000000)                778486.80   4612807.20   0.000000E+00  (00000000)          
+        778504.80   4612765.20   0.000000E+00  (00000000)                778504.80   4612795.20   0.000000E+00  (00000000)          
+ *** AERMOD - VERSION 26135  ***   *** AERMOD cmp_gauss                                                     ***        10/18/26
+ *** AERMET - VERSION  26135 ***   *** MDT05+CORINE (CNIG) · ERA5 (CDS) · 1545 receptores                   ***        20:27:12
+                                                                                                                       PAGE  29
+ *** MODELOPTs:    NonDFAULT  CONC  DEPOS  DDEP  WDEP  ELEV  DRYDPLT  WETDPLT  ALPHA  RURAL
+
+                              *** THE   1ST HIGHEST  1-HR   TOTAL DEPOSITION      VALUES FOR SOURCE GROUP:  ALL      ***
+                                  INCLUDING SOURCE(S):     P01         , P02         , P03         , P04         , P05         , 
+                 P06         , P07         , P08         , P09         , P10         , P11         , P12         , P13         , 
+                 P14         , P15         , P16         , P17         , 
+
+                                             *** DISCRETE CARTESIAN RECEPTOR POINTS ***
+
+                                        ** DEPO OF H2S      IN MILLIGRAMS/M**2                          **
+
+      X-COORD (M)  Y-COORD (M)        DEPO     (YYMMDDHH)              X-COORD (M)  Y-COORD (M)        DEPO     (YYMMDDHH)
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        774117.60   4608397.40   0.000000E+00  (00000000)                778486.80   4612807.20   0.190182E-02  (23020306)          
+        778504.80   4612765.20   0.964321E-01  (23020305)                778504.80   4612795.20   0.257477E-01  (23020306)          
+ *** AERMOD - VERSION 26135  ***   *** AERMOD cmp_gauss                                                     ***        10/18/26
+ *** AERMET - VERSION  26135 ***   *** MDT05+CORINE (CNIG) · ERA5 (CDS) · 1545 receptores                   ***        20:27:12
+                                                                                                                       PAGE  30
+ *** MODELOPTs:    NonDFAULT  CONC  DEPOS  DDEP  WDEP  ELEV  DRYDPLT  WETDPLT  ALPHA  RURAL
+
+                              *** THE   1ST HIGHEST  1-HR   TOTAL DEPOSITION      VALUES FOR SOURCE GROUP:  NORTE    ***
+                                  INCLUDING SOURCE(S):     P02         , P04         , P06         , P08         , P09         , 
+                 P11         , P13         , P15         , 
+
+                                             *** DISCRETE CARTESIAN RECEPTOR POINTS ***
+
+                                        ** DEPO OF H2S      IN MILLIGRAMS/M**2                          **
+
+      X-COORD (M)  Y-COORD (M)        DEPO     (YYMMDDHH)              X-COORD (M)  Y-COORD (M)        DEPO     (YYMMDDHH)
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        774117.60   4608397.40   0.000000E+00  (00000000)                778486.80   4612807.20   0.000000E+00  (00000000)          
+        778504.80   4612765.20   0.000000E+00  (00000000)                778504.80   4612795.20   0.000000E+00  (00000000)          
+ *** AERMOD - VERSION 26135  ***   *** AERMOD cmp_gauss                                                     ***        10/18/26
+ *** AERMET - VERSION  26135 ***   *** MDT05+CORINE (CNIG) · ERA5 (CDS) · 1545 receptores                   ***        20:27:12
+                                                                                                                       PAGE  31
+ *** MODELOPTs:    NonDFAULT  CONC  DEPOS  DDEP  WDEP  ELEV  DRYDPLT  WETDPLT  ALPHA  RURAL
+
+                              *** THE   2ND HIGHEST  1-HR   TOTAL DEPOSITION      VALUES FOR SOURCE GROUP:  ALL      ***
+                                  INCLUDING SOURCE(S):     P01         , P02         , P03         , P04         , P05         , 
+                 P06         , P07         , P08         , P09         , P10         , P11         , P12         , P13         , 
+                 P14         , P15         , P16         , P17         , 
+
+                                             *** DISCRETE CARTESIAN RECEPTOR POINTS ***
+
+                                        ** DEPO OF H2S      IN MILLIGRAMS/M**2                          **
+
+      X-COORD (M)  Y-COORD (M)        DEPO     (YYMMDDHH)              X-COORD (M)  Y-COORD (M)        DEPO     (YYMMDDHH)
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        774117.60   4608397.40   0.000000E+00  (00000000)                778486.80   4612807.20   0.278759E-03  (23020305)          
+        778504.80   4612765.20   0.945636E-01  (23020306)                778504.80   4612795.20   0.857052E-02  (23020305)          
+ *** AERMOD - VERSION 26135  ***   *** AERMOD cmp_gauss                                                     ***        10/18/26
+ *** AERMET - VERSION  26135 ***   *** MDT05+CORINE (CNIG) · ERA5 (CDS) · 1545 receptores                   ***        20:27:12
+                                                                                                                       PAGE  32
+ *** MODELOPTs:    NonDFAULT  CONC  DEPOS  DDEP  WDEP  ELEV  DRYDPLT  WETDPLT  ALPHA  RURAL
+
+                              *** THE   2ND HIGHEST  1-HR   TOTAL DEPOSITION      VALUES FOR SOURCE GROUP:  NORTE    ***
+                                  INCLUDING SOURCE(S):     P02         , P04         , P06         , P08         , P09         , 
+                 P11         , P13         , P15         , 
+
+                                             *** DISCRETE CARTESIAN RECEPTOR POINTS ***
+
+                                        ** DEPO OF H2S      IN MILLIGRAMS/M**2                          **
+
+      X-COORD (M)  Y-COORD (M)        DEPO     (YYMMDDHH)              X-COORD (M)  Y-COORD (M)        DEPO     (YYMMDDHH)
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        774117.60   4608397.40   0.000000E+00  (00000000)                778486.80   4612807.20   0.000000E+00  (00000000)          
+        778504.80   4612765.20   0.000000E+00  (00000000)                778504.80   4612795.20   0.000000E+00  (00000000)          
+ *** AERMOD - VERSION 26135  ***   *** AERMOD cmp_gauss                                                     ***        10/18/26
+ *** AERMET - VERSION  26135 ***   *** MDT05+CORINE (CNIG) · ERA5 (CDS) · 1545 receptores                   ***        20:27:12
+                                                                                                                       PAGE  33
+ *** MODELOPTs:    NonDFAULT  CONC  DEPOS  DDEP  WDEP  ELEV  DRYDPLT  WETDPLT  ALPHA  RURAL
+
+                              *** THE   1ST HIGHEST 24-HR   TOTAL DEPOSITION      VALUES FOR SOURCE GROUP:  ALL      ***
+                                  INCLUDING SOURCE(S):     P01         , P02         , P03         , P04         , P05         , 
+                 P06         , P07         , P08         , P09         , P10         , P11         , P12         , P13         , 
+                 P14         , P15         , P16         , P17         , 
+
+                                             *** DISCRETE CARTESIAN RECEPTOR POINTS ***
+
+                                        ** DEPO OF H2S      IN MILLIGRAMS/M**2                          **
+
+      X-COORD (M)  Y-COORD (M)        DEPO     (YYMMDDHH)              X-COORD (M)  Y-COORD (M)        DEPO     (YYMMDDHH)
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        774117.60   4608397.40   0.000000E+00  (00000000)                778486.80   4612807.20   0.000000E+00  (00000000)          
+        778504.80   4612765.20   0.000000E+00  (00000000)                778504.80   4612795.20   0.000000E+00  (00000000)          
+ *** AERMOD - VERSION 26135  ***   *** AERMOD cmp_gauss                                                     ***        10/18/26
+ *** AERMET - VERSION  26135 ***   *** MDT05+CORINE (CNIG) · ERA5 (CDS) · 1545 receptores                   ***        20:27:12
+                                                                                                                       PAGE  34
+ *** MODELOPTs:    NonDFAULT  CONC  DEPOS  DDEP  WDEP  ELEV  DRYDPLT  WETDPLT  ALPHA  RURAL
+
+                              *** THE   1ST HIGHEST 24-HR   TOTAL DEPOSITION      VALUES FOR SOURCE GROUP:  NORTE    ***
+                                  INCLUDING SOURCE(S):     P02         , P04         , P06         , P08         , P09         , 
+                 P11         , P13         , P15         , 
+
+                                             *** DISCRETE CARTESIAN RECEPTOR POINTS ***
+
+                                        ** DEPO OF H2S      IN MILLIGRAMS/M**2                          **
+
+      X-COORD (M)  Y-COORD (M)        DEPO     (YYMMDDHH)              X-COORD (M)  Y-COORD (M)        DEPO     (YYMMDDHH)
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        774117.60   4608397.40   0.000000E+00  (00000000)                778486.80   4612807.20   0.000000E+00  (00000000)          
+        778504.80   4612765.20   0.000000E+00  (00000000)                778504.80   4612795.20   0.000000E+00  (00000000)          
+ *** AERMOD - VERSION 26135  ***   *** AERMOD cmp_gauss                                                     ***        10/18/26
+ *** AERMET - VERSION  26135 ***   *** MDT05+CORINE (CNIG) · ERA5 (CDS) · 1545 receptores                   ***        20:27:12
+                                                                                                                       PAGE  35
+ *** MODELOPTs:    NonDFAULT  CONC  DEPOS  DDEP  WDEP  ELEV  DRYDPLT  WETDPLT  ALPHA  RURAL
+
+                              *** THE   2ND HIGHEST 24-HR   TOTAL DEPOSITION      VALUES FOR SOURCE GROUP:  ALL      ***
+                                  INCLUDING SOURCE(S):     P01         , P02         , P03         , P04         , P05         , 
+                 P06         , P07         , P08         , P09         , P10         , P11         , P12         , P13         , 
+                 P14         , P15         , P16         , P17         , 
+
+                                             *** DISCRETE CARTESIAN RECEPTOR POINTS ***
+
+                                        ** DEPO OF H2S      IN MILLIGRAMS/M**2                          **
+
+      X-COORD (M)  Y-COORD (M)        DEPO     (YYMMDDHH)              X-COORD (M)  Y-COORD (M)        DEPO     (YYMMDDHH)
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        774117.60   4608397.40   0.000000E+00  (00000000)                778486.80   4612807.20   0.000000E+00  (00000000)          
+        778504.80   4612765.20   0.000000E+00  (00000000)                778504.80   4612795.20   0.000000E+00  (00000000)          
+ *** AERMOD - VERSION 26135  ***   *** AERMOD cmp_gauss                                                     ***        10/18/26
+ *** AERMET - VERSION  26135 ***   *** MDT05+CORINE (CNIG) · ERA5 (CDS) · 1545 receptores                   ***        20:27:12
+                                                                                                                       PAGE  36
+ *** MODELOPTs:    NonDFAULT  CONC  DEPOS  DDEP  WDEP  ELEV  DRYDPLT  WETDPLT  ALPHA  RURAL
+
+                              *** THE   2ND HIGHEST 24-HR   TOTAL DEPOSITION      VALUES FOR SOURCE GROUP:  NORTE    ***
+                                  INCLUDING SOURCE(S):     P02         , P04         , P06         , P08         , P09         , 
+                 P11         , P13         , P15         , 
+
+                                             *** DISCRETE CARTESIAN RECEPTOR POINTS ***
+
+                                        ** DEPO OF H2S      IN MILLIGRAMS/M**2                          **
+
+      X-COORD (M)  Y-COORD (M)        DEPO     (YYMMDDHH)              X-COORD (M)  Y-COORD (M)        DEPO     (YYMMDDHH)
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        774117.60   4608397.40   0.000000E+00  (00000000)                778486.80   4612807.20   0.000000E+00  (00000000)          
+        778504.80   4612765.20   0.000000E+00  (00000000)                778504.80   4612795.20   0.000000E+00  (00000000)          
+ *** AERMOD - VERSION 26135  ***   *** AERMOD cmp_gauss                                                     ***        10/18/26
+ *** AERMET - VERSION  26135 ***   *** MDT05+CORINE (CNIG) · ERA5 (CDS) · 1545 receptores                   ***        20:27:12
+                                                                                                                       PAGE  37
+ *** MODELOPTs:    NonDFAULT  CONC  DEPOS  DDEP  WDEP  ELEV  DRYDPLT  WETDPLT  ALPHA  RURAL
+
+                              *** THE   1ST HIGHEST  1-HR     DRY DEPOSITION      VALUES FOR SOURCE GROUP:  ALL      ***
+                                  INCLUDING SOURCE(S):     P01         , P02         , P03         , P04         , P05         , 
+                 P06         , P07         , P08         , P09         , P10         , P11         , P12         , P13         , 
+                 P14         , P15         , P16         , P17         , 
+
+                                             *** DISCRETE CARTESIAN RECEPTOR POINTS ***
+
+                                        ** DEPO OF H2S      IN MILLIGRAMS/M**2                          **
+
+      X-COORD (M)  Y-COORD (M)        DEPO     (YYMMDDHH)              X-COORD (M)  Y-COORD (M)        DEPO     (YYMMDDHH)
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        774117.60   4608397.40   0.000000E+00  (00000000)                778486.80   4612807.20   0.190180E-02  (23020306)          
+        778504.80   4612765.20   0.964321E-01  (23020305)                778504.80   4612795.20   0.257475E-01  (23020306)          
+ *** AERMOD - VERSION 26135  ***   *** AERMOD cmp_gauss                                                     ***        10/18/26
+ *** AERMET - VERSION  26135 ***   *** MDT05+CORINE (CNIG) · ERA5 (CDS) · 1545 receptores                   ***        20:27:12
+                                                                                                                       PAGE  38
+ *** MODELOPTs:    NonDFAULT  CONC  DEPOS  DDEP  WDEP  ELEV  DRYDPLT  WETDPLT  ALPHA  RURAL
+
+                              *** THE   1ST HIGHEST  1-HR     DRY DEPOSITION      VALUES FOR SOURCE GROUP:  NORTE    ***
+                                  INCLUDING SOURCE(S):     P02         , P04         , P06         , P08         , P09         , 
+                 P11         , P13         , P15         , 
+
+                                             *** DISCRETE CARTESIAN RECEPTOR POINTS ***
+
+                                        ** DEPO OF H2S      IN MILLIGRAMS/M**2                          **
+
+      X-COORD (M)  Y-COORD (M)        DEPO     (YYMMDDHH)              X-COORD (M)  Y-COORD (M)        DEPO     (YYMMDDHH)
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        774117.60   4608397.40   0.000000E+00  (00000000)                778486.80   4612807.20   0.000000E+00  (00000000)          
+        778504.80   4612765.20   0.000000E+00  (00000000)                778504.80   4612795.20   0.000000E+00  (00000000)          
+ *** AERMOD - VERSION 26135  ***   *** AERMOD cmp_gauss                                                     ***        10/18/26
+ *** AERMET - VERSION  26135 ***   *** MDT05+CORINE (CNIG) · ERA5 (CDS) · 1545 receptores                   ***        20:27:12
+                                                                                                                       PAGE  39
+ *** MODELOPTs:    NonDFAULT  CONC  DEPOS  DDEP  WDEP  ELEV  DRYDPLT  WETDPLT  ALPHA  RURAL
+
+                              *** THE   2ND HIGHEST  1-HR     DRY DEPOSITION      VALUES FOR SOURCE GROUP:  ALL      ***
+                                  INCLUDING SOURCE(S):     P01         , P02         , P03         , P04         , P05         , 
+                 P06         , P07         , P08         , P09         , P10         , P11         , P12         , P13         , 
+                 P14         , P15         , P16         , P17         , 
+
+                                             *** DISCRETE CARTESIAN RECEPTOR POINTS ***
+
+                                        ** DEPO OF H2S      IN MILLIGRAMS/M**2                          **
+
+      X-COORD (M)  Y-COORD (M)        DEPO     (YYMMDDHH)              X-COORD (M)  Y-COORD (M)        DEPO     (YYMMDDHH)
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        774117.60   4608397.40   0.000000E+00  (00000000)                778486.80   4612807.20   0.278759E-03  (23020305)          
+        778504.80   4612765.20   0.945631E-01  (23020306)                778504.80   4612795.20   0.857052E-02  (23020305)          
+ *** AERMOD - VERSION 26135  ***   *** AERMOD cmp_gauss                                                     ***        10/18/26
+ *** AERMET - VERSION  26135 ***   *** MDT05+CORINE (CNIG) · ERA5 (CDS) · 1545 receptores                   ***        20:27:12
+                                                                                                                       PAGE  40
+ *** MODELOPTs:    NonDFAULT  CONC  DEPOS  DDEP  WDEP  ELEV  DRYDPLT  WETDPLT  ALPHA  RURAL
+
+                              *** THE   2ND HIGHEST  1-HR     DRY DEPOSITION      VALUES FOR SOURCE GROUP:  NORTE    ***
+                                  INCLUDING SOURCE(S):     P02         , P04         , P06         , P08         , P09         , 
+                 P11         , P13         , P15         , 
+
+                                             *** DISCRETE CARTESIAN RECEPTOR POINTS ***
+
+                                        ** DEPO OF H2S      IN MILLIGRAMS/M**2                          **
+
+      X-COORD (M)  Y-COORD (M)        DEPO     (YYMMDDHH)              X-COORD (M)  Y-COORD (M)        DEPO     (YYMMDDHH)
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        774117.60   4608397.40   0.000000E+00  (00000000)                778486.80   4612807.20   0.000000E+00  (00000000)          
+        778504.80   4612765.20   0.000000E+00  (00000000)                778504.80   4612795.20   0.000000E+00  (00000000)          
+ *** AERMOD - VERSION 26135  ***   *** AERMOD cmp_gauss                                                     ***        10/18/26
+ *** AERMET - VERSION  26135 ***   *** MDT05+CORINE (CNIG) · ERA5 (CDS) · 1545 receptores                   ***        20:27:12
+                                                                                                                       PAGE  41
+ *** MODELOPTs:    NonDFAULT  CONC  DEPOS  DDEP  WDEP  ELEV  DRYDPLT  WETDPLT  ALPHA  RURAL
+
+                              *** THE   1ST HIGHEST 24-HR     DRY DEPOSITION      VALUES FOR SOURCE GROUP:  ALL      ***
+                                  INCLUDING SOURCE(S):     P01         , P02         , P03         , P04         , P05         , 
+                 P06         , P07         , P08         , P09         , P10         , P11         , P12         , P13         , 
+                 P14         , P15         , P16         , P17         , 
+
+                                             *** DISCRETE CARTESIAN RECEPTOR POINTS ***
+
+                                        ** DEPO OF H2S      IN MILLIGRAMS/M**2                          **
+
+      X-COORD (M)  Y-COORD (M)        DEPO     (YYMMDDHH)              X-COORD (M)  Y-COORD (M)        DEPO     (YYMMDDHH)
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        774117.60   4608397.40   0.000000E+00  (00000000)                778486.80   4612807.20   0.000000E+00  (00000000)          
+        778504.80   4612765.20   0.000000E+00  (00000000)                778504.80   4612795.20   0.000000E+00  (00000000)          
+ *** AERMOD - VERSION 26135  ***   *** AERMOD cmp_gauss                                                     ***        10/18/26
+ *** AERMET - VERSION  26135 ***   *** MDT05+CORINE (CNIG) · ERA5 (CDS) · 1545 receptores                   ***        20:27:12
+                                                                                                                       PAGE  42
+ *** MODELOPTs:    NonDFAULT  CONC  DEPOS  DDEP  WDEP  ELEV  DRYDPLT  WETDPLT  ALPHA  RURAL
+
+                              *** THE   1ST HIGHEST 24-HR     DRY DEPOSITION      VALUES FOR SOURCE GROUP:  NORTE    ***
+                                  INCLUDING SOURCE(S):     P02         , P04         , P06         , P08         , P09         , 
+                 P11         , P13         , P15         , 
+
+                                             *** DISCRETE CARTESIAN RECEPTOR POINTS ***
+
+                                        ** DEPO OF H2S      IN MILLIGRAMS/M**2                          **
+
+      X-COORD (M)  Y-COORD (M)        DEPO     (YYMMDDHH)              X-COORD (M)  Y-COORD (M)        DEPO     (YYMMDDHH)
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        774117.60   4608397.40   0.000000E+00  (00000000)                778486.80   4612807.20   0.000000E+00  (00000000)          
+        778504.80   4612765.20   0.000000E+00  (00000000)                778504.80   4612795.20   0.000000E+00  (00000000)          
+ *** AERMOD - VERSION 26135  ***   *** AERMOD cmp_gauss                                                     ***        10/18/26
+ *** AERMET - VERSION  26135 ***   *** MDT05+CORINE (CNIG) · ERA5 (CDS) · 1545 receptores                   ***        20:27:12
+                                                                                                                       PAGE  43
+ *** MODELOPTs:    NonDFAULT  CONC  DEPOS  DDEP  WDEP  ELEV  DRYDPLT  WETDPLT  ALPHA  RURAL
+
+                              *** THE   2ND HIGHEST 24-HR     DRY DEPOSITION      VALUES FOR SOURCE GROUP:  ALL      ***
+                                  INCLUDING SOURCE(S):     P01         , P02         , P03         , P04         , P05         , 
+                 P06         , P07         , P08         , P09         , P10         , P11         , P12         , P13         , 
+                 P14         , P15         , P16         , P17         , 
+
+                                             *** DISCRETE CARTESIAN RECEPTOR POINTS ***
+
+                                        ** DEPO OF H2S      IN MILLIGRAMS/M**2                          **
+
+      X-COORD (M)  Y-COORD (M)        DEPO     (YYMMDDHH)              X-COORD (M)  Y-COORD (M)        DEPO     (YYMMDDHH)
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        774117.60   4608397.40   0.000000E+00  (00000000)                778486.80   4612807.20   0.000000E+00  (00000000)          
+        778504.80   4612765.20   0.000000E+00  (00000000)                778504.80   4612795.20   0.000000E+00  (00000000)          
+ *** AERMOD - VERSION 26135  ***   *** AERMOD cmp_gauss                                                     ***        10/18/26
+ *** AERMET - VERSION  26135 ***   *** MDT05+CORINE (CNIG) · ERA5 (CDS) · 1545 receptores                   ***        20:27:12
+                                                                                                                       PAGE  44
+ *** MODELOPTs:    NonDFAULT  CONC  DEPOS  DDEP  WDEP  ELEV  DRYDPLT  WETDPLT  ALPHA  RURAL
+
+                              *** THE   2ND HIGHEST 24-HR     DRY DEPOSITION      VALUES FOR SOURCE GROUP:  NORTE    ***
+                                  INCLUDING SOURCE(S):     P02         , P04         , P06         , P08         , P09         , 
+                 P11         , P13         , P15         , 
+
+                                             *** DISCRETE CARTESIAN RECEPTOR POINTS ***
+
+                                        ** DEPO OF H2S      IN MILLIGRAMS/M**2                          **
+
+      X-COORD (M)  Y-COORD (M)        DEPO     (YYMMDDHH)              X-COORD (M)  Y-COORD (M)        DEPO     (YYMMDDHH)
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        774117.60   4608397.40   0.000000E+00  (00000000)                778486.80   4612807.20   0.000000E+00  (00000000)          
+        778504.80   4612765.20   0.000000E+00  (00000000)                778504.80   4612795.20   0.000000E+00  (00000000)          
+ *** AERMOD - VERSION 26135  ***   *** AERMOD cmp_gauss                                                     ***        10/18/26
+ *** AERMET - VERSION  26135 ***   *** MDT05+CORINE (CNIG) · ERA5 (CDS) · 1545 receptores                   ***        20:27:12
+                                                                                                                       PAGE  45
+ *** MODELOPTs:    NonDFAULT  CONC  DEPOS  DDEP  WDEP  ELEV  DRYDPLT  WETDPLT  ALPHA  RURAL
+
+                              *** THE   1ST HIGHEST  1-HR     WET DEPOSITION      VALUES FOR SOURCE GROUP:  ALL      ***
+                                  INCLUDING SOURCE(S):     P01         , P02         , P03         , P04         , P05         , 
+                 P06         , P07         , P08         , P09         , P10         , P11         , P12         , P13         , 
+                 P14         , P15         , P16         , P17         , 
+
+                                             *** DISCRETE CARTESIAN RECEPTOR POINTS ***
+
+                                        ** DEPO OF H2S      IN MILLIGRAMS/M**2                          **
+
+      X-COORD (M)  Y-COORD (M)        DEPO     (YYMMDDHH)              X-COORD (M)  Y-COORD (M)        DEPO     (YYMMDDHH)
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        774117.60   4608397.40   0.000000E+00  (00000000)                778486.80   4612807.20   0.130402E-07  (23020306)          
+        778504.80   4612765.20   0.446764E-06  (23020306)                778504.80   4612795.20   0.162219E-06  (23020306)          
+ *** AERMOD - VERSION 26135  ***   *** AERMOD cmp_gauss                                                     ***        10/18/26
+ *** AERMET - VERSION  26135 ***   *** MDT05+CORINE (CNIG) · ERA5 (CDS) · 1545 receptores                   ***        20:27:12
+                                                                                                                       PAGE  46
+ *** MODELOPTs:    NonDFAULT  CONC  DEPOS  DDEP  WDEP  ELEV  DRYDPLT  WETDPLT  ALPHA  RURAL
+
+                              *** THE   1ST HIGHEST  1-HR     WET DEPOSITION      VALUES FOR SOURCE GROUP:  NORTE    ***
+                                  INCLUDING SOURCE(S):     P02         , P04         , P06         , P08         , P09         , 
+                 P11         , P13         , P15         , 
+
+                                             *** DISCRETE CARTESIAN RECEPTOR POINTS ***
+
+                                        ** DEPO OF H2S      IN MILLIGRAMS/M**2                          **
+
+      X-COORD (M)  Y-COORD (M)        DEPO     (YYMMDDHH)              X-COORD (M)  Y-COORD (M)        DEPO     (YYMMDDHH)
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        774117.60   4608397.40   0.000000E+00  (00000000)                778486.80   4612807.20   0.000000E+00  (00000000)          
+        778504.80   4612765.20   0.000000E+00  (00000000)                778504.80   4612795.20   0.000000E+00  (00000000)          
+ *** AERMOD - VERSION 26135  ***   *** AERMOD cmp_gauss                                                     ***        10/18/26
+ *** AERMET - VERSION  26135 ***   *** MDT05+CORINE (CNIG) · ERA5 (CDS) · 1545 receptores                   ***        20:27:12
+                                                                                                                       PAGE  47
+ *** MODELOPTs:    NonDFAULT  CONC  DEPOS  DDEP  WDEP  ELEV  DRYDPLT  WETDPLT  ALPHA  RURAL
+
+                              *** THE   2ND HIGHEST  1-HR     WET DEPOSITION      VALUES FOR SOURCE GROUP:  ALL      ***
+                                  INCLUDING SOURCE(S):     P01         , P02         , P03         , P04         , P05         , 
+                 P06         , P07         , P08         , P09         , P10         , P11         , P12         , P13         , 
+                 P14         , P15         , P16         , P17         , 
+
+                                             *** DISCRETE CARTESIAN RECEPTOR POINTS ***
+
+                                        ** DEPO OF H2S      IN MILLIGRAMS/M**2                          **
+
+      X-COORD (M)  Y-COORD (M)        DEPO     (YYMMDDHH)              X-COORD (M)  Y-COORD (M)        DEPO     (YYMMDDHH)
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        774117.60   4608397.40   0.000000E+00  (00000000)                778486.80   4612807.20   0.000000E+00  (00000000)          
+        778504.80   4612765.20   0.534142E-07  (23020303)                778504.80   4612795.20   0.000000E+00  (00000000)          
+ *** AERMOD - VERSION 26135  ***   *** AERMOD cmp_gauss                                                     ***        10/18/26
+ *** AERMET - VERSION  26135 ***   *** MDT05+CORINE (CNIG) · ERA5 (CDS) · 1545 receptores                   ***        20:27:12
+                                                                                                                       PAGE  48
+ *** MODELOPTs:    NonDFAULT  CONC  DEPOS  DDEP  WDEP  ELEV  DRYDPLT  WETDPLT  ALPHA  RURAL
+
+                              *** THE   2ND HIGHEST  1-HR     WET DEPOSITION      VALUES FOR SOURCE GROUP:  NORTE    ***
+                                  INCLUDING SOURCE(S):     P02         , P04         , P06         , P08         , P09         , 
+                 P11         , P13         , P15         , 
+
+                                             *** DISCRETE CARTESIAN RECEPTOR POINTS ***
+
+                                        ** DEPO OF H2S      IN MILLIGRAMS/M**2                          **
+
+      X-COORD (M)  Y-COORD (M)        DEPO     (YYMMDDHH)              X-COORD (M)  Y-COORD (M)        DEPO     (YYMMDDHH)
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        774117.60   4608397.40   0.000000E+00  (00000000)                778486.80   4612807.20   0.000000E+00  (00000000)          
+        778504.80   4612765.20   0.000000E+00  (00000000)                778504.80   4612795.20   0.000000E+00  (00000000)          
+ *** AERMOD - VERSION 26135  ***   *** AERMOD cmp_gauss                                                     ***        10/18/26
+ *** AERMET - VERSION  26135 ***   *** MDT05+CORINE (CNIG) · ERA5 (CDS) · 1545 receptores                   ***        20:27:12
+                                                                                                                       PAGE  49
+ *** MODELOPTs:    NonDFAULT  CONC  DEPOS  DDEP  WDEP  ELEV  DRYDPLT  WETDPLT  ALPHA  RURAL
+
+                              *** THE   1ST HIGHEST 24-HR     WET DEPOSITION      VALUES FOR SOURCE GROUP:  ALL      ***
+                                  INCLUDING SOURCE(S):     P01         , P02         , P03         , P04         , P05         , 
+                 P06         , P07         , P08         , P09         , P10         , P11         , P12         , P13         , 
+                 P14         , P15         , P16         , P17         , 
+
+                                             *** DISCRETE CARTESIAN RECEPTOR POINTS ***
+
+                                        ** DEPO OF H2S      IN MILLIGRAMS/M**2                          **
+
+      X-COORD (M)  Y-COORD (M)        DEPO     (YYMMDDHH)              X-COORD (M)  Y-COORD (M)        DEPO     (YYMMDDHH)
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        774117.60   4608397.40   0.000000E+00  (00000000)                778486.80   4612807.20   0.000000E+00  (00000000)          
+        778504.80   4612765.20   0.000000E+00  (00000000)                778504.80   4612795.20   0.000000E+00  (00000000)          
+ *** AERMOD - VERSION 26135  ***   *** AERMOD cmp_gauss                                                     ***        10/18/26
+ *** AERMET - VERSION  26135 ***   *** MDT05+CORINE (CNIG) · ERA5 (CDS) · 1545 receptores                   ***        20:27:12
+                                                                                                                       PAGE  50
+ *** MODELOPTs:    NonDFAULT  CONC  DEPOS  DDEP  WDEP  ELEV  DRYDPLT  WETDPLT  ALPHA  RURAL
+
+                              *** THE   1ST HIGHEST 24-HR     WET DEPOSITION      VALUES FOR SOURCE GROUP:  NORTE    ***
+                                  INCLUDING SOURCE(S):     P02         , P04         , P06         , P08         , P09         , 
+                 P11         , P13         , P15         , 
+
+                                             *** DISCRETE CARTESIAN RECEPTOR POINTS ***
+
+                                        ** DEPO OF H2S      IN MILLIGRAMS/M**2                          **
+
+      X-COORD (M)  Y-COORD (M)        DEPO     (YYMMDDHH)              X-COORD (M)  Y-COORD (M)        DEPO     (YYMMDDHH)
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        774117.60   4608397.40   0.000000E+00  (00000000)                778486.80   4612807.20   0.000000E+00  (00000000)          
+        778504.80   4612765.20   0.000000E+00  (00000000)                778504.80   4612795.20   0.000000E+00  (00000000)          
+ *** AERMOD - VERSION 26135  ***   *** AERMOD cmp_gauss                                                     ***        10/18/26
+ *** AERMET - VERSION  26135 ***   *** MDT05+CORINE (CNIG) · ERA5 (CDS) · 1545 receptores                   ***        20:27:12
+                                                                                                                       PAGE  51
+ *** MODELOPTs:    NonDFAULT  CONC  DEPOS  DDEP  WDEP  ELEV  DRYDPLT  WETDPLT  ALPHA  RURAL
+
+                              *** THE   2ND HIGHEST 24-HR     WET DEPOSITION      VALUES FOR SOURCE GROUP:  ALL      ***
+                                  INCLUDING SOURCE(S):     P01         , P02         , P03         , P04         , P05         , 
+                 P06         , P07         , P08         , P09         , P10         , P11         , P12         , P13         , 
+                 P14         , P15         , P16         , P17         , 
+
+                                             *** DISCRETE CARTESIAN RECEPTOR POINTS ***
+
+                                        ** DEPO OF H2S      IN MILLIGRAMS/M**2                          **
+
+      X-COORD (M)  Y-COORD (M)        DEPO     (YYMMDDHH)              X-COORD (M)  Y-COORD (M)        DEPO     (YYMMDDHH)
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        774117.60   4608397.40   0.000000E+00  (00000000)                778486.80   4612807.20   0.000000E+00  (00000000)          
+        778504.80   4612765.20   0.000000E+00  (00000000)                778504.80   4612795.20   0.000000E+00  (00000000)          
+ *** AERMOD - VERSION 26135  ***   *** AERMOD cmp_gauss                                                     ***        10/18/26
+ *** AERMET - VERSION  26135 ***   *** MDT05+CORINE (CNIG) · ERA5 (CDS) · 1545 receptores                   ***        20:27:12
+                                                                                                                       PAGE  52
+ *** MODELOPTs:    NonDFAULT  CONC  DEPOS  DDEP  WDEP  ELEV  DRYDPLT  WETDPLT  ALPHA  RURAL
+
+                              *** THE   2ND HIGHEST 24-HR     WET DEPOSITION      VALUES FOR SOURCE GROUP:  NORTE    ***
+                                  INCLUDING SOURCE(S):     P02         , P04         , P06         , P08         , P09         , 
+                 P11         , P13         , P15         , 
+
+                                             *** DISCRETE CARTESIAN RECEPTOR POINTS ***
+
+                                        ** DEPO OF H2S      IN MILLIGRAMS/M**2                          **
+
+      X-COORD (M)  Y-COORD (M)        DEPO     (YYMMDDHH)              X-COORD (M)  Y-COORD (M)        DEPO     (YYMMDDHH)
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        774117.60   4608397.40   0.000000E+00  (00000000)                778486.80   4612807.20   0.000000E+00  (00000000)          
+        778504.80   4612765.20   0.000000E+00  (00000000)                778504.80   4612795.20   0.000000E+00  (00000000)          
+ *** AERMOD - VERSION 26135  ***   *** AERMOD cmp_gauss                                                     ***        10/18/26
+ *** AERMET - VERSION  26135 ***   *** MDT05+CORINE (CNIG) · ERA5 (CDS) · 1545 receptores                   ***        20:27:12
+                                                                                                                       PAGE  53
+ *** MODELOPTs:    NonDFAULT  CONC  DEPOS  DDEP  WDEP  ELEV  DRYDPLT  WETDPLT  ALPHA  RURAL
+
+                              *** THE MAXIMUM   50   1-HR AVERAGE CONCENTRATION   VALUES FOR SOURCE GROUP:  ALL      ***
+                                  INCLUDING SOURCE(S):     P01         , P02         , P03         , P04         , P05         , 
+                 P06         , P07         , P08         , P09         , P10         , P11         , P12         , P13         , 
+                 P14         , P15         , P16         , P17         , 
+
+                                        ** CONC OF H2S      IN MICROGRAMS/M**3                          **
+
+ RANK        CONC    (YYMMDDHH) AT      RECEPTOR (XR,YR) OF TYPE    RANK        CONC    (YYMMDDHH) AT      RECEPTOR (XR,YR) OF TYPE 
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    1.  0.799551E+02 (23020305) AT ( 778504.80, 4612765.20)  DC       26.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    2.  0.794445E+02 (23020306) AT ( 778504.80, 4612765.20)  DC       27.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    3.  0.242218E+02 (23020306) AT ( 778504.80, 4612795.20)  DC       28.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    4.  0.233961E+02 (23020304) AT ( 778504.80, 4612765.20)  DC       29.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    5.  0.753403E+01 (23020305) AT ( 778504.80, 4612795.20)  DC       30.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    6.  0.342748E+01 (23020302) AT ( 778504.80, 4612765.20)  DC       31.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    7.  0.223651E+01 (23020303) AT ( 778504.80, 4612765.20)  DC       32.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    8.  0.182450E+01 (23020306) AT ( 778486.80, 4612807.20)  DC       33.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    9.  0.249256E+00 (23020305) AT ( 778486.80, 4612807.20)  DC       34.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   10.  0.124336E+00 (23020304) AT ( 778504.80, 4612795.20)  DC       35.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   11.  0.106391E+00 (23020301) AT ( 778504.80, 4612765.20)  DC       36.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   12.  0.000000E+00 (00000000) AT (      0.00,       0.00)           37.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   13.  0.000000E+00 (00000000) AT (      0.00,       0.00)           38.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   14.  0.000000E+00 (00000000) AT (      0.00,       0.00)           39.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   15.  0.000000E+00 (00000000) AT (      0.00,       0.00)           40.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   16.  0.000000E+00 (00000000) AT (      0.00,       0.00)           41.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   17.  0.000000E+00 (00000000) AT (      0.00,       0.00)           42.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   18.  0.000000E+00 (00000000) AT (      0.00,       0.00)           43.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   19.  0.000000E+00 (00000000) AT (      0.00,       0.00)           44.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   20.  0.000000E+00 (00000000) AT (      0.00,       0.00)           45.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   21.  0.000000E+00 (00000000) AT (      0.00,       0.00)           46.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   22.  0.000000E+00 (00000000) AT (      0.00,       0.00)           47.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   23.  0.000000E+00 (00000000) AT (      0.00,       0.00)           48.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   24.  0.000000E+00 (00000000) AT (      0.00,       0.00)           49.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   25.  0.000000E+00 (00000000) AT (      0.00,       0.00)           50.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+
+  *** RECEPTOR TYPES:  GC = GRIDCART
+                       GP = GRIDPOLR
+                       DC = DISCCART
+                       DP = DISCPOLR
+ *** AERMOD - VERSION 26135  ***   *** AERMOD cmp_gauss                                                     ***        10/18/26
+ *** AERMET - VERSION  26135 ***   *** MDT05+CORINE (CNIG) · ERA5 (CDS) · 1545 receptores                   ***        20:27:12
+                                                                                                                       PAGE  54
+ *** MODELOPTs:    NonDFAULT  CONC  DEPOS  DDEP  WDEP  ELEV  DRYDPLT  WETDPLT  ALPHA  RURAL
+
+                              *** THE MAXIMUM   50   1-HR AVERAGE CONCENTRATION   VALUES FOR SOURCE GROUP:  NORTE    ***
+                                  INCLUDING SOURCE(S):     P02         , P04         , P06         , P08         , P09         , 
+                 P11         , P13         , P15         , 
+
+                                        ** CONC OF H2S      IN MICROGRAMS/M**3                          **
+
+ RANK        CONC    (YYMMDDHH) AT      RECEPTOR (XR,YR) OF TYPE    RANK        CONC    (YYMMDDHH) AT      RECEPTOR (XR,YR) OF TYPE 
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    1.  0.000000E+00 (00000000) AT (      0.00,       0.00)           26.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    2.  0.000000E+00 (00000000) AT (      0.00,       0.00)           27.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    3.  0.000000E+00 (00000000) AT (      0.00,       0.00)           28.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    4.  0.000000E+00 (00000000) AT (      0.00,       0.00)           29.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    5.  0.000000E+00 (00000000) AT (      0.00,       0.00)           30.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    6.  0.000000E+00 (00000000) AT (      0.00,       0.00)           31.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    7.  0.000000E+00 (00000000) AT (      0.00,       0.00)           32.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    8.  0.000000E+00 (00000000) AT (      0.00,       0.00)           33.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    9.  0.000000E+00 (00000000) AT (      0.00,       0.00)           34.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   10.  0.000000E+00 (00000000) AT (      0.00,       0.00)           35.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   11.  0.000000E+00 (00000000) AT (      0.00,       0.00)           36.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   12.  0.000000E+00 (00000000) AT (      0.00,       0.00)           37.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   13.  0.000000E+00 (00000000) AT (      0.00,       0.00)           38.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   14.  0.000000E+00 (00000000) AT (      0.00,       0.00)           39.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   15.  0.000000E+00 (00000000) AT (      0.00,       0.00)           40.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   16.  0.000000E+00 (00000000) AT (      0.00,       0.00)           41.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   17.  0.000000E+00 (00000000) AT (      0.00,       0.00)           42.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   18.  0.000000E+00 (00000000) AT (      0.00,       0.00)           43.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   19.  0.000000E+00 (00000000) AT (      0.00,       0.00)           44.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   20.  0.000000E+00 (00000000) AT (      0.00,       0.00)           45.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   21.  0.000000E+00 (00000000) AT (      0.00,       0.00)           46.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   22.  0.000000E+00 (00000000) AT (      0.00,       0.00)           47.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   23.  0.000000E+00 (00000000) AT (      0.00,       0.00)           48.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   24.  0.000000E+00 (00000000) AT (      0.00,       0.00)           49.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   25.  0.000000E+00 (00000000) AT (      0.00,       0.00)           50.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+
+  *** RECEPTOR TYPES:  GC = GRIDCART
+                       GP = GRIDPOLR
+                       DC = DISCCART
+                       DP = DISCPOLR
+ *** AERMOD - VERSION 26135  ***   *** AERMOD cmp_gauss                                                     ***        10/18/26
+ *** AERMET - VERSION  26135 ***   *** MDT05+CORINE (CNIG) · ERA5 (CDS) · 1545 receptores                   ***        20:27:12
+                                                                                                                       PAGE  55
+ *** MODELOPTs:    NonDFAULT  CONC  DEPOS  DDEP  WDEP  ELEV  DRYDPLT  WETDPLT  ALPHA  RURAL
+
+                              *** THE MAXIMUM   50  24-HR AVERAGE CONCENTRATION   VALUES FOR SOURCE GROUP:  ALL      ***
+                                  INCLUDING SOURCE(S):     P01         , P02         , P03         , P04         , P05         , 
+                 P06         , P07         , P08         , P09         , P10         , P11         , P12         , P13         , 
+                 P14         , P15         , P16         , P17         , 
+
+                                        ** CONC OF H2S      IN MICROGRAMS/M**3                          **
+
+ RANK        CONC    (YYMMDDHH) AT      RECEPTOR (XR,YR) OF TYPE    RANK        CONC    (YYMMDDHH) AT      RECEPTOR (XR,YR) OF TYPE 
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    1.  0.000000E+00 (00000000) AT (      0.00,       0.00)           26.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    2.  0.000000E+00 (00000000) AT (      0.00,       0.00)           27.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    3.  0.000000E+00 (00000000) AT (      0.00,       0.00)           28.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    4.  0.000000E+00 (00000000) AT (      0.00,       0.00)           29.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    5.  0.000000E+00 (00000000) AT (      0.00,       0.00)           30.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    6.  0.000000E+00 (00000000) AT (      0.00,       0.00)           31.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    7.  0.000000E+00 (00000000) AT (      0.00,       0.00)           32.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    8.  0.000000E+00 (00000000) AT (      0.00,       0.00)           33.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    9.  0.000000E+00 (00000000) AT (      0.00,       0.00)           34.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   10.  0.000000E+00 (00000000) AT (      0.00,       0.00)           35.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   11.  0.000000E+00 (00000000) AT (      0.00,       0.00)           36.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   12.  0.000000E+00 (00000000) AT (      0.00,       0.00)           37.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   13.  0.000000E+00 (00000000) AT (      0.00,       0.00)           38.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   14.  0.000000E+00 (00000000) AT (      0.00,       0.00)           39.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   15.  0.000000E+00 (00000000) AT (      0.00,       0.00)           40.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   16.  0.000000E+00 (00000000) AT (      0.00,       0.00)           41.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   17.  0.000000E+00 (00000000) AT (      0.00,       0.00)           42.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   18.  0.000000E+00 (00000000) AT (      0.00,       0.00)           43.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   19.  0.000000E+00 (00000000) AT (      0.00,       0.00)           44.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   20.  0.000000E+00 (00000000) AT (      0.00,       0.00)           45.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   21.  0.000000E+00 (00000000) AT (      0.00,       0.00)           46.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   22.  0.000000E+00 (00000000) AT (      0.00,       0.00)           47.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   23.  0.000000E+00 (00000000) AT (      0.00,       0.00)           48.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   24.  0.000000E+00 (00000000) AT (      0.00,       0.00)           49.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   25.  0.000000E+00 (00000000) AT (      0.00,       0.00)           50.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+
+  *** RECEPTOR TYPES:  GC = GRIDCART
+                       GP = GRIDPOLR
+                       DC = DISCCART
+                       DP = DISCPOLR
+ *** AERMOD - VERSION 26135  ***   *** AERMOD cmp_gauss                                                     ***        10/18/26
+ *** AERMET - VERSION  26135 ***   *** MDT05+CORINE (CNIG) · ERA5 (CDS) · 1545 receptores                   ***        20:27:12
+                                                                                                                       PAGE  56
+ *** MODELOPTs:    NonDFAULT  CONC  DEPOS  DDEP  WDEP  ELEV  DRYDPLT  WETDPLT  ALPHA  RURAL
+
+                              *** THE MAXIMUM   50  24-HR AVERAGE CONCENTRATION   VALUES FOR SOURCE GROUP:  NORTE    ***
+                                  INCLUDING SOURCE(S):     P02         , P04         , P06         , P08         , P09         , 
+                 P11         , P13         , P15         , 
+
+                                        ** CONC OF H2S      IN MICROGRAMS/M**3                          **
+
+ RANK        CONC    (YYMMDDHH) AT      RECEPTOR (XR,YR) OF TYPE    RANK        CONC    (YYMMDDHH) AT      RECEPTOR (XR,YR) OF TYPE 
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    1.  0.000000E+00 (00000000) AT (      0.00,       0.00)           26.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    2.  0.000000E+00 (00000000) AT (      0.00,       0.00)           27.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    3.  0.000000E+00 (00000000) AT (      0.00,       0.00)           28.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    4.  0.000000E+00 (00000000) AT (      0.00,       0.00)           29.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    5.  0.000000E+00 (00000000) AT (      0.00,       0.00)           30.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    6.  0.000000E+00 (00000000) AT (      0.00,       0.00)           31.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    7.  0.000000E+00 (00000000) AT (      0.00,       0.00)           32.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    8.  0.000000E+00 (00000000) AT (      0.00,       0.00)           33.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    9.  0.000000E+00 (00000000) AT (      0.00,       0.00)           34.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   10.  0.000000E+00 (00000000) AT (      0.00,       0.00)           35.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   11.  0.000000E+00 (00000000) AT (      0.00,       0.00)           36.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   12.  0.000000E+00 (00000000) AT (      0.00,       0.00)           37.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   13.  0.000000E+00 (00000000) AT (      0.00,       0.00)           38.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   14.  0.000000E+00 (00000000) AT (      0.00,       0.00)           39.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   15.  0.000000E+00 (00000000) AT (      0.00,       0.00)           40.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   16.  0.000000E+00 (00000000) AT (      0.00,       0.00)           41.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   17.  0.000000E+00 (00000000) AT (      0.00,       0.00)           42.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   18.  0.000000E+00 (00000000) AT (      0.00,       0.00)           43.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   19.  0.000000E+00 (00000000) AT (      0.00,       0.00)           44.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   20.  0.000000E+00 (00000000) AT (      0.00,       0.00)           45.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   21.  0.000000E+00 (00000000) AT (      0.00,       0.00)           46.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   22.  0.000000E+00 (00000000) AT (      0.00,       0.00)           47.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   23.  0.000000E+00 (00000000) AT (      0.00,       0.00)           48.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   24.  0.000000E+00 (00000000) AT (      0.00,       0.00)           49.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   25.  0.000000E+00 (00000000) AT (      0.00,       0.00)           50.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+
+  *** RECEPTOR TYPES:  GC = GRIDCART
+                       GP = GRIDPOLR
+                       DC = DISCCART
+                       DP = DISCPOLR
+ *** AERMOD - VERSION 26135  ***   *** AERMOD cmp_gauss                                                     ***        10/18/26
+ *** AERMET - VERSION  26135 ***   *** MDT05+CORINE (CNIG) · ERA5 (CDS) · 1545 receptores                   ***        20:27:12
+                                                                                                                       PAGE  57
+ *** MODELOPTs:    NonDFAULT  CONC  DEPOS  DDEP  WDEP  ELEV  DRYDPLT  WETDPLT  ALPHA  RURAL
+
+                              *** THE MAXIMUM   50   1-HR   TOTAL DEPOSITION      VALUES FOR SOURCE GROUP:  ALL      ***
+                                  INCLUDING SOURCE(S):     P01         , P02         , P03         , P04         , P05         , 
+                 P06         , P07         , P08         , P09         , P10         , P11         , P12         , P13         , 
+                 P14         , P15         , P16         , P17         , 
+
+                                        ** DEPO OF H2S      IN MILLIGRAMS/M**2                          **
+
+ RANK        DEPO    (YYMMDDHH) AT      RECEPTOR (XR,YR) OF TYPE    RANK        DEPO    (YYMMDDHH) AT      RECEPTOR (XR,YR) OF TYPE 
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    1.  0.964321E-01 (23020305) AT ( 778504.80, 4612765.20)  DC       26.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    2.  0.945636E-01 (23020306) AT ( 778504.80, 4612765.20)  DC       27.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    3.  0.270389E-01 (23020304) AT ( 778504.80, 4612765.20)  DC       28.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    4.  0.257477E-01 (23020306) AT ( 778504.80, 4612795.20)  DC       29.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    5.  0.857052E-02 (23020305) AT ( 778504.80, 4612795.20)  DC       30.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    6.  0.415064E-02 (23020302) AT ( 778504.80, 4612765.20)  DC       31.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    7.  0.263956E-02 (23020303) AT ( 778504.80, 4612765.20)  DC       32.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    8.  0.190182E-02 (23020306) AT ( 778486.80, 4612807.20)  DC       33.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    9.  0.278759E-03 (23020305) AT ( 778486.80, 4612807.20)  DC       34.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   10.  0.136391E-03 (23020304) AT ( 778504.80, 4612795.20)  DC       35.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   11.  0.130357E-03 (23020301) AT ( 778504.80, 4612765.20)  DC       36.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   12.  0.000000E+00 (00000000) AT (      0.00,       0.00)           37.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   13.  0.000000E+00 (00000000) AT (      0.00,       0.00)           38.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   14.  0.000000E+00 (00000000) AT (      0.00,       0.00)           39.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   15.  0.000000E+00 (00000000) AT (      0.00,       0.00)           40.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   16.  0.000000E+00 (00000000) AT (      0.00,       0.00)           41.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   17.  0.000000E+00 (00000000) AT (      0.00,       0.00)           42.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   18.  0.000000E+00 (00000000) AT (      0.00,       0.00)           43.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   19.  0.000000E+00 (00000000) AT (      0.00,       0.00)           44.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   20.  0.000000E+00 (00000000) AT (      0.00,       0.00)           45.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   21.  0.000000E+00 (00000000) AT (      0.00,       0.00)           46.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   22.  0.000000E+00 (00000000) AT (      0.00,       0.00)           47.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   23.  0.000000E+00 (00000000) AT (      0.00,       0.00)           48.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   24.  0.000000E+00 (00000000) AT (      0.00,       0.00)           49.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   25.  0.000000E+00 (00000000) AT (      0.00,       0.00)           50.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+
+  *** RECEPTOR TYPES:  GC = GRIDCART
+                       GP = GRIDPOLR
+                       DC = DISCCART
+                       DP = DISCPOLR
+ *** AERMOD - VERSION 26135  ***   *** AERMOD cmp_gauss                                                     ***        10/18/26
+ *** AERMET - VERSION  26135 ***   *** MDT05+CORINE (CNIG) · ERA5 (CDS) · 1545 receptores                   ***        20:27:12
+                                                                                                                       PAGE  58
+ *** MODELOPTs:    NonDFAULT  CONC  DEPOS  DDEP  WDEP  ELEV  DRYDPLT  WETDPLT  ALPHA  RURAL
+
+                              *** THE MAXIMUM   50   1-HR   TOTAL DEPOSITION      VALUES FOR SOURCE GROUP:  NORTE    ***
+                                  INCLUDING SOURCE(S):     P02         , P04         , P06         , P08         , P09         , 
+                 P11         , P13         , P15         , 
+
+                                        ** DEPO OF H2S      IN MILLIGRAMS/M**2                          **
+
+ RANK        DEPO    (YYMMDDHH) AT      RECEPTOR (XR,YR) OF TYPE    RANK        DEPO    (YYMMDDHH) AT      RECEPTOR (XR,YR) OF TYPE 
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    1.  0.000000E+00 (00000000) AT (      0.00,       0.00)           26.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    2.  0.000000E+00 (00000000) AT (      0.00,       0.00)           27.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    3.  0.000000E+00 (00000000) AT (      0.00,       0.00)           28.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    4.  0.000000E+00 (00000000) AT (      0.00,       0.00)           29.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    5.  0.000000E+00 (00000000) AT (      0.00,       0.00)           30.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    6.  0.000000E+00 (00000000) AT (      0.00,       0.00)           31.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    7.  0.000000E+00 (00000000) AT (      0.00,       0.00)           32.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    8.  0.000000E+00 (00000000) AT (      0.00,       0.00)           33.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    9.  0.000000E+00 (00000000) AT (      0.00,       0.00)           34.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   10.  0.000000E+00 (00000000) AT (      0.00,       0.00)           35.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   11.  0.000000E+00 (00000000) AT (      0.00,       0.00)           36.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   12.  0.000000E+00 (00000000) AT (      0.00,       0.00)           37.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   13.  0.000000E+00 (00000000) AT (      0.00,       0.00)           38.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   14.  0.000000E+00 (00000000) AT (      0.00,       0.00)           39.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   15.  0.000000E+00 (00000000) AT (      0.00,       0.00)           40.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   16.  0.000000E+00 (00000000) AT (      0.00,       0.00)           41.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   17.  0.000000E+00 (00000000) AT (      0.00,       0.00)           42.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   18.  0.000000E+00 (00000000) AT (      0.00,       0.00)           43.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   19.  0.000000E+00 (00000000) AT (      0.00,       0.00)           44.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   20.  0.000000E+00 (00000000) AT (      0.00,       0.00)           45.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   21.  0.000000E+00 (00000000) AT (      0.00,       0.00)           46.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   22.  0.000000E+00 (00000000) AT (      0.00,       0.00)           47.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   23.  0.000000E+00 (00000000) AT (      0.00,       0.00)           48.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   24.  0.000000E+00 (00000000) AT (      0.00,       0.00)           49.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   25.  0.000000E+00 (00000000) AT (      0.00,       0.00)           50.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+
+  *** RECEPTOR TYPES:  GC = GRIDCART
+                       GP = GRIDPOLR
+                       DC = DISCCART
+                       DP = DISCPOLR
+ *** AERMOD - VERSION 26135  ***   *** AERMOD cmp_gauss                                                     ***        10/18/26
+ *** AERMET - VERSION  26135 ***   *** MDT05+CORINE (CNIG) · ERA5 (CDS) · 1545 receptores                   ***        20:27:12
+                                                                                                                       PAGE  59
+ *** MODELOPTs:    NonDFAULT  CONC  DEPOS  DDEP  WDEP  ELEV  DRYDPLT  WETDPLT  ALPHA  RURAL
+
+                              *** THE MAXIMUM   50  24-HR   TOTAL DEPOSITION      VALUES FOR SOURCE GROUP:  ALL      ***
+                                  INCLUDING SOURCE(S):     P01         , P02         , P03         , P04         , P05         , 
+                 P06         , P07         , P08         , P09         , P10         , P11         , P12         , P13         , 
+                 P14         , P15         , P16         , P17         , 
+
+                                        ** DEPO OF H2S      IN MILLIGRAMS/M**2                          **
+
+ RANK        DEPO    (YYMMDDHH) AT      RECEPTOR (XR,YR) OF TYPE    RANK        DEPO    (YYMMDDHH) AT      RECEPTOR (XR,YR) OF TYPE 
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    1.  0.000000E+00 (00000000) AT (      0.00,       0.00)           26.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    2.  0.000000E+00 (00000000) AT (      0.00,       0.00)           27.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    3.  0.000000E+00 (00000000) AT (      0.00,       0.00)           28.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    4.  0.000000E+00 (00000000) AT (      0.00,       0.00)           29.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    5.  0.000000E+00 (00000000) AT (      0.00,       0.00)           30.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    6.  0.000000E+00 (00000000) AT (      0.00,       0.00)           31.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    7.  0.000000E+00 (00000000) AT (      0.00,       0.00)           32.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    8.  0.000000E+00 (00000000) AT (      0.00,       0.00)           33.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    9.  0.000000E+00 (00000000) AT (      0.00,       0.00)           34.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   10.  0.000000E+00 (00000000) AT (      0.00,       0.00)           35.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   11.  0.000000E+00 (00000000) AT (      0.00,       0.00)           36.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   12.  0.000000E+00 (00000000) AT (      0.00,       0.00)           37.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   13.  0.000000E+00 (00000000) AT (      0.00,       0.00)           38.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   14.  0.000000E+00 (00000000) AT (      0.00,       0.00)           39.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   15.  0.000000E+00 (00000000) AT (      0.00,       0.00)           40.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   16.  0.000000E+00 (00000000) AT (      0.00,       0.00)           41.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   17.  0.000000E+00 (00000000) AT (      0.00,       0.00)           42.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   18.  0.000000E+00 (00000000) AT (      0.00,       0.00)           43.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   19.  0.000000E+00 (00000000) AT (      0.00,       0.00)           44.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   20.  0.000000E+00 (00000000) AT (      0.00,       0.00)           45.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   21.  0.000000E+00 (00000000) AT (      0.00,       0.00)           46.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   22.  0.000000E+00 (00000000) AT (      0.00,       0.00)           47.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   23.  0.000000E+00 (00000000) AT (      0.00,       0.00)           48.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   24.  0.000000E+00 (00000000) AT (      0.00,       0.00)           49.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   25.  0.000000E+00 (00000000) AT (      0.00,       0.00)           50.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+
+  *** RECEPTOR TYPES:  GC = GRIDCART
+                       GP = GRIDPOLR
+                       DC = DISCCART
+                       DP = DISCPOLR
+ *** AERMOD - VERSION 26135  ***   *** AERMOD cmp_gauss                                                     ***        10/18/26
+ *** AERMET - VERSION  26135 ***   *** MDT05+CORINE (CNIG) · ERA5 (CDS) · 1545 receptores                   ***        20:27:12
+                                                                                                                       PAGE  60
+ *** MODELOPTs:    NonDFAULT  CONC  DEPOS  DDEP  WDEP  ELEV  DRYDPLT  WETDPLT  ALPHA  RURAL
+
+                              *** THE MAXIMUM   50  24-HR   TOTAL DEPOSITION      VALUES FOR SOURCE GROUP:  NORTE    ***
+                                  INCLUDING SOURCE(S):     P02         , P04         , P06         , P08         , P09         , 
+                 P11         , P13         , P15         , 
+
+                                        ** DEPO OF H2S      IN MILLIGRAMS/M**2                          **
+
+ RANK        DEPO    (YYMMDDHH) AT      RECEPTOR (XR,YR) OF TYPE    RANK        DEPO    (YYMMDDHH) AT      RECEPTOR (XR,YR) OF TYPE 
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    1.  0.000000E+00 (00000000) AT (      0.00,       0.00)           26.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    2.  0.000000E+00 (00000000) AT (      0.00,       0.00)           27.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    3.  0.000000E+00 (00000000) AT (      0.00,       0.00)           28.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    4.  0.000000E+00 (00000000) AT (      0.00,       0.00)           29.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    5.  0.000000E+00 (00000000) AT (      0.00,       0.00)           30.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    6.  0.000000E+00 (00000000) AT (      0.00,       0.00)           31.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    7.  0.000000E+00 (00000000) AT (      0.00,       0.00)           32.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    8.  0.000000E+00 (00000000) AT (      0.00,       0.00)           33.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    9.  0.000000E+00 (00000000) AT (      0.00,       0.00)           34.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   10.  0.000000E+00 (00000000) AT (      0.00,       0.00)           35.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   11.  0.000000E+00 (00000000) AT (      0.00,       0.00)           36.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   12.  0.000000E+00 (00000000) AT (      0.00,       0.00)           37.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   13.  0.000000E+00 (00000000) AT (      0.00,       0.00)           38.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   14.  0.000000E+00 (00000000) AT (      0.00,       0.00)           39.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   15.  0.000000E+00 (00000000) AT (      0.00,       0.00)           40.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   16.  0.000000E+00 (00000000) AT (      0.00,       0.00)           41.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   17.  0.000000E+00 (00000000) AT (      0.00,       0.00)           42.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   18.  0.000000E+00 (00000000) AT (      0.00,       0.00)           43.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   19.  0.000000E+00 (00000000) AT (      0.00,       0.00)           44.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   20.  0.000000E+00 (00000000) AT (      0.00,       0.00)           45.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   21.  0.000000E+00 (00000000) AT (      0.00,       0.00)           46.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   22.  0.000000E+00 (00000000) AT (      0.00,       0.00)           47.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   23.  0.000000E+00 (00000000) AT (      0.00,       0.00)           48.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   24.  0.000000E+00 (00000000) AT (      0.00,       0.00)           49.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   25.  0.000000E+00 (00000000) AT (      0.00,       0.00)           50.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+
+  *** RECEPTOR TYPES:  GC = GRIDCART
+                       GP = GRIDPOLR
+                       DC = DISCCART
+                       DP = DISCPOLR
+ *** AERMOD - VERSION 26135  ***   *** AERMOD cmp_gauss                                                     ***        10/18/26
+ *** AERMET - VERSION  26135 ***   *** MDT05+CORINE (CNIG) · ERA5 (CDS) · 1545 receptores                   ***        20:27:12
+                                                                                                                       PAGE  61
+ *** MODELOPTs:    NonDFAULT  CONC  DEPOS  DDEP  WDEP  ELEV  DRYDPLT  WETDPLT  ALPHA  RURAL
+
+                              *** THE MAXIMUM   50   1-HR     DRY DEPOSITION      VALUES FOR SOURCE GROUP:  ALL      ***
+                                  INCLUDING SOURCE(S):     P01         , P02         , P03         , P04         , P05         , 
+                 P06         , P07         , P08         , P09         , P10         , P11         , P12         , P13         , 
+                 P14         , P15         , P16         , P17         , 
+
+                                        ** DEPO OF H2S      IN MILLIGRAMS/M**2                          **
+
+ RANK        DEPO    (YYMMDDHH) AT      RECEPTOR (XR,YR) OF TYPE    RANK        DEPO    (YYMMDDHH) AT      RECEPTOR (XR,YR) OF TYPE 
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    1.  0.964321E-01 (23020305) AT ( 778504.80, 4612765.20)  DC       26.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    2.  0.945631E-01 (23020306) AT ( 778504.80, 4612765.20)  DC       27.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    3.  0.270389E-01 (23020304) AT ( 778504.80, 4612765.20)  DC       28.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    4.  0.257475E-01 (23020306) AT ( 778504.80, 4612795.20)  DC       29.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    5.  0.857052E-02 (23020305) AT ( 778504.80, 4612795.20)  DC       30.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    6.  0.415064E-02 (23020302) AT ( 778504.80, 4612765.20)  DC       31.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    7.  0.263951E-02 (23020303) AT ( 778504.80, 4612765.20)  DC       32.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    8.  0.190180E-02 (23020306) AT ( 778486.80, 4612807.20)  DC       33.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    9.  0.278759E-03 (23020305) AT ( 778486.80, 4612807.20)  DC       34.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   10.  0.136391E-03 (23020304) AT ( 778504.80, 4612795.20)  DC       35.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   11.  0.130357E-03 (23020301) AT ( 778504.80, 4612765.20)  DC       36.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   12.  0.000000E+00 (00000000) AT (      0.00,       0.00)           37.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   13.  0.000000E+00 (00000000) AT (      0.00,       0.00)           38.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   14.  0.000000E+00 (00000000) AT (      0.00,       0.00)           39.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   15.  0.000000E+00 (00000000) AT (      0.00,       0.00)           40.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   16.  0.000000E+00 (00000000) AT (      0.00,       0.00)           41.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   17.  0.000000E+00 (00000000) AT (      0.00,       0.00)           42.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   18.  0.000000E+00 (00000000) AT (      0.00,       0.00)           43.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   19.  0.000000E+00 (00000000) AT (      0.00,       0.00)           44.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   20.  0.000000E+00 (00000000) AT (      0.00,       0.00)           45.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   21.  0.000000E+00 (00000000) AT (      0.00,       0.00)           46.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   22.  0.000000E+00 (00000000) AT (      0.00,       0.00)           47.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   23.  0.000000E+00 (00000000) AT (      0.00,       0.00)           48.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   24.  0.000000E+00 (00000000) AT (      0.00,       0.00)           49.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   25.  0.000000E+00 (00000000) AT (      0.00,       0.00)           50.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+
+  *** RECEPTOR TYPES:  GC = GRIDCART
+                       GP = GRIDPOLR
+                       DC = DISCCART
+                       DP = DISCPOLR
+ *** AERMOD - VERSION 26135  ***   *** AERMOD cmp_gauss                                                     ***        10/18/26
+ *** AERMET - VERSION  26135 ***   *** MDT05+CORINE (CNIG) · ERA5 (CDS) · 1545 receptores                   ***        20:27:12
+                                                                                                                       PAGE  62
+ *** MODELOPTs:    NonDFAULT  CONC  DEPOS  DDEP  WDEP  ELEV  DRYDPLT  WETDPLT  ALPHA  RURAL
+
+                              *** THE MAXIMUM   50   1-HR     DRY DEPOSITION      VALUES FOR SOURCE GROUP:  NORTE    ***
+                                  INCLUDING SOURCE(S):     P02         , P04         , P06         , P08         , P09         , 
+                 P11         , P13         , P15         , 
+
+                                        ** DEPO OF H2S      IN MILLIGRAMS/M**2                          **
+
+ RANK        DEPO    (YYMMDDHH) AT      RECEPTOR (XR,YR) OF TYPE    RANK        DEPO    (YYMMDDHH) AT      RECEPTOR (XR,YR) OF TYPE 
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    1.  0.000000E+00 (00000000) AT (      0.00,       0.00)           26.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    2.  0.000000E+00 (00000000) AT (      0.00,       0.00)           27.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    3.  0.000000E+00 (00000000) AT (      0.00,       0.00)           28.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    4.  0.000000E+00 (00000000) AT (      0.00,       0.00)           29.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    5.  0.000000E+00 (00000000) AT (      0.00,       0.00)           30.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    6.  0.000000E+00 (00000000) AT (      0.00,       0.00)           31.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    7.  0.000000E+00 (00000000) AT (      0.00,       0.00)           32.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    8.  0.000000E+00 (00000000) AT (      0.00,       0.00)           33.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    9.  0.000000E+00 (00000000) AT (      0.00,       0.00)           34.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   10.  0.000000E+00 (00000000) AT (      0.00,       0.00)           35.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   11.  0.000000E+00 (00000000) AT (      0.00,       0.00)           36.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   12.  0.000000E+00 (00000000) AT (      0.00,       0.00)           37.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   13.  0.000000E+00 (00000000) AT (      0.00,       0.00)           38.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   14.  0.000000E+00 (00000000) AT (      0.00,       0.00)           39.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   15.  0.000000E+00 (00000000) AT (      0.00,       0.00)           40.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   16.  0.000000E+00 (00000000) AT (      0.00,       0.00)           41.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   17.  0.000000E+00 (00000000) AT (      0.00,       0.00)           42.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   18.  0.000000E+00 (00000000) AT (      0.00,       0.00)           43.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   19.  0.000000E+00 (00000000) AT (      0.00,       0.00)           44.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   20.  0.000000E+00 (00000000) AT (      0.00,       0.00)           45.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   21.  0.000000E+00 (00000000) AT (      0.00,       0.00)           46.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   22.  0.000000E+00 (00000000) AT (      0.00,       0.00)           47.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   23.  0.000000E+00 (00000000) AT (      0.00,       0.00)           48.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   24.  0.000000E+00 (00000000) AT (      0.00,       0.00)           49.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   25.  0.000000E+00 (00000000) AT (      0.00,       0.00)           50.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+
+  *** RECEPTOR TYPES:  GC = GRIDCART
+                       GP = GRIDPOLR
+                       DC = DISCCART
+                       DP = DISCPOLR
+ *** AERMOD - VERSION 26135  ***   *** AERMOD cmp_gauss                                                     ***        10/18/26
+ *** AERMET - VERSION  26135 ***   *** MDT05+CORINE (CNIG) · ERA5 (CDS) · 1545 receptores                   ***        20:27:12
+                                                                                                                       PAGE  63
+ *** MODELOPTs:    NonDFAULT  CONC  DEPOS  DDEP  WDEP  ELEV  DRYDPLT  WETDPLT  ALPHA  RURAL
+
+                              *** THE MAXIMUM   50  24-HR     DRY DEPOSITION      VALUES FOR SOURCE GROUP:  ALL      ***
+                                  INCLUDING SOURCE(S):     P01         , P02         , P03         , P04         , P05         , 
+                 P06         , P07         , P08         , P09         , P10         , P11         , P12         , P13         , 
+                 P14         , P15         , P16         , P17         , 
+
+                                        ** DEPO OF H2S      IN MILLIGRAMS/M**2                          **
+
+ RANK        DEPO    (YYMMDDHH) AT      RECEPTOR (XR,YR) OF TYPE    RANK        DEPO    (YYMMDDHH) AT      RECEPTOR (XR,YR) OF TYPE 
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    1.  0.000000E+00 (00000000) AT (      0.00,       0.00)           26.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    2.  0.000000E+00 (00000000) AT (      0.00,       0.00)           27.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    3.  0.000000E+00 (00000000) AT (      0.00,       0.00)           28.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    4.  0.000000E+00 (00000000) AT (      0.00,       0.00)           29.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    5.  0.000000E+00 (00000000) AT (      0.00,       0.00)           30.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    6.  0.000000E+00 (00000000) AT (      0.00,       0.00)           31.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    7.  0.000000E+00 (00000000) AT (      0.00,       0.00)           32.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    8.  0.000000E+00 (00000000) AT (      0.00,       0.00)           33.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    9.  0.000000E+00 (00000000) AT (      0.00,       0.00)           34.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   10.  0.000000E+00 (00000000) AT (      0.00,       0.00)           35.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   11.  0.000000E+00 (00000000) AT (      0.00,       0.00)           36.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   12.  0.000000E+00 (00000000) AT (      0.00,       0.00)           37.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   13.  0.000000E+00 (00000000) AT (      0.00,       0.00)           38.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   14.  0.000000E+00 (00000000) AT (      0.00,       0.00)           39.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   15.  0.000000E+00 (00000000) AT (      0.00,       0.00)           40.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   16.  0.000000E+00 (00000000) AT (      0.00,       0.00)           41.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   17.  0.000000E+00 (00000000) AT (      0.00,       0.00)           42.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   18.  0.000000E+00 (00000000) AT (      0.00,       0.00)           43.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   19.  0.000000E+00 (00000000) AT (      0.00,       0.00)           44.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   20.  0.000000E+00 (00000000) AT (      0.00,       0.00)           45.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   21.  0.000000E+00 (00000000) AT (      0.00,       0.00)           46.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   22.  0.000000E+00 (00000000) AT (      0.00,       0.00)           47.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   23.  0.000000E+00 (00000000) AT (      0.00,       0.00)           48.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   24.  0.000000E+00 (00000000) AT (      0.00,       0.00)           49.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   25.  0.000000E+00 (00000000) AT (      0.00,       0.00)           50.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+
+  *** RECEPTOR TYPES:  GC = GRIDCART
+                       GP = GRIDPOLR
+                       DC = DISCCART
+                       DP = DISCPOLR
+ *** AERMOD - VERSION 26135  ***   *** AERMOD cmp_gauss                                                     ***        10/18/26
+ *** AERMET - VERSION  26135 ***   *** MDT05+CORINE (CNIG) · ERA5 (CDS) · 1545 receptores                   ***        20:27:12
+                                                                                                                       PAGE  64
+ *** MODELOPTs:    NonDFAULT  CONC  DEPOS  DDEP  WDEP  ELEV  DRYDPLT  WETDPLT  ALPHA  RURAL
+
+                              *** THE MAXIMUM   50  24-HR     DRY DEPOSITION      VALUES FOR SOURCE GROUP:  NORTE    ***
+                                  INCLUDING SOURCE(S):     P02         , P04         , P06         , P08         , P09         , 
+                 P11         , P13         , P15         , 
+
+                                        ** DEPO OF H2S      IN MILLIGRAMS/M**2                          **
+
+ RANK        DEPO    (YYMMDDHH) AT      RECEPTOR (XR,YR) OF TYPE    RANK        DEPO    (YYMMDDHH) AT      RECEPTOR (XR,YR) OF TYPE 
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    1.  0.000000E+00 (00000000) AT (      0.00,       0.00)           26.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    2.  0.000000E+00 (00000000) AT (      0.00,       0.00)           27.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    3.  0.000000E+00 (00000000) AT (      0.00,       0.00)           28.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    4.  0.000000E+00 (00000000) AT (      0.00,       0.00)           29.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    5.  0.000000E+00 (00000000) AT (      0.00,       0.00)           30.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    6.  0.000000E+00 (00000000) AT (      0.00,       0.00)           31.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    7.  0.000000E+00 (00000000) AT (      0.00,       0.00)           32.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    8.  0.000000E+00 (00000000) AT (      0.00,       0.00)           33.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    9.  0.000000E+00 (00000000) AT (      0.00,       0.00)           34.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   10.  0.000000E+00 (00000000) AT (      0.00,       0.00)           35.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   11.  0.000000E+00 (00000000) AT (      0.00,       0.00)           36.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   12.  0.000000E+00 (00000000) AT (      0.00,       0.00)           37.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   13.  0.000000E+00 (00000000) AT (      0.00,       0.00)           38.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   14.  0.000000E+00 (00000000) AT (      0.00,       0.00)           39.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   15.  0.000000E+00 (00000000) AT (      0.00,       0.00)           40.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   16.  0.000000E+00 (00000000) AT (      0.00,       0.00)           41.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   17.  0.000000E+00 (00000000) AT (      0.00,       0.00)           42.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   18.  0.000000E+00 (00000000) AT (      0.00,       0.00)           43.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   19.  0.000000E+00 (00000000) AT (      0.00,       0.00)           44.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   20.  0.000000E+00 (00000000) AT (      0.00,       0.00)           45.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   21.  0.000000E+00 (00000000) AT (      0.00,       0.00)           46.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   22.  0.000000E+00 (00000000) AT (      0.00,       0.00)           47.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   23.  0.000000E+00 (00000000) AT (      0.00,       0.00)           48.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   24.  0.000000E+00 (00000000) AT (      0.00,       0.00)           49.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   25.  0.000000E+00 (00000000) AT (      0.00,       0.00)           50.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+
+  *** RECEPTOR TYPES:  GC = GRIDCART
+                       GP = GRIDPOLR
+                       DC = DISCCART
+                       DP = DISCPOLR
+ *** AERMOD - VERSION 26135  ***   *** AERMOD cmp_gauss                                                     ***        10/18/26
+ *** AERMET - VERSION  26135 ***   *** MDT05+CORINE (CNIG) · ERA5 (CDS) · 1545 receptores                   ***        20:27:12
+                                                                                                                       PAGE  65
+ *** MODELOPTs:    NonDFAULT  CONC  DEPOS  DDEP  WDEP  ELEV  DRYDPLT  WETDPLT  ALPHA  RURAL
+
+                              *** THE MAXIMUM   50   1-HR     WET DEPOSITION      VALUES FOR SOURCE GROUP:  ALL      ***
+                                  INCLUDING SOURCE(S):     P01         , P02         , P03         , P04         , P05         , 
+                 P06         , P07         , P08         , P09         , P10         , P11         , P12         , P13         , 
+                 P14         , P15         , P16         , P17         , 
+
+                                        ** DEPO OF H2S      IN MILLIGRAMS/M**2                          **
+
+ RANK        DEPO    (YYMMDDHH) AT      RECEPTOR (XR,YR) OF TYPE    RANK        DEPO    (YYMMDDHH) AT      RECEPTOR (XR,YR) OF TYPE 
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    1.  0.446764E-06 (23020306) AT ( 778504.80, 4612765.20)  DC       26.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    2.  0.162219E-06 (23020306) AT ( 778504.80, 4612795.20)  DC       27.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    3.  0.534142E-07 (23020303) AT ( 778504.80, 4612765.20)  DC       28.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    4.  0.130402E-07 (23020306) AT ( 778486.80, 4612807.20)  DC       29.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    5.  0.000000E+00 (00000000) AT (      0.00,       0.00)           30.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    6.  0.000000E+00 (00000000) AT (      0.00,       0.00)           31.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    7.  0.000000E+00 (00000000) AT (      0.00,       0.00)           32.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    8.  0.000000E+00 (00000000) AT (      0.00,       0.00)           33.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    9.  0.000000E+00 (00000000) AT (      0.00,       0.00)           34.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   10.  0.000000E+00 (00000000) AT (      0.00,       0.00)           35.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   11.  0.000000E+00 (00000000) AT (      0.00,       0.00)           36.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   12.  0.000000E+00 (00000000) AT (      0.00,       0.00)           37.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   13.  0.000000E+00 (00000000) AT (      0.00,       0.00)           38.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   14.  0.000000E+00 (00000000) AT (      0.00,       0.00)           39.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   15.  0.000000E+00 (00000000) AT (      0.00,       0.00)           40.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   16.  0.000000E+00 (00000000) AT (      0.00,       0.00)           41.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   17.  0.000000E+00 (00000000) AT (      0.00,       0.00)           42.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   18.  0.000000E+00 (00000000) AT (      0.00,       0.00)           43.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   19.  0.000000E+00 (00000000) AT (      0.00,       0.00)           44.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   20.  0.000000E+00 (00000000) AT (      0.00,       0.00)           45.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   21.  0.000000E+00 (00000000) AT (      0.00,       0.00)           46.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   22.  0.000000E+00 (00000000) AT (      0.00,       0.00)           47.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   23.  0.000000E+00 (00000000) AT (      0.00,       0.00)           48.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   24.  0.000000E+00 (00000000) AT (      0.00,       0.00)           49.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   25.  0.000000E+00 (00000000) AT (      0.00,       0.00)           50.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+
+  *** RECEPTOR TYPES:  GC = GRIDCART
+                       GP = GRIDPOLR
+                       DC = DISCCART
+                       DP = DISCPOLR
+ *** AERMOD - VERSION 26135  ***   *** AERMOD cmp_gauss                                                     ***        10/18/26
+ *** AERMET - VERSION  26135 ***   *** MDT05+CORINE (CNIG) · ERA5 (CDS) · 1545 receptores                   ***        20:27:12
+                                                                                                                       PAGE  66
+ *** MODELOPTs:    NonDFAULT  CONC  DEPOS  DDEP  WDEP  ELEV  DRYDPLT  WETDPLT  ALPHA  RURAL
+
+                              *** THE MAXIMUM   50   1-HR     WET DEPOSITION      VALUES FOR SOURCE GROUP:  NORTE    ***
+                                  INCLUDING SOURCE(S):     P02         , P04         , P06         , P08         , P09         , 
+                 P11         , P13         , P15         , 
+
+                                        ** DEPO OF H2S      IN MILLIGRAMS/M**2                          **
+
+ RANK        DEPO    (YYMMDDHH) AT      RECEPTOR (XR,YR) OF TYPE    RANK        DEPO    (YYMMDDHH) AT      RECEPTOR (XR,YR) OF TYPE 
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    1.  0.000000E+00 (00000000) AT (      0.00,       0.00)           26.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    2.  0.000000E+00 (00000000) AT (      0.00,       0.00)           27.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    3.  0.000000E+00 (00000000) AT (      0.00,       0.00)           28.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    4.  0.000000E+00 (00000000) AT (      0.00,       0.00)           29.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    5.  0.000000E+00 (00000000) AT (      0.00,       0.00)           30.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    6.  0.000000E+00 (00000000) AT (      0.00,       0.00)           31.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    7.  0.000000E+00 (00000000) AT (      0.00,       0.00)           32.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    8.  0.000000E+00 (00000000) AT (      0.00,       0.00)           33.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    9.  0.000000E+00 (00000000) AT (      0.00,       0.00)           34.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   10.  0.000000E+00 (00000000) AT (      0.00,       0.00)           35.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   11.  0.000000E+00 (00000000) AT (      0.00,       0.00)           36.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   12.  0.000000E+00 (00000000) AT (      0.00,       0.00)           37.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   13.  0.000000E+00 (00000000) AT (      0.00,       0.00)           38.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   14.  0.000000E+00 (00000000) AT (      0.00,       0.00)           39.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   15.  0.000000E+00 (00000000) AT (      0.00,       0.00)           40.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   16.  0.000000E+00 (00000000) AT (      0.00,       0.00)           41.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   17.  0.000000E+00 (00000000) AT (      0.00,       0.00)           42.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   18.  0.000000E+00 (00000000) AT (      0.00,       0.00)           43.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   19.  0.000000E+00 (00000000) AT (      0.00,       0.00)           44.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   20.  0.000000E+00 (00000000) AT (      0.00,       0.00)           45.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   21.  0.000000E+00 (00000000) AT (      0.00,       0.00)           46.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   22.  0.000000E+00 (00000000) AT (      0.00,       0.00)           47.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   23.  0.000000E+00 (00000000) AT (      0.00,       0.00)           48.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   24.  0.000000E+00 (00000000) AT (      0.00,       0.00)           49.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   25.  0.000000E+00 (00000000) AT (      0.00,       0.00)           50.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+
+  *** RECEPTOR TYPES:  GC = GRIDCART
+                       GP = GRIDPOLR
+                       DC = DISCCART
+                       DP = DISCPOLR
+ *** AERMOD - VERSION 26135  ***   *** AERMOD cmp_gauss                                                     ***        10/18/26
+ *** AERMET - VERSION  26135 ***   *** MDT05+CORINE (CNIG) · ERA5 (CDS) · 1545 receptores                   ***        20:27:12
+                                                                                                                       PAGE  67
+ *** MODELOPTs:    NonDFAULT  CONC  DEPOS  DDEP  WDEP  ELEV  DRYDPLT  WETDPLT  ALPHA  RURAL
+
+                              *** THE MAXIMUM   50  24-HR     WET DEPOSITION      VALUES FOR SOURCE GROUP:  ALL      ***
+                                  INCLUDING SOURCE(S):     P01         , P02         , P03         , P04         , P05         , 
+                 P06         , P07         , P08         , P09         , P10         , P11         , P12         , P13         , 
+                 P14         , P15         , P16         , P17         , 
+
+                                        ** DEPO OF H2S      IN MILLIGRAMS/M**2                          **
+
+ RANK        DEPO    (YYMMDDHH) AT      RECEPTOR (XR,YR) OF TYPE    RANK        DEPO    (YYMMDDHH) AT      RECEPTOR (XR,YR) OF TYPE 
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    1.  0.000000E+00 (00000000) AT (      0.00,       0.00)           26.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    2.  0.000000E+00 (00000000) AT (      0.00,       0.00)           27.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    3.  0.000000E+00 (00000000) AT (      0.00,       0.00)           28.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    4.  0.000000E+00 (00000000) AT (      0.00,       0.00)           29.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    5.  0.000000E+00 (00000000) AT (      0.00,       0.00)           30.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    6.  0.000000E+00 (00000000) AT (      0.00,       0.00)           31.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    7.  0.000000E+00 (00000000) AT (      0.00,       0.00)           32.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    8.  0.000000E+00 (00000000) AT (      0.00,       0.00)           33.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    9.  0.000000E+00 (00000000) AT (      0.00,       0.00)           34.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   10.  0.000000E+00 (00000000) AT (      0.00,       0.00)           35.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   11.  0.000000E+00 (00000000) AT (      0.00,       0.00)           36.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   12.  0.000000E+00 (00000000) AT (      0.00,       0.00)           37.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   13.  0.000000E+00 (00000000) AT (      0.00,       0.00)           38.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   14.  0.000000E+00 (00000000) AT (      0.00,       0.00)           39.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   15.  0.000000E+00 (00000000) AT (      0.00,       0.00)           40.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   16.  0.000000E+00 (00000000) AT (      0.00,       0.00)           41.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   17.  0.000000E+00 (00000000) AT (      0.00,       0.00)           42.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   18.  0.000000E+00 (00000000) AT (      0.00,       0.00)           43.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   19.  0.000000E+00 (00000000) AT (      0.00,       0.00)           44.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   20.  0.000000E+00 (00000000) AT (      0.00,       0.00)           45.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   21.  0.000000E+00 (00000000) AT (      0.00,       0.00)           46.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   22.  0.000000E+00 (00000000) AT (      0.00,       0.00)           47.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   23.  0.000000E+00 (00000000) AT (      0.00,       0.00)           48.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   24.  0.000000E+00 (00000000) AT (      0.00,       0.00)           49.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   25.  0.000000E+00 (00000000) AT (      0.00,       0.00)           50.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+
+  *** RECEPTOR TYPES:  GC = GRIDCART
+                       GP = GRIDPOLR
+                       DC = DISCCART
+                       DP = DISCPOLR
+ *** AERMOD - VERSION 26135  ***   *** AERMOD cmp_gauss                                                     ***        10/18/26
+ *** AERMET - VERSION  26135 ***   *** MDT05+CORINE (CNIG) · ERA5 (CDS) · 1545 receptores                   ***        20:27:12
+                                                                                                                       PAGE  68
+ *** MODELOPTs:    NonDFAULT  CONC  DEPOS  DDEP  WDEP  ELEV  DRYDPLT  WETDPLT  ALPHA  RURAL
+
+                              *** THE MAXIMUM   50  24-HR     WET DEPOSITION      VALUES FOR SOURCE GROUP:  NORTE    ***
+                                  INCLUDING SOURCE(S):     P02         , P04         , P06         , P08         , P09         , 
+                 P11         , P13         , P15         , 
+
+                                        ** DEPO OF H2S      IN MILLIGRAMS/M**2                          **
+
+ RANK        DEPO    (YYMMDDHH) AT      RECEPTOR (XR,YR) OF TYPE    RANK        DEPO    (YYMMDDHH) AT      RECEPTOR (XR,YR) OF TYPE 
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    1.  0.000000E+00 (00000000) AT (      0.00,       0.00)           26.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    2.  0.000000E+00 (00000000) AT (      0.00,       0.00)           27.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    3.  0.000000E+00 (00000000) AT (      0.00,       0.00)           28.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    4.  0.000000E+00 (00000000) AT (      0.00,       0.00)           29.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    5.  0.000000E+00 (00000000) AT (      0.00,       0.00)           30.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    6.  0.000000E+00 (00000000) AT (      0.00,       0.00)           31.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    7.  0.000000E+00 (00000000) AT (      0.00,       0.00)           32.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    8.  0.000000E+00 (00000000) AT (      0.00,       0.00)           33.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+    9.  0.000000E+00 (00000000) AT (      0.00,       0.00)           34.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   10.  0.000000E+00 (00000000) AT (      0.00,       0.00)           35.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   11.  0.000000E+00 (00000000) AT (      0.00,       0.00)           36.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   12.  0.000000E+00 (00000000) AT (      0.00,       0.00)           37.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   13.  0.000000E+00 (00000000) AT (      0.00,       0.00)           38.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   14.  0.000000E+00 (00000000) AT (      0.00,       0.00)           39.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   15.  0.000000E+00 (00000000) AT (      0.00,       0.00)           40.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   16.  0.000000E+00 (00000000) AT (      0.00,       0.00)           41.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   17.  0.000000E+00 (00000000) AT (      0.00,       0.00)           42.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   18.  0.000000E+00 (00000000) AT (      0.00,       0.00)           43.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   19.  0.000000E+00 (00000000) AT (      0.00,       0.00)           44.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   20.  0.000000E+00 (00000000) AT (      0.00,       0.00)           45.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   21.  0.000000E+00 (00000000) AT (      0.00,       0.00)           46.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   22.  0.000000E+00 (00000000) AT (      0.00,       0.00)           47.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   23.  0.000000E+00 (00000000) AT (      0.00,       0.00)           48.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   24.  0.000000E+00 (00000000) AT (      0.00,       0.00)           49.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+   25.  0.000000E+00 (00000000) AT (      0.00,       0.00)           50.  0.000000E+00 (00000000) AT (      0.00,       0.00)    
+
+  *** RECEPTOR TYPES:  GC = GRIDCART
+                       GP = GRIDPOLR
+                       DC = DISCCART
+                       DP = DISCPOLR
+ *** AERMOD - VERSION 26135  ***   *** AERMOD cmp_gauss                                                     ***        10/18/26
+ *** AERMET - VERSION  26135 ***   *** MDT05+CORINE (CNIG) · ERA5 (CDS) · 1545 receptores                   ***        20:27:12
+                                                                                                                       PAGE  69
+ *** MODELOPTs:    NonDFAULT  CONC  DEPOS  DDEP  WDEP  ELEV  DRYDPLT  WETDPLT  ALPHA  RURAL
+
+                                        *** THE SUMMARY OF MAXIMUM PERIOD (     6 HRS) RESULTS ***
+
+
+                                    ** CONC OF H2S      IN MICROGRAMS/M**3                          **
+
+                                                                                                             NETWORK
+GROUP ID                       AVERAGE CONC                RECEPTOR  (XR, YR, ZELEV, ZHILL, ZFLAG)  OF TYPE  GRID-ID
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+ALL       1ST HIGHEST VALUE IS  0.314277E+02 AT (  778504.80,  4612765.20,   197.58,   229.99,    0.00)  DC          
+          2ND HIGHEST VALUE IS  0.531336E+01 AT (  778504.80,  4612795.20,   198.67,   229.99,    0.00)  DC          
+          3RD HIGHEST VALUE IS  0.345626E+00 AT (  778486.80,  4612807.20,   199.04,   229.99,    0.00)  DC          
+          4TH HIGHEST VALUE IS  0.000000E+00 AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+          5TH HIGHEST VALUE IS  0.000000E+00 AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+          6TH HIGHEST VALUE IS  0.000000E+00 AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+          7TH HIGHEST VALUE IS  0.000000E+00 AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+          8TH HIGHEST VALUE IS  0.000000E+00 AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+          9TH HIGHEST VALUE IS  0.000000E+00 AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+         10TH HIGHEST VALUE IS  0.000000E+00 AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+
+NORTE     1ST HIGHEST VALUE IS  0.000000E+00 AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+          2ND HIGHEST VALUE IS  0.000000E+00 AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+          3RD HIGHEST VALUE IS  0.000000E+00 AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+          4TH HIGHEST VALUE IS  0.000000E+00 AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+          5TH HIGHEST VALUE IS  0.000000E+00 AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+          6TH HIGHEST VALUE IS  0.000000E+00 AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+          7TH HIGHEST VALUE IS  0.000000E+00 AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+          8TH HIGHEST VALUE IS  0.000000E+00 AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+          9TH HIGHEST VALUE IS  0.000000E+00 AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+         10TH HIGHEST VALUE IS  0.000000E+00 AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+
+
+ *** RECEPTOR TYPES:  GC = GRIDCART
+                      GP = GRIDPOLR
+                      DC = DISCCART
+                      DP = DISCPOLR
+ *** AERMOD - VERSION 26135  ***   *** AERMOD cmp_gauss                                                     ***        10/18/26
+ *** AERMET - VERSION  26135 ***   *** MDT05+CORINE (CNIG) · ERA5 (CDS) · 1545 receptores                   ***        20:27:12
+                                                                                                                       PAGE  70
+ *** MODELOPTs:    NonDFAULT  CONC  DEPOS  DDEP  WDEP  ELEV  DRYDPLT  WETDPLT  ALPHA  RURAL
+
+                                                *** THE SUMMARY OF HIGHEST  1-HR RESULTS ***
+
+
+                                    ** CONC OF H2S      IN MICROGRAMS/M**3                          **
+
+                                                      DATE                                                                    NETWORK
+GROUP ID                          AVERAGE CONC     (YYMMDDHH)             RECEPTOR  (XR, YR, ZELEV, ZHILL, ZFLAG)    OF TYPE  GRID-ID
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+  
+ALL      HIGH   1ST HIGH VALUE IS  0.799551E+02  ON 23020305: AT (  778504.80,  4612765.20,   197.58,   229.99,    0.00)  DC          
+         HIGH   2ND HIGH VALUE IS  0.794445E+02  ON 23020306: AT (  778504.80,  4612765.20,   197.58,   229.99,    0.00)  DC          
+  
+NORTE    HIGH   1ST HIGH VALUE IS  0.000000E+00  ON 00000000: AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+         HIGH   2ND HIGH VALUE IS  0.000000E+00  ON 00000000: AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+
+
+ *** RECEPTOR TYPES:  GC = GRIDCART
+                      GP = GRIDPOLR
+                      DC = DISCCART
+                      DP = DISCPOLR
+ *** AERMOD - VERSION 26135  ***   *** AERMOD cmp_gauss                                                     ***        10/18/26
+ *** AERMET - VERSION  26135 ***   *** MDT05+CORINE (CNIG) · ERA5 (CDS) · 1545 receptores                   ***        20:27:12
+                                                                                                                       PAGE  71
+ *** MODELOPTs:    NonDFAULT  CONC  DEPOS  DDEP  WDEP  ELEV  DRYDPLT  WETDPLT  ALPHA  RURAL
+
+                                                *** THE SUMMARY OF HIGHEST 24-HR RESULTS ***
+
+
+                                    ** CONC OF H2S      IN MICROGRAMS/M**3                          **
+
+                                                      DATE                                                                    NETWORK
+GROUP ID                          AVERAGE CONC     (YYMMDDHH)             RECEPTOR  (XR, YR, ZELEV, ZHILL, ZFLAG)    OF TYPE  GRID-ID
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+  
+ALL      HIGH   1ST HIGH VALUE IS  0.000000E+00  ON 00000000: AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+         HIGH   2ND HIGH VALUE IS  0.000000E+00  ON 00000000: AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+  
+NORTE    HIGH   1ST HIGH VALUE IS  0.000000E+00  ON 00000000: AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+         HIGH   2ND HIGH VALUE IS  0.000000E+00  ON 00000000: AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+
+
+ *** RECEPTOR TYPES:  GC = GRIDCART
+                      GP = GRIDPOLR
+                      DC = DISCCART
+                      DP = DISCPOLR
+ *** AERMOD - VERSION 26135  ***   *** AERMOD cmp_gauss                                                     ***        10/18/26
+ *** AERMET - VERSION  26135 ***   *** MDT05+CORINE (CNIG) · ERA5 (CDS) · 1545 receptores                   ***        20:27:12
+                                                                                                                       PAGE  72
+ *** MODELOPTs:    NonDFAULT  CONC  DEPOS  DDEP  WDEP  ELEV  DRYDPLT  WETDPLT  ALPHA  RURAL
+
+                                        *** THE SUMMARY OF MAXIMUM PERIOD (     6 HRS) RESULTS ***
+
+
+                                    ** DEPO OF H2S      IN MILLIGRAMS/M**2                          **
+
+                                                                                                             NETWORK
+GROUP ID                         TOTAL DEPO                RECEPTOR  (XR, YR, ZELEV, ZHILL, ZFLAG)  OF TYPE  GRID-ID
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+ALL       1ST HIGHEST VALUE IS  0.224955E+00 AT (  778504.80,  4612765.20,   197.58,   229.99,    0.00)  DC          
+          2ND HIGHEST VALUE IS  0.344546E-01 AT (  778504.80,  4612795.20,   198.67,   229.99,    0.00)  DC          
+          3RD HIGHEST VALUE IS  0.218058E-02 AT (  778486.80,  4612807.20,   199.04,   229.99,    0.00)  DC          
+          4TH HIGHEST VALUE IS  0.000000E+00 AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+          5TH HIGHEST VALUE IS  0.000000E+00 AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+          6TH HIGHEST VALUE IS  0.000000E+00 AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+          7TH HIGHEST VALUE IS  0.000000E+00 AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+          8TH HIGHEST VALUE IS  0.000000E+00 AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+          9TH HIGHEST VALUE IS  0.000000E+00 AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+         10TH HIGHEST VALUE IS  0.000000E+00 AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+
+NORTE     1ST HIGHEST VALUE IS  0.000000E+00 AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+          2ND HIGHEST VALUE IS  0.000000E+00 AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+          3RD HIGHEST VALUE IS  0.000000E+00 AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+          4TH HIGHEST VALUE IS  0.000000E+00 AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+          5TH HIGHEST VALUE IS  0.000000E+00 AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+          6TH HIGHEST VALUE IS  0.000000E+00 AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+          7TH HIGHEST VALUE IS  0.000000E+00 AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+          8TH HIGHEST VALUE IS  0.000000E+00 AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+          9TH HIGHEST VALUE IS  0.000000E+00 AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+         10TH HIGHEST VALUE IS  0.000000E+00 AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+
+
+ *** RECEPTOR TYPES:  GC = GRIDCART
+                      GP = GRIDPOLR
+                      DC = DISCCART
+                      DP = DISCPOLR
+ *** AERMOD - VERSION 26135  ***   *** AERMOD cmp_gauss                                                     ***        10/18/26
+ *** AERMET - VERSION  26135 ***   *** MDT05+CORINE (CNIG) · ERA5 (CDS) · 1545 receptores                   ***        20:27:12
+                                                                                                                       PAGE  73
+ *** MODELOPTs:    NonDFAULT  CONC  DEPOS  DDEP  WDEP  ELEV  DRYDPLT  WETDPLT  ALPHA  RURAL
+
+                                                *** THE SUMMARY OF HIGHEST  1-HR RESULTS ***
+
+
+                                    ** DEPO OF H2S      IN MILLIGRAMS/M**2                          **
+
+                                                      DATE                                                                    NETWORK
+GROUP ID                            TOTAL DEPO     (YYMMDDHH)             RECEPTOR  (XR, YR, ZELEV, ZHILL, ZFLAG)    OF TYPE  GRID-ID
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+  
+ALL      HIGH   1ST HIGH VALUE IS  0.964321E-01  ON 23020305: AT (  778504.80,  4612765.20,   197.58,   229.99,    0.00)  DC          
+         HIGH   2ND HIGH VALUE IS  0.945636E-01  ON 23020306: AT (  778504.80,  4612765.20,   197.58,   229.99,    0.00)  DC          
+  
+NORTE    HIGH   1ST HIGH VALUE IS  0.000000E+00  ON 00000000: AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+         HIGH   2ND HIGH VALUE IS  0.000000E+00  ON 00000000: AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+
+
+ *** RECEPTOR TYPES:  GC = GRIDCART
+                      GP = GRIDPOLR
+                      DC = DISCCART
+                      DP = DISCPOLR
+ *** AERMOD - VERSION 26135  ***   *** AERMOD cmp_gauss                                                     ***        10/18/26
+ *** AERMET - VERSION  26135 ***   *** MDT05+CORINE (CNIG) · ERA5 (CDS) · 1545 receptores                   ***        20:27:12
+                                                                                                                       PAGE  74
+ *** MODELOPTs:    NonDFAULT  CONC  DEPOS  DDEP  WDEP  ELEV  DRYDPLT  WETDPLT  ALPHA  RURAL
+
+                                                *** THE SUMMARY OF HIGHEST 24-HR RESULTS ***
+
+
+                                    ** DEPO OF H2S      IN MILLIGRAMS/M**2                          **
+
+                                                      DATE                                                                    NETWORK
+GROUP ID                            TOTAL DEPO     (YYMMDDHH)             RECEPTOR  (XR, YR, ZELEV, ZHILL, ZFLAG)    OF TYPE  GRID-ID
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+  
+ALL      HIGH   1ST HIGH VALUE IS  0.000000E+00  ON 00000000: AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+         HIGH   2ND HIGH VALUE IS  0.000000E+00  ON 00000000: AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+  
+NORTE    HIGH   1ST HIGH VALUE IS  0.000000E+00  ON 00000000: AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+         HIGH   2ND HIGH VALUE IS  0.000000E+00  ON 00000000: AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+
+
+ *** RECEPTOR TYPES:  GC = GRIDCART
+                      GP = GRIDPOLR
+                      DC = DISCCART
+                      DP = DISCPOLR
+ *** AERMOD - VERSION 26135  ***   *** AERMOD cmp_gauss                                                     ***        10/18/26
+ *** AERMET - VERSION  26135 ***   *** MDT05+CORINE (CNIG) · ERA5 (CDS) · 1545 receptores                   ***        20:27:12
+                                                                                                                       PAGE  75
+ *** MODELOPTs:    NonDFAULT  CONC  DEPOS  DDEP  WDEP  ELEV  DRYDPLT  WETDPLT  ALPHA  RURAL
+
+                                        *** THE SUMMARY OF MAXIMUM PERIOD (     6 HRS) RESULTS ***
+
+
+                                    ** DEPO OF H2S      IN MILLIGRAMS/M**2                          **
+
+                                                                                                             NETWORK
+GROUP ID                           DRY DEPO                RECEPTOR  (XR, YR, ZELEV, ZHILL, ZFLAG)  OF TYPE  GRID-ID
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+ALL       1ST HIGHEST VALUE IS  0.224955E+00 AT (  778504.80,  4612765.20,   197.58,   229.99,    0.00)  DC          
+          2ND HIGHEST VALUE IS  0.344544E-01 AT (  778504.80,  4612795.20,   198.67,   229.99,    0.00)  DC          
+          3RD HIGHEST VALUE IS  0.218056E-02 AT (  778486.80,  4612807.20,   199.04,   229.99,    0.00)  DC          
+          4TH HIGHEST VALUE IS  0.000000E+00 AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+          5TH HIGHEST VALUE IS  0.000000E+00 AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+          6TH HIGHEST VALUE IS  0.000000E+00 AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+          7TH HIGHEST VALUE IS  0.000000E+00 AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+          8TH HIGHEST VALUE IS  0.000000E+00 AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+          9TH HIGHEST VALUE IS  0.000000E+00 AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+         10TH HIGHEST VALUE IS  0.000000E+00 AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+
+NORTE     1ST HIGHEST VALUE IS  0.000000E+00 AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+          2ND HIGHEST VALUE IS  0.000000E+00 AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+          3RD HIGHEST VALUE IS  0.000000E+00 AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+          4TH HIGHEST VALUE IS  0.000000E+00 AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+          5TH HIGHEST VALUE IS  0.000000E+00 AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+          6TH HIGHEST VALUE IS  0.000000E+00 AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+          7TH HIGHEST VALUE IS  0.000000E+00 AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+          8TH HIGHEST VALUE IS  0.000000E+00 AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+          9TH HIGHEST VALUE IS  0.000000E+00 AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+         10TH HIGHEST VALUE IS  0.000000E+00 AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+
+
+ *** RECEPTOR TYPES:  GC = GRIDCART
+                      GP = GRIDPOLR
+                      DC = DISCCART
+                      DP = DISCPOLR
+ *** AERMOD - VERSION 26135  ***   *** AERMOD cmp_gauss                                                     ***        10/18/26
+ *** AERMET - VERSION  26135 ***   *** MDT05+CORINE (CNIG) · ERA5 (CDS) · 1545 receptores                   ***        20:27:12
+                                                                                                                       PAGE  76
+ *** MODELOPTs:    NonDFAULT  CONC  DEPOS  DDEP  WDEP  ELEV  DRYDPLT  WETDPLT  ALPHA  RURAL
+
+                                                *** THE SUMMARY OF HIGHEST  1-HR RESULTS ***
+
+
+                                    ** DEPO OF H2S      IN MILLIGRAMS/M**2                          **
+
+                                                      DATE                                                                    NETWORK
+GROUP ID                              DRY DEPO     (YYMMDDHH)             RECEPTOR  (XR, YR, ZELEV, ZHILL, ZFLAG)    OF TYPE  GRID-ID
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+  
+ALL      HIGH   1ST HIGH VALUE IS  0.964321E-01  ON 23020305: AT (  778504.80,  4612765.20,   197.58,   229.99,    0.00)  DC          
+         HIGH   2ND HIGH VALUE IS  0.945631E-01  ON 23020306: AT (  778504.80,  4612765.20,   197.58,   229.99,    0.00)  DC          
+  
+NORTE    HIGH   1ST HIGH VALUE IS  0.000000E+00  ON 00000000: AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+         HIGH   2ND HIGH VALUE IS  0.000000E+00  ON 00000000: AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+
+
+ *** RECEPTOR TYPES:  GC = GRIDCART
+                      GP = GRIDPOLR
+                      DC = DISCCART
+                      DP = DISCPOLR
+ *** AERMOD - VERSION 26135  ***   *** AERMOD cmp_gauss                                                     ***        10/18/26
+ *** AERMET - VERSION  26135 ***   *** MDT05+CORINE (CNIG) · ERA5 (CDS) · 1545 receptores                   ***        20:27:12
+                                                                                                                       PAGE  77
+ *** MODELOPTs:    NonDFAULT  CONC  DEPOS  DDEP  WDEP  ELEV  DRYDPLT  WETDPLT  ALPHA  RURAL
+
+                                                *** THE SUMMARY OF HIGHEST 24-HR RESULTS ***
+
+
+                                    ** DEPO OF H2S      IN MILLIGRAMS/M**2                          **
+
+                                                      DATE                                                                    NETWORK
+GROUP ID                              DRY DEPO     (YYMMDDHH)             RECEPTOR  (XR, YR, ZELEV, ZHILL, ZFLAG)    OF TYPE  GRID-ID
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+  
+ALL      HIGH   1ST HIGH VALUE IS  0.000000E+00  ON 00000000: AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+         HIGH   2ND HIGH VALUE IS  0.000000E+00  ON 00000000: AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+  
+NORTE    HIGH   1ST HIGH VALUE IS  0.000000E+00  ON 00000000: AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+         HIGH   2ND HIGH VALUE IS  0.000000E+00  ON 00000000: AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+
+
+ *** RECEPTOR TYPES:  GC = GRIDCART
+                      GP = GRIDPOLR
+                      DC = DISCCART
+                      DP = DISCPOLR
+ *** AERMOD - VERSION 26135  ***   *** AERMOD cmp_gauss                                                     ***        10/18/26
+ *** AERMET - VERSION  26135 ***   *** MDT05+CORINE (CNIG) · ERA5 (CDS) · 1545 receptores                   ***        20:27:12
+                                                                                                                       PAGE  78
+ *** MODELOPTs:    NonDFAULT  CONC  DEPOS  DDEP  WDEP  ELEV  DRYDPLT  WETDPLT  ALPHA  RURAL
+
+                                        *** THE SUMMARY OF MAXIMUM PERIOD (     6 HRS) RESULTS ***
+
+
+                                    ** DEPO OF H2S      IN MILLIGRAMS/M**2                          **
+
+                                                                                                             NETWORK
+GROUP ID                           WET DEPO                RECEPTOR  (XR, YR, ZELEV, ZHILL, ZFLAG)  OF TYPE  GRID-ID
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+ALL       1ST HIGHEST VALUE IS  0.500178E-06 AT (  778504.80,  4612765.20,   197.58,   229.99,    0.00)  DC          
+          2ND HIGHEST VALUE IS  0.162219E-06 AT (  778504.80,  4612795.20,   198.67,   229.99,    0.00)  DC          
+          3RD HIGHEST VALUE IS  0.130402E-07 AT (  778486.80,  4612807.20,   199.04,   229.99,    0.00)  DC          
+          4TH HIGHEST VALUE IS  0.000000E+00 AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+          5TH HIGHEST VALUE IS  0.000000E+00 AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+          6TH HIGHEST VALUE IS  0.000000E+00 AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+          7TH HIGHEST VALUE IS  0.000000E+00 AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+          8TH HIGHEST VALUE IS  0.000000E+00 AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+          9TH HIGHEST VALUE IS  0.000000E+00 AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+         10TH HIGHEST VALUE IS  0.000000E+00 AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+
+NORTE     1ST HIGHEST VALUE IS  0.000000E+00 AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+          2ND HIGHEST VALUE IS  0.000000E+00 AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+          3RD HIGHEST VALUE IS  0.000000E+00 AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+          4TH HIGHEST VALUE IS  0.000000E+00 AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+          5TH HIGHEST VALUE IS  0.000000E+00 AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+          6TH HIGHEST VALUE IS  0.000000E+00 AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+          7TH HIGHEST VALUE IS  0.000000E+00 AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+          8TH HIGHEST VALUE IS  0.000000E+00 AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+          9TH HIGHEST VALUE IS  0.000000E+00 AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+         10TH HIGHEST VALUE IS  0.000000E+00 AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+
+
+ *** RECEPTOR TYPES:  GC = GRIDCART
+                      GP = GRIDPOLR
+                      DC = DISCCART
+                      DP = DISCPOLR
+ *** AERMOD - VERSION 26135  ***   *** AERMOD cmp_gauss                                                     ***        10/18/26
+ *** AERMET - VERSION  26135 ***   *** MDT05+CORINE (CNIG) · ERA5 (CDS) · 1545 receptores                   ***        20:27:12
+                                                                                                                       PAGE  79
+ *** MODELOPTs:    NonDFAULT  CONC  DEPOS  DDEP  WDEP  ELEV  DRYDPLT  WETDPLT  ALPHA  RURAL
+
+                                                *** THE SUMMARY OF HIGHEST  1-HR RESULTS ***
+
+
+                                    ** DEPO OF H2S      IN MILLIGRAMS/M**2                          **
+
+                                                      DATE                                                                    NETWORK
+GROUP ID                              WET DEPO     (YYMMDDHH)             RECEPTOR  (XR, YR, ZELEV, ZHILL, ZFLAG)    OF TYPE  GRID-ID
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+  
+ALL      HIGH   1ST HIGH VALUE IS  0.446764E-06  ON 23020306: AT (  778504.80,  4612765.20,   197.58,   229.99,    0.00)  DC          
+         HIGH   2ND HIGH VALUE IS  0.534142E-07  ON 23020303: AT (  778504.80,  4612765.20,   197.58,   229.99,    0.00)  DC          
+  
+NORTE    HIGH   1ST HIGH VALUE IS  0.000000E+00  ON 00000000: AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+         HIGH   2ND HIGH VALUE IS  0.000000E+00  ON 00000000: AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+
+
+ *** RECEPTOR TYPES:  GC = GRIDCART
+                      GP = GRIDPOLR
+                      DC = DISCCART
+                      DP = DISCPOLR
+ *** AERMOD - VERSION 26135  ***   *** AERMOD cmp_gauss                                                     ***        10/18/26
+ *** AERMET - VERSION  26135 ***   *** MDT05+CORINE (CNIG) · ERA5 (CDS) · 1545 receptores                   ***        20:27:12
+                                                                                                                       PAGE  80
+ *** MODELOPTs:    NonDFAULT  CONC  DEPOS  DDEP  WDEP  ELEV  DRYDPLT  WETDPLT  ALPHA  RURAL
+
+                                                *** THE SUMMARY OF HIGHEST 24-HR RESULTS ***
+
+
+                                    ** DEPO OF H2S      IN MILLIGRAMS/M**2                          **
+
+                                                      DATE                                                                    NETWORK
+GROUP ID                              WET DEPO     (YYMMDDHH)             RECEPTOR  (XR, YR, ZELEV, ZHILL, ZFLAG)    OF TYPE  GRID-ID
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+  
+ALL      HIGH   1ST HIGH VALUE IS  0.000000E+00  ON 00000000: AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+         HIGH   2ND HIGH VALUE IS  0.000000E+00  ON 00000000: AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+  
+NORTE    HIGH   1ST HIGH VALUE IS  0.000000E+00  ON 00000000: AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+         HIGH   2ND HIGH VALUE IS  0.000000E+00  ON 00000000: AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+
+
+ *** RECEPTOR TYPES:  GC = GRIDCART
+                      GP = GRIDPOLR
+                      DC = DISCCART
+                      DP = DISCPOLR
+ *** AERMOD - VERSION 26135  ***   *** AERMOD cmp_gauss                                                     ***        10/18/26
+ *** AERMET - VERSION  26135 ***   *** MDT05+CORINE (CNIG) · ERA5 (CDS) · 1545 receptores                   ***        20:27:12
+                                                                                                                       PAGE  81
+ *** MODELOPTs:    NonDFAULT  CONC  DEPOS  DDEP  WDEP  ELEV  DRYDPLT  WETDPLT  ALPHA  RURAL
+
+ *** Message Summary : AERMOD Model Execution ***
+
+  --------- Summary of Total Messages --------
+  
+ A Total of            0 Fatal Error Message(s)
+ A Total of            0 Warning Message(s)
+ A Total of            0 Informational Message(s)
+
+ A Total of            6 Hours Were Processed
+
+ A Total of            0 Calm Hours Identified
+
+ A Total of            0 Missing Hours Identified (  0.00 Percent)
+
+ Met Data File Includes       1.50 Millimeters (     0.059 Inches) of Precipitation
+  
+  
+    ******** FATAL ERROR MESSAGES ******** 
+               ***  NONE  ***         
+  
+  
+    ********   WARNING MESSAGES   ******** 
+               ***  NONE  ***        
+  
+
+    ************************************
+    *** AERMOD Finishes Successfully ***
+    ************************************
+

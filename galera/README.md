@@ -58,13 +58,13 @@ empaquetarlos aquí). El reanálisis cuenta del primer al último día que haya,
 
 Van a la carpeta de `entrada/rutas.json` (`Z:\Miguel\03-Odora\ENCE_LaGalera`), o a la de la variable `ENCE_GALERA_DATOS` si está puesta: viento, meteorología, respuestas de los focos y resultados. Las claves, en `%APPDATA%\CIRCE\claves`.
 
-Tareas, con `PYTHONPATH=../v0.1.7/cargador` y `TEODORS_PLANTA=entrada`:
+Tareas, con `PYTHONPATH=../v0.1.8/cargador` y `TEODORS_PLANTA=entrada`:
 
 | Para qué | Orden |
 |---|---|
 | Serie de viento de varios años | `python -m teodors.operacion.viento3d_series` |
 | Rehacer el viento local, si cambian los edificios | `python -m teodors.operacion.viento_local_biblioteca` |
-| De las nubes LiDAR a sus rejillas de 1 m | `python -I ../v0.1.7/core/fuentes/lidar.py <carpeta .laz> <carpeta de las librerías> viento/local/planta_1m.npz 286512 4507400 600` |
+| De las nubes LiDAR a sus rejillas de 1 m | `python -I ../v0.1.8/core/fuentes/lidar.py <carpeta .laz> <carpeta de las librerías> viento/local/planta_1m.npz 286512 4507400 600` |
 
 ## Pruebas y documentación del proyecto
 

@@ -1,0 +1,20 @@
+{
+  "motor": "geofisica",
+  "descripcion": "Malla de 1 km con celdas de agua (CFRACT 0,30): uso dominante y propiedades ponderadas.",
+  "carpeta": "",
+  "ordenes": [
+    [
+      "makegeo.inp"
+    ]
+  ],
+  "entorno": {},
+  "salidas": [
+    "geo1km.dat",
+    "makegeo.lst",
+    "qaluse.grd",
+    "qaterr.grd"
+  ],
+  "marcas": [],
+  "original": "laboratorio: batería de geofísica, caso A_agua_cfract030 (OK)",
+  "segundos": 0.2
+}

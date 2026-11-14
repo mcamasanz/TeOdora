@@ -1,0 +1,17 @@
+{
+  "motor": "viento3d",
+  "descripcion": "Terreno llano de Lleida con el pronóstico como campo inicial (configuración de digicompost).",
+  "carpeta": "",
+  "ordenes": [
+    [
+      "CMET.INP"
+    ]
+  ],
+  "entorno": {},
+  "salidas": [
+    "calmet.dat"
+  ],
+  "marcas": [],
+  "original": "laboratorio: batería de viento3d, caso S_llano_lleida (OK)",
+  "segundos": 1.5
+}

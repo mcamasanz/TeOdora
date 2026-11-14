@@ -1,0 +1,160 @@
+ digicompost nave A9                                                           
+
+                              BPIP (Dated: 04274)
+ DATE : 10/18/2026
+ TIME : 20:25:28
+ digicompost nave A9                                                           
+
+ ============================
+ BPIP PROCESSING INFORMATION:
+ ============================
+
+   The P  flag has been set for preparing downwash related data
+          for a model run utilizing the PRIME algorithm.
+
+   Inputs entered in METERS     will be converted to meters using 
+    a conversion factor of    1.0000.  Output will be in meters.
+
+   UTMP is set to UTMN.  The input is assumed to be in a local
+    X-Y coordinate system as opposed to a UTM coordinate system.
+    True North is in the positive Y direction.
+
+   Plant north is set to   0.00 degrees with respect to True North.  
+
+
+ digicompost nave A9                                                           
+
+
+
+                PRELIMINARY* GEP STACK HEIGHT RESULTS TABLE
+                         (Output Units: meters)
+
+                            Stack-Building            Preliminary*
+         Stack    Stack     Base Elevation    GEP**   GEP Stack
+         Name     Height    Differences       EQN1    Height Value
+
+
+        BIOF       15.00         0.00        27.50        65.00
+        TEJ        14.00         0.00        27.50        65.00
+        ESTE       20.00          N/A         0.00        65.00
+
+   * Results are based on Determinants 1 & 2 on pages 1 & 2 of the GEP
+     Technical Support Document.  Determinant 3 may be investigated for
+     additional stack height credit.  Final values result after
+     Determinant 3 has been taken into consideration.
+  ** Results were derived from Equation 1 on page 6 of GEP Technical
+     Support Document.  Values have been adjusted for any stack-building
+     base elevation differences.
+
+     Note:  Criteria for determining stack heights for modeling emission
+     limitations for a source can be found in Table 3.1 of the
+     GEP Technical Support Document.
+
+
+
+
+
+                              BPIP (Dated: 04274)
+ DATE : 10/18/2026
+ TIME : 20:25:28
+
+
+ digicompost nave A9                                                           
+
+  BPIP output is in meters
+
+
+     SO BUILDHGT BIOF       11.00   11.00   11.00   11.00   11.00    0.00
+     SO BUILDHGT BIOF        0.00    0.00    0.00   11.00   11.00   11.00
+     SO BUILDHGT BIOF       11.00   11.00   11.00   11.00   11.00   11.00
+     SO BUILDHGT BIOF       11.00   11.00   11.00   11.00   11.00    0.00
+     SO BUILDHGT BIOF        0.00    0.00    0.00   11.00   11.00   11.00
+     SO BUILDHGT BIOF       11.00   11.00   11.00    0.00    0.00   11.00
+     SO BUILDWID BIOF      259.68  244.47  228.64  210.83  186.61    0.00
+     SO BUILDWID BIOF        0.00    0.00    0.00  213.88  240.27  259.35
+     SO BUILDWID BIOF      270.55  273.54  268.21  260.26  266.21  267.00
+     SO BUILDWID BIOF      259.68  244.47  228.64  210.83  186.61    0.00
+     SO BUILDWID BIOF        0.00    0.00    0.00  213.88  240.27  259.35
+     SO BUILDWID BIOF      270.55  273.54  268.21    0.00    0.00  267.00
+     SO BUILDLEN BIOF      213.88  240.27  259.35  270.55  273.54    0.00
+     SO BUILDLEN BIOF        0.00    0.00    0.00  259.68  244.47  228.64
+     SO BUILDLEN BIOF      210.83  186.61  156.72  122.06  142.62  181.00
+     SO BUILDLEN BIOF      213.88  240.27  259.35  270.55  273.54    0.00
+     SO BUILDLEN BIOF        0.00    0.00    0.00  259.68  244.47  228.64
+     SO BUILDLEN BIOF      210.83  186.61  156.72    0.00    0.00  181.00
+     SO XBADJ    BIOF      -10.70  -29.87  -48.13  -64.93  -79.76    0.00
+     SO XBADJ    BIOF        0.00    0.00    0.00 -162.38 -174.42 -181.17
+     SO XBADJ    BIOF     -182.41 -178.11 -168.40 -153.57 -170.65 -189.80
+     SO XBADJ    BIOF     -203.19 -210.40 -211.22 -205.62 -193.78    0.00
+     SO XBADJ    BIOF        0.00    0.00    0.00  -97.30  -70.04  -47.47
+     SO XBADJ    BIOF      -28.41   -8.50   11.68    0.00    0.00    8.80
+     SO YBADJ    BIOF       32.54   52.19   66.85   77.00   84.81    0.00
+     SO YBADJ    BIOF        0.00    0.00    0.00   96.25   90.27   81.55
+     SO YBADJ    BIOF       70.35   57.01   41.94   28.36    9.10  -11.90
+     SO YBADJ    BIOF      -32.54  -52.19  -66.85  -77.00  -84.81    0.00
+     SO YBADJ    BIOF        0.00    0.00    0.00  -96.25  -90.27  -81.55
+     SO YBADJ    BIOF      -70.35  -57.01  -41.94    0.00    0.00   11.90
+
+
+     SO BUILDHGT TEJ        11.00   11.00   11.00   11.00   11.00   11.00
+     SO BUILDHGT TEJ        11.00   11.00   11.00   11.00   11.00   11.00
+     SO BUILDHGT TEJ        11.00   11.00   11.00   11.00   11.00   11.00
+     SO BUILDHGT TEJ        11.00   11.00   11.00   11.00   11.00   11.00
+     SO BUILDHGT TEJ        11.00   11.00   11.00   11.00   11.00   11.00
+     SO BUILDHGT TEJ        11.00   11.00   11.00   11.00   11.00   11.00
+     SO BUILDWID TEJ       259.68  244.47  228.64  210.83  186.61  156.72
+     SO BUILDWID TEJ       122.06  142.62  181.00  213.88  240.27  259.35
+     SO BUILDWID TEJ       270.55  273.54  268.21  260.26  266.21  267.00
+     SO BUILDWID TEJ       259.68  244.47  228.64  210.83  186.61  156.72
+     SO BUILDWID TEJ       122.06  142.62  181.00  213.88  240.27  259.35
+     SO BUILDWID TEJ       270.55  273.54  268.21  260.26  266.21  267.00
+     SO BUILDLEN TEJ       213.88  240.27  259.35  270.55  273.54  268.21
+     SO BUILDLEN TEJ       260.26  266.21  267.00  259.68  244.47  228.64
+     SO BUILDLEN TEJ       210.83  186.61  156.72  122.06  142.62  181.00
+     SO BUILDLEN TEJ       213.88  240.27  259.35  270.55  273.54  268.21
+     SO BUILDLEN TEJ       260.26  266.21  267.00  259.68  244.47  228.64
+     SO BUILDLEN TEJ       210.83  186.61  156.72  122.06  142.62  181.00
+     SO XBADJ    TEJ      -105.70 -116.99 -124.73 -128.68 -128.72 -124.84
+     SO XBADJ    TEJ      -117.17 -121.67 -125.40 -125.32 -121.43 -113.85
+     SO XBADJ    TEJ      -102.81  -88.65  -71.79  -52.76  -68.69  -89.80
+     SO XBADJ    TEJ      -108.18 -123.27 -134.62 -141.88 -144.82 -143.37
+     SO XBADJ    TEJ      -143.08 -144.54 -141.60 -134.36 -123.04 -114.79
+     SO XBADJ    TEJ      -108.01  -97.96  -84.92  -69.31  -73.93  -91.20
+     SO YBADJ    TEJ        -4.52   -0.81   -0.47   -2.60   -4.65   -6.56
+     SO YBADJ    TEJ        -8.28   -2.62   -0.70    1.24    3.14    4.94
+     SO YBADJ    TEJ         6.60    8.05    9.26   12.95   11.43    8.10
+     SO YBADJ    TEJ         4.52    0.81    0.47    2.60    4.65    6.56
+     SO YBADJ    TEJ         8.28    2.62    0.70   -1.24   -3.14   -4.94
+     SO YBADJ    TEJ        -6.60   -8.05   -9.26  -12.95  -11.43   -8.10
+
+
+     SO BUILDHGT ESTE        0.00    0.00    0.00    0.00    0.00    0.00
+     SO BUILDHGT ESTE        0.00    0.00    0.00    0.00    0.00    0.00
+     SO BUILDHGT ESTE        0.00    0.00    0.00    0.00    0.00    0.00
+     SO BUILDHGT ESTE        0.00    0.00    0.00    0.00    0.00    0.00
+     SO BUILDHGT ESTE        0.00    0.00    0.00    0.00    0.00    0.00
+     SO BUILDHGT ESTE        0.00    0.00    0.00    0.00    0.00    0.00
+     SO BUILDWID ESTE        0.00    0.00    0.00    0.00    0.00    0.00
+     SO BUILDWID ESTE        0.00    0.00    0.00    0.00    0.00    0.00
+     SO BUILDWID ESTE        0.00    0.00    0.00    0.00    0.00    0.00
+     SO BUILDWID ESTE        0.00    0.00    0.00    0.00    0.00    0.00
+     SO BUILDWID ESTE        0.00    0.00    0.00    0.00    0.00    0.00
+     SO BUILDWID ESTE        0.00    0.00    0.00    0.00    0.00    0.00
+     SO BUILDLEN ESTE        0.00    0.00    0.00    0.00    0.00    0.00
+     SO BUILDLEN ESTE        0.00    0.00    0.00    0.00    0.00    0.00
+     SO BUILDLEN ESTE        0.00    0.00    0.00    0.00    0.00    0.00
+     SO BUILDLEN ESTE        0.00    0.00    0.00    0.00    0.00    0.00
+     SO BUILDLEN ESTE        0.00    0.00    0.00    0.00    0.00    0.00
+     SO BUILDLEN ESTE        0.00    0.00    0.00    0.00    0.00    0.00
+     SO XBADJ    ESTE        0.00    0.00    0.00    0.00    0.00    0.00
+     SO XBADJ    ESTE        0.00    0.00    0.00    0.00    0.00    0.00
+     SO XBADJ    ESTE        0.00    0.00    0.00    0.00    0.00    0.00
+     SO XBADJ    ESTE        0.00    0.00    0.00    0.00    0.00    0.00
+     SO XBADJ    ESTE        0.00    0.00    0.00    0.00    0.00    0.00
+     SO XBADJ    ESTE        0.00    0.00    0.00    0.00    0.00    0.00
+     SO YBADJ    ESTE        0.00    0.00    0.00    0.00    0.00    0.00
+     SO YBADJ    ESTE        0.00    0.00    0.00    0.00    0.00    0.00
+     SO YBADJ    ESTE        0.00    0.00    0.00    0.00    0.00    0.00
+     SO YBADJ    ESTE        0.00    0.00    0.00    0.00    0.00    0.00
+     SO YBADJ    ESTE        0.00    0.00    0.00    0.00    0.00    0.00
+     SO YBADJ    ESTE        0.00    0.00    0.00    0.00    0.00    0.00
