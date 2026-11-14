@@ -7,3 +7,7 @@
 *.npz binary
 *.png binary
 *.jpg binary
+*.vz binary
+*.xz binary
+*.cmz binary
+*.pdf binary

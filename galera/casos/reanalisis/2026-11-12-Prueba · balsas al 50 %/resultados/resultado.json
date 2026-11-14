@@ -1,0 +1,4454 @@
+{
+ "formato": 3,
+ "firma": "4541396b8ce73320e6becfdfac3cd85dc59e3b81",
+ "nombre": "Prueba · balsas al 50 %",
+ "fecha": "2026-11-12 23:41",
+ "pueblos": "e616abffe880",
+ "esc": {
+  "formato": 2,
+  "nombre": "Prueba · balsas al 50 %",
+  "creado": "2026-11-09T21:50",
+  "modificado": "2026-11-09T21:50",
+  "notas": "Plan de prueba para la comparación de escenarios: las balsas de digestato 1 y 2 al 50 % todo el año.",
+  "mes": null,
+  "focos": {
+   "F01": {
+    "plan": "diario",
+    "perfiles": [
+     [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ]
+    ],
+    "dias": [
+     0
+    ]
+   },
+   "F02": {
+    "plan": "diario",
+    "perfiles": [
+     [
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5
+     ]
+    ],
+    "dias": [
+     0
+    ]
+   },
+   "F03": {
+    "plan": "diario",
+    "perfiles": [
+     [
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5
+     ]
+    ],
+    "dias": [
+     0
+    ]
+   },
+   "F04": {
+    "plan": "diario",
+    "perfiles": [
+     [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ]
+    ],
+    "dias": [
+     0
+    ]
+   },
+   "F05": {
+    "plan": "diario",
+    "perfiles": [
+     [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ]
+    ],
+    "dias": [
+     0
+    ]
+   },
+   "F06": {
+    "plan": "diario",
+    "perfiles": [
+     [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ]
+    ],
+    "dias": [
+     0
+    ]
+   },
+   "F07": {
+    "plan": "diario",
+    "perfiles": [
+     [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ]
+    ],
+    "dias": [
+     0
+    ]
+   },
+   "F08": {
+    "plan": "diario",
+    "perfiles": [
+     [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ]
+    ],
+    "dias": [
+     0
+    ]
+   }
+  }
+ },
+ "periodo": null,
+ "largo": "anios",
+ "serie": "odora_era5_8est",
+ "horas": 43824,
+ "datos": {
+  "ini": "2021-01-01",
+  "fin": "2025-12-31",
+  "dias": 1826,
+  "horas": 43824,
+  "huecos": 0,
+  "anios": {
+   "2021": 8760,
+   "2022": 8760,
+   "2023": 8760,
+   "2024": 8784,
+   "2025": 8760
+  },
+  "incompletos": []
+ },
+ "orden": [
+  "olor",
+  "H2S",
+  "DMS",
+  "DMDS",
+  "CH3SH",
+  "NH3",
+  "ALFA_PINENE",
+  "LIMONENE"
+ ],
+ "magnitudes": {
+  "olor": {
+   "clave": "olor",
+   "nombre": "Olor",
+   "unidad": "ou_E/m³",
+   "escala": "olor",
+   "ref": 1.0,
+   "emisiones": {
+    "F01": 4664.944869096764,
+    "F02": 8258.630309189304,
+    "F03": 6314.7412591870125,
+    "F04": 13.135338208499963,
+    "F05": 679.908761031083,
+    "F06": 679.908761031083,
+    "F07": 679.908761031083,
+    "F08": 679.908761031083
+   },
+   "focos": 8,
+   "fuera": [],
+   "estimados": [
+    "Depósito abierto de digestato (H₂S)",
+    "Balsa de digestato 1 (H₂S)",
+    "Balsa de digestato 2 (H₂S)",
+    "Biofiltro (H₂S)",
+    "Hilera de compost 1 (DMS)",
+    "Hilera de compost 2 (DMS)",
+    "Hilera de compost 3 (DMS)",
+    "Hilera de compost 4 (DMS)"
+   ],
+   "columnas": [
+    {
+     "clave": "media",
+     "titulo": "Media",
+     "nombre": "Media",
+     "tipo": "conc",
+     "limite": null,
+     "capa": "media"
+    },
+    {
+     "clave": "maximo",
+     "titulo": "Máx.",
+     "nombre": "Máximo",
+     "tipo": "conc",
+     "limite": null,
+     "capa": "maximo"
+    },
+    {
+     "clave": "p98",
+     "titulo": "P98",
+     "nombre": "Percentil 98",
+     "tipo": "conc",
+     "limite": null,
+     "capa": "norma",
+     "percentil": 98.0
+    }
+   ],
+   "capas": [
+    {
+     "id": "plan_media",
+     "nombre": "Media",
+     "titulo": "Media",
+     "imagenes": [
+      {
+       "url": "file:///Z:/Miguel/03-Odora/ENCE_LaGalera/resultados_planes/reanalisis/5_anios/prueba_balsas_al_50/olor/media_0.png?v=1794521557",
+       "limites": [
+        [
+         40.66279012798212,
+         0.4398543419228292
+        ],
+        [
+         40.71840927893203,
+         0.5129701810513234
+        ]
+       ]
+      },
+      {
+       "url": "file:///Z:/Miguel/03-Odora/ENCE_LaGalera/resultados_planes/reanalisis/5_anios/prueba_balsas_al_50/olor/media_1.png?v=1794521557",
+       "limites": [
+        [
+         40.46291069976792,
+         0.176846752522477
+        ],
+        [
+         40.91756714765027,
+         0.7740970896579468
+        ]
+       ]
+      }
+     ],
+     "leyenda": "<h4>Olor · Media (ou_E/m³)</h4><div style='height:12px;border-radius:2px;background:var(--escala-olor)'></div><div style='display:flex;justify-content:space-between;font-size:11px'><span>0,01</span><span>0,1</span><span>1</span><span>10</span><span>100</span><span>1000</span></div>",
+     "escala": "olor",
+     "vmin": 0.01,
+     "decadas": 5,
+     "isolineas": {
+      "url": "file:///Z:/Miguel/03-Odora/ENCE_LaGalera/resultados_planes/reanalisis/5_anios/prueba_balsas_al_50/olor/media_isolineas.json?v=1794303382",
+      "niveles": [
+       0.01,
+       0.1,
+       1.0,
+       3.0,
+       5.0,
+       10.0,
+       100.0,
+       1000.0
+      ],
+      "leyenda": "<h4>Olor · Media (ou_E/m³)</h4><div style='display:flex;gap:1px'><span style='flex:1;height:12px;background:var(--escala-olor);background-size:20000% 100%;background-position:7.14% 0;opacity:0.29'></span><span style='flex:1;height:12px;background:var(--escala-olor);background-size:20000% 100%;background-position:21.43% 0;opacity:0.40'></span><span style='flex:1;height:12px;background:var(--escala-olor);background-size:20000% 100%;background-position:35.71% 0;opacity:0.51'></span><span style='flex:1;height:12px;background:var(--escala-olor);background-size:20000% 100%;background-position:50.00% 0;opacity:0.62'></span><span style='flex:1;height:12px;background:var(--escala-olor);background-size:20000% 100%;background-position:64.29% 0;opacity:0.73'></span><span style='flex:1;height:12px;background:var(--escala-olor);background-size:20000% 100%;background-position:78.57% 0;opacity:0.84'></span><span style='flex:1;height:12px;background:var(--escala-olor);background-size:20000% 100%;background-position:92.86% 0;opacity:0.95'></span></div><div style='display:flex;justify-content:space-between;font-size:11px'><span>0,01</span><span>0,1</span><span>1</span><span>3</span><span>5</span><span>10</span><span>100</span><span>1000</span></div>"
+     }
+    },
+    {
+     "id": "plan_maximo",
+     "nombre": "Máximo",
+     "titulo": "Máx.",
+     "imagenes": [
+      {
+       "url": "file:///Z:/Miguel/03-Odora/ENCE_LaGalera/resultados_planes/reanalisis/5_anios/prueba_balsas_al_50/olor/maximo_0.png?v=1794521557",
+       "limites": [
+        [
+         40.66279012798212,
+         0.4398543419228292
+        ],
+        [
+         40.71840927893203,
+         0.5129701810513234
+        ]
+       ]
+      },
+      {
+       "url": "file:///Z:/Miguel/03-Odora/ENCE_LaGalera/resultados_planes/reanalisis/5_anios/prueba_balsas_al_50/olor/maximo_1.png?v=1794521557",
+       "limites": [
+        [
+         40.46291069976792,
+         0.176846752522477
+        ],
+        [
+         40.91756714765027,
+         0.7740970896579468
+        ]
+       ]
+      }
+     ],
+     "leyenda": "<h4>Olor · Máximo (ou_E/m³)</h4><div style='height:12px;border-radius:2px;background:var(--escala-olor)'></div><div style='display:flex;justify-content:space-between;font-size:11px'><span>0,01</span><span>0,1</span><span>1</span><span>10</span><span>100</span><span>1000</span></div>",
+     "escala": "olor",
+     "vmin": 0.01,
+     "decadas": 5,
+     "isolineas": {
+      "url": "file:///Z:/Miguel/03-Odora/ENCE_LaGalera/resultados_planes/reanalisis/5_anios/prueba_balsas_al_50/olor/maximo_isolineas.json?v=1794303382",
+      "niveles": [
+       0.01,
+       0.1,
+       1.0,
+       3.0,
+       5.0,
+       10.0,
+       100.0,
+       1000.0
+      ],
+      "leyenda": "<h4>Olor · Máximo (ou_E/m³)</h4><div style='display:flex;gap:1px'><span style='flex:1;height:12px;background:var(--escala-olor);background-size:20000% 100%;background-position:7.14% 0;opacity:0.29'></span><span style='flex:1;height:12px;background:var(--escala-olor);background-size:20000% 100%;background-position:21.43% 0;opacity:0.40'></span><span style='flex:1;height:12px;background:var(--escala-olor);background-size:20000% 100%;background-position:35.71% 0;opacity:0.51'></span><span style='flex:1;height:12px;background:var(--escala-olor);background-size:20000% 100%;background-position:50.00% 0;opacity:0.62'></span><span style='flex:1;height:12px;background:var(--escala-olor);background-size:20000% 100%;background-position:64.29% 0;opacity:0.73'></span><span style='flex:1;height:12px;background:var(--escala-olor);background-size:20000% 100%;background-position:78.57% 0;opacity:0.84'></span><span style='flex:1;height:12px;background:var(--escala-olor);background-size:20000% 100%;background-position:92.86% 0;opacity:0.95'></span></div><div style='display:flex;justify-content:space-between;font-size:11px'><span>0,01</span><span>0,1</span><span>1</span><span>3</span><span>5</span><span>10</span><span>100</span><span>1000</span></div>"
+     }
+    },
+    {
+     "id": "plan_norma",
+     "nombre": "Percentil 98",
+     "titulo": "P98",
+     "imagenes": [
+      {
+       "url": "file:///Z:/Miguel/03-Odora/ENCE_LaGalera/resultados_planes/reanalisis/5_anios/prueba_balsas_al_50/olor/p98_0.png?v=1794521558",
+       "limites": [
+        [
+         40.66279012798212,
+         0.4398543419228292
+        ],
+        [
+         40.71840927893203,
+         0.5129701810513234
+        ]
+       ]
+      },
+      {
+       "url": "file:///Z:/Miguel/03-Odora/ENCE_LaGalera/resultados_planes/reanalisis/5_anios/prueba_balsas_al_50/olor/p98_1.png?v=1794521558",
+       "limites": [
+        [
+         40.46291069976792,
+         0.176846752522477
+        ],
+        [
+         40.91756714765027,
+         0.7740970896579468
+        ]
+       ]
+      }
+     ],
+     "leyenda": "<h4>Olor · Percentil 98 (ou_E/m³)</h4><div style='height:12px;border-radius:2px;background:var(--escala-olor)'></div><div style='display:flex;justify-content:space-between;font-size:11px'><span>0,01</span><span>0,1</span><span>1</span><span>10</span><span>100</span><span>1000</span></div>",
+     "escala": "olor",
+     "vmin": 0.01,
+     "decadas": 5,
+     "isolineas": {
+      "url": "file:///Z:/Miguel/03-Odora/ENCE_LaGalera/resultados_planes/reanalisis/5_anios/prueba_balsas_al_50/olor/p98_isolineas.json?v=1794303383",
+      "niveles": [
+       0.01,
+       0.1,
+       1.0,
+       3.0,
+       5.0,
+       10.0,
+       100.0,
+       1000.0
+      ],
+      "leyenda": "<h4>Olor · Percentil 98 (ou_E/m³)</h4><div style='display:flex;gap:1px'><span style='flex:1;height:12px;background:var(--escala-olor);background-size:20000% 100%;background-position:7.14% 0;opacity:0.29'></span><span style='flex:1;height:12px;background:var(--escala-olor);background-size:20000% 100%;background-position:21.43% 0;opacity:0.40'></span><span style='flex:1;height:12px;background:var(--escala-olor);background-size:20000% 100%;background-position:35.71% 0;opacity:0.51'></span><span style='flex:1;height:12px;background:var(--escala-olor);background-size:20000% 100%;background-position:50.00% 0;opacity:0.62'></span><span style='flex:1;height:12px;background:var(--escala-olor);background-size:20000% 100%;background-position:64.29% 0;opacity:0.73'></span><span style='flex:1;height:12px;background:var(--escala-olor);background-size:20000% 100%;background-position:78.57% 0;opacity:0.84'></span><span style='flex:1;height:12px;background:var(--escala-olor);background-size:20000% 100%;background-position:92.86% 0;opacity:0.95'></span></div><div style='display:flex;justify-content:space-between;font-size:11px'><span>0,01</span><span>0,1</span><span>1</span><span>3</span><span>5</span><span>10</span><span>100</span><span>1000</span></div>"
+     }
+    }
+   ],
+   "penacho": null,
+   "horas_txt": [],
+   "maximos": {
+    "media": 25.86404703735799,
+    "maximo": 118.55220794677734,
+    "p98": 85.96084594726562
+   },
+   "filas": [
+    {
+     "nombre": "Peor vivienda (< 2 km)",
+     "tipo": "vivienda",
+     "km": 0.5,
+     "media": 0.3781918369736596,
+     "maximo": 12.13223934173584,
+     "p98": 4.77602481842041
+    },
+    {
+     "nombre": "La Galera",
+     "tipo": "pueblo",
+     "km": 1.4,
+     "media": 0.027746585890146346,
+     "maximo": 2.1141602993011475,
+     "p98": 0.35125088691711426
+    },
+    {
+     "nombre": "Santa Bàrbara",
+     "tipo": "pueblo",
+     "km": 3.2,
+     "media": 0.0388428257392254,
+     "maximo": 2.0011956691741943,
+     "p98": 0.505529522895813
+    },
+    {
+     "nombre": "Godall",
+     "tipo": "pueblo",
+     "km": 3.9,
+     "media": 0.005269766112389334,
+     "maximo": 0.3816716969013214,
+     "p98": 0.07211432605981827
+    },
+    {
+     "nombre": "Freginals",
+     "tipo": "pueblo",
+     "km": 4.3,
+     "media": 0.019193547206230052,
+     "maximo": 0.726790189743042,
+     "p98": 0.18515639007091522
+    },
+    {
+     "nombre": "Masdenverge",
+     "tipo": "pueblo",
+     "km": 5.5,
+     "media": 0.0042772213464490685,
+     "maximo": 0.4963531792163849,
+     "p98": 0.04857172444462776
+    },
+    {
+     "nombre": "Favaret",
+     "tipo": "pueblo",
+     "km": 6.5,
+     "media": 0.002617738435973809,
+     "maximo": 0.16769210994243622,
+     "p98": 0.031661856919527054
+    },
+    {
+     "nombre": "Amposta",
+     "tipo": "pueblo",
+     "km": 8.7,
+     "media": 0.0015485601284601711,
+     "maximo": 0.17621184885501862,
+     "p98": 0.021216915920376778
+    },
+    {
+     "nombre": "Mas de Barberans",
+     "tipo": "pueblo",
+     "km": 10.1,
+     "media": 0.0005444428172219154,
+     "maximo": 0.030414072796702385,
+     "p98": 0.007800450548529625
+    },
+    {
+     "nombre": "Ulldecona",
+     "tipo": "pueblo",
+     "km": 10.6,
+     "media": 0.0003951574356805448,
+     "maximo": 0.027795003727078438,
+     "p98": 0.005876561626791954
+    },
+    {
+     "nombre": "La Ràpita",
+     "tipo": "pueblo",
+     "km": 12.7,
+     "media": 0.0009028442115348234,
+     "maximo": 0.10601037740707397,
+     "p98": 0.009309235960245132
+    },
+    {
+     "nombre": "L'Aldea",
+     "tipo": "pueblo",
+     "km": 12.8,
+     "media": 0.0009922431593587075,
+     "maximo": 0.08369973301887512,
+     "p98": 0.008486506529152393
+    },
+    {
+     "nombre": "Tortosa",
+     "tipo": "pueblo",
+     "km": 13.6,
+     "media": 0.001895368227287946,
+     "maximo": 0.1693412959575653,
+     "p98": 0.024383975192904472
+    },
+    {
+     "nombre": "Sector G",
+     "tipo": "pueblo",
+     "km": 13.7,
+     "media": 0.00038182462222314937,
+     "maximo": 0.01479656994342804,
+     "p98": 0.0034608375281095505
+    },
+    {
+     "nombre": "San Rafael del Río",
+     "tipo": "pueblo",
+     "km": 14.3,
+     "media": 0.00020036927114853493,
+     "maximo": 0.04432924464344978,
+     "p98": 0.0025303687434643507
+    },
+    {
+     "nombre": "Roquetes",
+     "tipo": "pueblo",
+     "km": 14.6,
+     "media": 0.0016816015556833685,
+     "maximo": 0.11519554257392883,
+     "p98": 0.019686700776219368
+    },
+    {
+     "nombre": "Carretera del Reguers",
+     "tipo": "pueblo",
+     "km": 15.0,
+     "media": 0.0015316359868204192,
+     "maximo": 0.07523679733276367,
+     "p98": 0.019428350031375885
+    },
+    {
+     "nombre": "Sant Josep de la Muntanya",
+     "tipo": "pueblo",
+     "km": 15.0,
+     "media": 0.0008486804540218296,
+     "maximo": 0.03896321356296539,
+     "p98": 0.011296259239315987
+    },
+    {
+     "nombre": "Urbanització Els Pilans",
+     "tipo": "pueblo",
+     "km": 15.3,
+     "media": 0.0011073218956780394,
+     "maximo": 0.07868818193674088,
+     "p98": 0.011993021704256535
+    },
+    {
+     "nombre": "Jesús",
+     "tipo": "pueblo",
+     "km": 15.5,
+     "media": 0.001522400537421801,
+     "maximo": 0.09549907594919205,
+     "p98": 0.02151252143085003
+    },
+    {
+     "nombre": "les Cases d'Alcanar",
+     "tipo": "pueblo",
+     "km": 15.8,
+     "media": 0.00019463664479122745,
+     "maximo": 0.01226692646741867,
+     "p98": 0.0019013070268556476
+    },
+    {
+     "nombre": "Alcanar",
+     "tipo": "pueblo",
+     "km": 16.5,
+     "media": 0.00013249022679154222,
+     "maximo": 0.007258052937686443,
+     "p98": 0.001747313654050231
+    },
+    {
+     "nombre": "el Lligallo del Roig",
+     "tipo": "pueblo",
+     "km": 16.8,
+     "media": 0.0004120086352109972,
+     "maximo": 0.023478098213672638,
+     "p98": 0.005158643238246441
+    },
+    {
+     "nombre": "La Sénia",
+     "tipo": "pueblo",
+     "km": 17.4,
+     "media": 6.823583712805192e-05,
+     "maximo": 0.007023080717772245,
+     "p98": 0.0010624799178913236
+    },
+    {
+     "nombre": "Urbanización Panorámica",
+     "tipo": "pueblo",
+     "km": 17.5,
+     "media": 9.967575105008543e-05,
+     "maximo": 0.007868372835218906,
+     "p98": 0.0014808656414970756
+    },
+    {
+     "nombre": "Camarles",
+     "tipo": "pueblo",
+     "km": 18.8,
+     "media": 0.00030129776014729874,
+     "maximo": 0.017868593335151672,
+     "p98": 0.0032475260086357594
+    },
+    {
+     "nombre": "Bítem",
+     "tipo": "pueblo",
+     "km": 19.2,
+     "media": 0.0008622041052482275,
+     "maximo": 0.032923370599746704,
+     "p98": 0.014352153986692429
+    },
+    {
+     "nombre": "Sant Jaume d'Enveja",
+     "tipo": "pueblo",
+     "km": 20.5,
+     "media": 0.00030070003580986825,
+     "maximo": 0.02287907525897026,
+     "p98": 0.0037083120550960302
+    },
+    {
+     "nombre": "Deltebre",
+     "tipo": "pueblo",
+     "km": 21.0,
+     "media": 0.0003480792787182458,
+     "maximo": 0.023331981152296066,
+     "p98": 0.004202541429549456
+    },
+    {
+     "nombre": "Vinaròs",
+     "tipo": "pueblo",
+     "km": 23.0,
+     "media": 6.153945696575383e-05,
+     "maximo": 0.0026062175165861845,
+     "p98": 0.0009966663783416152
+    },
+    {
+     "nombre": "Rossell",
+     "tipo": "pueblo",
+     "km": 23.1,
+     "media": 2.4979981745026114e-05,
+     "maximo": 0.0034936252050101757,
+     "p98": 0.0002849555166903883
+    },
+    {
+     "nombre": "L'Ampolla",
+     "tipo": "pueblo",
+     "km": 23.4,
+     "media": 0.00018278825464978135,
+     "maximo": 0.010663943365216255,
+     "p98": 0.0022828015498816967
+    },
+    {
+     "nombre": "els Muntells",
+     "tipo": "pueblo",
+     "km": 23.4,
+     "media": 0.0002658923475592543,
+     "maximo": 0.015649257227778435,
+     "p98": 0.0033639182802289724
+    },
+    {
+     "nombre": "Sant Jordi/San Jorge",
+     "tipo": "pueblo",
+     "km": 23.5,
+     "media": 2.892969414497348e-05,
+     "maximo": 0.0036469893530011177,
+     "p98": 0.0006120131001807749
+    },
+    {
+     "nombre": "Traiguera",
+     "tipo": "pueblo",
+     "km": 24.2,
+     "media": 2.2157401779084298e-05,
+     "maximo": 0.0039514400996267796,
+     "p98": 0.00022802951571065933
+    },
+    {
+     "nombre": "Cap-Roig",
+     "tipo": "pueblo",
+     "km": 26.3,
+     "media": 0.0001185034065794872,
+     "maximo": 0.007222957443445921,
+     "p98": 0.0015118566807359457
+    },
+    {
+     "nombre": "la Jana",
+     "tipo": "pueblo",
+     "km": 27.5,
+     "media": 1.1191769461797356e-05,
+     "maximo": 0.002315552206709981,
+     "p98": 0.0
+    },
+    {
+     "nombre": "El Perelló",
+     "tipo": "pueblo",
+     "km": 28.5,
+     "media": 7.135735084981764e-05,
+     "maximo": 0.004157243762165308,
+     "p98": 0.0009890262736007571
+    },
+    {
+     "nombre": "Beceite",
+     "tipo": "pueblo",
+     "km": 29.4,
+     "media": 1.7015730764189987e-05,
+     "maximo": 0.0012639587512239814,
+     "p98": 0.0003540229517966509
+    }
+   ]
+  },
+  "H2S": {
+   "clave": "H2S",
+   "nombre": "H₂S",
+   "unidad": "µg/m³",
+   "escala": "gases",
+   "ref": 0.5714846625766871,
+   "emisiones": {
+    "F01": 2665.9444444546116,
+    "F02": 4719.68055559265,
+    "F03": 3608.777777765574,
+    "F04": 7.506644323915267,
+    "F05": 56.38727554513473,
+    "F06": 56.38727554513473,
+    "F07": 56.38727554513473,
+    "F08": 56.38727554513473
+   },
+   "focos": 8,
+   "fuera": [],
+   "estimados": [],
+   "columnas": [
+    {
+     "clave": "media",
+     "titulo": "Media",
+     "nombre": "Media",
+     "tipo": "conc",
+     "limite": null,
+     "capa": "media"
+    },
+    {
+     "clave": "maximo",
+     "titulo": "Máx.",
+     "nombre": "Máximo",
+     "tipo": "conc",
+     "limite": null,
+     "capa": "maximo"
+    },
+    {
+     "clave": "p98",
+     "titulo": "P98",
+     "nombre": "Percentil 98",
+     "tipo": "conc",
+     "limite": null,
+     "capa": "norma",
+     "percentil": 98.0
+    }
+   ],
+   "capas": [
+    {
+     "id": "plan_media",
+     "nombre": "Media",
+     "titulo": "Media",
+     "imagenes": [
+      {
+       "url": "file:///Z:/Miguel/03-Odora/ENCE_LaGalera/resultados_planes/reanalisis/5_anios/prueba_balsas_al_50/H2S/media_0.png?v=1794521558",
+       "limites": [
+        [
+         40.66279012798212,
+         0.4398543419228292
+        ],
+        [
+         40.71840927893203,
+         0.5129701810513234
+        ]
+       ]
+      },
+      {
+       "url": "file:///Z:/Miguel/03-Odora/ENCE_LaGalera/resultados_planes/reanalisis/5_anios/prueba_balsas_al_50/H2S/media_1.png?v=1794521558",
+       "limites": [
+        [
+         40.46291069976792,
+         0.176846752522477
+        ],
+        [
+         40.91756714765027,
+         0.7740970896579468
+        ]
+       ]
+      }
+     ],
+     "leyenda": "<h4>H₂S · Media (µg/m³)</h4><div style='height:12px;border-radius:2px;background:var(--escala-gases)'></div><div style='display:flex;justify-content:space-between;font-size:11px'><span>0,00571</span><span>0,0571</span><span>0,571</span><span>5,71</span><span>57,1</span><span>571</span></div>",
+     "escala": "gases",
+     "vmin": 0.005714846625766871,
+     "decadas": 5,
+     "isolineas": {
+      "url": "file:///Z:/Miguel/03-Odora/ENCE_LaGalera/resultados_planes/reanalisis/5_anios/prueba_balsas_al_50/H2S/media_isolineas.json?v=1794303383",
+      "niveles": [
+       0.01,
+       0.1,
+       1.0,
+       10.0,
+       100.0,
+       1000.0
+      ],
+      "leyenda": "<h4>H₂S · Media (µg/m³)</h4><div style='display:flex;gap:1px'><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:10.00% 0;opacity:0.31'></span><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:30.00% 0;opacity:0.46'></span><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:50.00% 0;opacity:0.62'></span><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:70.00% 0;opacity:0.77'></span><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:90.00% 0;opacity:0.92'></span></div><div style='display:flex;justify-content:space-between;font-size:11px'><span>0,01</span><span>0,1</span><span>1</span><span>10</span><span>100</span><span>1000</span></div>"
+     }
+    },
+    {
+     "id": "plan_maximo",
+     "nombre": "Máximo",
+     "titulo": "Máx.",
+     "imagenes": [
+      {
+       "url": "file:///Z:/Miguel/03-Odora/ENCE_LaGalera/resultados_planes/reanalisis/5_anios/prueba_balsas_al_50/H2S/maximo_0.png?v=1794521559",
+       "limites": [
+        [
+         40.66279012798212,
+         0.4398543419228292
+        ],
+        [
+         40.71840927893203,
+         0.5129701810513234
+        ]
+       ]
+      },
+      {
+       "url": "file:///Z:/Miguel/03-Odora/ENCE_LaGalera/resultados_planes/reanalisis/5_anios/prueba_balsas_al_50/H2S/maximo_1.png?v=1794521559",
+       "limites": [
+        [
+         40.46291069976792,
+         0.176846752522477
+        ],
+        [
+         40.91756714765027,
+         0.7740970896579468
+        ]
+       ]
+      }
+     ],
+     "leyenda": "<h4>H₂S · Máximo (µg/m³)</h4><div style='height:12px;border-radius:2px;background:var(--escala-gases)'></div><div style='display:flex;justify-content:space-between;font-size:11px'><span>0,00571</span><span>0,0571</span><span>0,571</span><span>5,71</span><span>57,1</span><span>571</span></div>",
+     "escala": "gases",
+     "vmin": 0.005714846625766871,
+     "decadas": 5,
+     "isolineas": {
+      "url": "file:///Z:/Miguel/03-Odora/ENCE_LaGalera/resultados_planes/reanalisis/5_anios/prueba_balsas_al_50/H2S/maximo_isolineas.json?v=1794303383",
+      "niveles": [
+       0.01,
+       0.1,
+       1.0,
+       10.0,
+       100.0,
+       1000.0
+      ],
+      "leyenda": "<h4>H₂S · Máximo (µg/m³)</h4><div style='display:flex;gap:1px'><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:10.00% 0;opacity:0.31'></span><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:30.00% 0;opacity:0.46'></span><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:50.00% 0;opacity:0.62'></span><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:70.00% 0;opacity:0.77'></span><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:90.00% 0;opacity:0.92'></span></div><div style='display:flex;justify-content:space-between;font-size:11px'><span>0,01</span><span>0,1</span><span>1</span><span>10</span><span>100</span><span>1000</span></div>"
+     }
+    },
+    {
+     "id": "plan_norma",
+     "nombre": "Percentil 98",
+     "titulo": "P98",
+     "imagenes": [
+      {
+       "url": "file:///Z:/Miguel/03-Odora/ENCE_LaGalera/resultados_planes/reanalisis/5_anios/prueba_balsas_al_50/H2S/p98_0.png?v=1794521559",
+       "limites": [
+        [
+         40.66279012798212,
+         0.4398543419228292
+        ],
+        [
+         40.71840927893203,
+         0.5129701810513234
+        ]
+       ]
+      },
+      {
+       "url": "file:///Z:/Miguel/03-Odora/ENCE_LaGalera/resultados_planes/reanalisis/5_anios/prueba_balsas_al_50/H2S/p98_1.png?v=1794521559",
+       "limites": [
+        [
+         40.46291069976792,
+         0.176846752522477
+        ],
+        [
+         40.91756714765027,
+         0.7740970896579468
+        ]
+       ]
+      }
+     ],
+     "leyenda": "<h4>H₂S · Percentil 98 (µg/m³)</h4><div style='height:12px;border-radius:2px;background:var(--escala-gases)'></div><div style='display:flex;justify-content:space-between;font-size:11px'><span>0,00571</span><span>0,0571</span><span>0,571</span><span>5,71</span><span>57,1</span><span>571</span></div>",
+     "escala": "gases",
+     "vmin": 0.005714846625766871,
+     "decadas": 5,
+     "isolineas": {
+      "url": "file:///Z:/Miguel/03-Odora/ENCE_LaGalera/resultados_planes/reanalisis/5_anios/prueba_balsas_al_50/H2S/p98_isolineas.json?v=1794303383",
+      "niveles": [
+       0.01,
+       0.1,
+       1.0,
+       10.0,
+       100.0,
+       1000.0
+      ],
+      "leyenda": "<h4>H₂S · Percentil 98 (µg/m³)</h4><div style='display:flex;gap:1px'><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:10.00% 0;opacity:0.31'></span><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:30.00% 0;opacity:0.46'></span><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:50.00% 0;opacity:0.62'></span><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:70.00% 0;opacity:0.77'></span><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:90.00% 0;opacity:0.92'></span></div><div style='display:flex;justify-content:space-between;font-size:11px'><span>0,01</span><span>0,1</span><span>1</span><span>10</span><span>100</span><span>1000</span></div>"
+     }
+    }
+   ],
+   "penacho": null,
+   "horas_txt": [],
+   "maximos": {
+    "media": 14.703019984894102,
+    "maximo": 67.74996185302734,
+    "p98": 49.12518310546875
+   },
+   "filas": [
+    {
+     "nombre": "Peor vivienda (< 2 km)",
+     "tipo": "vivienda",
+     "km": 0.5,
+     "media": 0.17643970782192023,
+     "maximo": 6.120881080627441,
+     "p98": 2.4342398643493652
+    },
+    {
+     "nombre": "La Galera",
+     "tipo": "pueblo",
+     "km": 1.4,
+     "media": 0.01348480174104671,
+     "maximo": 1.02571702003479,
+     "p98": 0.1711016595363617
+    },
+    {
+     "nombre": "Santa Bàrbara",
+     "tipo": "pueblo",
+     "km": 3.2,
+     "media": 0.018160050916028892,
+     "maximo": 1.0000697374343872,
+     "p98": 0.23515895009040833
+    },
+    {
+     "nombre": "Godall",
+     "tipo": "pueblo",
+     "km": 3.9,
+     "media": 0.002518345163577035,
+     "maximo": 0.194578617811203,
+     "p98": 0.033639438450336456
+    },
+    {
+     "nombre": "Freginals",
+     "tipo": "pueblo",
+     "km": 4.3,
+     "media": 0.009244405656796914,
+     "maximo": 0.3419797122478485,
+     "p98": 0.09231989085674286
+    },
+    {
+     "nombre": "Masdenverge",
+     "tipo": "pueblo",
+     "km": 5.5,
+     "media": 0.002019615447369726,
+     "maximo": 0.23999908566474915,
+     "p98": 0.022755412384867668
+    },
+    {
+     "nombre": "Favaret",
+     "tipo": "pueblo",
+     "km": 6.5,
+     "media": 0.0012302913038344774,
+     "maximo": 0.08075276762247086,
+     "p98": 0.014921646565198898
+    },
+    {
+     "nombre": "Amposta",
+     "tipo": "pueblo",
+     "km": 8.7,
+     "media": 0.0007322616597184722,
+     "maximo": 0.0842757374048233,
+     "p98": 0.009727819822728634
+    },
+    {
+     "nombre": "Mas de Barberans",
+     "tipo": "pueblo",
+     "km": 10.1,
+     "media": 0.0002638668506959981,
+     "maximo": 0.013692356646060944,
+     "p98": 0.0038842700887471437
+    },
+    {
+     "nombre": "Ulldecona",
+     "tipo": "pueblo",
+     "km": 10.6,
+     "media": 0.00019423684930765453,
+     "maximo": 0.013044376857578754,
+     "p98": 0.0028970118146389723
+    },
+    {
+     "nombre": "La Ràpita",
+     "tipo": "pueblo",
+     "km": 12.7,
+     "media": 0.0004329962262265809,
+     "maximo": 0.05200670287013054,
+     "p98": 0.004498581402003765
+    },
+    {
+     "nombre": "L'Aldea",
+     "tipo": "pueblo",
+     "km": 12.8,
+     "media": 0.00047187713623720093,
+     "maximo": 0.040775611996650696,
+     "p98": 0.00406848406419158
+    },
+    {
+     "nombre": "Tortosa",
+     "tipo": "pueblo",
+     "km": 13.6,
+     "media": 0.0009079664022656542,
+     "maximo": 0.0817960649728775,
+     "p98": 0.011731784790754318
+    },
+    {
+     "nombre": "Sector G",
+     "tipo": "pueblo",
+     "km": 13.7,
+     "media": 0.00018082075846922823,
+     "maximo": 0.00716210063546896,
+     "p98": 0.001657176879234612
+    },
+    {
+     "nombre": "San Rafael del Río",
+     "tipo": "pueblo",
+     "km": 14.3,
+     "media": 0.000100649996002164,
+     "maximo": 0.021557003259658813,
+     "p98": 0.0012882112059742212
+    },
+    {
+     "nombre": "Roquetes",
+     "tipo": "pueblo",
+     "km": 14.6,
+     "media": 0.0008114834283221168,
+     "maximo": 0.054988786578178406,
+     "p98": 0.00949317030608654
+    },
+    {
+     "nombre": "Carretera del Reguers",
+     "tipo": "pueblo",
+     "km": 15.0,
+     "media": 0.0007326642487359753,
+     "maximo": 0.036454711109399796,
+     "p98": 0.009311930276453495
+    },
+    {
+     "nombre": "Sant Josep de la Muntanya",
+     "tipo": "pueblo",
+     "km": 15.0,
+     "media": 0.0003988197873855549,
+     "maximo": 0.018820706754922867,
+     "p98": 0.005119672976434231
+    },
+    {
+     "nombre": "Urbanització Els Pilans",
+     "tipo": "pueblo",
+     "km": 15.3,
+     "media": 0.0005299497660732625,
+     "maximo": 0.03850274160504341,
+     "p98": 0.0052232639864087105
+    },
+    {
+     "nombre": "Jesús",
+     "tipo": "pueblo",
+     "km": 15.5,
+     "media": 0.0007357593765880306,
+     "maximo": 0.050773728638887405,
+     "p98": 0.01032226625829935
+    },
+    {
+     "nombre": "les Cases d'Alcanar",
+     "tipo": "pueblo",
+     "km": 15.8,
+     "media": 9.155183985815776e-05,
+     "maximo": 0.005943815223872662,
+     "p98": 0.0009174593142233789
+    },
+    {
+     "nombre": "Alcanar",
+     "tipo": "pueblo",
+     "km": 16.5,
+     "media": 6.381656849610696e-05,
+     "maximo": 0.00353635149076581,
+     "p98": 0.0008056676015257835
+    },
+    {
+     "nombre": "el Lligallo del Roig",
+     "tipo": "pueblo",
+     "km": 16.8,
+     "media": 0.00019582840802862098,
+     "maximo": 0.01127537526190281,
+     "p98": 0.002485559554770589
+    },
+    {
+     "nombre": "La Sénia",
+     "tipo": "pueblo",
+     "km": 17.4,
+     "media": 3.484525567676988e-05,
+     "maximo": 0.003283825470134616,
+     "p98": 0.0005245850188657641
+    },
+    {
+     "nombre": "Urbanización Panorámica",
+     "tipo": "pueblo",
+     "km": 17.5,
+     "media": 5.0648020296114006e-05,
+     "maximo": 0.003834920935332775,
+     "p98": 0.0008076885715126991
+    },
+    {
+     "nombre": "Camarles",
+     "tipo": "pueblo",
+     "km": 18.8,
+     "media": 0.00014341897223105754,
+     "maximo": 0.00859401747584343,
+     "p98": 0.0015331199392676353
+    },
+    {
+     "nombre": "Bítem",
+     "tipo": "pueblo",
+     "km": 19.2,
+     "media": 0.00040941593331401987,
+     "maximo": 0.01602439396083355,
+     "p98": 0.006899172905832529
+    },
+    {
+     "nombre": "Sant Jaume d'Enveja",
+     "tipo": "pueblo",
+     "km": 20.5,
+     "media": 0.00014146535372439324,
+     "maximo": 0.010877004824578762,
+     "p98": 0.001740567502565682
+    },
+    {
+     "nombre": "Deltebre",
+     "tipo": "pueblo",
+     "km": 21.0,
+     "media": 0.00016444890082441445,
+     "maximo": 0.011147605255246162,
+     "p98": 0.00197803252376616
+    },
+    {
+     "nombre": "Vinaròs",
+     "tipo": "pueblo",
+     "km": 23.0,
+     "media": 2.906023580553907e-05,
+     "maximo": 0.001250254106707871,
+     "p98": 0.0004608312447089702
+    },
+    {
+     "nombre": "Rossell",
+     "tipo": "pueblo",
+     "km": 23.1,
+     "media": 1.2748557039470688e-05,
+     "maximo": 0.0016570888692513108,
+     "p98": 0.0001373774284729734
+    },
+    {
+     "nombre": "L'Ampolla",
+     "tipo": "pueblo",
+     "km": 23.4,
+     "media": 8.699360415319026e-05,
+     "maximo": 0.005150422919541597,
+     "p98": 0.0011089793406426907
+    },
+    {
+     "nombre": "els Muntells",
+     "tipo": "pueblo",
+     "km": 23.4,
+     "media": 0.00012469914280272525,
+     "maximo": 0.007454363629221916,
+     "p98": 0.0015991698019206524
+    },
+    {
+     "nombre": "Sant Jordi/San Jorge",
+     "tipo": "pueblo",
+     "km": 23.5,
+     "media": 1.4803753070901701e-05,
+     "maximo": 0.0017287086229771376,
+     "p98": 0.00032427525729872286
+    },
+    {
+     "nombre": "Traiguera",
+     "tipo": "pueblo",
+     "km": 24.2,
+     "media": 1.125353431521106e-05,
+     "maximo": 0.0018832712667062879,
+     "p98": 0.00013031536946073174
+    },
+    {
+     "nombre": "Cap-Roig",
+     "tipo": "pueblo",
+     "km": 26.3,
+     "media": 5.679097224069105e-05,
+     "maximo": 0.003504512133076787,
+     "p98": 0.0007317136623896658
+    },
+    {
+     "nombre": "la Jana",
+     "tipo": "pueblo",
+     "km": 27.5,
+     "media": 5.625997448985294e-06,
+     "maximo": 0.001111628022044897,
+     "p98": 0.0
+    },
+    {
+     "nombre": "El Perelló",
+     "tipo": "pueblo",
+     "km": 28.5,
+     "media": 3.449028278593608e-05,
+     "maximo": 0.0020214051473885775,
+     "p98": 0.0004678110417444259
+    },
+    {
+     "nombre": "Beceite",
+     "tipo": "pueblo",
+     "km": 29.4,
+     "media": 8.57009269251806e-06,
+     "maximo": 0.0006575412699021399,
+     "p98": 0.00017201525042764843
+    }
+   ]
+  },
+  "DMS": {
+   "clave": "DMS",
+   "nombre": "DMS",
+   "unidad": "µg/m³",
+   "escala": "gases",
+   "ref": 7.624539877300615,
+   "emisiones": {
+    "F01": 0.4798700000018301,
+    "F02": 3.3981700000267083,
+    "F03": 2.5983199999912125,
+    "F05": 5183.991461407547,
+    "F06": 5183.991461407547,
+    "F07": 5183.991461407547,
+    "F08": 5183.991461407547
+   },
+   "focos": 7,
+   "fuera": [],
+   "estimados": [],
+   "columnas": [
+    {
+     "clave": "media",
+     "titulo": "Media",
+     "nombre": "Media",
+     "tipo": "conc",
+     "limite": null,
+     "capa": "media"
+    },
+    {
+     "clave": "maximo",
+     "titulo": "Máx.",
+     "nombre": "Máximo",
+     "tipo": "conc",
+     "limite": null,
+     "capa": "maximo"
+    },
+    {
+     "clave": "p98",
+     "titulo": "P98",
+     "nombre": "Percentil 98",
+     "tipo": "conc",
+     "limite": null,
+     "capa": "norma",
+     "percentil": 98.0
+    }
+   ],
+   "capas": [
+    {
+     "id": "plan_media",
+     "nombre": "Media",
+     "titulo": "Media",
+     "imagenes": [
+      {
+       "url": "file:///Z:/Miguel/03-Odora/ENCE_LaGalera/resultados_planes/reanalisis/5_anios/prueba_balsas_al_50/DMS/media_0.png?v=1794521559",
+       "limites": [
+        [
+         40.66279012798212,
+         0.4398543419228292
+        ],
+        [
+         40.71840927893203,
+         0.5129701810513234
+        ]
+       ]
+      },
+      {
+       "url": "file:///Z:/Miguel/03-Odora/ENCE_LaGalera/resultados_planes/reanalisis/5_anios/prueba_balsas_al_50/DMS/media_1.png?v=1794521560",
+       "limites": [
+        [
+         40.46291069976792,
+         0.176846752522477
+        ],
+        [
+         40.91756714765027,
+         0.7740970896579468
+        ]
+       ]
+      }
+     ],
+     "leyenda": "<h4>DMS · Media (µg/m³)</h4><div style='height:12px;border-radius:2px;background:var(--escala-gases)'></div><div style='display:flex;justify-content:space-between;font-size:11px'><span>0,0762</span><span>0,762</span><span>7,62</span><span>76,2</span><span>762</span><span>7625</span></div>",
+     "escala": "gases",
+     "vmin": 0.07624539877300615,
+     "decadas": 5,
+     "isolineas": {
+      "url": "file:///Z:/Miguel/03-Odora/ENCE_LaGalera/resultados_planes/reanalisis/5_anios/prueba_balsas_al_50/DMS/media_isolineas.json?v=1794303384",
+      "niveles": [
+       0.1,
+       1.0,
+       10.0,
+       100.0,
+       1000.0,
+       10000.0
+      ],
+      "leyenda": "<h4>DMS · Media (µg/m³)</h4><div style='display:flex;gap:1px'><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:10.00% 0;opacity:0.31'></span><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:30.00% 0;opacity:0.46'></span><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:50.00% 0;opacity:0.62'></span><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:70.00% 0;opacity:0.77'></span><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:90.00% 0;opacity:0.92'></span></div><div style='display:flex;justify-content:space-between;font-size:11px'><span>0,1</span><span>1</span><span>10</span><span>100</span><span>1000</span><span>10000</span></div>"
+     }
+    },
+    {
+     "id": "plan_maximo",
+     "nombre": "Máximo",
+     "titulo": "Máx.",
+     "imagenes": [
+      {
+       "url": "file:///Z:/Miguel/03-Odora/ENCE_LaGalera/resultados_planes/reanalisis/5_anios/prueba_balsas_al_50/DMS/maximo_0.png?v=1794521560",
+       "limites": [
+        [
+         40.66279012798212,
+         0.4398543419228292
+        ],
+        [
+         40.71840927893203,
+         0.5129701810513234
+        ]
+       ]
+      },
+      {
+       "url": "file:///Z:/Miguel/03-Odora/ENCE_LaGalera/resultados_planes/reanalisis/5_anios/prueba_balsas_al_50/DMS/maximo_1.png?v=1794521560",
+       "limites": [
+        [
+         40.46291069976792,
+         0.176846752522477
+        ],
+        [
+         40.91756714765027,
+         0.7740970896579468
+        ]
+       ]
+      }
+     ],
+     "leyenda": "<h4>DMS · Máximo (µg/m³)</h4><div style='height:12px;border-radius:2px;background:var(--escala-gases)'></div><div style='display:flex;justify-content:space-between;font-size:11px'><span>0,0762</span><span>0,762</span><span>7,62</span><span>76,2</span><span>762</span><span>7625</span></div>",
+     "escala": "gases",
+     "vmin": 0.07624539877300615,
+     "decadas": 5,
+     "isolineas": {
+      "url": "file:///Z:/Miguel/03-Odora/ENCE_LaGalera/resultados_planes/reanalisis/5_anios/prueba_balsas_al_50/DMS/maximo_isolineas.json?v=1794303384",
+      "niveles": [
+       0.1,
+       1.0,
+       10.0,
+       100.0,
+       1000.0,
+       10000.0
+      ],
+      "leyenda": "<h4>DMS · Máximo (µg/m³)</h4><div style='display:flex;gap:1px'><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:10.00% 0;opacity:0.31'></span><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:30.00% 0;opacity:0.46'></span><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:50.00% 0;opacity:0.62'></span><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:70.00% 0;opacity:0.77'></span><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:90.00% 0;opacity:0.92'></span></div><div style='display:flex;justify-content:space-between;font-size:11px'><span>0,1</span><span>1</span><span>10</span><span>100</span><span>1000</span><span>10000</span></div>"
+     }
+    },
+    {
+     "id": "plan_norma",
+     "nombre": "Percentil 98",
+     "titulo": "P98",
+     "imagenes": [
+      {
+       "url": "file:///Z:/Miguel/03-Odora/ENCE_LaGalera/resultados_planes/reanalisis/5_anios/prueba_balsas_al_50/DMS/p98_0.png?v=1794521560",
+       "limites": [
+        [
+         40.66279012798212,
+         0.4398543419228292
+        ],
+        [
+         40.71840927893203,
+         0.5129701810513234
+        ]
+       ]
+      },
+      {
+       "url": "file:///Z:/Miguel/03-Odora/ENCE_LaGalera/resultados_planes/reanalisis/5_anios/prueba_balsas_al_50/DMS/p98_1.png?v=1794521560",
+       "limites": [
+        [
+         40.46291069976792,
+         0.176846752522477
+        ],
+        [
+         40.91756714765027,
+         0.7740970896579468
+        ]
+       ]
+      }
+     ],
+     "leyenda": "<h4>DMS · Percentil 98 (µg/m³)</h4><div style='height:12px;border-radius:2px;background:var(--escala-gases)'></div><div style='display:flex;justify-content:space-between;font-size:11px'><span>0,0762</span><span>0,762</span><span>7,62</span><span>76,2</span><span>762</span><span>7625</span></div>",
+     "escala": "gases",
+     "vmin": 0.07624539877300615,
+     "decadas": 5,
+     "isolineas": {
+      "url": "file:///Z:/Miguel/03-Odora/ENCE_LaGalera/resultados_planes/reanalisis/5_anios/prueba_balsas_al_50/DMS/p98_isolineas.json?v=1794303384",
+      "niveles": [
+       0.1,
+       1.0,
+       10.0,
+       100.0,
+       1000.0,
+       10000.0
+      ],
+      "leyenda": "<h4>DMS · Percentil 98 (µg/m³)</h4><div style='display:flex;gap:1px'><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:10.00% 0;opacity:0.31'></span><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:30.00% 0;opacity:0.46'></span><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:50.00% 0;opacity:0.62'></span><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:70.00% 0;opacity:0.77'></span><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:90.00% 0;opacity:0.92'></span></div><div style='display:flex;justify-content:space-between;font-size:11px'><span>0,1</span><span>1</span><span>10</span><span>100</span><span>1000</span><span>10000</span></div>"
+     }
+    }
+   ],
+   "penacho": null,
+   "horas_txt": [],
+   "maximos": {
+    "media": 43.07350535004074,
+    "maximo": 310.4639892578125,
+    "p98": 182.09384155273438
+   },
+   "filas": [
+    {
+     "nombre": "Peor vivienda (< 2 km)",
+     "tipo": "vivienda",
+     "km": 0.5,
+     "media": 0.6195372409955751,
+     "maximo": 22.921701431274414,
+     "p98": 8.111824035644531
+    },
+    {
+     "nombre": "La Galera",
+     "tipo": "pueblo",
+     "km": 1.4,
+     "media": 0.03864981764426362,
+     "maximo": 3.1417124271392822,
+     "p98": 0.5086618661880493
+    },
+    {
+     "nombre": "Santa Bàrbara",
+     "tipo": "pueblo",
+     "km": 3.2,
+     "media": 0.06659971336778281,
+     "maximo": 3.008493185043335,
+     "p98": 0.9029964208602905
+    },
+    {
+     "nombre": "Godall",
+     "tipo": "pueblo",
+     "km": 3.9,
+     "media": 0.007699111289693952,
+     "maximo": 0.6259584426879883,
+     "p98": 0.11917168647050858
+    },
+    {
+     "nombre": "Freginals",
+     "tipo": "pueblo",
+     "km": 4.3,
+     "media": 0.026916400705581198,
+     "maximo": 1.1452140808105469,
+     "p98": 0.26634764671325684
+    },
+    {
+     "nombre": "Masdenverge",
+     "tipo": "pueblo",
+     "km": 5.5,
+     "media": 0.006629854490672037,
+     "maximo": 0.6814820170402527,
+     "p98": 0.07870324701070786
+    },
+    {
+     "nombre": "Favaret",
+     "tipo": "pueblo",
+     "km": 6.5,
+     "media": 0.004147328585647408,
+     "maximo": 0.2527647614479065,
+     "p98": 0.04951946437358856
+    },
+    {
+     "nombre": "Amposta",
+     "tipo": "pueblo",
+     "km": 8.7,
+     "media": 0.0023837294319286784,
+     "maximo": 0.2564021050930023,
+     "p98": 0.039775002747774124
+    },
+    {
+     "nombre": "Mas de Barberans",
+     "tipo": "pueblo",
+     "km": 10.1,
+     "media": 0.0007379096750475505,
+     "maximo": 0.05757621303200722,
+     "p98": 0.00838073343038559
+    },
+    {
+     "nombre": "Ulldecona",
+     "tipo": "pueblo",
+     "km": 10.6,
+     "media": 0.0004930982648038691,
+     "maximo": 0.044329579919576645,
+     "p98": 0.006778289098292589
+    },
+    {
+     "nombre": "La Ràpita",
+     "tipo": "pueblo",
+     "km": 12.7,
+     "media": 0.0014348497096604521,
+     "maximo": 0.13387691974639893,
+     "p98": 0.01318192109465599
+    },
+    {
+     "nombre": "L'Aldea",
+     "tipo": "pueblo",
+     "km": 12.8,
+     "media": 0.0014855701305166557,
+     "maximo": 0.110163114964962,
+     "p98": 0.014757647179067135
+    },
+    {
+     "nombre": "Tortosa",
+     "tipo": "pueblo",
+     "km": 13.6,
+     "media": 0.0027348122422263376,
+     "maximo": 0.2338232696056366,
+     "p98": 0.03522181138396263
+    },
+    {
+     "nombre": "Sector G",
+     "tipo": "pueblo",
+     "km": 13.7,
+     "media": 0.00058355342740292,
+     "maximo": 0.020513111725449562,
+     "p98": 0.004855069797486067
+    },
+    {
+     "nombre": "San Rafael del Río",
+     "tipo": "pueblo",
+     "km": 14.3,
+     "media": 0.00021632312795736723,
+     "maximo": 0.05894731357693672,
+     "p98": 0.002464220393449068
+    },
+    {
+     "nombre": "Roquetes",
+     "tipo": "pueblo",
+     "km": 14.6,
+     "media": 0.0023339691458597834,
+     "maximo": 0.16925740242004395,
+     "p98": 0.029820440337061882
+    },
+    {
+     "nombre": "Carretera del Reguers",
+     "tipo": "pueblo",
+     "km": 15.0,
+     "media": 0.0022264942858311034,
+     "maximo": 0.11069003492593765,
+     "p98": 0.028237324208021164
+    },
+    {
+     "nombre": "Sant Josep de la Muntanya",
+     "tipo": "pueblo",
+     "km": 15.0,
+     "media": 0.001345285434965293,
+     "maximo": 0.06642231345176697,
+     "p98": 0.017369132488965988
+    },
+    {
+     "nombre": "Urbanització Els Pilans",
+     "tipo": "pueblo",
+     "km": 15.3,
+     "media": 0.001605661247780524,
+     "maximo": 0.1009356752038002,
+     "p98": 0.018154334276914597
+    },
+    {
+     "nombre": "Jesús",
+     "tipo": "pueblo",
+     "km": 15.5,
+     "media": 0.0020958268600992,
+     "maximo": 0.11963804066181183,
+     "p98": 0.030778003856539726
+    },
+    {
+     "nombre": "les Cases d'Alcanar",
+     "tipo": "pueblo",
+     "km": 15.8,
+     "media": 0.0003071802253018261,
+     "maximo": 0.016647914424538612,
+     "p98": 0.0030712659936398268
+    },
+    {
+     "nombre": "Alcanar",
+     "tipo": "pueblo",
+     "km": 16.5,
+     "media": 0.00018574178573851937,
+     "maximo": 0.009545343928039074,
+     "p98": 0.0026405388489365578
+    },
+    {
+     "nombre": "el Lligallo del Roig",
+     "tipo": "pueblo",
+     "km": 16.8,
+     "media": 0.000618550157746824,
+     "maximo": 0.03347345441579819,
+     "p98": 0.006738760508596897
+    },
+    {
+     "nombre": "La Sénia",
+     "tipo": "pueblo",
+     "km": 17.4,
+     "media": 6.479187913433216e-05,
+     "maximo": 0.01139061339199543,
+     "p98": 0.0008907909505069256
+    },
+    {
+     "nombre": "Urbanización Panorámica",
+     "tipo": "pueblo",
+     "km": 17.5,
+     "media": 9.858229327681613e-05,
+     "maximo": 0.011414955370128155,
+     "p98": 0.0015165458898991346
+    },
+    {
+     "nombre": "Camarles",
+     "tipo": "pueblo",
+     "km": 18.8,
+     "media": 0.00044903754014368537,
+     "maximo": 0.02524939924478531,
+     "p98": 0.0054836757481098175
+    },
+    {
+     "nombre": "Bítem",
+     "tipo": "pueblo",
+     "km": 19.2,
+     "media": 0.001300538121094086,
+     "maximo": 0.04356255382299423,
+     "p98": 0.020336437970399857
+    },
+    {
+     "nombre": "Sant Jaume d'Enveja",
+     "tipo": "pueblo",
+     "km": 20.5,
+     "media": 0.0004741951965669089,
+     "maximo": 0.03430883213877678,
+     "p98": 0.005784692708402872
+    },
+    {
+     "nombre": "Deltebre",
+     "tipo": "pueblo",
+     "km": 21.0,
+     "media": 0.0005380832022597384,
+     "maximo": 0.03553077578544617,
+     "p98": 0.006612720433622599
+    },
+    {
+     "nombre": "Vinaròs",
+     "tipo": "pueblo",
+     "km": 23.0,
+     "media": 9.534809015306292e-05,
+     "maximo": 0.0037330433260649443,
+     "p98": 0.0014926835428923368
+    },
+    {
+     "nombre": "Rossell",
+     "tipo": "pueblo",
+     "km": 23.1,
+     "media": 2.383937204318392e-05,
+     "maximo": 0.005298668053001165,
+     "p98": 0.00022923336655367166
+    },
+    {
+     "nombre": "L'Ampolla",
+     "tipo": "pueblo",
+     "km": 23.4,
+     "media": 0.00027264122180301476,
+     "maximo": 0.014732768759131432,
+     "p98": 0.003135369159281254
+    },
+    {
+     "nombre": "els Muntells",
+     "tipo": "pueblo",
+     "km": 23.4,
+     "media": 0.00042540328633211625,
+     "maximo": 0.023240935057401657,
+     "p98": 0.005045681726187468
+    },
+    {
+     "nombre": "Sant Jordi/San Jorge",
+     "tipo": "pueblo",
+     "km": 23.5,
+     "media": 2.6992981834833764e-05,
+     "maximo": 0.005548825953155756,
+     "p98": 0.00023692015383858234
+    },
+    {
+     "nombre": "Traiguera",
+     "tipo": "pueblo",
+     "km": 24.2,
+     "media": 2.1996466376021905e-05,
+     "maximo": 0.005852065980434418,
+     "p98": 8.41457321598682e-08
+    },
+    {
+     "nombre": "Cap-Roig",
+     "tipo": "pueblo",
+     "km": 26.3,
+     "media": 0.00017063588279871145,
+     "maximo": 0.009729194454848766,
+     "p98": 0.00227721338160336
+    },
+    {
+     "nombre": "la Jana",
+     "tipo": "pueblo",
+     "km": 27.5,
+     "media": 1.201865168597247e-05,
+     "maximo": 0.003304051700979471,
+     "p98": 0.0
+    },
+    {
+     "nombre": "El Perelló",
+     "tipo": "pueblo",
+     "km": 28.5,
+     "media": 9.817124785031078e-05,
+     "maximo": 0.005531860049813986,
+     "p98": 0.0013620045501738787
+    },
+    {
+     "nombre": "Beceite",
+     "tipo": "pueblo",
+     "km": 29.4,
+     "media": 1.8016292472294886e-05,
+     "maximo": 0.0017534025246277452,
+     "p98": 0.00027172514819540083
+    }
+   ]
+  },
+  "DMDS": {
+   "clave": "DMDS",
+   "nombre": "DMDS",
+   "unidad": "µg/m³",
+   "escala": "gases",
+   "ref": 8.476073619631903,
+   "emisiones": {
+    "F01": 0.35990250000137264,
+    "F02": 2.548627500020032,
+    "F03": 1.94873999999341,
+    "F05": 90.94721862118503,
+    "F06": 90.94721862118503,
+    "F07": 90.94721862118503,
+    "F08": 90.94721862118503
+   },
+   "focos": 7,
+   "fuera": [],
+   "estimados": [],
+   "columnas": [
+    {
+     "clave": "media",
+     "titulo": "Media",
+     "nombre": "Media",
+     "tipo": "conc",
+     "limite": null,
+     "capa": "media"
+    },
+    {
+     "clave": "maximo",
+     "titulo": "Máx.",
+     "nombre": "Máximo",
+     "tipo": "conc",
+     "limite": null,
+     "capa": "maximo"
+    },
+    {
+     "clave": "p98",
+     "titulo": "P98",
+     "nombre": "Percentil 98",
+     "tipo": "conc",
+     "limite": null,
+     "capa": "norma",
+     "percentil": 98.0
+    }
+   ],
+   "capas": [
+    {
+     "id": "plan_media",
+     "nombre": "Media",
+     "titulo": "Media",
+     "imagenes": [
+      {
+       "url": "file:///Z:/Miguel/03-Odora/ENCE_LaGalera/resultados_planes/reanalisis/5_anios/prueba_balsas_al_50/DMDS/media_0.png?v=1794521561",
+       "limites": [
+        [
+         40.66279012798212,
+         0.4398543419228292
+        ],
+        [
+         40.71840927893203,
+         0.5129701810513234
+        ]
+       ]
+      },
+      {
+       "url": "file:///Z:/Miguel/03-Odora/ENCE_LaGalera/resultados_planes/reanalisis/5_anios/prueba_balsas_al_50/DMDS/media_1.png?v=1794521561",
+       "limites": [
+        [
+         40.46291069976792,
+         0.176846752522477
+        ],
+        [
+         40.91756714765027,
+         0.7740970896579468
+        ]
+       ]
+      }
+     ],
+     "leyenda": "<h4>DMDS · Media (µg/m³)</h4><div style='height:12px;border-radius:2px;background:var(--escala-gases)'></div><div style='display:flex;justify-content:space-between;font-size:11px'><span>0,0848</span><span>0,848</span><span>8,48</span><span>84,8</span><span>848</span><span>8476</span></div>",
+     "escala": "gases",
+     "vmin": 0.08476073619631903,
+     "decadas": 5,
+     "isolineas": {
+      "url": "file:///Z:/Miguel/03-Odora/ENCE_LaGalera/resultados_planes/reanalisis/5_anios/prueba_balsas_al_50/DMDS/media_isolineas.json?v=1794303384",
+      "niveles": [
+       0.1,
+       1.0,
+       10.0,
+       100.0,
+       1000.0,
+       10000.0
+      ],
+      "leyenda": "<h4>DMDS · Media (µg/m³)</h4><div style='display:flex;gap:1px'><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:10.00% 0;opacity:0.31'></span><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:30.00% 0;opacity:0.46'></span><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:50.00% 0;opacity:0.62'></span><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:70.00% 0;opacity:0.77'></span><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:90.00% 0;opacity:0.92'></span></div><div style='display:flex;justify-content:space-between;font-size:11px'><span>0,1</span><span>1</span><span>10</span><span>100</span><span>1000</span><span>10000</span></div>"
+     }
+    },
+    {
+     "id": "plan_maximo",
+     "nombre": "Máximo",
+     "titulo": "Máx.",
+     "imagenes": [
+      {
+       "url": "file:///Z:/Miguel/03-Odora/ENCE_LaGalera/resultados_planes/reanalisis/5_anios/prueba_balsas_al_50/DMDS/maximo_0.png?v=1794521561",
+       "limites": [
+        [
+         40.66279012798212,
+         0.4398543419228292
+        ],
+        [
+         40.71840927893203,
+         0.5129701810513234
+        ]
+       ]
+      },
+      {
+       "url": "file:///Z:/Miguel/03-Odora/ENCE_LaGalera/resultados_planes/reanalisis/5_anios/prueba_balsas_al_50/DMDS/maximo_1.png?v=1794521561",
+       "limites": [
+        [
+         40.46291069976792,
+         0.176846752522477
+        ],
+        [
+         40.91756714765027,
+         0.7740970896579468
+        ]
+       ]
+      }
+     ],
+     "leyenda": "<h4>DMDS · Máximo (µg/m³)</h4><div style='height:12px;border-radius:2px;background:var(--escala-gases)'></div><div style='display:flex;justify-content:space-between;font-size:11px'><span>0,0848</span><span>0,848</span><span>8,48</span><span>84,8</span><span>848</span><span>8476</span></div>",
+     "escala": "gases",
+     "vmin": 0.08476073619631903,
+     "decadas": 5,
+     "isolineas": {
+      "url": "file:///Z:/Miguel/03-Odora/ENCE_LaGalera/resultados_planes/reanalisis/5_anios/prueba_balsas_al_50/DMDS/maximo_isolineas.json?v=1794303385",
+      "niveles": [
+       0.1,
+       1.0,
+       10.0,
+       100.0,
+       1000.0,
+       10000.0
+      ],
+      "leyenda": "<h4>DMDS · Máximo (µg/m³)</h4><div style='display:flex;gap:1px'><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:10.00% 0;opacity:0.31'></span><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:30.00% 0;opacity:0.46'></span><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:50.00% 0;opacity:0.62'></span><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:70.00% 0;opacity:0.77'></span><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:90.00% 0;opacity:0.92'></span></div><div style='display:flex;justify-content:space-between;font-size:11px'><span>0,1</span><span>1</span><span>10</span><span>100</span><span>1000</span><span>10000</span></div>"
+     }
+    },
+    {
+     "id": "plan_norma",
+     "nombre": "Percentil 98",
+     "titulo": "P98",
+     "imagenes": [
+      {
+       "url": "file:///Z:/Miguel/03-Odora/ENCE_LaGalera/resultados_planes/reanalisis/5_anios/prueba_balsas_al_50/DMDS/p98_0.png?v=1794521561",
+       "limites": [
+        [
+         40.66279012798212,
+         0.4398543419228292
+        ],
+        [
+         40.71840927893203,
+         0.5129701810513234
+        ]
+       ]
+      },
+      {
+       "url": "file:///Z:/Miguel/03-Odora/ENCE_LaGalera/resultados_planes/reanalisis/5_anios/prueba_balsas_al_50/DMDS/p98_1.png?v=1794521561",
+       "limites": [
+        [
+         40.46291069976792,
+         0.176846752522477
+        ],
+        [
+         40.91756714765027,
+         0.7740970896579468
+        ]
+       ]
+      }
+     ],
+     "leyenda": "<h4>DMDS · Percentil 98 (µg/m³)</h4><div style='height:12px;border-radius:2px;background:var(--escala-gases)'></div><div style='display:flex;justify-content:space-between;font-size:11px'><span>0,0848</span><span>0,848</span><span>8,48</span><span>84,8</span><span>848</span><span>8476</span></div>",
+     "escala": "gases",
+     "vmin": 0.08476073619631903,
+     "decadas": 5,
+     "isolineas": {
+      "url": "file:///Z:/Miguel/03-Odora/ENCE_LaGalera/resultados_planes/reanalisis/5_anios/prueba_balsas_al_50/DMDS/p98_isolineas.json?v=1794303385",
+      "niveles": [
+       0.1,
+       1.0,
+       10.0,
+       100.0,
+       1000.0,
+       10000.0
+      ],
+      "leyenda": "<h4>DMDS · Percentil 98 (µg/m³)</h4><div style='display:flex;gap:1px'><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:10.00% 0;opacity:0.31'></span><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:30.00% 0;opacity:0.46'></span><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:50.00% 0;opacity:0.62'></span><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:70.00% 0;opacity:0.77'></span><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:90.00% 0;opacity:0.92'></span></div><div style='display:flex;justify-content:space-between;font-size:11px'><span>0,1</span><span>1</span><span>10</span><span>100</span><span>1000</span><span>10000</span></div>"
+     }
+    }
+   ],
+   "penacho": null,
+   "horas_txt": [],
+   "maximos": {
+    "media": 0.7559002785379095,
+    "maximo": 5.4467573165893555,
+    "p98": 3.194629430770874
+   },
+   "filas": [
+    {
+     "nombre": "Peor vivienda (< 2 km)",
+     "tipo": "vivienda",
+     "km": 0.5,
+     "media": 0.010942536592421316,
+     "maximo": 0.4040646553039551,
+     "p98": 0.1433907449245453
+    },
+    {
+     "nombre": "La Galera",
+     "tipo": "pueblo",
+     "km": 1.4,
+     "media": 0.0006835278243779425,
+     "maximo": 0.05553359165787697,
+     "p98": 0.008973880670964718
+    },
+    {
+     "nombre": "Santa Bàrbara",
+     "tipo": "pueblo",
+     "km": 3.2,
+     "media": 0.0011743929627863999,
+     "maximo": 0.05301294103264809,
+     "p98": 0.01590077579021454
+    },
+    {
+     "nombre": "Godall",
+     "tipo": "pueblo",
+     "km": 3.9,
+     "media": 0.0001360313593499432,
+     "maximo": 0.011026539839804173,
+     "p98": 0.00210220692679286
+    },
+    {
+     "nombre": "Freginals",
+     "tipo": "pueblo",
+     "km": 4.3,
+     "media": 0.00047549628143631767,
+     "maximo": 0.02021913416683674,
+     "p98": 0.004695693030953407
+    },
+    {
+     "nombre": "Masdenverge",
+     "tipo": "pueblo",
+     "km": 5.5,
+     "media": 0.00011705039360048863,
+     "maximo": 0.012042722664773464,
+     "p98": 0.0013877826277166605
+    },
+    {
+     "nombre": "Favaret",
+     "tipo": "pueblo",
+     "km": 6.5,
+     "media": 7.320292481015598e-05,
+     "maximo": 0.004462903831154108,
+     "p98": 0.0008732941350899637
+    },
+    {
+     "nombre": "Amposta",
+     "tipo": "pueblo",
+     "km": 8.7,
+     "media": 4.208803457139994e-05,
+     "maximo": 0.004528259392827749,
+     "p98": 0.0007035951712168753
+    },
+    {
+     "nombre": "Mas de Barberans",
+     "tipo": "pueblo",
+     "km": 10.1,
+     "media": 1.3043303900705597e-05,
+     "maximo": 0.0010151397436857224,
+     "p98": 0.0001498348719906062
+    },
+    {
+     "nombre": "Ulldecona",
+     "tipo": "pueblo",
+     "km": 10.6,
+     "media": 8.722517819607116e-06,
+     "maximo": 0.00078258675057441,
+     "p98": 0.00011979426926700398
+    },
+    {
+     "nombre": "La Ràpita",
+     "tipo": "pueblo",
+     "km": 12.7,
+     "media": 2.5324981834638934e-05,
+     "maximo": 0.0023682606406509876,
+     "p98": 0.00023267630604095757
+    },
+    {
+     "nombre": "L'Aldea",
+     "tipo": "pueblo",
+     "km": 12.8,
+     "media": 2.6234121687218285e-05,
+     "maximo": 0.0019478913163766265,
+     "p98": 0.0002602303575258702
+    },
+    {
+     "nombre": "Tortosa",
+     "tipo": "pueblo",
+     "km": 13.6,
+     "media": 4.830744228182767e-05,
+     "maximo": 0.004131893161684275,
+     "p98": 0.000622093619313091
+    },
+    {
+     "nombre": "Sector G",
+     "tipo": "pueblo",
+     "km": 13.7,
+     "media": 1.0302856881727998e-05,
+     "maximo": 0.0003623580851126462,
+     "p98": 8.571377111366019e-05
+    },
+    {
+     "nombre": "San Rafael del Río",
+     "tipo": "pueblo",
+     "km": 14.3,
+     "media": 3.8314720017289075e-06,
+     "maximo": 0.0010414151474833488,
+     "p98": 4.3714113417081535e-05
+    },
+    {
+     "nombre": "Roquetes",
+     "tipo": "pueblo",
+     "km": 14.6,
+     "media": 4.1240310667821267e-05,
+     "maximo": 0.002988360822200775,
+     "p98": 0.0005261065089143813
+    },
+    {
+     "nombre": "Carretera del Reguers",
+     "tipo": "pueblo",
+     "km": 15.0,
+     "media": 3.9323495674467715e-05,
+     "maximo": 0.0019547906704247,
+     "p98": 0.0004975988995283842
+    },
+    {
+     "nombre": "Sant Josep de la Muntanya",
+     "tipo": "pueblo",
+     "km": 15.0,
+     "media": 2.374566073688542e-05,
+     "maximo": 0.0011674345005303621,
+     "p98": 0.0003062729665543884
+    },
+    {
+     "nombre": "Urbanització Els Pilans",
+     "tipo": "pueblo",
+     "km": 15.3,
+     "media": 2.8362104328031573e-05,
+     "maximo": 0.0017846963601186872,
+     "p98": 0.00032165704760700464
+    },
+    {
+     "nombre": "Jesús",
+     "tipo": "pueblo",
+     "km": 15.5,
+     "media": 3.703525271671283e-05,
+     "maximo": 0.002113906666636467,
+     "p98": 0.000543690228369087
+    },
+    {
+     "nombre": "les Cases d'Alcanar",
+     "tipo": "pueblo",
+     "km": 15.8,
+     "media": 5.4223162534939855e-06,
+     "maximo": 0.00029422511579468846,
+     "p98": 5.416968633653596e-05
+    },
+    {
+     "nombre": "Alcanar",
+     "tipo": "pueblo",
+     "km": 16.5,
+     "media": 3.282072204705759e-06,
+     "maximo": 0.00016876732115633786,
+     "p98": 4.67358113382943e-05
+    },
+    {
+     "nombre": "el Lligallo del Roig",
+     "tipo": "pueblo",
+     "km": 16.8,
+     "media": 1.0921477520848905e-05,
+     "maximo": 0.0005913221393711865,
+     "p98": 0.00011923714191652834
+    },
+    {
+     "nombre": "La Sénia",
+     "tipo": "pueblo",
+     "km": 17.4,
+     "media": 1.1496714972892188e-06,
+     "maximo": 0.00020107942691538483,
+     "p98": 1.5740304661449045e-05
+    },
+    {
+     "nombre": "Urbanización Panorámica",
+     "tipo": "pueblo",
+     "km": 17.5,
+     "media": 1.7481498202867377e-06,
+     "maximo": 0.00020160275744274259,
+     "p98": 2.6959061870002188e-05
+    },
+    {
+     "nombre": "Camarles",
+     "tipo": "pueblo",
+     "km": 18.8,
+     "media": 7.929380070079689e-06,
+     "maximo": 0.00044608587631955743,
+     "p98": 9.674050670582801e-05
+    },
+    {
+     "nombre": "Bítem",
+     "tipo": "pueblo",
+     "km": 19.2,
+     "media": 2.2964724801570764e-05,
+     "maximo": 0.0007701300201006234,
+     "p98": 0.0003592651046346873
+    },
+    {
+     "nombre": "Sant Jaume d'Enveja",
+     "tipo": "pueblo",
+     "km": 20.5,
+     "media": 8.370590192784557e-06,
+     "maximo": 0.000605821143835783,
+     "p98": 0.00010216057853540406
+    },
+    {
+     "nombre": "Deltebre",
+     "tipo": "pueblo",
+     "km": 21.0,
+     "media": 9.499804870603009e-06,
+     "maximo": 0.0006271710153669119,
+     "p98": 0.00011672081018332392
+    },
+    {
+     "nombre": "Vinaròs",
+     "tipo": "pueblo",
+     "km": 23.0,
+     "media": 1.6832524227087555e-06,
+     "maximo": 6.594521983060986e-05,
+     "p98": 2.6342544515500776e-05
+    },
+    {
+     "nombre": "Rossell",
+     "tipo": "pueblo",
+     "km": 23.1,
+     "media": 4.22978841887411e-07,
+     "maximo": 9.357353701489046e-05,
+     "p98": 4.049524250149261e-06
+    },
+    {
+     "nombre": "L'Ampolla",
+     "tipo": "pueblo",
+     "km": 23.4,
+     "media": 4.814227058537561e-06,
+     "maximo": 0.0002603176690172404,
+     "p98": 5.5298580264206976e-05
+    },
+    {
+     "nombre": "els Muntells",
+     "tipo": "pueblo",
+     "km": 23.4,
+     "media": 7.508314126153065e-06,
+     "maximo": 0.000410514505347237,
+     "p98": 8.909240568755195e-05
+    },
+    {
+     "nombre": "Sant Jordi/San Jorge",
+     "tipo": "pueblo",
+     "km": 23.5,
+     "media": 4.790761322360336e-07,
+     "maximo": 9.800482803257182e-05,
+     "p98": 4.212193744024262e-06
+    },
+    {
+     "nombre": "Traiguera",
+     "tipo": "pueblo",
+     "km": 24.2,
+     "media": 3.9010541106380225e-07,
+     "maximo": 0.00010337234562030062,
+     "p98": 6.310929734354431e-08
+    },
+    {
+     "nombre": "Cap-Roig",
+     "tipo": "pueblo",
+     "km": 26.3,
+     "media": 3.0139774691232363e-06,
+     "maximo": 0.000171966094058007,
+     "p98": 4.0169285057345405e-05
+    },
+    {
+     "nombre": "la Jana",
+     "tipo": "pueblo",
+     "km": 27.5,
+     "media": 2.1293215282225674e-07,
+     "maximo": 5.8382491260999814e-05,
+     "p98": 0.0
+    },
+    {
+     "nombre": "El Perelló",
+     "tipo": "pueblo",
+     "km": 28.5,
+     "media": 1.7347279807625649e-06,
+     "maximo": 9.778657113201916e-05,
+     "p98": 2.40171211771667e-05
+    },
+    {
+     "nombre": "Beceite",
+     "tipo": "pueblo",
+     "km": 29.4,
+     "media": 3.1924819845028566e-07,
+     "maximo": 3.098318848060444e-05,
+     "p98": 4.799871021532454e-06
+    }
+   ]
+  },
+  "CH3SH": {
+   "clave": "CH3SH",
+   "nombre": "CH₃SH",
+   "unidad": "µg/m³",
+   "escala": "gases",
+   "ref": 0.13773824130879345,
+   "emisiones": {
+    "F05": 14.551554979389607,
+    "F06": 14.551554979389607,
+    "F07": 14.551554979389607,
+    "F08": 14.551554979389607
+   },
+   "focos": 4,
+   "fuera": [],
+   "estimados": [],
+   "columnas": [
+    {
+     "clave": "media",
+     "titulo": "Media",
+     "nombre": "Media",
+     "tipo": "conc",
+     "limite": null,
+     "capa": "media"
+    },
+    {
+     "clave": "maximo",
+     "titulo": "Máx.",
+     "nombre": "Máximo",
+     "tipo": "conc",
+     "limite": null,
+     "capa": "maximo"
+    },
+    {
+     "clave": "p98",
+     "titulo": "P98",
+     "nombre": "Percentil 98",
+     "tipo": "conc",
+     "limite": null,
+     "capa": "norma",
+     "percentil": 98.0
+    }
+   ],
+   "capas": [
+    {
+     "id": "plan_media",
+     "nombre": "Media",
+     "titulo": "Media",
+     "imagenes": [
+      {
+       "url": "file:///Z:/Miguel/03-Odora/ENCE_LaGalera/resultados_planes/reanalisis/5_anios/prueba_balsas_al_50/CH3SH/media_0.png?v=1794521562",
+       "limites": [
+        [
+         40.66279012798212,
+         0.4398543419228292
+        ],
+        [
+         40.71840927893203,
+         0.5129701810513234
+        ]
+       ]
+      },
+      {
+       "url": "file:///Z:/Miguel/03-Odora/ENCE_LaGalera/resultados_planes/reanalisis/5_anios/prueba_balsas_al_50/CH3SH/media_1.png?v=1794521562",
+       "limites": [
+        [
+         40.46291069976792,
+         0.176846752522477
+        ],
+        [
+         40.91756714765027,
+         0.7740970896579468
+        ]
+       ]
+      }
+     ],
+     "leyenda": "<h4>CH₃SH · Media (µg/m³)</h4><div style='height:12px;border-radius:2px;background:var(--escala-gases)'></div><div style='display:flex;justify-content:space-between;font-size:11px'><span>0,00138</span><span>0,0138</span><span>0,138</span><span>1,38</span><span>13,8</span><span>138</span></div>",
+     "escala": "gases",
+     "vmin": 0.0013773824130879344,
+     "decadas": 5,
+     "isolineas": {
+      "url": "file:///Z:/Miguel/03-Odora/ENCE_LaGalera/resultados_planes/reanalisis/5_anios/prueba_balsas_al_50/CH3SH/media_isolineas.json?v=1794303385",
+      "niveles": [
+       0.001,
+       0.01,
+       0.1,
+       1.0,
+       10.0,
+       100.0
+      ],
+      "leyenda": "<h4>CH₃SH · Media (µg/m³)</h4><div style='display:flex;gap:1px'><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:10.00% 0;opacity:0.31'></span><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:30.00% 0;opacity:0.46'></span><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:50.00% 0;opacity:0.62'></span><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:70.00% 0;opacity:0.77'></span><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:90.00% 0;opacity:0.92'></span></div><div style='display:flex;justify-content:space-between;font-size:11px'><span>0,001</span><span>0,01</span><span>0,1</span><span>1</span><span>10</span><span>100</span></div>"
+     }
+    },
+    {
+     "id": "plan_maximo",
+     "nombre": "Máximo",
+     "titulo": "Máx.",
+     "imagenes": [
+      {
+       "url": "file:///Z:/Miguel/03-Odora/ENCE_LaGalera/resultados_planes/reanalisis/5_anios/prueba_balsas_al_50/CH3SH/maximo_0.png?v=1794521562",
+       "limites": [
+        [
+         40.66279012798212,
+         0.4398543419228292
+        ],
+        [
+         40.71840927893203,
+         0.5129701810513234
+        ]
+       ]
+      },
+      {
+       "url": "file:///Z:/Miguel/03-Odora/ENCE_LaGalera/resultados_planes/reanalisis/5_anios/prueba_balsas_al_50/CH3SH/maximo_1.png?v=1794521562",
+       "limites": [
+        [
+         40.46291069976792,
+         0.176846752522477
+        ],
+        [
+         40.91756714765027,
+         0.7740970896579468
+        ]
+       ]
+      }
+     ],
+     "leyenda": "<h4>CH₃SH · Máximo (µg/m³)</h4><div style='height:12px;border-radius:2px;background:var(--escala-gases)'></div><div style='display:flex;justify-content:space-between;font-size:11px'><span>0,00138</span><span>0,0138</span><span>0,138</span><span>1,38</span><span>13,8</span><span>138</span></div>",
+     "escala": "gases",
+     "vmin": 0.0013773824130879344,
+     "decadas": 5,
+     "isolineas": {
+      "url": "file:///Z:/Miguel/03-Odora/ENCE_LaGalera/resultados_planes/reanalisis/5_anios/prueba_balsas_al_50/CH3SH/maximo_isolineas.json?v=1794303385",
+      "niveles": [
+       0.001,
+       0.01,
+       0.1,
+       1.0,
+       10.0,
+       100.0
+      ],
+      "leyenda": "<h4>CH₃SH · Máximo (µg/m³)</h4><div style='display:flex;gap:1px'><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:10.00% 0;opacity:0.31'></span><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:30.00% 0;opacity:0.46'></span><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:50.00% 0;opacity:0.62'></span><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:70.00% 0;opacity:0.77'></span><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:90.00% 0;opacity:0.92'></span></div><div style='display:flex;justify-content:space-between;font-size:11px'><span>0,001</span><span>0,01</span><span>0,1</span><span>1</span><span>10</span><span>100</span></div>"
+     }
+    },
+    {
+     "id": "plan_norma",
+     "nombre": "Percentil 98",
+     "titulo": "P98",
+     "imagenes": [
+      {
+       "url": "file:///Z:/Miguel/03-Odora/ENCE_LaGalera/resultados_planes/reanalisis/5_anios/prueba_balsas_al_50/CH3SH/p98_0.png?v=1794521562",
+       "limites": [
+        [
+         40.66279012798212,
+         0.4398543419228292
+        ],
+        [
+         40.71840927893203,
+         0.5129701810513234
+        ]
+       ]
+      },
+      {
+       "url": "file:///Z:/Miguel/03-Odora/ENCE_LaGalera/resultados_planes/reanalisis/5_anios/prueba_balsas_al_50/CH3SH/p98_1.png?v=1794521562",
+       "limites": [
+        [
+         40.46291069976792,
+         0.176846752522477
+        ],
+        [
+         40.91756714765027,
+         0.7740970896579468
+        ]
+       ]
+      }
+     ],
+     "leyenda": "<h4>CH₃SH · Percentil 98 (µg/m³)</h4><div style='height:12px;border-radius:2px;background:var(--escala-gases)'></div><div style='display:flex;justify-content:space-between;font-size:11px'><span>0,00138</span><span>0,0138</span><span>0,138</span><span>1,38</span><span>13,8</span><span>138</span></div>",
+     "escala": "gases",
+     "vmin": 0.0013773824130879344,
+     "decadas": 5,
+     "isolineas": {
+      "url": "file:///Z:/Miguel/03-Odora/ENCE_LaGalera/resultados_planes/reanalisis/5_anios/prueba_balsas_al_50/CH3SH/p98_isolineas.json?v=1794303385",
+      "niveles": [
+       0.001,
+       0.01,
+       0.1,
+       1.0,
+       10.0,
+       100.0
+      ],
+      "leyenda": "<h4>CH₃SH · Percentil 98 (µg/m³)</h4><div style='display:flex;gap:1px'><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:10.00% 0;opacity:0.31'></span><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:30.00% 0;opacity:0.46'></span><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:50.00% 0;opacity:0.62'></span><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:70.00% 0;opacity:0.77'></span><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:90.00% 0;opacity:0.92'></span></div><div style='display:flex;justify-content:space-between;font-size:11px'><span>0,001</span><span>0,01</span><span>0,1</span><span>1</span><span>10</span><span>100</span></div>"
+     }
+    }
+   ],
+   "penacho": null,
+   "horas_txt": [],
+   "maximos": {
+    "media": 0.12090722414218676,
+    "maximo": 0.8714778423309326,
+    "p98": 0.5111405849456787
+   },
+   "filas": [
+    {
+     "nombre": "Peor vivienda (< 2 km)",
+     "tipo": "vivienda",
+     "km": 0.5,
+     "media": 0.0017387703656950213,
+     "maximo": 0.06433422118425369,
+     "p98": 0.02276589907705784
+    },
+    {
+     "nombre": "La Galera",
+     "tipo": "pueblo",
+     "km": 1.4,
+     "media": 0.00010846978653536658,
+     "maximo": 0.008817248046398163,
+     "p98": 0.001427631126716733
+    },
+    {
+     "nombre": "Santa Bàrbara",
+     "tipo": "pueblo",
+     "km": 3.2,
+     "media": 0.00018692366015645402,
+     "maximo": 0.008444002829492092,
+     "p98": 0.0025346078909933567
+    },
+    {
+     "nombre": "Godall",
+     "tipo": "pueblo",
+     "km": 3.9,
+     "media": 2.1607864486770124e-05,
+     "maximo": 0.001756904530338943,
+     "p98": 0.0003344730066601187
+    },
+    {
+     "nombre": "Freginals",
+     "tipo": "pueblo",
+     "km": 4.3,
+     "media": 7.554224309418755e-05,
+     "maximo": 0.0032141467090696096,
+     "p98": 0.0007475545862689614
+    },
+    {
+     "nombre": "Masdenverge",
+     "tipo": "pueblo",
+     "km": 5.5,
+     "media": 1.8607292879873254e-05,
+     "maximo": 0.0019125989638268948,
+     "p98": 0.0002208944788435474
+    },
+    {
+     "nombre": "Favaret",
+     "tipo": "pueblo",
+     "km": 6.5,
+     "media": 1.16399273365883e-05,
+     "maximo": 0.0007094061002135277,
+     "p98": 0.0001389846293022856
+    },
+    {
+     "nombre": "Amposta",
+     "tipo": "pueblo",
+     "km": 8.7,
+     "media": 6.6901424521730945e-06,
+     "maximo": 0.0007196103106252849,
+     "p98": 0.00011162694863742217
+    },
+    {
+     "nombre": "Mas de Barberans",
+     "tipo": "pueblo",
+     "km": 10.1,
+     "media": 2.070951652973509e-06,
+     "maximo": 0.0001615981454961002,
+     "p98": 2.3514116037404165e-05
+    },
+    {
+     "nombre": "Ulldecona",
+     "tipo": "pueblo",
+     "km": 10.6,
+     "media": 1.3838608038679528e-06,
+     "maximo": 0.00012441522267181426,
+     "p98": 1.9023415006813593e-05
+    },
+    {
+     "nombre": "La Ràpita",
+     "tipo": "pueblo",
+     "km": 12.7,
+     "media": 4.027065120689654e-06,
+     "maximo": 0.00037572000292129815,
+     "p98": 3.6996461858507246e-05
+    },
+    {
+     "nombre": "L'Aldea",
+     "tipo": "pueblo",
+     "km": 12.8,
+     "media": 4.169364205730658e-06,
+     "maximo": 0.0003091715043410659,
+     "p98": 4.1419898479944095e-05
+    },
+    {
+     "nombre": "Tortosa",
+     "tipo": "pueblo",
+     "km": 13.6,
+     "media": 7.675407870197008e-06,
+     "maximo": 0.0006562320631928742,
+     "p98": 9.8852273367811e-05
+    },
+    {
+     "nombre": "Sector G",
+     "tipo": "pueblo",
+     "km": 13.7,
+     "media": 1.6377953128791155e-06,
+     "maximo": 5.757116377935745e-05,
+     "p98": 1.362659259029897e-05
+    },
+    {
+     "nombre": "San Rafael del Río",
+     "tipo": "pueblo",
+     "km": 14.3,
+     "media": 6.070835977307218e-07,
+     "maximo": 0.00016543835226912051,
+     "p98": 6.915262019902002e-06
+    },
+    {
+     "nombre": "Roquetes",
+     "tipo": "pueblo",
+     "km": 14.6,
+     "media": 6.550367513294551e-06,
+     "maximo": 0.0004750358930323273,
+     "p98": 8.369523129658774e-05
+    },
+    {
+     "nombre": "Carretera del Reguers",
+     "tipo": "pueblo",
+     "km": 15.0,
+     "media": 6.248803688019551e-06,
+     "maximo": 0.0003106595831923187,
+     "p98": 7.92542050476186e-05
+    },
+    {
+     "nombre": "Sant Josep de la Muntanya",
+     "tipo": "pueblo",
+     "km": 15.0,
+     "media": 3.7756873209768643e-06,
+     "maximo": 0.00018644043302629143,
+     "p98": 4.874950900557451e-05
+    },
+    {
+     "nombre": "Urbanització Els Pilans",
+     "tipo": "pueblo",
+     "km": 15.3,
+     "media": 4.506381194825715e-06,
+     "maximo": 0.00028327497420832515,
+     "p98": 5.094742664368823e-05
+    },
+    {
+     "nombre": "Jesús",
+     "tipo": "pueblo",
+     "km": 15.5,
+     "media": 5.882002067652663e-06,
+     "maximo": 0.00033576859277673066,
+     "p98": 8.638012513983995e-05
+    },
+    {
+     "nombre": "les Cases d'Alcanar",
+     "tipo": "pueblo",
+     "km": 15.8,
+     "media": 8.62133087854393e-07,
+     "maximo": 4.672272189054638e-05,
+     "p98": 8.619994332548231e-06
+    },
+    {
+     "nombre": "Alcanar",
+     "tipo": "pueblo",
+     "km": 16.5,
+     "media": 5.212906008740514e-07,
+     "maximo": 2.678894452401437e-05,
+     "p98": 7.41046551411273e-06
+    },
+    {
+     "nombre": "el Lligallo del Roig",
+     "tipo": "pueblo",
+     "km": 16.8,
+     "media": 1.7360139501538809e-06,
+     "maximo": 9.394497465109453e-05,
+     "p98": 1.8911934603238478e-05
+    },
+    {
+     "nombre": "La Sénia",
+     "tipo": "pueblo",
+     "km": 17.4,
+     "media": 1.8182222944354542e-07,
+     "maximo": 3.196888428647071e-05,
+     "p98": 2.5000351797643816e-06
+    },
+    {
+     "nombre": "Urbanización Panorámica",
+     "tipo": "pueblo",
+     "km": 17.5,
+     "media": 2.7665081193401773e-07,
+     "maximo": 3.2036841730587184e-05,
+     "p98": 4.255618478055112e-06
+    },
+    {
+     "nombre": "Camarles",
+     "tipo": "pueblo",
+     "km": 18.8,
+     "media": 1.2602587707180971e-06,
+     "maximo": 7.086357072694227e-05,
+     "p98": 1.539072036393918e-05
+    },
+    {
+     "nombre": "Bítem",
+     "tipo": "pueblo",
+     "km": 19.2,
+     "media": 3.6500650930706496e-06,
+     "maximo": 0.00012225833779666573,
+     "p98": 5.707521268050186e-05
+    },
+    {
+     "nombre": "Sant Jaume d'Enveja",
+     "tipo": "pueblo",
+     "km": 20.5,
+     "media": 1.330877352083227e-06,
+     "maximo": 9.6290503279306e-05,
+     "p98": 1.623514799575787e-05
+    },
+    {
+     "nombre": "Deltebre",
+     "tipo": "pueblo",
+     "km": 21.0,
+     "media": 1.510180014041776e-06,
+     "maximo": 9.972086263587698e-05,
+     "p98": 1.8559308955445886e-05
+    },
+    {
+     "nombre": "Vinaròs",
+     "tipo": "pueblo",
+     "km": 23.0,
+     "media": 2.67603604115925e-07,
+     "maximo": 1.0476981515239459e-05,
+     "p98": 4.189394530840218e-06
+    },
+    {
+     "nombre": "Rossell",
+     "tipo": "pueblo",
+     "km": 23.1,
+     "media": 6.689935269922346e-08,
+     "maximo": 1.4871098755975254e-05,
+     "p98": 6.433551789086778e-07
+    },
+    {
+     "nombre": "L'Ampolla",
+     "tipo": "pueblo",
+     "km": 23.4,
+     "media": 7.651897107364019e-07,
+     "maximo": 4.1348059312440455e-05,
+     "p98": 8.799916940915864e-06
+    },
+    {
+     "nombre": "els Muntells",
+     "tipo": "pueblo",
+     "km": 23.4,
+     "media": 1.1939416478464063e-06,
+     "maximo": 6.522706098621711e-05,
+     "p98": 1.4161126273393165e-05
+    },
+    {
+     "nombre": "Sant Jordi/San Jorge",
+     "tipo": "pueblo",
+     "km": 23.5,
+     "media": 7.574863839272182e-08,
+     "maximo": 1.557313407829497e-05,
+     "p98": 6.648255634900124e-07
+    },
+    {
+     "nombre": "Traiguera",
+     "tipo": "pueblo",
+     "km": 24.2,
+     "media": 6.172836240066039e-08,
+     "maximo": 1.6424151908722706e-05,
+     "p98": 0.0
+    },
+    {
+     "nombre": "Cap-Roig",
+     "tipo": "pueblo",
+     "km": 26.3,
+     "media": 4.788998652829494e-07,
+     "maximo": 2.7305119147058576e-05,
+     "p98": 6.391341685230145e-06
+    },
+    {
+     "nombre": "la Jana",
+     "tipo": "pueblo",
+     "km": 27.5,
+     "media": 3.3728600242964594e-08,
+     "maximo": 9.272934221371543e-06,
+     "p98": 0.0
+    },
+    {
+     "nombre": "El Perelló",
+     "tipo": "pueblo",
+     "km": 28.5,
+     "media": 2.7552079479651023e-07,
+     "maximo": 1.552520552650094e-05,
+     "p98": 3.8227017284953035e-06
+    },
+    {
+     "nombre": "Beceite",
+     "tipo": "pueblo",
+     "km": 29.4,
+     "media": 5.0559889306440663e-08,
+     "maximo": 4.920981609757291e-06,
+     "p98": 7.626117053405324e-07
+    }
+   ]
+  },
+  "NH3": {
+   "clave": "NH3",
+   "nombre": "NH₃",
+   "unidad": "µg/m³",
+   "escala": "gases",
+   "ref": 1044.7852760736196,
+   "emisiones": {
+    "F01": 53052.29444464677,
+    "F02": 70795.20833388976,
+    "F03": 54131.66666648361
+   },
+   "focos": 3,
+   "fuera": [],
+   "estimados": [],
+   "columnas": [
+    {
+     "clave": "media",
+     "titulo": "Media",
+     "nombre": "Media",
+     "tipo": "conc",
+     "limite": null,
+     "capa": "media"
+    },
+    {
+     "clave": "maximo",
+     "titulo": "Máx.",
+     "nombre": "Máximo",
+     "tipo": "conc",
+     "limite": null,
+     "capa": "maximo"
+    },
+    {
+     "clave": "p98",
+     "titulo": "P98",
+     "nombre": "Percentil 98",
+     "tipo": "conc",
+     "limite": null,
+     "capa": "norma",
+     "percentil": 98.0
+    }
+   ],
+   "capas": [
+    {
+     "id": "plan_media",
+     "nombre": "Media",
+     "titulo": "Media",
+     "imagenes": [
+      {
+       "url": "file:///Z:/Miguel/03-Odora/ENCE_LaGalera/resultados_planes/reanalisis/5_anios/prueba_balsas_al_50/NH3/media_0.png?v=1794521563",
+       "limites": [
+        [
+         40.66279012798212,
+         0.4398543419228292
+        ],
+        [
+         40.71840927893203,
+         0.5129701810513234
+        ]
+       ]
+      },
+      {
+       "url": "file:///Z:/Miguel/03-Odora/ENCE_LaGalera/resultados_planes/reanalisis/5_anios/prueba_balsas_al_50/NH3/media_1.png?v=1794521563",
+       "limites": [
+        [
+         40.46291069976792,
+         0.176846752522477
+        ],
+        [
+         40.91756714765027,
+         0.7740970896579468
+        ]
+       ]
+      }
+     ],
+     "leyenda": "<h4>NH₃ · Media (µg/m³)</h4><div style='height:12px;border-radius:2px;background:var(--escala-gases)'></div><div style='display:flex;justify-content:space-between;font-size:11px'><span>10,4</span><span>104</span><span>1045</span><span>10448</span><span>104479</span><span>1044785</span></div>",
+     "escala": "gases",
+     "vmin": 10.447852760736195,
+     "decadas": 5,
+     "isolineas": {
+      "url": "file:///Z:/Miguel/03-Odora/ENCE_LaGalera/resultados_planes/reanalisis/5_anios/prueba_balsas_al_50/NH3/media_isolineas.json?v=1794303386",
+      "niveles": [
+       10.0,
+       100.0,
+       1000.0,
+       10000.0,
+       100000.0,
+       1000000.0
+      ],
+      "leyenda": "<h4>NH₃ · Media (µg/m³)</h4><div style='display:flex;gap:1px'><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:10.00% 0;opacity:0.31'></span><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:30.00% 0;opacity:0.46'></span><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:50.00% 0;opacity:0.62'></span><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:70.00% 0;opacity:0.77'></span><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:90.00% 0;opacity:0.92'></span></div><div style='display:flex;justify-content:space-between;font-size:11px'><span>10</span><span>100</span><span>1000</span><span>10000</span><span>100000</span><span>1000000</span></div>"
+     }
+    },
+    {
+     "id": "plan_maximo",
+     "nombre": "Máximo",
+     "titulo": "Máx.",
+     "imagenes": [
+      {
+       "url": "file:///Z:/Miguel/03-Odora/ENCE_LaGalera/resultados_planes/reanalisis/5_anios/prueba_balsas_al_50/NH3/maximo_0.png?v=1794521563",
+       "limites": [
+        [
+         40.66279012798212,
+         0.4398543419228292
+        ],
+        [
+         40.71840927893203,
+         0.5129701810513234
+        ]
+       ]
+      },
+      {
+       "url": "file:///Z:/Miguel/03-Odora/ENCE_LaGalera/resultados_planes/reanalisis/5_anios/prueba_balsas_al_50/NH3/maximo_1.png?v=1794521563",
+       "limites": [
+        [
+         40.46291069976792,
+         0.176846752522477
+        ],
+        [
+         40.91756714765027,
+         0.7740970896579468
+        ]
+       ]
+      }
+     ],
+     "leyenda": "<h4>NH₃ · Máximo (µg/m³)</h4><div style='height:12px;border-radius:2px;background:var(--escala-gases)'></div><div style='display:flex;justify-content:space-between;font-size:11px'><span>10,4</span><span>104</span><span>1045</span><span>10448</span><span>104479</span><span>1044785</span></div>",
+     "escala": "gases",
+     "vmin": 10.447852760736195,
+     "decadas": 5,
+     "isolineas": {
+      "url": "file:///Z:/Miguel/03-Odora/ENCE_LaGalera/resultados_planes/reanalisis/5_anios/prueba_balsas_al_50/NH3/maximo_isolineas.json?v=1794303386",
+      "niveles": [
+       10.0,
+       100.0,
+       1000.0,
+       10000.0,
+       100000.0,
+       1000000.0
+      ],
+      "leyenda": "<h4>NH₃ · Máximo (µg/m³)</h4><div style='display:flex;gap:1px'><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:10.00% 0;opacity:0.31'></span><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:30.00% 0;opacity:0.46'></span><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:50.00% 0;opacity:0.62'></span><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:70.00% 0;opacity:0.77'></span><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:90.00% 0;opacity:0.92'></span></div><div style='display:flex;justify-content:space-between;font-size:11px'><span>10</span><span>100</span><span>1000</span><span>10000</span><span>100000</span><span>1000000</span></div>"
+     }
+    },
+    {
+     "id": "plan_norma",
+     "nombre": "Percentil 98",
+     "titulo": "P98",
+     "imagenes": [
+      {
+       "url": "file:///Z:/Miguel/03-Odora/ENCE_LaGalera/resultados_planes/reanalisis/5_anios/prueba_balsas_al_50/NH3/p98_0.png?v=1794521563",
+       "limites": [
+        [
+         40.66279012798212,
+         0.4398543419228292
+        ],
+        [
+         40.71840927893203,
+         0.5129701810513234
+        ]
+       ]
+      },
+      {
+       "url": "file:///Z:/Miguel/03-Odora/ENCE_LaGalera/resultados_planes/reanalisis/5_anios/prueba_balsas_al_50/NH3/p98_1.png?v=1794521563",
+       "limites": [
+        [
+         40.46291069976792,
+         0.176846752522477
+        ],
+        [
+         40.91756714765027,
+         0.7740970896579468
+        ]
+       ]
+      }
+     ],
+     "leyenda": "<h4>NH₃ · Percentil 98 (µg/m³)</h4><div style='height:12px;border-radius:2px;background:var(--escala-gases)'></div><div style='display:flex;justify-content:space-between;font-size:11px'><span>10,4</span><span>104</span><span>1045</span><span>10448</span><span>104479</span><span>1044785</span></div>",
+     "escala": "gases",
+     "vmin": 10.447852760736195,
+     "decadas": 5,
+     "isolineas": {
+      "url": "file:///Z:/Miguel/03-Odora/ENCE_LaGalera/resultados_planes/reanalisis/5_anios/prueba_balsas_al_50/NH3/p98_isolineas.json?v=1794303386",
+      "niveles": [
+       10.0,
+       100.0,
+       1000.0,
+       10000.0,
+       100000.0,
+       1000000.0
+      ],
+      "leyenda": "<h4>NH₃ · Percentil 98 (µg/m³)</h4><div style='display:flex;gap:1px'><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:10.00% 0;opacity:0.31'></span><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:30.00% 0;opacity:0.46'></span><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:50.00% 0;opacity:0.62'></span><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:70.00% 0;opacity:0.77'></span><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:90.00% 0;opacity:0.92'></span></div><div style='display:flex;justify-content:space-between;font-size:11px'><span>10</span><span>100</span><span>1000</span><span>10000</span><span>100000</span><span>1000000</span></div>"
+     }
+    }
+   ],
+   "penacho": null,
+   "horas_txt": [],
+   "maximos": {
+    "media": 221.05895787584126,
+    "maximo": 1016.2503662109375,
+    "p98": 736.8775024414062
+   },
+   "filas": [
+    {
+     "nombre": "Peor vivienda (< 2 km)",
+     "tipo": "vivienda",
+     "km": 0.5,
+     "media": 2.73858737589996,
+     "maximo": 115.96113586425781,
+     "p98": 37.68854522705078
+    },
+    {
+     "nombre": "La Galera",
+     "tipo": "pueblo",
+     "km": 1.4,
+     "media": 0.2173193126255444,
+     "maximo": 16.350921630859375,
+     "p98": 2.7382426261901855
+    },
+    {
+     "nombre": "Santa Bàrbara",
+     "tipo": "pueblo",
+     "km": 3.2,
+     "media": 0.29309936705463635,
+     "maximo": 16.337684631347656,
+     "p98": 3.7957348823547363
+    },
+    {
+     "nombre": "Godall",
+     "tipo": "pueblo",
+     "km": 3.9,
+     "media": 0.040486740532443576,
+     "maximo": 3.154958724975586,
+     "p98": 0.5437076091766357
+    },
+    {
+     "nombre": "Freginals",
+     "tipo": "pueblo",
+     "km": 4.3,
+     "media": 0.15194282791411523,
+     "maximo": 5.504421234130859,
+     "p98": 1.6238433122634888
+    },
+    {
+     "nombre": "Masdenverge",
+     "tipo": "pueblo",
+     "km": 5.5,
+     "media": 0.03275941558483378,
+     "maximo": 3.9266343116760254,
+     "p98": 0.370144784450531
+    },
+    {
+     "nombre": "Favaret",
+     "tipo": "pueblo",
+     "km": 6.5,
+     "media": 0.020007386247179626,
+     "maximo": 1.3231755495071411,
+     "p98": 0.2532099187374115
+    },
+    {
+     "nombre": "Amposta",
+     "tipo": "pueblo",
+     "km": 8.7,
+     "media": 0.011870314882819913,
+     "maximo": 1.3814600706100464,
+     "p98": 0.1596078872680664
+    },
+    {
+     "nombre": "Mas de Barberans",
+     "tipo": "pueblo",
+     "km": 10.1,
+     "media": 0.0042950927895054666,
+     "maximo": 0.21871761977672577,
+     "p98": 0.06390491127967834
+    },
+    {
+     "nombre": "Ulldecona",
+     "tipo": "pueblo",
+     "km": 10.6,
+     "media": 0.003174809296311792,
+     "maximo": 0.20977157354354858,
+     "p98": 0.04742693156003952
+    },
+    {
+     "nombre": "La Ràpita",
+     "tipo": "pueblo",
+     "km": 12.7,
+     "media": 0.007043434199316789,
+     "maximo": 0.8453088402748108,
+     "p98": 0.07314019650220871
+    },
+    {
+     "nombre": "L'Aldea",
+     "tipo": "pueblo",
+     "km": 12.8,
+     "media": 0.007677648552173531,
+     "maximo": 0.6628732085227966,
+     "p98": 0.06584007292985916
+    },
+    {
+     "nombre": "Tortosa",
+     "tipo": "pueblo",
+     "km": 13.6,
+     "media": 0.01482322544591583,
+     "maximo": 1.336538314819336,
+     "p98": 0.19198887050151825
+    },
+    {
+     "nombre": "Sector G",
+     "tipo": "pueblo",
+     "km": 13.7,
+     "media": 0.0029468699084193853,
+     "maximo": 0.1171596348285675,
+     "p98": 0.026521125808358192
+    },
+    {
+     "nombre": "San Rafael del Río",
+     "tipo": "pueblo",
+     "km": 14.3,
+     "media": 0.0016643843536377125,
+     "maximo": 0.36012449860572815,
+     "p98": 0.02115916833281517
+    },
+    {
+     "nombre": "Roquetes",
+     "tipo": "pueblo",
+     "km": 14.6,
+     "media": 0.013272914457030324,
+     "maximo": 0.9085614681243896,
+     "p98": 0.15525691211223602
+    },
+    {
+     "nombre": "Carretera del Reguers",
+     "tipo": "pueblo",
+     "km": 15.0,
+     "media": 0.011991050302169176,
+     "maximo": 0.5952168107032776,
+     "p98": 0.15111610293388367
+    },
+    {
+     "nombre": "Sant Josep de la Muntanya",
+     "tipo": "pueblo",
+     "km": 15.0,
+     "media": 0.006478084607874262,
+     "maximo": 0.30688029527664185,
+     "p98": 0.08435150980949402
+    },
+    {
+     "nombre": "Urbanització Els Pilans",
+     "tipo": "pueblo",
+     "km": 15.3,
+     "media": 0.008637422629548462,
+     "maximo": 0.6324317455291748,
+     "p98": 0.08469938486814499
+    },
+    {
+     "nombre": "Jesús",
+     "tipo": "pueblo",
+     "km": 15.5,
+     "media": 0.01203592731154349,
+     "maximo": 0.8371591567993164,
+     "p98": 0.1692797988653183
+    },
+    {
+     "nombre": "les Cases d'Alcanar",
+     "tipo": "pueblo",
+     "km": 15.8,
+     "media": 0.00148629636366169,
+     "maximo": 0.09724552184343338,
+     "p98": 0.015013097785413265
+    },
+    {
+     "nombre": "Alcanar",
+     "tipo": "pueblo",
+     "km": 16.5,
+     "media": 0.001038831150065553,
+     "maximo": 0.05766914784908295,
+     "p98": 0.013148185797035694
+    },
+    {
+     "nombre": "el Lligallo del Roig",
+     "tipo": "pueblo",
+     "km": 16.8,
+     "media": 0.003204551657596543,
+     "maximo": 0.18409836292266846,
+     "p98": 0.04079381376504898
+    },
+    {
+     "nombre": "La Sénia",
+     "tipo": "pueblo",
+     "km": 17.4,
+     "media": 0.0005736557848031397,
+     "maximo": 0.05255122855305672,
+     "p98": 0.008609002456068993
+    },
+    {
+     "nombre": "Urbanización Panorámica",
+     "tipo": "pueblo",
+     "km": 17.5,
+     "media": 0.0008355486217170026,
+     "maximo": 0.06451895087957382,
+     "p98": 0.013402427546679974
+    },
+    {
+     "nombre": "Camarles",
+     "tipo": "pueblo",
+     "km": 18.8,
+     "media": 0.002341509837844364,
+     "maximo": 0.14037053287029266,
+     "p98": 0.024744853377342224
+    },
+    {
+     "nombre": "Bítem",
+     "tipo": "pueblo",
+     "km": 19.2,
+     "media": 0.006665362461449815,
+     "maximo": 0.26175054907798767,
+     "p98": 0.11284805089235306
+    },
+    {
+     "nombre": "Sant Jaume d'Enveja",
+     "tipo": "pueblo",
+     "km": 20.5,
+     "media": 0.0022955590698192836,
+     "maximo": 0.17751246690750122,
+     "p98": 0.028279131278395653
+    },
+    {
+     "nombre": "Deltebre",
+     "tipo": "pueblo",
+     "km": 21.0,
+     "media": 0.002671210719803408,
+     "maximo": 0.18044643104076385,
+     "p98": 0.032228682190179825
+    },
+    {
+     "nombre": "Vinaròs",
+     "tipo": "pueblo",
+     "km": 23.0,
+     "media": 0.0004729983095132279,
+     "maximo": 0.020404746755957603,
+     "p98": 0.007402804214507341
+    },
+    {
+     "nombre": "Rossell",
+     "tipo": "pueblo",
+     "km": 23.1,
+     "media": 0.00020987512403697456,
+     "maximo": 0.026790672913193703,
+     "p98": 0.002235914347693324
+    },
+    {
+     "nombre": "L'Ampolla",
+     "tipo": "pueblo",
+     "km": 23.4,
+     "media": 0.0014228278291395441,
+     "maximo": 0.08444390445947647,
+     "p98": 0.018876494839787483
+    },
+    {
+     "nombre": "els Muntells",
+     "tipo": "pueblo",
+     "km": 23.4,
+     "media": 0.0020240751977928344,
+     "maximo": 0.12047821283340454,
+     "p98": 0.02613551914691925
+    },
+    {
+     "nombre": "Sant Jordi/San Jorge",
+     "tipo": "pueblo",
+     "km": 23.5,
+     "media": 0.0002438075416698452,
+     "maximo": 0.02774444781243801,
+     "p98": 0.005315296817570925
+    },
+    {
+     "nombre": "Traiguera",
+     "tipo": "pueblo",
+     "km": 24.2,
+     "media": 0.00018487037375576398,
+     "maximo": 0.030410153791308403,
+     "p98": 0.002155822003260255
+    },
+    {
+     "nombre": "Cap-Roig",
+     "tipo": "pueblo",
+     "km": 26.3,
+     "media": 0.000929369678635433,
+     "maximo": 0.0572689026594162,
+     "p98": 0.01234747190028429
+    },
+    {
+     "nombre": "la Jana",
+     "tipo": "pueblo",
+     "km": 27.5,
+     "media": 9.245339747213641e-05,
+     "maximo": 0.017975272610783577,
+     "p98": 0.0
+    },
+    {
+     "nombre": "El Perelló",
+     "tipo": "pueblo",
+     "km": 28.5,
+     "media": 0.000564979752624958,
+     "maximo": 0.033064693212509155,
+     "p98": 0.0076703703962266445
+    },
+    {
+     "nombre": "Beceite",
+     "tipo": "pueblo",
+     "km": 29.4,
+     "media": 0.00014082252070599387,
+     "maximo": 0.010937754064798355,
+     "p98": 0.0028078060131520033
+    }
+   ]
+  },
+  "ALFA_PINENE": {
+   "clave": "ALFA_PINENE",
+   "nombre": "α-Pinene",
+   "unidad": "µg/m³",
+   "escala": "gases",
+   "ref": 100.2920245398773,
+   "emisiones": {
+    "F05": 28830.268302915658,
+    "F06": 28830.268302915658,
+    "F07": 28830.268302915658,
+    "F08": 28830.268302915658
+   },
+   "focos": 4,
+   "fuera": [],
+   "estimados": [],
+   "columnas": [
+    {
+     "clave": "media",
+     "titulo": "Media",
+     "nombre": "Media",
+     "tipo": "conc",
+     "limite": null,
+     "capa": "media"
+    },
+    {
+     "clave": "maximo",
+     "titulo": "Máx.",
+     "nombre": "Máximo",
+     "tipo": "conc",
+     "limite": null,
+     "capa": "maximo"
+    },
+    {
+     "clave": "p98",
+     "titulo": "P98",
+     "nombre": "Percentil 98",
+     "tipo": "conc",
+     "limite": null,
+     "capa": "norma",
+     "percentil": 98.0
+    }
+   ],
+   "capas": [
+    {
+     "id": "plan_media",
+     "nombre": "Media",
+     "titulo": "Media",
+     "imagenes": [
+      {
+       "url": "file:///Z:/Miguel/03-Odora/ENCE_LaGalera/resultados_planes/reanalisis/5_anios/prueba_balsas_al_50/ALFA_PINENE/media_0.png?v=1794521564",
+       "limites": [
+        [
+         40.66279012798212,
+         0.4398543419228292
+        ],
+        [
+         40.71840927893203,
+         0.5129701810513234
+        ]
+       ]
+      },
+      {
+       "url": "file:///Z:/Miguel/03-Odora/ENCE_LaGalera/resultados_planes/reanalisis/5_anios/prueba_balsas_al_50/ALFA_PINENE/media_1.png?v=1794521564",
+       "limites": [
+        [
+         40.46291069976792,
+         0.176846752522477
+        ],
+        [
+         40.91756714765027,
+         0.7740970896579468
+        ]
+       ]
+      }
+     ],
+     "leyenda": "<h4>α-Pinene · Media (µg/m³)</h4><div style='height:12px;border-radius:2px;background:var(--escala-gases)'></div><div style='display:flex;justify-content:space-between;font-size:11px'><span>1</span><span>10</span><span>100</span><span>1003</span><span>10029</span><span>100292</span></div>",
+     "escala": "gases",
+     "vmin": 1.0029202453987731,
+     "decadas": 5,
+     "isolineas": {
+      "url": "file:///Z:/Miguel/03-Odora/ENCE_LaGalera/resultados_planes/reanalisis/5_anios/prueba_balsas_al_50/ALFA_PINENE/media_isolineas.json?v=1794303386",
+      "niveles": [
+       1.0,
+       10.0,
+       100.0,
+       1000.0,
+       10000.0,
+       100000.0
+      ],
+      "leyenda": "<h4>α-Pinene · Media (µg/m³)</h4><div style='display:flex;gap:1px'><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:10.00% 0;opacity:0.31'></span><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:30.00% 0;opacity:0.46'></span><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:50.00% 0;opacity:0.62'></span><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:70.00% 0;opacity:0.77'></span><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:90.00% 0;opacity:0.92'></span></div><div style='display:flex;justify-content:space-between;font-size:11px'><span>1</span><span>10</span><span>100</span><span>1000</span><span>10000</span><span>100000</span></div>"
+     }
+    },
+    {
+     "id": "plan_maximo",
+     "nombre": "Máximo",
+     "titulo": "Máx.",
+     "imagenes": [
+      {
+       "url": "file:///Z:/Miguel/03-Odora/ENCE_LaGalera/resultados_planes/reanalisis/5_anios/prueba_balsas_al_50/ALFA_PINENE/maximo_0.png?v=1794521564",
+       "limites": [
+        [
+         40.66279012798212,
+         0.4398543419228292
+        ],
+        [
+         40.71840927893203,
+         0.5129701810513234
+        ]
+       ]
+      },
+      {
+       "url": "file:///Z:/Miguel/03-Odora/ENCE_LaGalera/resultados_planes/reanalisis/5_anios/prueba_balsas_al_50/ALFA_PINENE/maximo_1.png?v=1794521564",
+       "limites": [
+        [
+         40.46291069976792,
+         0.176846752522477
+        ],
+        [
+         40.91756714765027,
+         0.7740970896579468
+        ]
+       ]
+      }
+     ],
+     "leyenda": "<h4>α-Pinene · Máximo (µg/m³)</h4><div style='height:12px;border-radius:2px;background:var(--escala-gases)'></div><div style='display:flex;justify-content:space-between;font-size:11px'><span>1</span><span>10</span><span>100</span><span>1003</span><span>10029</span><span>100292</span></div>",
+     "escala": "gases",
+     "vmin": 1.0029202453987731,
+     "decadas": 5,
+     "isolineas": {
+      "url": "file:///Z:/Miguel/03-Odora/ENCE_LaGalera/resultados_planes/reanalisis/5_anios/prueba_balsas_al_50/ALFA_PINENE/maximo_isolineas.json?v=1794303386",
+      "niveles": [
+       1.0,
+       10.0,
+       100.0,
+       1000.0,
+       10000.0,
+       100000.0
+      ],
+      "leyenda": "<h4>α-Pinene · Máximo (µg/m³)</h4><div style='display:flex;gap:1px'><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:10.00% 0;opacity:0.31'></span><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:30.00% 0;opacity:0.46'></span><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:50.00% 0;opacity:0.62'></span><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:70.00% 0;opacity:0.77'></span><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:90.00% 0;opacity:0.92'></span></div><div style='display:flex;justify-content:space-between;font-size:11px'><span>1</span><span>10</span><span>100</span><span>1000</span><span>10000</span><span>100000</span></div>"
+     }
+    },
+    {
+     "id": "plan_norma",
+     "nombre": "Percentil 98",
+     "titulo": "P98",
+     "imagenes": [
+      {
+       "url": "file:///Z:/Miguel/03-Odora/ENCE_LaGalera/resultados_planes/reanalisis/5_anios/prueba_balsas_al_50/ALFA_PINENE/p98_0.png?v=1794521564",
+       "limites": [
+        [
+         40.66279012798212,
+         0.4398543419228292
+        ],
+        [
+         40.71840927893203,
+         0.5129701810513234
+        ]
+       ]
+      },
+      {
+       "url": "file:///Z:/Miguel/03-Odora/ENCE_LaGalera/resultados_planes/reanalisis/5_anios/prueba_balsas_al_50/ALFA_PINENE/p98_1.png?v=1794521565",
+       "limites": [
+        [
+         40.46291069976792,
+         0.176846752522477
+        ],
+        [
+         40.91756714765027,
+         0.7740970896579468
+        ]
+       ]
+      }
+     ],
+     "leyenda": "<h4>α-Pinene · Percentil 98 (µg/m³)</h4><div style='height:12px;border-radius:2px;background:var(--escala-gases)'></div><div style='display:flex;justify-content:space-between;font-size:11px'><span>1</span><span>10</span><span>100</span><span>1003</span><span>10029</span><span>100292</span></div>",
+     "escala": "gases",
+     "vmin": 1.0029202453987731,
+     "decadas": 5,
+     "isolineas": {
+      "url": "file:///Z:/Miguel/03-Odora/ENCE_LaGalera/resultados_planes/reanalisis/5_anios/prueba_balsas_al_50/ALFA_PINENE/p98_isolineas.json?v=1794303387",
+      "niveles": [
+       1.0,
+       10.0,
+       100.0,
+       1000.0,
+       10000.0,
+       100000.0
+      ],
+      "leyenda": "<h4>α-Pinene · Percentil 98 (µg/m³)</h4><div style='display:flex;gap:1px'><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:10.00% 0;opacity:0.31'></span><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:30.00% 0;opacity:0.46'></span><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:50.00% 0;opacity:0.62'></span><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:70.00% 0;opacity:0.77'></span><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:90.00% 0;opacity:0.92'></span></div><div style='display:flex;justify-content:space-between;font-size:11px'><span>1</span><span>10</span><span>100</span><span>1000</span><span>10000</span><span>100000</span></div>"
+     }
+    }
+   ],
+   "penacho": null,
+   "horas_txt": [],
+   "maximos": {
+    "media": 239.54743842307823,
+    "maximo": 1726.6153564453125,
+    "p98": 1012.6973266601562
+   },
+   "filas": [
+    {
+     "nombre": "Peor vivienda (< 2 km)",
+     "tipo": "vivienda",
+     "km": 0.5,
+     "media": 3.4449387974714543,
+     "maximo": 127.46217346191406,
+     "p98": 45.104942321777344
+    },
+    {
+     "nombre": "La Galera",
+     "tipo": "pueblo",
+     "km": 1.4,
+     "media": 0.21490576602276185,
+     "maximo": 17.469173431396484,
+     "p98": 2.8284943103790283
+    },
+    {
+     "nombre": "Santa Bàrbara",
+     "tipo": "pueblo",
+     "km": 3.2,
+     "media": 0.3703424951266579,
+     "maximo": 16.729679107666016,
+     "p98": 5.021691799163818
+    },
+    {
+     "nombre": "Godall",
+     "tipo": "pueblo",
+     "km": 3.9,
+     "media": 0.042810581642294024,
+     "maximo": 3.480867385864258,
+     "p98": 0.6626747250556946
+    },
+    {
+     "nombre": "Freginals",
+     "tipo": "pueblo",
+     "km": 4.3,
+     "media": 0.14966806857461257,
+     "maximo": 6.36802864074707,
+     "p98": 1.4810925722122192
+    },
+    {
+     "nombre": "Masdenverge",
+     "tipo": "pueblo",
+     "km": 5.5,
+     "media": 0.036865698705443865,
+     "maximo": 3.789336919784546,
+     "p98": 0.4376471936702728
+    },
+    {
+     "nombre": "Favaret",
+     "tipo": "pueblo",
+     "km": 6.5,
+     "media": 0.023061605834799024,
+     "maximo": 1.4055109024047852,
+     "p98": 0.2753632962703705
+    },
+    {
+     "nombre": "Amposta",
+     "tipo": "pueblo",
+     "km": 8.7,
+     "media": 0.01325484487567449,
+     "maximo": 1.4257280826568604,
+     "p98": 0.221160888671875
+    },
+    {
+     "nombre": "Mas de Barberans",
+     "tipo": "pueblo",
+     "km": 10.1,
+     "media": 0.004103073000654618,
+     "maximo": 0.32016631960868835,
+     "p98": 0.046587344259023666
+    },
+    {
+     "nombre": "Ulldecona",
+     "tipo": "pueblo",
+     "km": 10.6,
+     "media": 0.002741774213458243,
+     "maximo": 0.24649767577648163,
+     "p98": 0.037690140306949615
+    },
+    {
+     "nombre": "La Ràpita",
+     "tipo": "pueblo",
+     "km": 12.7,
+     "media": 0.007978622739112063,
+     "maximo": 0.7443951964378357,
+     "p98": 0.07329924404621124
+    },
+    {
+     "nombre": "L'Aldea",
+     "tipo": "pueblo",
+     "km": 12.8,
+     "media": 0.008260552919805472,
+     "maximo": 0.6125460863113403,
+     "p98": 0.08206316828727722
+    },
+    {
+     "nombre": "Tortosa",
+     "tipo": "pueblo",
+     "km": 13.6,
+     "media": 0.015206901973447054,
+     "maximo": 1.3001598119735718,
+     "p98": 0.19585108757019043
+    },
+    {
+     "nombre": "Sector G",
+     "tipo": "pueblo",
+     "km": 13.7,
+     "media": 0.003244881922947803,
+     "maximo": 0.11406286805868149,
+     "p98": 0.026997685432434082
+    },
+    {
+     "nombre": "San Rafael del Río",
+     "tipo": "pueblo",
+     "km": 14.3,
+     "media": 0.001202784359071988,
+     "maximo": 0.3277747333049774,
+     "p98": 0.013700862415134907
+    },
+    {
+     "nombre": "Roquetes",
+     "tipo": "pueblo",
+     "km": 14.6,
+     "media": 0.012977915837943175,
+     "maximo": 0.9411649107933044,
+     "p98": 0.1658211648464203
+    },
+    {
+     "nombre": "Carretera del Reguers",
+     "tipo": "pueblo",
+     "km": 15.0,
+     "media": 0.012380442485823775,
+     "maximo": 0.6154943704605103,
+     "p98": 0.1570224016904831
+    },
+    {
+     "nombre": "Sant Josep de la Muntanya",
+     "tipo": "pueblo",
+     "km": 15.0,
+     "media": 0.007480580505836771,
+     "maximo": 0.36938509345054626,
+     "p98": 0.0965849757194519
+    },
+    {
+     "nombre": "Urbanització Els Pilans",
+     "tipo": "pueblo",
+     "km": 15.3,
+     "media": 0.008928267603275981,
+     "maximo": 0.5612385272979736,
+     "p98": 0.10093959420919418
+    },
+    {
+     "nombre": "Jesús",
+     "tipo": "pueblo",
+     "km": 15.5,
+     "media": 0.011653716528346009,
+     "maximo": 0.665241539478302,
+     "p98": 0.1711406260728836
+    },
+    {
+     "nombre": "les Cases d'Alcanar",
+     "tipo": "pueblo",
+     "km": 15.8,
+     "media": 0.0017081011845054238,
+     "maximo": 0.09256939589977264,
+     "p98": 0.01707836240530014
+    },
+    {
+     "nombre": "Alcanar",
+     "tipo": "pueblo",
+     "km": 16.5,
+     "media": 0.00103280700045259,
+     "maximo": 0.05307559669017792,
+     "p98": 0.014681984670460224
+    },
+    {
+     "nombre": "el Lligallo del Roig",
+     "tipo": "pueblo",
+     "km": 16.8,
+     "media": 0.003439477683270708,
+     "maximo": 0.18612848222255707,
+     "p98": 0.03746927157044411
+    },
+    {
+     "nombre": "La Sénia",
+     "tipo": "pueblo",
+     "km": 17.4,
+     "media": 0.0003602352919640236,
+     "maximo": 0.06333835422992706,
+     "p98": 0.004953194875270128
+    },
+    {
+     "nombre": "Urbanización Panorámica",
+     "tipo": "pueblo",
+     "km": 17.5,
+     "media": 0.0005481144120579061,
+     "maximo": 0.06347299367189407,
+     "p98": 0.008431443013250828
+    },
+    {
+     "nombre": "Camarles",
+     "tipo": "pueblo",
+     "km": 18.8,
+     "media": 0.002496887716253693,
+     "maximo": 0.14039845764636993,
+     "p98": 0.030492866411805153
+    },
+    {
+     "nombre": "Bítem",
+     "tipo": "pueblo",
+     "km": 19.2,
+     "media": 0.007231691453774244,
+     "maximo": 0.24222432076931,
+     "p98": 0.11308026313781738
+    },
+    {
+     "nombre": "Sant Jaume d'Enveja",
+     "tipo": "pueblo",
+     "km": 20.5,
+     "media": 0.0026368007869695897,
+     "maximo": 0.1907755583524704,
+     "p98": 0.03216588869690895
+    },
+    {
+     "nombre": "Deltebre",
+     "tipo": "pueblo",
+     "km": 21.0,
+     "media": 0.0029920441341878584,
+     "maximo": 0.19757196307182312,
+     "p98": 0.03677063062787056
+    },
+    {
+     "nombre": "Vinaròs",
+     "tipo": "pueblo",
+     "km": 23.0,
+     "media": 0.0005301896401429984,
+     "maximo": 0.02075752057135105,
+     "p98": 0.008300237357616425
+    },
+    {
+     "nombre": "Rossell",
+     "tipo": "pueblo",
+     "km": 23.1,
+     "media": 0.00013254434424765304,
+     "maximo": 0.02946336567401886,
+     "p98": 0.0012746474239975214
+    },
+    {
+     "nombre": "L'Ampolla",
+     "tipo": "pueblo",
+     "km": 23.4,
+     "media": 0.0015160321135568378,
+     "maximo": 0.08192083984613419,
+     "p98": 0.01743483543395996
+    },
+    {
+     "nombre": "els Muntells",
+     "tipo": "pueblo",
+     "km": 23.4,
+     "media": 0.002365496862615907,
+     "maximo": 0.12923111021518707,
+     "p98": 0.028056731447577477
+    },
+    {
+     "nombre": "Sant Jordi/San Jorge",
+     "tipo": "pueblo",
+     "km": 23.5,
+     "media": 0.0001500769926640727,
+     "maximo": 0.030854273587465286,
+     "p98": 0.0013171856990084052
+    },
+    {
+     "nombre": "Traiguera",
+     "tipo": "pueblo",
+     "km": 24.2,
+     "media": 0.00012229931885357872,
+     "maximo": 0.032540351152420044,
+     "p98": 0.0
+    },
+    {
+     "nombre": "Cap-Roig",
+     "tipo": "pueblo",
+     "km": 26.3,
+     "media": 0.000948820344764791,
+     "maximo": 0.05409826338291168,
+     "p98": 0.01266284566372633
+    },
+    {
+     "nombre": "la Jana",
+     "tipo": "pueblo",
+     "km": 27.5,
+     "media": 6.682478961582061e-05,
+     "maximo": 0.018372001126408577,
+     "p98": 0.0
+    },
+    {
+     "nombre": "El Perelló",
+     "tipo": "pueblo",
+     "km": 28.5,
+     "media": 0.0005458755812479092,
+     "maximo": 0.030759314075112343,
+     "p98": 0.007573727983981371
+    },
+    {
+     "nombre": "Beceite",
+     "tipo": "pueblo",
+     "km": 29.4,
+     "media": 0.00010017178088788863,
+     "maximo": 0.009749694727361202,
+     "p98": 0.0015109244268387556
+    }
+   ]
+  },
+  "LIMONENE": {
+   "clave": "LIMONENE",
+   "nombre": "Limonene",
+   "unidad": "µg/m³",
+   "escala": "gases",
+   "ref": 211.72760736196318,
+   "emisiones": {
+    "F05": 20099.335315281893,
+    "F06": 20099.335315281893,
+    "F07": 20099.335315281893,
+    "F08": 20099.335315281893
+   },
+   "focos": 4,
+   "fuera": [],
+   "estimados": [],
+   "columnas": [
+    {
+     "clave": "media",
+     "titulo": "Media",
+     "nombre": "Media",
+     "tipo": "conc",
+     "limite": null,
+     "capa": "media"
+    },
+    {
+     "clave": "maximo",
+     "titulo": "Máx.",
+     "nombre": "Máximo",
+     "tipo": "conc",
+     "limite": null,
+     "capa": "maximo"
+    },
+    {
+     "clave": "p98",
+     "titulo": "P98",
+     "nombre": "Percentil 98",
+     "tipo": "conc",
+     "limite": null,
+     "capa": "norma",
+     "percentil": 98.0
+    }
+   ],
+   "capas": [
+    {
+     "id": "plan_media",
+     "nombre": "Media",
+     "titulo": "Media",
+     "imagenes": [
+      {
+       "url": "file:///Z:/Miguel/03-Odora/ENCE_LaGalera/resultados_planes/reanalisis/5_anios/prueba_balsas_al_50/LIMONENE/media_0.png?v=1794521565",
+       "limites": [
+        [
+         40.66279012798212,
+         0.4398543419228292
+        ],
+        [
+         40.71840927893203,
+         0.5129701810513234
+        ]
+       ]
+      },
+      {
+       "url": "file:///Z:/Miguel/03-Odora/ENCE_LaGalera/resultados_planes/reanalisis/5_anios/prueba_balsas_al_50/LIMONENE/media_1.png?v=1794521565",
+       "limites": [
+        [
+         40.46291069976792,
+         0.176846752522477
+        ],
+        [
+         40.91756714765027,
+         0.7740970896579468
+        ]
+       ]
+      }
+     ],
+     "leyenda": "<h4>Limonene · Media (µg/m³)</h4><div style='height:12px;border-radius:2px;background:var(--escala-gases)'></div><div style='display:flex;justify-content:space-between;font-size:11px'><span>2,12</span><span>21,2</span><span>212</span><span>2117</span><span>21173</span><span>211728</span></div>",
+     "escala": "gases",
+     "vmin": 2.1172760736196317,
+     "decadas": 5,
+     "isolineas": {
+      "url": "file:///Z:/Miguel/03-Odora/ENCE_LaGalera/resultados_planes/reanalisis/5_anios/prueba_balsas_al_50/LIMONENE/media_isolineas.json?v=1794303387",
+      "niveles": [
+       1.0,
+       10.0,
+       100.0,
+       1000.0,
+       10000.0,
+       100000.0
+      ],
+      "leyenda": "<h4>Limonene · Media (µg/m³)</h4><div style='display:flex;gap:1px'><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:10.00% 0;opacity:0.31'></span><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:30.00% 0;opacity:0.46'></span><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:50.00% 0;opacity:0.62'></span><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:70.00% 0;opacity:0.77'></span><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:90.00% 0;opacity:0.92'></span></div><div style='display:flex;justify-content:space-between;font-size:11px'><span>1</span><span>10</span><span>100</span><span>1000</span><span>10000</span><span>100000</span></div>"
+     }
+    },
+    {
+     "id": "plan_maximo",
+     "nombre": "Máximo",
+     "titulo": "Máx.",
+     "imagenes": [
+      {
+       "url": "file:///Z:/Miguel/03-Odora/ENCE_LaGalera/resultados_planes/reanalisis/5_anios/prueba_balsas_al_50/LIMONENE/maximo_0.png?v=1794521565",
+       "limites": [
+        [
+         40.66279012798212,
+         0.4398543419228292
+        ],
+        [
+         40.71840927893203,
+         0.5129701810513234
+        ]
+       ]
+      },
+      {
+       "url": "file:///Z:/Miguel/03-Odora/ENCE_LaGalera/resultados_planes/reanalisis/5_anios/prueba_balsas_al_50/LIMONENE/maximo_1.png?v=1794521565",
+       "limites": [
+        [
+         40.46291069976792,
+         0.176846752522477
+        ],
+        [
+         40.91756714765027,
+         0.7740970896579468
+        ]
+       ]
+      }
+     ],
+     "leyenda": "<h4>Limonene · Máximo (µg/m³)</h4><div style='height:12px;border-radius:2px;background:var(--escala-gases)'></div><div style='display:flex;justify-content:space-between;font-size:11px'><span>2,12</span><span>21,2</span><span>212</span><span>2117</span><span>21173</span><span>211728</span></div>",
+     "escala": "gases",
+     "vmin": 2.1172760736196317,
+     "decadas": 5,
+     "isolineas": {
+      "url": "file:///Z:/Miguel/03-Odora/ENCE_LaGalera/resultados_planes/reanalisis/5_anios/prueba_balsas_al_50/LIMONENE/maximo_isolineas.json?v=1794303387",
+      "niveles": [
+       1.0,
+       10.0,
+       100.0,
+       1000.0,
+       10000.0,
+       100000.0
+      ],
+      "leyenda": "<h4>Limonene · Máximo (µg/m³)</h4><div style='display:flex;gap:1px'><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:10.00% 0;opacity:0.31'></span><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:30.00% 0;opacity:0.46'></span><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:50.00% 0;opacity:0.62'></span><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:70.00% 0;opacity:0.77'></span><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:90.00% 0;opacity:0.92'></span></div><div style='display:flex;justify-content:space-between;font-size:11px'><span>1</span><span>10</span><span>100</span><span>1000</span><span>10000</span><span>100000</span></div>"
+     }
+    },
+    {
+     "id": "plan_norma",
+     "nombre": "Percentil 98",
+     "titulo": "P98",
+     "imagenes": [
+      {
+       "url": "file:///Z:/Miguel/03-Odora/ENCE_LaGalera/resultados_planes/reanalisis/5_anios/prueba_balsas_al_50/LIMONENE/p98_0.png?v=1794521565",
+       "limites": [
+        [
+         40.66279012798212,
+         0.4398543419228292
+        ],
+        [
+         40.71840927893203,
+         0.5129701810513234
+        ]
+       ]
+      },
+      {
+       "url": "file:///Z:/Miguel/03-Odora/ENCE_LaGalera/resultados_planes/reanalisis/5_anios/prueba_balsas_al_50/LIMONENE/p98_1.png?v=1794521566",
+       "limites": [
+        [
+         40.46291069976792,
+         0.176846752522477
+        ],
+        [
+         40.91756714765027,
+         0.7740970896579468
+        ]
+       ]
+      }
+     ],
+     "leyenda": "<h4>Limonene · Percentil 98 (µg/m³)</h4><div style='height:12px;border-radius:2px;background:var(--escala-gases)'></div><div style='display:flex;justify-content:space-between;font-size:11px'><span>2,12</span><span>21,2</span><span>212</span><span>2117</span><span>21173</span><span>211728</span></div>",
+     "escala": "gases",
+     "vmin": 2.1172760736196317,
+     "decadas": 5,
+     "isolineas": {
+      "url": "file:///Z:/Miguel/03-Odora/ENCE_LaGalera/resultados_planes/reanalisis/5_anios/prueba_balsas_al_50/LIMONENE/p98_isolineas.json?v=1794303387",
+      "niveles": [
+       1.0,
+       10.0,
+       100.0,
+       1000.0,
+       10000.0,
+       100000.0
+      ],
+      "leyenda": "<h4>Limonene · Percentil 98 (µg/m³)</h4><div style='display:flex;gap:1px'><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:10.00% 0;opacity:0.31'></span><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:30.00% 0;opacity:0.46'></span><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:50.00% 0;opacity:0.62'></span><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:70.00% 0;opacity:0.77'></span><span style='flex:1;height:12px;background:var(--escala-gases);background-size:20000% 100%;background-position:90.00% 0;opacity:0.92'></span></div><div style='display:flex;justify-content:space-between;font-size:11px'><span>1</span><span>10</span><span>100</span><span>1000</span><span>10000</span><span>100000</span></div>"
+     }
+    }
+   ],
+   "penacho": null,
+   "horas_txt": [],
+   "maximos": {
+    "media": 167.00310349115688,
+    "maximo": 1203.7286376953125,
+    "p98": 706.012939453125
+   },
+   "filas": [
+    {
+     "nombre": "Peor vivienda (< 2 km)",
+     "tipo": "vivienda",
+     "km": 0.5,
+     "media": 2.4016765810790215,
+     "maximo": 88.86164855957031,
+     "p98": 31.445398330688477
+    },
+    {
+     "nombre": "La Galera",
+     "tipo": "pueblo",
+     "km": 1.4,
+     "media": 0.14982389405991559,
+     "maximo": 12.178824424743652,
+     "p98": 1.971915602684021
+    },
+    {
+     "nombre": "Santa Bàrbara",
+     "tipo": "pueblo",
+     "km": 3.2,
+     "media": 0.2581883037836659,
+     "maximo": 11.66327953338623,
+     "p98": 3.500927209854126
+    },
+    {
+     "nombre": "Godall",
+     "tipo": "pueblo",
+     "km": 3.9,
+     "media": 0.029845862301375748,
+     "maximo": 2.426724433898926,
+     "p98": 0.4619908630847931
+    },
+    {
+     "nombre": "Freginals",
+     "tipo": "pueblo",
+     "km": 4.3,
+     "media": 0.10434272283446937,
+     "maximo": 4.439540386199951,
+     "p98": 1.0325597524642944
+    },
+    {
+     "nombre": "Masdenverge",
+     "tipo": "pueblo",
+     "km": 5.5,
+     "media": 0.025701323229070948,
+     "maximo": 2.641777276992798,
+     "p98": 0.30511051416397095
+    },
+    {
+     "nombre": "Favaret",
+     "tipo": "pueblo",
+     "km": 6.5,
+     "media": 0.016077649445953766,
+     "maximo": 0.9798672199249268,
+     "p98": 0.1919725239276886
+    },
+    {
+     "nombre": "Amposta",
+     "tipo": "pueblo",
+     "km": 8.7,
+     "media": 0.009240759310943088,
+     "maximo": 0.9939618110656738,
+     "p98": 0.1541847288608551
+    },
+    {
+     "nombre": "Mas de Barberans",
+     "tipo": "pueblo",
+     "km": 10.1,
+     "media": 0.0028605019651986806,
+     "maximo": 0.22320744395256042,
+     "p98": 0.032478876411914825
+    },
+    {
+     "nombre": "Ulldecona",
+     "tipo": "pueblo",
+     "km": 10.6,
+     "media": 0.0019114577518168773,
+     "maximo": 0.17184853553771973,
+     "p98": 0.02627609111368656
+    },
+    {
+     "nombre": "La Ràpita",
+     "tipo": "pueblo",
+     "km": 12.7,
+     "media": 0.005562383672177124,
+     "maximo": 0.5189632177352905,
+     "p98": 0.051101360470056534
+    },
+    {
+     "nombre": "L'Aldea",
+     "tipo": "pueblo",
+     "km": 12.8,
+     "media": 0.00575893435736485,
+     "maximo": 0.4270431697368622,
+     "p98": 0.05721123144030571
+    },
+    {
+     "nombre": "Tortosa",
+     "tipo": "pueblo",
+     "km": 13.6,
+     "media": 0.010601657265671024,
+     "maximo": 0.9064205884933472,
+     "p98": 0.13653971254825592
+    },
+    {
+     "nombre": "Sector G",
+     "tipo": "pueblo",
+     "km": 13.7,
+     "media": 0.0022622047624725507,
+     "maximo": 0.07952017337083817,
+     "p98": 0.018821729347109795
+    },
+    {
+     "nombre": "San Rafael del Río",
+     "tipo": "pueblo",
+     "km": 14.3,
+     "media": 0.0008385342067461629,
+     "maximo": 0.2285117208957672,
+     "p98": 0.009551705792546272
+    },
+    {
+     "nombre": "Roquetes",
+     "tipo": "pueblo",
+     "km": 14.6,
+     "media": 0.009047695204242208,
+     "maximo": 0.6561433672904968,
+     "p98": 0.11560403555631638
+    },
+    {
+     "nombre": "Carretera del Reguers",
+     "tipo": "pueblo",
+     "km": 15.0,
+     "media": 0.008631160079550278,
+     "maximo": 0.42909854650497437,
+     "p98": 0.10946987569332123
+    },
+    {
+     "nombre": "Sant Josep de la Muntanya",
+     "tipo": "pueblo",
+     "km": 15.0,
+     "media": 0.005215168087318885,
+     "maximo": 0.257520854473114,
+     "p98": 0.06733526289463043
+    },
+    {
+     "nombre": "Urbanització Els Pilans",
+     "tipo": "pueblo",
+     "km": 15.3,
+     "media": 0.00622443895321965,
+     "maximo": 0.391273558139801,
+     "p98": 0.0703711286187172
+    },
+    {
+     "nombre": "Jesús",
+     "tipo": "pueblo",
+     "km": 15.5,
+     "media": 0.00812451525684326,
+     "maximo": 0.46378037333488464,
+     "p98": 0.11931254714727402
+    },
+    {
+     "nombre": "les Cases d'Alcanar",
+     "tipo": "pueblo",
+     "km": 15.8,
+     "media": 0.0011908213377763465,
+     "maximo": 0.06453576683998108,
+     "p98": 0.011906366795301437
+    },
+    {
+     "nombre": "Alcanar",
+     "tipo": "pueblo",
+     "km": 16.5,
+     "media": 0.0007200326511013646,
+     "maximo": 0.03700223192572594,
+     "p98": 0.01023570541292429
+    },
+    {
+     "nombre": "el Lligallo del Roig",
+     "tipo": "pueblo",
+     "km": 16.8,
+     "media": 0.00239786929728599,
+     "maximo": 0.1297615021467209,
+     "p98": 0.026122109964489937
+    },
+    {
+     "nombre": "La Sénia",
+     "tipo": "pueblo",
+     "km": 17.4,
+     "media": 0.0002511419534515437,
+     "maximo": 0.04415702074766159,
+     "p98": 0.0034531736746430397
+    },
+    {
+     "nombre": "Urbanización Panorámica",
+     "tipo": "pueblo",
+     "km": 17.5,
+     "media": 0.00038212393026676515,
+     "maximo": 0.044250890612602234,
+     "p98": 0.005878072697669268
+    },
+    {
+     "nombre": "Camarles",
+     "tipo": "pueblo",
+     "km": 18.8,
+     "media": 0.0017407324317431406,
+     "maximo": 0.0978803038597107,
+     "p98": 0.021258432418107986
+    },
+    {
+     "nombre": "Bítem",
+     "tipo": "pueblo",
+     "km": 19.2,
+     "media": 0.00504165242800537,
+     "maximo": 0.16886933147907257,
+     "p98": 0.0788351371884346
+    },
+    {
+     "nombre": "Sant Jaume d'Enveja",
+     "tipo": "pueblo",
+     "km": 20.5,
+     "media": 0.001838274354660132,
+     "maximo": 0.13300125300884247,
+     "p98": 0.02242479845881462
+    },
+    {
+     "nombre": "Deltebre",
+     "tipo": "pueblo",
+     "km": 21.0,
+     "media": 0.0020859361237341896,
+     "maximo": 0.13773943483829498,
+     "p98": 0.025635045021772385
+    },
+    {
+     "nombre": "Vinaròs",
+     "tipo": "pueblo",
+     "km": 23.0,
+     "media": 0.00036962747906726934,
+     "maximo": 0.014471330679953098,
+     "p98": 0.005786600988358259
+    },
+    {
+     "nombre": "Rossell",
+     "tipo": "pueblo",
+     "km": 23.1,
+     "media": 9.240473473331778e-05,
+     "maximo": 0.02054070681333542,
+     "p98": 0.0008886343566700816
+    },
+    {
+     "nombre": "L'Ampolla",
+     "tipo": "pueblo",
+     "km": 23.4,
+     "media": 0.0010569182884704808,
+     "maximo": 0.05711200460791588,
+     "p98": 0.01215488463640213
+    },
+    {
+     "nombre": "els Muntells",
+     "tipo": "pueblo",
+     "km": 23.4,
+     "media": 0.0016491319038535641,
+     "maximo": 0.09009487926959991,
+     "p98": 0.019560053944587708
+    },
+    {
+     "nombre": "Sant Jordi/San Jorge",
+     "tipo": "pueblo",
+     "km": 23.5,
+     "media": 0.00010462780747780134,
+     "maximo": 0.021510392427444458,
+     "p98": 0.0009182902867905796
+    },
+    {
+     "nombre": "Traiguera",
+     "tipo": "pueblo",
+     "km": 24.2,
+     "media": 8.526230068247787e-05,
+     "maximo": 0.022685859352350235,
+     "p98": 0.0
+    },
+    {
+     "nombre": "Cap-Roig",
+     "tipo": "pueblo",
+     "km": 26.3,
+     "media": 0.0006614804371951543,
+     "maximo": 0.03771519660949707,
+     "p98": 0.008828041143715382
+    },
+    {
+     "nombre": "la Jana",
+     "tipo": "pueblo",
+     "km": 27.5,
+     "media": 4.658762766870317e-05,
+     "maximo": 0.012808240018785,
+     "p98": 0.0
+    },
+    {
+     "nombre": "El Perelló",
+     "tipo": "pueblo",
+     "km": 28.5,
+     "media": 0.0003805631034028037,
+     "maximo": 0.02144419029355049,
+     "p98": 0.005280106794089079
+    },
+    {
+     "nombre": "Beceite",
+     "tipo": "pueblo",
+     "km": 29.4,
+     "media": 6.983584743422555e-05,
+     "maximo": 0.006797106005251408,
+     "p98": 0.0010533573804423213
+    }
+   ]
+  }
+ },
+ "segundos": 268.4,
+ "segundos_serie": 258.6
+}

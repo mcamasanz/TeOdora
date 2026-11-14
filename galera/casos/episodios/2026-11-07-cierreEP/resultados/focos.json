@@ -1,0 +1,234 @@
+{
+  "formato": 2,
+  "planta": "Planta de biometano de ENCE en La Galera (Montsià, Tarragona)",
+  "epsg": "EPSG:25831",
+  "actualizado": "2026-11-08",
+  "ejemplo": false,
+  "focos": [
+    {
+      "id": "F01",
+      "nombre": "Depósito abierto de digestato",
+      "unidad": "",
+      "tipo": null,
+      "modelo": "superficie",
+      "ubicacion": {
+        "poligono": [[286819.7, 4507453.4], [286819.8, 4507454.7], [286820.0, 4507456.0], [286820.4, 4507457.3], [286821.0, 4507458.5], [286821.8, 4507459.5], [286822.7, 4507460.5], [286823.8, 4507461.2], [286825.0, 4507461.9], [286826.2, 4507462.3], [286827.5, 4507462.5], [286828.9, 4507462.6], [286830.2, 4507462.4], [286831.4, 4507462.1], [286832.7, 4507461.5], [286833.8, 4507460.8], [286834.8, 4507459.9], [286835.6, 4507458.9], [286836.3, 4507457.8], [286836.8, 4507456.5], [286837.1, 4507455.3], [286837.2, 4507454.2], [286837.2, 4507453.9], [286837.1, 4507452.6], [286836.8, 4507451.3], [286836.4, 4507450.1], [286835.7, 4507448.9], [286834.9, 4507447.9], [286833.9, 4507447.0], [286832.8, 4507446.2], [286831.7, 4507445.7], [286830.4, 4507445.3], [286829.1, 4507445.1], [286827.8, 4507445.1], [286826.4, 4507445.3], [286825.2, 4507445.7], [286824.0, 4507446.3], [286822.9, 4507447.1], [286822.0, 4507448.0], [286821.2, 4507449.0], [286820.5, 4507450.2], [286820.0, 4507451.4], [286819.8, 4507452.7]]
+      },
+      "altura_m": 6.2,
+      "superficie": {"clase": "tanque", "sobre": "E05"},
+      "funcionamiento": {"modo": "continuo"},
+      "olor": {"unidad": "ou_E/m3"},
+      "gases": [
+        {"gas": "NH3", "valor": 796.0, "unidad": "mg/(m2·h)"},
+        {"gas": "H2S", "valor": 40.0, "unidad": "mg/(m2·h)"},
+        {"gas": "CH3SH", "valor": null, "unidad": "ppm"},
+        {"gas": "DMS", "valor": 0.0072, "unidad": "mg/(m2·h)"},
+        {"gas": "DMDS", "valor": 0.0054, "unidad": "mg/(m2·h)"},
+        {"gas": "P_CRESOL", "valor": null, "unidad": "ppm"}
+      ],
+      "observaciones": "Valores típicos de bibliografía (2026-11-08) hasta la visita; sustituir por lo medido.\n- NH3: 796 mg/(m²·h), tanque abierto de digestato (túnel de viento; 15,7 g N-NH3/(m²·d)), Zilio et al. 2020, Waste Management 103:296 (doi:10.1016/j.wasman.2019.12.038).\n- H2S: 40 mg/(m²·h), lámina de purín de vacuno (la más alta de las de referencia), Kupper et al. 2020, Agric. Ecosyst. Environ. 300:106963 (doi:10.1016/j.agee.2020.106963). Pasado a olor (Nagata) da ~19 ou_E/(m²·s), como el olor medido en tanques de digestato (12–18 ou_E/(m²·s), Zilio et al. 2020).\n- DMS 0,0072 y DMDS 0,0054 mg/(m²·h): balsa de purín porcino, cámara de flujo, Rumsey, Aneja y Lonneman 2014, Atmospheric Environment.\n- Metilmercaptano y p-cresol: sin dato en la bibliografía consultada.",
+      "salida": {
+        "caudal_m3_m2_h": null,
+        "temperatura_C": null,
+        "composicion": {"N2": 79.0, "O2": 21.0}
+      }
+    },
+    {
+      "id": "F02",
+      "nombre": "Balsa de digestato 1",
+      "unidad": "",
+      "tipo": null,
+      "modelo": "superficie",
+      "ubicacion": {
+        "poligono": [[286771.4, 4507436.7], [286751.2, 4507405.5], [286734.1, 4507412.5], [286706.9, 4507422.1], [286737.1, 4507455.4]]
+      },
+      "altura_m": 0.0,
+      "superficie": {"clase": "balsa"},
+      "funcionamiento": {"modo": "continuo"},
+      "olor": {"unidad": "ou_E/m3"},
+      "gases": [
+        {"gas": "NH3", "valor": 150.0, "unidad": "mg/(m2·h)"},
+        {"gas": "H2S", "valor": 10.0, "unidad": "mg/(m2·h)"},
+        {"gas": "CH3SH", "valor": null, "unidad": "ppm"},
+        {"gas": "DMS", "valor": 0.0072, "unidad": "mg/(m2·h)"},
+        {"gas": "DMDS", "valor": 0.0054, "unidad": "mg/(m2·h)"},
+        {"gas": "P_CRESOL", "valor": null, "unidad": "ppm"}
+      ],
+      "observaciones": "Valores típicos de bibliografía (2026-11-08) hasta la visita; sustituir por lo medido.\n- NH3 150 y H2S 10 mg/(m²·h): balsa de purín porcino sin cubrir, valores de referencia de Kupper et al. 2020, Agric. Ecosyst. Environ. 300:106963 (doi:10.1016/j.agee.2020.106963). El H2S pasado a olor (Nagata) da ~5 ou_E/(m²·s), como el olor medido en una balsa de purín (3,4 ou_E/(m²·s), Zilio et al. 2020, Waste Management 103:296 (doi:10.1016/j.wasman.2019.12.038)).\n- DMS 0,0072 y DMDS 0,0054 mg/(m²·h): balsa de purín porcino, cámara de flujo, Rumsey, Aneja y Lonneman 2014, Atmospheric Environment.\n- Metilmercaptano y p-cresol: sin dato en la bibliografía consultada.",
+      "salida": {
+        "caudal_m3_m2_h": null,
+        "temperatura_C": null,
+        "composicion": {"N2": 79.0, "O2": 21.0}
+      }
+    },
+    {
+      "id": "F03",
+      "nombre": "Balsa de digestato 2",
+      "unidad": "",
+      "tipo": null,
+      "modelo": "superficie",
+      "ubicacion": {
+        "poligono": [[286810.0, 4507416.6], [286787.7, 4507390.3], [286755.6, 4507403.6], [286775.3, 4507435.1]]
+      },
+      "altura_m": 0.0,
+      "superficie": {"clase": "balsa"},
+      "funcionamiento": {"modo": "continuo"},
+      "olor": {"unidad": "ou_E/m3"},
+      "gases": [
+        {"gas": "NH3", "valor": 150.0, "unidad": "mg/(m2·h)"},
+        {"gas": "H2S", "valor": 10.0, "unidad": "mg/(m2·h)"},
+        {"gas": "CH3SH", "valor": null, "unidad": "ppm"},
+        {"gas": "DMS", "valor": 0.0072, "unidad": "mg/(m2·h)"},
+        {"gas": "DMDS", "valor": 0.0054, "unidad": "mg/(m2·h)"},
+        {"gas": "P_CRESOL", "valor": null, "unidad": "ppm"}
+      ],
+      "observaciones": "Valores típicos de bibliografía (2026-11-08) hasta la visita; sustituir por lo medido.\n- NH3 150 y H2S 10 mg/(m²·h): balsa de purín porcino sin cubrir, valores de referencia de Kupper et al. 2020, Agric. Ecosyst. Environ. 300:106963 (doi:10.1016/j.agee.2020.106963). El H2S pasado a olor (Nagata) da ~5 ou_E/(m²·s), como el olor medido en una balsa de purín (3,4 ou_E/(m²·s), Zilio et al. 2020, Waste Management 103:296 (doi:10.1016/j.wasman.2019.12.038)).\n- DMS 0,0072 y DMDS 0,0054 mg/(m²·h): balsa de purín porcino, cámara de flujo, Rumsey, Aneja y Lonneman 2014, Atmospheric Environment.\n- Metilmercaptano y p-cresol: sin dato en la bibliografía consultada.",
+      "salida": {
+        "caudal_m3_m2_h": null,
+        "temperatura_C": null,
+        "composicion": {"N2": 79.0, "O2": 21.0}
+      }
+    },
+    {
+      "id": "F04",
+      "nombre": "Biofiltro",
+      "unidad": "",
+      "tipo": null,
+      "modelo": "superficie",
+      "ubicacion": {
+        "poligono": [[286808.0, 4507478.0], [286828.0, 4507478.0], [286828.0, 4507488.0], [286808.0, 4507488.0]]
+      },
+      "altura_m": 1.5,
+      "superficie": {"clase": "biofiltro"},
+      "funcionamiento": {"modo": "continuo"},
+      "olor": {"unidad": "ou_E/m3"},
+      "gases": [
+        {"gas": "H2S", "valor": 0.001, "unidad": "ppm"},
+        {"gas": "NH3", "valor": null, "unidad": "ppm"},
+        {"gas": "CH3SH", "valor": null, "unidad": "ppm"},
+        {"gas": "DMS", "valor": null, "unidad": "ppm"},
+        {"gas": "DMDS", "valor": null, "unidad": "ppm"},
+        {"gas": "ALFA_PINENE", "valor": null, "unidad": "ppm"},
+        {"gas": "LIMONENE", "valor": null, "unidad": "ppm"}
+      ],
+      "observaciones": "Sitio y tamaño de ejemplo (20 × 10 m): confirmar en la visita.\nValores típicos de bibliografía (2026-11-08) hasta la visita; sustituir por lo medido.\n- Caudal por m²: 97 m³/(m²·h), biofiltro de una nave de maduración de compost (Dorado et al. 2014, Waste Management 34:344, doi:10.1016/j.wasman.2013.10.044); lo típico va de 5 a 500.\n- Temperatura: 25 °C, entre los 21 y 29 °C del aire de entrada de ese biofiltro (Dorado et al. 2014).\n- H2S a la salida: 0,001 ppm, biofiltro del aire de recepción de una planta de digestión de residuos alimentarios (Sempere et al. 2015, III Conferencia de Olores en el Medio Ambiente, Bilbao). NH3: no detectado (< 0,1 ppm), misma planta.\n- Metilmercaptano, DMS, DMDS, α-pineno y limoneno: sin dato por compuesto. En esa planta el olor medido a la salida fue 373 ou_E/m³: estos gases no lo explican (se queda corto); a confirmar con olfatometría o un análisis de COV en la visita.",
+      "salida": {
+        "caudal_m3_m2_h": 97.0,
+        "temperatura_C": 25.0,
+        "composicion": {"N2": 79.0, "O2": 21.0}
+      }
+    },
+    {
+      "id": "F05",
+      "nombre": "Hilera de compost 1",
+      "unidad": "",
+      "tipo": null,
+      "modelo": "volumen",
+      "ubicacion": {"x": 286851.9, "y": 4507484.1},
+      "altura_m": null,
+      "dimensiones": {"largo_m": 40.0, "ancho_m": 6.0, "alto_m": 2.5, "orientacion_deg": 118.0},
+      "volumen": {"clase": "pila", "seccion": "hilera"},
+      "salida": {
+        "caudal_m3_m2_h": null,
+        "temperatura_C": null,
+        "composicion": {"N2": 79.0, "O2": 21.0}
+      },
+      "funcionamiento": {"modo": "continuo"},
+      "olor": {"unidad": "ou_E/m3"},
+      "gases": [
+        {"gas": "NH3", "valor": null, "unidad": "ppm"},
+        {"gas": "H2S", "valor": 0.62, "unidad": "mg/(m2·h)"},
+        {"gas": "CH3SH", "valor": 0.16, "unidad": "mg/(m2·h)"},
+        {"gas": "DMS", "valor": 57.0, "unidad": "mg/(m2·h)"},
+        {"gas": "DMDS", "valor": 1.0, "unidad": "mg/(m2·h)"},
+        {"gas": "LIMONENE", "valor": 221.0, "unidad": "mg/(m2·h)"},
+        {"gas": "ALFA_PINENE", "valor": 317.0, "unidad": "mg/(m2·h)"}
+      ],
+      "observaciones": "Disposición de ejemplo, repartidas por el campo al nordeste de los depósitos (4 hileras de 40 × 6 × 2,5 m, rumbo 118°): confirmar en la visita.\nValores típicos de bibliografía (2026-11-08) hasta la visita, por m² de piel de la hilera; sustituir por lo medido.\n- α-pineno 317, limoneno 221, DMS 57 y metilmercaptano 0,16 mg/(m²·h): la media geométrica de los rangos de las hileras de residuo verde y de comida que más emitían (cámara de flujo; 59–1 702, 37–1 321, 11–297 y 0,07–0,36 mg/(m²·h)), Jobson y Khosravi 2020, «Emissions from Washington State Compost Facilities», Washington State University.\n- H2S 0,62 y DMDS 1,0 mg/(m²·h): la media geométrica de los días 2 a 4 de una pila de estiércol con aireación (0,37–1,03 y 0,70–1,53 mg/(m²·h)), Jobson 2021, «Comparing Methods to Measure Air Emissions from Commercial Compost Facilities», WSU, tabla 3.\n- NH3: sin dato por m² en la bibliografía consultada.\n- Contraste: el olor medido en hileras frescas, antes de voltear, es 25–29 ou_E/(m²·s), 53–79 tras voltear y unas 650 mientras se voltea (túnel de viento, Miljøstyrelsen 2007, Miljøprojekt 1211); en maduración, 0,3 (McGahan 2014). Por sus gases (Nagata) esta hilera da ~2 ou_E/(m²·s): entre una y otra; los gases medidos no explican todo el olor de una hilera fresca."
+    },
+    {
+      "id": "F06",
+      "nombre": "Hilera de compost 2",
+      "unidad": "",
+      "tipo": null,
+      "modelo": "volumen",
+      "ubicacion": {"x": 286898.5, "y": 4507486.5},
+      "altura_m": null,
+      "dimensiones": {"largo_m": 40.0, "ancho_m": 6.0, "alto_m": 2.5, "orientacion_deg": 118.0},
+      "volumen": {"clase": "pila", "seccion": "hilera"},
+      "salida": {
+        "caudal_m3_m2_h": null,
+        "temperatura_C": null,
+        "composicion": {"N2": 79.0, "O2": 21.0}
+      },
+      "funcionamiento": {"modo": "continuo"},
+      "olor": {"unidad": "ou_E/m3"},
+      "gases": [
+        {"gas": "NH3", "valor": null, "unidad": "ppm"},
+        {"gas": "H2S", "valor": 0.62, "unidad": "mg/(m2·h)"},
+        {"gas": "CH3SH", "valor": 0.16, "unidad": "mg/(m2·h)"},
+        {"gas": "DMS", "valor": 57.0, "unidad": "mg/(m2·h)"},
+        {"gas": "DMDS", "valor": 1.0, "unidad": "mg/(m2·h)"},
+        {"gas": "LIMONENE", "valor": 221.0, "unidad": "mg/(m2·h)"},
+        {"gas": "ALFA_PINENE", "valor": 317.0, "unidad": "mg/(m2·h)"}
+      ],
+      "observaciones": "Disposición de ejemplo, repartidas por el campo al nordeste de los depósitos (4 hileras de 40 × 6 × 2,5 m, rumbo 118°): confirmar en la visita.\nValores típicos de bibliografía (2026-11-08) hasta la visita, por m² de piel de la hilera; sustituir por lo medido.\n- α-pineno 317, limoneno 221, DMS 57 y metilmercaptano 0,16 mg/(m²·h): la media geométrica de los rangos de las hileras de residuo verde y de comida que más emitían (cámara de flujo; 59–1 702, 37–1 321, 11–297 y 0,07–0,36 mg/(m²·h)), Jobson y Khosravi 2020, «Emissions from Washington State Compost Facilities», Washington State University.\n- H2S 0,62 y DMDS 1,0 mg/(m²·h): la media geométrica de los días 2 a 4 de una pila de estiércol con aireación (0,37–1,03 y 0,70–1,53 mg/(m²·h)), Jobson 2021, «Comparing Methods to Measure Air Emissions from Commercial Compost Facilities», WSU, tabla 3.\n- NH3: sin dato por m² en la bibliografía consultada.\n- Contraste: el olor medido en hileras frescas, antes de voltear, es 25–29 ou_E/(m²·s), 53–79 tras voltear y unas 650 mientras se voltea (túnel de viento, Miljøstyrelsen 2007, Miljøprojekt 1211); en maduración, 0,3 (McGahan 2014). Por sus gases (Nagata) esta hilera da ~2 ou_E/(m²·s): entre una y otra; los gases medidos no explican todo el olor de una hilera fresca."
+    },
+    {
+      "id": "F07",
+      "nombre": "Hilera de compost 3",
+      "unidad": "",
+      "tipo": null,
+      "modelo": "volumen",
+      "ubicacion": {"x": 286922.5, "y": 4507446.5},
+      "altura_m": null,
+      "dimensiones": {"largo_m": 40.0, "ancho_m": 6.0, "alto_m": 2.5, "orientacion_deg": 118.0},
+      "volumen": {"clase": "pila", "seccion": "hilera"},
+      "salida": {
+        "caudal_m3_m2_h": null,
+        "temperatura_C": null,
+        "composicion": {"N2": 79.0, "O2": 21.0}
+      },
+      "funcionamiento": {"modo": "continuo"},
+      "olor": {"unidad": "ou_E/m3"},
+      "gases": [
+        {"gas": "NH3", "valor": null, "unidad": "ppm"},
+        {"gas": "H2S", "valor": 0.62, "unidad": "mg/(m2·h)"},
+        {"gas": "CH3SH", "valor": 0.16, "unidad": "mg/(m2·h)"},
+        {"gas": "DMS", "valor": 57.0, "unidad": "mg/(m2·h)"},
+        {"gas": "DMDS", "valor": 1.0, "unidad": "mg/(m2·h)"},
+        {"gas": "LIMONENE", "valor": 221.0, "unidad": "mg/(m2·h)"},
+        {"gas": "ALFA_PINENE", "valor": 317.0, "unidad": "mg/(m2·h)"}
+      ],
+      "observaciones": "Disposición de ejemplo, repartidas por el campo al nordeste de los depósitos (4 hileras de 40 × 6 × 2,5 m, rumbo 118°): confirmar en la visita.\nValores típicos de bibliografía (2026-11-08) hasta la visita, por m² de piel de la hilera; sustituir por lo medido.\n- α-pineno 317, limoneno 221, DMS 57 y metilmercaptano 0,16 mg/(m²·h): la media geométrica de los rangos de las hileras de residuo verde y de comida que más emitían (cámara de flujo; 59–1 702, 37–1 321, 11–297 y 0,07–0,36 mg/(m²·h)), Jobson y Khosravi 2020, «Emissions from Washington State Compost Facilities», Washington State University.\n- H2S 0,62 y DMDS 1,0 mg/(m²·h): la media geométrica de los días 2 a 4 de una pila de estiércol con aireación (0,37–1,03 y 0,70–1,53 mg/(m²·h)), Jobson 2021, «Comparing Methods to Measure Air Emissions from Commercial Compost Facilities», WSU, tabla 3.\n- NH3: sin dato por m² en la bibliografía consultada.\n- Contraste: el olor medido en hileras frescas, antes de voltear, es 25–29 ou_E/(m²·s), 53–79 tras voltear y unas 650 mientras se voltea (túnel de viento, Miljøstyrelsen 2007, Miljøprojekt 1211); en maduración, 0,3 (McGahan 2014). Por sus gases (Nagata) esta hilera da ~2 ou_E/(m²·s): entre una y otra; los gases medidos no explican todo el olor de una hilera fresca."
+    },
+    {
+      "id": "F08",
+      "nombre": "Hilera de compost 4",
+      "unidad": "",
+      "tipo": null,
+      "modelo": "volumen",
+      "ubicacion": {"x": 286969.1, "y": 4507448.9},
+      "altura_m": null,
+      "dimensiones": {"largo_m": 40.0, "ancho_m": 6.0, "alto_m": 2.5, "orientacion_deg": 118.0},
+      "volumen": {"clase": "pila", "seccion": "hilera"},
+      "salida": {
+        "caudal_m3_m2_h": null,
+        "temperatura_C": null,
+        "composicion": {"N2": 79.0, "O2": 21.0}
+      },
+      "funcionamiento": {"modo": "continuo"},
+      "olor": {"unidad": "ou_E/m3"},
+      "gases": [
+        {"gas": "NH3", "valor": null, "unidad": "ppm"},
+        {"gas": "H2S", "valor": 0.62, "unidad": "mg/(m2·h)"},
+        {"gas": "CH3SH", "valor": 0.16, "unidad": "mg/(m2·h)"},
+        {"gas": "DMS", "valor": 57.0, "unidad": "mg/(m2·h)"},
+        {"gas": "DMDS", "valor": 1.0, "unidad": "mg/(m2·h)"},
+        {"gas": "LIMONENE", "valor": 221.0, "unidad": "mg/(m2·h)"},
+        {"gas": "ALFA_PINENE", "valor": 317.0, "unidad": "mg/(m2·h)"}
+      ],
+      "observaciones": "Disposición de ejemplo, repartidas por el campo al nordeste de los depósitos (4 hileras de 40 × 6 × 2,5 m, rumbo 118°): confirmar en la visita.\nValores típicos de bibliografía (2026-11-08) hasta la visita, por m² de piel de la hilera; sustituir por lo medido.\n- α-pineno 317, limoneno 221, DMS 57 y metilmercaptano 0,16 mg/(m²·h): la media geométrica de los rangos de las hileras de residuo verde y de comida que más emitían (cámara de flujo; 59–1 702, 37–1 321, 11–297 y 0,07–0,36 mg/(m²·h)), Jobson y Khosravi 2020, «Emissions from Washington State Compost Facilities», Washington State University.\n- H2S 0,62 y DMDS 1,0 mg/(m²·h): la media geométrica de los días 2 a 4 de una pila de estiércol con aireación (0,37–1,03 y 0,70–1,53 mg/(m²·h)), Jobson 2021, «Comparing Methods to Measure Air Emissions from Commercial Compost Facilities», WSU, tabla 3.\n- NH3: sin dato por m² en la bibliografía consultada.\n- Contraste: el olor medido en hileras frescas, antes de voltear, es 25–29 ou_E/(m²·s), 53–79 tras voltear y unas 650 mientras se voltea (túnel de viento, Miljøstyrelsen 2007, Miljøprojekt 1211); en maduración, 0,3 (McGahan 2014). Por sus gases (Nagata) esta hilera da ~2 ou_E/(m²·s): entre una y otra; los gases medidos no explican todo el olor de una hilera fresca."
+    }
+  ]
+}

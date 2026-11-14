@@ -1,0 +1,356 @@
+{
+  "centro": [286763.2, 4507473.5],
+  "etiquetas": [
+    {"i": 5162, "nombre": "Dacame", "clase": "nombrado"},
+    {
+      "i": 9066,
+      "nombre": "Santa Bàrbara",
+      "clase": "nucleo",
+      "familia": "residencial",
+      "receptores": [8263, 8395, 8396, 8397, 8530, 8531, 8592, 8593, 8594, 8665, 8666, 8667, 8668, 8669, 8671, 8672, 8737, 8738, 8739, 8740, 8741, 8742, 8743, 8744, 8745, 8828, 8829, 8830, 8831, 8832, 8833, 8834, 8927, 8928, 8929, 8930, 8931, 8932, 8933, 8998, 8999, 9000, 9001, 9002, 9003, 9004, 9059, 9060, 9061, 9062, 9063, 9064, 9066, 9134, 9135, 9136, 9204, 9205, 9206, 9207, 9266, 9267, 9268, 9269, 9361, 9363, 9364, 9365, 9366, 9367, 9368, 9461, 9462, 9463, 9464, 9465, 9524, 9525, 9526, 9595, 9596, 9666, 9667, 9728, 9729, 9730, 9799, 9800, 9801, 9898, 9899, 9900]
+    },
+    {
+      "i": 10431,
+      "nombre": "Masdenverge",
+      "clase": "nucleo",
+      "familia": "residencial",
+      "receptores": [10375, 10376, 10418, 10431, 10556]
+    },
+    {
+      "i": 9466,
+      "nombre": "Polígon Industrial Barranc de Lledó",
+      "clase": "nucleo",
+      "familia": "industrial"
+    },
+    {
+      "i": 10779,
+      "nombre": "Favaret",
+      "clase": "nucleo",
+      "familia": "residencial",
+      "receptores": [10779]
+    },
+    {
+      "i": 10852,
+      "nombre": "Polígon Industrial les Tosses",
+      "clase": "nucleo",
+      "familia": "industrial"
+    },
+    {
+      "i": 10998,
+      "nombre": "Polígon Industrial l'Oriola",
+      "clase": "nucleo",
+      "familia": "industrial"
+    },
+    {
+      "i": 10996,
+      "nombre": "Amposta",
+      "clase": "nucleo",
+      "familia": "residencial",
+      "receptores": [10960, 10961, 10962, 10996, 11036, 11037]
+    },
+    {
+      "i": 1644,
+      "nombre": "Mas de Barberans",
+      "clase": "nucleo",
+      "familia": "residencial",
+      "receptores": [1644, 1688]
+    },
+    {"i": 10780, "nombre": "Campredó", "clase": "nucleo", "familia": "industrial"},
+    {
+      "i": 2558,
+      "nombre": "Ulldecona",
+      "clase": "nucleo",
+      "familia": "residencial",
+      "receptores": [2558, 2722]
+    },
+    {"i": 10528, "nombre": "Campredó", "clase": "nucleo", "familia": "industrial"},
+    {"i": 10346, "nombre": "Tortosa", "clase": "nucleo", "familia": "industrial"},
+    {"i": 11071, "nombre": "Polígon industrial El Salt", "clase": "nucleo", "familia": "industrial"},
+    {"i": 10997, "nombre": "La Ràpita", "clase": "nucleo", "familia": "industrial"},
+    {"i": 11070, "nombre": "La Ràpita", "clase": "nucleo", "familia": "deportivo"},
+    {"i": 2701, "nombre": "Ulldecona", "clase": "nucleo", "familia": "industrial"},
+    {
+      "i": 10995,
+      "nombre": "La Ràpita",
+      "clase": "nucleo",
+      "familia": "residencial",
+      "receptores": [10800, 10873, 10995, 11021, 11022]
+    },
+    {
+      "i": 11287,
+      "nombre": "L'Aldea",
+      "clase": "nucleo",
+      "familia": "residencial",
+      "receptores": [11287, 11331]
+    },
+    {
+      "i": 11143,
+      "nombre": "Polígon industrial Catalunya Sud",
+      "clase": "nucleo",
+      "familia": "industrial"
+    },
+    {"i": 11215, "nombre": "L'Aldea", "clase": "nucleo", "familia": "industrial"},
+    {"i": 9813, "nombre": "Tortosa", "clase": "nucleo", "familia": "industrial"},
+    {
+      "i": 10388,
+      "nombre": "Tortosa",
+      "clase": "nucleo",
+      "familia": "residencial",
+      "receptores": [10328, 10329, 10330, 10388, 10469]
+    },
+    {
+      "i": 10778,
+      "nombre": "Sector G",
+      "clase": "nucleo",
+      "familia": "residencial",
+      "receptores": [10725, 10778]
+    },
+    {"i": 11359, "nombre": "L'Aldea", "clase": "nucleo", "familia": "industrial"},
+    {"i": 10527, "nombre": "Sector F", "clase": "nucleo", "familia": "industrial"},
+    {
+      "i": 10208,
+      "nombre": "Tortosa",
+      "clase": "nucleo",
+      "familia": "residencial",
+      "receptores": [10150, 10151, 10208]
+    },
+    {
+      "i": 1429,
+      "nombre": "San Rafael del Río",
+      "clase": "nucleo",
+      "familia": "residencial",
+      "receptores": [1429]
+    },
+    {"i": 2285, "nombre": "Vinaròs", "clase": "nucleo", "familia": "industrial"},
+    {"i": 1214, "nombre": "La Sénia", "clase": "nucleo", "familia": "industrial"},
+    {
+      "i": 11431,
+      "nombre": "L'Aldea",
+      "clase": "nucleo",
+      "familia": "residencial",
+      "receptores": [11431]
+    },
+    {
+      "i": 9670,
+      "nombre": "Roquetes",
+      "clase": "nucleo",
+      "familia": "residencial",
+      "receptores": [9670]
+    },
+    {
+      "i": 6974,
+      "nombre": "Carretera del Reguers",
+      "clase": "nucleo",
+      "familia": "residencial",
+      "receptores": [6567, 6974]
+    },
+    {
+      "i": 10570,
+      "nombre": "Sant Josep de la Muntanya",
+      "clase": "nucleo",
+      "familia": "residencial",
+      "receptores": [10570, 10609]
+    },
+    {
+      "i": 4440,
+      "nombre": "Urbanització Els Pilans",
+      "clase": "nucleo",
+      "familia": "residencial",
+      "receptores": [4440]
+    },
+    {
+      "i": 9929,
+      "nombre": "Jesús",
+      "clase": "nucleo",
+      "familia": "residencial",
+      "receptores": [9929]
+    },
+    {
+      "i": 10250,
+      "nombre": "les Cases d'Alcanar",
+      "clase": "nucleo",
+      "familia": "residencial",
+      "receptores": [10250, 10264]
+    },
+    {"i": 2148, "nombre": "Vinaròs", "clase": "nucleo", "familia": "industrial"},
+    {
+      "i": 5774,
+      "nombre": "Alcanar",
+      "clase": "nucleo",
+      "familia": "residencial",
+      "receptores": [4854, 5774, 6419]
+    },
+    {
+      "i": 11645,
+      "nombre": "el Lligallo del Roig",
+      "clase": "nucleo",
+      "familia": "residencial",
+      "receptores": [11620, 11645]
+    },
+    {
+      "i": 929,
+      "nombre": "Polígono Industrial de la Carretera de Santa Barbara",
+      "clase": "nucleo",
+      "familia": "industrial"
+    },
+    {"i": 11646, "nombre": "el Lligallo del Roig", "clase": "nucleo", "familia": "industrial"},
+    {
+      "i": 856,
+      "nombre": "La Sénia",
+      "clase": "nucleo",
+      "familia": "residencial",
+      "receptores": [812, 856, 885]
+    },
+    {
+      "i": 1716,
+      "nombre": "Urbanización Panorámica",
+      "clase": "nucleo",
+      "familia": "residencial",
+      "receptores": [1658, 1716, 1730]
+    },
+    {
+      "i": 784,
+      "nombre": "La Sénia",
+      "clase": "nucleo",
+      "familia": "residencial",
+      "receptores": [784]
+    },
+    {"i": 1572, "nombre": "Urbanización Panorámica", "clase": "nucleo", "familia": "deportivo"},
+    {"i": 11718, "nombre": "Camarles", "clase": "nucleo", "familia": "industrial"},
+    {
+      "i": 11790,
+      "nombre": "Camarles",
+      "clase": "nucleo",
+      "familia": "residencial",
+      "receptores": [11790, 11838]
+    },
+    {
+      "i": 10389,
+      "nombre": "Bítem",
+      "clase": "nucleo",
+      "familia": "residencial",
+      "receptores": [10389]
+    },
+    {
+      "i": 12219,
+      "nombre": "Sant Jaume d'Enveja",
+      "clase": "nucleo",
+      "familia": "residencial",
+      "receptores": [12183, 12184, 12219, 12260]
+    },
+    {
+      "i": 12221,
+      "nombre": "Deltebre",
+      "clase": "nucleo",
+      "familia": "residencial",
+      "receptores": [11973, 12044, 12114, 12115, 12186, 12221, 12261, 12262, 12333, 12334, 12406, 12407]
+    },
+    {"i": 12294, "nombre": "Deltebre", "clase": "nucleo", "familia": "industrial"},
+    {
+      "i": 12366,
+      "nombre": "Sant Jaume d'Enveja",
+      "clase": "nucleo",
+      "familia": "residencial",
+      "receptores": [12366]
+    },
+    {"i": 4533, "nombre": "Vinaròs", "clase": "nucleo", "familia": "industrial"},
+    {
+      "i": 6304,
+      "nombre": "Vinaròs",
+      "clase": "nucleo",
+      "familia": "residencial",
+      "receptores": [3783, 4843, 4844, 4845, 6304, 6408, 6409, 8017, 8752]
+    },
+    {
+      "i": 285,
+      "nombre": "Rossell",
+      "clase": "nucleo",
+      "familia": "residencial",
+      "receptores": [285, 310]
+    },
+    {
+      "i": 12146,
+      "nombre": "L'Ampolla",
+      "clase": "nucleo",
+      "familia": "residencial",
+      "receptores": [12056, 12128, 12146, 12277]
+    },
+    {
+      "i": 12510,
+      "nombre": "els Muntells",
+      "clase": "nucleo",
+      "familia": "residencial",
+      "receptores": [12470, 12510]
+    },
+    {
+      "i": 1215,
+      "nombre": "Sant Jordi/San Jorge",
+      "clase": "nucleo",
+      "familia": "residencial",
+      "receptores": [1215, 1223]
+    },
+    {"i": 3909, "nombre": "Vinaròs", "clase": "nucleo", "familia": "industrial"},
+    {
+      "i": 857,
+      "nombre": "Traiguera",
+      "clase": "nucleo",
+      "familia": "residencial",
+      "receptores": [857]
+    },
+    {
+      "i": 12367,
+      "nombre": "Cap-Roig",
+      "clase": "nucleo",
+      "familia": "residencial",
+      "receptores": [12350, 12367]
+    },
+    {
+      "i": 499,
+      "nombre": "la Jana",
+      "clase": "nucleo",
+      "familia": "residencial",
+      "receptores": [499, 507]
+    },
+    {"i": 12222, "nombre": "El Perelló", "clase": "nucleo", "familia": "industrial"},
+    {
+      "i": 12218,
+      "nombre": "El Perelló",
+      "clase": "nucleo",
+      "familia": "residencial",
+      "receptores": [12210, 12218]
+    },
+    {"i": 12220, "nombre": "El Perelló", "clase": "nucleo", "familia": "industrial"},
+    {
+      "i": 71,
+      "nombre": "Beceite",
+      "clase": "nucleo",
+      "familia": "residencial",
+      "receptores": [71]
+    },
+    {
+      "i": 4431,
+      "nombre": "La Galera",
+      "clase": "nucleo",
+      "familia": "residencial",
+      "origen": "planta",
+      "receptores": [3636, 3642, 3684, 3712, 3714, 3716, 3766, 3767, 3768, 3769, 3770, 3771, 3772, 3773, 3774, 3775, 3776, 3777, 3778, 3779, 3780, 3781, 3782, 3826, 3827, 3828, 3831, 3832, 3833, 3835, 3898, 3899, 3900, 3901, 3902, 3903, 3904, 3905, 3906, 3907, 3908, 3910, 3911, 3912, 3913, 3914, 3915, 3916, 3917, 3918, 3919, 3920, 3921, 3922, 3923, 3924, 3925, 3926, 3927, 3928, 3929, 3930, 3931, 3948, 3949, 3951, 3952, 3953, 3994, 3995, 3996, 3997, 3998, 3999, 4000, 4001, 4002, 4003, 4004, 4005, 4006, 4007, 4008, 4009, 4010, 4011, 4012, 4014, 4015, 4016, 4018, 4019, 4020, 4021, 4022, 4023, 4024, 4025, 4027, 4028, 4029, 4030, 4031, 4032, 4033, 4034, 4035, 4036, 4037, 4038, 4039, 4040, 4041, 4070, 4072, 4073, 4076, 4123, 4124, 4125, 4126, 4127, 4128, 4129, 4130, 4131, 4132, 4133, 4134, 4135, 4136, 4137, 4138, 4139, 4140, 4141, 4142, 4143, 4144, 4145, 4146, 4147, 4148, 4149, 4150, 4151, 4152, 4153, 4154, 4155, 4156, 4157, 4158, 4159, 4160, 4161, 4162, 4163, 4164, 4165, 4166, 4167, 4168, 4169, 4170, 4171, 4172, 4173, 4174, 4175, 4176, 4177, 4178, 4179, 4180, 4181, 4182, 4183, 4184, 4185, 4186, 4187, 4188, 4189, 4190, 4191, 4192, 4193, 4194, 4195, 4196, 4197, 4198, 4199, 4200, 4201, 4203, 4204, 4205, 4207, 4208, 4209, 4210, 4211, 4212, 4213, 4214, 4215, 4216, 4217, 4218, 4219, 4220, 4221, 4222, 4223, 4224, 4225, 4226, 4227, 4229, 4230, 4231, 4232, 4233, 4234, 4235, 4236, 4237, 4238, 4239, 4240, 4241, 4242, 4243, 4244, 4245, 4246, 4247, 4248, 4249, 4250, 4251, 4252, 4253, 4254, 4255, 4256, 4257, 4258, 4259, 4260, 4261, 4262, 4263, 4264, 4265, 4266, 4267, 4268, 4269, 4270, 4271, 4272, 4273, 4274, 4275, 4276, 4277, 4278, 4279, 4280, 4281, 4282, 4283, 4284, 4285, 4286, 4287, 4288, 4289, 4290, 4307, 4310, 4311, 4312, 4313, 4314, 4317, 4352, 4353, 4354, 4355, 4356, 4357, 4358, 4359, 4360, 4361, 4362, 4363, 4364, 4365, 4366, 4367, 4368, 4369, 4370, 4371, 4372, 4373, 4374, 4375, 4376, 4377, 4378, 4379, 4380, 4381, 4382, 4383, 4384, 4385, 4386, 4387, 4388, 4389, 4390, 4391, 4392, 4393, 4394, 4395, 4396, 4397, 4398, 4399, 4400, 4401, 4402, 4403, 4404, 4405, 4406, 4407, 4408, 4409, 4410, 4411, 4412, 4413, 4414, 4415, 4416, 4417, 4418, 4419, 4420, 4421, 4422, 4423, 4424, 4425, 4426, 4427, 4428, 4429, 4430, 4431, 4432, 4433, 4434, 4435, 4436, 4437, 4438, 4439, 4441, 4442, 4443, 4444, 4445, 4446, 4447, 4467, 4469, 4470, 4471, 4472, 4473, 4474, 4476, 4529, 4530, 4531, 4532, 4534, 4536, 4537, 4538, 4539, 4575, 4605, 4608, 4610, 4611, 4615, 4677, 4678, 4679, 4680, 4686, 4687, 4719, 4737, 4738, 4740, 4741, 4801, 4802, 4807, 4808, 4895, 4982, 4983, 5048, 5052, 5053, 5120, 5121, 5123, 5183, 5184]
+    },
+    {
+      "i": 5026,
+      "nombre": "Godall",
+      "clase": "nucleo",
+      "familia": "residencial",
+      "origen": "planta",
+      "receptores": [4050, 4051, 4582, 4585, 5026]
+    },
+    {
+      "i": 10179,
+      "nombre": "Freginals",
+      "clase": "nucleo",
+      "familia": "residencial",
+      "origen": "planta",
+      "receptores": [10179, 10222]
+    }
+  ],
+  "pueblos": "e616abffe880"
+}

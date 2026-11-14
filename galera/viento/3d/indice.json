@@ -1,0 +1,411 @@
+{
+ "formato": 1,
+ "serie": "odora_era5_8est",
+ "nx": 125,
+ "ny": 125,
+ "meses": [
+  "202101",
+  "202102",
+  "202103",
+  "202104",
+  "202105",
+  "202106",
+  "202107",
+  "202108",
+  "202109",
+  "202110",
+  "202111",
+  "202112",
+  "202201",
+  "202202",
+  "202203",
+  "202204",
+  "202205",
+  "202206",
+  "202207",
+  "202208",
+  "202209",
+  "202210",
+  "202211",
+  "202212",
+  "202301",
+  "202302",
+  "202303",
+  "202304",
+  "202305",
+  "202306",
+  "202307",
+  "202308",
+  "202309",
+  "202310",
+  "202311",
+  "202312",
+  "202401",
+  "202402",
+  "202403",
+  "202404",
+  "202405",
+  "202406",
+  "202407",
+  "202408",
+  "202409",
+  "202410",
+  "202411",
+  "202412",
+  "202501",
+  "202502",
+  "202503",
+  "202504",
+  "202505",
+  "202506",
+  "202507",
+  "202508",
+  "202509",
+  "202510",
+  "202511",
+  "202512"
+ ],
+ "variables": {
+  "U-LEV": {
+   "capas": 12,
+   "etiquetas": [
+    "U-LEV  1",
+    "U-LEV  2",
+    "U-LEV  3",
+    "U-LEV  4",
+    "U-LEV  5",
+    "U-LEV  6",
+    "U-LEV  7",
+    "U-LEV  8",
+    "U-LEV  9",
+    "U-LEV 10",
+    "U-LEV 11",
+    "U-LEV 12"
+   ],
+   "k": 300,
+   "paso": 0.5,
+   "l0": null,
+   "entero": false,
+   "bases": [
+    "bases/ULEV_01.xz",
+    "bases/ULEV_02.xz",
+    "bases/ULEV_03.xz",
+    "bases/ULEV_04.xz",
+    "bases/ULEV_05.xz",
+    "bases/ULEV_06.xz",
+    "bases/ULEV_07.xz",
+    "bases/ULEV_08.xz",
+    "bases/ULEV_09.xz",
+    "bases/ULEV_10.xz",
+    "bases/ULEV_11.xz",
+    "bases/ULEV_12.xz"
+   ],
+   "errores": {
+    "rmse_pod": 0.026403610684337022,
+    "max_pod": 4.8325114250183105,
+    "rmse": 0.02225351087352701,
+    "max": 0.25,
+    "correcciones": 0.0016595482536205428,
+    "unidades": "las de la variable"
+   }
+  },
+  "V-LEV": {
+   "capas": 12,
+   "etiquetas": [
+    "V-LEV  1",
+    "V-LEV  2",
+    "V-LEV  3",
+    "V-LEV  4",
+    "V-LEV  5",
+    "V-LEV  6",
+    "V-LEV  7",
+    "V-LEV  8",
+    "V-LEV  9",
+    "V-LEV 10",
+    "V-LEV 11",
+    "V-LEV 12"
+   ],
+   "k": 300,
+   "paso": 0.5,
+   "l0": null,
+   "entero": false,
+   "bases": [
+    "bases/VLEV_01.xz",
+    "bases/VLEV_02.xz",
+    "bases/VLEV_03.xz",
+    "bases/VLEV_04.xz",
+    "bases/VLEV_05.xz",
+    "bases/VLEV_06.xz",
+    "bases/VLEV_07.xz",
+    "bases/VLEV_08.xz",
+    "bases/VLEV_09.xz",
+    "bases/VLEV_10.xz",
+    "bases/VLEV_11.xz",
+    "bases/VLEV_12.xz"
+   ],
+   "errores": {
+    "rmse_pod": 0.024958791826547547,
+    "max_pod": 4.948729515075684,
+    "rmse": 0.02103620793934242,
+    "max": 0.25,
+    "correcciones": 0.001418468175733236,
+    "unidades": "las de la variable"
+   }
+  },
+  "WFACE": {
+   "capas": 12,
+   "etiquetas": [
+    "WFACE  1",
+    "WFACE  2",
+    "WFACE  3",
+    "WFACE  4",
+    "WFACE  5",
+    "WFACE  6",
+    "WFACE  7",
+    "WFACE  8",
+    "WFACE  9",
+    "WFACE 10",
+    "WFACE 11",
+    "WFACE 12"
+   ],
+   "k": 150,
+   "paso": 0.05,
+   "l0": null,
+   "entero": false,
+   "bases": [
+    "bases/WFACE_01.xz",
+    "bases/WFACE_02.xz",
+    "bases/WFACE_03.xz",
+    "bases/WFACE_04.xz",
+    "bases/WFACE_05.xz",
+    "bases/WFACE_06.xz",
+    "bases/WFACE_07.xz",
+    "bases/WFACE_08.xz",
+    "bases/WFACE_09.xz",
+    "bases/WFACE_10.xz",
+    "bases/WFACE_11.xz",
+    "bases/WFACE_12.xz"
+   ],
+   "errores": {
+    "rmse_pod": 0.010343909286631849,
+    "max_pod": 2.435349702835083,
+    "rmse": 0.005981746132140147,
+    "max": 0.025000005960464478,
+    "correcciones": 0.026290869538761107,
+    "unidades": "las de la variable"
+   }
+  },
+  "T-LEV": {
+   "capas": 12,
+   "etiquetas": [
+    "T-LEV  1",
+    "T-LEV  2",
+    "T-LEV  3",
+    "T-LEV  4",
+    "T-LEV  5",
+    "T-LEV  6",
+    "T-LEV  7",
+    "T-LEV  8",
+    "T-LEV  9",
+    "T-LEV 10",
+    "T-LEV 11",
+    "T-LEV 12"
+   ],
+   "k": 150,
+   "paso": 1.0,
+   "l0": null,
+   "entero": false,
+   "bases": [
+    "bases/TLEV_01.xz",
+    "bases/TLEV_02.xz",
+    "bases/TLEV_03.xz",
+    "bases/TLEV_04.xz",
+    "bases/TLEV_05.xz",
+    "bases/TLEV_06.xz",
+    "bases/TLEV_07.xz",
+    "bases/TLEV_08.xz",
+    "bases/TLEV_09.xz",
+    "bases/TLEV_10.xz",
+    "bases/TLEV_11.xz",
+    "bases/TLEV_12.xz"
+   ],
+   "errores": {
+    "rmse_pod": 0.15073785358771435,
+    "max_pod": 12.942206382751465,
+    "rmse": 0.07624657686917935,
+    "max": 0.5,
+    "correcciones": 0.013448405135694293,
+    "unidades": "las de la variable"
+   }
+  },
+  "USTAR": {
+   "capas": 1,
+   "etiquetas": [
+    "USTAR   "
+   ],
+   "k": 100,
+   "paso": 0.02,
+   "l0": null,
+   "entero": false,
+   "bases": [
+    "bases/USTAR_01.xz"
+   ],
+   "errores": {
+    "rmse_pod": 0.004600723194491584,
+    "max_pod": 0.4700508117675781,
+    "rmse": 0.002777108123201707,
+    "max": 0.009999999776482582,
+    "correcciones": 0.03853814530850676,
+    "unidades": "las de la variable"
+   }
+  },
+  "ZI": {
+   "capas": 1,
+   "etiquetas": [
+    "ZI      "
+   ],
+   "k": 100,
+   "paso": 50.0,
+   "l0": null,
+   "entero": false,
+   "bases": [
+    "bases/ZI_01.xz"
+   ],
+   "errores": {
+    "rmse_pod": 5.849971011227942,
+    "max_pod": 632.5697021484375,
+    "rmse": 4.299974128648767,
+    "max": 25.0,
+    "correcciones": 0.00801048557867835,
+    "unidades": "las de la variable"
+   }
+  },
+  "EL": {
+   "capas": 1,
+   "etiquetas": [
+    "EL      "
+   ],
+   "k": 400,
+   "paso": 0.2,
+   "l0": 0.01,
+   "entero": false,
+   "bases": [
+    "bases/EL_01.xz"
+   ],
+   "errores": {
+    "rmse_pod": 0.1334022766200186,
+    "max_pod": 32.6449089050293,
+    "rmse": 0.041038164125789575,
+    "max": 0.09999999403953552,
+    "correcciones": 0.1478105206279664,
+    "unidades": "asinh(L/L0)"
+   }
+  },
+  "WSTAR": {
+   "capas": 1,
+   "etiquetas": [
+    "WSTAR   "
+   ],
+   "k": 100,
+   "paso": 0.02,
+   "l0": null,
+   "entero": false,
+   "bases": [
+    "bases/WSTAR_01.xz"
+   ],
+   "errores": {
+    "rmse_pod": 0.0051131751919354755,
+    "max_pod": 0.6530623435974121,
+    "rmse": 0.0017718008348836386,
+    "max": 0.009999997913837433,
+    "correcciones": 0.025749501277838628,
+    "unidades": "las de la variable"
+   }
+  },
+  "TEMPK": {
+   "capas": 1,
+   "etiquetas": [
+    "TEMPK   "
+   ],
+   "k": 100,
+   "paso": 0.2,
+   "l0": null,
+   "entero": false,
+   "bases": [
+    "bases/TEMPK_01.xz"
+   ],
+   "errores": {
+    "rmse_pod": 0.00958848839409686,
+    "max_pod": 1.3906583786010742,
+    "rmse": 0.009194161816561663,
+    "max": 0.09999997913837433,
+    "correcciones": 0.00047642643300474627,
+    "unidades": "las de la variable"
+   }
+  },
+  "RHO": {
+   "capas": 1,
+   "etiquetas": [
+    "RHO     "
+   ],
+   "k": 25,
+   "paso": 0.002,
+   "l0": null,
+   "entero": false,
+   "bases": [
+    "bases/RHO_01.xz"
+   ],
+   "errores": {
+    "rmse_pod": 0.00010819174316362723,
+    "max_pod": 0.008762846700847149,
+    "rmse": 0.00010506198806632065,
+    "max": 0.0009999999310821295,
+    "correcciones": 0.0003755458196422052,
+    "unidades": "las de la variable"
+   }
+  },
+  "QSW": {
+   "capas": 1,
+   "etiquetas": [
+    "QSW     "
+   ],
+   "k": 10,
+   "paso": 2.0,
+   "l0": null,
+   "entero": false,
+   "bases": [
+    "bases/QSW_01.xz"
+   ],
+   "errores": {
+    "rmse_pod": 0.004685545681894717,
+    "max_pod": 0.814239501953125,
+    "rmse": 0.004685545681894717,
+    "max": 0.814239501953125,
+    "correcciones": 0.0,
+    "unidades": "las de la variable"
+   }
+  },
+  "IRH": {
+   "capas": 1,
+   "etiquetas": [
+    "IRH     "
+   ],
+   "k": 25,
+   "paso": 5.0,
+   "l0": null,
+   "entero": true,
+   "bases": [
+    "bases/IRH_01.xz"
+   ],
+   "errores": {
+    "rmse_pod": 0.25239413244894693,
+    "max_pod": 1.162859320640564,
+    "rmse": 0.25239413244894693,
+    "max": 1.162859320640564,
+    "correcciones": 0.0,
+    "unidades": "las de la variable"
+   }
+  }
+ },
+ "creado": "2026-11-06 20:40"
+}

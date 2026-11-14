@@ -54,9 +54,11 @@ plan, que así no lanza el motor. Una carpeta por foco y un fichero por mes, ~56
 calculará cuando los focos estén cerrados (`python -m teodors.operacion.respuestas` en cada día y `python -m teodors.operacion.serie_respuestas` para
 empaquetarlos aquí). El reanálisis cuenta del primer al último día que haya, sobre las horas simuladas.
 
-## Los cálculos: fuera del repositorio
+## Los cálculos y las claves
 
-Van a la carpeta de `entrada/rutas.json` (`Z:\Miguel\03-Odora\ENCE_LaGalera`), o a la de la variable `ENCE_GALERA_DATOS` si está puesta: viento, meteorología, respuestas de los focos y resultados. Las claves, en `%APPDATA%\CIRCE\claves`.
+Lo que no viaja con la instalación (meteorología, MOS, validaciones, logs y la caché del viento 3D de la serie) va a una carpeta **`datos/` dentro de la instalación**, que no se versiona. Para tenerlo en otro disco —una unidad de red, por ejemplo— basta la variable de entorno `ENCE_GALERA_DATOS` (tiene prioridad) o editar `entrada/rutas.json`. Los cálculos en marcha van a una carpeta temporal del sistema.
+
+Las **claves de API no van aquí nunca**: cada usuario las pone en su propio equipo, en `%APPDATA%\CIRCE\claves` (p. ej. `cds-api-key.txt` para el CDS de Copernicus). Así no viajan con la instalación ni entran al repositorio.
 
 Tareas, con `PYTHONPATH=../v0.1.8/cargador` y `TEODORS_PLANTA=entrada`:
 

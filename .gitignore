@@ -3,10 +3,17 @@ __pycache__/
 *.py[cod]
 .pytest_cache/
 
-# Los cálculos de una planta (viento, respuestas, resultados) no se versionan: van a la carpeta de su rutas.json
+# Los cálculos de una planta (meteo, MOS, validaciones, logs) no se versionan: van a la carpeta de su rutas.json
 datos/
+# Las respuestas de los focos (dispersion/) tampoco: pesan gigas y se regeneran.
+# Sí viajan con la instalación, versionados: el viento 3D empaquetado (viento/3d/), el viento local (viento/local/) y los casos guardados (casos/, con sus informes),
+# salvo el viento pesado de cada caso.
+/*/dispersion/
+/*/casos/**/viento/
+# las copias de trabajo de una versión (p. ej. v0.1.6-dev, la del instalador): no son una versión publicada
+/v*-*/
 
-# Una instalación lleva solo VERSION, main.py, README.md y entrada/. Sus pruebas, documentación y notas de trabajo se quedan en el
+# Una instalación lleva VERSION, main.py, README.md, entrada/, viento/ (local + paquete 3d) y casos/. Sus pruebas, documentación y notas de trabajo se quedan en el
 # equipo de quien la mantiene. La documentación de cada versión del núcleo (v*/docs/) sí va.
 /*/99-Test/
 /*/docs/
