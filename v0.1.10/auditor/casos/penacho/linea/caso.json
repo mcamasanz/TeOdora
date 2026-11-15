@@ -1,0 +1,24 @@
+{
+  "motor": "penacho",
+  "descripcion": "Fuente LINE junto a las pilas.",
+  "carpeta": "AERMOD",
+  "ordenes": [
+    [
+      "aermod.inp"
+    ]
+  ],
+  "entorno": {
+    "AERMOD_NUMBA": "0"
+  },
+  "salidas": [
+    "AERMOD/ERRORS.OUT",
+    "AERMOD/aermod.out",
+    "AERMOD/aermod.plt",
+    "AERMOD/aermod.pst",
+    "AERMOD/aermod.sum",
+    "AERMOD/aermod_max.plt"
+  ],
+  "marcas": [],
+  "original": "idéntico al original salvo fecha y hora",
+  "segundos": 0.4
+}

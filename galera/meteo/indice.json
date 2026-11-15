@@ -1,0 +1,41 @@
+{
+ "formato": 1,
+ "teodors": "0.1.10",
+ "creado": "2026-11-15T09:21",
+ "anios": [
+  2021,
+  2022,
+  2023,
+  2024,
+  2025
+ ],
+ "estaciones": [
+  "C9",
+  "U7",
+  "U9",
+  "US",
+  "UU",
+  "UW",
+  "UX",
+  "X5"
+ ],
+ "serie_viento": "odora_era5_8est",
+ "ficheros": {
+  "estaciones.json": {
+   "bytes": 5962,
+   "sha256": "21bece79b1bd244af923db1c50b326df9014bfebfa0ac7ffdf4c7c8040cf72c7"
+  },
+  "rosas_estaciones.json": {
+   "bytes": 7903,
+   "sha256": "b5f2b9fa616189435c000ccd6b9217cf7135e485e8fde72a08870c0d9210c581"
+  },
+  "tiempo_planta.json": {
+   "bytes": 1704399,
+   "sha256": "59f91ece4b517e622f18985a476478e02d685d84af8b80655fbb755bb5d6a389"
+  },
+  "normales_estaciones.json": {
+   "bytes": 2943800,
+   "sha256": "50d282c756ffba1eeb1ddf71a74aa98262b1c08f51c4752b7a9ddac410daf1b0"
+  }
+ }
+}

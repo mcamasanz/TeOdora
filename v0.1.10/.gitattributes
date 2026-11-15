@@ -1,0 +1,6 @@
+# Código y documentación: texto, con el final de línea del sistema al sacarlo.
+* text=auto
+
+# Casos del auditor: entradas y salidas de referencia byte a byte, sin convertir finales de línea
+# (las salidas de los motores llevan CRLF o LF según el formato original, y se comparan tal cual).
+auditor/casos/** -text
