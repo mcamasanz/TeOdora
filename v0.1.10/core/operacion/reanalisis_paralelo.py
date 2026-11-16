@@ -28,8 +28,9 @@ _G = {}                   # lo común en cada proceso hijo (`_iniciar`)
 
 
 def de_la_planta():
-    """El `paralelo` por defecto de `simulacion.calcular`: la variable <prefijo>_PARALELO o, si no está, `operacion.paralelo` de
-    planta.json (true, false o cuántos procesos); sin ninguna, False (1 proceso)."""
+    """El interruptor del cálculo en paralelo, el `paralelo` por defecto de `simulacion.calcular` y de `calcular_periodo` (y cuántos focos a
+    la vez en las respuestas de un periodo, `periodos`): la variable <prefijo>_PARALELO o, si no está, `operacion.paralelo` de planta.json
+    (true, false o cuántos procesos); sin ninguna, False (1 proceso)."""
     v = os.environ.get(config.nombre_env("PARALELO"))
     if v is None:
         return config.bloque("operacion").get("paralelo", False)

@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 """Las reglas que comparan versiones (R4-R7), con carpetas de versión y plantas en un repositorio de git de verdad."""
+import os
 import subprocess
 
 import pytest
@@ -125,3 +126,18 @@ def test_r7_una_planta_tiene_que_usar_una_version_que_exista(repo):
     (repo / "planta_a" / "entrada" / "planta.json").unlink()
     r = reglas.r7_versiones()
     assert not r.ok and "no tiene entrada/planta.json" in r.detalle[0]
+
+
+def test_las_pruebas_del_auditor_reciben_el_path_con_su_nombre_de_windows(monkeypatch):
+    # KI-41 (2026-11-16): con la variable como «PATH» (así la deja os.environ), el Chromium de conda no arranca en los hijos de pytest y la
+    # prueba del PDF se saltaba siempre en el auditor. Se le pasa con el nombre de Windows, «Path», y el mismo valor
+    vistos = {}
+
+    def correr(orden, **k):
+        vistos.update(k["env"])
+        return subprocess.CompletedProcess(orden, 0, "", "")
+    monkeypatch.setattr(reglas.subprocess, "run", correr)
+    reglas._pytest(["nada"])
+    if os.name == "nt":
+        assert "Path" in vistos and "PATH" not in vistos
+    assert vistos.get("Path", vistos.get("PATH")) == os.environ["PATH"]

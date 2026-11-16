@@ -44,6 +44,7 @@ SOLO_ESTACIONES_JS = (
     ".era5-celda .cod{position:absolute;left:30px;top:-3px;background:rgba(255,255,255,.92);color:#4b2d7f;font:700 17px Segoe UI,Arial,"
     "sans-serif;padding:0 7px;border-radius:6px;line-height:26px;white-space:nowrap}';document.head.appendChild(s);")
 ESPERA_MAX_S = 25.0                       # lo más que se espera a que carguen las teselas de una vista
+ESPERA_JS_S = 120.0                       # lo más que se espera a que el mapa CONTESTE (JavaScript): si no, el informe falla en vez de colgarse (KI-40)
 CALIDAD_JPG = 88                          # los mapas y los visores, en JPEG: el PDF, de ~27 MB a unos pocos
 # EL ALTO (px) DE CADA IMAGEN DE MAPA del informe de episodio, una por una. Cambia un valor y SOLO cambia esa imagen (las demás no se descuadran).
 # El ancho es siempre ~1405 px (lo fija el ancho de la ventana). El máximo de alto es ~988 (lo que cabe en pantalla); por encima saldría recortada.
@@ -67,6 +68,17 @@ _en_marcha = []                           # las capturas que trabajan: Qt no ret
 
 def _alejar_js(n):
     return ("for(var i=0;i<%d;i++){setTimeout(function(){var b=document.querySelector('.leaflet-control-zoom-out');if(b){b.click();}},300+i*450);}" % n)
+
+
+def _sin_mapa(mapa, desde=None):
+    """Por qué el mapa ya no va a contestar (KI-40, 2026-11-16): se ha cerrado su proceso de Chromium (`VistaMapa.caido`), o lleva más de
+    ESPERA_JS_S sin contestar desde `desde` (time.time()). None si sigue vivo y en plazo."""
+    motivo = mapa.caido()
+    if motivo:
+        return f"el mapa no funciona: {motivo}"
+    if desde is not None and time.time() - desde > ESPERA_JS_S:
+        return f"el mapa no contesta desde hace {ESPERA_JS_S:.0f} s"
+    return None
 
 
 def _guardar(pixmap, ruta, ancho, alto):
@@ -143,6 +155,7 @@ class Capturas:
         self.al_acabar, self.fallo = al_acabar, fallo
         self.imagenes, self.fichas = [], {}
         self._gen = None
+        self._acabado = False                                        # acabadas o fallidas: lo que llegue tarde del mapa ya no hace nada (KI-40)
         self.carpeta.mkdir(parents=True, exist_ok=True)
 
     def empezar(self):
@@ -152,14 +165,18 @@ class Capturas:
         self._siguiente()
 
     def _fin(self):
+        self._acabado = True
         if self in _en_marcha:
             _en_marcha.remove(self)
 
     # ── el bucle ──
-    def _siguiente(self):
+    def _siguiente(self, error=None):
+        """El paso siguiente; con `error`, el paso en curso falla con él: lo que esperaba del mapa no va a llegar (KI-40)."""
         from PySide6 import QtCore
+        if self._acabado:
+            return
         try:
-            paso = next(self._gen)
+            paso = next(self._gen) if error is None else self._gen.throw(error)
         except StopIteration:
             self._fin()
             return
@@ -177,13 +194,26 @@ class Capturas:
 
     def _esperar_mapa(self, t0, quietas):
         from PySide6 import QtCore
+        if self._acabado:
+            return
+        motivo = _sin_mapa(self.v.mapa)                              # KI-40: con su Chromium cerrado, no va a contestar
+        if motivo:
+            self._siguiente(RuntimeError(motivo))
+            return
+        contesto = []
 
         def visto(n):
+            contesto.append(n)
             # listo = 3 lecturas seguidas sin nada cargando (teselas NI imágenes de capa), o el tope de espera
             if (n == 0 and quietas >= 2) or time.time() - t0 > ESPERA_MAX_S:
                 QtCore.QTimer.singleShot(500, self._siguiente)
             else:
                 QtCore.QTimer.singleShot(300, lambda: self._esperar_mapa(t0, quietas + 1 if n == 0 else 0))
+
+        def sin_respuesta():                                         # KI-40: sin respuesta, el informe falla en vez de esperar para siempre
+            if not contesto:
+                self._siguiente(RuntimeError(_sin_mapa(self.v.mapa) or f"el mapa no contesta desde hace {ESPERA_JS_S:.0f} s"))
+        QtCore.QTimer.singleShot(int(ESPERA_JS_S * 1000), sin_respuesta)
         self.v.mapa.js(CARGANDO_JS, visto)
 
     # ── las imágenes ──
@@ -251,9 +281,12 @@ class Capturas:
 
     def _leer_vista(self):
         """La vista del mapa, [lat, lon, zoom] ([] si no se lee); con `vista = yield from self._leer_vista()`."""
-        leida = {}
+        leida, t0 = {}, time.time()
         self.v.mapa.js(VISTA_JS, lambda r: leida.update(v=r))
         while "v" not in leida:
+            motivo = _sin_mapa(self.v.mapa, t0)                      # KI-40: con tope, y nada si su Chromium se ha cerrado
+            if motivo:
+                raise RuntimeError(motivo)
             yield 100
         try:
             return [float(x) for x in str(leida["v"]).split(",")]
@@ -296,6 +329,9 @@ class Capturas:
             while (getattr(v, "_dia_viento", None) or ("",))[0] != ev["dia"]:
                 if time.time() - t1 > ESPERA_VIENTO_S:
                     raise RuntimeError(f"no llega el viento del {ev['dia']}")
+                motivo = _sin_mapa(mapa)                             # KI-40: con su Chromium cerrado, no va a llegar
+                if motivo:
+                    raise RuntimeError(motivo)
                 yield 500
             # en blanco, como lo enseña la app al abrirse (usuario, 2026-11-09): se ve sobre cualquier fondo
             mapa.js(f"mapaApp.vientoEstilo({_json.dumps(dict(tema.estilo_viento(), modo='lineas', blanco=True))})")
@@ -408,6 +444,9 @@ class Capturas:
         v, d, mapa = self.v, self.d, self.v.mapa
         t0 = time.time()
         while not (mapa.esta_listo() and getattr(v, "terreno_info", None) is not None) and time.time() - t0 < 90:
+            motivo = _sin_mapa(mapa)                                 # KI-40: con su Chromium cerrado, el mapa no va a estar listo
+            if motivo:
+                raise RuntimeError(motivo)
             yield 500
         yield 1500
         mapa.js(SIN_MANDOS_JS)

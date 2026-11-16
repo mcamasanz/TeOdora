@@ -106,6 +106,10 @@ def _pytest(argumentos):
         # el cargador de ESTA carpeta, delante: con varias versiones, las pruebas no pueden coger otra
         camino = os.pathsep.join(p for p in (str(RAIZ / "cargador"), os.environ.get("PYTHONPATH")) if p)
         env = dict(os.environ, AUDITOR_TIEMPOS=str(tiempos), PYTHONIOENCODING="utf-8", PYTHONPATH=camino)
+        if os.name == "nt" and "PATH" in env:
+            # KI-41 (2026-11-16): os.environ deja la variable como «PATH», y con ese nombre el Chromium de conda no encuentra sus librerías
+            # en los procesos hijos de las pruebas: la del PDF se saltaba siempre. Va con el nombre de Windows, «Path»
+            env["Path"] = env.pop("PATH")
         r = subprocess.run([sys.executable, "-m", "pytest", "-q", "-p", "no:cacheprovider", *argumentos],
                            cwd=RAIZ, env=env, capture_output=True, text=True, encoding="utf-8",
                            errors="replace")

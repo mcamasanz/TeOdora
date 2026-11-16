@@ -22,7 +22,7 @@ También `--dia AAAA-MM-DD`, `--focos` y `--planes`. Sin la carpeta de cálculos
 
 | Qué | Dónde | De dónde sale |
 |---|---|---|
-| Identidad, huso (EPSG:25831), dominio de 50 × 50 km, malla de receptores | `planta.json` | decisiones de proyecto, explicadas en sus notas |
+| Identidad, huso (EPSG:25831), dominio de 50 × 50 km, malla de receptores y el interruptor del cálculo en paralelo (`operacion.paralelo`, apagado) | `planta.json` | decisiones de proyecto, explicadas en sus notas |
 | Coordenadas | `emplazamiento.json` | fijas, no se cambian desde la aplicación |
 | Cotas, a 25 m | `terreno/40.69059_0.47642_50km_25m/elevacion.tif` | MDT del IGN |
 | Usos del suelo | `terreno/…/usos.tif`, `terreno/…/corine.gpkg` | CORINE Land Cover 2018, recortado y pasado a rejilla |
@@ -47,6 +47,17 @@ Junto a `entrada/`, para tener el viento sin la carpeta de cálculos (o en la de
 
 Los meses nuevos de la serie (otro año) se suman al paquete sin rehacerlo: `teodors.casos.viento3d.anadir_paquete()`.
 
+## La meteo de los informes: `meteo/`
+
+Junto a `entrada/`, la meteorología que necesitan los informes, ya procesada (desde la `v0.1.10`), unos 5 MB. Con ella, un equipo sin la carpeta de cálculos hace los informes completos, sin ningún fichero meteorológico en bruto:
+
+- las estaciones de la zona;
+- la rosa de los vientos de cada estación y la del ERA5;
+- el tiempo en la planta, día a día;
+- lo normal de cada fecha y hora en las estaciones (2021-2025).
+
+El índice y un `LEEME.md` dicen de dónde sale cada fichero. Se rehace con `python -m teodors.operacion.meteo_planta`, en el equipo que tiene la meteo en bruto.
+
 ## La dispersión: `dispersion/`
 
 Las respuestas de los focos (concentración por g/s emitido, por hora de emisión) de todos los días de la serie, comprimidas: es lo que lee el reanálisis de un
@@ -60,13 +71,13 @@ Lo que no viaja con la instalación (meteorología, MOS, validaciones, logs y la
 
 Las **claves de API no van aquí nunca**: cada usuario las pone en su propio equipo, en `%APPDATA%\CIRCE\claves` (p. ej. `cds-api-key.txt` para el CDS de Copernicus). Así no viajan con la instalación ni entran al repositorio.
 
-Tareas, con `PYTHONPATH=../v0.1.8/cargador` y `TEODORS_PLANTA=entrada`:
+Tareas, con `PYTHONPATH=../v0.1.10/cargador` y `TEODORS_PLANTA=entrada`:
 
 | Para qué | Orden |
 |---|---|
 | Serie de viento de varios años | `python -m teodors.operacion.viento3d_series` |
 | Rehacer el viento local, si cambian los edificios | `python -m teodors.operacion.viento_local_biblioteca` |
-| De las nubes LiDAR a sus rejillas de 1 m | `python -I ../v0.1.8/core/fuentes/lidar.py <carpeta .laz> <carpeta de las librerías> viento/local/planta_1m.npz 286512 4507400 600` |
+| De las nubes LiDAR a sus rejillas de 1 m | `python -I ../v0.1.10/core/fuentes/lidar.py <carpeta .laz> <carpeta de las librerías> viento/local/planta_1m.npz 286512 4507400 600` |
 
 ## Pruebas y documentación del proyecto
 

@@ -118,6 +118,14 @@ def _lanzar(tarea, args, cuenta, cancelado):
         raise RuntimeError(f"{tarea}.py falló (rc={p.returncode}):\n" + "\n".join(ultimas))
 
 
+def _procesos_respuestas():
+    """Lo que se le pasa a `respuestas.py` de cuántos focos a la vez: con el interruptor del cálculo en paralelo apagado, nada (los 4 de
+    siempre, su valor por defecto); encendido, los de `reanalisis_paralelo.procesos` (True: los núcleos menos uno, hasta 8)."""
+    from teodors.operacion import reanalisis_paralelo as RP
+    p = RP.de_la_planta()
+    return ["--procesos", RP.procesos(p)] if p else []
+
+
 def preparar(p, progreso=None, cancelado=None):
     """Descarga la meteorología del periodo, calcula su viento y las respuestas de los focos."""
     avisa = progreso or (lambda *_: None)
@@ -137,7 +145,7 @@ def preparar(p, progreso=None, cancelado=None):
         if linea.startswith("  F") or " focos por calcular" in linea:
             hechos["n"] += 1
             avisa(min(40 + 4 * hechos["n"], 98), "Respuestas de los focos…")
-    _lanzar("respuestas", args, respuestas, cancelado)
+    _lanzar("respuestas", args + _procesos_respuestas(), respuestas, cancelado)
     avisa(100, "Hecho")
     log.info(f"{MODOS[p['modo']]} {etiqueta(p)}: viento y respuestas preparados.")
     return {"periodo": p}
@@ -161,7 +169,7 @@ def preparar_respuestas(p, progreso=None, cancelado=None):
             pct = min(5 + 90 * total["n"] // max(total["focos"], 1), 98) if total["focos"] else min(5 + 11 * total["n"], 98)
             avisa(pct, f"Respuestas de los focos… ({total['n']}/{total['focos'] or '?'})")
     avisa(2, "Respuestas de los focos (puff)…")
-    _lanzar("respuestas", ["--dia", p["ini"], "--dias", p["dias"], "--serie", p["serie"]], respuestas, cancelado)
+    _lanzar("respuestas", ["--dia", p["ini"], "--dias", p["dias"], "--serie", p["serie"]] + _procesos_respuestas(), respuestas, cancelado)
     avisa(100, "Respuestas listas")
     log.info(f"{MODOS[p['modo']]} {etiqueta(p)}: respuestas de los focos preparadas.")
     return {"periodo": p}

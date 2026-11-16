@@ -529,9 +529,13 @@ def calcular_periodo_preparando(esc, catalogo, periodo, progreso=None, cancelado
                             progreso=(lambda pct, m: progreso(int(60 + pct * 0.4), m)) if progreso else None, cancelado=cancelado)
 
 
-def calcular_periodo(esc, catalogo, periodo, progreso=None, cancelado=None):
+def calcular_periodo(esc, catalogo, periodo, progreso=None, cancelado=None, paralelo=None):
     """Un día del reanálisis, un episodio o una predicción: sus estadísticos y el penacho hora a hora, etiquetado por el FIN de la
-    hora como el viento. Las 23 horas de antes son la emisión que aún sigue en el aire a las 00 (te en `_tiempos`)."""
+    hora como el viento. Las 23 horas de antes son la emisión que aún sigue en el aire a las 00 (te en `_tiempos`).
+    `paralelo`, como en `calcular` (sin darlo, el interruptor de la planta, `reanalisis_paralelo.de_la_planta`): con más de 1 proceso, las
+    imágenes y las isolíneas del penacho hora a hora se pintan todas al final, repartidas entre ellos (`imagenes_paralelo`), con las mismas
+    funciones y los mismos ficheros; con 1, como siempre."""
+    from teodors.operacion import imagenes_paralelo as IP, reanalisis_paralelo as RP
     t0 = time.time()
     avisa = progreso or (lambda *_: None)
     carpeta = periodos.dir_respuestas(periodo)
@@ -562,6 +566,8 @@ def calcular_periodo(esc, catalogo, periodo, progreso=None, cancelado=None):
     rejillas = _rejillas(x, y, meta["centro"])
     lugares = lugares_al_dia({"centro": meta["centro"], "etiquetas": meta.get("etiquetas", [])}, x, y)
     magnitudes = {}
+    procesos = RP.procesos(RP.de_la_planta() if paralelo is None else paralelo)
+    aparte = []                                        # con varios procesos: el penacho de cada magnitud, para pintarlo al final, todo junto
     for j, (k, m) in enumerate(mags.items()):
         C = series[k][23:]
         cols = normativa.columnas(k, "dias")
@@ -569,12 +575,15 @@ def calcular_periodo(esc, catalogo, periodo, progreso=None, cancelado=None):
         (raiz / k).mkdir(parents=True, exist_ok=True)
         np.savez_compressed(raiz / k / "resumen.npz", x=x, y=y, clase=clase, **campos)
         np.savez_compressed(raiz / k / "penacho.npz", C=C)
-        base = 10 + 90 * j // len(mags)
+        base = 10 + (30 if procesos > 1 else 90) * j // len(mags)
         capas = _capas(campos, cols, rejillas, raiz / k, avisa, m, base, "dia")
         # isolíneas del penacho hora a hora (usuario, 2026-11-13): como las de media/máximo y como en el informe. Solo para el OLOR (la magnitud
         # principal y la del informe): generarlas para los 8 gases sumaría ~+100 MB por episodio. Los gases mantienen el penacho en degradado.
         quiere_iso = m["clave"] == "olor"
         niveles_iso = niveles_isolineas(m["ref"], m["clave"])
+        if procesos > 1:
+            aparte.append((k, m, cols, capas, campos, C, quiere_iso, niveles_iso))
+            continue
         frames, frames_iso, limites = [], [], None
         for t in range(len(C)):
             if cancelado and cancelado():
@@ -588,12 +597,36 @@ def calcular_periodo(esc, catalogo, periodo, progreso=None, cancelado=None):
                 ruta_iso = raiz / k / f"penacho_iso_{t:03d}.json"
                 _isolineas(C[t], rejillas, ruta_iso, niveles_iso)
                 frames_iso.append(ruta_iso.as_uri() + f"?v={int(ruta_iso.stat().st_mtime)}")
-        penacho = {"dia": periodo["ini"], "dias": n, "frames": frames,
-                   "frames_iso": frames_iso if quiere_iso else None,
-                   "niveles_iso": niveles_iso if quiere_iso else None,
-                   "leyenda_iso": _leyenda_isolineas("Penacho", m, niveles_iso) if quiere_iso else None,
-                   "limites": limites, "leyenda": _leyenda("penacho", m)}
+        penacho = _penacho_periodo(periodo, n, m, frames, frames_iso, limites, quiere_iso, niveles_iso)
         magnitudes[k] = _magnitud(m, factores, cols, capas, campos, _tabla(lugares, x, y, clase, campos, cols), penacho, horas_txt)
+    if aparte:                                         # el penacho hora a hora de todas las magnitudes, repartido entre `procesos` procesos
+        tareas = []
+        for k, m, cols, capas, campos, C, quiere_iso, niveles_iso in aparte:
+            for t in range(len(C)):
+                tareas.append(("png", C[t], str(raiz / k / f"penacho_{t:03d}"), m["ref"], None))
+                if quiere_iso:
+                    tareas.append(("iso", C[t], str(raiz / k / f"penacho_iso_{t:03d}.json"), None, niveles_iso))
+        ultimo = {"pct": -1}
+
+        def hecha(i):
+            pct = 40 + 59 * i // len(tareas)
+            if pct != ultimo["pct"]:
+                ultimo["pct"] = pct
+                avisa(pct, f"Penacho hora a hora: {i} de {len(tareas)} imágenes, en {procesos} procesos")
+        hecha(0)
+        salen = iter(IP.pintar(tareas, rejillas, procesos, hecha=hecha, cancelado=cancelado))
+        for k, m, cols, capas, campos, C, quiere_iso, niveles_iso in aparte:
+            frames, frames_iso, limites = [], [], None
+            for t in range(len(C)):
+                imagenes = next(salen)
+                frames.append([i["url"] for i in imagenes])
+                limites = [i["limites"] for i in imagenes]
+                if quiere_iso:
+                    next(salen)
+                    ruta_iso = raiz / k / f"penacho_iso_{t:03d}.json"
+                    frames_iso.append(ruta_iso.as_uri() + f"?v={int(ruta_iso.stat().st_mtime)}")
+            penacho = _penacho_periodo(periodo, n, m, frames, frames_iso, limites, quiere_iso, niveles_iso)
+            magnitudes[k] = _magnitud(m, factores, cols, capas, campos, _tabla(lugares, x, y, clase, campos, cols), penacho, horas_txt)
     res = {"formato": FORMATO_RESULTADO, "firma": firma(esc, catalogo, periodo), "nombre": esc.get("nombre"), "fecha": time.strftime("%Y-%m-%d %H:%M"),
            "pueblos": P.firma(),
            "esc": esc, "periodo": periodo, "largo": "dias", "serie": meta["serie"], "horas": 24 * n, "orden": list(mags), "magnitudes": magnitudes,
@@ -602,6 +635,15 @@ def calcular_periodo(esc, catalogo, periodo, progreso=None, cancelado=None):
     avisa(100, "Hecho")
     log.info(f"Plan «{res['nombre']}», {periodos.MODOS[periodo['modo']]} {periodos.etiqueta(periodo)}: {res['segundos']:.0f} s, {len(mags)} magnitudes.")
     return res
+
+
+def _penacho_periodo(periodo, n, m, frames, frames_iso, limites, quiere_iso, niveles_iso):
+    """La capa del penacho hora a hora de una magnitud en el resultado de un periodo."""
+    return {"dia": periodo["ini"], "dias": n, "frames": frames,
+            "frames_iso": frames_iso if quiere_iso else None,
+            "niveles_iso": niveles_iso if quiere_iso else None,
+            "leyenda_iso": _leyenda_isolineas("Penacho", m, niveles_iso) if quiere_iso else None,
+            "limites": limites, "leyenda": _leyenda("penacho", m)}
 
 
 def _rejillas(x, y, centro):

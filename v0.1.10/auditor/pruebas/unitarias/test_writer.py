@@ -547,3 +547,148 @@ print("@@", salida.get("ok"), salida.get("paginas"), salida.get("ruta"))
     ruta = Path(linea.split(maxsplit=3)[3])
     assert ruta == Path(carpeta) / f"{Path(carpeta).name}.pdf" and ruta.stat().st_size > 20000
     assert "no caben" not in r.stderr
+
+
+# ------------------------------------------------------------------------------ KI-40: el informe no se cuelga si el mapa no funciona
+CAPTURAS = ["reanalisis_caso", "reanalisis_comparacion", "episodio"]   # las tres copias de capturas.py (KI-31): el mismo arreglo en cada una
+CHROMIUM_CERRADO = ("su motor web (Chromium) se ha cerrado (CrashedTerminationStatus, código -1073741515 = 0xC0000135: no encuentra una de "
+                    "sus librerías)")
+
+
+class _MapaFalso:
+    """Lo que las capturas usan del mapa de la ventana: si está listo, si se ha cerrado su Chromium (`caido`) y el JavaScript, que contesta o no."""
+
+    def __init__(self, listo=True, caido=None, contesta=True):
+        self.listo, self.motivo, self.contesta = listo, caido, contesta
+
+    def esta_listo(self):
+        return self.listo
+
+    def caido(self):
+        return self.motivo
+
+    def js(self, codigo, al_terminar=None):
+        if al_terminar is not None and self.contesta:
+            al_terminar(0)
+
+
+class _VentanaFalsa:
+    def __init__(self, mapa):
+        self.mapa, self.terreno_info = mapa, {}
+
+
+@con_qt
+@pytest.mark.parametrize("tipo", CAPTURAS)
+def test_las_capturas_fallan_al_momento_si_el_chromium_del_mapa_se_ha_cerrado(tipo, tmp_path):
+    # KI-40 (2026-11-16): esperaban 90 s y luego, para siempre, a un mapa que ya no podía contestar; ahora fallan enseguida, diciendo por qué
+    import importlib
+    C = importlib.import_module(f"teodors.writer.{tipo}.capturas")
+    fallos = []
+    C.Capturas(_VentanaFalsa(_MapaFalso(listo=False, caido=CHROMIUM_CERRADO)), {}, tmp_path / "img", fallo=fallos.append).empezar()
+    assert len(fallos) == 1 and "el mapa no funciona" in fallos[0] and "0xC0000135" in fallos[0]
+    assert not C._en_marcha
+
+
+@con_qt
+@pytest.mark.parametrize("tipo", CAPTURAS)
+def test_leer_la_vista_del_mapa_tiene_tope(tipo, tmp_path, monkeypatch):
+    # KI-40: preguntar la vista a un mapa que no contesta esperaba para siempre; ahora, ESPERA_JS_S como mucho, y nada con su Chromium cerrado
+    import importlib
+    C = importlib.import_module(f"teodors.writer.{tipo}.capturas")
+    mapa = _MapaFalso(contesta=False)
+    cap = C.Capturas(_VentanaFalsa(mapa), {}, tmp_path / "img")
+    pasos = cap._leer_vista()
+    assert next(pasos) == 100                                       # sin respuesta todavía: espera
+    with monkeypatch.context() as m:
+        m.setattr(C, "ESPERA_JS_S", -1.0)                           # y pasado el tope, falla
+        with pytest.raises(RuntimeError, match="no contesta"):
+            next(pasos)
+    mapa.motivo = CHROMIUM_CERRADO
+    with pytest.raises(RuntimeError, match="Chromium"):
+        next(cap._leer_vista())
+    mapa.motivo, mapa.contesta = None, True                         # y si contesta, la vista, como siempre
+    with pytest.raises(StopIteration) as fin:
+        next(cap._leer_vista())
+    assert fin.value.value == [0.0]
+
+
+@con_qt
+def test_si_el_mapa_no_contesta_las_capturas_fallan_al_tope_y_una_sola_vez(tmp_path, monkeypatch):
+    # KI-40: la espera a que el mapa acabe de cargar, en las tres copias. Si contesta, siguen (y el tope no salta después); si no contesta,
+    # fallan al tope; si su Chromium se cierra mientras, fallan con ese motivo; y lo que conteste tarde ya no hace nada. Con el reloj de Qt: en
+    # un proceso aparte y con un tope de 0,5 s
+    monkeypatch.setenv("PYTHONIOENCODING", "utf-8")
+    codigo = r"""
+import importlib, json, os, time
+from PySide6 import QtCore
+app = QtCore.QCoreApplication(["x"])
+
+
+class Mapa:
+    def __init__(self, contesta):
+        self.contesta, self.motivo, self.tarde = contesta, None, []
+
+    def esta_listo(self):
+        return True
+
+    def caido(self):
+        return self.motivo
+
+    def js(self, codigo, al_terminar=None):
+        if al_terminar is None:
+            return
+        if self.contesta:
+            QtCore.QTimer.singleShot(5, lambda: al_terminar(0))       # como Chromium: la respuesta llega luego
+        else:
+            self.tarde.append(al_terminar)
+
+
+class Ventana:
+    def __init__(self, mapa):
+        self.mapa, self.terreno_info = mapa, {}
+
+
+def girar(segundos, hasta=lambda: False):
+    fin = time.time() + segundos
+    while time.time() < fin and not hasta():
+        app.processEvents()
+        time.sleep(0.01)
+
+
+def probar(C, contesta, muere=False):
+    mapa, fallos, siguio = Mapa(contesta), [], []
+    cap = C.Capturas(Ventana(mapa), {}, os.path.abspath("img"), fallo=fallos.append)
+
+    def pasos():
+        yield ("mapa", 0)
+        siguio.append(1)
+    cap._gen = pasos()
+    if muere:
+        QtCore.QTimer.singleShot(100, lambda: setattr(mapa, "motivo", "su motor web (Chromium) se ha cerrado (prueba)"))
+    t0 = time.time()
+    cap._siguiente()
+    girar(5, lambda: fallos or siguio)
+    s = time.time() - t0
+    girar(0.7)                                                       # el tope de lo ya contestado no salta
+    for cb in mapa.tarde:                                            # lo que contesta tarde: ni sigue ni falla otra vez
+        cb(0)
+    girar(0.7)
+    return {"fallos": fallos, "siguio": len(siguio), "s": round(s, 2)}
+
+
+salida = {}
+for tipo in ("reanalisis_caso", "reanalisis_comparacion", "episodio"):
+    C = importlib.import_module(f"teodors.writer.{tipo}.capturas")
+    C.ESPERA_JS_S = 0.5
+    salida[tipo] = {"contesta": probar(C, True), "no_contesta": probar(C, False), "muere": probar(C, False, muere=True)}
+print("@@" + json.dumps(salida), flush=True)
+os._exit(0)
+"""
+    r = subprocess.run([sys.executable, "-c", codigo], capture_output=True, text=True, encoding="utf-8", errors="replace", cwd=tmp_path, timeout=120)
+    linea = next((x for x in r.stdout.splitlines() if x.startswith("@@")), None)
+    assert linea, r.stderr[-1500:]
+    for tipo, res in json.loads(linea[2:]).items():
+        assert res["contesta"]["fallos"] == [] and res["contesta"]["siguio"] == 1, (tipo, res)
+        assert res["no_contesta"]["siguio"] == 0 and len(res["no_contesta"]["fallos"]) == 1, (tipo, res)
+        assert "el mapa no contesta" in res["no_contesta"]["fallos"][0] and res["no_contesta"]["s"] < 3, (tipo, res)
+        assert res["muere"]["siguio"] == 0 and len(res["muere"]["fallos"]) == 1 and "Chromium" in res["muere"]["fallos"][0], (tipo, res)

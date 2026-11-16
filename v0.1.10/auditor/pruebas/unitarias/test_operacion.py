@@ -791,6 +791,60 @@ def test_las_horas_de_antes_del_periodo_siguen_en_el_aire(sin_imagenes):
     assert C[2, 0] == pytest.approx(3.0) and C[3, 0] == 0.0
 
 
+def test_el_penacho_en_paralelo_da_los_mismos_ficheros_byte_a_byte():
+    """`calcular_periodo` con el penacho hora a hora repartido entre 2 procesos (`imagenes_paralelo`) frente a 1, como siempre: los mismos
+    PNG de cada hora y rejilla y las mismas isolíneas del olor, byte a byte; los mismos arrays en los .npz; y el mismo resultado.json, salvo
+    la marca ?v= de las URL, la fecha y lo que tarda."""
+    import hashlib
+    f = _foco("F01")
+    cat = {"focos": [f]}
+    periodo = periodos.nuevo("queja", "2023-03-25", 1)
+    carpeta = periodos.dir_respuestas(periodo)
+    _guarda_respuestas([f], lambda i, t, r: 1e-2 * (r + 1) * (1 + t % 5), carpeta=carpeta, serie=periodo["serie"])
+    esc = E.nuevo(cat, "Penacho")
+    raiz = S.carpeta_resultados(esc, periodo)
+
+    def leer():
+        r = json.loads((raiz / "resultado.json").read_text(encoding="utf-8"))
+        r.pop("fecha"), r.pop("segundos")
+        ficheros = {}
+        for p in sorted(raiz.rglob("*")):
+            if p.is_file() and p.suffix == ".npz":                                # el zip lleva la hora: se comparan sus arrays
+                with np.load(p) as z:
+                    ficheros[p.relative_to(raiz).as_posix()] = {k: z[k].tobytes() for k in z.files}
+            elif p.is_file() and p.name != "resultado.json":
+                ficheros[p.relative_to(raiz).as_posix()] = hashlib.sha1(p.read_bytes()).hexdigest()
+        return re.sub(r"\?v=\d+", "", json.dumps(r, sort_keys=True, ensure_ascii=False)), ficheros
+
+    S.calcular_periodo(esc, cat, periodo, paralelo=False)
+    uno = leer()
+    shutil.rmtree(raiz)
+    avances = []
+    S.calcular_periodo(esc, cat, periodo, progreso=lambda p, m="": avances.append(m), paralelo=2)
+    dos = leer()
+    assert sum(n.startswith("olor/penacho_") and n.endswith(".png") for n in uno[1]) >= 24
+    assert sum(n.startswith("olor/penacho_iso_") for n in uno[1]) == 24
+    assert uno[0] == dos[0] and uno[1] == dos[1]
+    assert any("en 2 procesos" in m for m in avances)
+
+
+def test_las_respuestas_de_un_periodo_van_con_los_focos_a_la_vez_del_interruptor(monkeypatch):
+    """`periodos` le dice a `respuestas.py` cuántos focos a la vez solo con el interruptor del cálculo en paralelo encendido; apagado, nada
+    (sus 4 de siempre)."""
+    lanzadas = []
+    monkeypatch.setattr(periodos, "_lanzar", lambda tarea, args, cuenta, cancelado: lanzadas.append((tarea, [str(a) for a in args])))
+    p = periodos.nuevo("queja", "2023-03-25", 1)
+    base = ["--dia", p["ini"], "--dias", str(p["dias"]), "--serie", p["serie"]]
+    monkeypatch.delenv("PRUEBA_OPER_PARALELO", raising=False)
+    periodos.preparar_respuestas(p)
+    monkeypatch.setenv("PRUEBA_OPER_PARALELO", "8")
+    periodos.preparar_respuestas(p)
+    periodos.preparar(p)
+    monkeypatch.setenv("PRUEBA_OPER_PARALELO", "no")
+    periodos.preparar(p)
+    assert [a for tarea, a in lanzadas if tarea == "respuestas"] == [base, base + ["--procesos", "8"], base + ["--procesos", "8"], base]
+
+
 # ── la cuenta entera, frente al motor ──
 def _ejecucion_gfs(dia, plazos=range(0, 25, 3)):
     plazos = list(plazos)

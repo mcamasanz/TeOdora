@@ -48,6 +48,8 @@ class VistaMapa(QWebEngineView):
         self._pagina.evento.connect(self._evento)
         self._listo = False
         self._pendientes = []
+        self._caido = None                         # (estado, código) si se cierra el proceso de Chromium que lo pinta: ver `caido` (KI-40)
+        self._pagina.renderProcessTerminated.connect(self._proceso_cerrado)
         tema.avisos.cambiado.connect(self.set_tema)
 
     def set_tema(self):
@@ -58,6 +60,7 @@ class VistaMapa(QWebEngineView):
     # ── carga y JS ───────────────────────────────────────────────────────────────────────
     def cargar(self, emp, limites, ruta=None):
         self._listo = False
+        self._caido = None                         # otra carga, otro proceso de Chromium
         self._local_enviado = False
         self._pendientes.clear()
         ruta = mapa_web.escribir_mapa_base(emp, limites, ruta)
@@ -125,6 +128,22 @@ class VistaMapa(QWebEngineView):
 
     def esta_listo(self):
         return self._listo
+
+    def caido(self):
+        """Si se ha cerrado el proceso de Chromium que pinta el mapa (ya no contesta a nada), por qué, en texto para el usuario; si no, None."""
+        if self._caido is None:
+            return None
+        estado, codigo = self._caido
+        hexa = f"{codigo % (1 << 32):08X}"                     # el código sin signo, en hexadecimal (sin números de 6 cifras en la interfaz)
+        dll = " = 0xC0000135: no encuentra una de sus librerías" if hexa == "C0000135" else ""
+        return f"su motor web (Chromium) se ha cerrado ({estado}, código {codigo}{dll})"
+
+    def _proceso_cerrado(self, estado, codigo):
+        # KI-40 (2026-11-16): p. ej., al arrancar sin encontrar sus librerías (0xC0000135), si la variable del PATH le llega con otro nombre
+        # que «Path» (desde el Bash de Git, o con un env= de Python). Se apunta y se dice: el informe falla con esto en vez de esperar. Aquí,
+        # como aviso: el error lo da quien usa el mapa (el informe)
+        self._caido = (getattr(estado, "name", str(estado)), int(codigo))
+        log.warning(f"Mapa: {self.caido()}.")
 
     def quitar_capa(self, id_capa):
         self.js(f"mapaApp.quitarCapa({json.dumps(id_capa)})")

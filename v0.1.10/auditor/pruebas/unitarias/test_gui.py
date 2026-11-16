@@ -486,6 +486,34 @@ os._exit(0)
     assert json.loads(next(l for l in salida.splitlines() if l.startswith("@@"))[2:]) == [{"evento": "listo"}]
 
 
+@con_qt
+def test_el_mapa_dice_si_se_ha_cerrado_su_chromium(tmp_path):
+    # KI-40 (2026-11-16): si se cierra el proceso de Chromium que pinta el mapa (p. ej., 0xC0000135: no encuentra sus librerías), el mapa lo
+    # apunta y lo dice (`caido`), para que el informe falle con ese motivo en vez de esperar para siempre; al cargarse otra vez, lo olvida
+    codigo = r"""
+import json, os
+from PySide6 import QtCore, QtWebEngineWidgets, QtWidgets
+QtCore.QCoreApplication.setAttribute(QtCore.Qt.ApplicationAttribute.AA_ShareOpenGLContexts)
+app = QtWidgets.QApplication(["x"])
+from PySide6.QtWebEngineCore import QWebEnginePage
+from teodors.gui import mapa
+v = mapa.VistaMapa()
+antes = v.caido()
+v._pagina.renderProcessTerminated.emit(QWebEnginePage.RenderProcessTerminationStatus.CrashedTerminationStatus, -1073741515)
+caido = v.caido()
+open("m.html", "w").write("<p>x</p>")
+mapa.mapa_web.escribir_mapa_base = lambda *a, **k: os.path.abspath("m.html")
+v.cargar({}, [])
+print("@@" + json.dumps([antes, caido, v.caido()]), flush=True)
+os._exit(0)
+"""
+    salida = _hijo(codigo, tmp_path)
+    antes, caido, otra = json.loads(next(l for l in salida.splitlines() if l.startswith("@@"))[2:])
+    assert antes is None and otra is None
+    assert caido == ("su motor web (Chromium) se ha cerrado (CrashedTerminationStatus, código -1073741515 = 0xC0000135: no encuentra una de sus "
+                     "librerías)")
+
+
 # ------------------------------------------------------------------------------ lo que sale de la planta
 @con_qt
 def test_los_ajustes_llevan_el_nombre_de_la_planta(app, tmp_path):

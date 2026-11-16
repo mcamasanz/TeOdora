@@ -3,9 +3,9 @@
 Formato basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/); versionado
 semántico.
 
-## [0.1.10] — sin publicar
+## [0.1.10] — 2026-11-16
 
-Copia de la **0.1.8** con sus tres fallos corregidos y con la **meteo de los informes en la planta, ya procesada**: un equipo sin la unidad de DATOS
+Copia de la **0.1.8** con sus tres fallos corregidos, el **reanálisis acumulando y, con un interruptor, en paralelo** (también el episodio), el informe que ya no se cuelga si cae el motor web del mapa, y la **meteo de los informes en la planta, ya procesada**: un equipo sin la unidad de DATOS
 (el del cliente) hace los informes completos, sin ningún fichero meteorológico en bruto y sin conocer la ruta de DATOS. **No hay 0.1.9**: una copia
 de trabajo con ese número se descartó sin publicarse, y nada suyo entra aquí salvo que se vuelva a decidir y se rehaga.
 
@@ -38,12 +38,26 @@ de trabajo con ese número se descartó sin publicarse, y nada suyo entra aquí 
   - **Cómo se activa:** `paralelo=False` (1 proceso) es lo que hay por defecto. Se enciende con `operacion.paralelo` en planta.json (true,
     false o cuántos procesos, hasta 8) o con la variable `<prefijo>_PARALELO`.
   - **Memoria:** ~1,5 GB de RAM en 1 proceso y ~1,1 GB por cada proceso más.
+- **El episodio, también con el interruptor del paralelo** (`operacion.paralelo`, el mismo del reanálisis):
+  - **Las respuestas de los focos** van en tantos procesos como diga: `periodos` le pasa `--procesos N` a `respuestas`. Apagado,
+    como siempre: 4.
+  - **El penacho hora a hora** (las imágenes de cada rejilla y las isolíneas del olor) se pinta repartido entre esos procesos
+    (`operacion.imagenes_paralelo`), con las mismas funciones de `simulacion` y los mismos ficheros, byte a byte.
+  - **Tiempos** con el episodio de prueba de 3 días (las respuestas desde cero, los estadísticos y el penacho):
+    - sin la interfaz: 467 s apagado y 258 s con 8 procesos;
+    - con la app: 807 s apagado y 264 s con 8 procesos.
+
+    Con el interruptor a 1, las respuestas van en un solo proceso y tardan más que apagado (1068 s).
+  - **Resultados:** idénticos bit a bit en Python nativo, apagado y con 1, 2, 4 y 8 procesos. Con la app y sin ella sale el mismo
+    cálculo y el mismo texto del informe.
 
 ### Cambiado
 - `simulacion.calcular(esc, catalogo, progreso, cancelado, paralelo=None)` acumula siempre (`reanalisis_paralelo.sumar_serie`); con `paralelo`
   sin dar, el de la planta (`reanalisis_paralelo.de_la_planta`; False, 1 proceso, si no dice nada). **Fuera** `simulacion._sumar_serie`,
   `simulacion._series_en` y `simulacion.EN_MEMORIA_MB`, el cálculo con la serie entera en `trabajo/reanalisis` (lo que dejara un cálculo
   cortado de una versión anterior se sigue borrando al empezar).
+- `simulacion.calcular_periodo(esc, catalogo, periodo, progreso, cancelado, paralelo=None)`: con `paralelo` sin dar, el de la
+  planta; con más de un proceso, el penacho hora a hora se pinta con `imagenes_paralelo`.
 - Sin la meteo en bruto, el informe lee la de la planta: `writer.datos._era5` (el tiempo en la planta), `writer.datos._clima_comparacion` (lo
   normal de esas fechas; lo del episodio es siempre lo medido, con la hora de cada estación que trae la planta), `metricas.viento.rosas_estaciones`
   (las rosas; con `procesada=False`, las calcula siempre) y `fuentes.meteocat.inventario` (las estaciones de la zona, sin pedirlas a la red).
@@ -60,6 +74,19 @@ de trabajo con ese número se descartó sin publicarse, y nada suyo entra aquí 
 - `writer.datos._clima_comparacion`: **una hora en calma daba dirección.** Con la velocidad a 0, la media de la hora la dejaba en 0° o en 180°
   según el signo de un cero, y una estación en calma movía la dirección media del episodio (hasta 16° en un episodio de noviembre de 2026). Ahora
   la calma no aporta dirección, ni a lo medido ni a la nube de lo normal, como en las rosas.
+- **El informe se quedaba esperando para siempre si el mapa no funcionaba** (KI-40; ya pasaba en la 0.1.8). Si se cerraba el proceso de
+  Chromium que pinta el mapa de la ventana oculta, las capturas esperaban 90 s a que el mapa estuviera listo y luego, sin tope, a que
+  contestara a su JavaScript. Ahora:
+  - `gui.mapa.VistaMapa` apunta el cierre en el registro y dice por qué (`caido()`).
+  - Las capturas de los tres informes (`writer.{reanalisis_caso,reanalisis_comparacion,episodio}.capturas`) fallan al momento con ese
+    motivo, o si el mapa lleva `ESPERA_JS_S` (120 s) sin contestar.
+  - El informe acaba con «No se pudo hacer el informe: …», y la app lo enseña.
+  - **Por qué se cerraba:** si la variable del PATH le llega como `PATH` en vez de `Path` (al lanzar desde el Bash de Git, o con un `env=`
+    de Python), el Chromium de conda no encuentra sus librerías (0xC0000135). En el ejecutable no pasa, porque su Chromium lleva las
+    librerías al lado (comprobado: las pruebas del ejecutable con interfaz se lanzaron así y sus informes salieron enteros).
+- **El auditor nunca ejecutaba la prueba del PDF** (KI-41). Lanzaba pytest con la variable del PATH como `PATH` (así la deja
+  `os.environ`), el Chromium de conda no arrancaba en los procesos hijos y la prueba se saltaba al prepararse. Ahora `auditor.reglas._pytest`
+  la pasa como `Path`, con el mismo valor, y la prueba del PDF también se ejecuta en el auditor (unos 5 s).
 
 ## [0.1.8] — 2026-11-14
 
