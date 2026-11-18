@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Penacho en 3D</title>
+<style>
+  /*VARIABLES*/
+  html, body { margin:0; height:100%; background:var(--fondo); color:var(--texto); font:13px var(--letra); overflow:hidden; }
+  canvas { display:block; }
+  #panel { position:absolute; top:12px; left:12px; width:292px; padding:12px 14px; background:var(--superficie); border:1px solid var(--borde); border-radius:10px; }
+  h1 { margin:0 0 2px; font-size:15px; font-weight:600; }
+  .tenue { color:var(--tenue); }
+  .fila { margin-top:11px; }
+  .fila label.t { display:flex; justify-content:space-between; margin-bottom:4px; }
+  input[type=range] { width:100%; accent-color:var(--acento); margin:0; }
+  input[type=checkbox] { accent-color:var(--acento); margin:0; }
+  .nivel { display:flex; align-items:center; gap:8px; margin-top:4px; cursor:pointer; }
+  .nivel i { width:14px; height:14px; border-radius:3px; display:inline-block; }
+  #hora { font-weight:600; }
+  #datos { margin-top:11px; line-height:1.5; }
+  #creditos { position:absolute; right:10px; bottom:6px; font-size:11px; color:#e6edf3; text-shadow:0 0 3px #000; }
+  .rotulo { position:absolute; transform:translate(-50%,-100%); padding:1px 6px; background:rgba(16,22,28,.78); color:#e6edf3; border-radius:4px; font-size:11px; white-space:nowrap; pointer-events:none; }
+  .rotulo.planta { color:#ffd166; font-weight:600; }
+  #norte { position:absolute; right:14px; top:12px; width:42px; height:42px; color:var(--texto); }
+  #sin3d { position:absolute; inset:0; display:none; align-items:center; justify-content:center; }
+</style>
+</head>
+<body>
+<div id="sin3d">Este equipo no puede dibujar en 3D (WebGL).</div>
+<div id="panel">
+  <h1 id="titulo"></h1>
+  <div class="tenue" id="dia"></div>
+  <div class="fila"><span id="hora"></span></div>
+  <div class="fila" id="niveles"><div class="tenue" id="unidad"></div></div>
+  <div class="fila">
+    <label class="t" for="e"><span>Exageración vertical</span><span id="ev"></span></label>
+    <input id="e" type="range" min="1" max="6" step="0.5" value="3">
+  </div>
+  <div id="datos" class="tenue"></div>
+</div>
+<svg id="norte" viewBox="-21 -21 42 42"><g id="brujula"><path d="M0 -12 L6 11 L0 7 L-6 11 Z" fill="currentColor"/><text x="0" y="-13.5" text-anchor="middle" font-size="9" fill="currentColor">N</text></g></svg>
+<div id="creditos">/*CREDITO*/ · three.js (MIT)</div>
+<script>/*THREE*/</script>
+<script>/*ORBIT*/</script>
+<script>
+var D = /*DATOS*/;
+var ORTO = "data:image/jpeg;base64,/*ORTO*/";
+(function () {
+  function bytes(b) { var s = atob(b), n = s.length, a = new Uint8Array(n); for (var i = 0; i < n; i++) { a[i] = s.charCodeAt(i); } return a.buffer; }
+  function css(n) { return getComputedStyle(document.documentElement).getPropertyValue("--" + n).trim(); }
+  // Los tres niveles, del exterior al núcleo: son colores de datos, no dependen del estilo
+  var COLOR = [0xffd60a, 0xf77f00, 0xa4000f], OPAC = [0.22, 0.36, 1.0];
+  document.getElementById("titulo").textContent = D.titulo;
+  document.getElementById("dia").textContent = D.dia;
+  document.getElementById("unidad").textContent = D.unidad;
+  var escena = new THREE.Scene(); escena.background = new THREE.Color(css("fondo"));
+  var render;
+  try {
+    render = new THREE.WebGLRenderer({antialias: true, preserveDrawingBuffer: true});
+  } catch (e) {
+    document.getElementById("panel").style.display = "none";
+    document.getElementById("sin3d").style.display = "flex";
+    window.visor = {sin3d: true, fondo: function () {}};
+    return;
+  }
+  render.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+  render.setSize(innerWidth, innerHeight);
+  render.outputEncoding = THREE.sRGBEncoding;
+  document.body.insertBefore(render.domElement, document.body.firstChild);
+  var cam = new THREE.PerspectiveCamera(38, innerWidth / innerHeight, 10, 60000);
+  var ctl = new THREE.OrbitControls(cam, render.domElement);
+  ctl.enableDamping = true; ctl.dampingFactor = 0.1; ctl.maxPolarAngle = Math.PI * 0.495;
+  escena.add(new THREE.HemisphereLight(0xffffff, 0x555555, 0.8));
+  var sol = new THREE.DirectionalLight(0xffffff, 0.5); sol.position.set(-3000, 6000, 2000); escena.add(sol);
+
+  // Mundo: x = este, y = arriba, z = sur. El grupo lleva la exageración vertical.
+  var mundo = new THREE.Group(); escena.add(mundo);
+  var T = D.terreno, zt = new Int16Array(bytes(T.z)), n = T.n;
+  var pos = new Float32Array(n * n * 3), uv = new Float32Array(n * n * 2);
+  for (var j = 0; j < n; j++) { for (var i = 0; i < n; i++) {
+    var q = j * n + i, x = -T.semilado + i * T.paso, y = -T.semilado + j * T.paso, z = zt[q] / 10;
+    pos[3 * q] = x; pos[3 * q + 1] = z; pos[3 * q + 2] = -y;
+    uv[2 * q] = i / (n - 1); uv[2 * q + 1] = j / (n - 1);
+  } }
+  var ind = [];
+  for (j = 0; j < n - 1; j++) { for (i = 0; i < n - 1; i++) {
+    var a = j * n + i, b = a + 1, c = a + n, d = c + 1;
+    ind.push(a, b, c, b, d, c);
+  } }
+  var gt = new THREE.BufferGeometry();
+  gt.setAttribute("position", new THREE.BufferAttribute(pos, 3));
+  gt.setAttribute("uv", new THREE.BufferAttribute(uv, 2));
+  gt.setIndex(ind); gt.computeVertexNormals();
+  var mt = new THREE.MeshStandardMaterial({color: 0xffffff, roughness: 1, metalness: 0, side: THREE.DoubleSide});
+  var img = new Image();
+  img.onload = function () {
+    var tx = new THREE.Texture(img); tx.encoding = THREE.sRGBEncoding; tx.anisotropy = 8; tx.needsUpdate = true;
+    mt.map = tx; mt.needsUpdate = true; pinta();
+  };
+  img.src = ORTO;
+  mundo.add(new THREE.Mesh(gt, mt));
+
+  // Isosuperficies: se crean la primera vez que se ve cada hora
+  var grupos = {}, visibles = D.niveles.map(function () { return true; });
+  function grupoHora(h) {
+    if (grupos[h]) { return grupos[h]; }
+    var g = new THREE.Group();
+    D.horas[h].mallas.forEach(function (e, k) {
+      if (!e) { return; }
+      var p = new Int16Array(bytes(e.p)), o = new Float32Array(p.length), w = D.escala_m;
+      for (var i = 0; i < p.length; i += 3) { o[i] = p[i] * w; o[i + 1] = p[i + 2] * w; o[i + 2] = -p[i + 1] * w; }
+      var ge = new THREE.BufferGeometry();
+      ge.setAttribute("position", new THREE.BufferAttribute(o, 3));
+      ge.setIndex(new THREE.BufferAttribute(e.i32 ? new Uint32Array(bytes(e.i)) : new Uint16Array(bytes(e.i)), 1));
+      ge.computeVertexNormals();
+      var m = new THREE.MeshPhongMaterial({color: COLOR[k], transparent: OPAC[k] < 1, opacity: OPAC[k], side: THREE.DoubleSide,
+                                           depthWrite: OPAC[k] >= 1, shininess: 12, specular: 0x111111});
+      var me = new THREE.Mesh(ge, m);
+      me.renderOrder = 10 + (D.niveles.length - k);      // de dentro afuera: lo opaco primero
+      me.userData.nivel = k;
+      g.add(me);
+    });
+    mundo.add(g); grupos[h] = g; return g;
+  }
+  var horaActual = 0, fracActual = 0;
+  function ponGrupo(g, peso) {
+    g.visible = true;
+    g.children.forEach(function (m) {
+      var k = m.userData.nivel, op = OPAC[k] * peso, transp = op < 1;
+      m.visible = visibles[k];
+      m.material.opacity = op;
+      if (m.material.transparent !== transp) {
+        m.material.transparent = transp; m.material.depthWrite = !transp; m.material.needsUpdate = true;
+      }
+    });
+  }
+  // Como el penacho del mapa: del reproductor llegan la hora y la fracción hacia la siguiente, y las dos se funden
+  function verHora(h, f) {
+    h = Math.max(0, Math.min(h, D.horas.length - 1)); f = f || 0;
+    var sig = Math.min(h + 1, D.horas.length - 1);
+    Object.keys(grupos).forEach(function (k) { grupos[k].visible = false; });
+    ponGrupo(grupoHora(h), f > 0 && sig !== h ? 1 - f : 1);
+    if (f > 0 && sig !== h) { ponGrupo(grupoHora(sig), f); }
+    horaActual = h; fracActual = f;
+    document.getElementById("hora").textContent = D.horas[h].etiqueta;
+    document.getElementById("datos").innerHTML = D.horas[h].texto;
+    pinta();
+  }
+
+  // Controles. #h=7 elige la hora, #e=2 la exageración y #cx=…&cy=…&cz=…&tx=…&ty=…&tz=… la cámara y el punto al que mira.
+  var parte = {}; location.hash.replace(/^#/, "").split("&").forEach(function (t) { var u = t.split("="); parte[u[0]] = u[1]; });
+  var cont = document.getElementById("niveles");
+  D.niveles.forEach(function (v, k) {
+    var l = document.createElement("label"); l.className = "nivel";
+    var ch = document.createElement("input"); ch.type = "checkbox"; ch.checked = true;
+    ch.addEventListener("change", function () { visibles[k] = ch.checked; verHora(horaActual, fracActual); });
+    var i_ = document.createElement("i"); i_.style.background = "#" + COLOR[k].toString(16).padStart(6, "0");
+    l.appendChild(ch); l.appendChild(i_); l.appendChild(document.createTextNode(v));
+    cont.appendChild(l);
+  });
+  var eE = document.getElementById("e"), eV = document.getElementById("ev");
+  function exag(v) { mundo.scale.y = v; eV.textContent = "×" + v; pinta(); }
+  eE.addEventListener("input", function () { exag(+eE.value); });
+
+  // Rótulos en la pantalla
+  var rot = D.rotulos.map(function (r, k) {
+    var e = document.createElement("div"); e.className = "rotulo" + (k === 0 ? " planta" : ""); e.textContent = r.t; document.body.appendChild(e);
+    return {e: e, v: new THREE.Vector3(r.x, r.z + 30, -r.y)};
+  });
+  var vt = new THREE.Vector3();
+  function rotulos() {
+    rot.forEach(function (r) {
+      vt.copy(r.v); vt.y *= mundo.scale.y; vt.project(cam);
+      var fuera = vt.z > 1 || Math.abs(vt.x) > 1 || Math.abs(vt.y) > 1;
+      r.e.style.display = fuera ? "none" : "block";
+      r.e.style.left = ((vt.x + 1) / 2 * innerWidth) + "px"; r.e.style.top = ((1 - vt.y) / 2 * innerHeight) + "px";
+    });
+    var dir = new THREE.Vector3(); cam.getWorldDirection(dir);
+    document.getElementById("brujula").setAttribute("transform", "rotate(" + (Math.atan2(dir.x, -dir.z) * -180 / Math.PI) + ")");
+  }
+
+  var pendiente = false;
+  function pinta() { pendiente = true; }
+  ctl.addEventListener("change", pinta);
+  function cuadro() {
+    requestAnimationFrame(cuadro);
+    ctl.update();
+    if (pendiente) { pendiente = false; render.render(escena, cam); rotulos(); }
+  }
+  addEventListener("resize", function () {
+    cam.aspect = innerWidth / innerHeight; cam.updateProjectionMatrix(); render.setSize(innerWidth, innerHeight); pinta();
+  });
+  // Vista inicial: desde el suroeste, hacia la planta
+  var ex0 = parte.e ? +parte.e : 3, h0 = parte.h !== undefined ? parseInt(parte.h, 10) : 0, cota0 = D.rotulos[0].z;
+  exag(ex0); eE.value = ex0;
+  ctl.target.set(parte.tx ? +parte.tx : 300, parte.ty ? +parte.ty : cota0 * ex0, parte.tz ? +parte.tz : 200);
+  cam.position.set(parte.cx ? +parte.cx : -1800, parte.cy ? +parte.cy : cota0 * ex0 + 2000, parte.cz ? +parte.cz : 3400);
+  ctl.update();
+  verHora(h0);
+  cuadro();
+  window.visor = {
+    fondo: function (color) { escena.background = new THREE.Color(color); pinta(); },
+    hora: verHora,
+    estado: function () {
+      var g = grupos[horaActual];
+      return {hora: horaActual, frac: fracActual, horas: D.horas.length, etiqueta: D.horas[horaActual].etiqueta, mallas: g ? g.children.length : 0,
+              triangulos: g ? g.children.reduce(function (s, m) { return s + m.geometry.index.count / 3; }, 0) : 0, gl: render.getContext().getParameter(render.getContext().VERSION)};
+    },
+    cam: cam, ctl: ctl, mundo: mundo, render: render
+  };
+})();
+</script>
+</body>
+</html>

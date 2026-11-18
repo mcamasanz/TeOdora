@@ -1,0 +1,15 @@
+GEO_PY (CIRCE) 1.0 (nivel 261017) -- geofísica de la malla para CALMET
+
+Fichero de control : makegeo.inp
+Título             : Demo Application
+Uso del suelo      : lulc1km.dat
+Cotas              : terr1km.dat
+
+Malla 40 x 30, celda 1.000 km, origen (310.000, 4820.000) km
+Categorías de entrada: 38; de salida: 10 20 -20 30 40 51 54 55 60 61 62 70 80 90
+Celdas sin dato (suma <= 0.001), rellenas con IMISS=51: 43
+
+Uso dominante (categoría: celdas): 10: 141, 20: 81, 30: 45, 40: 59, 51: 382, 54: 101, 55: 89, 61: 34, 62: 20, 70: 119, 80: 86, 90: 43
+GEO.DAT escrito: geo1km.dat
+
+Tiempo: 0.03 s

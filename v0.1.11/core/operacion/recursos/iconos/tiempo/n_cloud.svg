@@ -1,0 +1,22 @@
+<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="moon" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff7db"/>
+      <stop offset="100%" stop-color="#efd98f"/>
+    </linearGradient>
+    <linearGradient id="cl" gradientUnits="userSpaceOnUse" x1="34" y1="32" x2="34" y2="58">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#c9d3e2"/>
+    </linearGradient>
+  </defs>
+  <path d="M27 8 A15 15 0 1 0 27 32 A12 12 0 1 1 27 8 Z"
+        fill="url(#moon)" stroke="#e3c56a" stroke-width="1.1"/>
+  <circle cx="19" cy="15" r="1.9" fill="#e7cd82" opacity="0.65"/>
+  <circle cx="16" cy="22" r="2.4" fill="#e7cd82" opacity="0.5"/>
+  <g fill="url(#cl)">
+    <circle cx="27" cy="45" r="11"/>
+    <circle cx="41" cy="40" r="14"/>
+    <circle cx="52" cy="46" r="10"/>
+    <rect x="22" y="46" width="34" height="12" rx="6"/>
+  </g>
+</svg>

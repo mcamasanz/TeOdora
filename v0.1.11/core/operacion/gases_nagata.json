@@ -1,0 +1,2238 @@
+{
+ "fuente": "Nagata, Y. (2003). Measurement of Odor Threshold by Triangle Odor Bag Method. En: Odor Measurement Review, Office of Odor, Noise and Vibration, Environmental Management Bureau, Ministry of the Environment, Government of Japan, pp. 118-127. Tabla 2 (umbrales de detección por el método de la bolsa triangular, ppm v/v).",
+ "url": "https://www.env.go.jp/en/air/odor/measure/02_3_2.pdf",
+ "masas_molares": "PubChem (PUG REST, NIH), por el nombre del artículo o su nombre sistemático; consultado el 2026-11-08",
+ "notas": "Las 223 sustancias de la tabla, en su orden. Los umbrales, tal como están impresos; solo se han corregido erratas evidentes de los nombres (nombre_nagata guarda el impreso). 1 ou_E/m³ = el umbral (UNE-EN 13725): de gas a olor, `operacion.focos`.",
+ "gases": [
+  {
+   "clave": "FORMALDEHYDE",
+   "numero": 1,
+   "nombre": "Formaldehyde",
+   "nombre_nagata": "Formaldehyde",
+   "formula": "CH2O",
+   "masa_molar": 30.03,
+   "umbral_ppm": 0.5,
+   "pubchem_cid": 712
+  },
+  {
+   "clave": "H2S",
+   "numero": 2,
+   "nombre": "sulfuro de hidrógeno",
+   "nombre_nagata": "Hydrogen sulfide",
+   "formula": "H2S",
+   "masa_molar": 34.08,
+   "umbral_ppm": 0.00041,
+   "pubchem_cid": 402
+  },
+  {
+   "clave": "ACETALDEHYDE",
+   "numero": 3,
+   "nombre": "Acetaldehyde",
+   "nombre_nagata": "Acetaldehyde",
+   "formula": "C2H4O",
+   "masa_molar": 44.05,
+   "umbral_ppm": 0.0015,
+   "pubchem_cid": 177
+  },
+  {
+   "clave": "DMS",
+   "numero": 4,
+   "nombre": "dimetilsulfuro",
+   "nombre_nagata": "Dimethyl sulfide",
+   "formula": "C2H6S",
+   "masa_molar": 62.14,
+   "umbral_ppm": 0.003,
+   "pubchem_cid": 1068
+  },
+  {
+   "clave": "PROPIONALDEHYDE",
+   "numero": 5,
+   "nombre": "Propionaldehyde",
+   "nombre_nagata": "Propionaldehyde",
+   "formula": "C3H6O",
+   "masa_molar": 58.08,
+   "umbral_ppm": 0.001,
+   "pubchem_cid": 527
+  },
+  {
+   "clave": "METHYL_ALLYL_SULFIDE",
+   "numero": 6,
+   "nombre": "Methyl allyl sulfide",
+   "nombre_nagata": "Methyl allyl sulfide",
+   "formula": "C4H8S",
+   "masa_molar": 88.17,
+   "umbral_ppm": 0.00014,
+   "pubchem_cid": 66282
+  },
+  {
+   "clave": "N_BUTYLALDEHYDE",
+   "numero": 7,
+   "nombre": "n-Butylaldehyde",
+   "nombre_nagata": "n-Butylaldehyde",
+   "formula": "C4H8O",
+   "masa_molar": 72.11,
+   "umbral_ppm": 0.00067,
+   "pubchem_cid": 261
+  },
+  {
+   "clave": "DIETHYL_SULFIDE",
+   "numero": 8,
+   "nombre": "Diethyl sulfide",
+   "nombre_nagata": "Diethyl sulfide",
+   "formula": "C4H10S",
+   "masa_molar": 90.19,
+   "umbral_ppm": 3.3e-05,
+   "pubchem_cid": 9609
+  },
+  {
+   "clave": "ISOBUTYLALDEHYDE",
+   "numero": 9,
+   "nombre": "Isobutylaldehyde",
+   "nombre_nagata": "lsobutylaldehyde",
+   "formula": "C4H8O",
+   "masa_molar": 72.11,
+   "umbral_ppm": 0.00035,
+   "pubchem_cid": 6561
+  },
+  {
+   "clave": "ALLYL_SULFIDE",
+   "numero": 10,
+   "nombre": "Allyl sulfide",
+   "nombre_nagata": "Allyl sulfide",
+   "formula": "C6H10S",
+   "masa_molar": 114.21,
+   "umbral_ppm": 0.00022,
+   "pubchem_cid": 11617
+  },
+  {
+   "clave": "N_VALERALDEHYDE",
+   "numero": 11,
+   "nombre": "n-Valeraldehyde",
+   "nombre_nagata": "n-Valeraldehyde",
+   "formula": "C5H10O",
+   "masa_molar": 86.13,
+   "umbral_ppm": 0.00041,
+   "pubchem_cid": 8063
+  },
+  {
+   "clave": "CARBON_DISULFIDE",
+   "numero": 12,
+   "nombre": "Carbon disulfide",
+   "nombre_nagata": "Carbon disulfide",
+   "formula": "CS2",
+   "masa_molar": 76.15,
+   "umbral_ppm": 0.21,
+   "pubchem_cid": 6348
+  },
+  {
+   "clave": "ISOVALERALDEHYDE",
+   "numero": 13,
+   "nombre": "Isovaleraldehyde",
+   "nombre_nagata": "I sovaleraldehyde",
+   "formula": "C5H10O",
+   "masa_molar": 86.13,
+   "umbral_ppm": 0.0001,
+   "pubchem_cid": 11552
+  },
+  {
+   "clave": "DMDS",
+   "numero": 14,
+   "nombre": "dimetildisulfuro",
+   "nombre_nagata": "Dimethyl disulfide",
+   "formula": "C2H6S2",
+   "masa_molar": 94.2,
+   "umbral_ppm": 0.0022,
+   "pubchem_cid": 12232
+  },
+  {
+   "clave": "N_HEXYLALDEHYDE",
+   "numero": 15,
+   "nombre": "n-Hexylaldehyde",
+   "nombre_nagata": "n-Hexylaldehyde",
+   "formula": "C6H12O",
+   "masa_molar": 100.16,
+   "umbral_ppm": 0.00028,
+   "pubchem_cid": 6184
+  },
+  {
+   "clave": "DIETHYL_DISULFIDE",
+   "numero": 16,
+   "nombre": "Diethyl disulfide",
+   "nombre_nagata": "Diethyl disulfide",
+   "formula": "C4H10S2",
+   "masa_molar": 122.3,
+   "umbral_ppm": 0.002,
+   "pubchem_cid": 8077
+  },
+  {
+   "clave": "N_HEPTYLALDEHYDE",
+   "numero": 17,
+   "nombre": "n-Heptylaldehyde",
+   "nombre_nagata": "n-Heptylaldehyde",
+   "formula": "C7H14O",
+   "masa_molar": 114.19,
+   "umbral_ppm": 0.00018,
+   "pubchem_cid": 8130
+  },
+  {
+   "clave": "DIALLYL_DISULFIDE",
+   "numero": 18,
+   "nombre": "Diallyl disulfide",
+   "nombre_nagata": "Diallyl disulfide",
+   "formula": "C6H10S2",
+   "masa_molar": 146.3,
+   "umbral_ppm": 0.00022,
+   "pubchem_cid": 16590
+  },
+  {
+   "clave": "N_OCTYLALDEHYDE",
+   "numero": 19,
+   "nombre": "n-Octylaldehyde",
+   "nombre_nagata": "n-Octylaldehyde",
+   "formula": "C8H16O",
+   "masa_molar": 128.21,
+   "umbral_ppm": 1e-05,
+   "pubchem_cid": 454
+  },
+  {
+   "clave": "CH3SH",
+   "numero": 20,
+   "nombre": "metilmercaptano",
+   "nombre_nagata": "Methyl mercaptane",
+   "formula": "CH4S",
+   "masa_molar": 48.11,
+   "umbral_ppm": 7e-05,
+   "pubchem_cid": 878
+  },
+  {
+   "clave": "N_NONYLALDEHYDE",
+   "numero": 21,
+   "nombre": "n-Nonylaldehyde",
+   "nombre_nagata": "n-Nonylaldehyde",
+   "formula": "C9H18O",
+   "masa_molar": 142.24,
+   "umbral_ppm": 0.00034,
+   "pubchem_cid": 31289
+  },
+  {
+   "clave": "ETHYL_MERCAPTANE",
+   "numero": 22,
+   "nombre": "Ethyl mercaptane",
+   "nombre_nagata": "Ethyl mercaptane",
+   "formula": "C2H6S",
+   "masa_molar": 62.14,
+   "umbral_ppm": 8.7e-06,
+   "pubchem_cid": 6343
+  },
+  {
+   "clave": "N_DECYLALDEHYDE",
+   "numero": 23,
+   "nombre": "n-Decylaldehyde",
+   "nombre_nagata": "n-Decylaldehyde",
+   "formula": "C10H20O",
+   "masa_molar": 156.26,
+   "umbral_ppm": 0.0004,
+   "pubchem_cid": 8175
+  },
+  {
+   "clave": "N_PROPYL_MERCAPTANE",
+   "numero": 24,
+   "nombre": "n-Propyl mercaptane",
+   "nombre_nagata": "n-Propyl mercaptane",
+   "formula": "C3H8S",
+   "masa_molar": 76.16,
+   "umbral_ppm": 1.3e-05,
+   "pubchem_cid": 7848
+  },
+  {
+   "clave": "ACROLEIN",
+   "numero": 25,
+   "nombre": "Acrolein",
+   "nombre_nagata": "Acrolein",
+   "formula": "C3H4O",
+   "masa_molar": 56.06,
+   "umbral_ppm": 0.0036,
+   "pubchem_cid": 7847
+  },
+  {
+   "clave": "ISOPROPYL_MERCAPTANE",
+   "numero": 26,
+   "nombre": "Isopropyl mercaptane",
+   "nombre_nagata": "Isopropyl mercaptane",
+   "formula": "C3H8S",
+   "masa_molar": 76.16,
+   "umbral_ppm": 6e-06,
+   "pubchem_cid": 6364
+  },
+  {
+   "clave": "METHACROLEIN",
+   "numero": 27,
+   "nombre": "Methacrolein",
+   "nombre_nagata": "Methacrolein",
+   "formula": "C4H6O",
+   "masa_molar": 70.09,
+   "umbral_ppm": 0.0085,
+   "pubchem_cid": 6562
+  },
+  {
+   "clave": "N_BUTYL_MERCAPTANE",
+   "numero": 28,
+   "nombre": "n-Butyl mercaptane",
+   "nombre_nagata": "n-Butyl mercaptane",
+   "formula": "C4H10S",
+   "masa_molar": 90.19,
+   "umbral_ppm": 2.8e-06,
+   "pubchem_cid": 8012
+  },
+  {
+   "clave": "CROTONALDEHYDE",
+   "numero": 29,
+   "nombre": "Crotonaldehyde",
+   "nombre_nagata": "Crotonaldehyde",
+   "formula": "C4H6O",
+   "masa_molar": 70.09,
+   "umbral_ppm": 0.023,
+   "pubchem_cid": 447466
+  },
+  {
+   "clave": "ISOBUTYL_MERCAPTANE",
+   "numero": 30,
+   "nombre": "Isobutyl mercaptane",
+   "nombre_nagata": "Isobutyl mercaptane",
+   "formula": "C4H10S",
+   "masa_molar": 90.19,
+   "umbral_ppm": 6.8e-06,
+   "pubchem_cid": 10558
+  },
+  {
+   "clave": "METHANOL",
+   "numero": 31,
+   "nombre": "Methanol",
+   "nombre_nagata": "Methanol",
+   "formula": "CH4O",
+   "masa_molar": 32.04,
+   "umbral_ppm": 33.0,
+   "pubchem_cid": 887
+  },
+  {
+   "clave": "SEC_BUTYL_MERCAPTANE",
+   "numero": 32,
+   "nombre": "sec. Butyl mercaptane",
+   "nombre_nagata": "sec. Butyl mercaptane",
+   "formula": "C4H10S",
+   "masa_molar": 90.19,
+   "umbral_ppm": 3e-05,
+   "pubchem_cid": 10560
+  },
+  {
+   "clave": "ETHANOL",
+   "numero": 33,
+   "nombre": "Ethanol",
+   "nombre_nagata": "Ethanol",
+   "formula": "C2H6O",
+   "masa_molar": 46.07,
+   "umbral_ppm": 0.52,
+   "pubchem_cid": 702
+  },
+  {
+   "clave": "TERT_BUTYL_MERCAPTANE",
+   "numero": 34,
+   "nombre": "tert. Butyl mercaptane",
+   "nombre_nagata": "tert. Butyl mercaptane",
+   "formula": "C4H10S",
+   "masa_molar": 90.19,
+   "umbral_ppm": 2.9e-05,
+   "pubchem_cid": 6387
+  },
+  {
+   "clave": "N_PROPANOL",
+   "numero": 35,
+   "nombre": "n-Propanol",
+   "nombre_nagata": "n-Propanol",
+   "formula": "C3H8O",
+   "masa_molar": 60.1,
+   "umbral_ppm": 0.094,
+   "pubchem_cid": 1031
+  },
+  {
+   "clave": "N_AMYL_MERCAPTANE",
+   "numero": 36,
+   "nombre": "n-Amyl mercaptane",
+   "nombre_nagata": "n-Amyl mercaptane",
+   "formula": "C5H12S",
+   "masa_molar": 104.22,
+   "umbral_ppm": 7.8e-07,
+   "pubchem_cid": 8067
+  },
+  {
+   "clave": "ISOPROPANOL",
+   "numero": 37,
+   "nombre": "Isopropanol",
+   "nombre_nagata": "I sopropanol",
+   "formula": "C3H8O",
+   "masa_molar": 60.1,
+   "umbral_ppm": 26.0,
+   "pubchem_cid": 3776
+  },
+  {
+   "clave": "ISOAMYL_MERCAPTANE",
+   "numero": 38,
+   "nombre": "Isoamyl mercaptane",
+   "nombre_nagata": "Isoamyl mercaptane",
+   "formula": "C5H12S",
+   "masa_molar": 104.22,
+   "umbral_ppm": 7.7e-07,
+   "pubchem_cid": 10925
+  },
+  {
+   "clave": "N_BUTANOL",
+   "numero": 39,
+   "nombre": "n-Butanol",
+   "nombre_nagata": "n-Butanol",
+   "formula": "C4H10O",
+   "masa_molar": 74.12,
+   "umbral_ppm": 0.038,
+   "pubchem_cid": 263
+  },
+  {
+   "clave": "N_HEXYL_MERCAPTANE",
+   "numero": 40,
+   "nombre": "n-Hexyl mercaptane",
+   "nombre_nagata": "n-Hexyl mercaptane",
+   "formula": "C6H14S",
+   "masa_molar": 118.24,
+   "umbral_ppm": 1.5e-05,
+   "pubchem_cid": 8106
+  },
+  {
+   "clave": "ISOBUTANOL",
+   "numero": 41,
+   "nombre": "Isobutanol",
+   "nombre_nagata": "I sobutanol",
+   "formula": "C4H10O",
+   "masa_molar": 74.12,
+   "umbral_ppm": 0.011,
+   "pubchem_cid": 6560
+  },
+  {
+   "clave": "THIOPHENE",
+   "numero": 42,
+   "nombre": "Thiophene",
+   "nombre_nagata": "Thiophene",
+   "formula": "C4H4S",
+   "masa_molar": 84.14,
+   "umbral_ppm": 0.00056,
+   "pubchem_cid": 8030
+  },
+  {
+   "clave": "SEC_BUTANOL",
+   "numero": 43,
+   "nombre": "sec.Butanol",
+   "nombre_nagata": "sec.Butanol",
+   "formula": "C4H10O",
+   "masa_molar": 74.12,
+   "umbral_ppm": 0.22,
+   "pubchem_cid": 6568
+  },
+  {
+   "clave": "TETRAHYDROTHIOPHENE",
+   "numero": 44,
+   "nombre": "Tetrahydrothiophene",
+   "nombre_nagata": "Tetrahydrothiophene",
+   "formula": "C4H8S",
+   "masa_molar": 88.17,
+   "umbral_ppm": 0.00062,
+   "pubchem_cid": 1127
+  },
+  {
+   "clave": "TERT_BUTANOL",
+   "numero": 45,
+   "nombre": "tert.Butanol",
+   "nombre_nagata": "tert.Butanol",
+   "formula": "C4H10O",
+   "masa_molar": 74.12,
+   "umbral_ppm": 4.5,
+   "pubchem_cid": 6386
+  },
+  {
+   "clave": "NO2",
+   "numero": 46,
+   "nombre": "dióxido de nitrógeno",
+   "nombre_nagata": "Nitrogen dioxide",
+   "formula": "NO2",
+   "masa_molar": 46.01,
+   "umbral_ppm": 0.12,
+   "pubchem_cid": 3032552
+  },
+  {
+   "clave": "N_PENTANOL",
+   "numero": 47,
+   "nombre": "n-Pentanol",
+   "nombre_nagata": "n-Pentanol",
+   "formula": "C5H12O",
+   "masa_molar": 88.15,
+   "umbral_ppm": 0.1,
+   "pubchem_cid": 6276
+  },
+  {
+   "clave": "NH3",
+   "numero": 48,
+   "nombre": "amoniaco",
+   "nombre_nagata": "Ammonia",
+   "formula": "H3N",
+   "masa_molar": 17.03,
+   "umbral_ppm": 1.5,
+   "pubchem_cid": 222
+  },
+  {
+   "clave": "ISOPENTANOL",
+   "numero": 49,
+   "nombre": "Isopentanol",
+   "nombre_nagata": "Isopentanol",
+   "formula": "C5H12O",
+   "masa_molar": 88.15,
+   "umbral_ppm": 0.0017,
+   "pubchem_cid": 31260
+  },
+  {
+   "clave": "METHYLAMINE",
+   "numero": 50,
+   "nombre": "Methylamine",
+   "nombre_nagata": "Methylamine",
+   "formula": "CH5N",
+   "masa_molar": 31.06,
+   "umbral_ppm": 0.035,
+   "pubchem_cid": 6329
+  },
+  {
+   "clave": "SEC_PENTANOL",
+   "numero": 51,
+   "nombre": "sec.Pentanol",
+   "nombre_nagata": "sec.Pentanol",
+   "formula": "C5H12O",
+   "masa_molar": 88.15,
+   "umbral_ppm": 0.29,
+   "pubchem_cid": 22386
+  },
+  {
+   "clave": "ETHYLAMINE",
+   "numero": 52,
+   "nombre": "Ethylamine",
+   "nombre_nagata": "Ethylamine",
+   "formula": "C2H7N",
+   "masa_molar": 45.08,
+   "umbral_ppm": 0.046,
+   "pubchem_cid": 6341
+  },
+  {
+   "clave": "TERT_PENTANOL",
+   "numero": 53,
+   "nombre": "tert. Pentanol",
+   "nombre_nagata": "tert. Pentanol",
+   "formula": "C5H12O",
+   "masa_molar": 88.15,
+   "umbral_ppm": 0.088,
+   "pubchem_cid": 6405
+  },
+  {
+   "clave": "N_PROPYLAMINE",
+   "numero": 54,
+   "nombre": "n-Propylamine",
+   "nombre_nagata": "n-Propylamine",
+   "formula": "C3H9N",
+   "masa_molar": 59.11,
+   "umbral_ppm": 0.061,
+   "pubchem_cid": 7852
+  },
+  {
+   "clave": "N_HEXANOL",
+   "numero": 55,
+   "nombre": "n-Hexanol",
+   "nombre_nagata": "n-Hexanol",
+   "formula": "C6H14O",
+   "masa_molar": 102.17,
+   "umbral_ppm": 0.006,
+   "pubchem_cid": 8103
+  },
+  {
+   "clave": "ISOPROPYLAMINE",
+   "numero": 56,
+   "nombre": "Isopropylamine",
+   "nombre_nagata": "Isopropylamine",
+   "formula": "C3H9N",
+   "masa_molar": 59.11,
+   "umbral_ppm": 0.025,
+   "pubchem_cid": 6363
+  },
+  {
+   "clave": "N_HEPTANOL",
+   "numero": 57,
+   "nombre": "n-Heptanol",
+   "nombre_nagata": "n-Heptanol",
+   "formula": "C7H16O",
+   "masa_molar": 116.2,
+   "umbral_ppm": 0.0048,
+   "pubchem_cid": 8129
+  },
+  {
+   "clave": "N_BUTYLAMINE",
+   "numero": 58,
+   "nombre": "n-Butylamine",
+   "nombre_nagata": "n-Butylamine",
+   "formula": "C4H11N",
+   "masa_molar": 73.14,
+   "umbral_ppm": 0.17,
+   "pubchem_cid": 8007
+  },
+  {
+   "clave": "N_OCTANOL",
+   "numero": 59,
+   "nombre": "n-Octanol",
+   "nombre_nagata": "n-Octanol",
+   "formula": "C8H18O",
+   "masa_molar": 130.23,
+   "umbral_ppm": 0.0027,
+   "pubchem_cid": 957
+  },
+  {
+   "clave": "ISOBUTYLAMINE",
+   "numero": 60,
+   "nombre": "Isobutylamine",
+   "nombre_nagata": "Isobutylamine",
+   "formula": "C4H11N",
+   "masa_molar": 73.14,
+   "umbral_ppm": 0.0015,
+   "pubchem_cid": 6558
+  },
+  {
+   "clave": "ISOOCTANOL",
+   "numero": 61,
+   "nombre": "Isooctanol",
+   "nombre_nagata": "Isooctanol",
+   "formula": "C8H18O",
+   "masa_molar": 130.23,
+   "umbral_ppm": 0.0093,
+   "pubchem_cid": 15450
+  },
+  {
+   "clave": "SEC_BUTYLAMINE",
+   "numero": 62,
+   "nombre": "sec. Butylamine",
+   "nombre_nagata": "sec. Butylamine",
+   "formula": "C4H11N",
+   "masa_molar": 73.14,
+   "umbral_ppm": 0.17,
+   "pubchem_cid": 24874
+  },
+  {
+   "clave": "N_NONANOL",
+   "numero": 63,
+   "nombre": "n-Nonanol",
+   "nombre_nagata": "n-Nonanol",
+   "formula": "C9H20O",
+   "masa_molar": 144.25,
+   "umbral_ppm": 0.0009,
+   "pubchem_cid": 8914
+  },
+  {
+   "clave": "TERT_BUTYLAMINE",
+   "numero": 64,
+   "nombre": "tert. Butylamine",
+   "nombre_nagata": "tert. Butylamine",
+   "formula": "C4H11N",
+   "masa_molar": 73.14,
+   "umbral_ppm": 0.17,
+   "pubchem_cid": 6385
+  },
+  {
+   "clave": "N_DECANOL",
+   "numero": 65,
+   "nombre": "n-Decanol",
+   "nombre_nagata": "n-Decanol",
+   "formula": "C10H22O",
+   "masa_molar": 158.28,
+   "umbral_ppm": 0.00077,
+   "pubchem_cid": 8174
+  },
+  {
+   "clave": "DIMETHYLAMINE",
+   "numero": 66,
+   "nombre": "Dimethylamine",
+   "nombre_nagata": "Dimethylamine",
+   "formula": "C2H7N",
+   "masa_molar": 45.08,
+   "umbral_ppm": 0.033,
+   "pubchem_cid": 674
+  },
+  {
+   "clave": "2_ETHOXYETHANOL",
+   "numero": 67,
+   "nombre": "2-Ethoxyethanol",
+   "nombre_nagata": "2-Ethoxyethanol",
+   "formula": "C4H10O2",
+   "masa_molar": 90.12,
+   "umbral_ppm": 0.58,
+   "pubchem_cid": 8076
+  },
+  {
+   "clave": "DIETHYLAMINE",
+   "numero": 68,
+   "nombre": "Diethylamine",
+   "nombre_nagata": "Diethylamine",
+   "formula": "C4H11N",
+   "masa_molar": 73.14,
+   "umbral_ppm": 0.048,
+   "pubchem_cid": 8021
+  },
+  {
+   "clave": "2_N_BUTOXYETHANOL",
+   "numero": 69,
+   "nombre": "2-n-Butoxyethanol",
+   "nombre_nagata": "2-n-Buthoxyethanol",
+   "formula": "C6H14O2",
+   "masa_molar": 118.17,
+   "umbral_ppm": 0.043,
+   "pubchem_cid": 8133
+  },
+  {
+   "clave": "TMA",
+   "numero": 70,
+   "nombre": "trimetilamina",
+   "nombre_nagata": "Trimethylamine",
+   "formula": "C3H9N",
+   "masa_molar": 59.11,
+   "umbral_ppm": 3.2e-05,
+   "pubchem_cid": 1146
+  },
+  {
+   "clave": "1_BUTOXY_2_PROPANOL",
+   "numero": 71,
+   "nombre": "1-Butoxy-2-propanol",
+   "nombre_nagata": "1-Butoxy-2-propanol",
+   "formula": "C7H16O2",
+   "masa_molar": 132.2,
+   "umbral_ppm": 0.16,
+   "pubchem_cid": 21210
+  },
+  {
+   "clave": "TRIETHYLAMINE",
+   "numero": 72,
+   "nombre": "Triethylamine",
+   "nombre_nagata": "Triethylamine",
+   "formula": "C6H15N",
+   "masa_molar": 101.19,
+   "umbral_ppm": 0.0054,
+   "pubchem_cid": 8471
+  },
+  {
+   "clave": "PHENOL",
+   "numero": 73,
+   "nombre": "Phenol",
+   "nombre_nagata": "Phenol",
+   "formula": "C6H6O",
+   "masa_molar": 94.11,
+   "umbral_ppm": 0.0056,
+   "pubchem_cid": 996
+  },
+  {
+   "clave": "ACETONITRILE",
+   "numero": 74,
+   "nombre": "Acetonitrile",
+   "nombre_nagata": "Acetonitrile",
+   "formula": "C2H3N",
+   "masa_molar": 41.05,
+   "umbral_ppm": 13.0,
+   "pubchem_cid": 6342
+  },
+  {
+   "clave": "O_CRESOL",
+   "numero": 75,
+   "nombre": "o-Cresol",
+   "nombre_nagata": "o-Cresol",
+   "formula": "C7H8O",
+   "masa_molar": 108.14,
+   "umbral_ppm": 0.00028,
+   "pubchem_cid": 335
+  },
+  {
+   "clave": "ACRYLONITRILE",
+   "numero": 76,
+   "nombre": "Acrylonitrile",
+   "nombre_nagata": "Acrylonitrile",
+   "formula": "C3H3N",
+   "masa_molar": 53.06,
+   "umbral_ppm": 8.8,
+   "pubchem_cid": 7855
+  },
+  {
+   "clave": "M_CRESOL",
+   "numero": 77,
+   "nombre": "m-Cresol",
+   "nombre_nagata": "m-Cresol",
+   "formula": "C7H8O",
+   "masa_molar": 108.14,
+   "umbral_ppm": 0.0001,
+   "pubchem_cid": 342
+  },
+  {
+   "clave": "METHACRYLONITRILE",
+   "numero": 78,
+   "nombre": "Methacrylonitrile",
+   "nombre_nagata": "Methacrylonitrile",
+   "formula": "C4H5N",
+   "masa_molar": 67.09,
+   "umbral_ppm": 3.0,
+   "pubchem_cid": 31368
+  },
+  {
+   "clave": "P_CRESOL",
+   "numero": 79,
+   "nombre": "p-Cresol",
+   "nombre_nagata": "p-Cresol",
+   "formula": "C7H8O",
+   "masa_molar": 108.14,
+   "umbral_ppm": 5.4e-05,
+   "pubchem_cid": 2879
+  },
+  {
+   "clave": "PYRIDINE",
+   "numero": 80,
+   "nombre": "Pyridine",
+   "nombre_nagata": "Pyridine",
+   "formula": "C5H5N",
+   "masa_molar": 79.1,
+   "umbral_ppm": 0.063,
+   "pubchem_cid": 1049
+  },
+  {
+   "clave": "GEOSMIN",
+   "numero": 81,
+   "nombre": "Geosmin",
+   "nombre_nagata": "Geosmin",
+   "formula": "C12H22O",
+   "masa_molar": 182.3,
+   "umbral_ppm": 6.5e-06,
+   "pubchem_cid": 29746
+  },
+  {
+   "clave": "INDOL",
+   "numero": 82,
+   "nombre": "indol",
+   "nombre_nagata": "Indole",
+   "formula": "C8H7N",
+   "masa_molar": 117.15,
+   "umbral_ppm": 0.0003,
+   "pubchem_cid": 798
+  },
+  {
+   "clave": "AC_ACETICO",
+   "numero": 83,
+   "nombre": "ácido acético",
+   "nombre_nagata": "Acetic acid",
+   "formula": "C2H4O2",
+   "masa_molar": 60.05,
+   "umbral_ppm": 0.006,
+   "pubchem_cid": 176
+  },
+  {
+   "clave": "ESCATOL",
+   "numero": 84,
+   "nombre": "escatol (3-metilindol)",
+   "nombre_nagata": "Skatole",
+   "formula": "C9H9N",
+   "masa_molar": 131.17,
+   "umbral_ppm": 5.6e-06,
+   "pubchem_cid": 6736
+  },
+  {
+   "clave": "AC_PROPIONICO",
+   "numero": 85,
+   "nombre": "ácido propiónico",
+   "nombre_nagata": "Propionic acid",
+   "formula": "C3H6O2",
+   "masa_molar": 74.08,
+   "umbral_ppm": 0.0057,
+   "pubchem_cid": 1032
+  },
+  {
+   "clave": "ETHYL_O_TOLUIDINE",
+   "numero": 86,
+   "nombre": "Ethyl-o-toluidine",
+   "nombre_nagata": "Ethyl-o-toluidine",
+   "formula": "C9H13N",
+   "masa_molar": 135.21,
+   "umbral_ppm": 0.026,
+   "pubchem_cid": 7201
+  },
+  {
+   "clave": "AC_BUTIRICO",
+   "numero": 87,
+   "nombre": "ácido n-butírico",
+   "nombre_nagata": "n-Butyric acid",
+   "formula": "C4H8O2",
+   "masa_molar": 88.11,
+   "umbral_ppm": 0.00019,
+   "pubchem_cid": 264
+  },
+  {
+   "clave": "PROPANE",
+   "numero": 88,
+   "nombre": "Propane",
+   "nombre_nagata": "Propane",
+   "formula": "C3H8",
+   "masa_molar": 44.1,
+   "umbral_ppm": 1500.0,
+   "pubchem_cid": 6334
+  },
+  {
+   "clave": "ISOBUTYRIC_ACID",
+   "numero": 89,
+   "nombre": "Isobutyric acid",
+   "nombre_nagata": "Isobutyric acid",
+   "formula": "C4H8O2",
+   "masa_molar": 88.11,
+   "umbral_ppm": 0.0015,
+   "pubchem_cid": 6590
+  },
+  {
+   "clave": "N_BUTANE",
+   "numero": 90,
+   "nombre": "n-Butane",
+   "nombre_nagata": "n-Butane",
+   "formula": "C4H10",
+   "masa_molar": 58.12,
+   "umbral_ppm": 1200.0,
+   "pubchem_cid": 7843
+  },
+  {
+   "clave": "AC_VALERICO",
+   "numero": 91,
+   "nombre": "ácido n-valérico",
+   "nombre_nagata": "n-Valeric acid",
+   "formula": "C5H10O2",
+   "masa_molar": 102.13,
+   "umbral_ppm": 3.7e-05,
+   "pubchem_cid": 7991
+  },
+  {
+   "clave": "N_PENTANE",
+   "numero": 92,
+   "nombre": "n-Pentane",
+   "nombre_nagata": "n-Pentane",
+   "formula": "C5H12",
+   "masa_molar": 72.15,
+   "umbral_ppm": 1.4,
+   "pubchem_cid": 8003
+  },
+  {
+   "clave": "AC_ISOVALERICO",
+   "numero": 93,
+   "nombre": "ácido isovalérico",
+   "nombre_nagata": "Isovaleric acid",
+   "formula": "C5H10O2",
+   "masa_molar": 102.13,
+   "umbral_ppm": 7.8e-05,
+   "pubchem_cid": 10430
+  },
+  {
+   "clave": "ISOPENTANE",
+   "numero": 94,
+   "nombre": "Isopentane",
+   "nombre_nagata": "Isopentane",
+   "formula": "C5H12",
+   "masa_molar": 72.15,
+   "umbral_ppm": 1.3,
+   "pubchem_cid": 6556
+  },
+  {
+   "clave": "N_HEXANOIC_ACID",
+   "numero": 95,
+   "nombre": "n-Hexanoic acid",
+   "nombre_nagata": "n-Hexanoic acid",
+   "formula": "C6H12O2",
+   "masa_molar": 116.16,
+   "umbral_ppm": 0.0006,
+   "pubchem_cid": 8892
+  },
+  {
+   "clave": "N_HEXANE",
+   "numero": 96,
+   "nombre": "n-Hexane",
+   "nombre_nagata": "n -Hexane",
+   "formula": "C6H14",
+   "masa_molar": 86.18,
+   "umbral_ppm": 1.5,
+   "pubchem_cid": 8058
+  },
+  {
+   "clave": "ISOHEXANOIC_ACID",
+   "numero": 97,
+   "nombre": "Isohexanoic acid",
+   "nombre_nagata": "Isohexanoic acid",
+   "formula": "C6H12O2",
+   "masa_molar": 116.16,
+   "umbral_ppm": 0.0004,
+   "pubchem_cid": 12587
+  },
+  {
+   "clave": "2_METHYLPENTANE",
+   "numero": 98,
+   "nombre": "2-Methylpentane",
+   "nombre_nagata": "2-Methylpentane",
+   "formula": "C6H14",
+   "masa_molar": 86.18,
+   "umbral_ppm": 7.0,
+   "pubchem_cid": 7892
+  },
+  {
+   "clave": "SO2",
+   "numero": 99,
+   "nombre": "dióxido de azufre",
+   "nombre_nagata": "Sulfur dioxide",
+   "formula": "O2S",
+   "masa_molar": 64.07,
+   "umbral_ppm": 0.87,
+   "pubchem_cid": 1119
+  },
+  {
+   "clave": "3_METHYLPENTANE",
+   "numero": 100,
+   "nombre": "3-Methylpentane",
+   "nombre_nagata": "3-Methylpentane",
+   "formula": "C6H14",
+   "masa_molar": 86.18,
+   "umbral_ppm": 8.9,
+   "pubchem_cid": 7282
+  },
+  {
+   "clave": "CARBONYL_SULFIDE",
+   "numero": 101,
+   "nombre": "Carbonyl sulfide",
+   "nombre_nagata": "Carbonyl sulfide",
+   "formula": "COS",
+   "masa_molar": 60.08,
+   "umbral_ppm": 0.055,
+   "pubchem_cid": 10039
+  },
+  {
+   "clave": "2_2_DIMETHYLBUTANE",
+   "numero": 102,
+   "nombre": "2,2-Dimethylbutane",
+   "nombre_nagata": "2, 2-Dimethylbutane",
+   "formula": "C6H14",
+   "masa_molar": 86.18,
+   "umbral_ppm": 20.0,
+   "pubchem_cid": 6403
+  },
+  {
+   "clave": "2_3_DIMETHYLBUTANE",
+   "numero": 103,
+   "nombre": "2,3-Dimethylbutane",
+   "nombre_nagata": "2, 3-Dimethylbutane",
+   "formula": "C6H14",
+   "masa_molar": 86.18,
+   "umbral_ppm": 0.42,
+   "pubchem_cid": 6589
+  },
+  {
+   "clave": "ETHYL_ACETATE",
+   "numero": 104,
+   "nombre": "Ethyl acetate",
+   "nombre_nagata": "Ethyl acetate",
+   "formula": "C4H8O2",
+   "masa_molar": 88.11,
+   "umbral_ppm": 0.87,
+   "pubchem_cid": 8857
+  },
+  {
+   "clave": "N_HEPTANE",
+   "numero": 105,
+   "nombre": "n-Heptane",
+   "nombre_nagata": "n-Heptane",
+   "formula": "C7H16",
+   "masa_molar": 100.2,
+   "umbral_ppm": 0.67,
+   "pubchem_cid": 8900
+  },
+  {
+   "clave": "N_PROPYL_ACETATE",
+   "numero": 106,
+   "nombre": "n-Propyl acetate",
+   "nombre_nagata": "n-Propyl acetate",
+   "formula": "C5H10O2",
+   "masa_molar": 102.13,
+   "umbral_ppm": 0.24,
+   "pubchem_cid": 7997
+  },
+  {
+   "clave": "2_METHYLHEXANE",
+   "numero": 107,
+   "nombre": "2-Methylhexane",
+   "nombre_nagata": "2-Methylhexane",
+   "formula": "C7H16",
+   "masa_molar": 100.2,
+   "umbral_ppm": 0.42,
+   "pubchem_cid": 11582
+  },
+  {
+   "clave": "ISOPROPYL_ACETATE",
+   "numero": 108,
+   "nombre": "Isopropyl acetate",
+   "nombre_nagata": "Isopropyl acetate",
+   "formula": "C5H10O2",
+   "masa_molar": 102.13,
+   "umbral_ppm": 0.16,
+   "pubchem_cid": 7915
+  },
+  {
+   "clave": "3_METHYLHEXANE",
+   "numero": 109,
+   "nombre": "3-Methylhexane",
+   "nombre_nagata": "3-Methylhexane",
+   "formula": "C7H16",
+   "masa_molar": 100.2,
+   "umbral_ppm": 0.84,
+   "pubchem_cid": 11507
+  },
+  {
+   "clave": "N_BUTYL_ACETATE",
+   "numero": 110,
+   "nombre": "n-Butyl acetate",
+   "nombre_nagata": "n-Butyl acetate",
+   "formula": "C6H12O2",
+   "masa_molar": 116.16,
+   "umbral_ppm": 0.016,
+   "pubchem_cid": 31272
+  },
+  {
+   "clave": "3_ETHYLPENTANE",
+   "numero": 111,
+   "nombre": "3-Ethylpentane",
+   "nombre_nagata": "3-Ethylpentane",
+   "formula": "C7H16",
+   "masa_molar": 100.2,
+   "umbral_ppm": 0.37,
+   "pubchem_cid": 12048
+  },
+  {
+   "clave": "ISOBUTYL_ACETATE",
+   "numero": 112,
+   "nombre": "Isobutyl acetate",
+   "nombre_nagata": "Isobutyl acetate",
+   "formula": "C6H12O2",
+   "masa_molar": 116.16,
+   "umbral_ppm": 0.008,
+   "pubchem_cid": 8038
+  },
+  {
+   "clave": "2_2_DIMETHYLPENTANE",
+   "numero": 113,
+   "nombre": "2,2-Dimethylpentane",
+   "nombre_nagata": "2, 2-Dimethylpentane",
+   "formula": "C7H16",
+   "masa_molar": 100.2,
+   "umbral_ppm": 38.0,
+   "pubchem_cid": 11542
+  },
+  {
+   "clave": "SEC_BUTYL_ACETATE",
+   "numero": 114,
+   "nombre": "sec.Butyl acetate",
+   "nombre_nagata": "sec.Butyl acetate",
+   "formula": "C6H12O2",
+   "masa_molar": 116.16,
+   "umbral_ppm": 0.0024,
+   "pubchem_cid": 7758
+  },
+  {
+   "clave": "2_3_DIMETHYLPENTANE",
+   "numero": 115,
+   "nombre": "2,3-Dimethylpentane",
+   "nombre_nagata": "2, 3-Dimethylpentane",
+   "formula": "C7H16",
+   "masa_molar": 100.2,
+   "umbral_ppm": 4.5,
+   "pubchem_cid": 11260
+  },
+  {
+   "clave": "TERT_BUTYL_ACETATE",
+   "numero": 116,
+   "nombre": "tert.Butyl acetate",
+   "nombre_nagata": "tert.Butyl acetate",
+   "formula": "C6H12O2",
+   "masa_molar": 116.16,
+   "umbral_ppm": 0.071,
+   "pubchem_cid": 10908
+  },
+  {
+   "clave": "2_4_DIMETHYLPENTANE",
+   "numero": 117,
+   "nombre": "2,4-Dimethylpentane",
+   "nombre_nagata": "2, 4-Dimethylpentane",
+   "formula": "C7H16",
+   "masa_molar": 100.2,
+   "umbral_ppm": 0.94,
+   "pubchem_cid": 7907
+  },
+  {
+   "clave": "N_HEXYL_ACETATE",
+   "numero": 118,
+   "nombre": "n-Hexyl acetate",
+   "nombre_nagata": "n-Hexyl acetate",
+   "formula": "C8H16O2",
+   "masa_molar": 144.21,
+   "umbral_ppm": 0.0018,
+   "pubchem_cid": 8908
+  },
+  {
+   "clave": "N_OCTANE",
+   "numero": 119,
+   "nombre": "n-Octane",
+   "nombre_nagata": "n-Octane",
+   "formula": "C8H18",
+   "masa_molar": 114.23,
+   "umbral_ppm": 1.7,
+   "pubchem_cid": 356
+  },
+  {
+   "clave": "METHYL_PROPIONATE",
+   "numero": 120,
+   "nombre": "Methyl propionate",
+   "nombre_nagata": "Methyl propionate",
+   "formula": "C4H8O2",
+   "masa_molar": 88.11,
+   "umbral_ppm": 0.098,
+   "pubchem_cid": 11124
+  },
+  {
+   "clave": "2_METHYLHEPTANE",
+   "numero": 121,
+   "nombre": "2-Methylheptane",
+   "nombre_nagata": "2-Methylheptane",
+   "formula": "C8H18",
+   "masa_molar": 114.23,
+   "umbral_ppm": 0.11,
+   "pubchem_cid": 11594
+  },
+  {
+   "clave": "ETHYL_PROPIONATE",
+   "numero": 122,
+   "nombre": "Ethyl propionate",
+   "nombre_nagata": "Ethyl propionate",
+   "formula": "C5H10O2",
+   "masa_molar": 102.13,
+   "umbral_ppm": 0.007,
+   "pubchem_cid": 7749
+  },
+  {
+   "clave": "3_METHYLHEPTANE",
+   "numero": 123,
+   "nombre": "3-Methylheptane",
+   "nombre_nagata": "3-Methylheptane",
+   "formula": "C8H18",
+   "masa_molar": 114.23,
+   "umbral_ppm": 1.5,
+   "pubchem_cid": 11519
+  },
+  {
+   "clave": "N_PROPYL_PROPIONATE",
+   "numero": 124,
+   "nombre": "n-Propyl propionate",
+   "nombre_nagata": "n-Propyl propionate",
+   "formula": "C6H12O2",
+   "masa_molar": 116.16,
+   "umbral_ppm": 0.058,
+   "pubchem_cid": 7803
+  },
+  {
+   "clave": "4_METHYLHEPTANE",
+   "numero": 125,
+   "nombre": "4-Methylheptane",
+   "nombre_nagata": "4-Methylheptane",
+   "formula": "C8H18",
+   "masa_molar": 114.23,
+   "umbral_ppm": 1.7,
+   "pubchem_cid": 11512
+  },
+  {
+   "clave": "ISOPROPYL_PROPIONATE",
+   "numero": 126,
+   "nombre": "Isopropyl propionate",
+   "nombre_nagata": "Isopropyl propionate",
+   "formula": "C6H12O2",
+   "masa_molar": 116.16,
+   "umbral_ppm": 0.0041,
+   "pubchem_cid": 12508
+  },
+  {
+   "clave": "2_2_4_TRIMETHYLPENTANE",
+   "numero": 127,
+   "nombre": "2,2,4-Trimethylpentane",
+   "nombre_nagata": "2, 2, 4-Trimethylpentane",
+   "formula": "C8H18",
+   "masa_molar": 114.23,
+   "umbral_ppm": 0.67,
+   "pubchem_cid": 10907
+  },
+  {
+   "clave": "N_BUTYL_PROPIONATE",
+   "numero": 128,
+   "nombre": "n-Butyl propionate",
+   "nombre_nagata": "n-Butyl propionate",
+   "formula": "C7H14O2",
+   "masa_molar": 130.18,
+   "umbral_ppm": 0.036,
+   "pubchem_cid": 11529
+  },
+  {
+   "clave": "N_NONANE",
+   "numero": 129,
+   "nombre": "n-Nonane",
+   "nombre_nagata": "n-Nonane",
+   "formula": "C9H20",
+   "masa_molar": 128.25,
+   "umbral_ppm": 2.2,
+   "pubchem_cid": 8141
+  },
+  {
+   "clave": "ISOBUTYL_PROPIONATE",
+   "numero": 130,
+   "nombre": "Isobutyl propionate",
+   "nombre_nagata": "Isobutyl propionate",
+   "formula": "C7H14O2",
+   "masa_molar": 130.18,
+   "umbral_ppm": 0.02,
+   "pubchem_cid": 10895
+  },
+  {
+   "clave": "2_2_5_TRIMETHYLHEXANE",
+   "numero": 131,
+   "nombre": "2,2,5-Trimethylhexane",
+   "nombre_nagata": "2, 2, 5-Trimethylhexane",
+   "formula": "C9H20",
+   "masa_molar": 128.25,
+   "umbral_ppm": 0.9,
+   "pubchem_cid": 19041
+  },
+  {
+   "clave": "METHYL_N_BUTYRATE",
+   "numero": 132,
+   "nombre": "Methyl n-butyrate",
+   "nombre_nagata": "Methyl n-butyrate",
+   "formula": "C5H10O2",
+   "masa_molar": 102.13,
+   "umbral_ppm": 0.0071,
+   "pubchem_cid": 12180
+  },
+  {
+   "clave": "N_UNDECANE",
+   "numero": 133,
+   "nombre": "n-Undecane",
+   "nombre_nagata": "n-Undecane",
+   "formula": "C11H24",
+   "masa_molar": 156.31,
+   "umbral_ppm": 0.87,
+   "pubchem_cid": 14257
+  },
+  {
+   "clave": "METHYL_ISOBUTYRATE",
+   "numero": 134,
+   "nombre": "Methyl isobutyrate",
+   "nombre_nagata": "Methyl isobutyrate",
+   "formula": "C5H10O2",
+   "masa_molar": 102.13,
+   "umbral_ppm": 0.0019,
+   "pubchem_cid": 11039
+  },
+  {
+   "clave": "N_DECANE",
+   "numero": 135,
+   "nombre": "n-Decane",
+   "nombre_nagata": "n-Decane",
+   "formula": "C10H22",
+   "masa_molar": 142.28,
+   "umbral_ppm": 0.62,
+   "pubchem_cid": 15600
+  },
+  {
+   "clave": "ETHYL_N_BUTYRATE",
+   "numero": 136,
+   "nombre": "Ethyl n-butyrate",
+   "nombre_nagata": "Ethyl n-butyrate",
+   "formula": "C6H12O2",
+   "masa_molar": 116.16,
+   "umbral_ppm": 4e-05,
+   "pubchem_cid": 7762
+  },
+  {
+   "clave": "N_DODECANE",
+   "numero": 137,
+   "nombre": "n-Dodecane",
+   "nombre_nagata": "n-Dodecane",
+   "formula": "C12H26",
+   "masa_molar": 170.33,
+   "umbral_ppm": 0.11,
+   "pubchem_cid": 8182
+  },
+  {
+   "clave": "ETHYL_ISOBUTYRATE",
+   "numero": 138,
+   "nombre": "Ethyl isobutyrate",
+   "nombre_nagata": "Ethyl isobutyrate",
+   "formula": "C6H12O2",
+   "masa_molar": 116.16,
+   "umbral_ppm": 2.2e-05,
+   "pubchem_cid": 7342
+  },
+  {
+   "clave": "PROPYLENE",
+   "numero": 139,
+   "nombre": "Propylene",
+   "nombre_nagata": "Propylene",
+   "formula": "C3H6",
+   "masa_molar": 42.08,
+   "umbral_ppm": 13.0,
+   "pubchem_cid": 8252
+  },
+  {
+   "clave": "N_PROPYL_N_BUTYRATE",
+   "numero": 140,
+   "nombre": "n-Propyl n-butyrate",
+   "nombre_nagata": "n-Propy n-butyrate",
+   "formula": "C7H14O2",
+   "masa_molar": 130.18,
+   "umbral_ppm": 0.011,
+   "pubchem_cid": 7770
+  },
+  {
+   "clave": "1_BUTENE",
+   "numero": 141,
+   "nombre": "1-Butene",
+   "nombre_nagata": "1-Butene",
+   "formula": "C4H8",
+   "masa_molar": 56.11,
+   "umbral_ppm": 0.36,
+   "pubchem_cid": 7844
+  },
+  {
+   "clave": "ISOPROPYL_N_BUTYRATE",
+   "numero": 142,
+   "nombre": "Isopropyl n-butyrate",
+   "nombre_nagata": "Isopropyl n-butyrate",
+   "formula": "C7H14O2",
+   "masa_molar": 130.18,
+   "umbral_ppm": 0.0062,
+   "pubchem_cid": 61184
+  },
+  {
+   "clave": "ISOBUTENE",
+   "numero": 143,
+   "nombre": "Isobutene",
+   "nombre_nagata": "Isobutene",
+   "formula": "C4H8",
+   "masa_molar": 56.11,
+   "umbral_ppm": 10.0,
+   "pubchem_cid": 8255
+  },
+  {
+   "clave": "N_PROPYL_ISOBUTYRATE",
+   "numero": 144,
+   "nombre": "n-Propyl isobutyrate",
+   "nombre_nagata": "n-propyl isobutyrate",
+   "formula": "C7H14O2",
+   "masa_molar": 130.18,
+   "umbral_ppm": 0.002,
+   "pubchem_cid": 12571
+  },
+  {
+   "clave": "1_PENTENE",
+   "numero": 145,
+   "nombre": "1-Pentene",
+   "nombre_nagata": "1-Pentene",
+   "formula": "C5H10",
+   "masa_molar": 70.13,
+   "umbral_ppm": 0.1,
+   "pubchem_cid": 8004
+  },
+  {
+   "clave": "ISOPROPYL_ISOBUTYRATE",
+   "numero": 146,
+   "nombre": "Isopropyl isobutyrate",
+   "nombre_nagata": "Isopropyl isobutyrate",
+   "formula": "C7H14O2",
+   "masa_molar": 130.18,
+   "umbral_ppm": 0.035,
+   "pubchem_cid": 12044
+  },
+  {
+   "clave": "1_HEXENE",
+   "numero": 147,
+   "nombre": "1-Hexene",
+   "nombre_nagata": "1-Hexene",
+   "formula": "C6H12",
+   "masa_molar": 84.16,
+   "umbral_ppm": 0.14,
+   "pubchem_cid": 11597
+  },
+  {
+   "clave": "N_BUTYL_N_BUTYRATE",
+   "numero": 148,
+   "nombre": "n-Butyl n-butyrate",
+   "nombre_nagata": "n-Butyl n-butyrate",
+   "formula": "C8H16O2",
+   "masa_molar": 144.21,
+   "umbral_ppm": 0.0048,
+   "pubchem_cid": 7983
+  },
+  {
+   "clave": "1_HEPTENE",
+   "numero": 149,
+   "nombre": "1-Heptene",
+   "nombre_nagata": "1-Heptene",
+   "formula": "C7H14",
+   "masa_molar": 98.19,
+   "umbral_ppm": 0.37,
+   "pubchem_cid": 11610
+  },
+  {
+   "clave": "ISOBUTYL_N_BUTYRATE",
+   "numero": 150,
+   "nombre": "Isobutyl n-butyrate",
+   "nombre_nagata": "Isobutyl n-butyrate",
+   "formula": "C8H16O2",
+   "masa_molar": 144.21,
+   "umbral_ppm": 0.0016,
+   "pubchem_cid": 10885
+  },
+  {
+   "clave": "1_OCTENE",
+   "numero": 151,
+   "nombre": "1-Octene",
+   "nombre_nagata": "1-Octene",
+   "formula": "C8H16",
+   "masa_molar": 112.21,
+   "umbral_ppm": 0.001,
+   "pubchem_cid": 8125
+  },
+  {
+   "clave": "N_BUTYL_ISOBUTYRATE",
+   "numero": 152,
+   "nombre": "n-Butyl isobutyrate",
+   "nombre_nagata": "n-Butyl isobutyrate",
+   "formula": "C8H16O2",
+   "masa_molar": 144.21,
+   "umbral_ppm": 0.022,
+   "pubchem_cid": 7353
+  },
+  {
+   "clave": "1_NONENE",
+   "numero": 153,
+   "nombre": "1-Nonene",
+   "nombre_nagata": "1-Nonene",
+   "formula": "C9H18",
+   "masa_molar": 126.24,
+   "umbral_ppm": 0.00054,
+   "pubchem_cid": 31285
+  },
+  {
+   "clave": "ISOBUTYL_ISOBUTYRATE",
+   "numero": 154,
+   "nombre": "Isobutyl isobutyrate",
+   "nombre_nagata": "Isobutyl isobutyrate",
+   "formula": "C8H16O2",
+   "masa_molar": 144.21,
+   "umbral_ppm": 0.075,
+   "pubchem_cid": 7351
+  },
+  {
+   "clave": "1_3_BUTADIENE",
+   "numero": 155,
+   "nombre": "1,3-Butadiene",
+   "nombre_nagata": "1,3-Butadiene",
+   "formula": "C4H6",
+   "masa_molar": 54.09,
+   "umbral_ppm": 0.23,
+   "pubchem_cid": 7845
+  },
+  {
+   "clave": "METHYL_N_VALERATE",
+   "numero": 156,
+   "nombre": "Methyl n-valerate",
+   "nombre_nagata": "Methyl n-valerate",
+   "formula": "C6H12O2",
+   "masa_molar": 116.16,
+   "umbral_ppm": 0.0022,
+   "pubchem_cid": 12206
+  },
+  {
+   "clave": "ISOPRENE",
+   "numero": 157,
+   "nombre": "Isoprene",
+   "nombre_nagata": "Isoprene",
+   "formula": "C5H8",
+   "masa_molar": 68.12,
+   "umbral_ppm": 0.048,
+   "pubchem_cid": 6557
+  },
+  {
+   "clave": "METHYL_ISOVALERATE",
+   "numero": 158,
+   "nombre": "Methyl isovalerate",
+   "nombre_nagata": "Methyl isovalerate",
+   "formula": "C6H12O2",
+   "masa_molar": 116.16,
+   "umbral_ppm": 0.0022,
+   "pubchem_cid": 11160
+  },
+  {
+   "clave": "BENZENE",
+   "numero": 159,
+   "nombre": "Benzene",
+   "nombre_nagata": "Benzene",
+   "formula": "C6H6",
+   "masa_molar": 78.11,
+   "umbral_ppm": 2.7,
+   "pubchem_cid": 241
+  },
+  {
+   "clave": "ETHYL_N_VALERATE",
+   "numero": 160,
+   "nombre": "Ethyl n-valerate",
+   "nombre_nagata": "Ethyl n-valerate",
+   "formula": "C7H14O2",
+   "masa_molar": 130.18,
+   "umbral_ppm": 0.00011,
+   "pubchem_cid": 10882
+  },
+  {
+   "clave": "TOLUENE",
+   "numero": 161,
+   "nombre": "Toluene",
+   "nombre_nagata": "Toluene",
+   "formula": "C7H8",
+   "masa_molar": 92.14,
+   "umbral_ppm": 0.33,
+   "pubchem_cid": 1140
+  },
+  {
+   "clave": "ETHYL_ISOVALERATE",
+   "numero": 162,
+   "nombre": "Ethyl isovalerate",
+   "nombre_nagata": "Ethyl isovalerate",
+   "formula": "C7H14O2",
+   "masa_molar": 130.18,
+   "umbral_ppm": 1.3e-05,
+   "pubchem_cid": 7945
+  },
+  {
+   "clave": "STYRENE",
+   "numero": 163,
+   "nombre": "Styrene",
+   "nombre_nagata": "Styrene",
+   "formula": "C8H8",
+   "masa_molar": 104.15,
+   "umbral_ppm": 0.035,
+   "pubchem_cid": 7501
+  },
+  {
+   "clave": "N_PROPYL_N_VALERATE",
+   "numero": 164,
+   "nombre": "n-Propyl n-valerate",
+   "nombre_nagata": "n-Propyl n-valerate",
+   "formula": "C8H16O2",
+   "masa_molar": 144.21,
+   "umbral_ppm": 0.0033,
+   "pubchem_cid": 67328
+  },
+  {
+   "clave": "ETHYLBENZENE",
+   "numero": 165,
+   "nombre": "Ethylbenzene",
+   "nombre_nagata": "Ethylbenzene",
+   "formula": "C8H10",
+   "masa_molar": 106.16,
+   "umbral_ppm": 0.17,
+   "pubchem_cid": 7500
+  },
+  {
+   "clave": "N_PROPYL_ISOVALERATE",
+   "numero": 166,
+   "nombre": "n-Propyl isovalerate",
+   "nombre_nagata": "n-Propyl isovalerate",
+   "formula": "C8H16O2",
+   "masa_molar": 144.21,
+   "umbral_ppm": 5.6e-05,
+   "pubchem_cid": 11176
+  },
+  {
+   "clave": "O_XYLENE",
+   "numero": 167,
+   "nombre": "o-Xylene",
+   "nombre_nagata": "o-Xylene",
+   "formula": "C8H10",
+   "masa_molar": 106.16,
+   "umbral_ppm": 0.38,
+   "pubchem_cid": 7237
+  },
+  {
+   "clave": "N_BUTYL_ISOVALERATE",
+   "numero": 168,
+   "nombre": "n-Butyl isovalerate",
+   "nombre_nagata": "n-Butyl isovalerate",
+   "formula": "C9H18O2",
+   "masa_molar": 158.24,
+   "umbral_ppm": 0.012,
+   "pubchem_cid": 7981
+  },
+  {
+   "clave": "M_XYLENE",
+   "numero": 169,
+   "nombre": "m-Xylene",
+   "nombre_nagata": "m-Xylene",
+   "formula": "C8H10",
+   "masa_molar": 106.16,
+   "umbral_ppm": 0.041,
+   "pubchem_cid": 7929
+  },
+  {
+   "clave": "ISOBUTYL_ISOVALERATE",
+   "numero": 170,
+   "nombre": "Isobutyl isovalerate",
+   "nombre_nagata": "Isobutyl isovalerate",
+   "formula": "C9H18O2",
+   "masa_molar": 158.24,
+   "umbral_ppm": 0.0052,
+   "pubchem_cid": 11514
+  },
+  {
+   "clave": "P_XYLENE",
+   "numero": 171,
+   "nombre": "p-Xylene",
+   "nombre_nagata": "p-Xylene",
+   "formula": "C8H10",
+   "masa_molar": 106.16,
+   "umbral_ppm": 0.058,
+   "pubchem_cid": 7809
+  },
+  {
+   "clave": "METHYL_ACRYLATE",
+   "numero": 172,
+   "nombre": "Methyl acrylate",
+   "nombre_nagata": "Methyl acryrate",
+   "formula": "C4H6O2",
+   "masa_molar": 86.09,
+   "umbral_ppm": 0.0035,
+   "pubchem_cid": 7294
+  },
+  {
+   "clave": "N_PROPYLBENZENE",
+   "numero": 173,
+   "nombre": "n-Propylbenzene",
+   "nombre_nagata": "n-Propylbenzene",
+   "formula": "C9H12",
+   "masa_molar": 120.19,
+   "umbral_ppm": 0.0038,
+   "pubchem_cid": 7668
+  },
+  {
+   "clave": "ETHYL_ACRYLATE",
+   "numero": 174,
+   "nombre": "Ethyl acrylate",
+   "nombre_nagata": "Ethyl acryrate",
+   "formula": "C5H8O2",
+   "masa_molar": 100.12,
+   "umbral_ppm": 0.00026,
+   "pubchem_cid": 8821
+  },
+  {
+   "clave": "ISOPROPYLBENZENE",
+   "numero": 175,
+   "nombre": "Isopropylbenzene",
+   "nombre_nagata": "Isopropylbenzene",
+   "formula": "C9H12",
+   "masa_molar": 120.19,
+   "umbral_ppm": 0.0084,
+   "pubchem_cid": 7406
+  },
+  {
+   "clave": "N_BUTYL_ACRYLATE",
+   "numero": 176,
+   "nombre": "n-Butyl acrylate",
+   "nombre_nagata": "n-Butyl acryrate",
+   "formula": "C7H12O2",
+   "masa_molar": 128.17,
+   "umbral_ppm": 0.00055,
+   "pubchem_cid": 8846
+  },
+  {
+   "clave": "1_2_4_TRIMETHYLBENZENE",
+   "numero": 177,
+   "nombre": "1,2,4-Trimethylbenzene",
+   "nombre_nagata": "1, 2, 4-Trimethylbenzen",
+   "formula": "C9H12",
+   "masa_molar": 120.19,
+   "umbral_ppm": 0.12,
+   "pubchem_cid": 7247
+  },
+  {
+   "clave": "ISOBUTYL_ACRYLATE",
+   "numero": 178,
+   "nombre": "Isobutyl acrylate",
+   "nombre_nagata": "Isobutyl acryrate",
+   "formula": "C7H12O2",
+   "masa_molar": 128.17,
+   "umbral_ppm": 0.0009,
+   "pubchem_cid": 7819
+  },
+  {
+   "clave": "1_3_5_TRIMETHYLBENZENE",
+   "numero": 179,
+   "nombre": "1,3,5-Trimethylbenzene",
+   "nombre_nagata": "1, 3, 5-Trimethylbenzen",
+   "formula": "C9H12",
+   "masa_molar": 120.19,
+   "umbral_ppm": 0.17,
+   "pubchem_cid": 7947
+  },
+  {
+   "clave": "METHYL_METHACRYLATE",
+   "numero": 180,
+   "nombre": "Methyl methacrylate",
+   "nombre_nagata": "Methyl methacryrate",
+   "formula": "C5H8O2",
+   "masa_molar": 100.12,
+   "umbral_ppm": 0.21,
+   "pubchem_cid": 6658
+  },
+  {
+   "clave": "O_ETHYLTOLUENE",
+   "numero": 181,
+   "nombre": "o-Ethyltoluene",
+   "nombre_nagata": "o-Ethyltoluene",
+   "formula": "C9H12",
+   "masa_molar": 120.19,
+   "umbral_ppm": 0.074,
+   "pubchem_cid": 11903
+  },
+  {
+   "clave": "2_ETHOXYETHYL_ACETATE",
+   "numero": 182,
+   "nombre": "2-Ethoxyethyl acetate",
+   "nombre_nagata": "2-Ethoxyethyl acetate",
+   "formula": "C6H12O3",
+   "masa_molar": 132.16,
+   "umbral_ppm": 0.049,
+   "pubchem_cid": 8095
+  },
+  {
+   "clave": "M_ETHYLTOLUENE",
+   "numero": 183,
+   "nombre": "m-Ethyltoluene",
+   "nombre_nagata": "m-Ethyltoluene",
+   "formula": "C9H12",
+   "masa_molar": 120.19,
+   "umbral_ppm": 0.018,
+   "pubchem_cid": 12100
+  },
+  {
+   "clave": "ACETONE",
+   "numero": 184,
+   "nombre": "Acetone",
+   "nombre_nagata": "Acetone",
+   "formula": "C3H6O",
+   "masa_molar": 58.08,
+   "umbral_ppm": 42.0,
+   "pubchem_cid": 180
+  },
+  {
+   "clave": "P_ETHYLTOLUENE",
+   "numero": 185,
+   "nombre": "p-Ethyltoluene",
+   "nombre_nagata": "p-Ethyltoluene",
+   "formula": "C9H12",
+   "masa_molar": 120.19,
+   "umbral_ppm": 0.0083,
+   "pubchem_cid": 12160
+  },
+  {
+   "clave": "METHYL_ETHYL_KETONE",
+   "numero": 186,
+   "nombre": "Methyl ethyl ketone",
+   "nombre_nagata": "Methyl ethyl ketone",
+   "formula": "C4H8O",
+   "masa_molar": 72.11,
+   "umbral_ppm": 0.44,
+   "pubchem_cid": 6569
+  },
+  {
+   "clave": "O_DIETHYLBENZENE",
+   "numero": 187,
+   "nombre": "o-Diethylbenzene",
+   "nombre_nagata": "o-Diethylbenzene",
+   "formula": "C10H14",
+   "masa_molar": 134.22,
+   "umbral_ppm": 0.0094,
+   "pubchem_cid": 8657
+  },
+  {
+   "clave": "METHYL_N_PROPYL_KETONE",
+   "numero": 188,
+   "nombre": "Methyl n-propyl ketone",
+   "nombre_nagata": "Methyl n-propyl ketone",
+   "formula": "C5H10O",
+   "masa_molar": 86.13,
+   "umbral_ppm": 0.028,
+   "pubchem_cid": 7895
+  },
+  {
+   "clave": "M_DIETHYLBENZENE",
+   "numero": 189,
+   "nombre": "m-Diethylbenzene",
+   "nombre_nagata": "m-Diethylbenzene",
+   "formula": "C10H14",
+   "masa_molar": 134.22,
+   "umbral_ppm": 0.07,
+   "pubchem_cid": 8864
+  },
+  {
+   "clave": "METHYL_ISOPROPYL_KETONE",
+   "numero": 190,
+   "nombre": "Methyl isopropyl ketone",
+   "nombre_nagata": "Methyl isopropyl ketone",
+   "formula": "C5H10O",
+   "masa_molar": 86.13,
+   "umbral_ppm": 0.5,
+   "pubchem_cid": 11251
+  },
+  {
+   "clave": "P_DIETHYLBENZENE",
+   "numero": 191,
+   "nombre": "p-Diethylbenzene",
+   "nombre_nagata": "p-Diethylbenzene",
+   "formula": "C10H14",
+   "masa_molar": 134.22,
+   "umbral_ppm": 0.00039,
+   "pubchem_cid": 7734
+  },
+  {
+   "clave": "METHYL_N_BUTYL_KETONE",
+   "numero": 192,
+   "nombre": "Methyl n-butyl ketone",
+   "nombre_nagata": "Methyl n-butyl ketone",
+   "formula": "C6H12O",
+   "masa_molar": 100.16,
+   "umbral_ppm": 0.024,
+   "pubchem_cid": 11583
+  },
+  {
+   "clave": "N_BUTYLBENZENE",
+   "numero": 193,
+   "nombre": "n-Butylbenzene",
+   "nombre_nagata": "n-Butylbenzene",
+   "formula": "C10H14",
+   "masa_molar": 134.22,
+   "umbral_ppm": 0.0085,
+   "pubchem_cid": 7705
+  },
+  {
+   "clave": "METHYL_ISOBUTYL_KETONE",
+   "numero": 194,
+   "nombre": "Methyl isobutyl ketone",
+   "nombre_nagata": "Methyl isobutyl ketone",
+   "formula": "C6H12O",
+   "masa_molar": 100.16,
+   "umbral_ppm": 0.17,
+   "pubchem_cid": 7909
+  },
+  {
+   "clave": "1_2_3_4_TETRAMETHYLBENZENE",
+   "numero": 195,
+   "nombre": "1,2,3,4-Tetramethylbenzene",
+   "nombre_nagata": "1, 2, 3, 4-Tetramethylbenzen",
+   "formula": "C10H14",
+   "masa_molar": 134.22,
+   "umbral_ppm": 0.011,
+   "pubchem_cid": 10263
+  },
+  {
+   "clave": "METHYL_SEC_BUTYL_KETONE",
+   "numero": 196,
+   "nombre": "Methyl sec.butyl ketone",
+   "nombre_nagata": "Methyl sec.butyl ketone",
+   "formula": "C6H12O",
+   "masa_molar": 100.16,
+   "umbral_ppm": 0.024,
+   "pubchem_cid": 11262
+  },
+  {
+   "clave": "1_2_3_4_TETRAHYDRONAPHTHALENE",
+   "numero": 197,
+   "nombre": "1,2,3,4-Tetrahydronaphthalene",
+   "nombre_nagata": "1, 2, 3, 4-Tetrahydronaphthalene",
+   "formula": "C10H12",
+   "masa_molar": 132.2,
+   "umbral_ppm": 0.0093,
+   "pubchem_cid": 8404
+  },
+  {
+   "clave": "METHYL_TERT_BUTYL_KETONE",
+   "numero": 198,
+   "nombre": "Methyl tert.butyl ketone",
+   "nombre_nagata": "Methyl tert.butyl ketone",
+   "formula": "C6H12O",
+   "masa_molar": 100.16,
+   "umbral_ppm": 0.043,
+   "pubchem_cid": 6416
+  },
+  {
+   "clave": "ALFA_PINENE",
+   "numero": 199,
+   "nombre": "α-Pinene",
+   "nombre_nagata": "α-Pinene",
+   "formula": "C10H16",
+   "masa_molar": 136.23,
+   "umbral_ppm": 0.018,
+   "pubchem_cid": 6654
+  },
+  {
+   "clave": "METHYL_N_AMYL_KETONE",
+   "numero": 200,
+   "nombre": "Methyl n-amyl ketone",
+   "nombre_nagata": "Methyl n-amyl ketone",
+   "formula": "C7H14O",
+   "masa_molar": 114.19,
+   "umbral_ppm": 0.0068,
+   "pubchem_cid": 8051
+  },
+  {
+   "clave": "BETA_PINENE",
+   "numero": 201,
+   "nombre": "β-Pinene",
+   "nombre_nagata": "β-Pinene",
+   "formula": "C10H16",
+   "masa_molar": 136.23,
+   "umbral_ppm": 0.033,
+   "pubchem_cid": 14896
+  },
+  {
+   "clave": "METHYL_ISOAMYL_KETONE",
+   "numero": 202,
+   "nombre": "Methyl isoamyl ketone",
+   "nombre_nagata": "Methyl isoamyl ketone",
+   "formula": "C7H14O",
+   "masa_molar": 114.19,
+   "umbral_ppm": 0.0021,
+   "pubchem_cid": 8034
+  },
+  {
+   "clave": "LIMONENE",
+   "numero": 203,
+   "nombre": "Limonene",
+   "nombre_nagata": "Limonene",
+   "formula": "C10H16",
+   "masa_molar": 136.23,
+   "umbral_ppm": 0.038,
+   "pubchem_cid": 22311
+  },
+  {
+   "clave": "DIACETYL",
+   "numero": 204,
+   "nombre": "Diacetyl",
+   "nombre_nagata": "Diacetyl",
+   "formula": "C4H6O2",
+   "masa_molar": 86.09,
+   "umbral_ppm": 5e-05,
+   "pubchem_cid": 650
+  },
+  {
+   "clave": "METHYLCYCLOPENTANE",
+   "numero": 205,
+   "nombre": "Methylcyclopentane",
+   "nombre_nagata": "Methylcyclopentane",
+   "formula": "C6H12",
+   "masa_molar": 84.16,
+   "umbral_ppm": 1.7,
+   "pubchem_cid": 7296
+  },
+  {
+   "clave": "OZONE",
+   "numero": 206,
+   "nombre": "Ozone",
+   "nombre_nagata": "Ozone",
+   "formula": "O3",
+   "masa_molar": 48.0,
+   "umbral_ppm": 0.0032,
+   "pubchem_cid": 24823
+  },
+  {
+   "clave": "CYCLOHEXANE",
+   "numero": 207,
+   "nombre": "Cyclohexane",
+   "nombre_nagata": "Cyclohexane",
+   "formula": "C6H12",
+   "masa_molar": 84.16,
+   "umbral_ppm": 2.5,
+   "pubchem_cid": 8078
+  },
+  {
+   "clave": "FURAN",
+   "numero": 208,
+   "nombre": "Furan",
+   "nombre_nagata": "Furane",
+   "formula": "C4H4O",
+   "masa_molar": 68.07,
+   "umbral_ppm": 9.9,
+   "pubchem_cid": 8029
+  },
+  {
+   "clave": "METHYLCYCLOHEXANE",
+   "numero": 209,
+   "nombre": "Methylcyclohexane",
+   "nombre_nagata": "Methylcyclohexane",
+   "formula": "C7H14",
+   "masa_molar": 98.19,
+   "umbral_ppm": 0.15,
+   "pubchem_cid": 7962
+  },
+  {
+   "clave": "2_5_DIHYDROFURAN",
+   "numero": 210,
+   "nombre": "2,5-Dihydrofuran",
+   "nombre_nagata": "2, 5-Dihydrofurane",
+   "formula": "C4H6O",
+   "masa_molar": 70.09,
+   "umbral_ppm": 0.093,
+   "pubchem_cid": 15570
+  },
+  {
+   "clave": "METHYL_FORMATE",
+   "numero": 211,
+   "nombre": "Methyl formate",
+   "nombre_nagata": "Methyl formate",
+   "formula": "C2H4O2",
+   "masa_molar": 60.05,
+   "umbral_ppm": 130.0,
+   "pubchem_cid": 7865
+  },
+  {
+   "clave": "CHLORINE",
+   "numero": 212,
+   "nombre": "Chlorine",
+   "nombre_nagata": "Chlorine",
+   "formula": "Cl2",
+   "masa_molar": 70.9,
+   "umbral_ppm": 0.049,
+   "pubchem_cid": 24526
+  },
+  {
+   "clave": "ETHYL_FORMATE",
+   "numero": 213,
+   "nombre": "Ethyl formate",
+   "nombre_nagata": "Ethyl formate",
+   "formula": "C3H6O2",
+   "masa_molar": 74.08,
+   "umbral_ppm": 2.7,
+   "pubchem_cid": 8025
+  },
+  {
+   "clave": "DICHLOROMETHANE",
+   "numero": 214,
+   "nombre": "Dichloromethane",
+   "nombre_nagata": "Dichloromethane",
+   "formula": "CH2Cl2",
+   "masa_molar": 84.93,
+   "umbral_ppm": 160.0,
+   "pubchem_cid": 6344
+  },
+  {
+   "clave": "N_PROPYL_FORMATE",
+   "numero": 215,
+   "nombre": "n-Propyl formate",
+   "nombre_nagata": "n-Propyl formate",
+   "formula": "C4H8O2",
+   "masa_molar": 88.11,
+   "umbral_ppm": 0.96,
+   "pubchem_cid": 8073
+  },
+  {
+   "clave": "CHLOROFORM",
+   "numero": 216,
+   "nombre": "Chloroform",
+   "nombre_nagata": "Chloroform",
+   "formula": "CHCl3",
+   "masa_molar": 119.37,
+   "umbral_ppm": 3.8,
+   "pubchem_cid": 6212
+  },
+  {
+   "clave": "ISOPROPYL_FORMATE",
+   "numero": 217,
+   "nombre": "Isopropyl formate",
+   "nombre_nagata": "Isopropyl formate",
+   "formula": "C4H8O2",
+   "masa_molar": 88.11,
+   "umbral_ppm": 0.29,
+   "pubchem_cid": 12257
+  },
+  {
+   "clave": "TRICHLOROETHYLENE",
+   "numero": 218,
+   "nombre": "Trichloroethylene",
+   "nombre_nagata": "Trichloroethylene",
+   "formula": "C2HCl3",
+   "masa_molar": 131.38,
+   "umbral_ppm": 3.9,
+   "pubchem_cid": 6575
+  },
+  {
+   "clave": "N_BUTYL_FORMATE",
+   "numero": 219,
+   "nombre": "n-Butyl formate",
+   "nombre_nagata": "n-Butyl formate",
+   "formula": "C5H10O2",
+   "masa_molar": 102.13,
+   "umbral_ppm": 0.087,
+   "pubchem_cid": 11614
+  },
+  {
+   "clave": "CARBON_TETRACHLORIDE",
+   "numero": 220,
+   "nombre": "Carbon tetrachloride",
+   "nombre_nagata": "Carbon tetrachloride",
+   "formula": "CCl4",
+   "masa_molar": 153.8,
+   "umbral_ppm": 4.6,
+   "pubchem_cid": 5943
+  },
+  {
+   "clave": "ISOBUTYL_FORMATE",
+   "numero": 221,
+   "nombre": "Isobutyl formate",
+   "nombre_nagata": "Isobutyl formate",
+   "formula": "C5H10O2",
+   "masa_molar": 102.13,
+   "umbral_ppm": 0.49,
+   "pubchem_cid": 10957
+  },
+  {
+   "clave": "TETRACHLOROETHYLENE",
+   "numero": 222,
+   "nombre": "Tetrachloroethylene",
+   "nombre_nagata": "Tetrachloroethylene",
+   "formula": "C2Cl4",
+   "masa_molar": 165.8,
+   "umbral_ppm": 0.77,
+   "pubchem_cid": 31373
+  },
+  {
+   "clave": "METHYL_ACETATE",
+   "numero": 223,
+   "nombre": "Methyl acetate",
+   "nombre_nagata": "Mthyl acetate",
+   "formula": "C3H6O2",
+   "masa_molar": 74.08,
+   "umbral_ppm": 1.7,
+   "pubchem_cid": 6584
+  }
+ ]
+}

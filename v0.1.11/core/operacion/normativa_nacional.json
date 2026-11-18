@@ -1,0 +1,11 @@
+{
+ "formato": 1,
+ "actualizado": "2026-11-01",
+ "notas": "Plantilla nacional, PRELIMINAR: una planta la sustituye con su propio normativa.json (mismo formato), sin tocar el código. Valores del RD 102/2011, Anexo I, en µg/m³. promedio: hora, dia, 8h o anio; superaciones_anio: las que se admiten por año civil. Lo que no figura aquí no tiene límite y usa sin_limite.",
+ "olor": {"percentil": 98},
+ "sin_limite": {"percentil": 98},
+ "gases": {
+  "NO2": [{"valor": 200, "promedio": "hora", "superaciones_anio": 18}, {"valor": 40, "promedio": "anio"}],
+  "SO2": [{"valor": 350, "promedio": "hora", "superaciones_anio": 24}, {"valor": 125, "promedio": "dia", "superaciones_anio": 3}]
+ }
+}

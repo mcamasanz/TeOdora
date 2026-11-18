@@ -71,13 +71,13 @@ Lo que no viaja con la instalación (meteorología, MOS, validaciones, logs y la
 
 Las **claves de API no van aquí nunca**: cada usuario las pone en su propio equipo, en `%APPDATA%\CIRCE\claves` (p. ej. `cds-api-key.txt` para el CDS de Copernicus). Así no viajan con la instalación ni entran al repositorio.
 
-Tareas, con `PYTHONPATH=../v0.1.10/cargador` y `TEODORS_PLANTA=entrada`:
+Tareas, con `PYTHONPATH=../v0.1.11/cargador` y `TEODORS_PLANTA=entrada`:
 
 | Para qué | Orden |
 |---|---|
 | Serie de viento de varios años | `python -m teodors.operacion.viento3d_series` |
 | Rehacer el viento local, si cambian los edificios | `python -m teodors.operacion.viento_local_biblioteca` |
-| De las nubes LiDAR a sus rejillas de 1 m | `python -I ../v0.1.10/core/fuentes/lidar.py <carpeta .laz> <carpeta de las librerías> viento/local/planta_1m.npz 286512 4507400 600` |
+| De las nubes LiDAR a sus rejillas de 1 m | `python -I ../v0.1.11/core/fuentes/lidar.py <carpeta .laz> <carpeta de las librerías> viento/local/planta_1m.npz 286512 4507400 600` |
 
 ## Pruebas y documentación del proyecto
 
