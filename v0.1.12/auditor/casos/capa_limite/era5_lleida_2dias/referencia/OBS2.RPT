@@ -1,0 +1,324 @@
+ AERMET_SETUP
+ SUCCESSFUL
+
+ AERMET VERSION  26135
+
+ START PROCESSING DATE/TIME: OCTOBER 18, 2026  20:25:40 PM
+
+ RUNSTREAM CONTROL FILE: S2.INP
+
+
+ ****************************  INPUT SUMMARY **************************** 
+
+ PROCESSING STAGES 2
+
+
+
+ 1.  JOB FILE NAMES
+
+ MESSAGES   OPEN     OBS2.MSG
+ REPORT     OPEN     OBS2.RPT
+ DEBUG      NO FILE
+
+
+
+ 2. UPPERAIR DATA
+
+ PROCESSING DATES: 06/01/2023 - 06/02/2023
+
+                    SITE ID     LATITUDE    LONGITUDE     TIME ADJUSTMENT    ELEVATION
+                   --------     --------    ---------     ---------------    ---------
+ LOCATION:         00008190        41.38         2.12             0              95.00
+
+ DATA FILE: NO FILENAME INPUT
+ EXTRACT FILE: NO FILENAME INPUT
+ QAOUT FILE:     OPEN      UAQAOUT.DAT
+
+ UPPER AIR DATA ABOVE 5000 NOT EXTRACTED
+
+ UPPER AIR AUTOMATIC DATA CHECKS ARE: OFF
+
+
+
+ 3. SURFACE DATA
+
+ NO PROCESSING REQUESTED
+
+
+
+
+ 4. ONSITE DATA
+
+ PROCESSING DATES: 06/01/2023 - 06/02/2023
+
+                    SITE ID     LATITUDE    LONGITUDE     TIME ADJUSTMENT    ELEVATION
+                   --------     --------    ---------     ---------------    ---------
+ LOCATION:           000001        41.62         0.34             0             178.00
+
+ DATA FILE: NO FILENAME INPUT
+ QAOUT FILE:     OPEN      ONSITE.OQA
+
+ NUMBER OF OBSERVATIONS/HOUR:  1
+
+
+
+ 5. PROG DATA
+
+ NO PROCESSING REQUESTED
+
+
+
+
+ 6. METPREP DATA
+
+ PROCESSING DATES: 06/01/2023 - 06/02/2023
+
+                    SITE ID     LATITUDE    LONGITUDE     TIME ADJUSTMENT
+                   --------     --------    ---------     ---------------
+ LOCATION:           000001        41.62         0.34             0
+
+ OUTPUT FILE:    OPEN      OBS.SFC
+ PROFILE FILE:   OPEN      OBS.PFL
+
+ METPREP PROCESSING OPTIONS
+ PROCESS                     OPTION  DESCRIPTION
+
+ WIND DIRECTION              NORAND  WIND DIRECTIONS ARE NOT RAMDOMNIZED
+ REFLEVEL                    SUBNWS  NWS WINDS AND TEMPS SUBSTITUED FOR MISSING ONSITE DATA
+ STABLE BOUNDARY LAYER       ADJ_U*  ADJUSTED U* USED
+ CLOUD COVER                 SUB_CC  CLOUD COVER SUBSTITUTED
+ TEMPERATURE                 SUB_TT  TEMPERATURE SUBSTITUTED
+ UPPER AIR SUBSTITUTION WILL NOT BE SUBSTITUTED
+
+
+ ****************************  SFC CHARACTERISTICS SUMMARY **************************** 
+
+
+ PRIMARY SITE CHARACTERISTICS
+
+YEAR: 2023 FREQUENCY MONTHLY
+           NUMBER OF SECTORS:  12
+
+ YEAR   MONTH        BEGIN SECTOR    END SECTOR     ALBEDO      BOWEN RATIO    ROUGHNESS LENGTH (M)
+ 2023   JANUARY      345.             15.           0.18         0.72          0.0328
+ 2023   JANUARY       15.             45.           0.18         0.72          0.0405
+ 2023   JANUARY       45.             75.           0.18         0.72          0.0306
+ 2023   JANUARY       75.            105.           0.18         0.72          0.0424
+ 2023   JANUARY      105.            135.           0.18         0.72          0.0322
+ 2023   JANUARY      135.            165.           0.18         0.72          0.0312
+ 2023   JANUARY      165.            195.           0.18         0.72          0.0450
+ 2023   JANUARY      195.            225.           0.18         0.72          0.0851
+ 2023   JANUARY      225.            255.           0.18         0.72          0.1095
+ 2023   JANUARY      255.            285.           0.18         0.72          0.0776
+ 2023   JANUARY      285.            315.           0.18         0.72          0.1066
+ 2023   JANUARY      315.            345.           0.18         0.72          0.0503
+ 2023   FEBRUARY     345.             15.           0.18         0.72          0.0328
+ 2023   FEBRUARY      15.             45.           0.18         0.72          0.0405
+ 2023   FEBRUARY      45.             75.           0.18         0.72          0.0306
+ 2023   FEBRUARY      75.            105.           0.18         0.72          0.0424
+ 2023   FEBRUARY     105.            135.           0.18         0.72          0.0322
+ 2023   FEBRUARY     135.            165.           0.18         0.72          0.0312
+ 2023   FEBRUARY     165.            195.           0.18         0.72          0.0450
+ 2023   FEBRUARY     195.            225.           0.18         0.72          0.0851
+ 2023   FEBRUARY     225.            255.           0.18         0.72          0.1095
+ 2023   FEBRUARY     255.            285.           0.18         0.72          0.0776
+ 2023   FEBRUARY     285.            315.           0.18         0.72          0.1066
+ 2023   FEBRUARY     315.            345.           0.18         0.72          0.0503
+ 2023   MARCH        345.             15.           0.14         0.32          0.0437
+ 2023   MARCH         15.             45.           0.14         0.32          0.1035
+ 2023   MARCH         45.             75.           0.14         0.32          0.0408
+ 2023   MARCH         75.            105.           0.14         0.32          0.0565
+ 2023   MARCH        105.            135.           0.14         0.32          0.0429
+ 2023   MARCH        135.            165.           0.14         0.32          0.0416
+ 2023   MARCH        165.            195.           0.14         0.32          0.0601
+ 2023   MARCH        195.            225.           0.14         0.32          0.1135
+ 2023   MARCH        225.            255.           0.14         0.32          0.1460
+ 2023   MARCH        255.            285.           0.14         0.32          0.1035
+ 2023   MARCH        285.            315.           0.14         0.32          0.1468
+ 2023   MARCH        315.            345.           0.14         0.32          0.0671
+ 2023   APRIL        345.             15.           0.14         0.32          0.1035
+ 2023   APRIL         15.             45.           0.14         0.32          0.0540
+ 2023   APRIL         45.             75.           0.14         0.32          0.0408
+ 2023   APRIL         75.            105.           0.14         0.32          0.0565
+ 2023   APRIL        105.            135.           0.14         0.32          0.0429
+ 2023   APRIL        135.            165.           0.14         0.32          0.0416
+ 2023   APRIL        165.            195.           0.14         0.32          0.0601
+ 2023   APRIL        195.            225.           0.14         0.32          0.1135
+ 2023   APRIL        225.            255.           0.14         0.32          0.1460
+ 2023   APRIL        255.            285.           0.14         0.32          0.1035
+ 2023   APRIL        285.            315.           0.14         0.32          0.1468
+ 2023   APRIL        315.            345.           0.14         0.32          0.0671
+ 2023   MAY          345.             15.           0.14         0.32          0.0437
+ 2023   MAY           15.             45.           0.14         0.32          0.0540
+ 2023   MAY           45.             75.           0.14         0.32          0.0408
+ 2023   MAY           75.            105.           0.14         0.32          0.0565
+ 2023   MAY          105.            135.           0.14         0.32          0.0429
+ 2023   MAY          135.            165.           0.14         0.32          0.0416
+ 2023   MAY          165.            195.           0.14         0.32          0.0601
+ 2023   MAY          195.            225.           0.14         0.32          0.1135
+ 2023   MAY          225.            255.           0.14         0.32          0.1460
+ 2023   MAY          255.            285.           0.14         0.32          0.1035
+ 2023   MAY          285.            315.           0.14         0.32          0.1468
+ 2023   MAY          315.            345.           0.14         0.32          0.0671
+ 2023   JUNE         345.             15.           0.20         0.51          0.2072
+ 2023   JUNE          15.             45.           0.20         0.51          0.2253
+ 2023   JUNE          45.             75.           0.20         0.51          0.2016
+ 2023   JUNE          75.            105.           0.20         0.51          0.2295
+ 2023   JUNE         105.            135.           0.20         0.51          0.2057
+ 2023   JUNE         135.            165.           0.20         0.51          0.2031
+ 2023   JUNE         165.            195.           0.20         0.51          0.2351
+ 2023   JUNE         195.            225.           0.20         0.51          0.3029
+ 2023   JUNE         225.            255.           0.20         0.51          0.3348
+ 2023   JUNE         255.            285.           0.20         0.51          0.2919
+ 2023   JUNE         285.            315.           0.20         0.51          0.3291
+ 2023   JUNE         315.            345.           0.20         0.51          0.2457
+ 2023   JULY         345.             15.           0.20         0.51          0.2072
+ 2023   JULY          15.             45.           0.20         0.51          0.2253
+ 2023   JULY          45.             75.           0.20         0.51          0.2016
+ 2023   JULY          75.            105.           0.20         0.51          0.2295
+ 2023   JULY         105.            135.           0.20         0.51          0.2057
+ 2023   JULY         135.            165.           0.20         0.51          0.2031
+ 2023   JULY         165.            195.           0.20         0.51          0.2351
+ 2023   JULY         195.            225.           0.20         0.51          0.3029
+ 2023   JULY         225.            255.           0.20         0.51          0.3348
+ 2023   JULY         255.            285.           0.20         0.51          0.2919
+ 2023   JULY         285.            315.           0.20         0.51          0.3291
+ 2023   JULY         315.            345.           0.20         0.51          0.2457
+ 2023   AUGUST       345.             15.           0.20         0.51          0.2295
+ 2023   AUGUST        15.             45.           0.20         0.51          0.2253
+ 2023   AUGUST        45.             75.           0.20         0.51          0.2016
+ 2023   AUGUST        75.            105.           0.20         0.51          0.2295
+ 2023   AUGUST       105.            135.           0.20         0.51          0.2057
+ 2023   AUGUST       135.            165.           0.20         0.51          0.2031
+ 2023   AUGUST       165.            195.           0.20         0.51          0.2351
+ 2023   AUGUST       195.            225.           0.20         0.51          0.3029
+ 2023   AUGUST       225.            255.           0.20         0.51          0.3348
+ 2023   AUGUST       255.            285.           0.20         0.51          0.2919
+ 2023   AUGUST       285.            315.           0.20         0.51          0.3291
+ 2023   AUGUST       315.            345.           0.20         0.51          0.2457
+ 2023   SEPTEMBER    345.             15.           0.20         0.72          0.2072
+ 2023   SEPTEMBER     15.             45.           0.20         0.72          0.2295
+ 2023   SEPTEMBER     45.             75.           0.20         0.72          0.2016
+ 2023   SEPTEMBER     75.            105.           0.20         0.72          0.2295
+ 2023   SEPTEMBER    105.            135.           0.20         0.72          0.2057
+ 2023   SEPTEMBER    135.            165.           0.20         0.72          0.2031
+ 2023   SEPTEMBER    165.            195.           0.20         0.72          0.2351
+ 2023   SEPTEMBER    195.            225.           0.20         0.72          0.3029
+ 2023   SEPTEMBER    225.            255.           0.20         0.72          0.3348
+ 2023   SEPTEMBER    255.            285.           0.20         0.72          0.2919
+ 2023   SEPTEMBER    285.            315.           0.20         0.72          0.3291
+ 2023   SEPTEMBER    315.            345.           0.20         0.72          0.2457
+ 2023   OCTOBER      345.             15.           0.20         0.72          0.2072
+ 2023   OCTOBER       15.             45.           0.20         0.72          0.2253
+ 2023   OCTOBER       45.             75.           0.20         0.72          0.2016
+ 2023   OCTOBER       75.            105.           0.20         0.72          0.2295
+ 2023   OCTOBER      105.            135.           0.20         0.72          0.2057
+ 2023   OCTOBER      135.            165.           0.20         0.72          0.2031
+ 2023   OCTOBER      165.            195.           0.20         0.72          0.2351
+ 2023   OCTOBER      195.            225.           0.20         0.72          0.3029
+ 2023   OCTOBER      225.            255.           0.20         0.72          0.3348
+ 2023   OCTOBER      255.            285.           0.20         0.72          0.2919
+ 2023   OCTOBER      285.            315.           0.20         0.72          0.3291
+ 2023   OCTOBER      315.            345.           0.20         0.72          0.2457
+ 2023   NOVEMBER     345.             15.           0.20         0.72          0.2072
+ 2023   NOVEMBER      15.             45.           0.20         0.72          0.2253
+ 2023   NOVEMBER      45.             75.           0.20         0.72          0.2016
+ 2023   NOVEMBER      75.            105.           0.20         0.72          0.2295
+ 2023   NOVEMBER     105.            135.           0.20         0.72          0.2057
+ 2023   NOVEMBER     135.            165.           0.20         0.72          0.2031
+ 2023   NOVEMBER     165.            195.           0.20         0.72          0.2351
+ 2023   NOVEMBER     195.            225.           0.20         0.72          0.3029
+ 2023   NOVEMBER     225.            255.           0.20         0.72          0.3348
+ 2023   NOVEMBER     255.            285.           0.20         0.72          0.2919
+ 2023   NOVEMBER     285.            315.           0.20         0.72          0.3291
+ 2023   NOVEMBER     315.            345.           0.20         0.72          0.2457
+ 2023   DECEMBER     345.             15.           0.18         0.72          0.0328
+ 2023   DECEMBER      15.             45.           0.18         0.72          0.0405
+ 2023   DECEMBER      45.             75.           0.18         0.72          0.0306
+ 2023   DECEMBER      75.            105.           0.18         0.72          0.0424
+ 2023   DECEMBER     105.            135.           0.18         0.72          0.0322
+ 2023   DECEMBER     135.            165.           0.18         0.72          0.0776
+ 2023   DECEMBER     165.            195.           0.18         0.72          0.0450
+ 2023   DECEMBER     195.            225.           0.18         0.72          0.0851
+ 2023   DECEMBER     225.            255.           0.18         0.72          0.1095
+ 2023   DECEMBER     255.            285.           0.18         0.72          0.0776
+ 2023   DECEMBER     285.            315.           0.18         0.72          0.1066
+ 2023   DECEMBER     315.            345.           0.18         0.72          0.0503
+
+
+ ****************************  OBSERVATIONS PER DAY SUMMARY **************************** 
+
+
+ STARTING: 01-JUN-2023
+ ENDING: 02-JUN-2023
+
+                   ***** TOTAL OBSERVATION COUNTS *****
+
+ NWS UPPER AIR  OBS      4
+ NWS SURFACE    OBS      0
+ ONSITE         OBS     48
+ 1-MIN ASOS HR  OBS      0
+
+                   ***** DAILY OUTPUT STATISTICS *****
+
+        2023 MO/DY:   06/01   06/02
+  NWS UPPER AIR  OBS    2       2
+  NWS SURFACE    OBS    0       0
+  ONSITE         OBS   24      24
+  1-MIN ASOS HR  OBS    0       0
+
+
+ ****************************  PBL PROCESSING SUMMARY **************************** 
+
+ NUMBER OF DAYS WITH NO CONVECTIVE CONDITIONS:      1
+
+ NUMBER OF TOTAL CALMS:      3
+
+ NUMBER OF SUBSTITUTIONS (INTERPOLATION) FOR MISSING CLOUD COVER:      0
+
+ NUMBER OF SUBSTITUTIONS (INTERPOLATION) FOR MISSING TEMPERATURE:      0
+
+ NUMBER OF BAD SURFACE RECORDS IN SURFACE FILE:        0
+
+ NUMBER OF BAD PROFILE RECORDS IN SURFACE FILE:        0
+
+
+ ****************************  MESSAGE SUMMARY **************************** 
+
+
+
+ ERROR MESSAGES        0 MESSAGES
+
+
+
+ WARNING MESSAGES        1 MESSAGES
+
+ W76:        1
+
+
+ INFORMATION MESSAGES       19 MESSAGES
+
+ I01:        1
+ I20:        2
+ I23:        1
+ I24:        1
+ I25:        1
+ I26:        1
+ I60:        2
+ I63:        1
+ I64:        1
+ I66:        1
+ I70:        1
+ I72:        3
+ I77:        1
+ I78:        1
+ I84:        1
+
+
+ QA MESSAGES        0 MESSAGES
+
+
+
+ AERMET FINISHED SUCCESSFULLY
+
+ END PROCESSING DATE/TIME: OCTOBER 18, 2026  20:25:40 PM

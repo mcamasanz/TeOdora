@@ -1,0 +1,20 @@
+{
+  "motor": "relieve",
+  "descripcion": "Rejilla cartesiana y polar sobre el MDT de Lleida: cotas y alturas de colina.",
+  "carpeta": "",
+  "ordenes": [
+    [
+      "caso.inp",
+      "caso.out"
+    ]
+  ],
+  "entorno": {},
+  "salidas": [
+    "caso.out",
+    "salida.rec",
+    "salida.src"
+  ],
+  "marcas": [],
+  "original": "idéntico al original salvo fecha y hora",
+  "segundos": 0.5
+}

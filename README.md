@@ -6,7 +6,7 @@
 
 Motores de cálculo propios · Aplicación de escritorio para quien opera la planta · Un núcleo versionado y una carpeta por instalación
 
-![Versión](https://img.shields.io/badge/versi%C3%B3n-0.1.11-2ea44f)
+![Versión](https://img.shields.io/badge/versi%C3%B3n-0.1.12-2ea44f)
 ![Python](https://img.shields.io/badge/python-3.11%2B-3776AB?logo=python&logoColor=white)
 ![Plataforma](https://img.shields.io/badge/plataforma-Windows-0078D6)
 ![Licencia](https://img.shields.io/badge/licencia-propietaria-lightgrey)
@@ -26,7 +26,7 @@ el viento sobre el terreno real, sigue lo que emite cada foco hora a hora y da l
 |---|---|---|---|
 | **Reanálisis** | ¿Cómo afecta la planta a lo largo de los años? ¿Y con otro plan de operación? | ERA5 y estaciones, varios años | Olor: media, máximo y P98. Cada gas: media, máximo y normativa. Y, si se quiere, un día con su penacho |
 | **Episodio de queja** | ¿Pudo venir de la planta el olor de aquellos días? | GFS y estaciones, de 1 a 3 días | Lo mismo en esos días, con el penacho hora a hora |
-| **Predicción** | ¿Cómo se comportará el olor los próximos días? | GFS, de 1 a 5 días | Lo mismo en esos días, con el penacho hora a hora |
+| **Predicción** | ¿Cómo se comportará el olor los próximos días? | GFS corregido en las estaciones con lo medido en ellas, de 1 a 5 días | Lo mismo en esos días, con el penacho hora a hora |
 
 - **Focos y planes de operación.** Cada foco, con su perfil de 24 h por días, semanas o meses. Un plan nuevo se evalúa sin volver a lanzar los motores.
 - **Olor y gases.** Cada emisión se guarda en las unidades en que se mide y se convierte a las del modelo en un solo sitio. Si un foco no tiene olfatometría, el olor se estima como índice orientativo a partir de sus gases.
@@ -47,7 +47,7 @@ git clone https://github.com/mcamasanz/TeOdora.git
 cd TeOdora
 
 python -m venv .venv && .venv\Scripts\activate
-pip install -e "v0.1.11[gui3d]"
+pip install -e "v0.1.12[gui3d]"
 
 python galera/main.py
 ```
@@ -60,13 +60,13 @@ El código común y los datos de cada instalación van por separado, y cada inst
 
 ```
 TeOdora/
-├── v0.1.11/               La última versión del núcleo
+├── v0.1.12/               La última versión del núcleo
 │   ├── core/              Motores, aplicación y descargas de datos (import teodors)
 │   ├── auditor/           Reglas y pruebas que tiene que pasar cada versión
 │   ├── cargador/          Usa esta versión sin instalar nada
 │   └── nueva_planta.py    Crea la carpeta de una instalación
 │
-├── v0.1.10/, v0.1.8/, v0.1.7/, v0.1.5/, v0.1.3/   Las anteriores, tal como se publicaron
+├── v0.1.11/, v0.1.10/, v0.1.8/, v0.1.7/, v0.1.5/, v0.1.3/   Las anteriores, tal como se publicaron
 │
 ├── galera/                Una instalación
 │   ├── VERSION            La versión del núcleo que usa
@@ -82,7 +82,7 @@ TeOdora/
 ```mermaid
 flowchart LR
     subgraph plantas [Instalaciones]
-        A["galera<br/>VERSION: v0.1.11"]
+        A["galera<br/>VERSION: v0.1.12"]
         C["gimenells<br/>VERSION: v0.1.5"]
         B["otra planta<br/>VERSION: v0.1.3"]
     end
@@ -93,8 +93,9 @@ flowchart LR
         V6["v0.1.8<br/>publicada: no cambia"]
         V7["v0.1.10<br/>publicada: no cambia"]
         V8["v0.1.11<br/>publicada: no cambia"]
+        V9["v0.1.12<br/>publicada: no cambia"]
     end
-    A --> V8
+    A --> V9
     C --> V4
     B --> V3
 ```
@@ -110,13 +111,14 @@ Dos reglas sostienen todo lo demás:
 
 | Instalación | Carpeta | Versión | Estado |
 |---|---|---|---|
-| Planta de biometano de ENCE en La Galera (Montsià, Tarragona) | [`galera/`](galera/) | `v0.1.11` | En desarrollo: focos de ejemplo; serie de viento de 5 años completa (2021-2025); las respuestas de los focos, aún de prueba (unas semanas repetidas en todos los años). Sin probar aún en el PC del operario |
+| Planta de biometano de ENCE en La Galera (Montsià, Tarragona) | [`galera/`](galera/) | `v0.1.12` | En desarrollo: focos de ejemplo; serie de viento de 5 años completa (2021-2025); las respuestas de los focos, aún de prueba (unas semanas repetidas en todos los años). Sin probar aún en el PC del operario |
 | Planta de compostaje en pilas de Gimenells (DIGICOMPOST); según el Catastro, en Zaidín (Huesca) | [`gimenells/`](gimenells/) | `v0.1.5` | Preliminar: las 30 pilas con emisiones provisionales y un día de viento, el 21/10/2026. Sin serie de 5 años |
 
 ## Versiones del núcleo
 
 | Versión | Fecha | Novedades |
 |---|---|---|
+| [`v0.1.12`](v0.1.12/CHANGELOG.md) | 2026-11-19 | La **predicción de 1 a 5 días**, como el episodio pero hacia delante. El viento que prevé GFS se **corrige en cada estación con su MOS** y, donde ya hay medida, manda lo medido; con eso se simula el viento 3D, que se anima en el mapa con el calendario pintado, y la dispersión da el penacho hora a hora, la media, el máximo y los pueblos. Al guardar, su **informe PDF**, en futuro y con aviso de incertidumbre, con el penacho de cada día cada 4 horas. Los modelos del MOS viajan con la planta (`meteo/mos/`, 3 MB). En Episodio y Predicción salen bajo el calendario las **barras de cada hora**, como en el reanálisis. Y un arreglo: el viento «más frecuente» del informe del episodio es el de sus días, no el de los años del reanálisis |
 | [`v0.1.11`](v0.1.11/CHANGELOG.md) | 2026-11-18 | En la página Simular, una **barra con iconos encima del mapa**: la variable, isolíneas o degradado, la escala logarítmica o normal con su rango, la paleta de colores, la leyenda, la transparencia, el encuadre (la nave, 10 km o todo) y copiar o guardar la imagen. **Solo se ven los resultados del olor**; los gases se siguen calculando. Un círculo blanco marca el **peor punto de cada pueblo**, el valor de su tabla. La ficha de la planta da el núcleo urbano más cercano contando los pueblos que añade la planta, y lo que la rodea. Y arreglos: los botones de capa del mapa ya responden en el ejecutable, lo que pasa del rango va en su propia franja y el degradado ya no deja una raya en cuadrado |
 | [`v0.1.10`](v0.1.10/CHANGELOG.md) | 2026-11-16 | El reanálisis **acumula** los estadísticos mientras resuelve cada día: ya no guarda la serie hora a hora entera (unos 18 GB de temporales con 5 años). Con el interruptor `operacion.paralelo` de `planta.json` (apagado por defecto), el reanálisis y el episodio se reparten entre varios procesos, con los mismos resultados. La **meteo de los informes viaja ya procesada** en la planta (`meteo/`), sin ficheros en bruto. Si el motor web del mapa se cae, el informe **falla con un mensaje** en vez de quedarse esperando. Y arreglos: compila en Python 3.11, el `pyproject.toml` lleva todos los subpaquetes del informe, los motores que lanzan otros motores funcionan en el ejecutable y una hora en calma ya no da dirección |
 | [`v0.1.8`](v0.1.8/CHANGELOG.md) | 2026-11-14 | El modo **episodio de queja**: se define el periodo (víspera · día de la queja · siguiente) y los focos, se simula el viento 3D de esos días (GFS + estaciones) y la dispersión con el penacho hora a hora, y se genera un informe propio (su meteo frente a lo normal de 2021-2025 desde las estaciones, sin CDS; y cuándo se huele, hora a hora). El escritor del informe se reorganiza por tipos (reanálisis-caso, comparación, episodio y predicción). Los resultados y el penacho del episodio se ven en degradado o isolíneas |
@@ -131,7 +133,7 @@ Dos reglas sostienen todo lo demás:
 <summary><b>Añadir una instalación</b></summary>
 
 ```bash
-python v0.1.11/nueva_planta.py mi_planta --nombre "Mi planta" --lat 41.65 --lon 0.39 --corine ruta/CLC2018_ES.gpkg --descargar
+python v0.1.12/nueva_planta.py mi_planta --nombre "Mi planta" --lat 41.65 --lon 0.39 --corine ruta/CLC2018_ES.gpkg --descargar
 python mi_planta/main.py --edicion
 ```
 
@@ -151,7 +153,7 @@ El viento alrededor de los edificios, el ejemplo de la ventana de configuración
 <details>
 <summary><b>Pasar una instalación a otra versión</b></summary>
 
-1. Cambia su fichero `VERSION`, por ejemplo a `v0.1.11`.
+1. Cambia su fichero `VERSION`, por ejemplo a `v0.1.12`.
 2. Lanza sus pruebas y compara sus resultados con los de antes.
 3. Actualiza la tabla de instalaciones y sube el cambio.
 
@@ -162,22 +164,22 @@ Si algo va mal, volver atrás es deshacer esa línea: la versión anterior sigue
 <details>
 <summary><b>Publicar una versión nueva del núcleo</b></summary>
 
-1. Copia la última carpeta con el número nuevo: `v0.1.11/` → `v0.1.12/`.
+1. Copia la última carpeta con el número nuevo: `v0.1.12/` → `v0.1.13/`.
 2. Cambia el número en `core/__init__.py` y `pyproject.toml`, y añade la entrada en `CHANGELOG.md`.
 3. Haz los cambios **solo en la carpeta nueva**.
 4. Audita desde ella: `python -m auditor`. Tiene que dar **APTO**.
 5. Sube a `main`, ponle la etiqueta y añádela a la tabla de versiones:
 
    ```bash
-   git tag -a v0.1.12 -m "teOdors 0.1.12"
-   git push origin main v0.1.12
+   git tag -a v0.1.13 -m "teOdors 0.1.13"
+   git push origin main v0.1.13
    ```
 
 </details>
 
 ## Motores
 
-Ocho motores propios, en Python, sin ejecutables externos. Cada uno se ha validado caso a caso frente a su programa de referencia ([resultados](v0.1.11/docs/validacion.md)).
+Ocho motores propios, en Python, sin ejecutables externos. Cada uno se ha validado caso a caso frente a su programa de referencia ([resultados](v0.1.12/docs/validacion.md)).
 
 | Motor | Qué calcula | Casos de validación |
 |---|---|---|
@@ -192,7 +194,7 @@ Ocho motores propios, en Python, sin ejecutables externos. Cada uno se ha valida
 
 ## Control de calidad
 
-El **auditor** decide qué entra en `main`: se ejecuta en cada subida y se puede lanzar a mano desde la carpeta de una versión con `python -m auditor`. La `v0.1.11` tiene 896 pruebas.
+El **auditor** decide qué entra en `main`: se ejecuta en cada subida y se puede lanzar a mano desde la carpeta de una versión con `python -m auditor`. La `v0.1.12` tiene 931 pruebas.
 
 | Regla | Qué exige |
 |---|---|
@@ -206,13 +208,13 @@ El **auditor** decide qué entra en `main`: se ejecuta en cada subida y se puede
 
 | Para saber… | Lee |
 |---|---|
-| Cómo está hecho el núcleo y cómo se usa desde Python | [`v0.1.11/README.md`](v0.1.11/README.md) |
-| Cómo se ha validado cada motor | [`v0.1.11/docs/validacion.md`](v0.1.11/docs/validacion.md) |
-| Las reglas del auditor | [`v0.1.11/auditor/README.md`](v0.1.11/auditor/README.md) |
-| Lo que queda por hacer | [`v0.1.11/PENDIENTES.md`](v0.1.11/PENDIENTES.md) |
+| Cómo está hecho el núcleo y cómo se usa desde Python | [`v0.1.12/README.md`](v0.1.12/README.md) |
+| Cómo se ha validado cada motor | [`v0.1.12/docs/validacion.md`](v0.1.12/docs/validacion.md) |
+| Las reglas del auditor | [`v0.1.12/auditor/README.md`](v0.1.12/auditor/README.md) |
+| Lo que queda por hacer | [`v0.1.12/PENDIENTES.md`](v0.1.12/PENDIENTES.md) |
 | Los datos de La Galera y sus créditos | [`galera/README.md`](galera/README.md) |
 | Los datos de Gimenells y sus créditos | [`gimenells/README.md`](gimenells/README.md) |
 
 ## Licencia
 
-Software propietario, todos los derechos reservados ([`LICENSE`](v0.1.11/LICENSE)). Las librerías de terceros, en [`THIRD-PARTY-NOTICES.md`](v0.1.11/THIRD-PARTY-NOTICES.md). Los datos de cada instalación tienen sus propias condiciones, citadas en el `README.md` de su carpeta.
+Software propietario, todos los derechos reservados ([`LICENSE`](v0.1.12/LICENSE)). Las librerías de terceros, en [`THIRD-PARTY-NOTICES.md`](v0.1.12/THIRD-PARTY-NOTICES.md). Los datos de cada instalación tienen sus propias condiciones, citadas en el `README.md` de su carpeta.

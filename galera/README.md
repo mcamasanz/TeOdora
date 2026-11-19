@@ -47,7 +47,7 @@ Junto a `entrada/`, para tener el viento sin la carpeta de cálculos (o en la de
 
 Los meses nuevos de la serie (otro año) se suman al paquete sin rehacerlo: `teodors.casos.viento3d.anadir_paquete()`.
 
-## La meteo de los informes: `meteo/`
+## La meteo de los informes y de la predicción: `meteo/`
 
 Junto a `entrada/`, la meteorología que necesitan los informes, ya procesada (desde la `v0.1.10`), unos 5 MB. Con ella, un equipo sin la carpeta de cálculos hace los informes completos, sin ningún fichero meteorológico en bruto:
 
@@ -56,7 +56,10 @@ Junto a `entrada/`, la meteorología que necesitan los informes, ya procesada (d
 - el tiempo en la planta, día a día;
 - lo normal de cada fecha y hora en las estaciones (2021-2025).
 
-El índice y un `LEEME.md` dicen de dónde sale cada fichero. Se rehace con `python -m teodors.operacion.meteo_planta`, en el equipo que tiene la meteo en bruto.
+Desde la `v0.1.12`, también los modelos que corrigen en cada estación el viento que prevé GFS (el MOS, entrenado con 2021-2025): los usa
+la predicción. Son 24 ficheros, unos 3 MB, en `meteo/mos/`, con su propio índice.
+
+El índice y un `LEEME.md` dicen de dónde sale cada fichero. Se rehace con `python -m teodors.operacion.meteo_planta`, en el equipo que tiene la meteo en bruto; solo los modelos del MOS, con `--mos`.
 
 ## La dispersión: `dispersion/`
 
@@ -67,17 +70,17 @@ empaquetarlos aquí). El reanálisis cuenta del primer al último día que haya,
 
 ## Los cálculos y las claves
 
-Lo que no viaja con la instalación (meteorología, MOS, validaciones, logs y la caché del viento 3D de la serie) va a una carpeta **`datos/` dentro de la instalación**, que no se versiona. Para tenerlo en otro disco —una unidad de red, por ejemplo— basta la variable de entorno `ENCE_GALERA_DATOS` (tiene prioridad) o editar `entrada/rutas.json`. Los cálculos en marcha van a una carpeta temporal del sistema.
+Lo que no viaja con la instalación (la meteorología en bruto, el entrenamiento del MOS, validaciones, logs y la caché del viento 3D de la serie) va a una carpeta **`datos/` dentro de la instalación**, que no se versiona. Para tenerlo en otro disco —una unidad de red, por ejemplo— basta la variable de entorno `ENCE_GALERA_DATOS` (tiene prioridad) o editar `entrada/rutas.json`. Los cálculos en marcha van a una carpeta temporal del sistema.
 
 Las **claves de API no van aquí nunca**: cada usuario las pone en su propio equipo, en `%APPDATA%\CIRCE\claves` (p. ej. `cds-api-key.txt` para el CDS de Copernicus). Así no viajan con la instalación ni entran al repositorio.
 
-Tareas, con `PYTHONPATH=../v0.1.11/cargador` y `TEODORS_PLANTA=entrada`:
+Tareas, con `PYTHONPATH=../v0.1.12/cargador` y `TEODORS_PLANTA=entrada`:
 
 | Para qué | Orden |
 |---|---|
 | Serie de viento de varios años | `python -m teodors.operacion.viento3d_series` |
 | Rehacer el viento local, si cambian los edificios | `python -m teodors.operacion.viento_local_biblioteca` |
-| De las nubes LiDAR a sus rejillas de 1 m | `python -I ../v0.1.11/core/fuentes/lidar.py <carpeta .laz> <carpeta de las librerías> viento/local/planta_1m.npz 286512 4507400 600` |
+| De las nubes LiDAR a sus rejillas de 1 m | `python -I ../v0.1.12/core/fuentes/lidar.py <carpeta .laz> <carpeta de las librerías> viento/local/planta_1m.npz 286512 4507400 600` |
 
 ## Pruebas y documentación del proyecto
 

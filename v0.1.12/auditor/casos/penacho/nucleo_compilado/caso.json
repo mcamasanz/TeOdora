@@ -1,0 +1,24 @@
+{
+  "motor": "penacho",
+  "descripcion": "Las 17 pilas con el núcleo compilado (numba): debe dar lo mismo que la vía Python.",
+  "carpeta": "AERMOD",
+  "ordenes": [
+    [
+      "aermod.inp"
+    ]
+  ],
+  "entorno": {},
+  "salidas": [
+    "AERMOD/ERRORS.OUT",
+    "AERMOD/aermod.out",
+    "AERMOD/aermod.plt",
+    "AERMOD/aermod.pst",
+    "AERMOD/aermod.sum",
+    "AERMOD/aermod_max.plt"
+  ],
+  "marcas": [
+    "compilacion"
+  ],
+  "original": "idéntico al original salvo fecha y hora",
+  "segundos": 1.7
+}

@@ -1,0 +1,252 @@
+ *** AERMOD - VERSION 26135  ***   *** AERMOD cmp_gauss                                                     ***        10/18/26
+ *** AERMET - VERSION  26135 ***   *** MDT05+CORINE (CNIG) · ERA5 (CDS) · 1545 receptores                   ***        20:27:11
+                                                                                                                       PAGE   1
+ *** MODELOPTs:    RegDFAULT  CONC  ELEV  RURAL
+
+                                            ***     MODEL SETUP OPTIONS SUMMARY       ***
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+ ** Model Options Selected:
+      * Model Uses Regulatory DEFAULT Options
+      * Model Is Setup For Calculation of Average CONCentration Values.
+      * NO GAS DEPOSITION Data Provided.
+      * NO PARTICLE DEPOSITION Data Provided.
+      * Model Uses NO DRY DEPLETION. DDPLETE  =  F
+      * Model Uses NO WET DEPLETION. WETDPLT  =  F
+      * Stack-tip Downwash.
+      * Model Accounts for ELEVated Terrain Effects.
+      * Use Calms Processing Routine.
+      * Use Missing Data Processing Routine.
+      * No Exponential Decay.
+      * Model Uses RURAL Dispersion Only.
+      * CCVR_Sub - Meteorological data includes CCVR substitutions
+      * Model Assumes No FLAGPOLE Receptor Heights. 
+      * The User Specified a Pollutant Type of: H2S     
+  
+ **Model Calculates  2 Short Term Average(s) of:   1-HR  24-HR
+     and Calculates PERIOD Averages
+  
+ **This Run Includes:     18 Source(s);       1 Source Group(s); and       4 Receptor(s)
+
+                with:      1 POINT(s), including
+                           0 POINTCAP(s) and      0 POINTHOR(s)
+                 and:      0 VOLUME source(s)
+                 and:     17 AREA type source(s)
+                 and:      0 LINE source(s)
+                 and:      0 RLINE/RLINEXT source(s)
+                 and:      0 OPENPIT source(s)
+                 and:      0 BUOYANT LINE source(s) with a total of     0 line(s)
+                 and:      0 SWPOINT source(s)
+
+  
+ **Model Set To Continue RUNning After the Setup Testing.
+
+ **The AERMET Input Meteorological Data Version Date:  26135
+  
+ **Output Options Selected:
+          Model Outputs Tables of PERIOD Averages by Receptor
+          Model Outputs Tables of Highest Short Term Values by Receptor (RECTABLE Keyword)
+          Model Outputs Tables of Overall Maximum Short Term Values (MAXTABLE Keyword)
+          Model Outputs External File(s) of Concurrent Values for Postprocessing (POSTFILE Keyword)
+          Model Outputs External File(s) of High Values for Plotting (PLOTFILE Keyword)
+          Model Outputs Separate Summary File of High Ranked Values (SUMMFILE Keyword)
+  
+          NOTE: Option for EXPonential format used in formatted output result files (FILEFORM Keyword)
+  
+ **NOTE:  The Following Flags May Appear Following CONC Values:  c for Calm Hours
+                                                                 m for Missing Hours
+                                                                 b for Both Calm and Missing Hours
+  
+ **Misc. Inputs:  Base Elev. for Pot. Temp. Profile (m MSL) =   199.00 ;  Decay Coef. =    0.000     ;  Rot. Angle =     0.0
+                  Emission Units = GRAMS/SEC                                ;  Emission Rate Unit Factor =   0.10000E+07
+                  Output Units   = MICROGRAMS/M**3                         
+  
+ **Approximate Storage Requirements of Model =      3.5 MB of RAM.
+  
+ **Input Runstream File:          aermod.inp                                                                                      
+ **Output Print File:             aermod.out                                                                                      
+
+ **Detailed Error/Message File:   ERRORS.OUT                                                                                      
+ **File for Summary of Results:   aermod.sum                                                                                      
+ *** AERMOD - VERSION 26135  ***   *** AERMOD cmp_gauss                                                     ***        10/18/26
+ *** AERMET - VERSION  26135 ***   *** MDT05+CORINE (CNIG) · ERA5 (CDS) · 1545 receptores                   ***        20:27:11
+                                                                                                                       PAGE   2
+ *** MODELOPTs:    RegDFAULT  CONC  ELEV  RURAL
+
+                                            *** METEOROLOGICAL DAYS SELECTED FOR PROCESSING ***
+                                                               (1=YES; 0=NO)
+
+            1 1 1 1 1 1 1 1 1 1   1 1 1 1 1 1 1 1 1 1   1 1 1 1 1 1 1 1 1 1   1 1 1 1 1 1 1 1 1 1   1 1 1 1 1 1 1 1 1 1
+            1 1 1 1 1 1 1 1 1 1   1 1 1 1 1 1 1 1 1 1   1 1 1 1 1 1 1 1 1 1   1 1 1 1 1 1 1 1 1 1   1 1 1 1 1 1 1 1 1 1
+            1 1 1 1 1 1 1 1 1 1   1 1 1 1 1 1 1 1 1 1   1 1 1 1 1 1 1 1 1 1   1 1 1 1 1 1 1 1 1 1   1 1 1 1 1 1 1 1 1 1
+            1 1 1 1 1 1 1 1 1 1   1 1 1 1 1 1 1 1 1 1   1 1 1 1 1 1 1 1 1 1   1 1 1 1 1 1 1 1 1 1   1 1 1 1 1 1 1 1 1 1
+            1 1 1 1 1 1 1 1 1 1   1 1 1 1 1 1 1 1 1 1   1 1 1 1 1 1 1 1 1 1   1 1 1 1 1 1 1 1 1 1   1 1 1 1 1 1 1 1 1 1
+            1 1 1 1 1 1 1 1 1 1   1 1 1 1 1 1 1 1 1 1   1 1 1 1 1 1 1 1 1 1   1 1 1 1 1 1 1 1 1 1   1 1 1 1 1 1 1 1 1 1
+            1 1 1 1 1 1 1 1 1 1   1 1 1 1 1 1 1 1 1 1   1 1 1 1 1 1 1 1 1 1   1 1 1 1 1 1 1 1 1 1   1 1 1 1 1 1 1 1 1 1
+            1 1 1 1 1 1 1 1 1 1   1 1 1 1 1
+
+                       METEOROLOGICAL DATA PROCESSED BETWEEN START DATE: 2023   2  3  1
+                                                           AND END DATE: 2023   2  3  6
+
+                NOTE:  METEOROLOGICAL DATA ACTUALLY PROCESSED WILL ALSO DEPEND ON WHAT IS INCLUDED IN THE DATA FILE.
+
+
+
+                                  *** UPPER BOUND OF FIRST THROUGH FIFTH WIND SPEED CATEGORIES ***
+                                                            (METERS/SEC)
+
+                                                 1.54,   3.09,   5.14,   8.23,  10.80,
+ *** AERMOD - VERSION 26135  ***   *** AERMOD cmp_gauss                                                     ***        10/18/26
+ *** AERMET - VERSION  26135 ***   *** MDT05+CORINE (CNIG) · ERA5 (CDS) · 1545 receptores                   ***        20:27:11
+                                                                                                                       PAGE   3
+ *** MODELOPTs:    RegDFAULT  CONC  ELEV  RURAL
+
+                                    *** UP TO THE FIRST 24 HOURS OF METEOROLOGICAL DATA ***
+
+   Surface file:   aermet.sfc                                                                         Met Version:  26135
+   Profile file:   aermet.pfl                                                                      
+   Surface format: FREE                                                                                                     
+   Profile format: FREE                                                                                                     
+   Surface station no.:    99999                  Upper air station no.: ********
+                  Name: ERA5                                       Name: ERA5                                    
+                  Year:   2023                                     Year:   2023
+
+ First 24 hours of scalar data
+ YR MO DY JDY HR     H0     U*     W*  DT/DZ ZICNV ZIMCH  M-O LEN    Z0  BOWEN ALBEDO  REF WS   WD     HT  REF TA     HT
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+ ** 02 03  34 01  -13.4  0.078 -9.000 -9.000 -999.   75.      5.2  0.08   0.72   1.00    2.29  265.   10.0  275.8   10.0
+ 23 02 03  34 02  -12.1  0.076 -9.000 -9.000 -999.   72.      5.0  0.08   0.72   1.00    2.37  257.   10.0  275.5   10.0
+ 23 02 03  34 03  -10.6  0.072 -9.000 -9.000 -999.   66.      4.8  0.08   0.72   1.00    2.20  259.   10.0  275.0   10.0
+ 23 02 03  34 04   -9.4  0.067 -9.000 -9.000 -999.   56.      4.4  0.11   0.72   1.00    2.00  252.   10.0  274.9   10.0
+ 23 02 03  34 05   -7.4  0.059 -9.000 -9.000 -999.   47.      3.8  0.11   0.72   1.00    1.70  244.   10.0  275.9   10.0
+ 23 02 03  34 06   -6.1  0.053 -9.000 -9.000 -999.   47.      3.4  0.11   0.72   1.00    1.79  238.   10.0  275.2   10.0
+ 23 02 03  34 07   -5.2  0.048 -9.000 -9.000 -999.   49.      3.1  0.11   0.72   1.00    1.82  243.   10.0  274.7   10.0
+ 23 02 03  34 08   -4.8  0.049 -9.000 -9.000 -999.   47.      3.1  0.11   0.72   1.00    1.70  248.   10.0  274.2   10.0
+ 23 02 03  34 09   -3.0  0.051 -9.000 -9.000 -999.   46.      4.1  0.11   0.72   0.18    1.46  246.   10.0  273.4   10.0
+ 23 02 03  34 10   15.9  0.084  0.370  0.005  115.  115.     -3.4  0.08   0.72   0.18    1.11  266.   10.0  276.3   10.0
+ 23 02 03  34 11   64.4  0.119  0.755  0.005  240.  240.     -2.3  0.08   0.72   0.18    1.30  275.   10.0  278.9   10.0
+ 23 02 03  34 12  118.9  0.152  1.046  0.005  345.  345.     -2.7  0.08   0.72   0.18    2.30  268.   10.0  282.1   10.0
+ 23 02 03  34 13  159.4  0.175  1.238  0.005  426.  426.     -3.0  0.08   0.72   0.18    2.73  268.   10.0  284.7   10.0
+ 23 02 03  34 14  168.8  0.202  1.319  0.005  485.  485.     -4.4  0.08   0.72   0.18    2.94  272.   10.0  287.1   10.0
+ 23 02 03  34 15  145.3  0.212  1.279  0.005  515.  515.     -5.8  0.08   0.72   0.18    2.97  277.   10.0  288.6   10.0
+ 23 02 03  34 16   93.5  0.209  1.101  0.005  510.  510.     -8.8  0.08   0.72   0.18    2.90  279.   10.0  289.2   10.0
+ 23 02 03  34 17   24.1  0.172  0.685  0.005  477.  477.    -19.0  0.08   0.72   0.18    2.54  274.   10.0  288.9   10.0
+ 23 02 03  34 18  -17.3  0.064 -9.000 -9.000 -999.  158.      4.2  0.08   0.72   0.18    2.73  262.   10.0  285.0   10.0
+ 23 02 03  34 19  -13.3  0.066 -9.000 -9.000 -999.   73.      4.4  0.08   0.72   0.18    2.65  261.   10.0  282.2   10.0
+ 23 02 03  34 20  -10.8  0.063 -9.000 -9.000 -999.   46.      4.1  0.11   0.72   1.00    2.46  255.   10.0  281.0   10.0
+ 23 02 03  34 21  -10.9  0.061 -9.000 -9.000 -999.   35.      4.0  0.11   0.72   1.00    2.31  249.   10.0  279.4   10.0
+ 23 02 03  34 22  -11.0  0.066 -9.000 -9.000 -999.   37.      4.4  0.11   0.72   1.00    2.32  246.   10.0  278.8   10.0
+ 23 02 03  34 23  -12.4  0.072 -9.000 -9.000 -999.   38.      4.8  0.11   0.72   1.00    2.20  241.   10.0  279.4   10.0
+ 23 02 03  34 24  -12.6  0.073 -9.000 -9.000 -999.   55.      4.9  0.11   0.72   1.00    2.69  240.   10.0  280.0   10.0
+
+
+ First hour of profile data
+ YR MO DY HR HEIGHT F  WDIR    WSPD AMB_TMP sigmaA  sigmaW  sigmaV
+ ** 02 03 01   10.0 0  265.    2.29   275.9  999.0  -99.00  -99.00
+ ** 02 03 01  266.3 0  286.    6.07   279.5  999.0  -99.00  -99.00
+ ** 02 03 01  479.8 0  302.    5.21   280.6  999.0  -99.00  -99.00
+ ** 02 03 01  699.4 0  312.    3.41   281.2  999.0  -99.00  -99.00
+ ** 02 03 01  925.6 1  333.    2.34   282.2  999.0  -99.00  -99.00
+
+ F indicates top of profile (=1) or below (=0)
+ *** AERMOD - VERSION 26135  ***   *** AERMOD cmp_gauss                                                     ***        10/18/26
+ *** AERMET - VERSION  26135 ***   *** MDT05+CORINE (CNIG) · ERA5 (CDS) · 1545 receptores                   ***        20:27:11
+                                                                                                                       PAGE   4
+ *** MODELOPTs:    RegDFAULT  CONC  ELEV  RURAL
+
+                                        *** THE SUMMARY OF MAXIMUM PERIOD (     6 HRS) RESULTS ***
+
+
+                                    ** CONC OF H2S      IN MICROGRAMS/M**3                          **
+
+                                                                                                             NETWORK
+GROUP ID                       AVERAGE CONC                RECEPTOR  (XR, YR, ZELEV, ZHILL, ZFLAG)  OF TYPE  GRID-ID
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+ALL       1ST HIGHEST VALUE IS  0.317307E+02 AT (  778504.80,  4612765.20,   197.58,   229.99,    0.00)  DC          
+          2ND HIGHEST VALUE IS  0.536203E+01 AT (  778504.80,  4612795.20,   198.67,   229.99,    0.00)  DC          
+          3RD HIGHEST VALUE IS  0.348629E+00 AT (  778486.80,  4612807.20,   199.04,   229.99,    0.00)  DC          
+          4TH HIGHEST VALUE IS  0.422239E-03 AT (  774117.60,  4608397.40,   131.86,   131.86,    0.00)  DC          
+          5TH HIGHEST VALUE IS  0.000000E+00 AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+          6TH HIGHEST VALUE IS  0.000000E+00 AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+          7TH HIGHEST VALUE IS  0.000000E+00 AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+          8TH HIGHEST VALUE IS  0.000000E+00 AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+          9TH HIGHEST VALUE IS  0.000000E+00 AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+         10TH HIGHEST VALUE IS  0.000000E+00 AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+
+
+ *** RECEPTOR TYPES:  GC = GRIDCART
+                      GP = GRIDPOLR
+                      DC = DISCCART
+                      DP = DISCPOLR
+ *** AERMOD - VERSION 26135  ***   *** AERMOD cmp_gauss                                                     ***        10/18/26
+ *** AERMET - VERSION  26135 ***   *** MDT05+CORINE (CNIG) · ERA5 (CDS) · 1545 receptores                   ***        20:27:11
+                                                                                                                       PAGE   5
+ *** MODELOPTs:    RegDFAULT  CONC  ELEV  RURAL
+
+                                                *** THE SUMMARY OF HIGHEST  1-HR RESULTS ***
+
+
+                                    ** CONC OF H2S      IN MICROGRAMS/M**3                          **
+
+                                                      DATE                                                                    NETWORK
+GROUP ID                          AVERAGE CONC     (YYMMDDHH)             RECEPTOR  (XR, YR, ZELEV, ZHILL, ZFLAG)    OF TYPE  GRID-ID
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+  
+ALL      HIGH   1ST HIGH VALUE IS  0.808100E+02  ON 23020305: AT (  778504.80,  4612765.20,   197.58,   229.99,    0.00)  DC          
+         HIGH   2ND HIGH VALUE IS  0.801527E+02  ON 23020306: AT (  778504.80,  4612765.20,   197.58,   229.99,    0.00)  DC          
+
+
+ *** RECEPTOR TYPES:  GC = GRIDCART
+                      GP = GRIDPOLR
+                      DC = DISCCART
+                      DP = DISCPOLR
+ *** AERMOD - VERSION 26135  ***   *** AERMOD cmp_gauss                                                     ***        10/18/26
+ *** AERMET - VERSION  26135 ***   *** MDT05+CORINE (CNIG) · ERA5 (CDS) · 1545 receptores                   ***        20:27:11
+                                                                                                                       PAGE   6
+ *** MODELOPTs:    RegDFAULT  CONC  ELEV  RURAL
+
+                                                *** THE SUMMARY OF HIGHEST 24-HR RESULTS ***
+
+
+                                    ** CONC OF H2S      IN MICROGRAMS/M**3                          **
+
+                                                      DATE                                                                    NETWORK
+GROUP ID                          AVERAGE CONC     (YYMMDDHH)             RECEPTOR  (XR, YR, ZELEV, ZHILL, ZFLAG)    OF TYPE  GRID-ID
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+  
+ALL      HIGH   1ST HIGH VALUE IS  0.000000E+00  ON 00000000: AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+         HIGH   2ND HIGH VALUE IS  0.000000E+00  ON 00000000: AT (       0.00,        0.00,     0.00,     0.00,    0.00)
+
+
+ *** RECEPTOR TYPES:  GC = GRIDCART
+                      GP = GRIDPOLR
+                      DC = DISCCART
+                      DP = DISCPOLR
+ *** AERMOD - VERSION 26135  ***   *** AERMOD cmp_gauss                                                     ***        10/18/26
+ *** AERMET - VERSION  26135 ***   *** MDT05+CORINE (CNIG) · ERA5 (CDS) · 1545 receptores                   ***        20:27:11
+                                                                                                                       PAGE   7
+ *** MODELOPTs:    RegDFAULT  CONC  ELEV  RURAL
+
+ *** Message Summary : AERMOD Model Execution ***
+
+  --------- Summary of Total Messages --------
+  
+ A Total of            0 Fatal Error Message(s)
+ A Total of            0 Warning Message(s)
+ A Total of            0 Informational Message(s)
+
+ A Total of            6 Hours Were Processed
+
+ A Total of            0 Calm Hours Identified
+
+ A Total of            0 Missing Hours Identified (  0.00 Percent)
+  
+  
+    ******** FATAL ERROR MESSAGES ******** 
+               ***  NONE  ***         
+  
+  
+    ********   WARNING MESSAGES   ******** 
+               ***  NONE  ***        
+  

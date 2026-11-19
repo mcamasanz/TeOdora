@@ -1,0 +1,17 @@
+{
+  "motor": "puffs",
+  "descripcion": "Pila de compostaje (área) en clase D a 3 m/s: puffs de área, Fr y σy0.",
+  "carpeta": "",
+  "ordenes": [
+    [
+      "CALPUFF.INP"
+    ]
+  ],
+  "entorno": {},
+  "salidas": [
+    "CONC.DAT"
+  ],
+  "marcas": [],
+  "original": "laboratorio: batería de puffs, caso S_area_D (OK)",
+  "segundos": 1.1
+}

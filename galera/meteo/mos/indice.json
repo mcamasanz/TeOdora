@@ -1,0 +1,118 @@
+{
+ "formato": 1,
+ "teodors": "0.1.12",
+ "creado": "2026-11-18T22:35",
+ "estaciones": [
+  "C9",
+  "U7",
+  "U9",
+  "US",
+  "UU",
+  "UW",
+  "UX",
+  "X5"
+ ],
+ "periodo": [
+  "2021-05-01 00:00:00",
+  "2025-12-31 23:00:00"
+ ],
+ "ejecuciones": 1706,
+ "ficheros": {
+  "C9_u.joblib": {
+   "bytes": 83785,
+   "sha256": "74985938311e25b03b9f4fe4f34153f9b980a9eb37ea2bb22c6710ec846fe05b"
+  },
+  "C9_v.joblib": {
+   "bytes": 256288,
+   "sha256": "98e8abc02ca388e54619bc8ebabdbf9f21688a62601e63d525c58f16fc5b02f7"
+  },
+  "C9_ws.joblib": {
+   "bytes": 94394,
+   "sha256": "4f63cbbeeca849c53ec52cfa2349e5e9c5010a91614b574d1ad1fdd2f61dd9b3"
+  },
+  "U7_u.joblib": {
+   "bytes": 105802,
+   "sha256": "9d8517f1d43ce45f501610f6119f43dedba0a66f26559e06338c0b69d289962e"
+  },
+  "U7_v.joblib": {
+   "bytes": 123306,
+   "sha256": "0ae80a6dafbffaf756e4b7c8163a4c2d44525ad0f8457c76421980f3b6554d16"
+  },
+  "U7_ws.joblib": {
+   "bytes": 84469,
+   "sha256": "ee3ad398ecdc4438fbc8d389ec6ec7eb9523f7d728fb258931f91c3e372e31a0"
+  },
+  "U9_u.joblib": {
+   "bytes": 100152,
+   "sha256": "ba9138006f3131df6cb7aca44b4c83081b825e4e59e75ab812e95322930d0300"
+  },
+  "U9_v.joblib": {
+   "bytes": 202939,
+   "sha256": "6884dee8a765dad6224b6b0d3c9aae02183345e7a5d16f3d96f8d9236939bb55"
+  },
+  "U9_ws.joblib": {
+   "bytes": 167030,
+   "sha256": "5fe9017f7925a8e27cc0b2e7b7e2c8bfb2ac29173df4affb3d126871a338281d"
+  },
+  "US_u.joblib": {
+   "bytes": 96303,
+   "sha256": "2efca2b7ee2a7c8fdc961423733c9b4a63674bf6cff8f2b80e6d5427cfc4a966"
+  },
+  "US_v.joblib": {
+   "bytes": 85117,
+   "sha256": "6782b714b9f9bf207a0e32b7caae9595ef94990cf8b664fcf0fd69a45147199a"
+  },
+  "US_ws.joblib": {
+   "bytes": 81965,
+   "sha256": "c05670f6c8e0f7270f1d710d8867243641ea37fa9d2a51d616db42a1df633f7f"
+  },
+  "UU_u.joblib": {
+   "bytes": 160737,
+   "sha256": "609f1e9aa04e2d5051184a04c557ad15597c898169eb97105e2d5e1881021d06"
+  },
+  "UU_v.joblib": {
+   "bytes": 149354,
+   "sha256": "14289aef271fa8963c501ac645a3afa2ac300b62799efc0c279a67c275c66379"
+  },
+  "UU_ws.joblib": {
+   "bytes": 105121,
+   "sha256": "cefc780bf600ff99c477cccfd40de68a99a6fb9f294963216d7b38f037bc24de"
+  },
+  "UW_u.joblib": {
+   "bytes": 130266,
+   "sha256": "d08c2157ff757f454aeccc0bdecbe1115b90268988283f4cfbee4bdc65dc7b28"
+  },
+  "UW_v.joblib": {
+   "bytes": 109375,
+   "sha256": "25f66022b618a232f5a0d70e74d2bb07cd02b40c57056d7af62ae883605176f5"
+  },
+  "UW_ws.joblib": {
+   "bytes": 87529,
+   "sha256": "1ce5a1975d6935365359fc7414789563b22494ec38319fa8cd5b77bc3025ad70"
+  },
+  "UX_u.joblib": {
+   "bytes": 209860,
+   "sha256": "6bd84ba3193cf5cce2750ce019bf5af98da0bf6228e044db9eaaec558da5a429"
+  },
+  "UX_v.joblib": {
+   "bytes": 101208,
+   "sha256": "83a6dffb9117997f998469f63a187346cf15a1272856796c8fed29ea230a1005"
+  },
+  "UX_ws.joblib": {
+   "bytes": 144590,
+   "sha256": "796c7e0e8793067e75b179ed41dd23222b6b8a3639736df8113f530397e7fda4"
+  },
+  "X5_u.joblib": {
+   "bytes": 101083,
+   "sha256": "1ac42463f015c44701ebe594225f9e1a985b4bd85a7c8e07d738a96cb68ce896"
+  },
+  "X5_v.joblib": {
+   "bytes": 109384,
+   "sha256": "b6e365e0a1acd8f391d413fd6703ae13451d17015afc71bf9c756317ab37cab9"
+  },
+  "X5_ws.joblib": {
+   "bytes": 120680,
+   "sha256": "490b2acbfaa0676a9cb5dbf395a4890535a6bd7d022604ff53fff560c02109e6"
+  }
+ }
+}

@@ -1,0 +1,26 @@
+{
+  "motor": "penacho",
+  "descripcion": "Deposición seca y húmeda de gas en las pilas, con lluvia sintética.",
+  "carpeta": "AERMOD",
+  "ordenes": [
+    [
+      "aermod.inp"
+    ]
+  ],
+  "entorno": {
+    "AERMOD_NUMBA": "0"
+  },
+  "salidas": [
+    "AERMOD/ERRORS.OUT",
+    "AERMOD/aermod.out",
+    "AERMOD/aermod.plt",
+    "AERMOD/aermod.pst",
+    "AERMOD/aermod.sum",
+    "AERMOD/aermod24.plt",
+    "AERMOD/aermod24.pst",
+    "AERMOD/aermod_max.plt"
+  ],
+  "marcas": [],
+  "original": "idéntico al original salvo fecha y hora",
+  "segundos": 1.0
+}
